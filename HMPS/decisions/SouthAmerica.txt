@@ -282,7 +282,6 @@ political_decisions = {
 				tag = UPB
 			}
 			owns = 2550
-			owns = 2419
 			owns = 2532
 			owns = 2410
 			owns = 2402
@@ -293,7 +292,6 @@ political_decisions = {
 		allow = {
 			war = no
 			owns = 2550
-			owns = 2419
 			owns = 2532
 			owns = 2410
 			owns = 2402
@@ -305,7 +303,6 @@ political_decisions = {
 			set_global_flag = brazilian_rubber_boom
 			2410 = { add_province_modifier = { name = colonial_recruitment duration = 365 } }
 			2402 = { add_province_modifier = { name = colonial_recruitment duration = 365 } }
-			2419 = { change_province_name = "Campo Grande" trade_goods = cattle }
 			2550 = { change_province_name = "Porto Velho" add_province_modifier = { name = recently_built_city duration = 150 } }
 			2532 = { change_province_name = "Boa Vista" add_province_modifier = { name = recently_built_city duration = 150 } }	
 			random_owned = { limit = { province_id = 2549 }

@@ -6,12 +6,28 @@ political_decisions = {
 			NOT = { 2313 = { trade_goods = tin } }
 		}
 		allow = {
-			mechanized_mining = 1
-			electrical_power_generation = 1
+			hot_blast = 1
+			high_pressure_steam_engine = 1
 			2313 = { owned_by = THIS }
 		}
 		effect = {
 			2313 = { trade_goods = tin }
+		}
+	}
+	
+	chile_copper_production = {
+		picture = coal_mining_2
+		potential = {
+			2305 = { owned_by = THIS }
+			NOT = { 2305 = { trade_goods = copper } }
+		}
+		allow = {
+			hot_blast = 1
+			steam_turbine = 1
+			2305 = { owned_by = THIS }
+		}
+		effect = {
+			2305 = { trade_goods = copper }
 		}
 	}
 	
@@ -22,8 +38,8 @@ political_decisions = {
 			NOT = { 655 = { trade_goods = copper } }
 		}
 		allow = {
-			mechanized_mining = 1
-			electrical_power_generation = 1
+			hot_blast = 1
+			combustion_engine = 1
 			655 = { owned_by = THIS }
 		}
 		effect = {
@@ -38,8 +54,8 @@ political_decisions = {
 			NOT = { 795 = { trade_goods = copper } }
 		}
 		allow = {
-			mechanized_mining = 1
-			electrical_power_generation = 1
+			hot_blast = 1
+			combustion_engine = 1
 			795 = { owned_by = THIS }
 		}
 		effect = {
@@ -55,7 +71,7 @@ political_decisions = {
 		}
 		allow = {
 			mechanized_mining = 1
-			electrical_power_generation = 1
+			combustion_engine = 1
 			4 = { owned_by = THIS }
 		}
 		effect = {
@@ -72,26 +88,27 @@ political_decisions = {
 				primary_culture = platinean
 				primary_culture = brazilian
 			}
-			2461 = { owned_by = THIS }
 			2463 = { owned_by = THIS }
-			2464 = { owned_by = THIS }
+			2441 = { owned_by = THIS }
 			2419 = { owned_by = THIS }
 			2445 = { owned_by = THIS }
-			NOT = { 2461 = { trade_goods = coal } }
+			2413 = { owned_by = THIS }
+			2422 = { owned_by = THIS }
+			NOT = { 2463 = { trade_goods = coal } }
 		}
 		allow = {
-			mechanized_mining = 1
-			electrical_power_generation = 1
+			hot_blast = 1
+			combustion_engine = 1
 			2461 = { owned_by = THIS }
 			2463 = { owned_by = THIS }
-			2464 = { owned_by = THIS }
 		}
 		effect = {
-			2461 = { trade_goods = coal }
 			2463 = { trade_goods = coal }
-			2464 = { trade_goods = coal }
-			2419 = { trade_goods = iron }
+			2419 = { change_province_name = "Campo Grande" trade_goods = iron }
+			2441 = { trade_goods = iron }
 			2445 = { trade_goods = iron }
+			2413 = { trade_goods = copper }
+			2422 = { trade_goods = copper }
 		}
 	}
 }

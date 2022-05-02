@@ -525,6 +525,8 @@ EVTDESC7777916;Remove the supply increase in the capital for AI nations;;;;;;;;;
 EVTNAME77779161;Non-Capital Supply Removal;;;;;;;;;;;;;
 EVTDESC77779161;Remove the supply increase in the former capital;;;;;;;;;;;;;
 EVT7777916OPTA;Do it;;;;;;;;;;;;;
+chile_copper_production_title;New Industrial RGOs;;;;;;;;;;;;;
+chile_copper_production_desc;Advancements in technology allow us to mine previous unobtainable goods, bolstering supply for our industrial base.;;;;;;;;;;;;;
 bolivian_tin_production_title;New Industrial RGOs;;;;;;;;;;;;;
 bolivian_tin_production_desc;Advancements in technology allow us to mine previous unobtainable goods, bolstering supply for our industrial base.;;;;;;;;;;;;;
 romanian_copper_production_title;New Industrial RGOs;;;;;;;;;;;;;
