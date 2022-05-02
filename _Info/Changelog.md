@@ -87,6 +87,7 @@ Everything else is our own (as far as I remember).
 - Republics have a slight increase
 - Equality NV: slight increase
 - Full cultural rights reform: allows assimilation on cultural cores (still some engine locks)
+- Cannot assimilate union cultures on USA, GER, ITA, or CHI cores
 - Can manually core overseas (UK can't core Canada & Australia until 1900)
 #### Immigration
 - New World buff reduces 1900+

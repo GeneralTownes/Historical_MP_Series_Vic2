@@ -113,7 +113,7 @@ the_periodic_table = {
 	effect = {
 		shared_prestige = 25
 		rgo_goods_throughput = {
-			sulphur = 0.05
+			sulphur = 0.15
 		}
 		factory_goods_output = {
 			fertilizer = 0.05

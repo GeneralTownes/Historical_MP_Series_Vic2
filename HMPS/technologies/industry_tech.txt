@@ -9,6 +9,7 @@ piston_steam_engine = {
 	farm_rgo_size = 0.1
 	mine_rgo_eff = 0.05
 	mine_rgo_size = 0.1
+	
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -59,6 +60,7 @@ high_pressure_steam_engine = {
 	farm_rgo_size = 0.2
 	mine_rgo_eff = 0.05
 	mine_rgo_size = 0.2
+	
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -109,6 +111,7 @@ compound_steam_engines = {
 	farm_rgo_size = 0.3
 	mine_rgo_eff = 0.05
 	mine_rgo_size = 0.3
+	
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -156,9 +159,10 @@ steam_turbine = {
 	cost = 25000
 
 	farm_rgo_eff = 0.05
-	farm_rgo_size = 0.4
+	farm_rgo_size = 0.2
 	mine_rgo_eff = 0.1
-	mine_rgo_size = 0.4
+	mine_rgo_size = 0.2
+	
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -209,9 +213,10 @@ combustion_engine = {
 	year = 1880
 	cost = 35000
 
-	farm_rgo_size = 0.4
+	farm_rgo_size = 0.15
 	mine_rgo_eff = 0.05
-	mine_rgo_size = 0.4
+	mine_rgo_size = 0.15
+	
 	ai_chance = {
 		factor = 2
 		modifier = {
@@ -258,6 +263,8 @@ electrical_power_generation = {
 	year = 1900
 	cost = 47500
 
+	farm_rgo_size = 0.05
+	mine_rgo_size = 0.05
 	
 	ai_chance = {
 		factor = 1.1
@@ -302,6 +309,8 @@ modern_power_generation = {
 	year = 1925
 	cost = 60000
 	
+	mine_rgo_eff = 0.1
+	farm_rgo_eff = 0.1
 	
 	ai_chance = {
 		factor = 1.1
@@ -730,9 +739,7 @@ mechanized_mining = {
 	rgo_goods_output = {
 		coal = 0.4
 	}
-	rgo_goods_output = {
-		sulphur = 0.25
-	}
+	
 	ai_chance = {
 		factor = 4
 		modifier = {
@@ -744,10 +751,6 @@ mechanized_mining = {
 			big_producer = iron
 		}
 		modifier = {
-			factor = 1.8
-			big_producer = sulphur
-		}
-		modifier = {
 			factor = 2
 			any_owned_province = {
 				produces = coal
@@ -757,12 +760,6 @@ mechanized_mining = {
 			factor = 1.5
 			any_owned_province = {
 				produces = iron
-			}
-		}
-		modifier = {
-			factor = 1.1
-			any_owned_province = {
-				produces = sulphur
 			}
 		}
 		modifier = {
@@ -794,26 +791,8 @@ puddling = {
 	rgo_goods_output = {
 		coal = 0.4
 	}
-	rgo_size = {
-		coal = 0.4
-	}
-	rgo_goods_output = {
-		sulphur = 0.1
-	}
-	rgo_size = {
-		sulphur = 0.2
-	}
 	rgo_goods_output = {
 		iron = 0.3
-	}
-	rgo_size = {
-		iron = 0.2
-	}
-	rgo_size = {
-		copper = 0.2
-	}
-	rgo_size = {
-		tin = 0.2
 	}
 	
 	ai_chance = {
@@ -846,10 +825,6 @@ puddling = {
 			big_producer = steel
 		}
 		modifier = {
-			factor = 1.8
-			big_producer = sulphur
-		}
-		modifier = {
 			factor = 2
 			any_owned_province = {
 				produces = coal
@@ -859,12 +834,6 @@ puddling = {
 			factor = 1.5
 			any_owned_province = {
 				produces = iron
-			}
-		}
-		modifier = {
-			factor = 1.1
-			any_owned_province = {
-				produces = sulphur
 			}
 		}
 
@@ -906,11 +875,9 @@ hot_blast = {
 	area = metallurgy
 	year = 1836
 	cost = 17500
+	
 	rgo_goods_output = {
 		precious_goods = 0.15
-	}
-	rgo_size = {
-		precious_goods = 0.3
 	}
 	rgo_goods_output = {
 		coal = 0.4
@@ -920,15 +887,6 @@ hot_blast = {
 	}
 	rgo_goods_output = {
 		copper = 0.25
-	}
-	rgo_size = {
-		iron = 0.2
-	}
-	rgo_size = {
-		copper = 0.2
-	}
-	rgo_size = {
-		tin = 0.2
 	}
 	
 	ai_chance = {
@@ -957,20 +915,12 @@ hot_blast = {
 			big_producer = steel
 		}
 		modifier = {
-			factor = 1.8
-			big_producer = sulphur
-		}
-		modifier = {
 			factor = 2
 			any_owned_province = { produces = coal }
 		}
 		modifier = {
 			factor = 1.5
 			any_owned_province = { produces = iron }
-		}
-		modifier = {
-			factor = 1.1
-			any_owned_province = { produces = sulphur }
 		}
 		modifier = {
 			factor = 5
@@ -1009,26 +959,21 @@ bessemer_process = {
 	area = metallurgy
 	year = 1850
 	cost = 25000
+	
 	rgo_goods_output = {
 		precious_goods = 0.15
 	}
 	rgo_goods_output = {
 		coal = 0.4
 	}
-	rgo_size = {
-		coal = 0.4
+	rgo_goods_output = {
+		iron = 0.5
 	}
 	rgo_goods_output = {
-		iron = 0.75
-	}
-	rgo_goods_output = {
-		copper = 0.9
+		copper = 0.75
 	}
 	rgo_goods_output = {
 		tin = 0.5
-	}
-	rgo_size = {
-		precious_goods = 0.3
 	}
 	factory_goods_output = {
 		steel = 0.1
@@ -1073,12 +1018,6 @@ bessemer_process = {
 				produces = iron
 			}
 		}
-		modifier = {
-			factor = 1.1
-			any_owned_province = {
-				produces = sulphur
-			}
-		}
 
 		modifier = {
 			factor = 5
@@ -1119,9 +1058,6 @@ advanced_metallurgy = {
 	cost = 35000
 
 	rgo_goods_output = {
-		sulphur = 0.4
-	}
-	rgo_goods_output = {
 		coal = 0.9
 	}
 	rgo_goods_output = {
@@ -1132,12 +1068,6 @@ advanced_metallurgy = {
 	}
 	rgo_goods_output = {
 		tin = 0.5
-	}
-	rgo_size = {
-		sulphur = 0.4
-	}
-	rgo_size = {
-		precious_goods = 0.5
 	}
 	
 	ai_chance = {
@@ -1161,10 +1091,7 @@ advanced_metallurgy = {
 			factor = 3
 			big_producer = iron
 		}
-		modifier = {
-			factor = 1.8
-			big_producer = sulphur
-		}
+		
 		modifier = {
 			factor = 2
 			any_owned_province = {
@@ -1175,12 +1102,6 @@ advanced_metallurgy = {
 			factor = 1.5
 			any_owned_province = {
 				produces = iron
-			}
-		}
-		modifier = {
-			factor = 1.1
-			any_owned_province = {
-				produces = sulphur
 			}
 		}
 		modifier = {
@@ -1225,16 +1146,16 @@ electric_furnace = {
 		steel = 0.05 
 	}
 	rgo_goods_output = {
-		coal = 1
+		coal = 0.5
 	}
 	rgo_goods_output = {
-		iron = 1
+		iron = 0.5
 	}
 	rgo_goods_output = {
-		copper = 1.75
+		copper = 1.5
 	}
 	rgo_goods_output = {
-		tin = 1.5
+		tin = 1
 	}
 	
 	ai_chance = {
@@ -1248,10 +1169,6 @@ electric_furnace = {
 			big_producer = iron
 		}
 		modifier = {
-			factor = 1.4
-			big_producer = sulphur
-		}
-		modifier = {
 			factor = 2
 			any_owned_province = {
 				produces = coal
@@ -1261,12 +1178,6 @@ electric_furnace = {
 			factor = 1.5
 			any_owned_province = {
 				produces = iron
-			}
-		}
-		modifier = {
-			factor = 1.1
-			any_owned_province = {
-				produces = sulphur
 			}
 		}
 		modifier = {
@@ -1307,27 +1218,23 @@ modern_metallurgy = {
 	area = metallurgy
 	year = 1920
 	cost = 60000
+	
 	rgo_goods_output = {
-		coal = 1.5
+		coal = 1
 	}
 	rgo_goods_output = {
-		iron = 1.5
+		iron = 1
 	}
 	rgo_goods_output = {
-		copper = 2.25
+		copper = 1.5
 	}
 	rgo_goods_output = {
-		tin = 1.75
+		tin = 1
 	}
 	factory_goods_output = {
 		steel = 0.05 
 	}
-	rgo_goods_output = {
-		oil = 1.5
-	}
-	rgo_goods_output = {
-		sulphur = 1.5
-	}
+	
 	ai_chance = {
 		factor = 2
 		modifier = {
@@ -1354,7 +1261,6 @@ modern_metallurgy = {
 				produces = iron
 				produces = coal
 				produces = oil
-				big_producer = sulphur
 				big_producer = steel
 			}
 		}
@@ -1718,6 +1624,9 @@ basic_chemistry = {
 	cost = 5000
 
 	supply_limit = 0.25
+	rgo_goods_output = {
+		sulphur = 0.25
+	}
 	
 	activate_building = fertilizer_factory 
 	ai_chance = {
@@ -1756,6 +1665,10 @@ medicine = {
 		modifier = {
 			factor = 1.03
 			tech_school = army_tech_school
+		}
+		modifier = {
+			factor = 1.8
+			big_producer = sulphur
 		}
 	}
 }
@@ -1912,7 +1825,7 @@ electricity = {
 }
 synthetic_polymers = {
 	area = chemistry_and_electricity
-	year = 1910
+	year = 1900
 	cost = 47500
 
 	supply_limit = 0.50

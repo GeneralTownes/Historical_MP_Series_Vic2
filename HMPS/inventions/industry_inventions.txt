@@ -1649,6 +1649,9 @@ haber_process = {
 	}
 	effect = {
 		activate_building = synthetic_sulphur_factory
+		rgo_goods_output = {
+			sulphur = 0.5
+		}
 	}
 }
 carl_bosch = {
@@ -1674,10 +1677,32 @@ carl_bosch = {
 	}
 }
 
-#early_electrical_telegraph = {
-#	limit = { high_pressure_steam_engine = 1 }
-#		chance = { base = 1 }
-#		
-#	effect = {  }
-#}
+steel_oil_derricks = {
+	limit = { synthetic_polymers = 1 }
+	chance = { base = 5 }
+	effect = {
+		rgo_goods_output = {
+			oil = 0.5
+		}
+	}
+}
 
+blowout_preventer = {
+	limit = { modern_chemistry = 1 }
+	chance = { base = 5 }
+	effect = {
+		rgo_goods_output = {
+			oil = 1
+		}
+	}
+}
+
+frasch_process = {
+	limit = { synthetic_polymers = 1 }
+	chance = { base = 5 }
+	effect = {
+		rgo_goods_output = {
+			sulphur = 1
+		}
+	}
+}
