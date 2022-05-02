@@ -322,6 +322,8 @@ country_event = {
 		name = "Checking..."
 		
 		#custom flags for HMPS assimilation monthly update
+		
+		#germany
 		random_owned = {
 			limit = { owner = { GER = { accepted_culture = south_german } } }
 			owner = { GER = { set_country_flag = accepts_south_german } }
@@ -338,6 +340,8 @@ country_event = {
 			limit = { owner = { GER = { NOT = { accepted_culture = north_german } } } }
 			owner = { GER = { clr_country_flag = accepts_north_german } }
 		}
+		
+		#italy
 		random_owned = {
 			limit = { owner = { ITA = { accepted_culture = south_italian } } }
 			owner = { ITA = { set_country_flag = accepts_south_italian } }
@@ -353,6 +357,106 @@ country_event = {
 		random_owned = {
 			limit = { owner = { ITA = { NOT = { accepted_culture = north_italian } } } }
 			owner = { ITA = { clr_country_flag = accepts_north_italian } }
+		}
+		
+		#north america
+		random_owned = {
+			limit = { owner = { USA = { accepted_culture = yankee } } }
+			owner = { USA = { set_country_flag = accepts_yankee } }
+		}
+		random_owned = {
+			limit = { owner = { USA = { NOT = { accepted_culture = yankee } } } }
+			owner = { USA = { clr_country_flag = accepts_yankee } }
+		}
+		random_owned = {
+			limit = { owner = { USA = { accepted_culture = dixie } } }
+			owner = { USA = { set_country_flag = accepts_dixie } }
+		}
+		random_owned = {
+			limit = { owner = { USA = { NOT = { accepted_culture = dixie } } } }
+			owner = { USA = { clr_country_flag = accepts_dixie } }
+		}
+		
+		#china
+		random_owned = {
+			limit = { owner = { CHI = { accepted_culture = beifaren } } }
+			owner = { CHI = { set_country_flag = accepts_beifaren } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { NOT = { accepted_culture = beifaren } } } }
+			owner = { CHI = { clr_country_flag = accepts_beifaren } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { accepted_culture = nanfaren } } }
+			owner = { CHI = { set_country_flag = accepts_nanfaren } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { NOT = { accepted_culture = nanfaren } } } }
+			owner = { CHI = { clr_country_flag = accepts_nanfaren } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { accepted_culture = manchu } } }
+			owner = { CHI = { set_country_flag = accepts_manchu } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { NOT = { accepted_culture = manchu } } } }
+			owner = { CHI = { clr_country_flag = accepts_manchu } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { accepted_culture = hakka } } }
+			owner = { CHI = { set_country_flag = accepts_hakka } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { NOT = { accepted_culture = hakka } } } }
+			owner = { CHI = { clr_country_flag = accepts_hakka } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { accepted_culture = miao } } }
+			owner = { CHI = { set_country_flag = accepts_miao } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { NOT = { accepted_culture = miao } } } }
+			owner = { CHI = { clr_country_flag = accepts_miao } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { accepted_culture = min } } }
+			owner = { CHI = { set_country_flag = accepts_min } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { NOT = { accepted_culture = min } } } }
+			owner = { CHI = { clr_country_flag = accepts_min } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { accepted_culture = zhuang } } }
+			owner = { CHI = { set_country_flag = accepts_zhuang } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { NOT = { accepted_culture = zhuang } } } }
+			owner = { CHI = { clr_country_flag = accepts_zhuang } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { accepted_culture = yue } } }
+			owner = { CHI = { set_country_flag = accepts_yue } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { NOT = { accepted_culture = yue } } } }
+			owner = { CHI = { clr_country_flag = accepts_yue } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { accepted_culture = yi } } }
+			owner = { CHI = { set_country_flag = accepts_yi } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { NOT = { accepted_culture = yi } } } }
+			owner = { CHI = { clr_country_flag = accepts_yi } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { accepted_culture = hanhui } } }
+			owner = { CHI = { set_country_flag = accepts_hanhui } }
+		}
+		random_owned = {
+			limit = { owner = { CHI = { NOT = { accepted_culture = hanhui } } } }
+			owner = { CHI = { clr_country_flag = accepts_hanhui } }
 		}
 		
 		#cleanup vassals with nonexistent overlords

@@ -1068,6 +1068,102 @@ assimilation_chance = {
 					}
 				}
 			}
+			AND = {
+				has_pop_culture = yankee
+				location = {
+					any_core = {
+						has_country_flag = accepts_yankee
+					}
+				}
+			}
+			AND = {
+				has_pop_culture = dixie
+				location = {
+					any_core = {
+						has_country_flag = accepts_dixie
+					}
+				}
+			}
+			AND = {
+				has_pop_culture = beifaren
+				location = {
+					any_core = {
+						has_country_flag = accepts_beifaren
+					}
+				}
+			}
+			AND = {
+				has_pop_culture = nanfaren
+				location = {
+					any_core = {
+						has_country_flag = accepts_nanfaren
+					}
+				}
+			}
+			AND = {
+				has_pop_culture = manchu
+				location = {
+					any_core = {
+						has_country_flag = accepts_manchu
+					}
+				}
+			}
+			AND = {
+				has_pop_culture = hakka
+				location = {
+					any_core = {
+						has_country_flag = accepts_hakka
+					}
+				}
+			}
+			AND = {
+				has_pop_culture = miao
+				location = {
+					any_core = {
+						has_country_flag = accepts_miao
+					}
+				}
+			}
+			AND = {
+				has_pop_culture = min
+				location = {
+					any_core = {
+						has_country_flag = accepts_min
+					}
+				}
+			}
+			AND = {
+				has_pop_culture = zhuang
+				location = {
+					any_core = {
+						has_country_flag = accepts_zhuang
+					}
+				}
+			}
+			AND = {
+				has_pop_culture = yue
+				location = {
+					any_core = {
+						has_country_flag = accepts_yue
+					}
+				}
+			}
+			AND = {
+				has_pop_culture = yi
+				location = {
+					any_core = {
+						has_country_flag = accepts_yi
+					}
+				}
+			}
+			AND = {
+				has_pop_culture = hanhui
+				location = {
+					any_core = {
+						has_country_flag = accepts_hanhui
+					}
+				}
+			}
 		}
 		OR = {
 			country = { citizens_rights = primary_culture_only }
