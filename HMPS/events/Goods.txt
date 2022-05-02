@@ -409,7 +409,6 @@ province_event = {
 	id = 1107
 
 	trigger = {
-		year = 1880
 		NOT = { has_province_modifier = switched_production }
 		or = {
 			province_id = 1354
@@ -460,7 +459,7 @@ province_event = {
 			owner = { any_owned_province = { has_building = aeroplane_factory } }
 			owner = { any_owned_province = { has_building = automobile_factory } }
 			owner = { any_owned_province = { has_building = electric_gear_factory } }
-			year = 1900
+			year = 1880
 		}
 	}
 
@@ -485,7 +484,6 @@ province_event = {
 	id = 1108
 
 	trigger = {
-		year = 1890
 		NOT = { has_province_modifier = switched_production }
 		or = {
 			province_id = 1926
@@ -524,7 +522,7 @@ province_event = {
 			owner = { any_owned_province = { has_building = aeroplane_factory } }
 			owner = { any_owned_province = { has_building = automobile_factory } }
 			owner = { any_owned_province = { has_building = electric_gear_factory } }
-			year = 1900
+			year = 1890
 		}
 	}
 
