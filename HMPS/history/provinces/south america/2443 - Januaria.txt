@@ -1,6 +1,6 @@
 owner = BRZ
 controller = BRZ
 add_core = BRZ
-trade_goods = fruit
+trade_goods = precious_goods
 terrain = dryhills
 life_rating = 35
