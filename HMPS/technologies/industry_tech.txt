@@ -804,7 +804,7 @@ puddling = {
 		sulphur = 0.2
 	}
 	rgo_goods_output = {
-		iron = 0.25
+		iron = 0.3
 	}
 	rgo_size = {
 		iron = 0.2
@@ -913,10 +913,10 @@ hot_blast = {
 		precious_goods = 0.3
 	}
 	rgo_goods_output = {
-		coal = 0.5
+		coal = 0.4
 	}
 	rgo_goods_output = {
-		iron = 0.25
+		iron = 0.4
 	}
 	rgo_goods_output = {
 		copper = 0.25

@@ -200,7 +200,7 @@ Many nations no longer need (only) GP for flava, or high prestige. War policy re
 #### Grants
 - Standard Money Transfer options
 #### Infamy Transfers
-- Like grants, but limited to GPs or cpital on the same continent
+- Like grants, but limited to GPs or capital on the same continent
 - Take for ally CB
 #### Land Transfers
 - State
