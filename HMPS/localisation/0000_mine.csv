@@ -800,3 +800,5 @@ blowout_preventer;Blowout Prevention;;;;;;;;;;;;;
 blowout_preventer_desc;A blowout preventer is a specialized valve or similar mechanical device, used to seal, control and monitor oil and gas wells to prevent blowouts, the uncontrolled release of crude oil or natural gas from a well. They are usually installed in stacks of other valves.;;;;;;;;;;;;;
 frasch_process;Frasch Process;;;;;;;;;;;;;
 frasch_process_desc;The Frasch process is a method to extract sulfur from underground deposits. It is the only industrial method of recovering sulfur from elemental deposits.;;;;;;;;;;;;;
+PROV3306;Tangshan;;;;;;;;;;;;;
+PROV3307;Kalgan;;;;;;;;;;;;;
