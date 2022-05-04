@@ -829,7 +829,7 @@ CHI_1557 = { 1557 1558 1556 } #Kokonor/Qinghai
 
 CHI_1559 = { 1559 1561 1562 2062 } #Shaanxi
 
-CHI_1563 = { 1563 1564 1568 1571 1566 } #West Shandong
+CHI_1563 = { 1563 1564 1568 1571 1566 3309 } #West Shandong
 
 CHI_1565 = { 1565 1567 1569 1570 } #East Shandong
 
@@ -851,7 +851,7 @@ CHI_1610 = { 1610 1607 1611 } #South Zhejiang
 
 CHI_1612 = { 1612 1614 1615 1618 } #Baoding
 
-CHI_1616 = { 1616 1613 1617 3249 3306 3307 } #Peking
+CHI_1616 = { 1616 1613 1617 3249 3306 3307 3308 } #Peking
 
 
 ### Japan & Korea

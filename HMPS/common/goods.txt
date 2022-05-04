@@ -195,7 +195,7 @@ consumer_goods = {
 		color = { 100 69 30 }
 	}
 	tea = {	
-		cost = 9
+		cost = 11
 		color = { 201 135 15 }
 	}
 	coffee = { 

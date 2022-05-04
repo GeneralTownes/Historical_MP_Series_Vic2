@@ -968,7 +968,7 @@ RGO_template_labourers = {
 cattle_ranch = {
 	template = RGO_template_farmers
 	output_goods = cattle 
-	value = 2.4
+	value = 2.6
 	farm = yes
 }
 
@@ -1052,7 +1052,7 @@ opium_plantation = {
 orchard = {
 	template = RGO_template_farmers
 	output_goods = fruit 
-	value = 3.4
+	value = 3.8
 	farm = yes
 }
 
@@ -1094,14 +1094,14 @@ sulphur_mine = {
 tea_plantation = {
 	template = RGO_template_farmers
 	output_goods = tea 
-	value = 1
+	value = 0.75
 	farm = yes
 }
 
 timber_lodge = {
 	template = RGO_template_labourers
 	output_goods = timber 
-	value = 14
+	value = 15
 	farm = yes
 }
 

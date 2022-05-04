@@ -1010,6 +1010,7 @@ country_event = {
 						province_id = 1511
 						province_id = 1515
 						province_id = 1563
+						province_id = 3309
 						province_id = 1570
 						
 						### The Yangtze River

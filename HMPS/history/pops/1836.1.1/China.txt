@@ -9665,7 +9665,8 @@
 }
 #Shandong Region (28572000)
 #under the rule of China in 1836
-#Jinan (5916000/1479000 POPS)
+#Jinan & Liaocheng (5916000/1479000 POPS)
+#Jinan
 1563 = {
 	aristocrats = {
 		culture = beifaren
@@ -9688,55 +9689,55 @@
 	clergymen = {
 		culture = beifaren
 		religion = mahayana
-		size = 14100
+		size = 10000
 	}
 
 	artisans = {
 		culture = beifaren
 		religion = mahayana
-		size = 11000
+		size = 8000
 	}
 	
 	artisans = {
 		culture = beifaren
 		religion = mahayana
-		size = 11000
+		size = 8000
 	}
 	
 	artisans = {
 		culture = beifaren
 		religion = mahayana
-		size = 11000
+		size = 8000
 	}
 	
 	artisans = {
 		culture = beifaren
 		religion = mahayana
-		size = 11000
+		size = 8000
 	}
 	
 	artisans = {
 		culture = beifaren
 		religion = mahayana
-		size = 11000
+		size = 8000
 	}
 	
 	artisans = {
 		culture = beifaren
 		religion = mahayana
-		size = 11000
+		size = 8000
 	}
 	
 	artisans = {
 		culture = beifaren
 		religion = mahayana
-		size = 11000
+		size = 8000
 	}
 	
 	artisans = {
 		culture = beifaren
 		religion = mahayana
-		size = 400
+		size = 250
 	}
 
 	soldiers = {
@@ -9760,13 +9761,13 @@
 	farmers = {
 		culture = beifaren
 		religion = mahayana
-		size = 1165600
+		size = 765600
 	}
 	
 	serfs = {
 		culture = beifaren
 		religion = mahayana
-		size = 100000
+		size = 60000
 	}
 
 	aristocrats = {
@@ -9778,13 +9779,13 @@
 	clergymen = {
 		culture = hanhui
 		religion = sunni
-		size = 700
+		size = 450
 	}
 
 	artisans = {
 		culture = hanhui
 		religion = sunni
-		size = 3550
+		size = 2550
 	}
 
 	soldiers = {
@@ -9796,7 +9797,7 @@
 	farmers = {
 		culture = hanhui
 		religion = sunni
-		size = 64625
+		size = 44625
 	}
 
 	bureaucrats = {
@@ -9815,6 +9816,92 @@
 		culture = manchu
 		religion = mahayana
 		size = 1500
+	}
+}
+#Liaocheng without capital-only pops
+3309 = {
+	clergymen = {
+		culture = beifaren
+		religion = mahayana
+		size = 4100
+	}
+
+	artisans = {
+		culture = beifaren
+		religion = mahayana
+		size = 3000
+	}
+	
+	artisans = {
+		culture = beifaren
+		religion = mahayana
+		size = 3000
+	}
+	
+	artisans = {
+		culture = beifaren
+		religion = mahayana
+		size = 3000
+	}
+	
+	artisans = {
+		culture = beifaren
+		religion = mahayana
+		size = 3000
+	}
+	
+	artisans = {
+		culture = beifaren
+		religion = mahayana
+		size = 3000
+	}
+	
+	artisans = {
+		culture = beifaren
+		religion = mahayana
+		size = 3000
+	}
+	
+	artisans = {
+		culture = beifaren
+		religion = mahayana
+		size = 3000
+	}
+	
+	artisans = {
+		culture = beifaren
+		religion = mahayana
+		size = 150
+	}
+
+	farmers = {
+		culture = beifaren
+		religion = mahayana
+		size = 400000
+	}
+	
+	serfs = {
+		culture = beifaren
+		religion = mahayana
+		size = 40000
+	}
+
+	clergymen = {
+		culture = hanhui
+		religion = sunni
+		size = 250
+	}
+
+	artisans = {
+		culture = hanhui
+		religion = sunni
+		size = 1000
+	}
+
+	farmers = {
+		culture = hanhui
+		religion = sunni
+		size = 20000
 	}
 }
 #Caozhou (3704000/926000 POPS)
@@ -13665,7 +13752,8 @@
 	}
 }
 
-#Tianjin (5964000/1491000 POPS)
+#Tianjin & Cangzhou (5964000/1491000 POPS)
+#Tianjin
 1617 = {
 	aristocrats = {
 		culture = beifaren
@@ -13676,13 +13764,13 @@
 	clergymen = {
 		culture = beifaren
 		religion = mahayana
-		size = 14525
+		size = 7525
 	}
 
 	artisans = {
 		culture = beifaren
 		religion = mahayana
-		size = 79600
+		size = 59000
 	}
 
 	soldiers = {
@@ -13694,13 +13782,13 @@
 	farmers = {
 		culture = beifaren
 		religion = mahayana
-		size = 1221325
+		size = 621325
 	}
 	
 	serfs = {
 		culture = beifaren
 		religion = mahayana
-		size = 100000
+		size = 50000
 	}
 
 	aristocrats = {
@@ -13712,13 +13800,13 @@
 	clergymen = {
 		culture = hanhui
 		religion = sunni
-		size = 400
+		size = 250
 	}
 
 	artisans = {
 		culture = hanhui
 		religion = sunni
-		size = 1950
+		size = 1450
 	}
 
 	soldiers = {
@@ -13730,7 +13818,50 @@
 	farmers = {
 		culture = hanhui
 		religion = sunni
-		size = 35500
+		size = 20500
+	}
+}
+#Cangzhou #no capital-only pops
+3308 = {
+	clergymen = {
+		culture = beifaren
+		religion = mahayana
+		size = 7000
+	}
+
+	artisans = {
+		culture = beifaren
+		religion = mahayana
+		size = 20600
+	}
+	farmers = {
+		culture = beifaren
+		religion = mahayana
+		size = 621325
+	}
+	
+	serfs = {
+		culture = beifaren
+		religion = mahayana
+		size = 50000
+	}
+	
+	clergymen = {
+		culture = hanhui
+		religion = sunni
+		size = 150
+	}
+
+	artisans = {
+		culture = hanhui
+		religion = sunni
+		size = 500
+	}
+
+	farmers = {
+		culture = hanhui
+		religion = sunni
+		size = 15000
 	}
 }
 #Zhongding (5240000/1310000 POPS)
