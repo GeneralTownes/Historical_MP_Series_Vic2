@@ -67,6 +67,8 @@ great_war_install_fascism
 great_war_install_communism
 uninstall_communist_gov_cb
 install_democracy
+install_radical_democracy
+install_absolute_monarchy
 install_fascism
 install_communism
 unification_humiliate_cb
@@ -1663,6 +1665,7 @@ steal_puppet = {
 		}
 		num_of_vassals_no_substates = 1
 		THIS = { NOT = { has_country_modifier = neutrality } }
+		NOT = { has_country_modifier = neutrality }
 		OR = {
 			war_with = THIS
 			THIS = { NOT = { has_country_modifier = no_more_war } }
@@ -5041,7 +5044,7 @@ demand_concession_CHI_casus_belli = {
 	sprite_index = 7
 	is_triggered_only = yes
 	months = 0
-	construction_speed = 1.2
+	construction_speed = 1
 	crisis = no
 		
 	badboy_factor = 2
@@ -5153,7 +5156,7 @@ demand_concession_casus_belli = {
 	sprite_index = 7
 	is_triggered_only = yes
 	months = 0
-	construction_speed = 1.2
+	construction_speed = 1
 	crisis = no
 		
 	badboy_factor = 1.5
@@ -5309,7 +5312,7 @@ demand_concession_NI_casus_belli = {
 	months = 0
 	crisis = no
 	
-	construction_speed = 1.2
+	construction_speed = 1
 	
 	badboy_factor = 1
 	prestige_factor = 1
@@ -5447,7 +5450,7 @@ demand_concession_BC_casus_belli = {
 	months = 0
 	crisis = no
 	
-	construction_speed = 1.2
+	construction_speed = 1
 	
 	badboy_factor = 0.5
 	prestige_factor = 1
@@ -7168,7 +7171,7 @@ great_war_install_democracy = {
 	sprite_index = 19
 	is_triggered_only = yes
 	months = 12
-	construction_speed = 1.5
+	construction_speed = 1
 	crisis = no
 
 	badboy_factor = 0
@@ -7228,7 +7231,7 @@ great_war_install_fascism = {
 	sprite_index = 17
 	is_triggered_only = yes
 	months = 12
-	construction_speed = 1.5
+	construction_speed = 1
 	crisis = no
 
 	badboy_factor = 0
@@ -7282,7 +7285,7 @@ great_war_install_communism = {
 	sprite_index = 12
 	is_triggered_only = yes
 	months = 12
-	construction_speed = 1.5
+	construction_speed = 1
 	crisis = no
 
 	badboy_factor = 0
@@ -7337,7 +7340,7 @@ install_democracy = {
 	sprite_index = 19
 	is_triggered_only = yes
 	months = 12
-	construction_speed = 1.5
+	construction_speed = 1
 	crisis = no
 
 	badboy_factor = 1.5
@@ -7417,11 +7420,10 @@ install_radical_democracy = {
 	sprite_index = 38
 	is_triggered_only = yes
 	months = 12
-	construction_speed = 1.5
+	construction_speed = 1
 	crisis = no
-	always = yes
 
-	badboy_factor = 0
+	badboy_factor = 5
 	prestige_factor = 1
 	peace_cost_factor = 50
 	penalty_factor = 1
@@ -7446,8 +7448,25 @@ install_radical_democracy = {
 			government = democracy
 			ruling_party_ideology = radical
 		}
-		NOT = { year = 1871 }
-		neighbour = THIS
+		OR = {
+			THIS = { revolution_n_counterrevolution = 1 }
+			AND = {
+				capital_scope = { continent = europe }
+				THIS = { capital_scope = { continent = europe } }
+			}
+			AND = {
+				capital_scope = { continent = asia }
+				THIS = { capital_scope = { continent = asia } }
+			}
+			AND = {
+				capital_scope = { continent = north_america }
+				THIS = { capital_scope = { continent = north_america } }
+			}
+			AND = {
+				capital_scope = { continent = south_america }
+				THIS = { capital_scope = { continent = south_america } }
+			}
+		}
 	}
 	
 	po_remove_prestige = yes
@@ -7460,7 +7479,6 @@ install_radical_democracy = {
 			to = pro_military
 			value = 0.05
 		}
-		badboy = 7
 	}
 	
 	on_po_accepted = {
@@ -7480,11 +7498,108 @@ install_radical_democracy = {
 	}
 }
 
+install_absolute_monarchy = {
+sprite_index = 26
+	is_triggered_only = yes
+	months = 12
+	construction_speed = 1
+	crisis = no
+
+	badboy_factor = 5
+	prestige_factor = 1
+	peace_cost_factor = 50
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 48
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		is_vassal = no
+		civilized = yes
+		NOT = { is_our_vassal = THIS }
+		NOT = { government = absolute_monarchy }
+		NOT = { government = prussian_constitutionalism }
+		NOT = { government = hms_government }
+		THIS = {
+			NOT = { has_country_modifier = neutrality }
+			ai = no
+		}
+		OR = {
+			AND = {
+				THIS = { government = absolute_monarchy }
+				THIS = { ruling_party_ideology = reactionary }
+			}
+			AND = {
+				government = democracy
+				ruling_party_ideology = radical
+				OR = {
+					THIS = { government = absolute_monarchy }
+					THIS = { government = prussian_constitutionalism }
+					THIS = { government = hms_government }
+				}
+			}
+		}
+		OR = {
+			THIS = { revolution_n_counterrevolution = 1 }
+			AND = {
+				capital_scope = { continent = europe }
+				THIS = { capital_scope = { continent = europe } }
+			}
+			AND = {
+				capital_scope = { continent = asia }
+				THIS = { capital_scope = { continent = asia } }
+			}
+			AND = {
+				capital_scope = { continent = north_america }
+				THIS = { capital_scope = { continent = north_america } }
+			}
+			AND = {
+				capital_scope = { continent = south_america }
+				THIS = { capital_scope = { continent = south_america } }
+			}
+		}
+	}
+	
+	po_remove_prestige = yes
+
+	war_name = ABSOLUTE_MONARCHY_WAR_NAME
+	
+	on_add = {
+		move_issue_percentage = {
+			from = jingoism 
+			to = pro_military
+			value = 0.05
+		}
+	}
+	
+	on_po_accepted = {
+		THIS = {
+			any_country = {
+				limit = {
+					OR = {
+						NOT = { government = absolute_monarchy }
+						NOT = { government = prussian_constitutionalism }
+						NOT = { government = hms_government }
+					}
+				}
+				relation = { who = THIS value = -50 }
+			}
+		}
+		country_event = 960852
+	}
+}
+
 install_fascism = {
 	sprite_index = 17
 	is_triggered_only = yes
 	months = 12
-	construction_speed = 1.5
+	construction_speed = 1
 	crisis = no
 
 	badboy_factor = 2
@@ -7558,7 +7673,7 @@ install_communism = {
 	sprite_index = 12
 	is_triggered_only = yes
 	months = 12
-	construction_speed = 1.5
+	construction_speed = 1
 	crisis = no
 
 	badboy_factor = 2

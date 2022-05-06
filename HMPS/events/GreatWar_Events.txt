@@ -8089,13 +8089,6 @@ country_event = {
 				factor = -4
 			}
 		}
-		
-		any_country = {
-			limit = {
-				war_with = THIS
-			}
-			end_war = THIS	
-		}
 	}
 }
 
@@ -8182,12 +8175,64 @@ country_event = {
 				factor = -4
 			}
 		}
+	}
+}
+
+country_event = {
+	id = 960852
+	title = "EVTNAME960852" #Absolute Monarchy
+	desc = "EVTDESC960852"
+	news = yes
+	news_title = "EVTNAME960852_NEWS_TITLE"
+	news_desc_long = "EVTDESC960852_NEWS_LONG"
+	news_desc_medium = "EVTDESC960852_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC960852_NEWS_SHORT"
+	picture = "unite"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA96085" #We welcome the new regime.
+		government = absolute_monarchy
+		ruling_party_ideology = reactionary
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = state_controlled
+		political_reform = underground_parties
+		political_reform = primary_culture_only
+		political_reform = mandatory_service
+		clr_country_flag = communist_gov
+		set_country_flag = absolute_monarchy_gov
+		clr_country_flag = semi_constitutional_monarchy_gov
+		clr_country_flag = constitutional_monarchy_gov
+		clr_country_flag = democracy_gov
+		clr_country_flag = presidential_dictatorship_gov
+		clr_country_flag = fascist_gov
+		clr_country_flag = anarcho_liberal_gov
 		
-		any_country = {
-			limit = {
-				war_with = THIS
+		any_pop = {
+			scaled_militancy = {
+				ideology = socialist
+				factor = 6
 			}
-			end_war = THIS	
+			scaled_militancy = {
+				ideology = liberal
+				factor = 6
+			}
+			scaled_militancy = {
+				ideology = radical
+				factor = 6
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = -4
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = -4
+			}
 		}
 	}
 }

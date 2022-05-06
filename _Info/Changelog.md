@@ -60,6 +60,7 @@ Everything else is our own (as far as I remember).
 - Military access CB (~week justification), the war is the access
 - Mass conquest if a dictatorship form with Mass Politics
 - 10 infamy demand chinese concession (East Asia countries need breech loaded & naval statistics, everyone else needs machine guns & naval logistics/be Russia/be Iran)
+- Radical republics and Absolute monarchies can enforce gov types on the other gov type
 #### Revanchism
 - Army & mob buff modifiers scale with % of revanchism (capped at 50%)
 #### Releasables

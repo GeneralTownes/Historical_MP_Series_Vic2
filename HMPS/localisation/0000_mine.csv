@@ -804,3 +804,7 @@ PROV3306;Tangshan;;;;;;;;;;;;;
 PROV3307;Kalgan;;;;;;;;;;;;;
 PROV3308;Cangzhou;;;;;;;;;;;;;
 PROV3309;Liaocheng;;;;;;;;;;;;;
+EVTNAME960852_NEWS_TITLE;$COUNTRY_ADJ$ Democracy;;;;;;;;;;;;;
+EVTDESC960852_NEWS_LONG;With coronation organisation already underway in $COUNTRY$, it has become clear that the $FROMCOUNTRY$-supported monarchichal government is here to stay—at least for the time being. While not everyone in $COUNTRY$ is thrilled at the idea of their monarch being imposed on them by an enemy country, some are nevertheless overjoyed.;;;;;;;;;;;;;
+EVTDESC960852_NEWS_MEDIUM;With coronation organisation already underway in $COUNTRY$, it has become clear that the $FROMCOUNTRY$-supported monarchichal government is here to stay—at least for the time being. While not everyone in $COUNTRY$ is thrilled at the idea of their monarch being imposed on them by an enemy country, some are nevertheless overjoyed.;;;;;;;;;;;;;
+EVTDESC960852_NEWS_SHORT;With coronation organisation already underway in $COUNTRY$, it has become clear that the $FROMCOUNTRY$-supported monarchichal government is here to stay—at least for the time being.;;;;;;;;;;;;;
