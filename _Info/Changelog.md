@@ -139,6 +139,7 @@ Soldier pops concentrate in state capitals, requires 3k soldier pops for 1st bri
 - Submarines: Torpedo attack & high evasion
 #### Tech
 - Heavy Armament: Greatly buffed artillery attack
+- Light Armament: Gives Infantry & Guard discipline increases
 - Submarines scale greatly with 1900+ tech
 #### Combat Width & Supply
 - Brigades are 5k
