@@ -1653,6 +1653,83 @@ country_event = {
 	option = {
 		name = "Checking..."
 		
+		#reactionary upper house
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = { ruling_party_ideology = reactionary }
+			}
+			clr_country_flag = buffed_reactionary_uh
+			clr_country_flag = buffed_reactionary_uh_2
+			clr_country_flag = buffed_reactionary_uh_3
+			clr_country_flag = buffed_reactionary_uh_4
+			clr_country_flag = buffed_reactionary_uh_5
+			remove_country_modifier = reactionary_uh_increased
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				ruling_party_ideology = reactionary
+				has_country_flag = buffed_reactionary_uh_5
+			}
+			upper_house = {
+				ideology = reactionary
+				value = 0.5
+			}
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				ruling_party_ideology = reactionary
+				has_country_flag = buffed_reactionary_uh_4
+			}
+			clr_country_flag = buffed_reactionary_uh_4
+			upper_house = {
+				ideology = reactionary
+				value = 0.4
+			}
+			set_country_flag = buffed_reactionary_uh_5
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				ruling_party_ideology = reactionary
+				has_country_flag = buffed_reactionary_uh_3
+			}
+			clr_country_flag = buffed_reactionary_uh_3
+			upper_house = {
+				ideology = reactionary
+				value = 0.3
+			}
+			set_country_flag = buffed_reactionary_uh_4
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				ruling_party_ideology = reactionary
+				has_country_flag = buffed_reactionary_uh_2
+			}
+			clr_country_flag = buffed_reactionary_uh_2
+			upper_house = {
+				ideology = reactionary
+				value = 0.2
+			}
+			set_country_flag = buffed_reactionary_uh_3
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				ruling_party_ideology = reactionary
+				has_country_flag = buffed_reactionary_uh
+			}
+			clr_country_flag = buffed_reactionary_uh
+			upper_house = {
+				ideology = reactionary
+				value = 0.1
+			}
+			set_country_flag = buffed_reactionary_uh_2
+		}
+		
 		#literacy decay
 		any_country = {
             limit = {

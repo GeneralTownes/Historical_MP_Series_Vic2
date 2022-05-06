@@ -1,0 +1,96 @@
+political_decisions = {
+	proclaim_republic = {
+		picture = provincia_britannia
+		potential = {
+			OR = {
+				government = french_bourbon 
+				government = hms_government
+			}
+			NOT = { has_country_flag = hiding_the_decisions }
+		}
+		allow = {
+			war = no
+			vote_franschise = universal_voting
+			political_parties = secret_ballots
+			press_rights = free_press
+			public_meetings = yes_meeting
+			is_vassal = no
+		}
+		effect = { 
+			government = democracy
+			set_country_flag = republic_proclaimed
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	debate_me = {
+		picture = provincia_britannia
+		potential = {
+			OR = {
+				government = democracy
+				government = bourgeois_dictatorship
+			}
+			civilized = yes
+			NOT = { has_country_flag = hiding_the_decisions }
+		}
+		allow = {
+			war = no
+			NOT = { has_country_modifier = nv_cooldown }
+			state_n_government = 1
+		}
+		effect = {
+			country_event = 7777919
+		}
+	}
+	reactionary_uh_increase = {
+		picture = alexander_emancipating
+		potential = {
+			ai = no
+			ruling_party_ideology = reactionary
+			NOT = { has_country_flag  = buffed_reactionary_uh }
+			NOT = { has_country_flag = hiding_the_decisions }
+		}
+		allow = {
+			state_n_government = 1
+		}
+		effect = {
+			set_country_flag = buffed_reactionary_uh
+			upper_house = {
+				ideology = reactionary
+				value = 0.1
+			}
+			add_country_modifier = {
+				name = reactionary_uh_increased
+				duration = -1
+			}
+		}
+	}
+	dictatorship_to_monarchy = {
+		picture = abdul_hamid_ii
+		potential = {
+			ai = no
+			government = presidential_dictatorship
+			NOT = { has_country_flag = hiding_the_decisions }
+		}
+		allow = {
+			state_n_government = 1
+			vote_franschise = none_voting
+			political_parties = underground_parties
+			press_rights = state_press
+			public_meetings = no_meeting
+			is_vassal = no
+		}
+		effect = {
+			government = absolute_monarchy
+			add_country_modifier = {
+				name = national_confusion
+				duration = 730
+			}
+			add_country_modifier = {
+				name = global_liberal_agitation
+				duration = 1825
+			}
+		}
+	}
+}
