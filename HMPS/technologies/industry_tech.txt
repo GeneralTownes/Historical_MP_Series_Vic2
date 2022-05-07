@@ -160,7 +160,7 @@ steam_turbine = {
 
 	farm_rgo_eff = 0.05
 	farm_rgo_size = 0.2
-	mine_rgo_eff = 0.1
+	mine_rgo_eff = 0.05
 	mine_rgo_size = 0.2
 	
 	ai_chance = {
