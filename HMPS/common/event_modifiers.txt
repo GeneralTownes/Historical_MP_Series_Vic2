@@ -382,11 +382,8 @@ monthly_payment_made = {
 }
 
 total_reform = {
-	education_efficiency_modifier = 0.4
-	administrative_efficiency_modifier = 0.2
-	land_organisation = 0.05
-	land_unit_start_experience = 0.5
-	mobilisation_size = 0.01
+	education_efficiency_modifier = 0.2
+	administrative_efficiency_modifier = 0.1
 	icon = 3
 }
 

@@ -736,16 +736,16 @@ country_event = {
 			secede_province = RUS
 		}
 		ai_chance = {
-			factor = 85
-			modifier = {
-				factor = 0.5
-				NOT = { war_exhaustion = 10 }
-				1082 = { owner = { part_of_sphere = no } }
-			}
-			modifier = {
-				factor = 0.75
-				NOT = { war_exhaustion = 5 }
-			}
+			factor = 100 #85
+			#modifier = {
+			#	factor = 0.5
+			#	NOT = { war_exhaustion = 10 }
+			#	1082 = { owner = { part_of_sphere = no } }
+			#}
+			#modifier = {
+			#	factor = 0.75
+			#	NOT = { war_exhaustion = 5 }
+			#}
 		}
 	}
 	
@@ -768,24 +768,24 @@ country_event = {
 		any_owned = { limit = { is_core = MCK } add_core = QNG }
 		
 		ai_chance = {
-			factor = 20
-			modifier = {
-				factor = 1.1
-				NOT = { war_exhaustion = 25 }
-				1082 = { owner = { part_of_sphere = no } }
-			}
-			modifier = {
-				factor = 0.5
-				any_greater_power = { war_with = THIS }
-			}
-			modifier = {
-				factor = 0
-				national_provinces_occupied = 0.25
-			}
-			modifier = {
-				factor = 0.5
-				war_exhaustion = 25
-			}
+			factor = 0 #20
+			#modifier = {
+			#	factor = 1.1
+			#	NOT = { war_exhaustion = 25 }
+			#	1082 = { owner = { part_of_sphere = no } }
+			#}
+			#modifier = {
+			#	factor = 0.5
+			#	any_greater_power = { war_with = THIS }
+			#}
+			#modifier = {
+			#	factor = 0
+			#	national_provinces_occupied = 0.25
+			#}
+			#modifier = {
+			#	factor = 0.5
+			#	war_exhaustion = 25
+			#}
 		}
 	}
 }

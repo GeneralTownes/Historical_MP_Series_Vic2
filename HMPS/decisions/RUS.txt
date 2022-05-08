@@ -1485,7 +1485,6 @@ political_decisions = {
 			average_militancy = 1
 			NOT = { debt_law = serfdom }
 			OR = {
-				has_recently_lost_war = yes
 				is_greater_power = no
 				year = 1870
 			}

@@ -63,10 +63,7 @@ political_decisions = {
 			NOT = { has_country_flag = population_exchange_with_turkey }
 			TUR = { is_greater_power = no }
 			OR = {
-				AND = {
-					year = 1890
-					invention = national_fraternity			
-				}
+				revolution_n_counterrevolution = 1
 				TUR = {
 					has_country_flag = ottomans_to_turks
 				}

@@ -500,6 +500,12 @@ party_loyalty_focus = {
 		icon = 37
 	}
 	
+	radical_focus = {
+		ideology = radical
+		loyalty_value = 0.01
+		icon = 41
+	}
+	
 	anarcho_liberal_focus = {
 		ideology = anarcho_liberal
 		loyalty_value = 0.01 # By that much pops will be more loyal
