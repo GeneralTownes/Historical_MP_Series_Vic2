@@ -1118,7 +1118,6 @@ country_event = {
 				}
 			}
 			militancy = 4
-			consciousness = 2
 		}
 		ai_chance = {
 			factor = 10

@@ -5072,7 +5072,7 @@ demand_concession_CHI_casus_belli = {
 			}
 			AND = { war_with = THIS ai = no }
 			neighbour = THIS
-			AND = { any_neighbor_country = { vassal_of = THIS } THIS = { tag = ENG } }
+			AND = { any_neighbor_country = { vassal_of = THIS } }
 		}
 		THIS = {
 			civilized = yes
@@ -5184,7 +5184,7 @@ demand_concession_casus_belli = {
 			}
 			AND = { war_with = THIS ai = no }
 			neighbour = THIS
-			AND = { any_neighbor_country = { vassal_of = THIS } THIS = { tag = ENG } }
+			any_neighbor_country = { vassal_of = THIS }
 		}
 		THIS = {
 			civilized = yes
@@ -5266,6 +5266,7 @@ demand_concession_casus_belli = {
 		#NOT = { any_owned_province = { is_capital = yes } }
 		OR = {
 			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
+			any_owned_province = { any_neighbor_province = { owner = { vassal_of = THIS } } }
 			THIS = { ai = no war_with = THIS }
 			AND = {
 				any_owned_province = { port = yes }
@@ -5336,8 +5337,9 @@ demand_concession_NI_casus_belli = {
 				THIS = { any_owned_province = { port = yes } } 
 				any_owned_province = { port = yes }
 			}
-			neighbour = THIS
 			AND = { war_with = THIS ai = no }
+			neighbour = THIS
+			any_neighbor_country = { vassal_of = THIS }
 		}
 		NOT = { is_our_vassal = THIS }
 		THIS = {
@@ -5404,6 +5406,7 @@ demand_concession_NI_casus_belli = {
 		#NOT = { any_owned_province = { is_capital = yes } }
 		OR = {
 			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
+			any_owned_province = { any_neighbor_province = { owner = { vassal_of = THIS } } }
 			THIS = { ai = no war_with = THIS }
 			AND = {
 				any_owned_province = { port = yes }
@@ -5474,8 +5477,9 @@ demand_concession_BC_casus_belli = {
 				THIS = { any_owned_province = { port = yes } } 
 				any_owned_province = { port = yes }
 			}
-			neighbour = THIS
 			AND = { war_with = THIS ai = no }
+			neighbour = THIS
+			any_neighbor_country = { vassal_of = THIS }
 		}
 		NOT = { is_our_vassal = THIS }
 		THIS = {
@@ -5530,6 +5534,7 @@ demand_concession_BC_casus_belli = {
 		#NOT = { any_owned_province = { is_capital = yes } }
 		OR = {
 			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
+			any_owned_province = { any_neighbor_province = { owner = { vassal_of = THIS } } }
 			THIS = { ai = no war_with = THIS }
 			AND = {
 				any_owned_province = { port = yes }

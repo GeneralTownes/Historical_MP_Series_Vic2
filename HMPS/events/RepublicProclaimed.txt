@@ -129,9 +129,12 @@ country_event = {
 		months = 2
 	}
 	
+	immediate = {
+		clr_country_flag = executive_activated
+	}
+	
 	option = {
 		name = "The President has other priorities"
-		clr_country_flag = executive_activated
 	}
 }
 

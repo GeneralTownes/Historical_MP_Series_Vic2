@@ -8,6 +8,20 @@ political_decisions = {
 		allow = {
 		}
 		effect = {
+		
+			#Treasury Initialization
+			ENG = { treasury = 1000000 }
+			RUS = { treasury = 1000000 }
+			FRA = { treasury = 1000000 }
+			PRU = { treasury = 1000000 }
+			AUS = { treasury = 1000000 }
+			TUR = { treasury = 500000 }
+			SPA = { treasury = 500000 }
+			USA = { treasury = 500000 }
+			SAR = { treasury = 250000 }
+			NET = { treasury = 250000 }
+			BEL = { treasury = 250000 }
+		
 			set_global_flag = global_1836_setup
 			
 			enable_canal = 4	#Bosphorus Strait
@@ -46,6 +60,8 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	
 	
 	literacy_adjustments = {
 		potential = {

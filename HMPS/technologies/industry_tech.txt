@@ -644,14 +644,10 @@ mechanized_manufacturing = {
 	area = mechanization
 	year = 1920
 	cost = 60000
+	
 	factory_throughput = 0.2
 	rgo_throughput = 0.05
-#	factory_goods_throughput = {
-#		shares = -0.1
-#	}
-#	factory_goods_throughput = {
-#		financial_services = -0.1
-#	}
+	
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -737,7 +733,7 @@ mechanized_mining = {
 		iron = 0.25
 	}
 	rgo_goods_output = {
-		coal = 0.4
+		coal = 0.25
 	}
 	
 	ai_chance = {
@@ -789,7 +785,7 @@ puddling = {
 	cost = 10000
 	
 	rgo_goods_output = {
-		coal = 0.4
+		coal = 0.3
 	}
 	rgo_goods_output = {
 		iron = 0.3

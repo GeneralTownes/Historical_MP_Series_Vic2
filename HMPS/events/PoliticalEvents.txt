@@ -6768,8 +6768,7 @@ country_event = {
 		random_owned = { limit = { owner = { is_greater_power = yes } }
 			owner = {
 			add_country_modifier = { name = peacetime_mobilization duration = 365 }
-	
-			war_exhaustion = 10
+			
 			any_pop = { dominant_issue = { value = pacifism factor = 0.1 } }
 		
 			any_country = {
@@ -6797,8 +6796,7 @@ country_event = {
 		random_owned = { limit = { owner = { is_greater_power = no is_secondary_power = yes } }
 			owner = {
 			add_country_modifier = { name = peacetime_mobilization duration = 365 }
-	
-			war_exhaustion = 10
+			
 			any_pop = { dominant_issue = { value = pacifism factor = 0.1 } }
 			
 			any_country = {
@@ -6825,8 +6823,7 @@ country_event = {
 		random_owned = { limit = { owner = { is_greater_power = no is_secondary_power = no } }
 			owner = {
 			add_country_modifier = { name = peacetime_mobilization duration = 182 }
-	
-			war_exhaustion = 10
+			
 			any_pop = { dominant_issue = { value = pacifism factor = 0.1 } }
 		
 		
