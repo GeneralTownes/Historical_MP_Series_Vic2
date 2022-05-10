@@ -361,6 +361,14 @@ political_reforms = {
 		}
 	}
 	public_meetings = {
+		secret_policed = {
+			suppression_points_modifier = 0.5
+			global_immigrant_attract = -1
+			literacy_con_impact = -0.25
+			global_pop_consciousness_modifier = -0.05
+			global_pop_militancy_modifier = -0.05
+			allow = { has_country_flag = secret_police_invented }
+		}
 		no_meeting = {
 			suppression_points_modifier = 0.1
 			global_immigrant_attract = -0.15

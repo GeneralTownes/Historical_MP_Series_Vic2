@@ -1454,6 +1454,13 @@ country_event = {
 			}
 			set_country_flag = modern_central_bank_system_invented
 		}
+		any_country = {
+			limit = {
+				invention = secret_police
+				NOT = { has_country_flag = secret_police_invented }
+			}
+			set_country_flag = secret_police_invented
+		}
 		
 		#enabling crisis
 		random_country = {

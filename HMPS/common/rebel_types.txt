@@ -259,7 +259,7 @@ reactionary_rebels = {
 				factor = 0.05
 			}
 		}
-		owner = { war_exhaustion = 2.5 }
+		#owner = { war_exhaustion = 2.5 }
 	}
 
 	# Country scope
@@ -548,7 +548,7 @@ fascist_rebels = {
 				factor = 0.05
 			}
 		}
-		owner = { war_exhaustion = 2.5 }
+		#owner = { war_exhaustion = 2.5 }
 	}
 	
 
@@ -841,7 +841,7 @@ communist_rebels = {
 				factor = 0.05
 			}
 		}
-		owner = { war_exhaustion = 2.5 }
+		#owner = { war_exhaustion = 2.5 }
 	}
 	
 
@@ -1148,7 +1148,7 @@ anarcho_liberal_rebels = {
 				factor = 0.05
 			}
 		}
-		owner = { war_exhaustion = 2.5 }
+		#owner = { war_exhaustion = 2.5 }
 	}
 	
 
@@ -2155,7 +2155,7 @@ carlist_rebels = {
 				factor = 0.05
 			}
 		}
-		owner = { war_exhaustion = 2.5 }
+		#owner = { war_exhaustion = 2.5 }
 	}
 
 	# Country scope
@@ -2401,7 +2401,7 @@ christino_rebels = {
 				factor = 0.05
 			}
 		}
-		owner = { war_exhaustion = 2.5 }
+		#owner = { war_exhaustion = 2.5 }
 	}
 
 	# Country scope
@@ -2924,7 +2924,7 @@ red_shirts = {
 			name = war_torn
 			duration = 365
 		}
-		owner = { war_exhaustion = 2.5 }
+		#owner = { war_exhaustion = 2.5 }
 	}
 	
 
@@ -3797,7 +3797,7 @@ liberal_rebels = {
 				factor = 0.05
 			}
 		}
-		owner = { war_exhaustion = 2.5 }
+		#owner = { war_exhaustion = 2.5 }
 	}
 	
 
@@ -4223,7 +4223,7 @@ radical_rebels = {
 				factor = 0.05
 			}
 		}
-		owner = { war_exhaustion = 2.5 }
+		#owner = { war_exhaustion = 2.5 }
 	}
 	
 
@@ -5198,7 +5198,7 @@ socialist_rebels = {
 				factor = 0.05
 			}
 		}
-		owner = { war_exhaustion = 2.5 }
+		#owner = { war_exhaustion = 2.5 }
 	}
 	
 
@@ -5729,7 +5729,7 @@ turkish_nationalist_rebels = {
 				factor = 0.05
 			}
 		}
-		owner = { war_exhaustion = 2.5 }
+		#owner = { war_exhaustion = 2.5 }
 	}
 	
 

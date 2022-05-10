@@ -818,3 +818,13 @@ MORALE_TECH;Organization Regain Rate;;;;;;;;;;;;;
 radical_focus;Party loyalty towards §Yradical§!;;;;;;;;;;;;;
 radical_focus_short;§YRadicaly§! loyalty;;;;;;;;;;;;;
 anarcho_liberal_focus;Party loyalty towards §Yanachist§!;;;;;;;;;;;;;
+BUDGET_SLIDER_SOCIAL_SPENDING;Social Security: §Y$VAL$§!;;;;;;;;;;;;;
+SOCIAL_SPENDING;Social Security;;;;;;;;;;;;;
+SOCIAL_DESC2;The social security budget goes towards funding your enacted social reforms. The amount of money to distribute depends on your §Ycountry administrative efficiency§W;Le budget des dépenses sociales contribue à financer les réformes sociales que vous avez entreprises. La somme d'argent à distribuer dépend de l'§Yefficacité administrative de votre pays§W.;Ihre Sozialreformen werden aus Ihrem Haushalt für Sozialausgaben finanziert. Der zugeteilte Geldbetrag hängt von der §Yadministrativen Effizienz§W Ihres Landes ab.;;El presupuesto de gasto social se destina a fundar tus reformas sociales aprobadas. La cantidad de dinero a distribuir depende de la §Yeficiencia administrativa de tu país§W.;;;;;;;;;x
+DIST_ADMINISTRATION;Administrative Spending;;;;;;;;;;;;;
+DIST_EDUCATION;Education Spending;;;;;;;;;;;;;
+BUDGET_SLIDER_MILITARY_SPENDING;Military Salaries: §Y$VAL$§!;;;;;;;;;;;;;
+MILITARY_SPENDING;Military Salaries;;;;;;;;;;;;;
+secret_policed;Private Meetings Prohibited;;;;;;;;;;;;;
+secret_policed_desc;Private political meetings are illegal;;;;;;;;;;;;;
+secret_police_invented;Secret Police Invented;;;;;;;;;;;;;

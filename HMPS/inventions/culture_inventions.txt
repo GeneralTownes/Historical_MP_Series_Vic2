@@ -1506,16 +1506,18 @@ secret_police = {
 	news = no
 	limit = { revolution_n_counterrevolution = 1 }
 	chance = {
-		base = 2
+		base = 5
 		modifier = {
-			factor = 3
+			factor = 5
 			OR = {
 				ruling_party_ideology = fascist
 				ruling_party_ideology = communist
+				ruling_party_ideology = reactionary
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 5
+			nationalvalue = nv_autocracy
 			nationalvalue = nv_order
 		}
 	}
