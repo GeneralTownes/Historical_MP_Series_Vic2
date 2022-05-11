@@ -201,6 +201,11 @@ Many nations no longer need (only) GP for flava, or high prestige. War policy re
 - Aggressiveness massively increased
 
 ## MP Support
+#### GM Decisions
+- Can transfer GM country
+- Ally everyone
+- Seige and unseige countries
+- Immediately kick players
 #### Grants
 - Standard Money Transfer options
 #### Infamy Transfers

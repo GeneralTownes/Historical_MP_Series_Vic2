@@ -411,7 +411,7 @@ yes_meeting;All Meetings Allowed;;;;;;;;;;;;;
 yes_meeting_desc;Public meetings and rallies are allowed.;;;;;;;;;;;;;
 no_meeting;Public Meetings Prohibited;;;;;;;;;;;;;
 no_meeting_desc;Public meetings are prohibited by law or de facto.;;;;;;;;;;;;;
-POLITICS_MATTERS_OF_STATE;Matters of State;;;;;;;;;;;;;
+POLITICS_MATTERS_OF_STATE;Internal Affairs;;;;;;;;;;;;;
 matters_of_state;Matters of State;;;;;;;;;;;;;
 bureaucracy_ref;Bureaucracy;;;;;;;;;;;;;
 bureaucracy_ref_l;Bureaucracy;;;;;;;;;;;;;

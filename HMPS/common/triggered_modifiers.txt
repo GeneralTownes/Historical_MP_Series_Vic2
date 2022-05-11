@@ -852,31 +852,68 @@ education_fully_funded = {
 	icon = 19
 }
 
-#neglected_education = {	#literacy decay now used (in cleanup)
-#	trigger = {
-#		exists = yes
-#		civilized = yes
-#		ai = no
-#		number_of_states = 2
-#		total_pops = 1000000
-#		OR = {
-#			AND = {
-#				literacy = 0.75
-#				NOT = { education_spending = 0.3 }
-#			}
-#			AND = {
-#				literacy = 0.5
-#				NOT = { education_spending = 0.2 }
-#			}
-#			AND = {
-#				literacy = 0.25
-#				NOT = { education_spending = 0.1 }
-#			}
-#		}
-#	}
-#	education_efficiency_modifier = -2
-#	icon = 19
-#}
+####
+
+secret_police_1 = {
+	trigger = {
+		public_meetings = secret_policed
+		exists = yes
+		administration_spending = 0.2
+		NOT = { administration_spending = 0.4 }
+	}
+	literacy_con_impact = -0.05
+	global_pop_consciousness_modifier = -0.01
+	global_pop_militancy_modifier = -0.01
+}
+
+secret_police_2 = {
+	trigger = {
+		public_meetings = secret_policed
+		exists = yes
+		administration_spending = 0.4
+		NOT = { administration_spending = 0.6 }
+	}
+	literacy_con_impact = -0.05
+	global_pop_consciousness_modifier = -0.01
+	global_pop_militancy_modifier = -0.01
+}
+
+secret_police_3 = {
+	trigger = {
+		public_meetings = secret_policed
+		exists = yes
+		administration_spending = 0.6
+		NOT = { administration_spending = 0.8 }
+	}
+	literacy_con_impact = -0.05
+	global_pop_consciousness_modifier = -0.01
+	global_pop_militancy_modifier = -0.01
+}
+
+secret_police_4 = {
+	trigger = {
+		public_meetings = secret_policed
+		exists = yes
+		administration_spending = 0.8
+		NOT = { administration_spending = 0.99 }
+	}
+	literacy_con_impact = -0.05
+	global_pop_consciousness_modifier = -0.01
+	global_pop_militancy_modifier = -0.01
+}
+
+secret_police_5 = {
+	trigger = {
+		public_meetings = secret_policed
+		exists = yes
+		administration_spending = 0.99
+	}
+	literacy_con_impact = -0.25
+	global_pop_consciousness_modifier = -0.05
+	global_pop_militancy_modifier = -0.05
+}
+
+####
 
 islamic_law_triggered = {
 	trigger = {

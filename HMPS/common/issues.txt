@@ -364,9 +364,7 @@ political_reforms = {
 		secret_policed = {
 			suppression_points_modifier = 0.5
 			global_immigrant_attract = -1
-			literacy_con_impact = -0.25
-			global_pop_consciousness_modifier = -0.05
-			global_pop_militancy_modifier = -0.05
+			cb_generation_speed_modifier = 0.2
 			allow = { has_country_flag = secret_police_invented }
 		}
 		no_meeting = {
