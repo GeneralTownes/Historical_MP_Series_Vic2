@@ -72,9 +72,10 @@ Everything else is our own (as far as I remember).
 - France average life rating increase to 33
 - USA starts at 40
 - Westernised China, India and Korea can increase to 40 with tech, will decrease in ~50 years
-- ~1900-1910, Decrease to ~31 for Germany, Benelulx, Italy, Britain, Austria-Hungary, USA (in two stages)
+- 1890 USA,UK -> 35 LR, 1905 ITA -> 35 LR
 - Pop-growth techs nerfed
 - Healthcare only grants +0.01% pm at top level fully funded
+- Removed starting baby booms
 #### Pop Needs
 - Demand increase from inventions decreased to 1% per invention
 - Luxury manufactured goods in luxuries for lower and middle class
@@ -130,6 +131,7 @@ Overseas penalty increased to 0.025 per provinces
 ## Military
 War score from battles is capped at 25
 No war exhaustion hit on rebel occupations
+War subs pay for 100% of mil goods
 #### Units
 Soldier pops concentrate in state capitals, requires 3k soldier pops for 1st brigade (then 5k onwards)
 - Bombers: 'Attack version' of planes (fighters)
