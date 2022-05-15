@@ -1332,10 +1332,8 @@ assimilation_chance = {
 		factor = -80
 		is_culture_group = african_diaspora_cultures
 		country = {
-			NOT = {
-				citizens_rights = all_voting_pops
-				slavery = no_slavery
-			}
+			NOT = {	citizens_rights = all_voting_pops }
+			NOT = { slavery = no_slavery }
 		}
 	}
 }

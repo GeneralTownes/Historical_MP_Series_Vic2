@@ -3642,3 +3642,13 @@ NAF_uprising = {
 	tariff_efficiency_modifier = 0.25
 	icon = 18
 }
+
+slow_assim_modifier = {
+	global_assimilation_rate = -0.7
+	icon = 18
+}
+
+slow_assim_modifier_2 = {
+	global_assimilation_rate = -0.2
+	icon = 18
+}

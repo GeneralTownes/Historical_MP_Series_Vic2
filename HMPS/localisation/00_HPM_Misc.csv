@@ -521,7 +521,7 @@ culture_voting_only_desc;Persons from the country's culture are allowed to parti
 movement_culture_voting_only;Movement for Cultural Political Rights;;;;;;;;;;;;;
 all_voting_pops;All Allowed Rights;;;;;;;;;;;;;
 all_voting_pops_l;All Allowed Rights;;;;;;;;;;;;;
-all_voting_pops_desc;All legal immigrants, regardless of the culture, are allowed to vote. Acquiring citizenship status is facilitated. \n§YAllows assimilation on foreign cultural cores.\n§RWill demote to Cultural Rights if reform conditions no longer met.§!;;;;;;;;;;;;;
+all_voting_pops_desc;All legal immigrants, regardless of the culture, are allowed to vote. Acquiring citizenship status is facilitated. \n§YAllows assimilation on foreign cultural cores.§!;;;;;;;;;;;;;
 movement_all_voting_pops;The League for Universal Political Rights;;;;;;;;;;;;;
 border_policy;Border Policy;;;;;;;;;;;;;
 closed_borders;Closed Borders;;;;;;;;;;;;;

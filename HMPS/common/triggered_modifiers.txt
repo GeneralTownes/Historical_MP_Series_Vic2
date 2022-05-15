@@ -1697,3 +1697,4 @@ south_american_ai_ii = {
 	mobilisation_size = 0.03
 	icon = 19
 }
+

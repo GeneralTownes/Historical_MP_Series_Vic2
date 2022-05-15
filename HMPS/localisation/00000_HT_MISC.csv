@@ -155,3 +155,7 @@ mark_as_colony;Mark as Colony;;;;;;;;;;;;;
 colonize_deez_nuts_title;§ESwitch State to Colony§!;;;;;;;;;;;;;
 colonize_deez_nuts_desc;This decision will allow you to switch states marked with the "Mark as Colony" focus to colonies. \n\n§RYou must wait for a month to tick before the national focus takes effect!§W;;;;;;;;;;;;;
 POP_DAILY_EVENT;Stimulus Payment §YS0.3/0.9§!;;;;;;;;;;;;;
+slow_assim_modifier;§RExtremely Slow Assimilation§!;;;;;;;;;;;;;
+slow_assim_modifier_desc;You suck! Remove serfdom and slavery to get rid of this modifier.;;;;;;;;;;;;;
+slow_assim_modifier_2;§RSlowed Assimilation§!;;;;;;;;;;;;;
+slow_assim_modifier_2_desc;Having colonies makes assimilation harder.;;;;;;;;;;;;;

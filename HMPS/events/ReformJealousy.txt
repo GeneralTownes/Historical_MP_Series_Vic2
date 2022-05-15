@@ -1,33 +1,33 @@
-country_event = {
-	
-	id = 7777932 
-
-	trigger = {
-		citizens_rights = all_voting_pops
-		OR = {
-			any_state = { is_colonial = yes }
-			NOT = { vote_franschise = universal_voting }
-			NOT = { press_rights = free_press }
-			NOT = { public_meetings = yes_meeting }
-			NOT = { citizenship_policy = full_citizenship }
-		}
-	}
- 
-	mean_time_to_happen =  {
-		days = 10
-	}
-
-	title = "EVTNAME7777932"
-	desc = "EVTDESC7777932"
-	picture = "Demonstration"
-	
-
-	option = {
-		name = "I'm sure it is for the best" 
-		political_reform = culture_voting_only 
-		#set_country_flag = residency_party
-	}
-}
+#country_event = {
+#	
+#	id = 7777932 
+#
+#	trigger = {
+#		citizens_rights = all_voting_pops
+#		OR = {
+#			any_state = { is_colonial = yes }
+#			NOT = { vote_franschise = universal_voting }
+#			NOT = { press_rights = free_press }
+#			NOT = { public_meetings = yes_meeting }
+#			NOT = { citizenship_policy = full_citizenship }
+#		}
+#	}
+# 
+#	mean_time_to_happen =  {
+#		days = 10
+#	}
+#
+#	title = "EVTNAME7777932"
+#	desc = "EVTDESC7777932"
+#	picture = "Demonstration"
+#	
+#
+#	option = {
+#		name = "I'm sure it is for the best" 
+#		political_reform = culture_voting_only 
+#		#set_country_flag = residency_party
+#	}
+#}
 
 #country_event = {	#not needed as allow limit of full citizenship on the reform itself
 #	

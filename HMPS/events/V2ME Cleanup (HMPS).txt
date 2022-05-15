@@ -1646,6 +1646,68 @@ country_event = {
 			political_reform = no_colonies
 		}
 		
+		#manage assim debuffs
+		any_country = {
+			limit = {
+				exists = yes
+				OR = {
+					citizens_rights = culture_voting_only
+					citizens_rights = all_voting_pops
+				}
+				OR = {
+					AND = {
+						slavery = yes_slavery
+						NOT = {
+							capital_scope = north_america
+							capital_scope = south_america
+							capital_scope = australia_new_zealand
+						}
+					}
+					debt_law = serfdom
+				}
+			}
+			add_country_modifier = {
+				name = slow_assim_modifier
+				duration = -1
+			}
+		}
+		
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = {
+					slavery = yes_slavery
+					debt_law = serfdom
+				}
+				has_country_modifier = slow_assim_modifier
+			}
+			remove_country_modifier = slow_assim_modifier
+		}
+		
+		any_country = {
+			limit = {
+				exists = yes
+				OR = {
+					citizens_rights = culture_voting_only
+					citizens_rights = all_voting_pops
+				}
+				any_state = { is_colonial = yes }
+			}
+			add_country_modifier = {
+				name = slow_assim_modifier_2
+				duration = -1
+			}
+		}
+		
+		any_country = {
+			limit = {
+				exists = yes
+				NOT = { any_state = { is_colonial = yes } }
+				has_country_modifier = slow_assim_modifier_2
+			}
+			remove_country_modifier = slow_assim_modifier_2
+		}
+		
 		CLN = { country_event = { id = 477877790 days = 30 } }
 	}
 }

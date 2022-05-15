@@ -115,7 +115,7 @@ immigration_focus = {
 		limit = {
 			owner = { ai = no }
 			NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
-			NOT = { owner = { citizenship_policy = residency } }
+			#NOT = { owner = { citizenship_policy = residency } }
 		}
 	}
 	
