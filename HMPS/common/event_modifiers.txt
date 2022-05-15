@@ -1341,7 +1341,7 @@ global_baby_boom_small = {
 }
 
 california_population_boom = {
-	population_growth = 0.002
+	immigrant_attract = 0.5
 	icon = 19
 }
 
@@ -2593,13 +2593,13 @@ small_immigration_boom = {
 
 gateway_to_harbor = {
 	immigrant_attract = 1
-	population_growth = 0.002
+	#population_growth = 0.002
 	icon = 9
 }
 
 gateway_to_america = {
 	immigrant_attract = 1.5
-	population_growth = 0.01
+	#population_growth = 0.01
 	assimilation_rate = 1.5
 	icon = 19
 }
@@ -2636,7 +2636,7 @@ religious_minority_oppression = {
 gateway_to_australia = {
 	assimilation_rate = 1
 	immigrant_attract = 3
-	population_growth = 0.01
+	#population_growth = 0.01
 	icon = 9
 }
 
@@ -2689,7 +2689,7 @@ lone_star = {
 }
 
 manufacturing_belt_city = {
-	population_growth = 0.005
+	#population_growth = 0.005
 	local_factory_output = 0.05
 	icon = 13
 }

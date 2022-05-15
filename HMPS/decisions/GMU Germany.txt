@@ -20,8 +20,6 @@ political_decisions = {
 		picture = "the_grunderzeit2"
 		potential = {
 			is_culture_group = germanic
-			NOT = { tag = AUS }
-			NOT = { tag = KUK }
 			NOT = { has_country_flag = grunderzeit_we_have_done }
 		}
 		
@@ -37,7 +35,7 @@ political_decisions = {
 						factor = 0.05
 					}
 				}
-				life_rating = 3
+				life_rating = 5
 			}
 			prestige = 10
 			set_country_flag = grunderzeit_we_have_done
