@@ -1210,6 +1210,8 @@ political_decisions = {
 				literacy = -0.99
 			}
 			
+			bureaucrats = { reduce_pop = 1.5 }
+			
 			#any_owned = {
 			#	limit = {
 			#		OR = {

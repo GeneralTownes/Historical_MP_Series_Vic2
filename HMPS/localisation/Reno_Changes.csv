@@ -2,7 +2,7 @@ Key;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;P
 EVTNAME9999901;Craftsmen Exploit Fix;;;;;;;;;;;;;
 EVTDESC9999901;This event converts all non-core/non-accepted craftsmen into farmers/labourers if they are on your cores.;;;;;;;;;;;;;
 craftsmen_fix_title;§CCraftsmen Fix Decision (10 year cooldown)§!;;;;;;;;;;;;;
-craftsmen_fix_desc;This decision launches 3 events one after another that converts all non-core / non-accepted craftsmen that are on your cores ONLY into farmers..;;;;;;;;;;;;;
+craftsmen_fix_desc;This decision converts all non-core / non-accepted craftsmen that are on your cores ONLY into farmers/labourers.;;;;;;;;;;;;;
 craftsmen_fix_cooldown;§CCraftsmen Fix Cooldown§!;;;;;;;;;;;;;
 craftsmen_fix_cooldown_desc;10 year reset before the decision can be taken again.;;;;;;;;;;;;;
 bureaucrats_fix_title;§CNon-Accepted Bureaucrats Decision (10 year cooldown)§!;;;;;;;;;;;;;
