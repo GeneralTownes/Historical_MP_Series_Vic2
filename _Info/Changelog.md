@@ -71,7 +71,7 @@ Everything else is our own (as far as I remember).
 #### Liferating & Growth
 - France average life rating increase to 33
 - USA starts at 40
-- Westernised China, India and Korea can increase to 40 with tech, will decrease in ~50 years
+- Westernised China, India and Korea can increase to 40 with tech
 - 1890 USA,UK -> 35 LR, 1905 ITA -> 35 LR
 - Pop-growth techs nerfed
 - Healthcare only grants +0.01% pm at top level fully funded
@@ -185,6 +185,7 @@ Many nations no longer need (only) GP for flava, or high prestige. War policy re
 
 ## Map
 - Rivers with -2 crossing plenlty added (province modifier label)
+- German provinces smoothed
 - Redrawn Trieste area & West Switzerland
 #### Straits
 - Vanilla straits added (Dover-Calais, Japan-Korea)
