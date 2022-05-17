@@ -245,7 +245,7 @@ political_decisions = {
 		
 		effect = {
 			any_pop = { militancy = -2 }
-			badboy = -3
+			badboy = -1
 			set_country_flag = niederwald_denkmal
 		}
 	}
@@ -571,10 +571,10 @@ political_decisions = {
 				name = ruhr_boom
 				duration = 3650
 			}
-			add_country_modifier = {
-				name = global_baby_boom_small
-				duration = 720
-			}
+			#add_country_modifier = {
+			#	name = global_baby_boom_small
+			#	duration = 720
+			#}
 			any_owned = {
 				limit = {
 					OR = {
@@ -589,12 +589,12 @@ political_decisions = {
 					duration = 720
 				}
 			}
-			capital_scope = {
-				add_province_modifier = {
-					name = baby_boom
-					duration = 365
-				}
-			}
+			#capital_scope = {
+			#	add_province_modifier = {
+			#		name = baby_boom
+			#		duration = 365
+			#	}
+			#}
 			set_global_flag = ruhr_boom_has_happened
 		}
 		

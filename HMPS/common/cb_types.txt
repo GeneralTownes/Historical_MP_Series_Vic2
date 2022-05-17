@@ -3883,12 +3883,7 @@ humiliate = {
 		NOT = { is_our_vassal = THIS }
 		has_recently_lost_war = no
 		THIS = { NOT = { has_country_modifier = neutrality } }
-		NOT = {
-			AND = {
-				has_country_modifier = neutrality
-				is_greater_power = no
-			}
-		}
+		NOT = { has_country_modifier = neutrality }
 		is_vassal = no
 		OR = {
 			war_with = THIS

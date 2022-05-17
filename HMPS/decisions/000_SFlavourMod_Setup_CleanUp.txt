@@ -76,87 +76,87 @@ political_decisions = {
 		}
 	}
 	
-	cleanup_eic = {
-		potential = {
-			tag = ENG
-			ai = yes
-			war = yes
-			OR = { 
-				EIC = {
-					OR = {
-						vassal_of = ENG
-						substate_of = ENG
-					}
-					exists = yes
-				}
-				RAJ = {
-					OR = {
-						vassal_of = ENG
-						substate_of = ENG
-					}
-					alliance_with = ENG
-					exists = yes
-				}
-			}
-		}
-		
-		allow = { 
-			OR = {
-				AND = { 
-					any_greater_power = { war_with = ENG NOT = { war_with = EIC } }
-					EIC = {
-						OR = {
-							vassal_of = ENG
-							substate_of = ENG
-						}
-						exists = yes
-						war = no
-					}
-				}
-				AND = { 
-					any_neighbor_country = { war_with = ENG NOT = { war_with = EIC } }
-					EIC = {
-						OR = {
-							vassal_of = ENG
-							substate_of = ENG
-						}
-						exists = yes
-						war = no
-					}
-				}
-				AND = {
-					any_greater_power = { war_with = ENG NOT = { war_with = RAJ } }
-					RAJ = {
-						OR = {
-							vassal_of = ENG
-							substate_of = ENG
-						}
-						exists = yes
-						war = no
-						alliance_with = ENG
-					}
-				}
-				AND = {
-					war = yes
-					EIC = { exists = yes war = no }
-				}
-				AND = {
-					war_with = MUG
-					EIC = {
-						exists = yes
-						NOT = { war_with = MUG }
-					}
-				}
-			}
-		}
-		
-		effect = {
-			   war = {               #No target initiates a one-day war that automatically resolves in a WP, but call_ally causes the new ally 
-				   attacker_goal = {  casus_belli = call_allies_cb  }
-				   call_ally = yes
-			   }
-		}
-	}
+	#cleanup_eic = {		# comented out for being spammy with Rajputana
+	#	potential = {
+	#		tag = ENG
+	#		ai = yes
+	#		war = yes
+	#		OR = { 
+	#			EIC = {
+	#				OR = {
+	#					vassal_of = ENG
+	#					substate_of = ENG
+	#				}
+	#				exists = yes
+	#			}
+	#			RAJ = {
+	#				OR = {
+	#					vassal_of = ENG
+	#					substate_of = ENG
+	#				}
+	#				alliance_with = ENG
+	#				exists = yes
+	#			}
+	#		}
+	#	}
+	#	
+	#	allow = { 
+	#		OR = {
+	#			AND = { 
+	#				any_greater_power = { war_with = ENG NOT = { war_with = EIC } }
+	#				EIC = {
+	#					OR = {
+	#						vassal_of = ENG
+	#						substate_of = ENG
+	#					}
+	#					exists = yes
+	#					war = no
+	#				}
+	#			}
+	#			AND = { 
+	#				any_neighbor_country = { war_with = ENG NOT = { war_with = EIC } }
+	#				EIC = {
+	#					OR = {
+	#						vassal_of = ENG
+	#						substate_of = ENG
+	#					}
+	#					exists = yes
+	#					war = no
+	#				}
+	#			}
+	#			AND = {
+	#				any_greater_power = { war_with = ENG NOT = { war_with = RAJ } }
+	#				RAJ = {
+	#					OR = {
+	#						vassal_of = ENG
+	#						substate_of = ENG
+	#					}
+	#					exists = yes
+	#					war = no
+	#					alliance_with = ENG
+	#				}
+	#			}
+	#			AND = {
+	#				war = yes
+	#				EIC = { exists = yes war = no }
+	#			}
+	#			AND = {
+	#				war_with = MUG
+	#				EIC = {
+	#					exists = yes
+	#					NOT = { war_with = MUG }
+	#				}
+	#			}
+	#		}
+	#	}
+	#	
+	#	effect = {
+	#		   war = {               #No target initiates a one-day war that automatically resolves in a WP, but call_ally causes the new ally 
+	#			   attacker_goal = {  casus_belli = call_allies_cb  }
+	#			   call_ally = yes
+	#		   }
+	#	}
+	#}
 	
 	cleanup_morocco = {
 		potential = {

@@ -286,6 +286,24 @@ political_decisions = {
 		}
 	}
 	
+	option_disable_national_movements = {
+		picture = starting_options 
+		alert = no
+		potential = {
+			ai = no
+			has_country_flag = country_looking_through_options
+			NOT = { year = 1837 }
+			NOT = { has_global_flag = national_movenemts_disabled }
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			set_global_flag = national_movenemts_disabled
+		}
+	}
+	
 	option_disable_bankruptcy_events = {
 		picture = starting_options 
 		alert = no

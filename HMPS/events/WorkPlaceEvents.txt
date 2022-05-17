@@ -8,6 +8,7 @@ country_event = {
 	
 	trigger = {
 		any_owned_province = { state_scope = { has_pop_type = capitalists any_owned_province = { produces = coal } is_colonial = no } }
+		NOT = { has_global_flag = workplace_events_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -74,6 +75,7 @@ country_event = {
 			safety_regulations = trinket_safety
 			safety_regulations = no_safety
 		}
+		NOT = { has_global_flag = workplace_events_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -118,6 +120,7 @@ province_event = {
 		produces = coal
 		is_colonial = no
 		owner = { civilized = yes }
+		NOT = { has_global_flag = workplace_events_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -806,6 +809,7 @@ province_event = {
 		owner = { dye = 15 }
 		NOT = { owner = { safety_regulations = acceptable_safety } }
 		NOT = { owner = { safety_regulations = good_safety } }
+		NOT = { has_global_flag = workplace_events_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -905,6 +909,7 @@ province_event = {
 				safety_regulations = trinket_safety
 			}
 		}
+		NOT = { has_global_flag = workplace_events_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -946,6 +951,7 @@ province_event = {
 		owner = { iron = 15 }
 		NOT = { owner = { safety_regulations = acceptable_safety } }
 		NOT = { owner = { safety_regulations = good_safety } }
+		NOT = { has_global_flag = workplace_events_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -1190,6 +1196,7 @@ province_event = {
 		is_capital = no
 		NOT = { owner = { safety_regulations = acceptable_safety } }
 		NOT = { owner = { safety_regulations = good_safety } }
+		NOT = { has_global_flag = workplace_events_disabled }
 	}
 	
 	mean_time_to_happen = {

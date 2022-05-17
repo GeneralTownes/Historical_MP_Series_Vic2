@@ -14,6 +14,7 @@ province_event = {
 			public_meetings = no_meeting
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -123,6 +124,7 @@ province_event = {
 			citizenship_policy = residency
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -235,6 +237,7 @@ province_event = {
 		is_colonial = no
 		average_consciousness = 3
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -359,6 +362,7 @@ province_event = {
 			}
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -459,6 +463,7 @@ province_event = {
 		is_colonial = no
 		has_pop_type = clergymen
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -562,6 +567,7 @@ province_event = {
 			}
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -667,6 +673,7 @@ province_event = {
 			}
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -784,6 +791,7 @@ province_event = {
  		has_pop_type = craftsmen
 		has_pop_type = labourers
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -897,6 +905,7 @@ province_event = {
 		is_colonial = no
 		average_militancy = 4
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -988,6 +997,7 @@ province_event = {
 		}
 		units_in_province = 1
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -1080,6 +1090,7 @@ province_event = {
 			}
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -1190,6 +1201,7 @@ province_event = {
 			}
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -1312,6 +1324,7 @@ province_event = {
 			civilized = yes
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -1406,6 +1419,7 @@ province_event = {
 			is_colonial = no
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -1518,6 +1532,7 @@ province_event = {
 			is_primary_culture = no
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -1632,6 +1647,7 @@ province_event = {
 		}
 		average_militancy = 6
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -1733,6 +1749,7 @@ province_event = {
 			artillery = 1
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -1845,6 +1862,7 @@ province_event = {
 			is_colonial = no
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -1958,6 +1976,7 @@ province_event = {
 			}
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -2101,6 +2120,7 @@ province_event = {
 			}
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -2227,6 +2247,7 @@ province_event = {
 			consciousness = 6
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -2331,6 +2352,7 @@ province_event = {
 		is_accepted_culture = no
 		is_colonial = no
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -2438,6 +2460,7 @@ province_event = {
 			consciousness = 7
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -2553,6 +2576,7 @@ province_event = {
 			public_meetings = yes_meeting
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -2665,6 +2689,7 @@ province_event = {
 		is_colonial = no
 		average_consciousness = 4
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -2782,6 +2807,7 @@ province_event = {
 			is_accepted_culture = no
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -2897,6 +2923,7 @@ province_event = {
 			}
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -3005,6 +3032,7 @@ province_event = {
 			}
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	fire_only_once = yes
@@ -3112,6 +3140,7 @@ province_event = {
 	trigger = {
 		has_province_modifier = dryzymalas_wagon
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -3201,6 +3230,7 @@ province_event = {
 			}
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -3311,6 +3341,7 @@ province_event = {
 			has_country_modifier = discriminatory_school_system
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -3415,6 +3446,7 @@ province_event = {
 			culture = slovak
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -3528,6 +3560,7 @@ province_event = {
 			has_country_modifier = discriminatory_school_system
 		}
 		controlled_by = owner
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {

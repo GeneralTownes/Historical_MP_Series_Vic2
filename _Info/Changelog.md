@@ -209,6 +209,7 @@ Many nations no longer need (only) GP for flava, or high prestige. War policy re
 - Ally everyone
 - Seige and unseige countries
 - Immediately kick players
+- Can also disable movements events (as well as workplace)
 #### Grants
 - Standard Money Transfer options
 #### Infamy Transfers

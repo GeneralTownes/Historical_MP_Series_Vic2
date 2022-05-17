@@ -848,6 +848,7 @@ country_event = {
 	trigger = {
 		owns = 549
 		608 = { is_core = THIS }
+		NOT = { 608 = { owned_by = PRU } }
 		OR = {
 			AND = {
 				tag = PRU

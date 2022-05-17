@@ -1109,18 +1109,13 @@ country_event = {
 		}
 		FROM = {
 			all_core = {
-				limit = { NOT = { is_core = CRO } }
+				#limit = { NOT = { is_core = CRO } }
 				add_core = GER
 			}
 		}
 		add_casus_belli = {
 			target = FROM
 			type = humiliate
-			months = 60
-		}
-		casus_belli = {
-			target = FROM
-			type = conquest_any
 			months = 60
 		}
 		any_country = {

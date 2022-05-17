@@ -715,7 +715,6 @@ darwinism = {
 	}
 	effect = {
 		education_efficiency = 0.50
-		pop_growth  = -0.0001
 	}
 }
 social_darwinism = {
@@ -843,7 +842,6 @@ the_decline_of_the_west_and_the_lost_generation = {
 	}
 		core_pop_consciousness_modifier = 0.05
 	effect = {
-		pop_growth  = -0.0001
 	}
 }
 #the rights of man - called enlightenment_thought in files...

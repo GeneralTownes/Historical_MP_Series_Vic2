@@ -1,19 +1,25 @@
 #pop growth decreases
 contraception = {
-	limit = { inorganic_chemistry = 1 }
+	limit = { medicine = 1 }
 	chance = {
-		base = 0
+		base = 100
 		modifier = {
-			factor = 2
-			literacy = 0.40
+			factor = -100
+			NOT = { year = 1880 }
 		}
+	}
+	effect = {
+		pop_growth = -0.0001
+	}
+}
+
+late_marriage = {
+	limit = { medicine = 1 }
+	chance = {
+		base = 100
 		modifier = {
-			factor = 2
-			literacy = 0.60
-		}
-		modifier = {
-			factor = 2
-			literacy = 0.80
+			factor = -100
+			NOT = { year = 1900 }
 		}
 	}
 	effect = {
@@ -22,20 +28,12 @@ contraception = {
 }
 
 popular_prophylactic = {
-	limit = { synthetic_polymers = 1 }
+	limit = { medicine = 1 }
 	chance = {
-		base = 1
+		base = 100
 		modifier = {
-			factor = 2
-			literacy = 0.60
-		}
-		modifier = {
-			factor = 2
-			literacy = 0.80
-		}
-		modifier = {
-			factor = 2
-			literacy = 0.90
+			factor = -100
+			NOT = { year = 1905 }
 		}
 	}
 	effect = {
@@ -44,45 +42,15 @@ popular_prophylactic = {
 }
 
 women_workforce = {
-	limit = { assembly_line = 1 }
+	limit = { medicine = 1 }
 	chance = {
-		base = 2
+		base = 100
 		modifier = {
-			factor = -2
-			NOT = { industrial_score = 20 }
-		}
-		modifier = {
-			factor = 2
-			industrial_score = 200
-		}
-		modifier = {
-			factor = 2
-			industrial_score = 500
+			factor = -100
+			NOT = { year = 1910 }
 		}
 	}
 	effect = {
 		pop_growth = -0.0001
 	}
 }
-
-#late_marriage = {
-#	limit = { social_alienation = 1 }
-#	chance = {
-#		base = 0
-#		modifier = {
-#			factor = 2
-#			literacy = 0.80
-#		}
-#		modifier = {
-#			factor = 2
-#			literacy = 0.90
-#		}
-#		modifier = {
-#			factor = 4
-#			literacy = 0.95
-#		}
-#	}
-#	effect = {
-#		pop_growth = -0.0001
-#	}
-#}
