@@ -1175,6 +1175,12 @@ assimilation_chance = {
 	}
 	
 	modifier = {
+		factor = 100
+		has_culture_core = yes
+		country = { citizens_rights = all_voting_pops }
+	}
+	
+	modifier = {
 		factor = 0.5
 		OR = {
 			is_state_religion = yes
