@@ -941,22 +941,17 @@ political_decisions = {
 			NOT = { 706 = { is_core = GER } }
 		}
 		allow = {
-			549 = {
+			706 = {
 				owned_by = THIS
 			}
-			619 = {
-				owned_by = THIS
-			}
-			369 = {
-				owned_by = THIS
-			}
-			599 = {
+			715 = {
 				owned_by = THIS
 			}
 		}
 		effect = { 
-			POL = { all_core = { add_core = GER } }
-			badboy = 30
+			RUS_706 = { add_core = THIS remove_core = RUS }
+			RUS_715 = { add_core = THIS remove_core = RUS }
+			badboy = 10
 		}
 		ai_will_do = {
 			factor = 0

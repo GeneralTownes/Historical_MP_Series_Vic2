@@ -164,6 +164,7 @@ Many nations no longer need (only) GP for flava, or high prestige. War policy re
 - AUS: Can form SGF (and release its non German land)
 - DNB: RnG removed & cultures now accepted via decisions
 - RUS: Only cores Poland late-campaign, option to take all of Manchuria, decision to core CPL land
+- GER: Can compete with Russia to core Mazovia and West-Galicia (each can core and uncore the other)
 - Ottos: Tanzimat reforms can be completed as a republic & Arab revolt won't remove accepted cultures
 - NET: Starts with Indonesian puppets annexed, and can quickly annex Aceh and Jambi
 - POR: Can unite with Brazil to form the UPB

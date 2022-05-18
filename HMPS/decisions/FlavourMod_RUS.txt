@@ -18,6 +18,7 @@ political_decisions = {
 			CPL = {
 				all_core = {
 					add_core = THIS
+					remove_core = GER
 				}
 			}
 		}
