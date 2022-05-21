@@ -226,7 +226,9 @@ political_decisions = {
 		effect = {
 			BEL = {
 				all_core = {
-					add_core = FLA
+					any_owned = {
+						add_core = FLA
+					}
 					remove_core = BEL
 				}
 			}

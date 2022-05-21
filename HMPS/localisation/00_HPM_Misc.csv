@@ -517,11 +517,11 @@ primary_culture_only_desc;Only the first class citizens of the country are allow
 movement_primary_culture_only;Pro Citizens Movement;;;;;;;;;;;;;
 culture_voting_only;Cultural Rights;;;;;;;;;;;;;
 culture_voting_only_l;Accepted Cultures Rights;;;;;;;;;;;;;
-culture_voting_only_desc;Persons from the country's culture are allowed to participate in the political life of the country and citizenship is greatly facilitated for these people. \n§YAllows assimilation of accepted cultures on their cultural cores.§!;;;;;;;;;;;;;
+culture_voting_only_desc;Persons from the country's culture are allowed to participate in the political life of the country and citizenship is greatly facilitated for these people.;;;;;;;;;;;;;
 movement_culture_voting_only;Movement for Cultural Political Rights;;;;;;;;;;;;;
 all_voting_pops;All Allowed Rights;;;;;;;;;;;;;
 all_voting_pops_l;All Allowed Rights;;;;;;;;;;;;;
-all_voting_pops_desc;All legal immigrants, regardless of the culture, are allowed to vote. Acquiring citizenship status is facilitated. \n§YAllows assimilation on foreign cultural cores.§!;;;;;;;;;;;;;
+all_voting_pops_desc;All legal immigrants, regardless of the culture, are allowed to vote. Acquiring citizenship status is facilitated.;;;;;;;;;;;;;
 movement_all_voting_pops;The League for Universal Political Rights;;;;;;;;;;;;;
 border_policy;Border Policy;;;;;;;;;;;;;
 closed_borders;Closed Borders;;;;;;;;;;;;;

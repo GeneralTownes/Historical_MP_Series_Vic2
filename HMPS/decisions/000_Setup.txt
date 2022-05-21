@@ -9,6 +9,13 @@ political_decisions = {
 		}
 		effect = {
 		
+			#Removing Cultural Union cores at start
+			GER = { all_core = { remove_core = GER } }
+			ITA = { all_core = { remove_core = ITA } }
+			POL = { all_core = { remove_core = POL } }
+			CZH = { all_core = { remove_core = CZH } }
+			AUS_662 = { remove_core = UKR }
+		
 			#Treasury Initialization
 			ENG = { treasury = 1000000 }
 			RUS = { treasury = 1000000 }

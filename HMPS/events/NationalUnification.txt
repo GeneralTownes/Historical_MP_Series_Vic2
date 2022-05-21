@@ -561,7 +561,7 @@ country_event = {
 	}
 }
 
-# Event to Inherit (For NGF & SGF )
+# Event to Inherit (For NGF, SGF, GER & ITA )
 country_event = {
 	id = 11106
 	title = "EVTNAME11106"
@@ -578,6 +578,7 @@ country_event = {
 				owner = {
 					primary_culture = north_german
 				}
+				NOT = { exists = GER }
 			}
 			owner = {
 				THIS = {
@@ -592,6 +593,7 @@ country_event = {
 				owner = {
 					primary_culture = south_german
 				}
+				NOT = { exists = GER }
 			}
 			owner = {
 				THIS = {
@@ -601,6 +603,39 @@ country_event = {
 				}
 			}
 		}
+		random_owned = {
+			limit = {
+				OR = {
+					owner = { primary_culture = north_german }
+					owner = { primary_culture = south_german }
+				}
+				exists = GER
+			}
+			owner = {
+				THIS = {
+					all_core = {
+						add_core = GER
+					}
+				}
+			}
+		}
+		random_owned = {
+			limit = {
+				OR = {
+					owner = { primary_culture = north_italian }
+					owner = { primary_culture = south_italian }
+				}
+				exists = ITA
+			}
+			owner = {
+				THIS = {
+					all_core = {
+						add_core = ITA
+					}
+				}
+			}
+		}
+		all_core = { remove_core = THIS }
 		any_country = {
 			limit = {
 				OR = {
