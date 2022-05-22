@@ -504,134 +504,124 @@ country_event = {
 		}
 	}
 	option = {
-		name = "3000000 pounds"
-		random_owned = {
-			limit = {
-				owner = {
-					money = 3000000
-				}
-			}
-			owner = {
-				money = -2000000					#stack overflow otherwise
-				FROM = { money = 2000000 }
-				money = -1000000
-				FROM = { money = 1000000 }
-			}
-		}
-	}  
+        name = "3000000 pounds"
+
+        random_owned = {
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
+        random_owned = {
+            limit = { owner = { money = 1000000 } }
+            owner = { FROM = { money = 1000000 } money = -1000000 }
+        }
+    } 
 	option = {
 		name = "4000000 pounds"
+		
 		random_owned = {
-			limit = {
-				owner = {
-					money = 4000000
-				}
-			}
-			owner = {
-				money = -2000000
-				FROM = { money = 2000000 }
-				money = -2000000
-				FROM = { money = 2000000 }
-			}
-		}
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
+        random_owned = {
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
 	}  
 	option = {
 		name = "5000000 pounds"
+		
 		random_owned = {
-			limit = {
-				owner = {
-					money = 5000000
-				}
-			}
-			owner = {
-				money = -2000000
-				FROM = { money = 2000000 }
-				money = -2000000
-				FROM = { money = 2000000 }
-				money = -1000000
-				FROM = { money = 1000000 }
-			}
-		}
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
+        random_owned = {
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
+        random_owned = {
+            limit = { owner = { money = 1000000 } }
+            owner = { FROM = { money = 1000000 } money = -1000000 }
+        }
 	}  
 	option = {
 		name = "6000000 pounds"
+		
 		random_owned = {
-			limit = {
-				owner = {
-					money = 6000000
-				}
-			}
-			owner = {
-				money = -2000000
-				FROM = { money = 2000000 }
-				money = -2000000
-				FROM = { money = 2000000 }
-				money = -2000000
-				FROM = { money = 2000000 }
-			}
-		}
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
+        random_owned = {
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
+        random_owned = {
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
 	}  
 	option = {
 		name = "7000000 pounds"
+		
 		random_owned = {
-			limit = {
-				owner = {
-					money = 7000000
-				}
-			}
-			owner = {
-				money = -2000000
-				FROM = { money = 2000000 }
-				money = -2000000
-				FROM = { money = 2000000 }
-				money = -2000000
-				FROM = { money = 2000000 }
-				money = -1000000
-				FROM = { money = 1000000 }
-			}
-		}
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
+        random_owned = {
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
+        random_owned = {
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
+        random_owned = {
+            limit = { owner = { money = 1000000 } }
+            owner = { FROM = { money = 1000000 } money = -1000000 }
+        }
 	}  
 	option = {
 		name = "8000000 pounds"
+		
 		random_owned = {
-			limit = {
-				owner = {
-					money = 8000000
-				}
-			}
-			owner = {
-				money = -2000000
-				FROM = { money = 2000000 }
-				money = -2000000
-				FROM = { money = 2000000 }
-				money = -2000000
-				FROM = { money = 2000000 }
-				money = -2000000
-				FROM = { money = 2000000 }
-			}
-		}
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
+        random_owned = {
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
+		random_owned = {
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
+        random_owned = {
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
 	}  
 	option = {
 		name = "9000000 pounds"
+		
 		random_owned = {
-			limit = {
-				owner = {
-					money = 9000000
-				}
-			}
-			owner = {
-				money = -2000000
-				FROM = { money = 2000000 }
-				money = -2000000
-				FROM = { money = 2000000 }
-				money = -2000000
-				FROM = { money = 2000000 }
-				money = -2000000
-				FROM = { money = 2000000 }
-				money = -1000000
-				FROM = { money = 1000000 }
-			}
-		}
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
+        random_owned = {
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
+		random_owned = {
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
+        random_owned = {
+            limit = { owner = { money = 2000000 } }
+            owner = { FROM = { money = 2000000 } money = -2000000 }
+        }
+        random_owned = {
+            limit = { owner = { money = 1000000 } }
+            owner = { FROM = { money = 1000000 } money = -1000000 }
+        }
 	}  
 }
 
