@@ -27,7 +27,7 @@ country_event = {
 
 	trigger = {
 		ai = yes
-		capital_scope = { has_province_modifier = capital_mobilisation }
+		any_owned_province = { has_province_modifier = capital_mobilisation }
 	}
 	
 	mean_time_to_happen = {
@@ -36,7 +36,7 @@ country_event = {
 	
 	option = {
 		name = "EVT7777916OPTA"
-		capital_scope = { remove_province_modifier = capital_mobilisation }
+		any_owned = { remove_province_modifier = capital_mobilisation }
 	}
 }
 

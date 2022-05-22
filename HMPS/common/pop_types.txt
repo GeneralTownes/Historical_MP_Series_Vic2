@@ -1876,12 +1876,6 @@ assimilation_chance = {
 
 #general conversion mtth, same for all pops
 conversion_chance = {
-	factor = 0.1
-
-	modifier = {
-		factor = 2
-		country = { has_country_flag = coptic_conversions }
-	}
 
 	modifier = {
 		factor = -100
@@ -1994,17 +1988,10 @@ conversion_chance = {
 		}
 		state_scope = { is_colonial = yes }
 		country = { civilized = yes }
-	}
+	}	
 	
 	modifier = {
-		factor = 1.5
-		has_pop_culture = ainu
-		country = { primary_culture = japanese }
-	}
-	
-	
-	modifier = {
-		factor = 0.2
+		factor = 0.25
 		country = { government = theocracy }
 	}
 	
@@ -2059,5 +2046,4 @@ conversion_chance = {
 		factor = 0.15
 		not = { culture = this }
 	}
-
 }

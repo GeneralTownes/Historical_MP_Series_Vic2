@@ -70,8 +70,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -1000
-				FROM = { treasury = 1000 }
+				money = -1000
+				FROM = { money = 1000 }
 			}
 		}
 	}
@@ -84,8 +84,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -2000
-				FROM = { treasury = 2000 }
+				money = -2000
+				FROM = { money = 2000 }
 			}
 		}
 	}
@@ -98,8 +98,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -3000
-				FROM = { treasury = 3000 }
+				money = -3000
+				FROM = { money = 3000 }
 			}
 		}
 	}  
@@ -112,8 +112,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -4000
-				FROM = { treasury = 4000 }
+				money = -4000
+				FROM = { money = 4000 }
 			}
 		}
 	}  
@@ -126,8 +126,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -5000
-				FROM = { treasury = 5000 }
+				money = -5000
+				FROM = { money = 5000 }
 			}
 		}
 	}  
@@ -140,8 +140,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -6000
-				FROM = { treasury = 6000 }
+				money = -6000
+				FROM = { money = 6000 }
 			}
 		}
 	}  
@@ -154,8 +154,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -7000
-				FROM = { treasury = 7000 }
+				money = -7000
+				FROM = { money = 7000 }
 			}
 		}
 	}  
@@ -168,8 +168,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -8000
-				FROM = { treasury = 8000 }
+				money = -8000
+				FROM = { money = 8000 }
 			}
 		}
 	}  
@@ -182,8 +182,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -9000
-				FROM = { treasury = 9000 }
+				money = -9000
+				FROM = { money = 9000 }
 			}
 		}
 	}  
@@ -208,8 +208,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -10000
-				FROM = { treasury = 10000 }
+				money = -10000
+				FROM = { money = 10000 }
 			}
 		}
 	}
@@ -222,8 +222,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -20000
-				FROM = { treasury = 20000 }
+				money = -20000
+				FROM = { money = 20000 }
 			}
 		}
 	}
@@ -236,8 +236,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -30000
-				FROM = { treasury = 30000 }
+				money = -30000
+				FROM = { money = 30000 }
 			}
 		}
 	}  
@@ -250,8 +250,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -40000
-				FROM = { treasury = 40000 }
+				money = -40000
+				FROM = { money = 40000 }
 			}
 		}
 	}  
@@ -264,8 +264,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -50000
-				FROM = { treasury = 50000 }
+				money = -50000
+				FROM = { money = 50000 }
 			}
 		}
 	}  
@@ -278,8 +278,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -60000
-				FROM = { treasury = 60000 }
+				money = -60000
+				FROM = { money = 60000 }
 			}
 		}
 	}  
@@ -292,8 +292,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -70000
-				FROM = { treasury = 70000 }
+				money = -70000
+				FROM = { money = 70000 }
 			}
 		}
 	}  
@@ -306,8 +306,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -80000
-				FROM = { treasury = 80000 }
+				money = -80000
+				FROM = { money = 80000 }
 			}
 		}
 	}  
@@ -320,8 +320,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -90000
-				FROM = { treasury = 90000 }
+				money = -90000
+				FROM = { money = 90000 }
 			}
 		}
 	}  
@@ -346,8 +346,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -100000
-				FROM = { treasury = 100000 }
+				money = -100000
+				FROM = { money = 100000 }
 			}
 		}
 	}
@@ -360,8 +360,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -200000
-				FROM = { treasury = 200000 }
+				money = -200000
+				FROM = { money = 200000 }
 			}
 		}
 	}
@@ -374,8 +374,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -300000
-				FROM = { treasury = 300000 }
+				money = -300000
+				FROM = { money = 300000 }
 			}
 		}
 	}  
@@ -388,8 +388,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -400000
-				FROM = { treasury = 400000 }
+				money = -400000
+				FROM = { money = 400000 }
 			}
 		}
 	}  
@@ -402,8 +402,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -500000
-				FROM = { treasury = 500000 }
+				money = -500000
+				FROM = { money = 500000 }
 			}
 		}
 	}  
@@ -416,8 +416,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -600000
-				FROM = { treasury = 600000 }
+				money = -600000
+				FROM = { money = 600000 }
 			}
 		}
 	}  
@@ -430,8 +430,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -700000
-				FROM = { treasury = 700000 }
+				money = -700000
+				FROM = { money = 700000 }
 			}
 		}
 	}  
@@ -444,8 +444,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -800000
-				FROM = { treasury = 800000 }
+				money = -800000
+				FROM = { money = 800000 }
 			}
 		}
 	}  
@@ -458,8 +458,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -900000
-				FROM = { treasury = 900000 }
+				money = -900000
+				FROM = { money = 900000 }
 			}
 		}
 	}  
@@ -484,8 +484,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -1000000
-				FROM = { treasury = 1000000 }
+				money = -1000000
+				FROM = { money = 1000000 }
 			}
 		}
 	}
@@ -498,8 +498,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
 			}
 		}
 	}
@@ -512,10 +512,10 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -2000000					#stack overflow otherwise
-				FROM = { treasury = 2000000 }
-				treasury = -1000000
-				FROM = { treasury = 1000000 }
+				money = -2000000					#stack overflow otherwise
+				FROM = { money = 2000000 }
+				money = -1000000
+				FROM = { money = 1000000 }
 			}
 		}
 	}  
@@ -528,10 +528,10 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
 			}
 		}
 	}  
@@ -544,12 +544,12 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
-				treasury = -1000000
-				FROM = { treasury = 1000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
+				money = -1000000
+				FROM = { money = 1000000 }
 			}
 		}
 	}  
@@ -562,12 +562,12 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
 			}
 		}
 	}  
@@ -580,14 +580,14 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
-				treasury = -1000000
-				FROM = { treasury = 1000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
+				money = -1000000
+				FROM = { money = 1000000 }
 			}
 		}
 	}  
@@ -600,14 +600,14 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
 			}
 		}
 	}  
@@ -620,16 +620,16 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
-				treasury = -2000000
-				FROM = { treasury = 2000000 }
-				treasury = -1000000
-				FROM = { treasury = 1000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
+				money = -2000000
+				FROM = { money = 2000000 }
+				money = -1000000
+				FROM = { money = 1000000 }
 			}
 		}
 	}  
@@ -666,8 +666,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -100
-				FROM = { treasury = 100 }
+				money = -100
+				FROM = { money = 100 }
 			}
 		}
 	}
@@ -680,8 +680,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -200
-				FROM = { treasury = 200 }
+				money = -200
+				FROM = { money = 200 }
 			}
 		}
 	}
@@ -694,8 +694,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -300
-				FROM = { treasury = 300 }
+				money = -300
+				FROM = { money = 300 }
 			}
 		}
 	}  
@@ -708,8 +708,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -400
-				FROM = { treasury = 400 }
+				money = -400
+				FROM = { money = 400 }
 			}
 		}
 	}  
@@ -722,8 +722,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -500
-				FROM = { treasury = 500 }
+				money = -500
+				FROM = { money = 500 }
 			}
 		}
 	}  
@@ -736,8 +736,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -600
-				FROM = { treasury = 600 }
+				money = -600
+				FROM = { money = 600 }
 			}
 		}
 	}  
@@ -750,8 +750,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -700
-				FROM = { treasury = 700 }
+				money = -700
+				FROM = { money = 700 }
 			}
 		}
 	}  
@@ -764,8 +764,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -800
-				FROM = { treasury = 800 }
+				money = -800
+				FROM = { money = 800 }
 			}
 		}
 	}  
@@ -778,8 +778,8 @@ country_event = {
 				}
 			}
 			owner = {
-				treasury = -900
-				FROM = { treasury = 900 }
+				money = -900
+				FROM = { money = 900 }
 			}
 		}
 	}  

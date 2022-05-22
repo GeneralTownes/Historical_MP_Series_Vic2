@@ -107,7 +107,7 @@ country_event = {
 	
 	option = {
 		name = "EVT7777912PTA"
-		set_country_flag = coptic_conversions
+		government = theocracy
 		any_pop = {
 			limit = { 
 				NOT = { has_pop_religion = coptic }
