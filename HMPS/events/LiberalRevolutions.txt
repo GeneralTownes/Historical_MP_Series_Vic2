@@ -3614,7 +3614,7 @@ country_event = {
 		any_pop = {
 			limit = {
 				has_pop_culture = north_italian
-				location = { is_core = ITA }
+				location = { region = ITA_1 }
 			}
 			militancy = 8
 		}
@@ -3623,7 +3623,7 @@ country_event = {
 				OR = {
 					is_core = POL
 					is_core = ROM
-					is_core = ITA
+					region = ITA_1
 				}
 			}
 			add_province_modifier = {

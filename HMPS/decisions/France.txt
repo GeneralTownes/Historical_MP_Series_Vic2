@@ -453,17 +453,17 @@ political_decisions = {
 				}
 				BRT = { all_core = { remove_core = BRT } }
 			}
-			random_owned = {
+			any_owned = {
 				limit = {
-					WLL = { exists = no }
+					is_core = WLL
 				}
-				WLL = { all_core = { remove_core = WLL } }
+				remove_core = WLL
 			}
-			random_owned = {
+			any_owned = {
 				limit = {
-					SWI = { exists = no }
+					region = SWI_607
 				}
-				SWI = { all_core = { remove_core = SWI } }
+				remove_core = SWI
 			}
 			any_country = {
 				limit = {

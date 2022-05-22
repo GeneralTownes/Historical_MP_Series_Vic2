@@ -472,6 +472,8 @@ country_event = {
 				OR = {
 					is_core = GCF
 					is_core = GER
+					region = GER_1
+					region = GER_2
 					NOT = { is_core = THIS }
 					is_core = NET
 					is_core = FLA
@@ -481,6 +483,7 @@ country_event = {
 						THIS = { NOT = { has_country_flag = walloon_autonomy } }
 					}
 					is_core = ITA
+					region = ITA_1
 					is_core = ITS
 					is_core = CAT
 				}

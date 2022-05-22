@@ -222,7 +222,8 @@ political_decisions = {
 				remove_core = KUK
 			}
 			KUK = { all_core = { add_core = AUS } }
-			GER = { all_core = { add_core = GCF } }
+			GER_1 = { add_core = GCF }
+			GER_2 = { add_core = GCF }
 			RHI = { all_core = { add_core = GCF } }
 			GCF = { all_core = { remove_core = GER } }
 			change_tag = GCF

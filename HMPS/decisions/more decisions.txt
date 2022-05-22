@@ -192,37 +192,16 @@ political_decisions = {
 		}	
 		allow = {
 			war = no
-			OR = {
-				ITA = {
-					all_core = {
-						owner = { ai = yes }
-						OR = {
+			ITA_1 = {
+				OR = {
+					owner = { ai = yes }
+					OR = {
+						owned_by = THIS
+						owner = { in_sphere = THIS }
+						NOT = {
 							OR = {
-								owned_by = THIS
-								owner = { in_sphere = THIS }
-							}
-							NOT = {
-								OR = {
-									culture = north_italian
-									culture = south_italian
-								}
-							}
-						}
-					}
-				}
-				ITS = {
-					all_core = {
-						owner = { ai = yes }
-						OR = {
-							OR = {
-								owned_by = THIS
-								owner = { in_sphere = THIS }
-							}
-							NOT = {
-								OR = {
-									culture = north_italian
-									culture = south_italian
-								}
+								culture = north_italian
+								culture = south_italian
 							}
 						}
 					}
@@ -345,14 +324,12 @@ political_decisions = {
 		}
 		allow = {
 			war = no
-			ITA = {
-				ai = yes
-				all_core = {
+			ITA_1 = {
+				OR = {
+					owner = { ai = yes }
 					OR = {
-						OR = {
-							owned_by = THIS
-							owner = { in_sphere = THIS ai = yes }
-						}
+						owned_by = THIS
+						owner = { in_sphere = THIS }
 						NOT = {
 							OR = {
 								culture = north_italian

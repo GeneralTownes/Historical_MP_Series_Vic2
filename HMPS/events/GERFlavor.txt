@@ -542,7 +542,7 @@ country_event = {
 				owns = 410
 			}
 		}
-		410 = { is_core = GER }
+		410 = { owned_by = FRA }
 		OR = {
 			steel_breech_loaded_artillery = 1
 			machine_guns = 1
@@ -650,7 +650,6 @@ country_event = {
 		has_country_flag = glory_of_germany_al
 		NOT = { has_country_flag = lost_alsace_lorraine }
 		410 = {
-			is_core = GER
 			NOT = { owned_by = THIS }
 		}
 	}
@@ -1252,12 +1251,13 @@ country_event = {
 	
 	option = {
 		name = "EVT33038OPTB"
-		any_owned = { limit = { is_core = GER }
+		any_owned = { 
+			limit = { OR = { region = GER_1 region = GER_2 } }
 			add_province_modifier = {
 				name = nationalist_agitation
 				duration = 3650
-				}
 			}
+		}
 		ai_chance = {
 			factor = 0.5
 			modifier = {
@@ -1339,12 +1339,15 @@ country_event = {
 		name = "EVT33038OPTA"
 		NGF = { set_country_flag = formed_on_rhine_crisis }
 		any_owned = {
-			limit = { 
-				is_core = GER 
+			limit = {
+				OR = {
+					region = GER_1
+					region = GER_2
 				}
+			}
 			add_core = NGF
 			remove_core = THIS
-			}
+		}
 		change_tag = NGF
 		all_core = {
 			limit = { is_core = PRU }
@@ -1369,7 +1372,7 @@ country_event = {
 					tag = PRU
 					tag = NGF
 					tag = LUX
-					capital_scope = { NOT = { is_core = GER } }
+					capital_scope = { NOT = { region = GER_1 region = GER_2 } }
 					is_vassal = yes
 					}
 				}
@@ -1403,7 +1406,7 @@ country_event = {
 		name = "EVT33039OPTB"
 		NGF = { set_country_flag = formed_on_rhine_crisis }
 		any_owned = {
-			limit = {  is_core = GER }
+			limit = { OR = { region = GER_1 region = GER_2 } }
 			add_core = NGF
 			remove_core = THIS
 			}
@@ -1418,7 +1421,7 @@ country_event = {
 				ai = yes 
 				primary_culture = north_german
 				is_substate = no
-				capital_scope = { is_core = GER }
+				capital_scope = { OR = { region = GER_1 region = GER_2 } }
 				OR = {
 					is_vassal = no
 					vassal_of = THIS
@@ -1432,7 +1435,7 @@ country_event = {
 				ai = yes 
 				primary_culture = south_german
 				is_substate = no
-				capital_scope = { is_core = GER }
+				capital_scope = { OR = { region = GER_1 region = GER_2 } }
 				is_vassal = no
 				}
 			change_tag = SGF
@@ -1442,7 +1445,7 @@ country_event = {
 				ai = yes 
 				primary_culture = south_german
 				is_substate = no
-				capital_scope = { is_core = GER }
+				capital_scope = { OR = { region = GER_1 region = GER_2 } }
 				OR = {
 					is_vassal = no
 					vassal_of = THIS
