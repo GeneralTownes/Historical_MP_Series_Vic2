@@ -869,13 +869,13 @@ emigration_chance = {
 	}
 	
 	modifier = {
-		factor = -2.0
+		factor = -1.5
 		THIS = { is_culture_group = east_asian  }
 		country = { is_culture_group = east_asian civilized = yes }
 	}
 	
 	modifier = {
-		factor = -2.0
+		factor = -1.5
 		THIS = { is_culture_group = south_asian  }
 		country = { is_culture_group = south_asian civilized = yes }
 	}
@@ -1004,7 +1004,7 @@ emigration_chance = {
 	}
 	
 	modifier = {
-		factor = -0.025
+		factor = -0.02
 		country = { 
 			administration_spending = 0.75
 			OR = {
@@ -1015,7 +1015,7 @@ emigration_chance = {
 	}
 		
 	modifier = {
-		factor = -0.025
+		factor = -0.02
 		country = { 
 			administration_spending = 0.99
 			unemployment_subsidies = good_subsidies

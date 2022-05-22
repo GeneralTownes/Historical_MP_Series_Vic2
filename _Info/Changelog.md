@@ -144,6 +144,7 @@ Soldier pops concentrate in state capitals, requires 3k soldier pops for 1st bri
 - Heavy Armament: Greatly buffed artillery attack
 - Light Armament: Gives Infantry & Guard discipline increases
 - Submarines scale greatly with 1900+ tech
+- Gas attack is reduced to 1, no defence, taken via decision
 #### Combat Width & Supply
 - Brigades are 5k
 - 5 combat width increase in 1920 & 1930

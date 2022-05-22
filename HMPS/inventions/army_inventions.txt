@@ -299,38 +299,42 @@ gas_attack_capability = {
 	chance = {
 		base = 0
 		modifier = {
-			factor = 2
-			invention = cracking
+			factor = 100
+			has_country_flag = gas_attacking
 		}
-		modifier = {
-			factor = 2
-			invention = carbon_soil_enrichment
-		}		
+		#modifier = {
+		#	factor = 2
+		#	invention = cracking
+		#}
+		#modifier = {
+		#	factor = 2
+		#	invention = carbon_soil_enrichment
+		#}		
 	}
 	effect = {
 		gas_attack = yes
 	}
 }
-gas_defense_capability = {
-	limit = {
-		military_directionism = 1
-	}
-	chance = {
-		base = 0
-		modifier = {
-			factor = 25
-			war = yes
-			war_countries = { invention = gas_attack_capability }
-		}
-		modifier = {
-			factor = 5
-			any_neighbor_country = { invention = gas_attack_capability }
-		}
-	}
-	effect = {
-		gas_defence = yes
-	}
-}
+#gas_defense_capability = {
+#	limit = {
+#		military_directionism = 1
+#	}
+#	chance = {
+#		base = 0
+#		modifier = {
+#			factor = 25
+#			war = yes
+#			war_countries = { invention = gas_attack_capability }
+#		}
+#		modifier = {
+#			factor = 5
+#			any_neighbor_country = { invention = gas_attack_capability }
+#		}
+#	}
+#	effect = {
+#		gas_defence = yes
+#	}
+#}
 elastic_defense_system = {
 	limit = { deep_defense_system = 1 }
 	chance = {

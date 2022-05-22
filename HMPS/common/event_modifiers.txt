@@ -139,6 +139,12 @@ lost_the_tarrif_war = {
 	min_tariff = 0.25
 }
 
+gas_warfare = {
+	badboy = 0.02
+	supply_consumption = 0.5
+	icon = 15
+}
+
 ##### Birth Rate & Immigration Campaigns ######
 
 birthrate_push_low = {

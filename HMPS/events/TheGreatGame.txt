@@ -901,8 +901,6 @@ country_event = {
 	
 	trigger = {
 		vassal_of = RUS
-		ai = yes
-		#civilized = no
 		OR = {
 			primary_culture = uzbek
 			primary_culture = kirgiz

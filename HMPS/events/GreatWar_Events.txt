@@ -404,7 +404,7 @@ country_event = {
 		war_exhaustion = 30
 		add_country_modifier = {
 			name = no_more_war
-			duration = 1095
+			duration = 365
 		}
 		any_pop = {
 			dominant_issue = {
@@ -853,7 +853,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = no_more_war
-			duration = 3650
+			duration = 365
 		}
 	}
 }
@@ -1640,7 +1640,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = no_more_war
-			duration = 1095
+			duration = 365
 		}
 	}
 }
@@ -1753,7 +1753,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = no_more_war
-			duration = 3650
+			duration = 365
 		}
 	}
 }
@@ -3049,7 +3049,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = no_more_war
-			duration = 3650
+			duration = 365
 		}
 	}
 }
@@ -4056,7 +4056,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = no_more_war
-			duration = 3650
+			duration = 365
 		}
 	}
 }
@@ -4507,7 +4507,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = no_more_war
-			duration = 3650
+			duration = 365
 		}
 	}
 }
@@ -4945,7 +4945,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = no_more_war
-			duration = 3650
+			duration = 365
 		}
 	}
 }
@@ -5314,7 +5314,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = no_more_war
-			duration = 3650
+			duration = 365
 		}
 	}
 }
@@ -5854,7 +5854,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = no_more_war
-			duration = 3650
+			duration = 365
 		}
 	}
 }
@@ -6364,7 +6364,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = no_more_war
-			duration = 3650
+			duration = 365
 		}
 	}
 }
@@ -7052,7 +7052,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = no_more_war
-			duration = 3650
+			duration = 365
 		}
 	}
 }

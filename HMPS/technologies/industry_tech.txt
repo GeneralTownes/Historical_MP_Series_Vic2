@@ -212,7 +212,8 @@ combustion_engine = {
 	area = tech_power
 	year = 1880
 	cost = 35000
-
+	
+	farm_rgo_eff = 0.05
 	farm_rgo_size = 0.15
 	mine_rgo_eff = 0.05
 	mine_rgo_size = 0.15
@@ -262,8 +263,10 @@ electrical_power_generation = {
 	area = tech_power
 	year = 1900
 	cost = 47500
-
+	
+	farm_rgo_eff = 0.05
 	farm_rgo_size = 0.05
+	mine_rgo_eff = 0.05
 	mine_rgo_size = 0.05
 	
 	ai_chance = {

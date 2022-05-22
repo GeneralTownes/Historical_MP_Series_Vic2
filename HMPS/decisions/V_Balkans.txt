@@ -359,9 +359,9 @@ political_decisions = {
 		effect = {
 			set_global_flag = czechoslovakia_formed
 			prestige = 10
-			BOH = { all_core = { add_core = CZH } }
+			BOH = { all_core = { add_core = CZH remove_core = BOH } }
 			SLV = { all_core = { add_core = CZH } }
-			add_accepted_culture = czech
+			primary_culture = czech
 			add_accepted_culture = slovak
 			change_tag = CZH
 			capital = 625

@@ -1101,7 +1101,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = no_more_war
-			duration = 1095
+			duration = 365
 		}
 		create_vassal = EGY
 		create_alliance = EGY

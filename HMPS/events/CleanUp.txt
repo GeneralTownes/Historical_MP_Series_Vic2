@@ -308,8 +308,11 @@ country_event = {
 		}
 		civilized = yes
 		NOT = { vote_franschise = none_voting }
+		NOT = { vote_franschise = landed_voting }
 		NOT = { political_parties = underground_parties }
+		NOT = { political_parties = harassment }
 		NOT = { upper_house_composition = party_appointed }
+		public_meetings = yes_meeting
 	}
 	
 	mean_time_to_happen = {
@@ -337,7 +340,7 @@ country_event = {
 		election = yes
 		country_event = 777789
 		random_owned = { limit = { owner = { border_policy = closed_borders } } owner = { political_reform = open_borders } }
-		random_owned = { limit = { owner = { centralization = totalitarianism } } owner = { political_reform = unitary } }
+		random_owned = { limit = { owner = { centralization = totalitarianism } } owner = { political_reform = regionalism } }
 	}
 }
 
@@ -481,12 +484,19 @@ country_event = {
 	
 	trigger = {
 		government = democracy
-		vote_franschise = none_voting		
+		OR = { 
+			vote_franschise = none_voting
+			vote_franschise = landed_voting
+		}
+		OR = { 
+			political_parties = underground_parties
+			political_parties = harassment
+		}
 		OR = {
 			ruling_party_ideology = conservative
 			ruling_party_ideology = reactionary
-			ruling_party_ideology = liberal
-			ruling_party_ideology = socialist
+			ruling_party_ideology = fascist
+			ruling_party_ideology = communist
 		}
 		civilized = yes
 	}

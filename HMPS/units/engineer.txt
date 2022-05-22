@@ -23,18 +23,17 @@ engineer = {
 		canned_food = 10
 		explosives = 10
 		regular_clothes = 10
+		pharmaceuticals = 5
+		shoes = 10
+		tobacco = 5
 	}
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		small_arms = 0.02 #0.01
-		ammunition = 0.17 # 0
-		canned_food = 0.12 # 0.02
+		small_arms = 0.02
+		ammunition = 0.17
+		canned_food = 0.12
 		explosives = 0.083
-		regular_clothes = 0.05 #0
-		tobacco = 0.017 #0
-		pharmaceuticals = 0.06
-		shoes = 0.05
 	}
 	
 
