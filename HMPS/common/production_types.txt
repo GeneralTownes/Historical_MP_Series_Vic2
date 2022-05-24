@@ -300,7 +300,7 @@ machine_parts_factory = {
 	input_goods = {    
 		steel = 9
 		coal = 5
-		bronze = 2
+		bronze = 3
 	}
 	output_goods = machine_parts 
 	value = 3.0
@@ -556,7 +556,6 @@ artillery_factory = {
 	input_goods = { 
 		explosives = 1
 		steel = 8
-		bronze = 2
 	}
 	output_goods = artillery 
 	value = 1.5
@@ -975,7 +974,7 @@ cattle_ranch = {
 coal_mine = {
 	template = RGO_template_labourers
 	output_goods = coal 
-	value = 4
+	value = 4.2
 	mine = yes
 }
 
@@ -1244,7 +1243,7 @@ artisan_machine_parts = {
 	input_goods = {    
 		steel = 9
 		coal = 5
-		bronze = 2
+		bronze = 3
 	}
 	output_goods = machine_parts 
 	value = 2.5
@@ -1386,7 +1385,6 @@ artisan_artillery = {
 	input_goods = { 
 		explosives = 1
 		steel = 8
-		bronze = 2
 	}
 	output_goods = artillery 
 	value = 1.5

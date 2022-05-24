@@ -17,7 +17,6 @@ country_event = {
 		NOT = { tag = UBD }
 		OR = {
 			tag = AUS
-			tag = NCT
 			tag = KUK
 			tag = SIC
 			tag = MOL

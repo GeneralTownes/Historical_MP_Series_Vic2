@@ -479,6 +479,7 @@ political_reforms = {
 			war_exhaustion = -0.5
 			global_immigrant_attract = 0.25
 			badboy = -0.01
+			industry_tech_research_bonus = 0.05
 			allow = { has_country_flag = changing_militarisation }
 		}
 #		one_year_draft = {
@@ -502,6 +503,7 @@ political_reforms = {
 			reinforce_speed = -0.25
 			supply_consumption = -0.15
 			badboy = -0.02
+			industry_tech_research_bonus = 0.05
 			culture_tech_research_bonus = 0.05
 			education_efficiency_modifier = 0.1
 			allow = { has_country_flag = changing_militarisation }

@@ -698,8 +698,6 @@ political_decisions = {
 		picture = become_poland
 		potential = {
 			OR = {
-				tag = PRU
-				tag = NGF
 				tag = GER
 				tag = GCF
 			}
