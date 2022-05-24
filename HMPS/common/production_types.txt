@@ -967,7 +967,7 @@ RGO_template_labourers = {
 cattle_ranch = {
 	template = RGO_template_farmers
 	output_goods = cattle 
-	value = 2.6
+	value = 2.9
 	farm = yes
 }
 

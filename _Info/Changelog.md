@@ -47,6 +47,7 @@ Everything else is our own (as far as I remember).
 - Require 2% bureaucrats to state colonies
 #### Parties
 - Anarchists: Rare, similar to socialists, successful rebels will enforce Anarchism
+- Rich pops will never support socialists, communists, anarchists, and very rarely radicals
 - No party loyalty loss on war loss
 #### National Focuses
 - Party support increased to 0.010 daily
@@ -166,7 +167,7 @@ Many nations no longer need (only) GP for flava, or high prestige. War policy re
 - FRA: Can take empire flava as the Republic
 - AUS: Can form SGF (and release its non German land)
 - DNB: RnG removed & cultures now accepted via decisions
-- RUS: Only cores Poland late-campaign, option to take all of Manchuria, decision to core CPL land
+- RUS: Only cores Poland late-campaign, option to take all of Manchuria, decision to core CPL land (no Polish revolt event)
 - GER: Can compete with Russia to core Mazovia and West-Galicia (each can core and uncore the other), formed via region control or 1860 as NGF
 - ITA: Formed via region control
 - Ottos: Tanzimat reforms can be completed as a republic & Arab revolt won't remove accepted cultures

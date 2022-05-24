@@ -596,6 +596,7 @@ political_decisions = {
 						is_core = RMG
 						is_core = SYC
 						is_core = GEN
+						region = ITA_1
 					}
 				}
 				add_core = THIS
@@ -718,7 +719,7 @@ political_decisions = {
 				limit = {
 					province_id = 727 #Lombardy
 				}
-				AUS_729 = { add_core = THIS }
+				AUS_729 = { add_core = THIS remove_core = VEN }
 				owner = { set_global_flag = italian_claimed_venetia }
 			}
 			
