@@ -4358,6 +4358,7 @@ country_event = {
 		literacy = 0.4
 		civilized = yes
 		romanticism = 1
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -4426,6 +4427,7 @@ country_event = {
 		civilized = yes
 		average_consciousness = 3
 		NOT = { press_rights = free_press }
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -4496,6 +4498,7 @@ country_event = {
 		}
 		has_pop_type = capitalists
 		average_consciousness = 2
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -4570,6 +4573,7 @@ country_event = {
 		NOT = {
 			press_rights = state_press
 		}
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {
@@ -4634,6 +4638,7 @@ country_event = {
 			}
 		}
 		civilized = yes
+		NOT = { has_global_flag = national_movenemts_disabled }
 	}
 	
 	mean_time_to_happen = {

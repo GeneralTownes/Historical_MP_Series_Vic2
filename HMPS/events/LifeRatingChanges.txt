@@ -217,7 +217,7 @@ country_event = {
 		OR = {
 			AND = {
 				tag = USA
-				year = 1890
+				year = 1865
 			}
 			AND = {
 				tag = CSA

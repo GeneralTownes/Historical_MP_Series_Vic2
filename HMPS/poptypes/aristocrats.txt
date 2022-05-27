@@ -1547,60 +1547,7 @@ ideologies = {
 	}
 	
 	radical = {
-		factor = 0.1
-		
-		modifier = {
-			factor = 1.05
-			political_reform_want = 0.02
-		}
-		modifier = {
-			factor = 1.05
-			political_reform_want = 0.04
-		}
-		modifier = {
-			factor = 1.05
-			political_reform_want = 0.06
-		}
-		modifier = {
-			factor = 1.1
-			political_reform_want = 0.08
-		}
-		modifier = {
-			factor = 1.1
-			political_reform_want = 0.10
-		}
-		modifier = {
-			factor = 1.1
-			political_reform_want = 0.12
-		}
-		modifier = {
-			factor = 1.1
-			political_reform_want = 0.14
-		}
-		modifier = {
-			factor = 1.15
-			political_reform_want = 0.16
-		}
-		modifier = {
-			factor = 1.15
-			political_reform_want = 0.18
-		}
-		modifier = {
-			factor = 1.15
-			political_reform_want = 0.20
-		}
-		modifier = {
-			factor = 1.2
-			state_scope = {
-				not = { poor_strata_everyday_needs = 0.25 }
-			}
-		}
-		modifier = {
-			factor = 1.1
-			state_scope = {
-				NOT = { middle_strata_everyday_needs = 0.25 }
-			}
-		}
+		factor = 0
 	}
 	anarcho_liberal = {
 		factor = 0

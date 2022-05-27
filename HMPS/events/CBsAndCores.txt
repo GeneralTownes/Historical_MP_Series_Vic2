@@ -1274,10 +1274,20 @@ province_event = {
 		owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } }
 		is_core = THIS
 		is_overseas = no
-		any_core = {
-			exists = yes
-			NOT = { tag = THIS }
-			NOT = { is_cultural_union = THIS }			
+		OR = {
+			any_core = {
+				exists = yes
+				NOT = { tag = THIS }
+				NOT = { is_cultural_union = THIS }			
+			}
+			AND = {
+				owner = { mass_politics = 1 }
+				any_core = {
+					exists = no
+					NOT = { tag = THIS }
+					NOT = { is_cultural_union = THIS }			
+				}
+			}
 		}
 		any_neighbor_province = {
 			owned_by = THIS
@@ -1356,10 +1366,20 @@ province_event = {
 			any_owned = {
 				limit = {
 					is_core = THIS
-					any_core = {
-						exists = yes
-						NOT = { tag = THIS }
-						NOT = { is_cultural_union = THIS }
+					OR = {
+						any_core = {
+							exists = yes
+							NOT = { tag = THIS }
+							NOT = { is_cultural_union = THIS }			
+						}
+						AND = {
+							owner = { mass_politics = 1 }
+							any_core = {
+								exists = no
+								NOT = { tag = THIS }
+								NOT = { is_cultural_union = THIS }			
+							}
+						}
 					}
 					NOT = {
 						has_province_modifier = integration_refusal
@@ -1542,15 +1562,7 @@ province_event = {
 	trigger = {
 		has_province_modifier = national_assimilation
 		owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } }
-		OR = {
-			NOT = { is_core = THIS }
-			NOT = {
-				any_core = {
-					exists = yes
-					NOT = { tag = THIS }
-				}
-			}
-		}
+		NOT = { is_core = THIS }
 	}
 	
 	mean_time_to_happen = {
@@ -1590,11 +1602,6 @@ province_event = {
 	trigger = {
 		is_core = THIS
 		owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } }
-		any_core = {
-			exists = yes
-			NOT = { tag = THIS }
-			NOT = { is_cultural_union = THIS }
-		}
 		has_province_modifier = national_assimilation
 		NOT = { has_province_modifier = national_assimilation_rejection }
 		controlled_by = THIS
@@ -1732,11 +1739,6 @@ province_event = {
 			any_owned = {
 				limit = {
 					is_core = THIS
-					any_core = {
-						exists = yes
-						NOT = { tag = THIS }
-						NOT = { is_cultural_union = THIS }
-					}
 					has_province_modifier = national_assimilation
 					controlled_by = THIS
 					is_colonial = no
@@ -1896,10 +1898,20 @@ province_event = {
 	trigger = {
 		owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } }
 		is_core = THIS
-		any_core = {
-			exists = yes
-			NOT = { tag = THIS }
-			NOT = { is_cultural_union = THIS }
+		OR = {
+			any_core = {
+				exists = yes
+				NOT = { tag = THIS }
+				NOT = { is_cultural_union = THIS }			
+			}
+			AND = {
+				owner = { mass_politics = 1 }
+				any_core = {
+					exists = no
+					NOT = { tag = THIS }
+					NOT = { is_cultural_union = THIS }			
+				}
+			}
 		}
 		has_province_modifier = national_assimilation
 		NOT = {
@@ -1997,11 +2009,6 @@ province_event = {
 	trigger = {
 		owner = { NOT = { has_country_modifier = preparations_to_kill } NOT = { any_owned_province = { has_province_modifier = genocide } } }
 		is_core = THIS
-		any_core = {
-			exists = yes
-			NOT = { tag = THIS }
-			NOT = { is_cultural_union = THIS }
-		}
 		OR = {
 			is_primary_culture = yes
 			is_accepted_culture = yes

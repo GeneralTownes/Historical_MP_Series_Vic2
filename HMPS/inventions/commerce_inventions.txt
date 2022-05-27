@@ -202,6 +202,7 @@ industrial_rnd_investments = {
 	}
 	effect = {
 		factory_cost = -0.01
+		farm_RGO_eff = 0.05
 	}
 }
 industrial_production_investments = {
@@ -220,6 +221,7 @@ industrial_production_investments = {
 	}
 	effect = {
 		factory_cost = -0.01
+		farm_RGO_eff = 0.05
 	}
 }
 industrial_distribution_investments = {
@@ -238,6 +240,7 @@ industrial_distribution_investments = {
 	}
 	effect = {
 		factory_cost = -0.01
+		farm_RGO_eff = 0.05
 	}
 }
 #bank_inspection_board

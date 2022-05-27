@@ -75,7 +75,7 @@ Everything else is our own (as far as I remember).
 - France average life rating increase to 33
 - USA starts at 40
 - Westernised China, India and Korea can increase to 40 with tech
-- 1890 USA,UK -> 35 LR, 1905 ITA -> 35 LR
+- 1865 USA -> 35, 1890 UK -> 35 LR, 1905 ITA -> 35 LR
 - Pop-growth techs nerfed
 - Healthcare only grants +0.01% pm at top level fully funded
 - Removed starting baby booms
@@ -94,6 +94,7 @@ Everything else is our own (as far as I remember).
 - 70& lower assimilation on culture-cores with your core
 - 85% lower assimilation on culture-cores without your core
 - Can manually core overseas (UK can't core Canada & Australia until 1900)
+- Can gain and remove cores faster (and non-existent tag cores with Mass Pol)
 #### Immigration
 - New World buff reduces 1900+
 - Attraction from reforms greatly increased

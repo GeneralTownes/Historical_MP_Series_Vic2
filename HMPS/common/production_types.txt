@@ -824,7 +824,7 @@ lumber_mill = {
 	}
 	output_goods = lumber 
 	
-	value = 110
+	value = 125
 	bonus = {
 		trigger = { trade_goods_in_state = timber }
 		value = 0.25
@@ -1023,7 +1023,7 @@ iron_mine = {
 copper_mine = {
 	template = RGO_template_labourers
 	output_goods = copper
-	value = 2.5
+	value = 2.7
 	mine = yes
 }
 
@@ -1100,7 +1100,7 @@ tea_plantation = {
 timber_lodge = {
 	template = RGO_template_labourers
 	output_goods = timber 
-	value = 15
+	value = 20
 	farm = yes
 }
 
@@ -1595,7 +1595,7 @@ artisan_lumber = {
 	}
 	output_goods = lumber 
 	
-	value = 110
+	value = 125
 	
 	owner = {
 		poptype = artisans 
