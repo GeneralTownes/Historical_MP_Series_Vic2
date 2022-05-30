@@ -128,4 +128,5 @@ The general rule of thumb for this is you can go neutral to friendly, friendly t
 - Stalemate rules were moved into their own section due to their importance.
 - The optional restrictions on eating directly into China are there to prevent unbalanced global RGO outputs, and large manpower pools that would distort the 'historical' nature of the mod. Judge their need at the start of every campaign on a case by case basis.
 <br/>
+
 **These rules will always be subject to change if necessary.**
