@@ -63,6 +63,14 @@ political_decisions = {
 				country_event = 477877789
 			}
 			
+			### Parliamentarianism
+			any_country = {
+				limit = {
+					government = hms_government
+				}
+				political_reform = parliamentary_system
+			}
+			
 			### Westernisation Country Flags
 			any_country = {
 				limit = { 

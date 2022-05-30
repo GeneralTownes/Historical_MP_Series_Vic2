@@ -88,11 +88,11 @@ country_event = {
 	
 		ai_chance = {factor = 100}
 		 
-FROM = {
+		FROM = {
 
-		country_event = {id = 100003 days = 0}
+			country_event = {id = 100003 days = 0}
 
-		country_event = {id = 100005 days = 0}
+			country_event = {id = 100005 days = 0}
 			
 		}
 	
@@ -114,9 +114,9 @@ country_event = {
 		
 	option = {
 	
-			name = "Great!"
+		name = "Great!"
 			
-	ai_chance = {factor = 100}
+		ai_chance = {factor = 100}
 	 
 		FROM = {
 			country_event = {id = 100005 days = 0}
@@ -144,10 +144,10 @@ country_event = {
 		
 	option = {
 
-			name = "Great!"
-	ai_chance = {factor = 100}
+		name = "Great!"
+		ai_chance = {factor = 100}
  
-			FROM = {
+		FROM = {
 			country_event = {id = 100007 days = 0}
 
 			country_event = {id = 100009 days = 0}
