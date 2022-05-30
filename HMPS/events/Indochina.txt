@@ -886,15 +886,6 @@ country_event = {
 			}
 		}
 		random_owned = {
-			limit = { NOT = { owner = { is_culture_group = east_asian } } }
-			owner = {
-				remove_country_modifier = isolationist_foreign_naval_officers
-				remove_country_modifier = isolationist_foreign_naval_schools
-				remove_country_modifier = isolationist_foreign_officers
-				remove_country_modifier = isolationist_foreign_training
-			}
-		}
-		random_owned = {
 			limit = {
 				owner = {
 					NOT = { owns = 1380 }

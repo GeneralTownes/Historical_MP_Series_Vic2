@@ -50,10 +50,6 @@ country_event = {
 		remove_country_modifier = uncivilized_isolationism
 		remove_country_modifier = trade_restrictions
 		remove_country_modifier = sayings_of_the_dutch
-		remove_country_modifier = isolationist_foreign_naval_officers
-		remove_country_modifier = isolationist_foreign_naval_schools
-		remove_country_modifier = isolationist_foreign_officers
-		remove_country_modifier = isolationist_foreign_training
 		random_owned = { limit = {  owner = { has_global_flag = ever_victorious_army } } owner = { activate_technology = military_staff_system } }
 		random_owned = { limit = {  owner = { has_global_flag = the_xiang_army } } owner = { activate_technology = army_command_principle } }
 		random_owned = { 
@@ -279,10 +275,6 @@ country_event = {
 		remove_country_modifier = uncivilized_isolationism
 		remove_country_modifier = trade_restrictions
 		remove_country_modifier = sayings_of_the_dutch
-		remove_country_modifier = isolationist_foreign_naval_officers
-		remove_country_modifier = isolationist_foreign_naval_schools
-		remove_country_modifier = isolationist_foreign_officers
-		remove_country_modifier = isolationist_foreign_training
 		any_owned = {
 			remove_province_modifier = western_presence
 			remove_province_modifier = foreign_smugglers

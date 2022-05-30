@@ -2,5 +2,5 @@ owner = YZW
 controller = YZW
 add_core = YZW
 add_core = TKG
-trade_goods = grain
+trade_goods = copper
 life_rating = 35

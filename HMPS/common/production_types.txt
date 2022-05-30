@@ -1072,7 +1072,7 @@ rubber_lodge = {
 sheep_ranch = {
 	template = RGO_template_farmers
 	output_goods = wool 
-	value = 2.5
+	value = 2.9
 	farm = yes
 }
 

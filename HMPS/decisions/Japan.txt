@@ -807,7 +807,10 @@ political_decisions = {
 		
 		allow = {
 			war = no
-			war_policy = jingoism
+			OR = {
+				war_policy = jingoism
+				war_policy = pro_military
+			}
 			is_greater_power = yes
 		}
 		

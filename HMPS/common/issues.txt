@@ -1207,7 +1207,6 @@ economic_reforms = {
 		yes_firearms_production = {
 			technology_cost = 5000
 			civilization_progress_modifier = 0.05
-			allow = { NOT = { has_country_flag = lacking_writing_system } money = 10000 }
 			research_points = 0.05
 			
 			on_execute = {
@@ -1589,6 +1588,7 @@ economic_reforms = {
 			technology_cost = 5000 #was 15000
 			civilization_progress_modifier = 0.05 #was 0.10
 			research_points = 0.05
+			allow = { NOT = { has_country_flag = lacking_writing_system } money = 10001 }
 			
 			on_execute = {
 				trigger = {
@@ -1597,6 +1597,7 @@ economic_reforms = {
 				effect = {
 					activate_technology = guild_based_production
 					set_country_flag = earlyid_flag
+					money = -10000
 					
 					build_factory_in_capital_state = canned_food_factory
 
@@ -1621,11 +1622,13 @@ economic_reforms = {
 			technology_cost = 5000
 			civilization_progress_modifier = 0.10
 			research_points = 0.1
+			allow = { NOT = { has_country_flag = lacking_writing_system } money = 10001 }
 			
 			on_execute = {
 				effect = {
 					activate_technology = organized_factories
 					set_country_flag = earlyid2_flag
+					money = -10000
 					
 					build_factory_in_capital_state = cement_factory
 					

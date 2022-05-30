@@ -601,26 +601,6 @@ international_zone_modifier = {
 	icon = 7
 }
 
-isolationist_foreign_naval_officers = {
-	research_points = -0.02
-	icon = 16
-}
-
-isolationist_foreign_officers = {
-	research_points = -0.02
-	icon = 16
-}
-
-isolationist_foreign_naval_schools = {
-	research_points = -0.02
-	icon = 16
-}
-
-isolationist_foreign_training = {
-	research_points = -0.02
-	icon = 16
-}
-
 preparations_for_war = {
 	badboy = 0.01
 	icon = 16

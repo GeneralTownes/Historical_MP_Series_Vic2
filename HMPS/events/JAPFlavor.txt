@@ -20,10 +20,6 @@ country_event = {
 		remove_country_modifier = sakoku
 		remove_country_modifier = rangaku
 		remove_country_modifier = uncivilized_isolationism
-		remove_country_modifier = isolationist_foreign_naval_officers
-		remove_country_modifier = isolationist_foreign_naval_schools
-		remove_country_modifier = isolationist_foreign_officers
-		remove_country_modifier = isolationist_foreign_training
 		add_country_modifier = {
 			name = "western_influences"
 			duration = -1
@@ -34,10 +30,6 @@ country_event = {
 				substate_of = THIS
 			}
 			remove_country_modifier = uncivilized_isolationism
-			remove_country_modifier = isolationist_foreign_naval_officers
-			remove_country_modifier = isolationist_foreign_naval_schools
-			remove_country_modifier = isolationist_foreign_officers
-			remove_country_modifier = isolationist_foreign_training
 		}
 		any_country = {
 			limit = {
@@ -158,10 +150,6 @@ country_event = {
 		treasury = -100000
 		FROM = { country_event = 97609 }
 		remove_country_modifier = uncivilized_isolationism
-		remove_country_modifier = isolationist_foreign_naval_officers
-		remove_country_modifier = isolationist_foreign_naval_schools
-		remove_country_modifier = isolationist_foreign_officers
-		remove_country_modifier = isolationist_foreign_training
 		add_country_modifier = {
 			name = "western_influences"
 			duration = -1
@@ -172,10 +160,6 @@ country_event = {
 				substate_of = THIS
 			}
 			remove_country_modifier = uncivilized_isolationism
-			remove_country_modifier = isolationist_foreign_naval_officers
-			remove_country_modifier = isolationist_foreign_naval_schools
-			remove_country_modifier = isolationist_foreign_officers
-			remove_country_modifier = isolationist_foreign_training
 		}
 		any_country = {
 			limit = {

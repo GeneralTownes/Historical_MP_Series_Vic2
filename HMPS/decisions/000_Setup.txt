@@ -2757,23 +2757,6 @@ political_decisions = {
 				aristocrats = { ideology = { value = reactionary factor = 0.4 } }
 				add_country_modifier = { name = uncivilized_isolationism duration = -1 }
 				add_country_modifier = { name = sakoku duration = -1 }
-				#add_country_modifier = { name = global_baby_boom_small duration = 3650 }
-				random_owned = {
-					limit = { owner = { foreign_naval_officers = yes_foreign_naval_officers } }
-					owner = { add_country_modifier = { name = isolationist_foreign_naval_officers duration = -1 } }
-				}
-				random_owned = {
-					limit = { owner = { foreign_training = yes_foreign_training } }
-					owner = { add_country_modifier = { name = isolationist_foreign_training duration = -1 } }
-				}
-				random_owned = {
-					limit = { owner = { naval_schools = yes_naval_schools } }
-					owner = { add_country_modifier = { name = isolationist_foreign_naval_schools duration = -1 } }
-				}
-				random_owned = {
-					limit = { owner = { foreign_training = yes_foreign_training } }
-					owner = { add_country_modifier = { name = isolationist_foreign_training duration = -1 } }
-				}
 				relation = {
 					who = QNG
 					value = -150
@@ -2801,23 +2784,7 @@ political_decisions = {
 					limit = { province_id = 1661 }
 					any_pop = { ideology = { value = liberal factor = 0.2 } }
 					add_province_modifier = { name = foreign_trading_post duration = -1 }
-				}
-				random_owned = {
-					limit = { owner = { foreign_naval_officers = yes_foreign_naval_officers } }
-					owner = { add_country_modifier = { name = isolationist_foreign_naval_officers duration = -1 } }
-				}
-				random_owned = {
-					limit = { owner = { foreign_training = yes_foreign_training } }
-					owner = { add_country_modifier = { name = isolationist_foreign_training duration = -1 } }
-				}
-				random_owned = {
-					limit = { owner = { naval_schools = yes_naval_schools } }
-					owner = { add_country_modifier = { name = isolationist_foreign_naval_schools duration = -1 } }
-				}
-				random_owned = {
-					limit = { owner = { foreign_training = yes_foreign_training } }
-					owner = { add_country_modifier = { name = isolationist_foreign_training duration = -1 } }
-				}				
+				}		
 			}
 			#################Japan Setup######################
 			
@@ -2921,70 +2888,6 @@ political_decisions = {
 					tag = SIA
 				}
 				add_country_modifier = { name = uncivilized_isolationism duration = -1 }
-			}
-			
-			any_country = {
-				limit = {
-					OR = {
-						is_culture_group = east_asian
-						has_country_modifier = uncivilized_isolationism
-						has_country_modifier = sakoku
-						vassal_of = QNG
-						substate_of = QNG
-					}
-					civilized = no
-					naval_schools = yes_naval_schools
-					NOT = { has_country_modifier = isolationist_foreign_naval_schools  }
-				}
-				add_country_modifier = { name = isolationist_foreign_naval_schools duration = -1 }
-			}
-			
-			any_country = {
-				limit = {
-					OR = {
-						is_culture_group = east_asian
-						has_country_modifier = uncivilized_isolationism
-						has_country_modifier = sakoku
-						vassal_of = QNG
-						substate_of = QNG
-					}
-					civilized = no
-					foreign_officers = yes_foreign_officers
-					NOT = { has_country_modifier = isolationist_foreign_officers }
-				}
-				add_country_modifier = { name = isolationist_foreign_officers duration = -1 }
-			}
-			
-			any_country = {
-				limit = {
-					OR = {
-						is_culture_group = east_asian
-						has_country_modifier = uncivilized_isolationism
-						has_country_modifier = sakoku
-						vassal_of = QNG
-						substate_of = QNG
-					}
-					civilized = no
-					foreign_naval_officers = yes_foreign_naval_officers
-					NOT = { has_country_modifier = isolationist_foreign_naval_officers }
-				}
-				add_country_modifier = { name = isolationist_foreign_naval_officers duration = -1 }
-			}
-			
-			any_country = {
-				limit = {
-					OR = {
-						is_culture_group = east_asian
-						has_country_modifier = uncivilized_isolationism
-						has_country_modifier = sakoku
-						vassal_of = QNG
-						substate_of = QNG
-					}
-					civilized = no
-					foreign_training = yes_foreign_training
-					NOT = { has_country_modifier = isolationist_foreign_training }
-				}
-				add_country_modifier = { name = isolationist_foreign_training duration = -1 }
 			}
 			
 			any_country = {

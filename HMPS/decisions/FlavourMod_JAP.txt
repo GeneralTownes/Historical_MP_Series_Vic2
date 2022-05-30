@@ -146,27 +146,6 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	japan_fruits = {
-		picture = "japan_fruits"
-		potential = {
-			tag = JAP
-			civilized = yes
-			has_country_flag = enacted_meiji_constitution
-			NOT = { has_country_flag = japan_fruits }
-		}
-		
-		allow = {
-			war = no
-		}
-	
-		effect = {
-			set_country_flag = japan_fruits
-			1672 = { trade_goods = fruit }
-		}
-		
-		ai_will_do = { factor = 1 }
-	}
-	
 	imperial_japanese_navy = {
 		picture = "imperial_japanese_navy"
 		potential = { 

@@ -374,10 +374,6 @@ country_event = {
 			name = "western_influences"
 			duration = -1
 		}
-		remove_country_modifier = isolationist_foreign_naval_officers
-		remove_country_modifier = isolationist_foreign_naval_schools
-		remove_country_modifier = isolationist_foreign_officers
-		remove_country_modifier = isolationist_foreign_training
 		random_country = {
 			limit = { is_our_vassal = THIS }
 			release_vassal = THIS
@@ -543,10 +539,6 @@ country_event = {
 			name = "western_influences"
 			duration = -1
 		}
-		remove_country_modifier = isolationist_foreign_naval_officers
-		remove_country_modifier = isolationist_foreign_naval_schools
-		remove_country_modifier = isolationist_foreign_officers
-		remove_country_modifier = isolationist_foreign_training
 		random_country = {
 			limit = { is_our_vassal = THIS }
 			release_vassal = THIS
