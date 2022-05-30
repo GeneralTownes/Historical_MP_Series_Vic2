@@ -1,14 +1,14 @@
 # Campaign Rules
  
 ### Contents
-** 0. ** Preface
-** 1. ** Reservations
-** 2. ** Rehosts & Speed
-** 3. ** Non-Attendance
-** 4. ** Repicking
-** 5. ** Ragequit & Toxicity
-** 6. ** Rule change mid-campaign
-** 7. ** Rationale
+0. Preface
+1. Reservations
+2. Rehosts & Speed
+3. Non-Attendance
+4. Repicking
+5. Ragequit & Toxicity
+6. Rule change mid-campaign
+7. Rationale
 <br/>
  
 ### 0. Preface
