@@ -126,5 +126,6 @@ The general rule of thumb for this is you can go neutral to friendly, friendly t
 - The broad reasoning for a lot of these rules is to discourage 100% wars every time, and to prevent player nations constantly getting ruined on with no chance of recovery.
 - Uncivs have higher infamy transfer to allow them to expand a bit more rapidly, it is NOT intended to be an infamy sink for civs. If this is abused I will change the mod / tighten the rules on it.
 - Stalemate rules were moved into their own section due to their importance.
-- The optional restrictions on eating directly into China are there to prevent unbalanced global RGO outputs, and large manpower pools that would distort the 'historical' nature of the mod. Judge their need at the start of every campaign on a case by case basis. \
-These rules will always be subject to change if necessary.
+- The optional restrictions on eating directly into China are there to prevent unbalanced global RGO outputs, and large manpower pools that would distort the 'historical' nature of the mod. Judge their need at the start of every campaign on a case by case basis.
+<br/>
+**These rules will always be subject to change if necessary.**

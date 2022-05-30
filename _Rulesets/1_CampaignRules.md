@@ -52,7 +52,7 @@ As always the GM's interpretation of the rules and their spirit is more importan
 <br/>
 
 ### 7. Rationale
-China is limited due to the shear power its pops and the union tag have. India (in HMPS) for the same reasons. \
-Permitting limited land to still be taken allows nations to still form their map, i.e Germany to take AL and no more. \
-Anti-Metagrudge rule to prohibit out of campaign politics (i.e from a previous one or elsewhere) adversely affecting the current campaign. \
-Sometimes rules need to change mid campaign due to an unforeseen circumstance, it happens. The rules are not absolute and can be changed. \
+- China is limited due to the shear power its pops and the union tag have. India (in HMPS) for the same reasons.
+- Permitting limited land to still be taken allows nations to still form their map, i.e Germany to take AL and no more.
+- Anti-Metagrudge rule to prohibit out of campaign politics (i.e from a previous one or elsewhere) adversely affecting the current campaign.
+- Sometimes rules need to change mid campaign due to an unforeseen circumstance, it happens.
