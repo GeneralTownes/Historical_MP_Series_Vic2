@@ -105,39 +105,6 @@ political_decisions = {
 		}
 	}
 	
-	construct_germania_werft = {
-		picture = construct_germania_werft
-		potential = {
-			NOT = { has_global_flag = germania_werft_has_been_built }
-			OR = {
-				tag = PRU
-				tag = GER
-				tag = GCF
-				tag = NGF
-			}
-			owns = 369
-		}
-		
-		allow = {
-			steel_steamers = 1
-			money = 51000
-		}
-		
-		effect = {
-			set_global_flag = germania_werft_has_been_built
-			prestige = 10
-			treasury = -50000
-			369 = {
-				naval_base = 5
-				add_province_modifier = {
-					name = germania_werft
-					duration = -1
-				}
-			}
-			steamer_convoy = 400
-		}
-	}
-	
 	support_ruhr_industrialism = {
 		potential = {
 			OR = {

@@ -807,64 +807,6 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	wilhelmshaven_imperial_shipyard = {
-		picture = wilhelmshaven_imperial_shipyard
-		potential = {
-			NOT = { has_global_flag = wilhelmshaven_imperial_shipyard_built }
-			tag = GER
-			owns = 3259
-		}
-		
-		allow = {
-			is_greater_power = yes
-			invention = steamer_shipyard_construction
-			steamers = 1
-			money = 51000
-		}
-		
-		effect = {
-			set_global_flag = wilhelmshaven_imperial_shipyard_built
-			treasury = -50000
-			3259 = { state_scope = {  any_owned = { naval_base = -6 } } }
-			3259 = { naval_base = 3 }
-			steamer_convoy = 400
-		}
-		
-		ai_will_do = { factor = 1 }
-	}
-	
-	danzig_imperial_shipyard = {
-		picture = danzig_imperial_shipyard
-		potential = {
-			NOT = { has_global_flag = danzig_imperial_shipyard_built }
-			OR = {
-				tag = PRU
-				tag = GER
-				tag = NGF
-			}
-			year = 1870
-			owns = 690
-			battleship_column_doctrine = 1
-		}
-		
-		allow = {
-			is_greater_power = yes
-			invention = steamer_shipyard_construction
-			money = 41000
-		}
-		
-		effect = {
-			set_global_flag = danzig_imperial_shipyard_built
-			treasury = -50000
-			690 = { state_scope = {  any_owned = { naval_base = -6 } } }
-			690 = { naval_base = 3 }
-			steamer_convoy = 400
-		}
-		
-		ai_will_do = { factor = 1 }
-	}
-	
-		
 	prussian_settlement_commission = {
 		picture = prussian_settlement_commission
 		potential = {

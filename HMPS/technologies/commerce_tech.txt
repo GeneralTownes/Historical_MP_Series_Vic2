@@ -955,6 +955,8 @@ globalized_markets = {
 	year = 1920
 	cost = 60000
 	#influence = 1
+	rgo_goods_output = { precious_goods = 0.50 }
+	
 	ai_chance = {
 		factor = 1.1
 		modifier = {
