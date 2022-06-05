@@ -521,7 +521,7 @@ guiTypes = {
 			
 			guiButtonType = {
 				name = "sort_by_name"
-				position = { x= 5000 y = 5000}
+				position = { x= 33 y = 116}
 				quadTextureSprite = "GFX_sortbutton_292"		
 				buttonText="PRODUCTION_SORT_BY_NAME"	
 				buttonFont = "vic_18_black"
@@ -655,7 +655,7 @@ guiTypes = {
 			
 			guiButtonType = {
 				name = "sort_by_name"
-				position = { x= 5000 y = 5000}
+				position = { x= 33 y = 233}
 				quadTextureSprite = "GFX_sortbutton_292"		
 				buttonText="PRODUCTION_SORT_BY_NAME"	
 				buttonFont = "vic_18_black"
