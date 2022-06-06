@@ -859,14 +859,6 @@ rebuilding_city = {
 	icon = 11
 }
 
-slave_growth = {
-	icon = 17
-}
-
-catholic_growth = {
-	icon = 17
-}
-
 assegai = {
 	mobilisation_size = 0.35
 	mobilisation_economy_impact = -0.7
@@ -2650,12 +2642,6 @@ australia_migrations_vic = {
 vancouver_boom = {
 	population_growth = 0.01
 	assimilation_rate = 1
-	icon = 17
-}
-
-america_new_world = {
-	global_immigrant_attract = 0.5
-	global_population_growth = 0.01
 	icon = 17
 }
 

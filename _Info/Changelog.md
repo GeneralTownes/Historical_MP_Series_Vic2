@@ -79,6 +79,7 @@ Everything else is our own (as far as I remember).
 - Pop-growth techs nerfed
 - Healthcare only grants +0.01% pm at top level fully funded
 - Removed starting baby booms
+- Slaves grow at the same rate as other pops
 #### Pop Needs
 - Demand increase from inventions decreased to 1% per invention
 - Luxury manufactured goods in luxuries for lower and middle class
@@ -149,6 +150,7 @@ Soldier pops concentrate in state capitals, requires 3k soldier pops for 1st bri
 - Light Armament: Gives Infantry & Guard discipline increases
 - Submarines scale greatly with 1900+ tech
 - Gas attack is reduced to 1, no defence, taken via decision
+- Navy speed will not benefit sail ships in the steam era onwards
 #### Combat Width & Supply
 - Brigades are 5k
 - 5 combat width increase in 1920 & 1930

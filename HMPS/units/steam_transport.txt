@@ -16,7 +16,7 @@ steam_transport = {
 	priority = 10
 	max_strength = 100
 	default_organisation = 30
-	maximum_speed = 8
+	maximum_speed = 12
 	weighted_value = 4.0
 	can_build_overseas = yes
 

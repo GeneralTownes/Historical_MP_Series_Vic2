@@ -2126,11 +2126,6 @@ political_decisions = {
 				}
 				add_province_modifier = { name = king_cotton duration = -1 }
 			}
-			
-			add_country_modifier = {
-				name = america_new_world
-				duration = 1825
-			}
 		}
 	}
 	
@@ -2182,14 +2177,6 @@ political_decisions = {
 				}
 				literacy = 0.01
 			}
-			add_country_modifier = {
-				name = america_new_world
-				duration = 10950
-			}
-			#add_country_modifier = {
-			#	name = global_baby_boom
-			#	duration = 2190
-			#}
 		}
 	}
 	
@@ -2205,10 +2192,6 @@ political_decisions = {
 		}
 		
 		effect = {
-			add_country_modifier = {
-				name = america_new_world
-				duration = 3650
-			}
 			any_pop = { limit = { OR = { has_pop_culture = afro_caribeno type = slaves } } literacy = -0.99 }
 			2295 = {
 				any_pop = {
@@ -2389,10 +2372,6 @@ political_decisions = {
 				#	duration = 3650
 				#}
 			
-			} #Venezuela
-			add_country_modifier = {
-				name = america_new_world
-				duration = 3650
 			}
 		}
 	}
@@ -2419,49 +2398,6 @@ political_decisions = {
 			}
 			
 			2172 = { any_pop = { limit = { has_pop_culture = mexican } literacy = 0.05 } }
-		}
-	}
-
-	ARC_1836_setup = {
-		picture = constantinople
-		potential = {
-			tag = ARC
-			always = no
-		}
-		
-		allow = {
-			tag = ARC
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = america_new_world
-				duration = 3650
-			}
-			PBC = {
-				add_country_modifier = {
-					name = america_new_world
-					duration = 1095
-				}
-			}
-			MEX = {
-				add_country_modifier = {
-					name = america_new_world
-					duration = 5475
-				}
-			}
-			CHL = {
-				add_country_modifier = {
-					name = america_new_world
-					duration = 5475
-				}
-			}
-			TEX = {
-				add_country_modifier = {
-					name = america_new_world
-					duration = 5475
-				}
-			}
 		}
 	}
 

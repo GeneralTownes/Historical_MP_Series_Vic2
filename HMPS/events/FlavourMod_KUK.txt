@@ -359,11 +359,7 @@ country_event = {
 		release = HUN
 		any_owned = {
 			limit = {
-				OR = {
-					is_core = HUN
-					is_core = CRO
-				}
-				NOT = { is_core = DLM }
+				is_core = HUN
 			}
 			secede_province = HUN
 		}

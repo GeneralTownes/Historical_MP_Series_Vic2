@@ -392,7 +392,6 @@ country_event = {
 		SBA = {
 			add_country_modifier = { name = unrecognized_country duration = 3650 }
 			add_country_modifier = { name = caudillo_leaders duration = 3650 }
-			add_country_modifier = { name = america_new_world duration = 3650 }
 			any_country = { limit = { capital_scope = { continent = south_america } } relation = { who = SBA value = -110 } }
 		}
 		change_tag_no_core_switch = SBA

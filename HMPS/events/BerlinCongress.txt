@@ -1209,36 +1209,6 @@ country_event = {
 			TUR = { release_vassal = CRO }
 		}
 		
-		# Any Dalmatian lands given to Dalmatia, it is freed if vassaled
-		random_owned = {
-			limit = {
-				DLM = { exists = no }
-				CRO = { exists = no }
-				TUR = { NOT = { owns = 771 } }
-			}
-			DLM = { set_country_flag = congress_released_country }
-		}
-		random_owned = {
-			limit = {
-				province_id = 781
-				owned_by = TUR
-			}
-			state_scope = {
-				any_owned = {
-					secede_province = DLM
-				}
-			}
-			DLM = { set_country_flag = received_congress_benefit }
-		}
-		random_country = {
-			limit = {
-				tag = DLM
-				vassal_of = TUR
-			}
-			set_country_flag = received_congress_benefit
-			TUR = { release_vassal = DLM }
-		}
-		
 		# Free Serbia if it is owned, return Nis and Leskovac
 		random_owned = {
 			limit = { SER = { exists = no } }
@@ -1801,36 +1771,6 @@ country_event = {
 			}
 			set_country_flag = received_congress_benefit
 			TUR = { release_vassal = CRO }
-		}
-		
-		# Any Dalmatian lands given to Dalmatia, it is freed if vassaled
-		random_owned = {
-			limit = {
-				DLM = { exists = no }
-				CRO = { exists = no }
-				TUR = { NOT = { owns = 771 } }
-			}
-			DLM = { set_country_flag = congress_released_country }
-		}
-		random_owned = {
-			limit = {
-				province_id = 781 #Zadar
-				owned_by = TUR
-			}
-			state_scope = {
-				any_owned = {
-					secede_province = DLM
-				}
-			}
-			DLM = { set_country_flag = received_congress_benefit }
-		}
-		random_country = {
-			limit = {
-				tag = DLM
-				vassal_of = TUR
-			}
-			set_country_flag = received_congress_benefit
-			TUR = { release_vassal = DLM }
 		}
 		
 		# Any Serbian lands given to Serbia, it is freed if vassaled

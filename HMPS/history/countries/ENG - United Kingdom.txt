@@ -19,7 +19,7 @@ prestige = 100
 
 
 # Political reforms
-slavery = no_slavery
+slavery = freedom_of_womb
 upper_house_composition = appointed
 vote_franschise = wealth_voting
 public_meetings = yes_meeting
