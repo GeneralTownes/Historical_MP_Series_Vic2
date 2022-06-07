@@ -2560,7 +2560,7 @@ dust_bowl = {
 }
 
 home_of_the_mormons = {
-	population_growth = 0.005
+	population_growth = 0.001
 	icon = 19
 }
 
@@ -2577,7 +2577,6 @@ gateway_to_harbor = {
 
 gateway_to_america = {
 	immigrant_attract = 1.5
-	#population_growth = 0.01
 	assimilation_rate = 1.5
 	icon = 19
 }

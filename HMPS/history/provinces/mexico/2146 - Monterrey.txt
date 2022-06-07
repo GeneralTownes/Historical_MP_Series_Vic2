@@ -5,7 +5,7 @@ controller = USA
 add_core = USA
 
 trade_goods = grain
-life_rating = 40
+life_rating = 35
 terrain = dc
 
 party_loyalty = {

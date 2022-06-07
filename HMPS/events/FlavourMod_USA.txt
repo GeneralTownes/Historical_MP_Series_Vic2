@@ -332,27 +332,6 @@ country_event = {
 		name = "EVTOPTA19300"
 		prestige = 5
 		set_country_flag = 3rd_wave_usa
-		any_pop = {
-			limit = {
-				type = bureaucrats
-				location = {
-					OR = {
-						#Illinois
-						province_id = 163 #Chicago
-						#New York
-						province_id = 232 #New York
-						#Pennsylvania
-						province_id = 223 #Philadelphia
-						#New York
-						province_id = 233 #Long Island
-						province_id = 236 #Buffalo
-						#Texas
-						province_id = 133 #Austin
-					}
-				}
-			}
-			reduce_pop = 0.8
-		}
 		any_owned = {
 			limit = {
 				OR = {
@@ -364,7 +343,6 @@ country_event = {
 					province_id = 223 #Philadelphia
 				}
 			}
-			life_rating = 12
 			add_province_modifier = {
 				name = gateway_to_america
 				duration = 1095
@@ -378,7 +356,6 @@ country_event = {
 					province_id = 236 #Buffalo
 				}
 			}
-			life_rating = 10
 			add_province_modifier = {
 				name = gateway_to_america
 				duration = 720
@@ -392,7 +369,6 @@ country_event = {
 					province_id = 153 #Cedar Rapids
 				}
 			}
-			life_rating = 5
 			add_province_modifier = {
 				name = gateway_to_america
 				duration = 720
@@ -409,7 +385,6 @@ country_event = {
 					province_id = 154 #Sioux City
 				}
 			}
-			life_rating = 5
 			add_province_modifier = {
 				name = gateway_to_america
 				duration = 1460
@@ -441,7 +416,6 @@ country_event = {
 					province_id = 159 #Milwaukee
 				}
 			}
-			life_rating = 5
 			add_province_modifier = {
 				name = gateway_to_america
 				duration = 730
@@ -517,10 +491,9 @@ country_event = {
 		}
 		163 = { #Chicago
 			add_province_modifier = {
-				name = baby_boom
+				name = gateway_to_america
 				duration = 547 
 			}
-			life_rating = 3
 		}
 		89 = { #Los Angeles
 			add_province_modifier = {

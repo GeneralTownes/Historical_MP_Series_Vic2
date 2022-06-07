@@ -1799,7 +1799,7 @@ political_decisions = {
 				move_pop = 97
 			}
 			97 = {
-				add_province_modifier = { name = home_of_the_mormons duration = 10950 }
+				add_province_modifier = { name = home_of_the_mormons duration = 3650 }
 				any_pop = {
 					limit = { has_pop_culture = native_american_minor }
 					reduce_pop = 0.25
@@ -1870,17 +1870,6 @@ political_decisions = {
 		
 		effect = {
 			set_global_flag = american_frontier
-			any_owned = {
-				limit = {
-					OR = {
-						province_id = 132
-						province_id = 136
-						province_id = 137
-					}
-				}
-				life_rating = 5
-			}
-			43 = { change_province_name = "Dallas" life_rating = 5 }
 			134 = { change_province_name = "Abilene" }
 			135 = { change_province_name = "Lubbock" }
 			92 = { change_province_name = "Coeur D'Alene" }

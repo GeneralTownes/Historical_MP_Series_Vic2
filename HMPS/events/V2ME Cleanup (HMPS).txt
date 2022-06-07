@@ -1722,6 +1722,231 @@ country_event = {
 	option = {
 		name = "Checking..."
 		
+		#life rating decreases
+		any_country = {
+			limit = {
+				OR = {
+					#USA conditions
+					AND = {
+						OR = {
+							tag = USA
+							tag = CSA
+							tag = FSA
+							tag = MEX
+						}
+						year = 1850
+						NOT = { year = 1851 }
+					}
+					AND = {
+						OR = {
+							tag = USA
+							tag = CSA
+							tag = FSA
+							tag = MEX
+						}
+						year = 1854
+						NOT = { year = 1855 }
+					}
+					AND = {
+						OR = {
+							tag = USA
+							tag = CSA
+							tag = FSA
+							tag = MEX
+						}
+						year = 1858
+						NOT = { year = 1859 }
+					}
+					AND = {
+						OR = {
+							tag = USA
+							tag = CSA
+							tag = FSA
+							tag = MEX
+						}
+						year = 1862
+						NOT = { year = 1863 }
+					}
+					AND = {
+						OR = {
+							tag = USA
+							tag = CSA
+							tag = FSA
+							tag = MEX
+						}
+						year = 1866
+					}
+					
+					#GB conditions
+					AND = {
+						OR = {
+							tag = ENG
+							tag = GBR
+						}
+						year = 1880
+						NOT = { year = 1881 }
+					}
+					AND = {
+						tag = ENG
+						year = 1890
+						NOT = { year = 1891 }
+					}
+					AND = {
+						tag = ENG
+						year = 1900
+					}
+					AND = {
+						tag = GBR
+						year = 1880
+						NOT = { year = 1881 }
+					}
+					AND = {
+						tag = GBR
+						year = 1890
+						NOT = { year = 1891 }
+					}
+					AND = {
+						tag = GBR
+						year = 1900
+					}
+					
+					#Italy conditions
+					AND = {
+						OR = {
+							tag = ITA
+							tag = ITS
+							tag = SAR
+							tag = SIC
+							tag = PAP
+							tag = PAR
+							tag = MOD
+							tag = LUC
+							tag = TUS
+						}
+						year = 1890
+						NOT = { year = 1891 }
+					}
+					AND = {
+						OR = {
+							tag = ITA
+							tag = ITS
+							tag = SAR
+							tag = SIC
+							tag = PAP
+							tag = PAR
+							tag = MOD
+							tag = LUC
+							tag = TUS
+						}
+						year = 1900
+					}
+					
+					#Germany conditions
+					AND = {
+						OR = {
+							tag = GER
+							tag = GCF
+							tag = NGF
+							tag = SGF
+							tag = PRU
+							tag = BAV
+							tag = AUS
+							tag = KUK
+							tag = DNB
+						}
+						year = 1900
+						NOT = { year = 1901 }
+					}
+					AND = {
+						OR = {
+							tag = GER
+							tag = GCF
+							tag = NGF
+							tag = SGF
+							tag = PRU
+							tag = BAV
+							tag = AUS
+							tag = KUK
+							tag = DNB
+						}
+						year = 1904
+						NOT = { year = 1905 }
+					}
+					AND = {
+						OR = {
+							tag = GER
+							tag = GCF
+							tag = NGF
+							tag = SGF
+							tag = PRU
+							tag = BAV
+							tag = AUS
+							tag = KUK
+							tag = DNB
+						}
+						year = 1908
+						NOT = { year = 1909 }
+					}
+					AND = {
+						OR = {
+							tag = GER
+							tag = GCF
+							tag = NGF
+							tag = SGF
+							tag = PRU
+							tag = BAV
+							tag = AUS
+							tag = KUK
+							tag = DNB
+						}
+						year = 1912
+						NOT = { year = 1913 }
+					}
+					AND = {
+						OR = {
+							tag = GER
+							tag = GCF
+							tag = NGF
+							tag = SGF
+							tag = PRU
+							tag = BAV
+							tag = AUS
+							tag = KUK
+							tag = DNB
+						}
+						year = 1916
+						NOT = { year = 1917 }
+					}
+					AND = {
+						OR = {
+							tag = GER
+							tag = GCF
+							tag = NGF
+							tag = SGF
+							tag = PRU
+							tag = BAV
+							tag = AUS
+							tag = KUK
+							tag = DNB
+						}
+						year = 1920
+					}
+				}
+			}
+			all_core = {
+				limit = {
+					life_rating = 36
+					NOT = {
+						AND = {
+							is_capital = yes
+							NOT = { life_rating = 41 }
+						}
+					}
+				}
+				life_rating = -1
+			}
+		}
+		
 		#reactionary upper house
 		any_country = {
 			limit = {
