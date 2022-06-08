@@ -1346,7 +1346,7 @@ country_event = {
 				NOT = { tag = BOH }
 				NOT = { tag = CZH }
 				NOT = { tag = HUN }
-				NOT = { tag = DLM }
+				NOT = { tag = CRO }
 				NOT = { tag = RUT }
 				NOT = { tag = UKR }
 				any_core = {

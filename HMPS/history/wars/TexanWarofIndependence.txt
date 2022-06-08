@@ -14,6 +14,12 @@ name = "The Texan War of Independence"
 		actor = MEX
 		receiver = TEX
 	}
+	
+	war_goal = {
+		casus_belli = status_quo
+		actor = TEX
+		receiver = MEX
+	}
 
 }
 

@@ -746,11 +746,11 @@ emigration_chance = {
 			literacy = 0.5
 		}
 		modifier = {
-			factor = 0.025
+			factor = 0.02
 			literacy = 0.6
 		}
 		modifier = {
-			factor = 0.025
+			factor = 0.01
 			literacy = 0.7
 		}
 	}

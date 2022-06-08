@@ -61,7 +61,6 @@ political_decisions = {
 		}
 		effect = {
 			political_reform = no_slavery
-			remove_country_modifier = slave_growth
 			any_pop = {
 				limit = {
 					is_primary_culture = yes

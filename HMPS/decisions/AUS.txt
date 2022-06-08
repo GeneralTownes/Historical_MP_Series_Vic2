@@ -438,44 +438,6 @@ political_decisions = {
 		}
 	}
 	
-	release_dalmatia = {
-		potential = {
-			OR = {
-				tag = AUS
-				tag = KUK
-			}
-			owns = 781
-			ai = yes
-			NOT = {
-				exists = DLM
-				has_country_flag = released_dalmatia
-			}
-		}
-		
-		allow = {
-			NOT = { owns = 774 } #Senj
-			NOT = { owns = 784 } #Bihac
-			NOT = { owns = 800 } #Ulcinj
-		}
-		
-		effect = {
-			set_country_flag = released_dalmatia
-			prestige = 5
-			any_owned = {
-				limit = { is_core = DLM }
-				secede_province = DLM
-			}
-			create_vassal = DLM
-			create_alliance = DLM
-			diplomatic_influence = { who = DLM value = 200 }
-			relation = { who = DLM value = 200 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
 	bosnian_annexation = {
 		picture = treaty_signing
 		potential = {

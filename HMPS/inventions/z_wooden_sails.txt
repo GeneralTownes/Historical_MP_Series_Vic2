@@ -1,0 +1,106 @@
+#sail ship speed decreases
+wooden_sails_1855 = {
+	limit = { iron_steamers = 1 }
+	chance = {
+		base = 100
+	}
+	effect = {
+		clipper_transport = {
+			maximum_speed = -2
+			supply_consumption = 0.2
+		}
+		steam_transport = {
+			supply_consumption = 0.2
+		}
+		frigate = {
+			maximum_speed = -2
+		}
+		manowar = {
+			maximum_speed = -2
+		}
+	}
+}
+wooden_sails_1880 = {
+	limit = { steel_steamers = 1 }
+	chance = {
+		base = 100
+	}
+	effect = {
+		clipper_transport = {
+			maximum_speed = -1
+			supply_consumption = 0.2
+		}
+		steam_transport = {
+			supply_consumption = 0.2
+		}
+		frigate = {
+			maximum_speed = -1
+		}
+		manowar = {
+			maximum_speed = -1
+		}
+	}
+}
+wooden_sails_1900 = {
+	limit = { steam_turbine_ships = 1 }
+	chance = {
+		base = 100
+	}
+	effect = {
+		clipper_transport = {
+			maximum_speed = -2
+			supply_consumption = 0.2
+		}
+		steam_transport = {
+			supply_consumption = 0.2
+		}
+		frigate = {
+			maximum_speed = -2
+		}
+		manowar = {
+			maximum_speed = -2
+		}
+	}
+}
+wooden_sails_1915 = {
+	limit = { oil_driven_ships = 1 }
+	chance = {
+		base = 100
+	}
+	effect = {
+		clipper_transport = {
+			maximum_speed = -2
+			supply_consumption = 0.2
+		}
+		steam_transport = {
+			supply_consumption = 0.2
+		}
+		frigate = {
+			maximum_speed = -2
+		}
+		manowar = {
+			maximum_speed = -2
+		}
+	}
+}
+wooden_sails_1920 = {
+	limit = { aircraft_carriers = 1 }
+	chance = {
+		base = 100
+	}
+	effect = {
+		clipper_transport = {
+			maximum_speed = -2
+			supply_consumption = 0.2
+		}
+		steam_transport = {
+			supply_consumption = 0.2
+		}
+		frigate = {
+			maximum_speed = -2
+		}
+		manowar = {
+			maximum_speed = -2
+		}
+	}
+}

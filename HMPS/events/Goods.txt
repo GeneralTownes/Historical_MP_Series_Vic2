@@ -109,7 +109,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1100"
 		trade_goods = precious_goods
-		# life_rating = 5
 		owner = { random_owned = { limit = { province_id = 104 NOT = { life_rating = 39 } } life_rating = 10 } }
 		owner = { random_owned = { limit = { province_id = 89 NOT = { life_rating = 39 } } life_rating = 10 } }
 		owner = { random_owned = { limit = { province_id = 84 NOT = { life_rating = 39 } } life_rating = 5 } }
@@ -180,7 +179,6 @@ province_event = {
 		owner = { random_owned = { limit = { province_id = 2488 NOT = { trade_goods = precious_goods } } change_province_name = "Cairns" } }
 		trade_goods = precious_goods
 		add_province_modifier = { name = gold_rush duration = 730 }
-		# life_rating = 5
 		owner = { random_owned = { limit = { province_id = 1913 } remove_province_modifier = gold_rush } }
 		owner = {
 			random_owned = {
@@ -319,13 +317,13 @@ province_event = {
 		owner = {
 			random_owned = {
 				limit = { owner = { owns = 2495 2495 = { life_rating = 15 } } }
-				2495 = { change_province_name = "Oodnadatta" life_rating = -5}
+				2495 = { change_province_name = "Oodnadatta" life_rating = 5}
 			}
 		}
 		owner = { 
 			random_owned = {
 				limit = { owner = { owns = 2496 2496 = { life_rating = 20 } } }
-				2496 = { change_province_name = "Yalata" life_rating = -5}
+				2496 = { change_province_name = "Yalata" life_rating = 5}
 			}
 		}
 	}
@@ -363,7 +361,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1105"
 		trade_goods = precious_goods
-		# life_rating = 5
 	}
 }
 
@@ -397,7 +394,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1105"
 		trade_goods = precious_goods
-		# life_rating = 5
 	}
 }
 
@@ -475,7 +471,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1107"
 		trade_goods = rubber
-		# life_rating = 5
 	}
 }
 
@@ -538,7 +533,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1107"
 		trade_goods = rubber
-		# life_rating = 5
 	}
 }
 
@@ -575,7 +569,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -606,7 +599,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -637,7 +629,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -668,7 +659,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -699,7 +689,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -730,7 +719,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		life_rating = 5
 	}
 }
 
@@ -761,7 +749,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -792,7 +779,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -823,7 +809,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -854,7 +839,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -888,7 +872,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		life_rating = 5
 	}
 }
 
@@ -924,7 +907,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -960,7 +942,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -1026,7 +1007,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -1057,7 +1037,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -1091,7 +1070,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -1122,7 +1100,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -1158,7 +1135,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -1189,7 +1165,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -1220,7 +1195,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -1251,7 +1225,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -1282,7 +1255,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -1320,7 +1292,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -1351,7 +1322,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -1382,7 +1352,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -1413,7 +1382,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -1447,7 +1415,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -1478,7 +1445,6 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }
 
@@ -1509,6 +1475,5 @@ province_event = {
 	option = {
 		name = "EVTOPTA1109"
 		trade_goods = oil
-		# life_rate = 5
 	}
 }

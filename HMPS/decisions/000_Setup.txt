@@ -428,7 +428,6 @@ political_decisions = {
 					}
 					life_rating = 5
 				}
-				#add_country_modifier = { name = global_baby_boom_small duration = 5475 }
 			}
 			
 			#AUS Life Ratings
@@ -440,13 +439,25 @@ political_decisions = {
 						NOT = { is_core = CRO }
 						continent = europe
 					}
-					#add_province_modifier = {
-					#	name = small_baby_boom
-					#	duration = 3650
-					#}
 					life_rating = 5
 				}
-				#add_country_modifier = { name = global_baby_boom_small duration = 5475 }
+			}
+			
+			#ITA Life Ratings
+			ITA_1 = { life_rating = 2 }
+			AUS_729 = { life_rating = 2 }
+			AUS_726 = { life_rating = 2 }
+			
+			#UK Life Ratings
+			ENG = {
+				any_owned = {
+					limit = {
+						is_core = ENG
+						NOT = { is_core = IRE }
+						continent = europe
+					}
+					life_rating = 3
+				}
 			}
 		}
 		ai_will_do = {
@@ -954,10 +965,6 @@ political_decisions = {
 					is_overseas = no
 					NOT = { is_core = IRE }
 				}
-				#add_province_modifier = {
-				#	name = baby_boom
-				#	duration = 1825
-				#}
 			}
 			2482 = { add_province_modifier = { name = penal_colony duration = -1 } }
 			
@@ -1087,7 +1094,6 @@ political_decisions = {
 		}
 		
 		effect = {
-			#GER = { all_core = { add_province_modifier = { name = small_baby_boom duration = 3650 } } }
 			any_pop = {
 				limit = { has_pop_culture = ashkenazi }
 				literacy = 0.45
@@ -1136,50 +1142,6 @@ political_decisions = {
 				name = zollervein
 				duration = -1
 			}
-			
-			#add_country_modifier = {
-			#	name = global_baby_boom
-			#	duration = 3650
-			#}
-			
-			#FRM = {
-			#	any_owned = {
-			#		add_province_modifier = {
-			#			name = baby_boom
-			#			duration = 3650
-			#		}
-			#	}
-			#}
-			#SCL = {
-			#	any_owned = {
-			#		add_province_modifier = {
-			#			name = baby_boom
-			#			duration = 3650
-			#		}
-			#	}
-			#}
-			#HAM = {
-			#	any_owned = {
-			#		add_province_modifier = {
-			#			name = baby_boom
-			#			duration = 3650
-			#		}
-			#	}
-			#}
-			#HAN = {
-			#	any_owned = {
-			#		add_province_modifier = {
-			#			name = small_baby_boom
-			#			duration = 3650
-			#		}
-			#	}
-			#	534 = {
-			#		add_province_modifier = {
-			#			name = baby_boom
-			#			duration = 2555
-			#		}
-			#	}
-			#}
 		}
 	}
 
@@ -1259,49 +1221,6 @@ political_decisions = {
 				consciousness = -9
 				literacy = -0.99
 			}
-			
-			#TUR_809 = { add_province_modifier = { name = small_baby_boom duration = 2555 } }
-			#TUR_810 = { add_province_modifier = { name = small_baby_boom duration = 2555 } }
-			#TUR_806 = { add_province_modifier = { name = small_baby_boom duration = 3650 } }
-			#TUR_803 = { add_province_modifier = { name = small_baby_boom duration = 1825 } }
-			#TUR_832 = { add_province_modifier = { name = small_baby_boom duration = 730 } }
-			#TUR_805 = { add_province_modifier = { name = small_baby_boom duration = 730 } }
-			#TUR_823 = { add_province_modifier = { name = small_baby_boom duration = 730 } }
-
-			
-			#any_owned = {
-			#	limit = {
-			#		is_core = BUL
-			#	}
-			#	add_province_modifier = { name = small_baby_boom duration = 3650 }
-			#}
-			
-			#any_owned = {
-			#	limit = {
-			#		is_core = SER
-			#	}
-			#	add_province_modifier = { name = baby_boom duration = 3650 }
-			#}
-			
-			
-			#any_owned = {
-			#	limit = {
-			#		is_core = GRE
-			#	}
-			#	add_province_modifier = { name = small_baby_boom duration = 3650 }
-			#}
-			
-			#WAL = {
-			#	any_owned = {
-			#		add_province_modifier = { name = small_baby_boom duration = 3650 }
-			#	}
-			#}
-			
-			#MOL = {
-			#	any_owned = {
-			#		add_province_modifier = { name = small_baby_boom duration = 3650 }
-			#	}
-			#}
 			
 			any_greater_power = {
 				limit = { NOT = { tag = TUR } }
@@ -1534,38 +1453,6 @@ political_decisions = {
 			
 			bureaucrats = { reduce_pop = 1.5 }
 			
-			#any_owned = {
-			#	limit = {
-			#		OR = {
-			#			is_core = RUS
-			#			is_core = UKR
-			#			is_core = BYE
-			#		}
-			#		NOT = {
-			#			OR = {
-			#				is_core = POL
-			#				is_core = LAT
-			#				is_core = FIN
-			#				is_core = EST
-			#				is_core = LIT
-			#				is_core = TUR
-			#				is_core = CHY
-			#				is_core = CIR
-			#			}
-			#		}
-			#		OR = {
-			#			NOT = { terrain = boreal }
-			#			NOT = { terrain = arctic }
-			#			NOT = { terrain = desert }
-			#			NOT = { terrain = steppe }
-			#			NOT = { terrain = montane_tundra }
-			#			NOT = { terrain = marsh }
-			#		}
-			#	}
-			#	add_province_modifier = { name = small_baby_boom duration = 3650 }
-			#}
-			#any_owned = { limit = { is_core = POL } add_province_modifier = { name = small_baby_boom duration = 1825 } }
-			
 			any_owned = { limit = { is_core = UKR } add_province_modifier = { name = russoification duration = 25550 } }
 			
 			any_owned = { limit = { is_core = BYE } add_province_modifier = { name = russoification duration = 25550 } }
@@ -1573,28 +1460,6 @@ political_decisions = {
 			any_owned = { limit = { is_core = URA } add_province_modifier = { name = russoification duration = 25550 } }
 			
 			any_owned = { limit = { is_core = SIB } add_province_modifier = { name = russoification duration = 25550 } }
-
-			#any_country = {
-			#	any_owned = {
-			#		limit = {
-			#			OR = {
-			#				is_core = LAT
-			#				is_core = LIT
-			#				is_core = EST
-			#			}
-			#			OR = {
-			#				NOT = { terrain = boreal }
-			#				NOT = { terrain = arctic }
-			#				NOT = { terrain = desert }
-			#				NOT = { terrain = steppe }
-			#				NOT = { terrain = montane_tundra }
-			#				NOT = { terrain = marsh }
-			#			}
-			#			NOT = { is_core = GER }
-			#		}
-			#		add_province_modifier = { name = small_baby_boom duration = 1095 }
-			#	}
-			#}
 		}
 	}
 	
@@ -1748,20 +1613,7 @@ political_decisions = {
 		
 		effect = {
 			any_pop = { limit = { OR = { has_pop_culture = ashkenazi has_pop_culture = north_german } } literacy = 0.58 }
-			#add_country_modifier = {
-			#	name = global_baby_boom
-			#	duration = 3650
-			#}
-			#any_owned = {
-			#	limit = {
-			#		is_core = DEN
-			#		is_overseas = no
-			#	}
-			#	add_province_modifier = {
-			#		name = baby_boom
-			#		duration = 1825
-			#	}
-			#}
+			
 			any_pop = {
 				limit = {
 					OR = {
@@ -1790,42 +1642,6 @@ political_decisions = {
 				}
 			literacy = -0.99
 			}
-			#NOR = {
-			#	add_country_modifier = {
-			#		name = global_baby_boom
-			#		duration = 1825
-			#	}
-			#	all_core = {
-			#		add_province_modifier = {
-			#			name = baby_boom
-			#			duration = 1095
-			#		}
-			#	}
-			#}
-			#BEL = {
-			#	add_country_modifier = {
-			#		name = global_baby_boom
-			#		duration = 1825
-			#	}
-			#}
-			#NEJ = {
-			#	add_country_modifier = {
-			#		name = global_baby_boom
-			#		duration = 1825
-			#	}
-			#}
-			#HAL = {
-			#	add_country_modifier = {
-			#		name = global_baby_boom
-			#		duration = 1825
-			#	}
-			#}
-			#HDJ = {
-			#	add_country_modifier = {
-			#		name = global_baby_boom
-			#		duration = 1825
-			#	}
-			#}
 		}
 	}
 	
@@ -2115,21 +1931,12 @@ political_decisions = {
 			}
 			any_pop = { limit = { has_pop_religion = catholic } literacy = -0.1 }
 			
-			#163 = {
-			#	add_province_modifier = { name = small_baby_boom duration = 3650 }
-			#}
-			
 			any_owned = {
 				limit = {
 					has_pop_type = slaves
 					produces = cotton
 				}
 				add_province_modifier = { name = king_cotton duration = -1 }
-			}
-			
-			add_country_modifier = {
-				name = america_new_world
-				duration = 1825
 			}
 		}
 	}
@@ -2182,14 +1989,6 @@ political_decisions = {
 				}
 				literacy = 0.01
 			}
-			add_country_modifier = {
-				name = america_new_world
-				duration = 10950
-			}
-			#add_country_modifier = {
-			#	name = global_baby_boom
-			#	duration = 2190
-			#}
 		}
 	}
 	
@@ -2205,10 +2004,6 @@ political_decisions = {
 		}
 		
 		effect = {
-			add_country_modifier = {
-				name = america_new_world
-				duration = 3650
-			}
 			any_pop = { limit = { OR = { has_pop_culture = afro_caribeno type = slaves } } literacy = -0.99 }
 			2295 = {
 				any_pop = {
@@ -2384,15 +2179,6 @@ political_decisions = {
 			2247 = { any_pop = { limit = { is_primary_culture = yes } literacy = 0.05 } }
 			VNZ = { 
 				2264 = { any_pop = { limit = { is_primary_culture = yes } literacy = 0.05 } } 
-				#add_country_modifier = {
-				#	name = global_baby_boom
-				#	duration = 3650
-				#}
-			
-			} #Venezuela
-			add_country_modifier = {
-				name = america_new_world
-				duration = 3650
 			}
 		}
 	}
@@ -2422,49 +2208,6 @@ political_decisions = {
 		}
 	}
 
-	ARC_1836_setup = {
-		picture = constantinople
-		potential = {
-			tag = ARC
-			always = no
-		}
-		
-		allow = {
-			tag = ARC
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = america_new_world
-				duration = 3650
-			}
-			PBC = {
-				add_country_modifier = {
-					name = america_new_world
-					duration = 1095
-				}
-			}
-			MEX = {
-				add_country_modifier = {
-					name = america_new_world
-					duration = 5475
-				}
-			}
-			CHL = {
-				add_country_modifier = {
-					name = america_new_world
-					duration = 5475
-				}
-			}
-			TEX = {
-				add_country_modifier = {
-					name = america_new_world
-					duration = 5475
-				}
-			}
-		}
-	}
-
 	GRE_1836_setup = {
 		picture = constantinople
 		potential = {
@@ -2478,8 +2221,6 @@ political_decisions = {
 		
 		effect = {
 			any_pop = { limit = { has_pop_culture = south_german } literacy = 0.5 }
-			#any_owned = { add_province_modifier = { name = baby_boom duration = 3650 } }
-			#SER = { any_owned = { add_province_modifier = { name = small_baby_boom duration = 1825 } } }
 		}
 	}
 	
@@ -2787,7 +2528,6 @@ political_decisions = {
 				}
 				add_country_modifier = { name = uncivilized_isolationism duration = -1 }
 				add_country_modifier = { name = rangaku duration = -1 }
-				#add_country_modifier = { name = global_baby_boom_small duration = 3650 }
 				random_owned = {
 					limit = { province_id = 1661 }
 					any_pop = { ideology = { value = liberal factor = 0.2 } }
@@ -2958,10 +2698,6 @@ political_decisions = {
 					literacy = 0.3
 				}
 			}
-			#WAL_665 = { add_province_modifier = { name = small_baby_boom duration = 2555 } }
-			#MOL_673 = { add_province_modifier = { name = small_baby_boom duration = 2555 } }
-			
-			#SER_794 = { add_province_modifier = { name = baby_boom duration = 3650 } }
 			#################Romanian Pops Setup######################
 			
 			#################Government Flags Setup######################

@@ -3,5 +3,5 @@ controller = JAP
 add_core = JAP
 add_core = TKG
 trade_goods = tea
-life_rating = 37
+life_rating = 35
 terrain = osaka

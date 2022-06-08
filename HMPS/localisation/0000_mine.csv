@@ -844,3 +844,13 @@ authorize_gas_warfare_desc;We have the capabilities to use chemical warfare to o
 gas_warfare;Gas Attack;;;;;;;;;;;;;
 gas_warfare_desc;Chemical Warfare has been authorised;;;;;;;;;;;;;
 gas_attacking;Chemical Warfare Authorised;;;;;;;;;;;;;
+wooden_sails_1855;Wooden Sails 1855;
+wooden_sails_1855_desc;Wooden sail ships do not benefit from the advancement of steam ship engine tech.;
+wooden_sails_1880;Wooden Sails 1880;
+wooden_sails_1880_desc;Wooden sail ships do not benefit from the advancement of steam ship engine tech.;
+wooden_sails_1900;Wooden Sails 1900;
+wooden_sails_1900_desc;Wooden sail ships do not benefit from the advancement of steam ship engine tech.;
+wooden_sails_1915;Wooden Sails 1915;
+wooden_sails_1915_desc;Wooden sail ships do not benefit from the advancement of steam ship engine tech.;
+wooden_sails_1920;Wooden Sails 1920;
+wooden_sails_1920_desc;Wooden sail ships do not benefit from the advancement of steam ship engine tech.;

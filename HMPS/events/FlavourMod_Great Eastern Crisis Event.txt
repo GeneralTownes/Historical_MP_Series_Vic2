@@ -961,33 +961,6 @@ country_event = {
 			TUR = { release_vassal = CRO }
 		}
 		
-		# Any Dalmatian lands given to Dalmatia, it is freed if vassaled
-		random_owned = {
-			limit = {
-				DLM = { exists = no }
-				CRO = { exists = no }
-				TUR = { NOT = { owns = 771 } }
-			}
-		}
-		random_owned = {
-			limit = {
-				province_id = 781 #Zadar
-				owned_by = TUR
-			}
-			state_scope = {
-				any_owned = {
-					secede_province = DLM
-				}
-			}
-		}
-		random_country = {
-			limit = {
-				tag = DLM
-				vassal_of = TUR
-			}
-			TUR = { release_vassal = DLM }
-		}
-		
 		# Any Serbian lands given to Serbia, it is freed if vassaled
 		any_owned = {
 			limit = { is_core = SER }

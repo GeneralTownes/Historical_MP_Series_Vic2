@@ -223,6 +223,8 @@ political_reforms = {
 					year = 1875
 				}
 			}
+			rich_income_modifier = 1
+			rich_vote = 1
 		}
 		
 		no_slavery = {
@@ -666,6 +668,8 @@ political_reforms = {
 			supply_consumption = -0.05
 			navy_tech_research_bonus = -0.05
 			army_tech_research_bonus = 0.05
+			culture_tech_research_bonus = 0.05
+			industry_tech_research_bonus = 0.05
 		}
 	}
 	

@@ -859,14 +859,6 @@ rebuilding_city = {
 	icon = 11
 }
 
-slave_growth = {
-	icon = 17
-}
-
-catholic_growth = {
-	icon = 17
-}
-
 assegai = {
 	mobilisation_size = 0.35
 	mobilisation_economy_impact = -0.7
@@ -2568,7 +2560,7 @@ dust_bowl = {
 }
 
 home_of_the_mormons = {
-	population_growth = 0.005
+	population_growth = 0.001
 	icon = 19
 }
 
@@ -2585,7 +2577,6 @@ gateway_to_harbor = {
 
 gateway_to_america = {
 	immigrant_attract = 1.5
-	#population_growth = 0.01
 	assimilation_rate = 1.5
 	icon = 19
 }
@@ -2650,12 +2641,6 @@ australia_migrations_vic = {
 vancouver_boom = {
 	population_growth = 0.01
 	assimilation_rate = 1
-	icon = 17
-}
-
-america_new_world = {
-	global_immigrant_attract = 0.5
-	global_population_growth = 0.01
 	icon = 17
 }
 

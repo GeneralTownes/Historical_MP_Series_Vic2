@@ -353,7 +353,7 @@ country_event = {
 		}
 		random_owned = { 
 			limit = { owner = { has_country_flag = no2_flag } NOT = { naval_design_bureaus = 1 } }
-			owner = { activate_technology = alphabetic_flag_signaling activate_technology = naval_design_bureaus  clr_country_flag = no2_flag }
+			owner = { activate_technology = alphabetic_flag_signaling activate_technology = naval_plans activate_technology = naval_design_bureaus  clr_country_flag = no2_flag }
 		}
 		
 		# foreign ships

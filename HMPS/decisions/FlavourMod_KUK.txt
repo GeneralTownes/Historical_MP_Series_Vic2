@@ -217,7 +217,6 @@ political_decisions = {
 						is_core = HUN
 						is_core = CRO
 					}
-					NOT = { is_core = DLM }
 				}
 				remove_core = KUK
 			}

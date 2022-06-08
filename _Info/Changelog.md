@@ -75,10 +75,11 @@ Everything else is our own (as far as I remember).
 - France average life rating increase to 33
 - USA starts at 40
 - Westernised China, India and Korea can increase to 40 with tech
-- 1865 USA -> 35, 1890 UK -> 35 LR, 1905 ITA -> 35 LR
+- Will decrease over the year range to 35 LR (excluding the capital): USA 1850->1865 , GB 1880->1900 , ITA 1890->1900 , GER 1900->1920
 - Pop-growth techs nerfed
 - Healthcare only grants +0.01% pm at top level fully funded
 - Removed starting baby booms
+- Slaves grow at the same rate as other pops
 #### Pop Needs
 - Demand increase from inventions decreased to 1% per invention
 - Luxury manufactured goods in luxuries for lower and middle class
@@ -149,6 +150,7 @@ Soldier pops concentrate in state capitals, requires 3k soldier pops for 1st bri
 - Light Armament: Gives Infantry & Guard discipline increases
 - Submarines scale greatly with 1900+ tech
 - Gas attack is reduced to 1, no defence, taken via decision
+- Navy speed will not benefit sail ships in the steam era onwards
 #### Combat Width & Supply
 - Brigades are 5k
 - 5 combat width increase in 1920 & 1930
