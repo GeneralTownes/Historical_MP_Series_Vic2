@@ -1,46 +1,19 @@
 political_decisions = {
 	#Setup
-	1836_haiti_setup = {
-		picture = constantinople
-		potential = {
-            tag = HAI
-            always = no
-        }
-        allow = {
-            tag = HAI
-        }
-        effect = {
-        	USA = {
-        		diplomatic_influence = { who = HAI value = -400 }
-        	}
-        	money = 500000
-        	add_country_modifier = { name = national_instability duration = -1 }
-        	add_country_modifier = { name = USA_blockade duration = -1 }
-        	any_pop = {
-        		limit = {
-        			has_pop_culture = mulatto
-        		}
-        		literacy = 0.75
-        	}
-        }
-	}
 	fra_reps = {
-		picture = map_caribbean
+		picture = golden_haiti
 		potential = {
 			tag = FRA 
 			HAI = { exists = yes }
 			NOT = { has_global_flag = no_haiti_reps }
-			NOT = { has_country_modifier = reps_haiti }
-			NOT = { year = 1900 }
+			NOT = { has_global_flag = sent_haiti_reps }
 		}
 		allow = {
 			is_greater_power = yes
 		}
 		effect = {
-			HAI = {
-				country_event = 45106
-			}
-			add_country_modifier = { name = reps_haiti duration = 3650 }
+			set_global_flag = sent_haiti_reps
+			#add_country_modifier = { name = reps_haiti duration = 3650 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -63,7 +36,7 @@ political_decisions = {
 			}
 		}
 		effect = {
-			prestige = 25
+			prestige = 5
 			money = 250000
 			leadership = 100
 			ammunition = 100
@@ -76,6 +49,7 @@ political_decisions = {
 			clipper_convoy = 50
 			wool = 50
 			FRA = {
+				remove_global_flag = sent_haiti_reps
 				set_global_flag = no_haiti_reps
 			}
 		}
@@ -113,7 +87,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = toussaints_legacy
 			remove_country_modifier = national_instability
-			add_country_modifier = { name = HAI_mass_reforms duration = 3650 }
+			add_country_modifier = { name = HAI_mass_reforms duration = 1825 }
 		}
 	}
 	toussaints_legacy_2 = {
@@ -137,7 +111,7 @@ political_decisions = {
 			election = yes
 			random_owned = { limit = { owner = { border_policy = closed_borders } } owner = { political_reform = open_borders } }
 			random_owned = { limit = { owner = { centralization = totalitarianism } } owner = { political_reform = unitary } }
-			add_country_modifier = { name = small_immigration_boom_global duration = 3650 }
+			add_country_modifier = { name = small_immigration_boom_global duration = 1825 }
 			#capital_scope = {
 			#		sub_unit = { type = guard value = current }
 			#		sub_unit = { type = guard value = current }

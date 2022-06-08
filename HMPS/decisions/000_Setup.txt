@@ -2855,7 +2855,20 @@ political_decisions = {
 				}
 			}
 			#################Setup Texas######################
-			
+			#################Setup Haiti######################
+			USA = {
+        		diplomatic_influence = { who = HAI value = -400 }
+        	}
+        	money = 500000
+        	add_country_modifier = { name = national_instability duration = -1 }
+        	add_country_modifier = { name = USA_blockade duration = -1 }
+        	any_pop = {
+        		limit = {
+        			has_pop_culture = mulatto
+        		}
+        		literacy = 0.75
+        	}
+        	#################Setup Haiti######################
 			#################Setup SWI######################
 			SWI = { 603 = { aristocrats  = { money = 12000 } } }
 			SWI = { any_pop = { limit = { has_pop_religion = protestant } ideology = { factor = 0.5 value = liberal } } }

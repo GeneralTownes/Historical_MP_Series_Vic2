@@ -305,6 +305,20 @@ country_event = {
 				limit = { NOT = { cash_reserves = 0.5 } }
 				money = 0.3
 			}
+			#Haitian Payments to the French#
+			any_pop = {
+				limit = { 
+					has_global_flag = sent_haiti_reps
+					NOT = { has_global_flag = no_haiti_reps }
+					has_pop_culture = french
+					OR = {
+						type = aristocrats
+						type = capitalists
+					}
+				}
+				money = 10
+				HAI = { money = -5 }
+			}
 		}
 		
 		CLN = { country_event = { id = 477877787 days = 1 } }

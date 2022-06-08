@@ -371,7 +371,13 @@ country_event = {
     desc = "EVTDESC45106"
     picture = "haiti_debts"
 
-    is_triggered_only = yes
+	trigger = {
+		tag = HAI 
+		has_global_flag = sent_haiti_reps
+		NOT = { has_global_flag = no_haiti_reps }
+	}
+	
+	mean_time_to_happen = { months = 1 }
 
     option = {
         name = "EVT45106OPTA"
@@ -381,7 +387,7 @@ country_event = {
         random_owned = {
             limit = {
                 owner = {
-                    NOT = { money = 500000 }
+                    NOT = { money = 1500000 }
                     NOT = { check_variable = { which = owed_cash_money value = 1 } }
                 }
             }
@@ -389,7 +395,7 @@ country_event = {
         }
         prestige = -10
         FRA = { 
-        	treasury = 500000
+        	money = 1500000
         	any_pop = {
         		limit = {
         			has_pop_culture = afro_antillean
@@ -398,16 +404,11 @@ country_event = {
         	}
         }
         HAI = { 
-        	treasury = -25000
-        	any_pop = {
-        		limit = {
-        			has_pop_culture = afro_antillean
-        		}
-        		reduce_pop = 0.99
-        	}
+        	add_country_modifier = { name = reps_haiti duration = 3650 }
+        	money = -500000
         }
         ai_chance = {
-            factor = 60
+            factor = 90
         }
     }
 
@@ -449,12 +450,12 @@ country_event = {
     option = {
         name = "EVT45107OPTB"
         badboy = 8
-        relation = { who = USA value = -200 }
-        add_casus_belli = {
-            target = USA
-            type = cut_down_to_size
-            months = 48
-        }
+        #relation = { who = USA value = -200 }
+        #add_casus_belli = {
+        #    target = USA
+        #    type = cut_down_to_size
+        #    months = 48
+        #}
         casus_belli = {
             target = FROM
             type = war_reparations
@@ -476,12 +477,12 @@ country_event = {
     option = {
         name = "EVT45107OPTC"
         badboy = 10
-        relation = { who = USA value = -300 }
-        add_casus_belli = {
-            target = USA
-            type = cut_down_to_size
-            months = 48
-        }
+        #relation = { who = USA value = -300 }
+        #add_casus_belli = {
+        #    target = USA
+        #    type = cut_down_to_size
+        #    months = 48
+        #}
         casus_belli = {
             target = FROM
             type = conquest
