@@ -475,7 +475,6 @@ political_reforms = {
 			allow = { has_country_flag = changing_militarisation }
 		}
 		two_year_draft = {
-			#mobilisation_size = -0.02
 			mobilization_impact = 3
 			mobilisation_economy_impact = 0.05
 			war_exhaustion = -0.5
@@ -484,19 +483,7 @@ political_reforms = {
 			industry_tech_research_bonus = 0.05
 			allow = { has_country_flag = changing_militarisation }
 		}
-#		one_year_draft = {
-#			mobilisation_size = 0.01
-#			global_immigrant_attract = 0.01
-#			land_unit_start_experience = -2
-#			allow = { 
-#				OR = {
-#					NOT = { war_policy = jingoism }
-#					NOT = { war_policy = pro_military}
-#				}
-#			}
-#		}
 		no_draft = {
-			#mobilisation_size = -0.02
 			mobilization_impact = 2
 			war_exhaustion = -0.5
 			global_immigrant_attract = 0.25

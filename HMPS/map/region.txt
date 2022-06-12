@@ -353,8 +353,6 @@ RUS_715 = { 715 711 713 716 } #West Galicia
 
 AUS_726 = { 726 727 728 2669 } #Lombardia
 
-#AUS_733 = { 733 736 } #Friuli
-
 AUS_729 = { 729 730 731 732 733 3262 } #Venetia
 
 AUS_734 = { 734 735 } #South Tirol

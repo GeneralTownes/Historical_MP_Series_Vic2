@@ -1787,26 +1787,18 @@ country_event = {
 						NOT = { year = 1881 }
 					}
 					AND = {
-						tag = ENG
+						OR = {
+							tag = ENG
+							tag = GBR
+						}
 						year = 1890
 						NOT = { year = 1891 }
 					}
 					AND = {
-						tag = ENG
-						year = 1900
-					}
-					AND = {
-						tag = GBR
-						year = 1880
-						NOT = { year = 1881 }
-					}
-					AND = {
-						tag = GBR
-						year = 1890
-						NOT = { year = 1891 }
-					}
-					AND = {
-						tag = GBR
+						OR = {
+							tag = ENG
+							tag = GBR
+						}
 						year = 1900
 					}
 					

@@ -1017,6 +1017,16 @@ emigration_chance = {
 	}
 	
 	modifier = {
+		factor = -0.01
+		country = {
+			OR = {
+				conscription = two_year_draft
+				conscription = no_draft
+			}
+		}
+	}
+	
+	modifier = {
 		factor = -1
 		country = { has_country_flag = micro_nation }
 	}

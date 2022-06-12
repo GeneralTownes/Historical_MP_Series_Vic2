@@ -1109,7 +1109,7 @@ country_event = {
 		}
 		FROM = {
 			all_core = {
-				#limit = { NOT = { is_core = CRO } }
+				limit = { NOT = { is_core = CRO } }
 				add_core = GER
 			}
 		}
