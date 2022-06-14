@@ -355,7 +355,7 @@ country_event = {
 				target = AUS
 				attacker_goal = {
 					casus_belli = unification_casus_belli 
-					state_province_id = 727
+					state_province_id = 729
 				}
 				defender_goal = {
 					casus_belli = acquire_state 
