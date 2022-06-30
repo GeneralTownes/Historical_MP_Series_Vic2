@@ -9,9 +9,9 @@ province_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Coal"
+		name = "Small Arms"
 		owner = {
-			set_country_flag = sending_coal
+			set_country_flag = sending_small_arms
 			any_country = {
 				limit = {
 					OR = {
@@ -20,14 +20,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_coal
+				set_country_flag = receiving_small_arms
 			}
 		}
 	}
 	option = {
-		name = "Sulphur"
+		name = "Ammunition"
 		owner = {
-			set_country_flag = sending_sulphur
+			set_country_flag = sending_ammunition
 			any_country = {
 				limit = {
 					OR = {
@@ -36,14 +36,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_sulphur
+				set_country_flag = receiving_ammunition
 			}
 		}
 	}
 	option = {
-		name = "Iron"
+		name = "Explosives"
 		owner = {
-			set_country_flag = sending_iron
+			set_country_flag = sending_explosives
 			any_country = {
 				limit = {
 					OR = {
@@ -52,14 +52,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_iron
+				set_country_flag = receiving_explosives
 			}
 		}
 	}
 	option = {
-		name = "Timber"
+		name = "Canned Food"
 		owner = {
-			set_country_flag = sending_timber
+			set_country_flag = sending_canned_food
 			any_country = {
 				limit = {
 					OR = {
@@ -68,14 +68,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_timber
+				set_country_flag = receiving_canned_food
 			}
 		}
 	}
 	option = {
-		name = "Cotton"
+		name = "Artillery"
 		owner = {
-			set_country_flag = sending_cotton
+			set_country_flag = sending_artillery
 			any_country = {
 				limit = {
 					OR = {
@@ -84,14 +84,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_cotton
+				set_country_flag = receiving_artillery
 			}
 		}
 	}
 	option = {
-		name = "Dye"
+		name = "Tanks"
 		owner = {
-			set_country_flag = sending_dye
+			set_country_flag = sending_barrels
 			any_country = {
 				limit = {
 					OR = {
@@ -100,14 +100,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_dye
+				set_country_flag = receiving_barrels
 			}
 		}
 	}
 	option = {
-		name = "Silk"
+		name = "Aeroplanes"
 		owner = {
-			set_country_flag = sending_silk
+			set_country_flag = sending_aeroplanes
 			any_country = {
 				limit = {
 					OR = {
@@ -116,14 +116,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_silk
+				set_country_flag = receiving_aeroplanes
 			}
 		}
 	}
 	option = {
-		name = "Tropical Wood"
+		name = "Steamer Convoys"
 		owner = {
-			set_country_flag = sending_tropical_wood
+			set_country_flag = sending_steamer_convoy
 			any_country = {
 				limit = {
 					OR = {
@@ -132,14 +132,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_tropical_wood
+				set_country_flag = receiving_steamer_convoy
 			}
 		}
 	}
 	option = {
-		name = "Rubber"
+		name = "Interwar Hull"
 		owner = {
-			set_country_flag = sending_rubber
+			set_country_flag = sending_interwar_hull
 			any_country = {
 				limit = {
 					OR = {
@@ -148,14 +148,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_rubber
+				set_country_flag = receiving_interwar_hull
 			}
 		}
 	}
 	option = {
-		name = "Oil"
+		name = "Fuel"
 		owner = {
-			set_country_flag = sending_oil
+			set_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -164,23 +164,23 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_oil
+				set_country_flag = receiving_fuel
 			}
 		}
 	}
 	option = {
 		name = "Stop sending goods."
 		owner = {
-			clr_country_flag = sending_coal
-			clr_country_flag = sending_sulphur
-			clr_country_flag = sending_iron
-			clr_country_flag = sending_timber
-			clr_country_flag = sending_cotton
-			clr_country_flag = sending_dye
-			clr_country_flag = sending_silk
-			clr_country_flag = sending_tropical_wood
-			clr_country_flag = sending_rubber
-			clr_country_flag = sending_oil
+			clr_country_flag = sending_small_arms
+			clr_country_flag = sending_ammunition
+			clr_country_flag = sending_explosives
+			clr_country_flag = sending_canned_food
+			clr_country_flag = sending_artillery
+			clr_country_flag = sending_barrels
+			clr_country_flag = sending_aeroplanes
+			clr_country_flag = sending_steamer_convoy
+			clr_country_flag = sending_interwar_hull
+			clr_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -189,16 +189,16 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				clr_country_flag = sending_coal
-				clr_country_flag = sending_sulphur
-				clr_country_flag = sending_iron
-				clr_country_flag = sending_timber
-				clr_country_flag = sending_cotton
-				clr_country_flag = sending_dye
-				clr_country_flag = sending_silk
-				clr_country_flag = sending_tropical_wood
-				clr_country_flag = sending_rubber
-				clr_country_flag = sending_oil
+				clr_country_flag = sending_small_arms
+				clr_country_flag = sending_ammunition
+				clr_country_flag = sending_explosives
+				clr_country_flag = sending_canned_food
+				clr_country_flag = sending_artillery
+				clr_country_flag = sending_barrels
+				clr_country_flag = sending_aeroplanes
+				clr_country_flag = sending_steamer_convoy
+				clr_country_flag = sending_interwar_hull
+				clr_country_flag = sending_fuel
 			}
 		}
 	}
@@ -212,9 +212,9 @@ province_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Coal"
+		name = "Small Arms"
 		owner = {
-			set_country_flag = sending_coal
+			set_country_flag = sending_small_arms
 			any_country = {
 				limit = {
 					OR = {
@@ -223,14 +223,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_coal
+				set_country_flag = receiving_small_arms
 			}
 		}
 	}
 	option = {
-		name = "Sulphur"
+		name = "Ammunition"
 		owner = {
-			set_country_flag = sending_sulphur
+			set_country_flag = sending_ammunition
 			any_country = {
 				limit = {
 					OR = {
@@ -239,14 +239,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_sulphur
+				set_country_flag = receiving_ammunition
 			}
 		}
 	}
 	option = {
-		name = "Iron"
+		name = "Explosives"
 		owner = {
-			set_country_flag = sending_iron
+			set_country_flag = sending_explosives
 			any_country = {
 				limit = {
 					OR = {
@@ -255,14 +255,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_iron
+				set_country_flag = receiving_explosives
 			}
 		}
 	}
 	option = {
-		name = "Timber"
+		name = "Canned Food"
 		owner = {
-			set_country_flag = sending_timber
+			set_country_flag = sending_canned_food
 			any_country = {
 				limit = {
 					OR = {
@@ -271,14 +271,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_timber
+				set_country_flag = receiving_canned_food
 			}
 		}
 	}
 	option = {
-		name = "Cotton"
+		name = "Artillery"
 		owner = {
-			set_country_flag = sending_cotton
+			set_country_flag = sending_artillery
 			any_country = {
 				limit = {
 					OR = {
@@ -287,14 +287,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_cotton
+				set_country_flag = receiving_artillery
 			}
 		}
 	}
 	option = {
-		name = "Dye"
+		name = "Tanks"
 		owner = {
-			set_country_flag = sending_dye
+			set_country_flag = sending_barrels
 			any_country = {
 				limit = {
 					OR = {
@@ -303,14 +303,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_dye
+				set_country_flag = receiving_barrels
 			}
 		}
 	}
 	option = {
-		name = "Silk"
+		name = "Aeroplanes"
 		owner = {
-			set_country_flag = sending_silk
+			set_country_flag = sending_aeroplanes
 			any_country = {
 				limit = {
 					OR = {
@@ -319,14 +319,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_silk
+				set_country_flag = receiving_aeroplanes
 			}
 		}
 	}
 	option = {
-		name = "Tropical Wood"
+		name = "Steamer Convoys"
 		owner = {
-			set_country_flag = sending_tropical_wood
+			set_country_flag = sending_steamer_convoy
 			any_country = {
 				limit = {
 					OR = {
@@ -335,14 +335,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_tropical_wood
+				set_country_flag = receiving_steamer_convoy
 			}
 		}
 	}
 	option = {
-		name = "Rubber"
+		name = "Interwar Hull"
 		owner = {
-			set_country_flag = sending_rubber
+			set_country_flag = sending_interwar_hull
 			any_country = {
 				limit = {
 					OR = {
@@ -351,14 +351,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_rubber
+				set_country_flag = receiving_interwar_hull
 			}
 		}
 	}
 	option = {
-		name = "Oil"
+		name = "Fuel"
 		owner = {
-			set_country_flag = sending_oil
+			set_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -367,23 +367,23 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_oil
+				set_country_flag = receiving_fuel
 			}
 		}
 	}
 	option = {
 		name = "Stop sending goods."
 		owner = {
-			clr_country_flag = sending_coal
-			clr_country_flag = sending_sulphur
-			clr_country_flag = sending_iron
-			clr_country_flag = sending_timber
-			clr_country_flag = sending_cotton
-			clr_country_flag = sending_dye
-			clr_country_flag = sending_silk
-			clr_country_flag = sending_tropical_wood
-			clr_country_flag = sending_rubber
-			clr_country_flag = sending_oil
+			clr_country_flag = sending_small_arms
+			clr_country_flag = sending_ammunition
+			clr_country_flag = sending_explosives
+			clr_country_flag = sending_canned_food
+			clr_country_flag = sending_artillery
+			clr_country_flag = sending_barrels
+			clr_country_flag = sending_aeroplanes
+			clr_country_flag = sending_steamer_convoy
+			clr_country_flag = sending_interwar_hull
+			clr_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -392,16 +392,16 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				clr_country_flag = sending_coal
-				clr_country_flag = sending_sulphur
-				clr_country_flag = sending_iron
-				clr_country_flag = sending_timber
-				clr_country_flag = sending_cotton
-				clr_country_flag = sending_dye
-				clr_country_flag = sending_silk
-				clr_country_flag = sending_tropical_wood
-				clr_country_flag = sending_rubber
-				clr_country_flag = sending_oil
+				clr_country_flag = sending_small_arms
+				clr_country_flag = sending_ammunition
+				clr_country_flag = sending_explosives
+				clr_country_flag = sending_canned_food
+				clr_country_flag = sending_artillery
+				clr_country_flag = sending_barrels
+				clr_country_flag = sending_aeroplanes
+				clr_country_flag = sending_steamer_convoy
+				clr_country_flag = sending_interwar_hull
+				clr_country_flag = sending_fuel
 			}
 		}
 	}
@@ -415,9 +415,9 @@ province_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Coal"
+		name = "Small Arms"
 		owner = {
-			set_country_flag = sending_coal
+			set_country_flag = sending_small_arms
 			any_country = {
 				limit = {
 					OR = {
@@ -426,14 +426,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_coal
+				set_country_flag = receiving_small_arms
 			}
 		}
 	}
 	option = {
-		name = "Sulphur"
+		name = "Ammunition"
 		owner = {
-			set_country_flag = sending_sulphur
+			set_country_flag = sending_ammunition
 			any_country = {
 				limit = {
 					OR = {
@@ -442,14 +442,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_sulphur
+				set_country_flag = receiving_ammunition
 			}
 		}
 	}
 	option = {
-		name = "Iron"
+		name = "Explosives"
 		owner = {
-			set_country_flag = sending_iron
+			set_country_flag = sending_explosives
 			any_country = {
 				limit = {
 					OR = {
@@ -458,14 +458,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_iron
+				set_country_flag = receiving_explosives
 			}
 		}
 	}
 	option = {
-		name = "Timber"
+		name = "Canned Food"
 		owner = {
-			set_country_flag = sending_timber
+			set_country_flag = sending_canned_food
 			any_country = {
 				limit = {
 					OR = {
@@ -474,14 +474,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_timber
+				set_country_flag = receiving_canned_food
 			}
 		}
 	}
 	option = {
-		name = "Cotton"
+		name = "Artillery"
 		owner = {
-			set_country_flag = sending_cotton
+			set_country_flag = sending_artillery
 			any_country = {
 				limit = {
 					OR = {
@@ -490,14 +490,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_cotton
+				set_country_flag = receiving_artillery
 			}
 		}
 	}
 	option = {
-		name = "Dye"
+		name = "Tanks"
 		owner = {
-			set_country_flag = sending_dye
+			set_country_flag = sending_barrels
 			any_country = {
 				limit = {
 					OR = {
@@ -506,14 +506,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_dye
+				set_country_flag = receiving_barrels
 			}
 		}
 	}
 	option = {
-		name = "Silk"
+		name = "Aeroplanes"
 		owner = {
-			set_country_flag = sending_silk
+			set_country_flag = sending_aeroplanes
 			any_country = {
 				limit = {
 					OR = {
@@ -522,14 +522,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_silk
+				set_country_flag = receiving_aeroplanes
 			}
 		}
 	}
 	option = {
-		name = "Tropical Wood"
+		name = "Steamer Convoys"
 		owner = {
-			set_country_flag = sending_tropical_wood
+			set_country_flag = sending_steamer_convoy
 			any_country = {
 				limit = {
 					OR = {
@@ -538,14 +538,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_tropical_wood
+				set_country_flag = receiving_steamer_convoy
 			}
 		}
 	}
 	option = {
-		name = "Rubber"
+		name = "Interwar Hull"
 		owner = {
-			set_country_flag = sending_rubber
+			set_country_flag = sending_interwar_hull
 			any_country = {
 				limit = {
 					OR = {
@@ -554,14 +554,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_rubber
+				set_country_flag = receiving_interwar_hull
 			}
 		}
 	}
 	option = {
-		name = "Oil"
+		name = "Fuel"
 		owner = {
-			set_country_flag = sending_oil
+			set_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -570,23 +570,23 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_oil
+				set_country_flag = receiving_fuel
 			}
 		}
 	}
 	option = {
 		name = "Stop sending goods."
 		owner = {
-			clr_country_flag = sending_coal
-			clr_country_flag = sending_sulphur
-			clr_country_flag = sending_iron
-			clr_country_flag = sending_timber
-			clr_country_flag = sending_cotton
-			clr_country_flag = sending_dye
-			clr_country_flag = sending_silk
-			clr_country_flag = sending_tropical_wood
-			clr_country_flag = sending_rubber
-			clr_country_flag = sending_oil
+			clr_country_flag = sending_small_arms
+			clr_country_flag = sending_ammunition
+			clr_country_flag = sending_explosives
+			clr_country_flag = sending_canned_food
+			clr_country_flag = sending_artillery
+			clr_country_flag = sending_barrels
+			clr_country_flag = sending_aeroplanes
+			clr_country_flag = sending_steamer_convoy
+			clr_country_flag = sending_interwar_hull
+			clr_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -595,16 +595,16 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				clr_country_flag = sending_coal
-				clr_country_flag = sending_sulphur
-				clr_country_flag = sending_iron
-				clr_country_flag = sending_timber
-				clr_country_flag = sending_cotton
-				clr_country_flag = sending_dye
-				clr_country_flag = sending_silk
-				clr_country_flag = sending_tropical_wood
-				clr_country_flag = sending_rubber
-				clr_country_flag = sending_oil
+				clr_country_flag = sending_small_arms
+				clr_country_flag = sending_ammunition
+				clr_country_flag = sending_explosives
+				clr_country_flag = sending_canned_food
+				clr_country_flag = sending_artillery
+				clr_country_flag = sending_barrels
+				clr_country_flag = sending_aeroplanes
+				clr_country_flag = sending_steamer_convoy
+				clr_country_flag = sending_interwar_hull
+				clr_country_flag = sending_fuel
 			}
 		}
 	}
@@ -618,9 +618,9 @@ province_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Coal"
+		name = "Small Arms"
 		owner = {
-			set_country_flag = sending_coal
+			set_country_flag = sending_small_arms
 			any_country = {
 				limit = {
 					OR = {
@@ -629,14 +629,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_coal
+				set_country_flag = receiving_small_arms
 			}
 		}
 	}
 	option = {
-		name = "Sulphur"
+		name = "Ammunition"
 		owner = {
-			set_country_flag = sending_sulphur
+			set_country_flag = sending_ammunition
 			any_country = {
 				limit = {
 					OR = {
@@ -645,14 +645,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_sulphur
+				set_country_flag = receiving_ammunition
 			}
 		}
 	}
 	option = {
-		name = "Iron"
+		name = "Explosives"
 		owner = {
-			set_country_flag = sending_iron
+			set_country_flag = sending_explosives
 			any_country = {
 				limit = {
 					OR = {
@@ -661,14 +661,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_iron
+				set_country_flag = receiving_explosives
 			}
 		}
 	}
 	option = {
-		name = "Timber"
+		name = "Canned Food"
 		owner = {
-			set_country_flag = sending_timber
+			set_country_flag = sending_canned_food
 			any_country = {
 				limit = {
 					OR = {
@@ -677,14 +677,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_timber
+				set_country_flag = receiving_canned_food
 			}
 		}
 	}
 	option = {
-		name = "Cotton"
+		name = "Artillery"
 		owner = {
-			set_country_flag = sending_cotton
+			set_country_flag = sending_artillery
 			any_country = {
 				limit = {
 					OR = {
@@ -693,14 +693,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_cotton
+				set_country_flag = receiving_artillery
 			}
 		}
 	}
 	option = {
-		name = "Dye"
+		name = "Tanks"
 		owner = {
-			set_country_flag = sending_dye
+			set_country_flag = sending_barrels
 			any_country = {
 				limit = {
 					OR = {
@@ -709,14 +709,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_dye
+				set_country_flag = receiving_barrels
 			}
 		}
 	}
 	option = {
-		name = "Silk"
+		name = "Aeroplanes"
 		owner = {
-			set_country_flag = sending_silk
+			set_country_flag = sending_aeroplanes
 			any_country = {
 				limit = {
 					OR = {
@@ -725,14 +725,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_silk
+				set_country_flag = receiving_aeroplanes
 			}
 		}
 	}
 	option = {
-		name = "Tropical Wood"
+		name = "Steamer Convoys"
 		owner = {
-			set_country_flag = sending_tropical_wood
+			set_country_flag = sending_steamer_convoy
 			any_country = {
 				limit = {
 					OR = {
@@ -741,14 +741,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_tropical_wood
+				set_country_flag = receiving_steamer_convoy
 			}
 		}
 	}
 	option = {
-		name = "Rubber"
+		name = "Interwar Hull"
 		owner = {
-			set_country_flag = sending_rubber
+			set_country_flag = sending_interwar_hull
 			any_country = {
 				limit = {
 					OR = {
@@ -757,14 +757,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_rubber
+				set_country_flag = receiving_interwar_hull
 			}
 		}
 	}
 	option = {
-		name = "Oil"
+		name = "Fuel"
 		owner = {
-			set_country_flag = sending_oil
+			set_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -773,23 +773,23 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_oil
+				set_country_flag = receiving_fuel
 			}
 		}
 	}
 	option = {
 		name = "Stop sending goods."
 		owner = {
-			clr_country_flag = sending_coal
-			clr_country_flag = sending_sulphur
-			clr_country_flag = sending_iron
-			clr_country_flag = sending_timber
-			clr_country_flag = sending_cotton
-			clr_country_flag = sending_dye
-			clr_country_flag = sending_silk
-			clr_country_flag = sending_tropical_wood
-			clr_country_flag = sending_rubber
-			clr_country_flag = sending_oil
+			clr_country_flag = sending_small_arms
+			clr_country_flag = sending_ammunition
+			clr_country_flag = sending_explosives
+			clr_country_flag = sending_canned_food
+			clr_country_flag = sending_artillery
+			clr_country_flag = sending_barrels
+			clr_country_flag = sending_aeroplanes
+			clr_country_flag = sending_steamer_convoy
+			clr_country_flag = sending_interwar_hull
+			clr_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -798,16 +798,16 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				clr_country_flag = sending_coal
-				clr_country_flag = sending_sulphur
-				clr_country_flag = sending_iron
-				clr_country_flag = sending_timber
-				clr_country_flag = sending_cotton
-				clr_country_flag = sending_dye
-				clr_country_flag = sending_silk
-				clr_country_flag = sending_tropical_wood
-				clr_country_flag = sending_rubber
-				clr_country_flag = sending_oil
+				clr_country_flag = sending_small_arms
+				clr_country_flag = sending_ammunition
+				clr_country_flag = sending_explosives
+				clr_country_flag = sending_canned_food
+				clr_country_flag = sending_artillery
+				clr_country_flag = sending_barrels
+				clr_country_flag = sending_aeroplanes
+				clr_country_flag = sending_steamer_convoy
+				clr_country_flag = sending_interwar_hull
+				clr_country_flag = sending_fuel
 			}
 		}
 	}
@@ -821,9 +821,9 @@ province_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Coal"
+		name = "Small Arms"
 		owner = {
-			set_country_flag = sending_coal
+			set_country_flag = sending_small_arms
 			any_country = {
 				limit = {
 					OR = {
@@ -832,14 +832,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_coal
+				set_country_flag = receiving_small_arms
 			}
 		}
 	}
 	option = {
-		name = "Sulphur"
+		name = "Ammunition"
 		owner = {
-			set_country_flag = sending_sulphur
+			set_country_flag = sending_ammunition
 			any_country = {
 				limit = {
 					OR = {
@@ -848,14 +848,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_sulphur
+				set_country_flag = receiving_ammunition
 			}
 		}
 	}
 	option = {
-		name = "Iron"
+		name = "Explosives"
 		owner = {
-			set_country_flag = sending_iron
+			set_country_flag = sending_explosives
 			any_country = {
 				limit = {
 					OR = {
@@ -864,14 +864,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_iron
+				set_country_flag = receiving_explosives
 			}
 		}
 	}
 	option = {
-		name = "Timber"
+		name = "Canned Food"
 		owner = {
-			set_country_flag = sending_timber
+			set_country_flag = sending_canned_food
 			any_country = {
 				limit = {
 					OR = {
@@ -880,14 +880,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_timber
+				set_country_flag = receiving_canned_food
 			}
 		}
 	}
 	option = {
-		name = "Cotton"
+		name = "Artillery"
 		owner = {
-			set_country_flag = sending_cotton
+			set_country_flag = sending_artillery
 			any_country = {
 				limit = {
 					OR = {
@@ -896,14 +896,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_cotton
+				set_country_flag = receiving_artillery
 			}
 		}
 	}
 	option = {
-		name = "Dye"
+		name = "Tanks"
 		owner = {
-			set_country_flag = sending_dye
+			set_country_flag = sending_barrels
 			any_country = {
 				limit = {
 					OR = {
@@ -912,14 +912,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_dye
+				set_country_flag = receiving_barrels
 			}
 		}
 	}
 	option = {
-		name = "Silk"
+		name = "Aeroplanes"
 		owner = {
-			set_country_flag = sending_silk
+			set_country_flag = sending_aeroplanes
 			any_country = {
 				limit = {
 					OR = {
@@ -928,14 +928,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_silk
+				set_country_flag = receiving_aeroplanes
 			}
 		}
 	}
 	option = {
-		name = "Tropical Wood"
+		name = "Steamer Convoys"
 		owner = {
-			set_country_flag = sending_tropical_wood
+			set_country_flag = sending_steamer_convoy
 			any_country = {
 				limit = {
 					OR = {
@@ -944,14 +944,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_tropical_wood
+				set_country_flag = receiving_steamer_convoy
 			}
 		}
 	}
 	option = {
-		name = "Rubber"
+		name = "Interwar Hull"
 		owner = {
-			set_country_flag = sending_rubber
+			set_country_flag = sending_interwar_hull
 			any_country = {
 				limit = {
 					OR = {
@@ -960,14 +960,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_rubber
+				set_country_flag = receiving_interwar_hull
 			}
 		}
 	}
 	option = {
-		name = "Oil"
+		name = "Fuel"
 		owner = {
-			set_country_flag = sending_oil
+			set_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -976,23 +976,23 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_oil
+				set_country_flag = receiving_fuel
 			}
 		}
 	}
 	option = {
 		name = "Stop sending goods."
 		owner = {
-			clr_country_flag = sending_coal
-			clr_country_flag = sending_sulphur
-			clr_country_flag = sending_iron
-			clr_country_flag = sending_timber
-			clr_country_flag = sending_cotton
-			clr_country_flag = sending_dye
-			clr_country_flag = sending_silk
-			clr_country_flag = sending_tropical_wood
-			clr_country_flag = sending_rubber
-			clr_country_flag = sending_oil
+			clr_country_flag = sending_small_arms
+			clr_country_flag = sending_ammunition
+			clr_country_flag = sending_explosives
+			clr_country_flag = sending_canned_food
+			clr_country_flag = sending_artillery
+			clr_country_flag = sending_barrels
+			clr_country_flag = sending_aeroplanes
+			clr_country_flag = sending_steamer_convoy
+			clr_country_flag = sending_interwar_hull
+			clr_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -1001,16 +1001,16 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				clr_country_flag = sending_coal
-				clr_country_flag = sending_sulphur
-				clr_country_flag = sending_iron
-				clr_country_flag = sending_timber
-				clr_country_flag = sending_cotton
-				clr_country_flag = sending_dye
-				clr_country_flag = sending_silk
-				clr_country_flag = sending_tropical_wood
-				clr_country_flag = sending_rubber
-				clr_country_flag = sending_oil
+				clr_country_flag = sending_small_arms
+				clr_country_flag = sending_ammunition
+				clr_country_flag = sending_explosives
+				clr_country_flag = sending_canned_food
+				clr_country_flag = sending_artillery
+				clr_country_flag = sending_barrels
+				clr_country_flag = sending_aeroplanes
+				clr_country_flag = sending_steamer_convoy
+				clr_country_flag = sending_interwar_hull
+				clr_country_flag = sending_fuel
 			}
 		}
 	}
@@ -1024,9 +1024,9 @@ province_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Coal"
+		name = "Small Arms"
 		owner = {
-			set_country_flag = sending_coal
+			set_country_flag = sending_small_arms
 			any_country = {
 				limit = {
 					OR = {
@@ -1035,14 +1035,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_coal
+				set_country_flag = receiving_small_arms
 			}
 		}
 	}
 	option = {
-		name = "Sulphur"
+		name = "Ammunition"
 		owner = {
-			set_country_flag = sending_sulphur
+			set_country_flag = sending_ammunition
 			any_country = {
 				limit = {
 					OR = {
@@ -1051,14 +1051,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_sulphur
+				set_country_flag = receiving_ammunition
 			}
 		}
 	}
 	option = {
-		name = "Iron"
+		name = "Explosives"
 		owner = {
-			set_country_flag = sending_iron
+			set_country_flag = sending_explosives
 			any_country = {
 				limit = {
 					OR = {
@@ -1067,14 +1067,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_iron
+				set_country_flag = receiving_explosives
 			}
 		}
 	}
 	option = {
-		name = "Timber"
+		name = "Canned Food"
 		owner = {
-			set_country_flag = sending_timber
+			set_country_flag = sending_canned_food
 			any_country = {
 				limit = {
 					OR = {
@@ -1083,14 +1083,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_timber
+				set_country_flag = receiving_canned_food
 			}
 		}
 	}
 	option = {
-		name = "Cotton"
+		name = "Artillery"
 		owner = {
-			set_country_flag = sending_cotton
+			set_country_flag = sending_artillery
 			any_country = {
 				limit = {
 					OR = {
@@ -1099,14 +1099,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_cotton
+				set_country_flag = receiving_artillery
 			}
 		}
 	}
 	option = {
-		name = "Dye"
+		name = "Tanks"
 		owner = {
-			set_country_flag = sending_dye
+			set_country_flag = sending_barrels
 			any_country = {
 				limit = {
 					OR = {
@@ -1115,14 +1115,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_dye
+				set_country_flag = receiving_barrels
 			}
 		}
 	}
 	option = {
-		name = "Silk"
+		name = "Aeroplanes"
 		owner = {
-			set_country_flag = sending_silk
+			set_country_flag = sending_aeroplanes
 			any_country = {
 				limit = {
 					OR = {
@@ -1131,14 +1131,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_silk
+				set_country_flag = receiving_aeroplanes
 			}
 		}
 	}
 	option = {
-		name = "Tropical Wood"
+		name = "Steamer Convoys"
 		owner = {
-			set_country_flag = sending_tropical_wood
+			set_country_flag = sending_steamer_convoy
 			any_country = {
 				limit = {
 					OR = {
@@ -1147,14 +1147,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_tropical_wood
+				set_country_flag = receiving_steamer_convoy
 			}
 		}
 	}
 	option = {
-		name = "Rubber"
+		name = "Interwar Hull"
 		owner = {
-			set_country_flag = sending_rubber
+			set_country_flag = sending_interwar_hull
 			any_country = {
 				limit = {
 					OR = {
@@ -1163,14 +1163,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_rubber
+				set_country_flag = receiving_interwar_hull
 			}
 		}
 	}
 	option = {
-		name = "Oil"
+		name = "Fuel"
 		owner = {
-			set_country_flag = sending_oil
+			set_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -1179,23 +1179,23 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_oil
+				set_country_flag = receiving_fuel
 			}
 		}
 	}
 	option = {
 		name = "Stop sending goods."
 		owner = {
-			clr_country_flag = sending_coal
-			clr_country_flag = sending_sulphur
-			clr_country_flag = sending_iron
-			clr_country_flag = sending_timber
-			clr_country_flag = sending_cotton
-			clr_country_flag = sending_dye
-			clr_country_flag = sending_silk
-			clr_country_flag = sending_tropical_wood
-			clr_country_flag = sending_rubber
-			clr_country_flag = sending_oil
+			clr_country_flag = sending_small_arms
+			clr_country_flag = sending_ammunition
+			clr_country_flag = sending_explosives
+			clr_country_flag = sending_canned_food
+			clr_country_flag = sending_artillery
+			clr_country_flag = sending_barrels
+			clr_country_flag = sending_aeroplanes
+			clr_country_flag = sending_steamer_convoy
+			clr_country_flag = sending_interwar_hull
+			clr_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -1204,16 +1204,16 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				clr_country_flag = sending_coal
-				clr_country_flag = sending_sulphur
-				clr_country_flag = sending_iron
-				clr_country_flag = sending_timber
-				clr_country_flag = sending_cotton
-				clr_country_flag = sending_dye
-				clr_country_flag = sending_silk
-				clr_country_flag = sending_tropical_wood
-				clr_country_flag = sending_rubber
-				clr_country_flag = sending_oil
+				clr_country_flag = sending_small_arms
+				clr_country_flag = sending_ammunition
+				clr_country_flag = sending_explosives
+				clr_country_flag = sending_canned_food
+				clr_country_flag = sending_artillery
+				clr_country_flag = sending_barrels
+				clr_country_flag = sending_aeroplanes
+				clr_country_flag = sending_steamer_convoy
+				clr_country_flag = sending_interwar_hull
+				clr_country_flag = sending_fuel
 			}
 		}
 	}
@@ -1227,9 +1227,9 @@ province_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Coal"
+		name = "Small Arms"
 		owner = {
-			set_country_flag = sending_coal
+			set_country_flag = sending_small_arms
 			any_country = {
 				limit = {
 					OR = {
@@ -1238,14 +1238,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_coal
+				set_country_flag = receiving_small_arms
 			}
 		}
 	}
 	option = {
-		name = "Sulphur"
+		name = "Ammunition"
 		owner = {
-			set_country_flag = sending_sulphur
+			set_country_flag = sending_ammunition
 			any_country = {
 				limit = {
 					OR = {
@@ -1254,14 +1254,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_sulphur
+				set_country_flag = receiving_ammunition
 			}
 		}
 	}
 	option = {
-		name = "Iron"
+		name = "Explosives"
 		owner = {
-			set_country_flag = sending_iron
+			set_country_flag = sending_explosives
 			any_country = {
 				limit = {
 					OR = {
@@ -1270,14 +1270,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_iron
+				set_country_flag = receiving_explosives
 			}
 		}
 	}
 	option = {
-		name = "Timber"
+		name = "Canned Food"
 		owner = {
-			set_country_flag = sending_timber
+			set_country_flag = sending_canned_food
 			any_country = {
 				limit = {
 					OR = {
@@ -1286,14 +1286,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_timber
+				set_country_flag = receiving_canned_food
 			}
 		}
 	}
 	option = {
-		name = "Cotton"
+		name = "Artillery"
 		owner = {
-			set_country_flag = sending_cotton
+			set_country_flag = sending_artillery
 			any_country = {
 				limit = {
 					OR = {
@@ -1302,14 +1302,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_cotton
+				set_country_flag = receiving_artillery
 			}
 		}
 	}
 	option = {
-		name = "Dye"
+		name = "Tanks"
 		owner = {
-			set_country_flag = sending_dye
+			set_country_flag = sending_barrels
 			any_country = {
 				limit = {
 					OR = {
@@ -1318,14 +1318,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_dye
+				set_country_flag = receiving_barrels
 			}
 		}
 	}
 	option = {
-		name = "Silk"
+		name = "Aeroplanes"
 		owner = {
-			set_country_flag = sending_silk
+			set_country_flag = sending_aeroplanes
 			any_country = {
 				limit = {
 					OR = {
@@ -1334,14 +1334,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_silk
+				set_country_flag = receiving_aeroplanes
 			}
 		}
 	}
 	option = {
-		name = "Tropical Wood"
+		name = "Steamer Convoys"
 		owner = {
-			set_country_flag = sending_tropical_wood
+			set_country_flag = sending_steamer_convoy
 			any_country = {
 				limit = {
 					OR = {
@@ -1350,14 +1350,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_tropical_wood
+				set_country_flag = receiving_steamer_convoy
 			}
 		}
 	}
 	option = {
-		name = "Rubber"
+		name = "Interwar Hull"
 		owner = {
-			set_country_flag = sending_rubber
+			set_country_flag = sending_interwar_hull
 			any_country = {
 				limit = {
 					OR = {
@@ -1366,14 +1366,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_rubber
+				set_country_flag = receiving_interwar_hull
 			}
 		}
 	}
 	option = {
-		name = "Oil"
+		name = "Fuel"
 		owner = {
-			set_country_flag = sending_oil
+			set_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -1382,23 +1382,23 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_oil
+				set_country_flag = receiving_fuel
 			}
 		}
 	}
 	option = {
 		name = "Stop sending goods."
 		owner = {
-			clr_country_flag = sending_coal
-			clr_country_flag = sending_sulphur
-			clr_country_flag = sending_iron
-			clr_country_flag = sending_timber
-			clr_country_flag = sending_cotton
-			clr_country_flag = sending_dye
-			clr_country_flag = sending_silk
-			clr_country_flag = sending_tropical_wood
-			clr_country_flag = sending_rubber
-			clr_country_flag = sending_oil
+			clr_country_flag = sending_small_arms
+			clr_country_flag = sending_ammunition
+			clr_country_flag = sending_explosives
+			clr_country_flag = sending_canned_food
+			clr_country_flag = sending_artillery
+			clr_country_flag = sending_barrels
+			clr_country_flag = sending_aeroplanes
+			clr_country_flag = sending_steamer_convoy
+			clr_country_flag = sending_interwar_hull
+			clr_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -1407,16 +1407,16 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				clr_country_flag = sending_coal
-				clr_country_flag = sending_sulphur
-				clr_country_flag = sending_iron
-				clr_country_flag = sending_timber
-				clr_country_flag = sending_cotton
-				clr_country_flag = sending_dye
-				clr_country_flag = sending_silk
-				clr_country_flag = sending_tropical_wood
-				clr_country_flag = sending_rubber
-				clr_country_flag = sending_oil
+				clr_country_flag = sending_small_arms
+				clr_country_flag = sending_ammunition
+				clr_country_flag = sending_explosives
+				clr_country_flag = sending_canned_food
+				clr_country_flag = sending_artillery
+				clr_country_flag = sending_barrels
+				clr_country_flag = sending_aeroplanes
+				clr_country_flag = sending_steamer_convoy
+				clr_country_flag = sending_interwar_hull
+				clr_country_flag = sending_fuel
 			}
 		}
 	}
@@ -1430,9 +1430,9 @@ province_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Coal"
+		name = "Small Arms"
 		owner = {
-			set_country_flag = sending_coal
+			set_country_flag = sending_small_arms
 			any_country = {
 				limit = {
 					OR = {
@@ -1441,14 +1441,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_coal
+				set_country_flag = receiving_small_arms
 			}
 		}
 	}
 	option = {
-		name = "Sulphur"
+		name = "Ammunition"
 		owner = {
-			set_country_flag = sending_sulphur
+			set_country_flag = sending_ammunition
 			any_country = {
 				limit = {
 					OR = {
@@ -1457,14 +1457,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_sulphur
+				set_country_flag = receiving_ammunition
 			}
 		}
 	}
 	option = {
-		name = "Iron"
+		name = "Explosives"
 		owner = {
-			set_country_flag = sending_iron
+			set_country_flag = sending_explosives
 			any_country = {
 				limit = {
 					OR = {
@@ -1473,14 +1473,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_iron
+				set_country_flag = receiving_explosives
 			}
 		}
 	}
 	option = {
-		name = "Timber"
+		name = "Canned Food"
 		owner = {
-			set_country_flag = sending_timber
+			set_country_flag = sending_canned_food
 			any_country = {
 				limit = {
 					OR = {
@@ -1489,14 +1489,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_timber
+				set_country_flag = receiving_canned_food
 			}
 		}
 	}
 	option = {
-		name = "Cotton"
+		name = "Artillery"
 		owner = {
-			set_country_flag = sending_cotton
+			set_country_flag = sending_artillery
 			any_country = {
 				limit = {
 					OR = {
@@ -1505,14 +1505,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_cotton
+				set_country_flag = receiving_artillery
 			}
 		}
 	}
 	option = {
-		name = "Dye"
+		name = "Tanks"
 		owner = {
-			set_country_flag = sending_dye
+			set_country_flag = sending_barrels
 			any_country = {
 				limit = {
 					OR = {
@@ -1521,14 +1521,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_dye
+				set_country_flag = receiving_barrels
 			}
 		}
 	}
 	option = {
-		name = "Silk"
+		name = "Aeroplanes"
 		owner = {
-			set_country_flag = sending_silk
+			set_country_flag = sending_aeroplanes
 			any_country = {
 				limit = {
 					OR = {
@@ -1537,14 +1537,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_silk
+				set_country_flag = receiving_aeroplanes
 			}
 		}
 	}
 	option = {
-		name = "Tropical Wood"
+		name = "Steamer Convoys"
 		owner = {
-			set_country_flag = sending_tropical_wood
+			set_country_flag = sending_steamer_convoy
 			any_country = {
 				limit = {
 					OR = {
@@ -1553,14 +1553,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_tropical_wood
+				set_country_flag = receiving_steamer_convoy
 			}
 		}
 	}
 	option = {
-		name = "Rubber"
+		name = "Interwar Hull"
 		owner = {
-			set_country_flag = sending_rubber
+			set_country_flag = sending_interwar_hull
 			any_country = {
 				limit = {
 					OR = {
@@ -1569,14 +1569,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_rubber
+				set_country_flag = receiving_interwar_hull
 			}
 		}
 	}
 	option = {
-		name = "Oil"
+		name = "Fuel"
 		owner = {
-			set_country_flag = sending_oil
+			set_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -1585,23 +1585,23 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_oil
+				set_country_flag = receiving_fuel
 			}
 		}
 	}
 	option = {
 		name = "Stop sending goods."
 		owner = {
-			clr_country_flag = sending_coal
-			clr_country_flag = sending_sulphur
-			clr_country_flag = sending_iron
-			clr_country_flag = sending_timber
-			clr_country_flag = sending_cotton
-			clr_country_flag = sending_dye
-			clr_country_flag = sending_silk
-			clr_country_flag = sending_tropical_wood
-			clr_country_flag = sending_rubber
-			clr_country_flag = sending_oil
+			clr_country_flag = sending_small_arms
+			clr_country_flag = sending_ammunition
+			clr_country_flag = sending_explosives
+			clr_country_flag = sending_canned_food
+			clr_country_flag = sending_artillery
+			clr_country_flag = sending_barrels
+			clr_country_flag = sending_aeroplanes
+			clr_country_flag = sending_steamer_convoy
+			clr_country_flag = sending_interwar_hull
+			clr_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -1610,16 +1610,16 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				clr_country_flag = sending_coal
-				clr_country_flag = sending_sulphur
-				clr_country_flag = sending_iron
-				clr_country_flag = sending_timber
-				clr_country_flag = sending_cotton
-				clr_country_flag = sending_dye
-				clr_country_flag = sending_silk
-				clr_country_flag = sending_tropical_wood
-				clr_country_flag = sending_rubber
-				clr_country_flag = sending_oil
+				clr_country_flag = sending_small_arms
+				clr_country_flag = sending_ammunition
+				clr_country_flag = sending_explosives
+				clr_country_flag = sending_canned_food
+				clr_country_flag = sending_artillery
+				clr_country_flag = sending_barrels
+				clr_country_flag = sending_aeroplanes
+				clr_country_flag = sending_steamer_convoy
+				clr_country_flag = sending_interwar_hull
+				clr_country_flag = sending_fuel
 			}
 		}
 	}
@@ -1633,9 +1633,9 @@ province_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Coal"
+		name = "Small Arms"
 		owner = {
-			set_country_flag = sending_coal
+			set_country_flag = sending_small_arms
 			any_country = {
 				limit = {
 					OR = {
@@ -1644,14 +1644,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_coal
+				set_country_flag = receiving_small_arms
 			}
 		}
 	}
 	option = {
-		name = "Sulphur"
+		name = "Ammunition"
 		owner = {
-			set_country_flag = sending_sulphur
+			set_country_flag = sending_ammunition
 			any_country = {
 				limit = {
 					OR = {
@@ -1660,14 +1660,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_sulphur
+				set_country_flag = receiving_ammunition
 			}
 		}
 	}
 	option = {
-		name = "Iron"
+		name = "Explosives"
 		owner = {
-			set_country_flag = sending_iron
+			set_country_flag = sending_explosives
 			any_country = {
 				limit = {
 					OR = {
@@ -1676,14 +1676,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_iron
+				set_country_flag = receiving_explosives
 			}
 		}
 	}
 	option = {
-		name = "Timber"
+		name = "Canned Food"
 		owner = {
-			set_country_flag = sending_timber
+			set_country_flag = sending_canned_food
 			any_country = {
 				limit = {
 					OR = {
@@ -1692,14 +1692,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_timber
+				set_country_flag = receiving_canned_food
 			}
 		}
 	}
 	option = {
-		name = "Cotton"
+		name = "Artillery"
 		owner = {
-			set_country_flag = sending_cotton
+			set_country_flag = sending_artillery
 			any_country = {
 				limit = {
 					OR = {
@@ -1708,14 +1708,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_cotton
+				set_country_flag = receiving_artillery
 			}
 		}
 	}
 	option = {
-		name = "Dye"
+		name = "Tanks"
 		owner = {
-			set_country_flag = sending_dye
+			set_country_flag = sending_barrels
 			any_country = {
 				limit = {
 					OR = {
@@ -1724,14 +1724,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_dye
+				set_country_flag = receiving_barrels
 			}
 		}
 	}
 	option = {
-		name = "Silk"
+		name = "Aeroplanes"
 		owner = {
-			set_country_flag = sending_silk
+			set_country_flag = sending_aeroplanes
 			any_country = {
 				limit = {
 					OR = {
@@ -1740,14 +1740,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_silk
+				set_country_flag = receiving_aeroplanes
 			}
 		}
 	}
 	option = {
-		name = "Tropical Wood"
+		name = "Steamer Convoys"
 		owner = {
-			set_country_flag = sending_tropical_wood
+			set_country_flag = sending_steamer_convoy
 			any_country = {
 				limit = {
 					OR = {
@@ -1756,14 +1756,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_tropical_wood
+				set_country_flag = receiving_steamer_convoy
 			}
 		}
 	}
 	option = {
-		name = "Rubber"
+		name = "Interwar Hull"
 		owner = {
-			set_country_flag = sending_rubber
+			set_country_flag = sending_interwar_hull
 			any_country = {
 				limit = {
 					OR = {
@@ -1772,14 +1772,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_rubber
+				set_country_flag = receiving_interwar_hull
 			}
 		}
 	}
 	option = {
-		name = "Oil"
+		name = "Fuel"
 		owner = {
-			set_country_flag = sending_oil
+			set_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -1788,23 +1788,23 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_oil
+				set_country_flag = receiving_fuel
 			}
 		}
 	}
 	option = {
 		name = "Stop sending goods."
 		owner = {
-			clr_country_flag = sending_coal
-			clr_country_flag = sending_sulphur
-			clr_country_flag = sending_iron
-			clr_country_flag = sending_timber
-			clr_country_flag = sending_cotton
-			clr_country_flag = sending_dye
-			clr_country_flag = sending_silk
-			clr_country_flag = sending_tropical_wood
-			clr_country_flag = sending_rubber
-			clr_country_flag = sending_oil
+			clr_country_flag = sending_small_arms
+			clr_country_flag = sending_ammunition
+			clr_country_flag = sending_explosives
+			clr_country_flag = sending_canned_food
+			clr_country_flag = sending_artillery
+			clr_country_flag = sending_barrels
+			clr_country_flag = sending_aeroplanes
+			clr_country_flag = sending_steamer_convoy
+			clr_country_flag = sending_interwar_hull
+			clr_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -1813,16 +1813,16 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				clr_country_flag = sending_coal
-				clr_country_flag = sending_sulphur
-				clr_country_flag = sending_iron
-				clr_country_flag = sending_timber
-				clr_country_flag = sending_cotton
-				clr_country_flag = sending_dye
-				clr_country_flag = sending_silk
-				clr_country_flag = sending_tropical_wood
-				clr_country_flag = sending_rubber
-				clr_country_flag = sending_oil
+				clr_country_flag = sending_small_arms
+				clr_country_flag = sending_ammunition
+				clr_country_flag = sending_explosives
+				clr_country_flag = sending_canned_food
+				clr_country_flag = sending_artillery
+				clr_country_flag = sending_barrels
+				clr_country_flag = sending_aeroplanes
+				clr_country_flag = sending_steamer_convoy
+				clr_country_flag = sending_interwar_hull
+				clr_country_flag = sending_fuel
 			}
 		}
 	}
@@ -1836,9 +1836,9 @@ province_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Coal"
+		name = "Small Arms"
 		owner = {
-			set_country_flag = sending_coal
+			set_country_flag = sending_small_arms
 			any_country = {
 				limit = {
 					OR = {
@@ -1847,14 +1847,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_coal
+				set_country_flag = receiving_small_arms
 			}
 		}
 	}
 	option = {
-		name = "Sulphur"
+		name = "Ammunition"
 		owner = {
-			set_country_flag = sending_sulphur
+			set_country_flag = sending_ammunition
 			any_country = {
 				limit = {
 					OR = {
@@ -1863,14 +1863,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_sulphur
+				set_country_flag = receiving_ammunition
 			}
 		}
 	}
 	option = {
-		name = "Iron"
+		name = "Explosives"
 		owner = {
-			set_country_flag = sending_iron
+			set_country_flag = sending_explosives
 			any_country = {
 				limit = {
 					OR = {
@@ -1879,14 +1879,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_iron
+				set_country_flag = receiving_explosives
 			}
 		}
 	}
 	option = {
-		name = "Timber"
+		name = "Canned Food"
 		owner = {
-			set_country_flag = sending_timber
+			set_country_flag = sending_canned_food
 			any_country = {
 				limit = {
 					OR = {
@@ -1895,14 +1895,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_timber
+				set_country_flag = receiving_canned_food
 			}
 		}
 	}
 	option = {
-		name = "Cotton"
+		name = "Artillery"
 		owner = {
-			set_country_flag = sending_cotton
+			set_country_flag = sending_artillery
 			any_country = {
 				limit = {
 					OR = {
@@ -1911,14 +1911,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_cotton
+				set_country_flag = receiving_artillery
 			}
 		}
 	}
 	option = {
-		name = "Dye"
+		name = "Tanks"
 		owner = {
-			set_country_flag = sending_dye
+			set_country_flag = sending_barrels
 			any_country = {
 				limit = {
 					OR = {
@@ -1927,14 +1927,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_dye
+				set_country_flag = receiving_barrels
 			}
 		}
 	}
 	option = {
-		name = "Silk"
+		name = "Aeroplanes"
 		owner = {
-			set_country_flag = sending_silk
+			set_country_flag = sending_aeroplanes
 			any_country = {
 				limit = {
 					OR = {
@@ -1943,14 +1943,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_silk
+				set_country_flag = receiving_aeroplanes
 			}
 		}
 	}
 	option = {
-		name = "Tropical Wood"
+		name = "Steamer Convoys"
 		owner = {
-			set_country_flag = sending_tropical_wood
+			set_country_flag = sending_steamer_convoy
 			any_country = {
 				limit = {
 					OR = {
@@ -1959,14 +1959,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_tropical_wood
+				set_country_flag = receiving_steamer_convoy
 			}
 		}
 	}
 	option = {
-		name = "Rubber"
+		name = "Interwar Hull"
 		owner = {
-			set_country_flag = sending_rubber
+			set_country_flag = sending_interwar_hull
 			any_country = {
 				limit = {
 					OR = {
@@ -1975,14 +1975,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_rubber
+				set_country_flag = receiving_interwar_hull
 			}
 		}
 	}
 	option = {
-		name = "Oil"
+		name = "Fuel"
 		owner = {
-			set_country_flag = sending_oil
+			set_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -1991,23 +1991,23 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_oil
+				set_country_flag = receiving_fuel
 			}
 		}
 	}
 	option = {
 		name = "Stop sending goods."
 		owner = {
-			clr_country_flag = sending_coal
-			clr_country_flag = sending_sulphur
-			clr_country_flag = sending_iron
-			clr_country_flag = sending_timber
-			clr_country_flag = sending_cotton
-			clr_country_flag = sending_dye
-			clr_country_flag = sending_silk
-			clr_country_flag = sending_tropical_wood
-			clr_country_flag = sending_rubber
-			clr_country_flag = sending_oil
+			clr_country_flag = sending_small_arms
+			clr_country_flag = sending_ammunition
+			clr_country_flag = sending_explosives
+			clr_country_flag = sending_canned_food
+			clr_country_flag = sending_artillery
+			clr_country_flag = sending_barrels
+			clr_country_flag = sending_aeroplanes
+			clr_country_flag = sending_steamer_convoy
+			clr_country_flag = sending_interwar_hull
+			clr_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -2016,16 +2016,16 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				clr_country_flag = sending_coal
-				clr_country_flag = sending_sulphur
-				clr_country_flag = sending_iron
-				clr_country_flag = sending_timber
-				clr_country_flag = sending_cotton
-				clr_country_flag = sending_dye
-				clr_country_flag = sending_silk
-				clr_country_flag = sending_tropical_wood
-				clr_country_flag = sending_rubber
-				clr_country_flag = sending_oil
+				clr_country_flag = sending_small_arms
+				clr_country_flag = sending_ammunition
+				clr_country_flag = sending_explosives
+				clr_country_flag = sending_canned_food
+				clr_country_flag = sending_artillery
+				clr_country_flag = sending_barrels
+				clr_country_flag = sending_aeroplanes
+				clr_country_flag = sending_steamer_convoy
+				clr_country_flag = sending_interwar_hull
+				clr_country_flag = sending_fuel
 			}
 		}
 	}
@@ -2039,9 +2039,9 @@ province_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Coal"
+		name = "Small Arms"
 		owner = {
-			set_country_flag = sending_coal
+			set_country_flag = sending_small_arms
 			any_country = {
 				limit = {
 					OR = {
@@ -2050,14 +2050,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_coal
+				set_country_flag = receiving_small_arms
 			}
 		}
 	}
 	option = {
-		name = "Sulphur"
+		name = "Ammunition"
 		owner = {
-			set_country_flag = sending_sulphur
+			set_country_flag = sending_ammunition
 			any_country = {
 				limit = {
 					OR = {
@@ -2066,14 +2066,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_sulphur
+				set_country_flag = receiving_ammunition
 			}
 		}
 	}
 	option = {
-		name = "Iron"
+		name = "Explosives"
 		owner = {
-			set_country_flag = sending_iron
+			set_country_flag = sending_explosives
 			any_country = {
 				limit = {
 					OR = {
@@ -2082,14 +2082,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_iron
+				set_country_flag = receiving_explosives
 			}
 		}
 	}
 	option = {
-		name = "Timber"
+		name = "Canned Food"
 		owner = {
-			set_country_flag = sending_timber
+			set_country_flag = sending_canned_food
 			any_country = {
 				limit = {
 					OR = {
@@ -2098,14 +2098,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_timber
+				set_country_flag = receiving_canned_food
 			}
 		}
 	}
 	option = {
-		name = "Cotton"
+		name = "Artillery"
 		owner = {
-			set_country_flag = sending_cotton
+			set_country_flag = sending_artillery
 			any_country = {
 				limit = {
 					OR = {
@@ -2114,14 +2114,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_cotton
+				set_country_flag = receiving_artillery
 			}
 		}
 	}
 	option = {
-		name = "Dye"
+		name = "Tanks"
 		owner = {
-			set_country_flag = sending_dye
+			set_country_flag = sending_barrels
 			any_country = {
 				limit = {
 					OR = {
@@ -2130,14 +2130,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_dye
+				set_country_flag = receiving_barrels
 			}
 		}
 	}
 	option = {
-		name = "Silk"
+		name = "Aeroplanes"
 		owner = {
-			set_country_flag = sending_silk
+			set_country_flag = sending_aeroplanes
 			any_country = {
 				limit = {
 					OR = {
@@ -2146,14 +2146,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_silk
+				set_country_flag = receiving_aeroplanes
 			}
 		}
 	}
 	option = {
-		name = "Tropical Wood"
+		name = "Steamer Convoys"
 		owner = {
-			set_country_flag = sending_tropical_wood
+			set_country_flag = sending_steamer_convoy
 			any_country = {
 				limit = {
 					OR = {
@@ -2162,14 +2162,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_tropical_wood
+				set_country_flag = receiving_steamer_convoy
 			}
 		}
 	}
 	option = {
-		name = "Rubber"
+		name = "Interwar Hull"
 		owner = {
-			set_country_flag = sending_rubber
+			set_country_flag = sending_interwar_hull
 			any_country = {
 				limit = {
 					OR = {
@@ -2178,14 +2178,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_rubber
+				set_country_flag = receiving_interwar_hull
 			}
 		}
 	}
 	option = {
-		name = "Oil"
+		name = "Fuel"
 		owner = {
-			set_country_flag = sending_oil
+			set_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -2194,23 +2194,23 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_oil
+				set_country_flag = receiving_fuel
 			}
 		}
 	}
 	option = {
 		name = "Stop sending goods."
 		owner = {
-			clr_country_flag = sending_coal
-			clr_country_flag = sending_sulphur
-			clr_country_flag = sending_iron
-			clr_country_flag = sending_timber
-			clr_country_flag = sending_cotton
-			clr_country_flag = sending_dye
-			clr_country_flag = sending_silk
-			clr_country_flag = sending_tropical_wood
-			clr_country_flag = sending_rubber
-			clr_country_flag = sending_oil
+			clr_country_flag = sending_small_arms
+			clr_country_flag = sending_ammunition
+			clr_country_flag = sending_explosives
+			clr_country_flag = sending_canned_food
+			clr_country_flag = sending_artillery
+			clr_country_flag = sending_barrels
+			clr_country_flag = sending_aeroplanes
+			clr_country_flag = sending_steamer_convoy
+			clr_country_flag = sending_interwar_hull
+			clr_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -2219,16 +2219,16 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				clr_country_flag = sending_coal
-				clr_country_flag = sending_sulphur
-				clr_country_flag = sending_iron
-				clr_country_flag = sending_timber
-				clr_country_flag = sending_cotton
-				clr_country_flag = sending_dye
-				clr_country_flag = sending_silk
-				clr_country_flag = sending_tropical_wood
-				clr_country_flag = sending_rubber
-				clr_country_flag = sending_oil
+				clr_country_flag = sending_small_arms
+				clr_country_flag = sending_ammunition
+				clr_country_flag = sending_explosives
+				clr_country_flag = sending_canned_food
+				clr_country_flag = sending_artillery
+				clr_country_flag = sending_barrels
+				clr_country_flag = sending_aeroplanes
+				clr_country_flag = sending_steamer_convoy
+				clr_country_flag = sending_interwar_hull
+				clr_country_flag = sending_fuel
 			}
 		}
 	}
@@ -2242,9 +2242,9 @@ province_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Coal"
+		name = "Small Arms"
 		owner = {
-			set_country_flag = sending_coal
+			set_country_flag = sending_small_arms
 			any_country = {
 				limit = {
 					OR = {
@@ -2253,14 +2253,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_coal
+				set_country_flag = receiving_small_arms
 			}
 		}
 	}
 	option = {
-		name = "Sulphur"
+		name = "Ammunition"
 		owner = {
-			set_country_flag = sending_sulphur
+			set_country_flag = sending_ammunition
 			any_country = {
 				limit = {
 					OR = {
@@ -2269,14 +2269,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_sulphur
+				set_country_flag = receiving_ammunition
 			}
 		}
 	}
 	option = {
-		name = "Iron"
+		name = "Explosives"
 		owner = {
-			set_country_flag = sending_iron
+			set_country_flag = sending_explosives
 			any_country = {
 				limit = {
 					OR = {
@@ -2285,14 +2285,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_iron
+				set_country_flag = receiving_explosives
 			}
 		}
 	}
 	option = {
-		name = "Timber"
+		name = "Canned Food"
 		owner = {
-			set_country_flag = sending_timber
+			set_country_flag = sending_canned_food
 			any_country = {
 				limit = {
 					OR = {
@@ -2301,14 +2301,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_timber
+				set_country_flag = receiving_canned_food
 			}
 		}
 	}
 	option = {
-		name = "Cotton"
+		name = "Artillery"
 		owner = {
-			set_country_flag = sending_cotton
+			set_country_flag = sending_artillery
 			any_country = {
 				limit = {
 					OR = {
@@ -2317,14 +2317,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_cotton
+				set_country_flag = receiving_artillery
 			}
 		}
 	}
 	option = {
-		name = "Dye"
+		name = "Tanks"
 		owner = {
-			set_country_flag = sending_dye
+			set_country_flag = sending_barrels
 			any_country = {
 				limit = {
 					OR = {
@@ -2333,14 +2333,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_dye
+				set_country_flag = receiving_barrels
 			}
 		}
 	}
 	option = {
-		name = "Silk"
+		name = "Aeroplanes"
 		owner = {
-			set_country_flag = sending_silk
+			set_country_flag = sending_aeroplanes
 			any_country = {
 				limit = {
 					OR = {
@@ -2349,14 +2349,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_silk
+				set_country_flag = receiving_aeroplanes
 			}
 		}
 	}
 	option = {
-		name = "Tropical Wood"
+		name = "Steamer Convoys"
 		owner = {
-			set_country_flag = sending_tropical_wood
+			set_country_flag = sending_steamer_convoy
 			any_country = {
 				limit = {
 					OR = {
@@ -2365,14 +2365,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_tropical_wood
+				set_country_flag = receiving_steamer_convoy
 			}
 		}
 	}
 	option = {
-		name = "Rubber"
+		name = "Interwar Hull"
 		owner = {
-			set_country_flag = sending_rubber
+			set_country_flag = sending_interwar_hull
 			any_country = {
 				limit = {
 					OR = {
@@ -2381,14 +2381,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_rubber
+				set_country_flag = receiving_interwar_hull
 			}
 		}
 	}
 	option = {
-		name = "Oil"
+		name = "Fuel"
 		owner = {
-			set_country_flag = sending_oil
+			set_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -2397,23 +2397,23 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_oil
+				set_country_flag = receiving_fuel
 			}
 		}
 	}
 	option = {
 		name = "Stop sending goods."
 		owner = {
-			clr_country_flag = sending_coal
-			clr_country_flag = sending_sulphur
-			clr_country_flag = sending_iron
-			clr_country_flag = sending_timber
-			clr_country_flag = sending_cotton
-			clr_country_flag = sending_dye
-			clr_country_flag = sending_silk
-			clr_country_flag = sending_tropical_wood
-			clr_country_flag = sending_rubber
-			clr_country_flag = sending_oil
+			clr_country_flag = sending_small_arms
+			clr_country_flag = sending_ammunition
+			clr_country_flag = sending_explosives
+			clr_country_flag = sending_canned_food
+			clr_country_flag = sending_artillery
+			clr_country_flag = sending_barrels
+			clr_country_flag = sending_aeroplanes
+			clr_country_flag = sending_steamer_convoy
+			clr_country_flag = sending_interwar_hull
+			clr_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -2422,16 +2422,16 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				clr_country_flag = sending_coal
-				clr_country_flag = sending_sulphur
-				clr_country_flag = sending_iron
-				clr_country_flag = sending_timber
-				clr_country_flag = sending_cotton
-				clr_country_flag = sending_dye
-				clr_country_flag = sending_silk
-				clr_country_flag = sending_tropical_wood
-				clr_country_flag = sending_rubber
-				clr_country_flag = sending_oil
+				clr_country_flag = sending_small_arms
+				clr_country_flag = sending_ammunition
+				clr_country_flag = sending_explosives
+				clr_country_flag = sending_canned_food
+				clr_country_flag = sending_artillery
+				clr_country_flag = sending_barrels
+				clr_country_flag = sending_aeroplanes
+				clr_country_flag = sending_steamer_convoy
+				clr_country_flag = sending_interwar_hull
+				clr_country_flag = sending_fuel
 			}
 		}
 	}
@@ -2445,9 +2445,9 @@ province_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Coal"
+		name = "Small Arms"
 		owner = {
-			set_country_flag = sending_coal
+			set_country_flag = sending_small_arms
 			any_country = {
 				limit = {
 					OR = {
@@ -2456,14 +2456,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_coal
+				set_country_flag = receiving_small_arms
 			}
 		}
 	}
 	option = {
-		name = "Sulphur"
+		name = "Ammunition"
 		owner = {
-			set_country_flag = sending_sulphur
+			set_country_flag = sending_ammunition
 			any_country = {
 				limit = {
 					OR = {
@@ -2472,14 +2472,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_sulphur
+				set_country_flag = receiving_ammunition
 			}
 		}
 	}
 	option = {
-		name = "Iron"
+		name = "Explosives"
 		owner = {
-			set_country_flag = sending_iron
+			set_country_flag = sending_explosives
 			any_country = {
 				limit = {
 					OR = {
@@ -2488,14 +2488,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_iron
+				set_country_flag = receiving_explosives
 			}
 		}
 	}
 	option = {
-		name = "Timber"
+		name = "Canned Food"
 		owner = {
-			set_country_flag = sending_timber
+			set_country_flag = sending_canned_food
 			any_country = {
 				limit = {
 					OR = {
@@ -2504,14 +2504,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_timber
+				set_country_flag = receiving_canned_food
 			}
 		}
 	}
 	option = {
-		name = "Cotton"
+		name = "Artillery"
 		owner = {
-			set_country_flag = sending_cotton
+			set_country_flag = sending_artillery
 			any_country = {
 				limit = {
 					OR = {
@@ -2520,14 +2520,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_cotton
+				set_country_flag = receiving_artillery
 			}
 		}
 	}
 	option = {
-		name = "Dye"
+		name = "Tanks"
 		owner = {
-			set_country_flag = sending_dye
+			set_country_flag = sending_barrels
 			any_country = {
 				limit = {
 					OR = {
@@ -2536,14 +2536,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_dye
+				set_country_flag = receiving_barrels
 			}
 		}
 	}
 	option = {
-		name = "Silk"
+		name = "Aeroplanes"
 		owner = {
-			set_country_flag = sending_silk
+			set_country_flag = sending_aeroplanes
 			any_country = {
 				limit = {
 					OR = {
@@ -2552,14 +2552,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_silk
+				set_country_flag = receiving_aeroplanes
 			}
 		}
 	}
 	option = {
-		name = "Tropical Wood"
+		name = "Steamer Convoys"
 		owner = {
-			set_country_flag = sending_tropical_wood
+			set_country_flag = sending_steamer_convoy
 			any_country = {
 				limit = {
 					OR = {
@@ -2568,14 +2568,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_tropical_wood
+				set_country_flag = receiving_steamer_convoy
 			}
 		}
 	}
 	option = {
-		name = "Rubber"
+		name = "Interwar Hull"
 		owner = {
-			set_country_flag = sending_rubber
+			set_country_flag = sending_interwar_hull
 			any_country = {
 				limit = {
 					OR = {
@@ -2584,14 +2584,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_rubber
+				set_country_flag = receiving_interwar_hull
 			}
 		}
 	}
 	option = {
-		name = "Oil"
+		name = "Fuel"
 		owner = {
-			set_country_flag = sending_oil
+			set_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -2600,23 +2600,23 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_oil
+				set_country_flag = receiving_fuel
 			}
 		}
 	}
 	option = {
 		name = "Stop sending goods."
 		owner = {
-			clr_country_flag = sending_coal
-			clr_country_flag = sending_sulphur
-			clr_country_flag = sending_iron
-			clr_country_flag = sending_timber
-			clr_country_flag = sending_cotton
-			clr_country_flag = sending_dye
-			clr_country_flag = sending_silk
-			clr_country_flag = sending_tropical_wood
-			clr_country_flag = sending_rubber
-			clr_country_flag = sending_oil
+			clr_country_flag = sending_small_arms
+			clr_country_flag = sending_ammunition
+			clr_country_flag = sending_explosives
+			clr_country_flag = sending_canned_food
+			clr_country_flag = sending_artillery
+			clr_country_flag = sending_barrels
+			clr_country_flag = sending_aeroplanes
+			clr_country_flag = sending_steamer_convoy
+			clr_country_flag = sending_interwar_hull
+			clr_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -2625,16 +2625,16 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				clr_country_flag = sending_coal
-				clr_country_flag = sending_sulphur
-				clr_country_flag = sending_iron
-				clr_country_flag = sending_timber
-				clr_country_flag = sending_cotton
-				clr_country_flag = sending_dye
-				clr_country_flag = sending_silk
-				clr_country_flag = sending_tropical_wood
-				clr_country_flag = sending_rubber
-				clr_country_flag = sending_oil
+				clr_country_flag = sending_small_arms
+				clr_country_flag = sending_ammunition
+				clr_country_flag = sending_explosives
+				clr_country_flag = sending_canned_food
+				clr_country_flag = sending_artillery
+				clr_country_flag = sending_barrels
+				clr_country_flag = sending_aeroplanes
+				clr_country_flag = sending_steamer_convoy
+				clr_country_flag = sending_interwar_hull
+				clr_country_flag = sending_fuel
 			}
 		}
 	}
@@ -2648,9 +2648,9 @@ province_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Coal"
+		name = "Small Arms"
 		owner = {
-			set_country_flag = sending_coal
+			set_country_flag = sending_small_arms
 			any_country = {
 				limit = {
 					OR = {
@@ -2659,14 +2659,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_coal
+				set_country_flag = receiving_small_arms
 			}
 		}
 	}
 	option = {
-		name = "Sulphur"
+		name = "Ammunition"
 		owner = {
-			set_country_flag = sending_sulphur
+			set_country_flag = sending_ammunition
 			any_country = {
 				limit = {
 					OR = {
@@ -2675,14 +2675,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_sulphur
+				set_country_flag = receiving_ammunition
 			}
 		}
 	}
 	option = {
-		name = "Iron"
+		name = "Explosives"
 		owner = {
-			set_country_flag = sending_iron
+			set_country_flag = sending_explosives
 			any_country = {
 				limit = {
 					OR = {
@@ -2691,14 +2691,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_iron
+				set_country_flag = receiving_explosives
 			}
 		}
 	}
 	option = {
-		name = "Timber"
+		name = "Canned Food"
 		owner = {
-			set_country_flag = sending_timber
+			set_country_flag = sending_canned_food
 			any_country = {
 				limit = {
 					OR = {
@@ -2707,14 +2707,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_timber
+				set_country_flag = receiving_canned_food
 			}
 		}
 	}
 	option = {
-		name = "Cotton"
+		name = "Artillery"
 		owner = {
-			set_country_flag = sending_cotton
+			set_country_flag = sending_artillery
 			any_country = {
 				limit = {
 					OR = {
@@ -2723,14 +2723,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_cotton
+				set_country_flag = receiving_artillery
 			}
 		}
 	}
 	option = {
-		name = "Dye"
+		name = "Tanks"
 		owner = {
-			set_country_flag = sending_dye
+			set_country_flag = sending_barrels
 			any_country = {
 				limit = {
 					OR = {
@@ -2739,14 +2739,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_dye
+				set_country_flag = receiving_barrels
 			}
 		}
 	}
 	option = {
-		name = "Silk"
+		name = "Aeroplanes"
 		owner = {
-			set_country_flag = sending_silk
+			set_country_flag = sending_aeroplanes
 			any_country = {
 				limit = {
 					OR = {
@@ -2755,14 +2755,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_silk
+				set_country_flag = receiving_aeroplanes
 			}
 		}
 	}
 	option = {
-		name = "Tropical Wood"
+		name = "Steamer Convoys"
 		owner = {
-			set_country_flag = sending_tropical_wood
+			set_country_flag = sending_steamer_convoy
 			any_country = {
 				limit = {
 					OR = {
@@ -2771,14 +2771,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_tropical_wood
+				set_country_flag = receiving_steamer_convoy
 			}
 		}
 	}
 	option = {
-		name = "Rubber"
+		name = "Interwar Hull"
 		owner = {
-			set_country_flag = sending_rubber
+			set_country_flag = sending_interwar_hull
 			any_country = {
 				limit = {
 					OR = {
@@ -2787,14 +2787,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_rubber
+				set_country_flag = receiving_interwar_hull
 			}
 		}
 	}
 	option = {
-		name = "Oil"
+		name = "Fuel"
 		owner = {
-			set_country_flag = sending_oil
+			set_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -2803,23 +2803,23 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_oil
+				set_country_flag = receiving_fuel
 			}
 		}
 	}
 	option = {
 		name = "Stop sending goods."
 		owner = {
-			clr_country_flag = sending_coal
-			clr_country_flag = sending_sulphur
-			clr_country_flag = sending_iron
-			clr_country_flag = sending_timber
-			clr_country_flag = sending_cotton
-			clr_country_flag = sending_dye
-			clr_country_flag = sending_silk
-			clr_country_flag = sending_tropical_wood
-			clr_country_flag = sending_rubber
-			clr_country_flag = sending_oil
+			clr_country_flag = sending_small_arms
+			clr_country_flag = sending_ammunition
+			clr_country_flag = sending_explosives
+			clr_country_flag = sending_canned_food
+			clr_country_flag = sending_artillery
+			clr_country_flag = sending_barrels
+			clr_country_flag = sending_aeroplanes
+			clr_country_flag = sending_steamer_convoy
+			clr_country_flag = sending_interwar_hull
+			clr_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -2828,16 +2828,16 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				clr_country_flag = sending_coal
-				clr_country_flag = sending_sulphur
-				clr_country_flag = sending_iron
-				clr_country_flag = sending_timber
-				clr_country_flag = sending_cotton
-				clr_country_flag = sending_dye
-				clr_country_flag = sending_silk
-				clr_country_flag = sending_tropical_wood
-				clr_country_flag = sending_rubber
-				clr_country_flag = sending_oil
+				clr_country_flag = sending_small_arms
+				clr_country_flag = sending_ammunition
+				clr_country_flag = sending_explosives
+				clr_country_flag = sending_canned_food
+				clr_country_flag = sending_artillery
+				clr_country_flag = sending_barrels
+				clr_country_flag = sending_aeroplanes
+				clr_country_flag = sending_steamer_convoy
+				clr_country_flag = sending_interwar_hull
+				clr_country_flag = sending_fuel
 			}
 		}
 	}
@@ -2851,9 +2851,9 @@ province_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = "Coal"
+		name = "Small Arms"
 		owner = {
-			set_country_flag = sending_coal
+			set_country_flag = sending_small_arms
 			any_country = {
 				limit = {
 					OR = {
@@ -2862,14 +2862,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_coal
+				set_country_flag = receiving_small_arms
 			}
 		}
 	}
 	option = {
-		name = "Sulphur"
+		name = "Ammunition"
 		owner = {
-			set_country_flag = sending_sulphur
+			set_country_flag = sending_ammunition
 			any_country = {
 				limit = {
 					OR = {
@@ -2878,14 +2878,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_sulphur
+				set_country_flag = receiving_ammunition
 			}
 		}
 	}
 	option = {
-		name = "Iron"
+		name = "Explosives"
 		owner = {
-			set_country_flag = sending_iron
+			set_country_flag = sending_explosives
 			any_country = {
 				limit = {
 					OR = {
@@ -2894,14 +2894,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_iron
+				set_country_flag = receiving_explosives
 			}
 		}
 	}
 	option = {
-		name = "Timber"
+		name = "Canned Food"
 		owner = {
-			set_country_flag = sending_timber
+			set_country_flag = sending_canned_food
 			any_country = {
 				limit = {
 					OR = {
@@ -2910,14 +2910,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_timber
+				set_country_flag = receiving_canned_food
 			}
 		}
 	}
 	option = {
-		name = "Cotton"
+		name = "Artillery"
 		owner = {
-			set_country_flag = sending_cotton
+			set_country_flag = sending_artillery
 			any_country = {
 				limit = {
 					OR = {
@@ -2926,14 +2926,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_cotton
+				set_country_flag = receiving_artillery
 			}
 		}
 	}
 	option = {
-		name = "Dye"
+		name = "Tanks"
 		owner = {
-			set_country_flag = sending_dye
+			set_country_flag = sending_barrels
 			any_country = {
 				limit = {
 					OR = {
@@ -2942,14 +2942,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_dye
+				set_country_flag = receiving_barrels
 			}
 		}
 	}
 	option = {
-		name = "Silk"
+		name = "Aeroplanes"
 		owner = {
-			set_country_flag = sending_silk
+			set_country_flag = sending_aeroplanes
 			any_country = {
 				limit = {
 					OR = {
@@ -2958,14 +2958,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_silk
+				set_country_flag = receiving_aeroplanes
 			}
 		}
 	}
 	option = {
-		name = "Tropical Wood"
+		name = "Steamer Convoys"
 		owner = {
-			set_country_flag = sending_tropical_wood
+			set_country_flag = sending_steamer_convoy
 			any_country = {
 				limit = {
 					OR = {
@@ -2974,14 +2974,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_tropical_wood
+				set_country_flag = receiving_steamer_convoy
 			}
 		}
 	}
 	option = {
-		name = "Rubber"
+		name = "Interwar Hull"
 		owner = {
-			set_country_flag = sending_rubber
+			set_country_flag = sending_interwar_hull
 			any_country = {
 				limit = {
 					OR = {
@@ -2990,14 +2990,14 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_rubber
+				set_country_flag = receiving_interwar_hull
 			}
 		}
 	}
 	option = {
-		name = "Oil"
+		name = "Fuel"
 		owner = {
-			set_country_flag = sending_oil
+			set_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -3006,23 +3006,23 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				set_country_flag = receiving_oil
+				set_country_flag = receiving_fuel
 			}
 		}
 	}
 	option = {
 		name = "Stop sending goods."
 		owner = {
-			clr_country_flag = sending_coal
-			clr_country_flag = sending_sulphur
-			clr_country_flag = sending_iron
-			clr_country_flag = sending_timber
-			clr_country_flag = sending_cotton
-			clr_country_flag = sending_dye
-			clr_country_flag = sending_silk
-			clr_country_flag = sending_tropical_wood
-			clr_country_flag = sending_rubber
-			clr_country_flag = sending_oil
+			clr_country_flag = sending_small_arms
+			clr_country_flag = sending_ammunition
+			clr_country_flag = sending_explosives
+			clr_country_flag = sending_canned_food
+			clr_country_flag = sending_artillery
+			clr_country_flag = sending_barrels
+			clr_country_flag = sending_aeroplanes
+			clr_country_flag = sending_steamer_convoy
+			clr_country_flag = sending_interwar_hull
+			clr_country_flag = sending_fuel
 			any_country = {
 				limit = {
 					OR = {
@@ -3031,16 +3031,16 @@ province_event = {
 					}
 					NOT = { tag = THIS }
 				}
-				clr_country_flag = sending_coal
-				clr_country_flag = sending_sulphur
-				clr_country_flag = sending_iron
-				clr_country_flag = sending_timber
-				clr_country_flag = sending_cotton
-				clr_country_flag = sending_dye
-				clr_country_flag = sending_silk
-				clr_country_flag = sending_tropical_wood
-				clr_country_flag = sending_rubber
-				clr_country_flag = sending_oil
+				clr_country_flag = sending_small_arms
+				clr_country_flag = sending_ammunition
+				clr_country_flag = sending_explosives
+				clr_country_flag = sending_canned_food
+				clr_country_flag = sending_artillery
+				clr_country_flag = sending_barrels
+				clr_country_flag = sending_aeroplanes
+				clr_country_flag = sending_steamer_convoy
+				clr_country_flag = sending_interwar_hull
+				clr_country_flag = sending_fuel
 			}
 		}
 	}
@@ -3082,17 +3082,17 @@ country_event = {
 	
 	option = {
 		name = "Understood."
-		clr_country_flag = receiving_coal
-		clr_country_flag = receiving_sulphur
-		clr_country_flag = receiving_iron
-		clr_country_flag = receiving_timber
-		clr_country_flag = receiving_cotton
-		clr_country_flag = receiving_dye
-		clr_country_flag = receiving_silk
-		clr_country_flag = receiving_tropical_wood
+		clr_country_flag = receiving_small_arms
+		clr_country_flag = receiving_ammunition
+		clr_country_flag = receiving_explosives
+		clr_country_flag = receiving_canned_food
+		clr_country_flag = receiving_artillery
+		clr_country_flag = receiving_barrels
+		clr_country_flag = receiving_aeroplanes
+		clr_country_flag = receiving_steamer_convoy
 		clr_country_flag = receiving_opium
-		clr_country_flag = receiving_rubber
-		clr_country_flag = receiving_oil
+		clr_country_flag = receiving_interwar_hull
+		clr_country_flag = receiving_fuel
 	}
 	
 }

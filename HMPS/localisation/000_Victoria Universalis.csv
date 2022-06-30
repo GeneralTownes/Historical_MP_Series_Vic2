@@ -45,7 +45,7 @@ modern_army_doctrine_1920;Advanced Army Doctrine;;;;;;;;;;;;;
 advanced_divisional_structure;Advanced Divisional Structure;;;;;;;;;;;;;
 modern_naval_doctrine;Early Modern Naval Doctrine;;;;;;;;;;;;;
 modern_naval_doctrine_1920;Modern Naval Doctrine;;;;;;;;;;;;;
-choose_trade_good_title;§YChoose Goods to Send§!;;;;;;;;;;;;;
+choose_trade_good_title;§YChoose Military Goods to Send§!;;;;;;;;;;;;;
 choose_trade_good_desc;Select transfer resource.;;;;;;;;;;;;;
 request_trade_deal_title;§YRequest Trade Deal§!;;;;;;;;;;;;;
 request_trade_deal_desc;We can request to set up a trading deal with another human controlled country. When two countries enter into a trading deal, a decision will appear for both countries that will allow them to send goods to each other directly from their stockpile. You can only have one trading partner at one time, and there can only be 15 trading agreements globally at any time.;;;;;;;;;;;;;
