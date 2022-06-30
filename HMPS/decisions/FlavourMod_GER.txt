@@ -64,7 +64,6 @@ political_decisions = {
 				NOT = {
 					alliance_with = ENG
 					alliance_with = FRA
-					alliance_with = BOR
 					alliance_with = RUS
 				}
 			}
@@ -99,15 +98,9 @@ political_decisions = {
 		}
 		allow = {
 			war = no
-			OR = { 
-				AND = { 
-					truce_with = FRA
-					FRA = { has_recently_lost_war = yes }
-				}
-				AND = { 
-					truce_with = BOR
-					BOR = { has_recently_lost_war = yes }
-				}
+			AND = { 
+				truce_with = FRA
+				FRA = { has_recently_lost_war = yes }
 			}
 		}
 		effect = {
@@ -147,17 +140,13 @@ political_decisions = {
 						vassal_of = THIS
 					}
 					NOT = { 
-						vassal_of = FRA 
-						vassal_of = BOR 
+						vassal_of = FRA
 					}
 					war = no
 					is_greater_power = no
 				}
 			}
-			OR = {
-				FRA = { exists = yes truce_with = THIS }
-				BOR = { exists = yes truce_with = THIS }
-			}
+			FRA = { exists = yes truce_with = THIS }
 		}
 		
 		effect = {
@@ -633,14 +622,14 @@ political_decisions = {
 			OR = {
 				AND = {
 					owns = 412 #Metz
-					RHI = { OR = { vassal_of = FRA vassal_of = BOR } }
+					RHI = { vassal_of = FRA }
 				}
 				RHI = {
 					is_vassal = no
 					in_sphere = THIS
 				}
 			}
-			OR = { truce_with = FRA truce_with = BOR }
+			truce_with = FRA
 		}
 		
 		effect = {

@@ -1082,20 +1082,7 @@ country_event = {
 					value = -100
 				}
 			}
-		}	
-		random_owned = {
-			limit = { exists = BOR }
-			BOR = {
-				relation = {
-					who = THIS
-					value = -50
-				}
-				diplomatic_influence = {
-					who = THIS
-					value = -100
-				}
-			}
-		}	
+		}
 	}
 }
 

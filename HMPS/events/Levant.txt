@@ -8,10 +8,7 @@ country_event = {
 	trigger = {
 		year = 1860
 		owns = 913
-		OR = {
-			FRA = { has_country_flag = mount_lebanon_intervene }
-			BOR = { has_country_flag = mount_lebanon_intervene }
-		}
+		FRA = { has_country_flag = mount_lebanon_intervene }
 	}
 		
 	mean_time_to_happen = { months = 50 }

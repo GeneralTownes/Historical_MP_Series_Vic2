@@ -32,19 +32,11 @@ political_decisions = {
 					ai = no
 				}
 			}
-			OR = { 
-				FRA = {
-					exists = yes
-					OR = { is_mobilised = no war = no }
-					NOT = { truce_with = THIS }
-					NOT = { relation = { who = THIS value = 100 } }
-				}
-				BOR = {
-					exists = yes
-					OR = { is_mobilised = no war = no }
-					NOT = { truce_with = THIS }
-					NOT = { relation = { who = THIS value = 100 } }
-				}
+			FRA = {
+				exists = yes
+				OR = { is_mobilised = no war = no }
+				NOT = { truce_with = THIS }
+				NOT = { relation = { who = THIS value = 100 } }
 			}
 			OR = {
 				AND = {
@@ -95,7 +87,6 @@ political_decisions = {
 					num_of_revolts = 1
 					is_disarmed = yes
 					FRA = { exists = yes brigades_compare = 2 }
-					BOR = { exists = yes brigades_compare = 2 }
 				}
 			}
 			modifier = {
@@ -159,7 +150,6 @@ political_decisions = {
 			OR = {
 				has_country_flag = french_claimed_the_rhine
 				FRA = { exists = yes NOT = { relation = { who = FRA value = 0 } } }
-				BOR = { exists = yes NOT = { relation = { who = BOR value = 0 } } }
 				575 = { owner = { NOT = { is_culture_group = germanic } } }
 				576 = { owner = { NOT = { is_culture_group = germanic } } }
 				577 = { owner = { NOT = { is_culture_group = germanic } } }

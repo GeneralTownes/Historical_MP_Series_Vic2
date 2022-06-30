@@ -58,7 +58,6 @@ political_decisions = {
 				government = absolute_monarchy
 				government = presidential_dictatorship
 				government = bourgeois_dictatorship
-				government = french_bourbon
 			}
 			OR = {
 				###British Puppets###
@@ -212,13 +211,7 @@ political_decisions = {
 							has_global_flag = berlin_conference
 						}
 					}
-					OR = {
-						vassal_of = FRA
-						AND = {
-							vassal_of = BOR 
-							BOR = { NOT = { government = absolute_monarchy } }
-						}
-					}
+					vassal_of = FRA
 				}
 				AND = {
 					OR = {
@@ -229,7 +222,7 @@ political_decisions = {
 						tag = QUE
 						tag = FAS
 					}
-					vassal_of = BOR
+					vassal_of = FRA
 				}
 				###Portuguese Puppets###
 				AND = { 

@@ -1537,7 +1537,7 @@ political_decisions = {
 			}
 			OR = { 
 				AND = {
-					OR = { FRA = { has_country_flag = australia_organized } BOR = { has_country_flag = australia_organized } }
+					FRA = { has_country_flag = australia_organized }
 					2244 = { NOT = { is_core = FAS } }
 				}
 				AND = { 

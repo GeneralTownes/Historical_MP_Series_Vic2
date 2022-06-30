@@ -975,11 +975,7 @@ country_event = {
 		random_owned = {
 			limit = { exists = FRA }
 			owner = { annex_to = FRA }
-		}	
-		random_owned = {
-			limit = { exists = BOR }
-			owner = { annex_to = BOR }
-		}	
+		}
 	}
 	
 }

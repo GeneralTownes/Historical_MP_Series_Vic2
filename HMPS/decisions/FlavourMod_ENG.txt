@@ -248,10 +248,7 @@ political_decisions = {
 				AND = {
 					EGY = { war_with = TUR }
 					war_with = EGY
-					OR = { 
-						war_with = FRA
-						war_with = BOR
-					}
+					war_with = FRA
 				}
 			}
 			OR = {
@@ -362,10 +359,7 @@ political_decisions = {
 					government = hms_government
 					NOT = { has_global_flag = british_dismantled }
 					has_global_flag = france_dismantled
-					OR = { 
-						FRA = { government = proletarian_dictatorship }
-						BOR = { government = proletarian_dictatorship }
-					}
+					FRA = { government = proletarian_dictatorship }
 					ENG = { government = proletarian_dictatorship }
 				}
 			}
@@ -396,7 +390,6 @@ political_decisions = {
 					add_core = CRB
 					remove_core = ENG
 					remove_core = FRA
-					remove_core = BOR
 				}
 				release = CRB
 			}

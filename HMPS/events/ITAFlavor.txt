@@ -839,10 +839,7 @@ country_event = {
 			owns = 727
 			owns = 728
 		}
-		OR = { 
-			FRA = { exists = yes war = no }
-			BOR = { exists = yes war = no }
-		}
+		FRA = { exists = yes war = no }
 	}
 	
 	mean_time_to_happen = {
@@ -860,17 +857,8 @@ country_event = {
 				472 = { add_core = FRA }
 			}
 		}	
-		random_owned = {
-			limit = { exists = BOR }
-			owner = {
-				465 = { add_core = BOR }
-				466 = { add_core = BOR }
-				472 = { add_core = BOR }
-			}
-		}	
 		
 		PAP_741 = { add_core = THIS }
-		#MOD_739 = { add_core = THIS }
 		TUS_744 = { add_core = THIS }
 	}
 }

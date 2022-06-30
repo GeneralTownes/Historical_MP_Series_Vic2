@@ -905,7 +905,6 @@ ideological_thought = {
 				tag = PRU
 				tag = USA
 				tag = FRA
-				tag = BOR
 			}
 		}
 	}
@@ -959,7 +958,6 @@ state_n_government = {
 				tag = PRU
 				tag = USA
 				tag = FRA
-				tag = BOR
 			}
 		}
 		modifier = {
@@ -1001,9 +999,7 @@ nationalism_n_imperialism = {
 		}
 		modifier = {
 			factor = 200
-			OR = {
 				tag = FRA
-				tag = BOR
 			}
 			year = 1852
 		}

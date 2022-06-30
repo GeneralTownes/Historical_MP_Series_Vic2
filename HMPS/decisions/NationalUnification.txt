@@ -948,7 +948,6 @@ political_decisions = {
 					exists = yes
 					OR = {
 						has_country_flag = objects_to_italy
-						tag = BOR
 						tag = FRA
 						tag = AUS
 						tag = KUK

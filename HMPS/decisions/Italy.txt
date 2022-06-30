@@ -775,7 +775,6 @@ political_decisions = {
 						}
 						NOT = {
 							truce_with = FRA
-							truce_with = BOR
 						}	
 					}
 				}
@@ -793,7 +792,6 @@ political_decisions = {
 						has_global_flag = the_treaty_of_milan
 						NOT = { 
 							truce_with = FRA
-							truce_with = BOR
 						}	
 					}
 				}

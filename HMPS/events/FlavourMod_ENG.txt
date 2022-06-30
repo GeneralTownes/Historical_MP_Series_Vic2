@@ -33,10 +33,7 @@ country_event = {
 					war_with = TUR
 				}
 				war_with = EGY
-				OR = { 
-					war_with = FRA
-					war_with = BOR
-				}
+				war_with = FRA
 			}
 		}
 		OR = {
@@ -160,27 +157,22 @@ country_event = {
 			}
 			exists = RHI
 			PRU_575 = {
-				OR = { 
-					owned_by = FRA 
-					owned_by = BOR
-				}
+				owned_by = FRA
 			}
 			AND = {
 				FRA_412 = {
 					NOT = {
 						owned_by = FRA 
-						owned_by = BOR
 					}
 				}
 				FRA_411 = {
 					NOT = {
 						owned_by = FRA 
-						owned_by = BOR
 					}
 				}
 			}
-			498 = { OR = { owned_by = FRA owned_by = BOR } }
-			SPA_492 = { OR = { owned_by = FRA owned_by = BOR } }
+			498 = { owned_by = FRA }
+			SPA_492 = { owned_by = FRA }
 			ENG_300 = { NOT = { owned_by = ENG } }
 			ENG_296 = { NOT = { owned_by = ENG } }
 			ENG_291 = { NOT = { owned_by = ENG } }

@@ -513,7 +513,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = brazzas_expedition }
-			BOR = { set_country_flag = brazzas_expedition }
 			prestige = 5
 			inherit = LOA
 		}
@@ -1039,7 +1038,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = faidherbe_ambitions }
-			BOR = { set_country_flag = faidherbe_ambitions }
 			2573 = {
 				secede_province = THIS
 				owner = { relation = { who = THIS value = -25 } }
@@ -1134,7 +1132,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = organize_algeria_1848 }
-			BOR = { set_country_flag = organize_algeria_1848 }
 			treasury = -55000
 			ALD_1704 = { add_core = THIS }
 			ALD_1708 = { add_core = THIS }
@@ -1186,7 +1183,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = cremieux_decree }
-			BOR = { set_country_flag = cremieux_decree }
 			add_accepted_culture = sephardic
 		}
 		
@@ -1217,7 +1213,6 @@ political_decisions = {
 		effect = {
 			badboy = 4
 			FRA = { set_country_flag = frenchie_algeria_reclaimed }
-			BOR = { set_country_flag = frenchie_algeria_reclaimed }
 			prestige = 15
 			ALD = { all_core = { add_core = THIS } }
 			scaled_consciousness = {
@@ -1354,7 +1349,6 @@ political_decisions = {
 				value = 400
 			}
 			FRA = { set_country_flag = lambert_has_been_chartered }
-			BOR = { set_country_flag = lambert_has_been_chartered }
 		}
 		
 		ai_will_do = { factor = 1 }

@@ -47,7 +47,6 @@ country_event = {
 		OR = { 
 			tag = ENG
 			tag = FRA
-			tag = BOR
 			tag = AST
 			tag = FAS
 		}
@@ -96,7 +95,6 @@ country_event = {
 		OR = { 
 			tag = ENG
 			tag = FRA
-			tag = BOR
 			tag = AST
 			tag = FAS
 		}

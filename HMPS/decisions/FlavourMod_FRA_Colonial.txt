@@ -23,7 +23,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = demanded_quebec }
-			BOR = { set_country_flag = demanded_quebec }
 			ENG = { country_event = 7790003 }
 		}
 		
@@ -64,10 +63,6 @@ political_decisions = {
 
 		effect = {
 			FRA = { 
-				set_country_flag = quebec_regained 
-				set_country_flag = quebec_and_acadia_only
-			}
-			BOR = { 
 				set_country_flag = quebec_regained 
 				set_country_flag = quebec_and_acadia_only
 			}
@@ -129,7 +124,6 @@ political_decisions = {
 
 		effect = {
 			FRA = { set_country_flag = french_total_victory set_country_flag = quebec_regained }
-			BOR = { set_country_flag = french_total_victory set_country_flag = quebec_regained}
 			badboy = 10
 			QUE = { all_core = { add_core = THIS } }
 			treasury = -50000
@@ -270,11 +264,10 @@ political_decisions = {
 				ACA = { all_core = { add_core = FCA remove_core = ACA } }
 			}
 			###Set Acadia Flag Based on whether Bourbon/Napoleonic###
-			random_owned = { limit = { owner = { tag = FRA OR = { government = hms_government government = absolute_monarchy government = prussian_constitutionalism } } ACA = { government = hms_government } } }
-			random_owned = { limit = { owner = { tag = BOR } } ACA = { government = colonial_company } }
+			random_owned = { limit = { owner = { tag = FRA } } ACA = { government = colonial_company } }
+			random_owned = { limit = { owner = { tag = FRA OR = { government = absolute_monarchy government = prussian_constitutionalism } } ACA = { government = hms_government } } }
 			random_owned = { limit = { owner = { NOT = { colonial_policy = settlement } } } owner = { political_reform = settlement } }
 			FRA = { set_country_flag = acadia_organized }
-			BOR = { set_country_flag = acadia_organized }
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -372,7 +365,6 @@ political_decisions = {
 					}	
 				}
 				FRA = { set_country_flag = no_more_north_america }
-				BOR = { set_country_flag = no_more_north_america }	
 			}
 			
 			###Effects for Treaty of Montreal - Will change cores for the whole of British North America###
@@ -400,11 +392,10 @@ political_decisions = {
 				}
 			}
 			###Set Canada Flag Based on whether Bourbon/Napoleonic###
-			random_owned = { limit = { owner = { tag = FRA OR = { government = hms_government government = absolute_monarchy government = prussian_constitutionalism } } ACA = { government = hms_government } } }
-			random_owned = { limit = { owner = { tag = BOR } } FCA = { government = colonial_company } }
+			random_owned = { limit = { owner = { tag = FRA } } ACA = { government = colonial_company } }
+			random_owned = { limit = { owner = { tag = FRA OR = { government = absolute_monarchy government = prussian_constitutionalism } } ACA = { government = hms_government } } }
 			random_owned = { limit = { owner = { NOT = { colonial_policy = settlement } } } owner = { political_reform = settlement } }
 			FRA = { set_country_flag = canada_organized }
-			BOR = { set_country_flag = canada_organized }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -442,7 +433,6 @@ political_decisions = {
 				}
 			}
 			FRA = { set_country_flag = war_for_louisiana }
-			BOR = { set_country_flag = war_for_louisiana }
 			relation = { who = USA value = -200 }
 			diplomatic_influence = { who = USA value = -200 }
 			leave_alliance = USA
@@ -906,11 +896,10 @@ political_decisions = {
 			any_pop = { limit = { location = { province_id = 146 } type = soldiers } pop_type = farmers }
 			any_pop = { limit = { culture = louisianan } reduce_pop = 2 }
 			random_owned = { limit = { owner = { NOT = { colonial_policy = settlement } } } owner = { political_reform = settlement } }
-			random_owned = { limit = { owner = { tag = FRA OR = { government = hms_government government = absolute_monarchy government = prussian_constitutionalism } } ULA = { government = hms_government } } }
-			random_owned = { limit = { owner = { tag = BOR } } ULA = { government = colonial_company } }
+			random_owned = { limit = { owner = { tag = FRA } } ULA = { government = colonial_company } }
+			random_owned = { limit = { owner = { tag = FRA OR = { government = absolute_monarchy government = prussian_constitutionalism } } ULA = { government = hms_government } } }
 			
 			FRA = { set_country_flag = louisiana_organized }
-			BOR = { set_country_flag = louisiana_organized }
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -1197,8 +1186,8 @@ political_decisions = {
 				pop_type = farmers
 			}
 			random_owned = { limit = { owner = { NOT = { colonial_policy = settlement } } } owner = { political_reform = settlement } }
-			random_owned = { limit = { owner = { tag = FRA OR = { government = hms_government government = absolute_monarchy government = prussian_constitutionalism } } NZF = { government = hms_government } } }
-			random_owned = { limit = { owner = { tag = BOR } } NZF = { government = colonial_company } }
+			random_owned = { limit = { owner = { tag = FRA } } NZF = { government = colonial_company } }
+			random_owned = { limit = { owner = { tag = FRA OR = { government = absolute_monarchy government = prussian_constitutionalism } } NZF = { government = hms_government } } }
 			
 			set_global_flag = french_nzl
 		}
@@ -1442,10 +1431,9 @@ political_decisions = {
 				move_pop = 2476
 			}
 			FRA = { set_country_flag = australia_organized }
-			BOR = { set_country_flag = australia_organized }
 			random_owned = { limit = { owner = { NOT = { colonial_policy = settlement } } } owner = { political_reform = settlement } }
-			random_owned = { limit = { owner = { tag = FRA OR = { government = hms_government government = absolute_monarchy government = prussian_constitutionalism } } FAS = { government = hms_government } } }
-			random_owned = { limit = { owner = { tag = BOR } } FAS = { government = colonial_company } }
+			random_owned = { limit = { owner = { tag = FRA } } FAS = { government = colonial_company } }
+			random_owned = { limit = { owner = { tag = FRA OR = { government = absolute_monarchy government = prussian_constitutionalism } } FAS = { government = hms_government } } }
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -2141,8 +2129,6 @@ political_decisions = {
 					change_province_name = "Nouvelle-Paris"
 					state_scope = { change_region_name = "Colombie" }
 				}
-				#random_owned = { limit = { owner = { tag = FRA } } owner = { 15 = { change_province_name = "Napoleon" } } }
-				#random_owned = { limit = { owner = { tag = BOR } } owner = { 15 = { change_province_name = "Bourbon" } } }
 				owner = { set_global_flag = french_renamed_columbia }
 			}
 			###Washington - American###

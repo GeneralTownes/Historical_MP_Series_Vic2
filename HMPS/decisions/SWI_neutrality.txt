@@ -121,21 +121,12 @@ political_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				OR = {
-					NOT = { 
-						tag = FRA
-						owns = 574
-						owns = 392
-						owns = 397
-						owns = 466
-					}
-					NOT = { 
-						tag = BOR
-						owns = 574
-						owns = 392
-						owns = 397
-						owns = 466
-					}
+				NOT = { 
+					tag = FRA
+					owns = 574
+					owns = 392
+					owns = 397
+					owns = 466
 				}
 			}
 		}
@@ -288,10 +279,6 @@ political_decisions = {
 			#French
 			random_country = {
 				limit = { tag = FRA exists = yes NOT = { has_country_flag = swiss_neutrality_violator } }
-				country_event = 500060
-			}
-			random_country = {
-				limit = { tag = BOR exists = yes NOT = { has_country_flag = swiss_neutrality_violator } }
 				country_event = 500060
 			}
 			#Italian

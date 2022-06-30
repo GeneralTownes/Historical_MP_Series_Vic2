@@ -115,7 +115,6 @@ political_decisions = {
 				military_reform = yes_foreign_naval_officers
 			}
 			FRA = { set_country_flag = military_mission_in_japan }
-			BOR = { set_country_flag = military_mission_in_japan }
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -136,7 +135,6 @@ political_decisions = {
 		effect = {
 			prestige = 10
 			FRA = { set_country_flag = palais_garnier_built }
-			BOR = { set_country_flag = palais_garnier_built }
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -184,7 +182,6 @@ political_decisions = {
 			}
 			prestige = 10
 			FRA = { set_country_flag = crisis_on_the_rhine }
-			BOR = { set_country_flag = crisis_on_the_rhine }
 		}
 		
 		ai_will_do = {
@@ -232,7 +229,6 @@ political_decisions = {
 		effect = {
 			country_event = 37236
 			FRA = { set_country_flag = the_eiffel_tower_was_built }
-			BOR = { set_country_flag = the_eiffel_tower_was_built }
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -274,7 +270,6 @@ political_decisions = {
 			425 = { life_rating = 3 add_province_modifier = { name = haussmanns_renovations duration = -1 } add_province_modifier = { name = small_baby_boom duration = 3650 } }
 			prestige = 10
 			FRA = { set_country_flag = extreme_home_makeover }
-			BOR = { set_country_flag = extreme_home_makeover }
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -349,7 +344,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = claimed_savoy }
-			BOR = { set_country_flag = claimed_savoy }
 			badboy = 3
 			465 = { add_core = THIS }
 			466 = { add_core = THIS }
@@ -410,7 +404,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = enacted_french_schooling }
-			BOR = { set_country_flag = enacted_french_schooling }
 			remove_accepted_culture = picard
 			remove_accepted_culture = arpitan
 			remove_accepted_culture = breton
@@ -509,7 +502,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = st_barths_referendum }
-			BOR = { set_country_flag = st_barths_referendum }
 			3246 = { owner = { country_event = 36623 } }
 		}
 		ai_will_do = { factor = 1 }
@@ -554,7 +546,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = french_mines_placed }
-			BOR = { set_country_flag = french_mines_placed }
 			money = -30000
 			434 = { trade_goods = iron }
 			418 = { trade_goods = iron }
@@ -585,7 +576,6 @@ devil_island = {
 		
 	effect = {
 		FRA = { set_country_flag = devil_island }
-		BOR = { set_country_flag = devil_island }
 		treasury = -5000
 		prestige = 5
 		2241 = { life_rating = 1 }

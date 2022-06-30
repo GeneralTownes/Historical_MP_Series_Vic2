@@ -2210,11 +2210,7 @@ country_event = {
 		random_owned = {
 			limit = { exists = FRA }
 			FRA = { country_event = 37721 }
-		}	
-		random_owned = {
-			limit = { exists = BOR }
-			BOR = { country_event = 37721 }
-		}	
+		}
 		
 		ai_chance = { factor = 65 }
 	}
@@ -2275,11 +2271,7 @@ country_event = {
 		random_owned = {
 			limit = { exists = FRA }
 			FRA = { country_event = 37722 }
-		}	
-		random_owned = {
-			limit = { exists = BOR }
-			BOR = { country_event = 37722 }
-		}	
+		}
 		ai_chance = { factor = 20 }
 	}
 	option = {
@@ -2324,10 +2316,6 @@ country_event = {
 		random_owned = {
 			limit = { exists = FRA }
 			FRA = { country_event = 37721 }
-		}	
-		random_owned = {
-			limit = { exists = BOR }
-			BOR = { country_event = 37721 }
 		}
 		
 		ai_chance = { factor = 10 }
@@ -2512,10 +2500,6 @@ country_event = {
 			government = hms_government
 		}
 		OR = {
-			AND = {
-				war_with = BOR
-				average_militancy = 3
-			}
 			AND = {
 				war_with = FRA
 				average_militancy = 3

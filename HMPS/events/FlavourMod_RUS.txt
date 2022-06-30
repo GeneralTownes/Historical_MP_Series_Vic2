@@ -26,10 +26,6 @@ country_event = {
 		random_owned = {
 			limit = { exists = FRA }
 			FRA = { prestige = -10 }
-		}	
-		random_owned = {
-			limit = { exists = BOR }
-			BOR = { prestige = -10 }
-		}	
+		}
     }
 }

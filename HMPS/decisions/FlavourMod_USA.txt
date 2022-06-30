@@ -91,19 +91,13 @@ political_decisions = {
 			war = no
 			is_greater_power = yes
 			is_disarmed = no
-			OR = { 
-				FRA = { exists = yes NOT = { truce_with = THIS } }
-				BOR = { exists = yes NOT = { truce_with = THIS } }
-			}
+			FRA = { exists = yes NOT = { truce_with = THIS } }
 			OR = {
 				any_greater_power = { war_with = FRA }
-				any_greater_power = { war_with = BOR }
 				FRA = { exists = yes is_disarmed = yes } 
-				BOR = { exists = yes is_disarmed = yes } 
 				412 = { 
 					NOT = { 
 						owned_by = FRA 
-						owned_by = BOR 
 					}
 				}
 			}	
@@ -128,23 +122,6 @@ political_decisions = {
 						defender_goal = {
 							casus_belli = cut_down_to_size
 						}
-						call_ally = yes
-					}
-				}
-			}
-			random_owned = {
-				limit = { exists = BOR }
-					owner = {
-					casus_belli = {
-						target = BOR
-						type = cut_down_to_size
-						months = 12
-					}
-					war = {
-						target = BOR
-						attacker_goal = { casus_belli = acquire_all_cores }
-						attacker_goal = { casus_belli = cut_down_to_size }
-						defender_goal = { casus_belli = cut_down_to_size }
 						call_ally = yes
 					}
 				}
@@ -183,10 +160,7 @@ political_decisions = {
 				DES = { vassal_of = THIS }
 				owns = 97
 			}
-			OR = { 
-				FRA = { exists = yes truce_with = THIS has_recently_lost_war = yes }
-				BOR = { exists = yes truce_with = THIS has_recently_lost_war = yes }
-			}
+			FRA = { exists = yes truce_with = THIS has_recently_lost_war = yes }
 		}
 		
 		effect = {

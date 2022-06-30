@@ -15,26 +15,20 @@ country_event = {
 		OR = { 
 			national_provinces_occupied = 0.75
 			truce_with = FRA
-			truce_with = BOR
 		}
 		OR = { 
 			FRA = { war_with = THIS has_country_flag = siezing_catalonia }
-			BOR = { war_with = THIS has_country_flag = siezing_catalonia }
 			FRA = { truce_with = THIS owns = 495 }
-			BOR = { truce_with = THIS owns = 495 }
 		}
 		OR = { 
 			487 = {
 				OR = {
 					controlled_by = FRA
 					controller = { alliance_with = FRA }
-					controlled_by = BOR
-					controller = { alliance_with = BOR }
 				}
 				province_control_days = 90
 			}
 			truce_with = FRA
-			truce_with = BOR
 		}
 		NOT = {
 			has_country_flag = signed_treay_of_madrid
@@ -83,7 +77,6 @@ country_event = {
 	
 	immediate = {
 		FRA = { set_country_flag = signed_treay_of_madrid }
-		BOR = { set_country_flag = signed_treay_of_madrid }
 		SPC = { set_country_flag = signed_treay_of_madrid }
 		SPA = { set_country_flag = signed_treay_of_madrid }
 	}
@@ -426,10 +419,6 @@ country_event = {
 	option = {
 		name = "One Culture, One Language, One Country!"
 		FRA = {
-			set_country_flag = french_cultural_assimilation
-			set_country_flag = chose_door_one
-		}
-		BOR = {
 			set_country_flag = french_cultural_assimilation
 			set_country_flag = chose_door_one
 		}

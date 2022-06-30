@@ -19,10 +19,7 @@ political_decisions = {
 				owns = 902
 				owns = 897
 			}
-			OR = { 
-				relation = { who = FRA value = 100 }
-				relation = { who = BOR value = 100 }
-			}
+			relation = { who = FRA value = 100 }
 			NOT = { has_global_flag = sykes_picot }
 			NOT = { year = 1900 }
 		}
@@ -33,24 +30,15 @@ political_decisions = {
 			}
 			NOT = {
 				FRA = { alliance_with = TUR }
-				BOR = { alliance_with = TUR }
 			}
 			war = no
 			is_greater_power = yes
 			revolution_n_counterrevolution = 1
-			OR = {
-				FRA = { 
-					exists = yes
-					alliance_with = THIS
-					war = no
-					NOT = { truce_with = THIS }
-				}
-				BOR = { 
-					exists = yes
-					alliance_with = THIS
-					war = no
-					NOT = { truce_with = THIS }
-				}
+			FRA = { 
+				exists = yes
+				alliance_with = THIS
+				war = no
+				NOT = { truce_with = THIS }
 			}
 		}
 		
@@ -107,10 +95,7 @@ political_decisions = {
 				owns = 902
 				owns = 897
 			}
-			OR = {
-				FRA = { exists = yes NOT = { alliance_with = ENG } }
-				BOR = { exists = yes NOT = { alliance_with = ENG } }
-			}				
+			FRA = { exists = yes NOT = { alliance_with = ENG } }	
 			NOT = { RUS = { is_greater_power = yes alliance_with = THIS } }
 			NOT = { has_global_flag = sykes_picot }
 			NOT = { year = 1900 }

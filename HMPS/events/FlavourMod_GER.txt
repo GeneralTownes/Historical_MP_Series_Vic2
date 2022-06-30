@@ -218,19 +218,7 @@ country_event = {
 					call_ally = yes
 				}
 			}
-		}	
-		random_owned = {
-			limit = { exists = BOR }
-			owner = {
-				war = {
-					target = BOR
-					attacker_goal = { casus_belli = humiliate }
-					attacker_goal = { casus_belli = war_reparations }
-					defender_goal = { casus_belli = war_reparations }
-					call_ally = yes
-				}
-			}
-		}	
+		}
 		
 		ai_chance = {
 			factor = 95
@@ -278,10 +266,6 @@ country_event = {
 			modifier = {
 				factor = 0
 				FRA = { ai = no }
-			}
-			modifier = {
-				factor = 0
-				BOR = { ai = no }
 			}
 		}
 	}

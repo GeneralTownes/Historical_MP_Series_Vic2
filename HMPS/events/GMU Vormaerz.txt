@@ -1202,10 +1202,7 @@ country_event = {
 		owns = 575 
 		has_country_flag = beethovenfest
 		ENG = { has_country_flag = beethovenfest }
-		OR = { 
-			FRA = { has_country_flag = beethovenfest }
-			BOR = { has_country_flag = beethovenfest }
-		}
+		FRA = { has_country_flag = beethovenfest }
 		BAV = { has_country_flag = beethovenfest }        
 	}
 
@@ -1225,10 +1222,6 @@ country_event = {
 		random_owned = {
 			limit = { exists = FRA }
 			owner = { relation = { who = FRA value = -25 } }
-		}	
-		random_owned = {
-			limit = { exists = BOR }
-			owner = { relation = { who = BOR value = -25 } }
 		}	
 		relation = { who = ENG value = 5 }
 		random_country = {

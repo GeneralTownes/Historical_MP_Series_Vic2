@@ -1598,7 +1598,6 @@ country_event = {
 					tag = GER
 					tag = NET
 					tag = FRA
-					tag = BOR
 				}
 				exists = yes
 				is_greater_power = yes

@@ -19,7 +19,6 @@ political_decisions = {
 			prestige = 5
 			1700 = { add_province_modifier = { name = notre_dame_afrique duration = -1 } }
 			FRA = { set_country_flag = bulit_notre_dame_afrique }
-			BOR = { set_country_flag = bulit_notre_dame_afrique }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -47,7 +46,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = tonkin_campaign }
-			BOR = { set_country_flag = tonkin_campaign }
 			country_event = {
 				id = 99949
 				days = 150
@@ -95,7 +93,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = claim_luxmebourg }
-			BOR = { set_country_flag = claim_luxmebourg }
 			badboy = 2
 			any_country = {
 				limit = {
@@ -173,7 +170,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = claim_wallonia }
-			BOR = { set_country_flag = claim_wallonia }
 			badboy = 6
 			WLL = { all_core = { add_core = THIS } }
 			any_country = {
@@ -246,7 +242,6 @@ political_decisions = {
 				}
 			}
 			FRA = { set_country_flag = french_guiana }
-			BOR = { set_country_flag = french_guiana }
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -305,7 +300,6 @@ political_decisions = {
 			}
 			add_accepted_culture = afro_antillean
 			FRA = { set_country_flag = integrated_haiti }
-			BOR = { set_country_flag = integrated_haiti }
 		}
 		ai_will_do = { factor = 1 }
 	}
@@ -329,7 +323,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = walloon_autonomy }
-			BOR = { set_country_flag = walloon_autonomy }
 			prestige = -25
 			add_accepted_culture = wallonian
 			random_country = {
@@ -397,7 +390,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = siezing_catalonia }
-			BOR = { set_country_flag = siezing_catalonia }
 			badboy = 10
 			498 = { add_core = THIS }
 			499 = { add_core = THIS }
@@ -416,26 +408,6 @@ political_decisions = {
 		}
 	}
 	
-	
-	clean_up_fra_vassal = {
-		picture = become_wallonia
-		potential = {
-			government = french_bourbon
-			NOT = { tag = FRA tag = BOR }
-			NOT = { has_country_flag = french_bourbon_fixed }
-		}
-		
-		allow = {
-			exists = yes
-		}
-		
-		effect = {
-			set_country_flag = french_bourbon_fixed
-			government = hms_government
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
 	clean_up_fra_rhineland = {
 		picture = adolphe_thiers
 		potential = {
@@ -443,18 +415,15 @@ political_decisions = {
 			RHI = { 
 				exists = yes
 				ai = yes
-				OR = { in_sphere = FRA in_sphere = BOR }
-				NOT = { vassal_of = FRA vassal_of = BOR }
+				in_sphere = FRA
+				NOT = { vassal_of = FRA }
 			}
 			NOT = { has_country_flag = rhine_vassal }
 		}
 		
 		allow = {
 			war = no
-			OR = { 
-				FRA = { truce_with = PRU has_country_modifier = rhine_crisis }
-				BOR = { truce_with = PRU has_country_modifier = rhine_crisis }
-			}
+			FRA = { truce_with = PRU has_country_modifier = rhine_crisis }
 			PRU = { has_recently_lost_war = yes }
 		}
 		
@@ -481,10 +450,7 @@ political_decisions = {
 		potential = {
 			ai = yes
 			NOT = { has_global_flag = clean_up_france_lost_rhine_crisis }
-			OR = { 
-				FRA = { truce_with = PRU has_country_modifier = rhine_crisis }
-				BOR = { truce_with = PRU has_country_modifier = rhine_crisis }
-			}
+			FRA = { truce_with = PRU has_country_modifier = rhine_crisis }
 			575 = { OR = {owned_by = PRU owned_by = NGF owned_by = GER owned_by = GCF owned_by = AUS owned_by = SGF } }
 			PRU = { is_disarmed = no }
 		}
@@ -572,7 +538,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = annexed_rhineland }
-			BOR = { set_country_flag = annexed_rhineland }
 			prestige = 25
 			badboy = 8
 			inherit = RHI
@@ -637,7 +602,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = black_stain }
-			BOR = { set_country_flag = black_stain }
 			prestige = 10
 			FRA_412 = { add_core = THIS }
 			any_pop = {
@@ -947,7 +911,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = the_roman_question }
-			BOR = { set_country_flag = the_roman_question }
 			prestige = 5
 			badboy = 1
 			create_vassal = PAP	
@@ -964,70 +927,6 @@ political_decisions = {
 				who = ITS
 				value = -50
 			}			
-		}
-		
-		ai_will_do = { factor = 1 }
-	}
-	
-	switch_bor_back_to_fra = {
-		potential = {
-			ai = yes
-			NOT = { neighbour = BOR }
-			BOR = {
-				NOT = {
-					government = absolute_monarchy
-					government = prussian_constitutionalism
-					government = hms_government
-				}
-			}
-		}
-		allow = { ai = yes }
-		effect = { BOR = { all_core = { add_core = FRA remove_core = BOR } change_tag = FRA } }
-		
-		ai_will_do = { factor = 1 }
-	}
-	
-	remove_any_french_cores = {
-		potential = {
-			ai = yes
-			OR = {
-				any_owned_province = { is_core = BOR }
-				any_owned_province = { is_core = FRA }
-				primary_culture = french
-				neighbour = FRA
-				neighbour = BOR
-			}
-		}
-		allow = {
-			OR = {
-				AND = {
-					FRA = { exists = yes }
-					BOR = { exists = no }
-					OR = {
-						any_owned_province = { is_core = BOR }
-						FRA = { any_owned_province = { is_core = BOR } }
-					}
-				}
-				AND = {
-					BOR = { exists = yes }
-					FRA = { exists = no }
-					OR = {
-						any_owned_province = { is_core = FRA }
-						BOR = { any_owned_province = { is_core = FRA } }
-					}
-				}
-			}
-		}
-		
-		effect = {
-			random_owned = {
-				limit = { exists = FRA }
-				BOR = { all_core = { remove_core = BOR add_core = FRA } }
-			}
-			random_owned = {
-				limit = { exists = BOR }
-				FRA = { all_core = { remove_core = FRA add_core = BOR } }
-			}
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -1054,7 +953,6 @@ political_decisions = {
 		
 		effect = {
 			FRA = { set_country_flag = enacted_jules_ferry_law }
-			BOR = { set_country_flag = enacted_jules_ferry_law }
 			random_owned = {
 				limit = { owner = { school_reforms = acceptable_schools } }
 				owner = { social_reform = good_schools }

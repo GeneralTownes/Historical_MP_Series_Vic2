@@ -281,7 +281,6 @@
 					NOT = { war_with = THIS }
 					OR = {
 						tag = FRA
-						tag = BOR
 						tag = RUS
 						tag = MOL
 						tag = AUS

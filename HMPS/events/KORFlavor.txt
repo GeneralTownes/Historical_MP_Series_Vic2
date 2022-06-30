@@ -192,11 +192,7 @@ country_event = {
 		random_owned = {
 				limit = { exists = FRA }
 				owner = { relation = { who = FRA value = -100 } }
-			}	
-		random_owned = {
-			limit = { exists = BOR }
-			owner = { relation = { who = BOR value = -100 } }
-		}
+			}
 		random_country = {
 			limit = {
 				tag = RUS

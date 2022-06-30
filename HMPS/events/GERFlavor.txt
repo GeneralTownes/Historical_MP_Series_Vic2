@@ -283,7 +283,6 @@ country_event = {
 			NOT = {
 				alliance_with = ENG
 				alliance_with = FRA
-				alliance_with = BOR
 				alliance_with = RUS
 			}
 		}
@@ -523,24 +522,16 @@ country_event = {
 		year = 1870
 		NOT = {
 			truce_with = FRA
-			truce_with = BOR
 			num_of_revolts = 1
 			has_country_flag = glory_of_germany_al
 		}
 		any_owned_province = {
 			any_neighbor_province = { region = FRA_412 }
 		}
-		OR = { 
-			FRA = {
-				NOT = { brigades_compare = 2 }
-				exists = yes
-				owns = 410
-			}
-			BOR = {
-				NOT = { brigades_compare = 2 }
-				exists = yes
-				owns = 410
-			}
+		FRA = {
+			NOT = { brigades_compare = 2 }
+			exists = yes
+			owns = 410
 		}
 		410 = { owned_by = FRA }
 		OR = {
@@ -556,24 +547,12 @@ country_event = {
 			any_greater_power = { war_with = FRA }
 		}
 		modifier = {
-			factor = 0.1
-			any_greater_power = { war_with = BOR }
-		}
-		modifier = {
 			factor = 0.5
 			FRA = { num_of_revolts = 5 }
 		}
 		modifier = {
 			factor = 2
 			FRA = { alliance_with = RUS }
-		}
-		modifier = {
-			factor = 0.5
-			BOR = { num_of_revolts = 5 }
-		}
-		modifier = {
-			factor = 2
-			BOR = { alliance_with = RUS }
 		}
 		modifier = {
 			factor = 0.5
@@ -597,19 +576,6 @@ country_event = {
 			owner = { 
 				war = {
 					target = FRA
-					attacker_goal = {
-						casus_belli = unification_casus_belli
-						state_province_id = 410
-					}
-					call_ally = yes
-				}
-			}
-		}	
-		random_owned = {
-			limit = { exists = BOR }
-			owner = {
-				war = {
-					target = BOR
 					attacker_goal = {
 						casus_belli = unification_casus_belli
 						state_province_id = 410
@@ -696,7 +662,6 @@ country_event = {
 		}
 		OR = {
 			war_with = FRA
-			war_with = BOR
 			war_with = PRU
 			war_with = NGF
 			war_with = SGF
@@ -1243,7 +1208,6 @@ country_event = {
 					in_sphere = HAN
 					vassal_of = HAN
 					vassal_of = FRA
-					vassal_of = BOR
 				}
 			}
 		}
@@ -1270,7 +1234,6 @@ country_event = {
 					in_sphere = HAN
 					vassal_of = HAN
 					vassal_of = FRA
-					vassal_of = BOR
 				}
 			}
 		}
@@ -1321,10 +1284,7 @@ country_event = {
 			AND = {
 				RHI = {
 					exists = yes
-					OR = {
-						vassal_of = FRA
-						vassal_of = BOR
-					}
+					vassal_of = FRA
 				}
 				has_global_flag = left_bank_french_victory
 			}

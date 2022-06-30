@@ -804,7 +804,6 @@ puddling = {
 				tag = GER
 				tag = PRU
 				tag = FRA
-				tag = BOR
 				tag = AUS
 				tag = KUK
 				tag = USA
@@ -896,7 +895,6 @@ hot_blast = {
 				tag = NGF
 				tag = GER
 				tag = PRU
-				tag = BOR
 				tag = FRA
 				tag = RUS
 			}
@@ -987,7 +985,6 @@ bessemer_process = {
 				tag = ENG
 				tag = USA
 				tag = NGF
-				tag = BOR
 				tag = GER
 				tag = PRU
 				tag = RUS
@@ -1079,7 +1076,6 @@ advanced_metallurgy = {
 				tag = GER
 				tag = PRU
 				tag = RUS
-				tag = BOR
 			}
 		}
 		modifier = {

@@ -182,12 +182,10 @@ country_event = {
 			limit = {
 				is_sphere_leader_of = TUR
 				NOT = { tag = FRA }
-				NOT = { tag = BOR }
 				NOT = { tag = RUS }
 			}
 			diplomatic_influence = { who = TUR value = -100 }
 			relation = { who = FRA value = -25 }
-			relation = { who = BOR value = -25 }
 		}
 		diplomatic_influence = { who = TUR value = 300 }
 		relation = { who = TUR value = 300 }
@@ -207,15 +205,9 @@ country_event = {
 		NOT = { has_global_flag = france_protector_of_eastern_christians }
 		war = no
 		owns = 917
-		OR = {
-			AND = {
-				OR = { in_sphere = FRA in_sphere = BOR }
-				ai = yes
-			}
-			AND = {
-				OR = { truce_with = FRA truce_with = BOR }
-				is_disarmed = yes
-			}
+		AND = {
+			in_sphere = FRA
+			ai = yes
 		}
 	}
 	
@@ -325,7 +317,6 @@ country_event = {
 			is_capital = yes
 			controlled_by = RUS
 			NOT = { country_units_in_province = FRA }
-			NOT = { country_units_in_province = BOR }
 			NOT = { country_units_in_province = ENG }
 			NOT = { country_units_in_province = TUR }
 			province_control_days = 90
@@ -631,24 +622,6 @@ country_event = {
 				}
 			}
 		}
-		random_owned = {
-			limit = { exists = BOR }
-			BOR = {
-				prestige = -20
-				relation = { who = RUS value = -100 }
-				leave_alliance = RUS
-				casus_belli = {
-					target = RUS
-					type = take_from_sphere
-					months = 60
-				}
-				casus_belli = {
-					target = TUR
-					type = add_to_sphere
-					months = 60
-				}
-			}
-		}	
 		
 		random_country = {
 			limit = {

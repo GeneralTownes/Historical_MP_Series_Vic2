@@ -14,7 +14,6 @@ country_event = {
 			tag = ENL
 			tag = GBR
 			tag = FRA
-			tag = BOR
 			tag = SPA
 			tag = SPC
 			tag = IBR

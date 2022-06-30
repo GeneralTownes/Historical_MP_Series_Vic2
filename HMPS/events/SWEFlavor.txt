@@ -937,12 +937,7 @@ country_event = {
 			limit = { exists = FRA }
 			FRA = { country_event = 36627 }
 			owner = { relation = { who = FRA value = -200 } }
-		}	
-		random_owned = {
-			limit = { exists = BOR }
-			BOR = { country_event = 36627 }
-			owner = { relation = { who = BOR value = -200 } }
-		}	
+		}
 		relation = { who = FROM value = 100 }
 		treasury = -50000
 		FROM = { treasury = 50000 }
@@ -990,13 +985,6 @@ country_event = {
 			3246 = { secede_province = FRA }
 			owner = { relation = { who = FRA value = 50 } }
 			FRA = { treasury = -50000 }
-		}	
-		random_owned = {
-			limit = { exists = BOR }
-			BOR = { country_event = 36627 }
-			3246 = { secede_province = BOR }
-			owner = { relation = { who = BOR value = 50 } }
-			BOR = { treasury = -50000 }
 		}
 		treasury = 50000
 		
@@ -1009,11 +997,7 @@ country_event = {
 		random_owned = {
 			limit = { exists = FRA }
 			FRA = { country_event = 36627 relation = { who = THIS value = -150 } }
-		}	
-		random_owned = {
-			limit = { exists = BOR }
-			BOR = { country_event = 36627 relation = { who = THIS value = -150 } }
-		}	
+		}
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1034,13 +1018,6 @@ country_event = {
 			3246 = { secede_province = FRA any_pop = { militancy = 4 } }
 			owner = { relation = { who = FRA value = 150 } }
 			FRA = { treasury = -50000 }
-		}	
-		random_owned = {
-			limit = { exists = BOR }
-			BOR = { country_event = 36627 }
-			3246 = { secede_province = BOR }
-			owner = { relation = { who = BOR value = 50 } }
-			BOR = { treasury = -50000 }
 		}
 		3246 = { remove_core = THIS }
 		treasury = 50000
@@ -1052,11 +1029,7 @@ country_event = {
 		random_owned = {
 			limit = { exists = FRA }
 			FRA = { country_event = 36627 }
-		}	
-		random_owned = {
-			limit = { exists = BOR }
-			BOR = { country_event = 36627 }
-		}	
+		}
 		ai_chance = { factor = 0.8 }
 	}
 }
