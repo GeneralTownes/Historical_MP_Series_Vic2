@@ -1033,7 +1033,7 @@ chinese_substate = {
 own_kiel_canal = {
 	trigger = {
 		exists = yes
-		owns = 369
+		controls = 369
 		civilized = yes
 		is_canal_enabled = 1
 	}
@@ -1044,7 +1044,7 @@ own_kiel_canal = {
 own_suez_canal = {
 	trigger = {
 		exists = yes
-		owns = 1755
+		controls = 1755
 		civilized = yes
 		is_canal_enabled = 2
 	}
@@ -1057,7 +1057,7 @@ own_suez_canal = {
 own_panama_canal = {
 	trigger = {
 		exists = yes
-		owns = 1723
+		controls = 1723
 		civilized = yes
 		is_canal_enabled = 3
 	}
@@ -1187,7 +1187,6 @@ social_reformed_nation = {
 			penal_system = rehabilitation
 		}
 		
-	social_reform_desire = -0.5
 	global_pop_militancy_modifier = -0.1
 	global_immigrant_attract = 1
 	icon = 13

@@ -663,14 +663,12 @@ political_reforms = {
 	research_policy = {
 		no_funding = {
 			allow = {
-				ruling_party_ideology = reactionary
-				upper_house_composition = party_appointed
+				has_country_flag = revoked_funding
 			}
 		}
 		limited_funding = {
 			allow = {
-				ruling_party_ideology = reactionary
-				upper_house_composition = party_appointed
+				has_country_flag = revoked_funding
 			}
 			research_points = 0.5
 			factory_output = -0.02
@@ -678,8 +676,7 @@ political_reforms = {
 		}
 		funded = {
 			allow = {
-				ruling_party_ideology = reactionary
-				upper_house_composition = party_appointed
+				has_country_flag = revoked_funding
 			}
 			research_points = 1
 			factory_output = -0.05
@@ -687,8 +684,7 @@ political_reforms = {
 		}
 		prioritised_funding = {
 			allow = {
-				ruling_party_ideology = reactionary
-				upper_house_composition = party_appointed
+				has_country_flag = revoked_funding
 			}
 			research_points = 2
 			factory_output = -0.1

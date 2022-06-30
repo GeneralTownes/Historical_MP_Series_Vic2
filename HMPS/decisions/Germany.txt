@@ -67,7 +67,7 @@ political_decisions = {
 				}	
 				country_event = 19200
 			}
-			FRA_412 = { add_core = GER }
+			FRA_412 = { add_core = THIS }
 			set_country_flag = ems_dispatch_sent
 			set_global_flag = franco_prussian_war_started
 			any_pop = {

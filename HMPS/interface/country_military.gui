@@ -101,34 +101,34 @@ guiTypes = {
 			buttonText = "MOBILISE"
 			Orientation = "UPPER_LEFT"
 			clicksound = click
-			position = { x= 403 y = 555 }
+			position = { x= 403 y = 574 }
 			shortcut = "d"
 		}
 		guiButtonType = {
 			name = "demobilize"
-			quadTextureSprite = "GFX_button_standard_200"
+			quadTextureSprite = "GFX_button_standard_200_red"
 			buttonFont = "vic_18_black"
 			buttonText = "DEMOBILISE"
 			Orientation = "UPPER_LEFT"
 			clicksound = click
-			position = { x= 403 y = 555 }
+			position = { x= 403 y = 574 }
 			shortcut = "d"
 		}
 		iconType = {
 			name = "mobilize_progress"
 			spriteType = "GFX_mobilize_progress"
-			position = { x = 408 y = 591 }
+			position = { x = 408 y = 560 }
 		}
 
 		iconType = {
 			name = "mobilize_progress_frame"
 			spriteType = "GFX_mobilization_progress_frame"
-			position = { x = 406 y = 589 }
+			position = { x = 406 y = 558 }
 		}
 		
 		instantTextBoxType = { 
 			name = "mobilize_progress_text"
-			position = { x = 393 y = 590 }
+			position = { x = 393 y = 559 }
 			font = "vic_18_black"
 			maxWidth = 218
 			maxHeight = 20	

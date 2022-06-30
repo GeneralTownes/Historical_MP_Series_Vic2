@@ -49,6 +49,10 @@ political_decisions = {
 			ai = no
 			ruling_party_ideology = reactionary
 			NOT = { has_country_flag  = buffed_reactionary_uh }
+			NOT = { has_country_flag  = buffed_reactionary_uh_2 }
+			NOT = { has_country_flag  = buffed_reactionary_uh_3 }
+			NOT = { has_country_flag  = buffed_reactionary_uh_4 }
+			NOT = { has_country_flag  = buffed_reactionary_uh_5 }
 			NOT = { has_country_flag = hiding_the_decisions }
 		}
 		allow = {

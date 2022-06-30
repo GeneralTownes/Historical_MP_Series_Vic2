@@ -554,24 +554,6 @@ country_event = {
 			is_sphere_leader_of = THIS
 		}
 		OR = {
-			any_owned_province = {
-				NOT = { 
-					OR = {
-						is_core = AUS
-						is_core = GER
-						is_colonial = yes
-					}
-				}
-			}
-			AND = { 
-				exists = HUN
-				GER = { 
-					ai = yes 
-					NOT = { badboy = 0.2 }
-				}
-			}
-		}
-		OR = {
 			is_vassal = no
 			vassal_of = GER
 		}
