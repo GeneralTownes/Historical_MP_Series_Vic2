@@ -141,7 +141,6 @@ lost_the_tarrif_war = {
 
 gas_warfare = {
 	badboy = 0.02
-	supply_consumption = 0.5
 	icon = 15
 }
 

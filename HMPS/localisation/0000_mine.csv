@@ -840,7 +840,7 @@ GER_2;South Germany;;;;;;;;;;;;;
 ITA_1;Italy;;;;;;;;;;;;;
 form_italy_desc;By establishing a dominant position on the Italian peninsula, we can secure a national homeland for our people by proclaiming ourselves the motive power of a unified Italian state. \n\n§YItaly region refers to all of Italy, minus Austrian land owned in 1836, minus Corsica.§!;;;;;;;;;;;;;
 authorize_gas_warfare_title;§EAuthorize Gas Warfare§!;;;;;;;;;;;;;
-authorize_gas_warfare_desc;We have the capabilities to use chemical warfare to our advantage, at a cost to our international image. Our armies will require more supply to fund this new form of war. \n\n§YThis will unlock the gas attack invention§!;;;;;;;;;;;;;
+authorize_gas_warfare_desc;We have the capabilities to use chemical warfare to our advantage, at a cost to our international image. Our armies will require more supply to fund this new form of war. \n\n§YThis will unlock the gas attack invention and will increase our army supply consumption by 50%.§!;;;;;;;;;;;;;
 gas_warfare;Gas Attack;;;;;;;;;;;;;
 gas_warfare_desc;Chemical Warfare has been authorised;;;;;;;;;;;;;
 gas_attacking;Chemical Warfare Authorised;;;;;;;;;;;;;

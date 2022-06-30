@@ -313,6 +313,9 @@ gas_attack_capability = {
 	}
 	effect = {
 		gas_attack = yes
+		army_base = {
+			supply_consumption = 0.5
+		}
 	}
 }
 #gas_defense_capability = {
