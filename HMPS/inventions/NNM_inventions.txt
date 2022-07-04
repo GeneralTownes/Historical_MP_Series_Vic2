@@ -218,7 +218,7 @@ carlism = {
 		classicism_n_early_romanticism = 1
 		OR = {
 			tag = SPA
-			tag = SPC
+			tag = IBR
 		}
 	}
 	news = no

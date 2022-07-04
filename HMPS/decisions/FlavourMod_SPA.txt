@@ -4,10 +4,14 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = IBR
-				tag = SPC
+				tag = SPA
 			}
 			NOT = { year = 1890 }
 			NOT = { has_global_flag = reconquista }
+			OR = {
+				government = prussian_constitutionalism
+				government = absolute_monarchy
+			}
 		}
 
 		allow = {
@@ -72,11 +76,14 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = IBR
-				tag = SPC
+				tag = SPA
+			}
+			OR = {
+				government = prussian_constitutionalism
+				government = absolute_monarchy
 			}
 			UCA = {
 				exists = yes
-#				num_of_revolts = 1
 			}
 			NOT = { has_country_flag = reconquista_frca }
 		}
@@ -164,8 +171,11 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = IBR
-				tag = SPC
 				tag = SPA
+			}
+			OR = {
+				government = prussian_constitutionalism
+				government = absolute_monarchy
 			}
 			is_greater_power = yes
 			has_global_flag = reconquista
@@ -319,8 +329,11 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = IBR
-				tag = SPC
 				tag = SPA
+			}
+			OR = {
+				government = prussian_constitutionalism
+				government = absolute_monarchy
 			}
 			is_greater_power = yes
 			has_global_flag = reconquista
@@ -433,8 +446,11 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = IBR
-				tag = SPC
 				tag = SPA
+			}
+			OR = {
+				government = prussian_constitutionalism
+				government = absolute_monarchy
 			}
 			is_greater_power = yes
 			has_global_flag = reconquista
@@ -523,8 +539,11 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = IBR
-				tag = SPC
 				tag = SPA
+			}
+			OR = {
+				government = prussian_constitutionalism
+				government = absolute_monarchy
 			}
 			is_greater_power = yes
 			has_global_flag = reconquista
@@ -589,8 +608,11 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = IBR
-				tag = SPC
 				tag = SPA
+			}
+			OR = {
+				government = prussian_constitutionalism
+				government = absolute_monarchy
 			}
 			is_greater_power = yes
 			has_global_flag = reconquista
@@ -745,7 +767,6 @@ political_decisions = {
 			}
 			government = colonial_company
 			NOT = {
-				vassal_of = SPC
 				vassal_of = SPA
 				vassal_of = IBR
 			}

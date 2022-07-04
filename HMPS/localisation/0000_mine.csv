@@ -84,8 +84,6 @@ lost_the_tarrif_war;Forced to lower tarrifs;;;;;;;;;;;;;
 lost_the_tarrif_war_desc;We have lost the war and been forced to lower our tarrifs as a result;;;;;;;;;;;;;
 violate_the_tarrif_treaty_title;Violate the Tarrif Treaty;;;;;;;;;;;;;
 violate_the_tarrif_treaty_desc;We have been forced into a humiliating treaty that imposes foreign control over our trade tarrifs. We will regain control, prestige be damned!;;;;;;;;;;;;;
-form_iberia_peacefully_title;Form Iberia Diplomatically;;;;;;;;;;;;;
-form_iberia_peacefully_desc;Establishing good terms with our Portugese breatheren we have opened up for the possibility to unite our peninsula into one Union. Let us seize this oppertunity!;;;;;;;;;;;;;
 accept_the_portuguese_title;Accept the Portugese;;;;;;;;;;;;;
 accept_the_portuguese_desc;Now we have united our peoples, we should also seek to treat the Portuguese as full citizens and equals.;;;;;;;;;;;;;
 accept_the_basque_title;Accept the Basque People;;;;;;;;;;;;;
@@ -853,3 +851,5 @@ wooden_sails_1915_desc;Wooden sail ships do not benefit from the advancement of 
 wooden_sails_1920;Wooden Sails 1920;
 wooden_sails_1920_desc;Wooden sail ships do not benefit from the advancement of steam ship engine tech.;
 revoked_funding;Revoked Funding;;;;;;;;;;;;;
+SPA_absolute_monarchy;The Kingdom of Spain;;;;;;;;;;;;;
+SPA_prussian_constitutionalism;The Kingdom of Spain;;;;;;;;;;;;;

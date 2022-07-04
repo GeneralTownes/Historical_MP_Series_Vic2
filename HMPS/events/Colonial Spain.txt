@@ -14,7 +14,6 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = SPC
 			tag = IBR
 		}
 		year = 1843
@@ -112,7 +111,6 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = SPC
 			tag = IBR
 		}
 		year = 1866
@@ -317,7 +315,6 @@ country_event = {
 		tag = USA
 		OR = {
 			exists = SPA
-			exists = SPC
 			exists = IBR
 		}
 		war = no
@@ -328,8 +325,6 @@ country_event = {
 			has_country_flag = maine_incident
 			alliance_with = SPA
 			truce_with = SPA
-			alliance_with = SPC
-			truce_with = SPC
 			alliance_with = IBR
 			truce_with = IBR
 			year = 1905
@@ -339,11 +334,6 @@ country_event = {
 			AND = {
 				exists = CUB
 				CUB = { vassal_of = SPA }
-			}
-			2209 = { owned_by = SPC }
-			AND = {
-				exists = CUB
-				CUB = { vassal_of = SPC }
 			}
 			2209 = { owned_by = IBR }
 			AND = {
@@ -361,17 +351,7 @@ country_event = {
 						controlled_by = REB
 					}
 				}
-			}
-			SPC = {
-				any_owned_province = {
-					is_core = CUB
-					OR = {
-						average_militancy = 6
-						has_province_modifier = nationalist_agitation
-						controlled_by = REB
-					}
-				}
-			}
+			}	
 			IBR = {
 				any_owned_province = {
 					is_core = CUB
@@ -448,7 +428,6 @@ country_event = {
 			limit = {
 				OR = {
 					tag = SPA
-					tag = SPC
 					tag = IBR
 				}
 				exists = yes
@@ -472,19 +451,6 @@ country_event = {
 			THIS = {
 				diplomatic_influence = {
 					who = SPA
-					value = -200
-				}
-			}
-		}
-		random_country = {
-			limit = {
-				tag = SPC
-				exists = yes
-				is_greater_power = no
-			}
-			THIS = {
-				diplomatic_influence = {
-					who = SPC
 					value = -200
 				}
 			}
@@ -538,50 +504,6 @@ country_event = {
 				}
 				war = {
 					target = SPA
-					attacker_goal = {
-						casus_belli = release_puppet
-						country = CUB
-					}
-					call_ally = no
-				}
-			}
-		}
-		random_country = {
-			limit = {
-				tag = SPC
-				owns = 2209
-			}
-			THIS = {
-				casus_belli = {
-					target = SPC
-					type = free_peoples
-					months = 12
-				}
-				war = {
-					target = SPC
-					attacker_goal = {
-						casus_belli = free_peoples
-						country = CUB
-						state_province_id = 2209
-					}
-					call_ally = no
-				}
-			}
-		}
-		random_country = {
-			limit = {
-				tag = SPC
-				NOT = { owns = 2209 }
-				is_our_vassal = CUB
-			}
-			THIS = {
-				casus_belli = {
-					target = SPC
-					type = release_puppet
-					months = 12
-				}
-				war = {
-					target = SPC
 					attacker_goal = {
 						casus_belli = release_puppet
 						country = CUB
@@ -673,7 +595,6 @@ country_event = {
 			limit = {
 				OR = {
 					tag = SPA
-					tag = SPC
 					tag = IBR
 				}
 				exists = yes
@@ -711,7 +632,6 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = SPC
 			tag = IBR
 		}
 		any_owned_province = { is_core = PHL }

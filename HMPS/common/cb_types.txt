@@ -800,7 +800,7 @@ colonial_reconquest_cb = {
 				THIS = {
 					OR = {
 						tag = SPA
-						tag = SPC
+						tag = IBR
 					}
 					NOT = { has_global_flag = spanish_american_war }
 				}

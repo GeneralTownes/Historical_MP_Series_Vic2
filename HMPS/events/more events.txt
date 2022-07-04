@@ -333,13 +333,11 @@ country_event = {
 				any_core = {
 					OR = {
 						owned_by = SPA
-						owned_by = SPC
 						owned_by = POR
 					}
 					NOT = { 
 						OR = {
-							is_core = SPA 
-							is_core = SPC
+							is_core = SPA
 							is_core = POR
 						}
 					}
@@ -385,7 +383,6 @@ country_event = {
 				OR = {
 					tag = SPA
 					tag = POR
-					tag = SPC
 				}
 				ai = yes
 				in_sphere = THIS
@@ -437,7 +434,6 @@ country_event = {
 				OR = {
 					tag = SPA
 					tag = POR
-					tag = SPC
 				}
 				ai = yes
 				in_sphere = THIS
@@ -489,7 +485,6 @@ country_event = {
 				OR = {
 					tag = SPA
 					tag = POR
-					tag = SPC
 				}
 				ai = yes
 				in_sphere = THIS
@@ -541,7 +536,6 @@ country_event = {
 				OR = {
 					tag = SPA
 					tag = POR
-					tag = SPC
 				}
 				ai = yes
 				in_sphere = THIS
@@ -593,7 +587,6 @@ country_event = {
 				OR = {
 					tag = SPA
 					tag = POR
-					tag = SPC
 				}
 				ai = yes
 				in_sphere = THIS

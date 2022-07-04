@@ -5,7 +5,6 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = SPA
-				tag = SPC
 				tag = IBR
 			}
 			nationalism_n_imperialism = 1
@@ -59,19 +58,11 @@ political_decisions = {
 			tag = USA
 			OR = {
 				war_with = SPA
-				war_with = SPC
 				war_with = IBR
 			}
 			has_global_flag = spanish_american_war
 			NOT = { has_country_flag = treaty_of_paris_1898 }
 			SPA = {
-				OR = {
-					exists = no
-					owns = 2209
-					is_our_vassal = CUB
-				}
-			}
-			SPC = {
 				OR = {
 					exists = no
 					owns = 2209
@@ -102,15 +93,9 @@ political_decisions = {
 						controlled_by = USA
 					}
 				}
-				SPC = {
-					any_owned_province = {
-						is_core = SPC
-						controlled_by = USA
-					}
-				}
 				IBR = {
 					any_owned_province = {
-						is_core = SPC
+						is_core = IBR
 						controlled_by = USA
 					}
 				}
@@ -127,7 +112,6 @@ political_decisions = {
 				limit = {
 					OR = {
 						tag = SPA
-						tag = SPC
 						tag = IBR
 					}
 					exists = yes
@@ -151,21 +135,15 @@ political_decisions = {
 			tag = USA
 			OR = {
 				truce_with = SPA
-				truce_with = SPC
 				truce_with = IBR
 			}
 			has_global_flag = spanish_american_war
 			NOT = {
 				has_country_flag = treaty_of_paris_1898
 				war_with = SPA
-				war_with = SPC
 				war_with = IBR
 			}
 			SPA = {
-				NOT = { owns = 2209 }
-				NOT = { is_our_vassal = CUB }
-			}
-			SPC = {
 				NOT = { owns = 2209 }
 				NOT = { is_our_vassal = CUB }
 			}
@@ -191,7 +169,6 @@ political_decisions = {
 				limit = {
 					OR = {
 						tag = SPA
-						tag = SPC
 						tag = IBR
 					}
 					exists = yes
@@ -214,7 +191,6 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = SPA
-				tag = SPC
 				tag = IBR
 			}
 			OR = {

@@ -9,7 +9,6 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = SPC
 			tag = IBR
 		}
 		year = 1837
@@ -128,7 +127,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = SPC
+			tag = IBR
 		}
 		year = 1851
 		owns = 2209 #Havana
@@ -173,7 +172,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = SPC
+			tag = IBR
 		}
 		year = 1851
 		owns = 2209 #Havana
@@ -246,7 +245,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = SPC
+			tag = IBR
 		}
 		year = 1907
 		expressionism = 1
@@ -294,7 +293,6 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = SPC
 			tag = IBR
 		}
 		year = 1854
@@ -350,7 +348,6 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = SPC
 			tag = IBR
 		}
 		year = 1842
@@ -419,55 +416,6 @@ country_event = {
 		}
 	}
 }
-
-#La Guardia Civil - Redundant considering it is established through decision
-#country_event = {
-#
-#	id = 37708
-#	title = "EVTNAME37708"
-#	desc = "EVTDESC37708"
-#	picture = "Administration"
-#	
-#	trigger = {
-#		OR = {
-#			tag = SPA
-#			tag = SPC
-#		}
-#		year = 1842
-#		NOT = { year = 1846 }
-#	}
-#	
-#	fire_only_once = yes
-#
-#	mean_time_to_happen =  {
-#		months = 5
-#
-#		modifier = {
-#			factor = 0.75 #increase likelihood to happen
-#			year = 1855
-#		}
-#
-#		modifier = {
-#			factor = 0.95 #increase likelihood to happen
-#			year = 1856
-#		}
-#	}
-#	option = {
-#		name = "EVTOPTA37708"
-#		officers = { militancy = 1 consciousness = 1 }
-#		soldiers = { militancy = 1 consciousness = 1 }
-#		artisans = { militancy = -1 consciousness = -1 }
-#		craftsmen = { militancy = -1 consciousness = -1 }
-#	}
-#
-#	option = {
-#		name = "EVTOPTB37708"
-#		officers = { militancy = -1 consciousness = -1 }
-#		soldiers = { militancy = -1 consciousness = -1 }
-#		artisans = { militancy = 1 consciousness = 1 }
-#		craftsmen = { militancy = 1 consciousness = 1 }
-#	}
-#}
 
 #Carlist/Christino War Events
 country_event = {
@@ -702,11 +650,6 @@ country_event = {
 				}
 			}
 		}
-		all_core = {
-			remove_core = SPA
-			add_core = SPC
-		}
-		change_tag = SPC
 		government = absolute_monarchy
 		ruling_party_ideology = reactionary
 		political_reform = none_voting
@@ -1569,12 +1512,11 @@ country_event = {
 	picture = "carlists"
 	
 	trigger = {
-		tag = SPC
+		tag = SPA
 		NOT = { has_global_flag = carlists_pacified }
 		OR = {
 			government = absolute_monarchy
 			government = prussian_constitutionalism
-			government = hms_government
 		}
 		NOT = {
 			any_owned_province = { has_province_modifier = christino_sympathies }
@@ -1722,19 +1664,18 @@ province_event = {
 	trigger = {
 		NOT = { has_global_flag = carlists_pacified }
 		owner = {
-			tag = SPC
+			tag = SPA
 			OR = {
 				government = absolute_monarchy
 				government = prussian_constitutionalism
-				government = hms_government
 			}
 		}
 		any_neighbor_province = { has_province_modifier = carlist_sympathies }
 		NOT = { has_province_modifier = carlist_sympathies }
 		NOT = { region = SPA_487 }
-		is_core = SPC
+		is_core = SPA
 		is_colonial = no
-		controlled_by = SPC
+		controlled_by = SPA
 		NOT = { liberal = 30 }
 		any_pop = {
 			NOT = { culture = basque }
@@ -1889,26 +1830,18 @@ province_event = {
 	trigger = {
 		NOT = { has_global_flag = carlists_pacified }
 		owner = {
-			tag = SPC
-			OR = {
-				government = absolute_monarchy
-				government = prussian_constitutionalism
-				government = hms_government
-			}
-			NOT = {
-				check_variable = {
-					which = christino_provinces
-					value = 10
-				}
-			}
+			tag = SPA
+			government = absolute_monarchy
+			government = prussian_constitutionalism
 		}
 		any_neighbor_province = { has_province_modifier = christino_sympathies }
 		NOT = { has_province_modifier = christino_sympathies }
-		is_core = SPC
+		is_core = SPA
+		
 		is_colonial = no
 		NOT = { culture = basque }
 		NOT = { culture = catalan }
-		controlled_by = SPC
+		controlled_by = SPA
 		OR = {
 			liberal = 30
 			AND = {
@@ -2032,9 +1965,9 @@ province_event = {
 	desc = "EVTDESC37719"
 	
 	trigger = {
-		owner = { tag = SPC }
+		owner = { tag = SPA government = absolute_monarchy }
 		has_province_modifier = christino_sympathies
-		controlled_by = SPC
+		controlled_by = SPA
 	}
 	
 	mean_time_to_happen = {
@@ -2071,7 +2004,7 @@ province_event = {
 			factor = 3
 			NOT = {
 				any_neighbor_province = {
-					is_core = SPC
+					is_core = IBR
 					NOT = { has_province_modifier = christino_sympathies }
 				}
 			}
@@ -2126,7 +2059,7 @@ province_event = {
 		}
 		modifier = {
 			factor = 0.5
-			country_units_in_province = SPC
+			country_units_in_province = IBR
 		}
 	}
 	
@@ -3183,13 +3116,13 @@ country_event = {
 		tag = USA
 		OR = {
 			truce_with = SPA
-			truce_with = SPC
+			truce_with = IBR
 		}
 		has_global_flag = spanish_american_war
 		NOT = {
 			has_country_flag = treaty_of_paris_1898
 			war_with = SPA
-			war_with = SPC
+			war_with = IBR
 		}
 		SPA = {
 			OR = {
@@ -3198,7 +3131,7 @@ country_event = {
 				is_our_vassal = CUB
 			}
 		}
-		SPC = {
+		IBR = {
 			OR = {
 				exists = no
 				owns = 2209
@@ -3251,7 +3184,7 @@ country_event = {
 			limit = {
 				OR = {
 					tag = SPA
-					tag = SPC
+					tag = IBR
 				}
 				exists = yes
 			}
@@ -3273,7 +3206,7 @@ country_event = {
 			limit = {
 				OR = {
 					tag = SPA
-					tag = SPC
+					tag = IBR
 				}
 				exists = yes
 				OR = {
@@ -3292,7 +3225,7 @@ country_event = {
 			limit = {
 				OR = {
 					tag = SPA
-					tag = SPC
+					tag = IBR
 				}
 				exists = yes
 				owns = 2209
@@ -3309,7 +3242,7 @@ country_event = {
 				tag = CUB
 				OR = {
 					vassal_of = SPA
-					vassal_of = SPC
+					vassal_of = IBR
 				}
 			}
 			any_pop = { militancy = 6 }
@@ -3405,7 +3338,7 @@ country_event = {
 				}
 			}
 		}
-		SPC = {
+		IBR = {
 			OR = {
 				exists = no
 				AND = {
@@ -3435,7 +3368,7 @@ country_event = {
 			limit = {
 				OR = {
 					tag = SPA
-					tag = SPC
+					tag = IBR
 				}
 				exists = yes
 			}
@@ -3456,7 +3389,7 @@ country_event = {
 			limit = {
 				OR = {
 					tag = SPA
-					tag = SPC
+					tag = IBR
 				}
 				exists = yes
 			}
@@ -3503,7 +3436,10 @@ country_event = {
 			factor = 0.95
 			modifier = {
 				factor = 0.1
-				tag = SPC
+				OR = {
+					tag = IBR
+					tag = SPA
+				}
 			}
 		}
 	}
@@ -3571,7 +3507,10 @@ country_event = {
 			factor = 40
 			modifier = {
 				factor = 0.1
-				tag = SPC
+				OR = {
+					tag = IBR
+					tag = SPA
+				}
 			}
 		}		
 	}
@@ -3622,7 +3561,7 @@ country_event = {
 		war = no
 		OR = {
 			vassal_of = SPA
-			vassal_of = SPC
+			vassal_of = IBR
 		}
 		NOT = { has_country_flag = submitting_to_the_spanish }
 	}
@@ -3668,7 +3607,10 @@ country_event = {
 			factor = 25
 			modifier = {
 				factor = 0
-				tag = SPC
+				OR = {
+					tag = IBR
+					tag = SPA
+				}
 			}
 		}
 	}
@@ -3703,7 +3645,7 @@ country_event = {
 			has_country_flag = resisting_spanish_rule
 			OR = {
 				war_with = SPA
-				war_with = SPC
+				war_with = IBR
 			}
 		}
 	}
@@ -3791,25 +3733,25 @@ country_event = {
 		has_country_flag = resisting_spanish_rule
 		OR = {
 			war = no
-			war_with = SPC
+			war_with = IBR
 			war_with = SPA
 		}
 		OR = {
 			any_neighbor_country = {
 				OR = {
-					vassal_of = SPC
+					vassal_of = IBR
 					vassal_of = SPA
 					tag = SPA
-					tag = SPC
+					tag = IBR
 				}
 			}
 			AND = {
 				OR = {
 					SPA = { has_country_flag = restore_the_spanish_empire }
-					SPC = { has_country_flag = restore_the_spanish_empire }
+					IBR = { has_country_flag = restore_the_spanish_empire }
 				}
 				OR = {
-					war_with = SPC
+					war_with = IBR
 					war_with = SPA
 				}
 			}
@@ -3914,16 +3856,6 @@ country_event = {
 			}
 		}
 		random_country = {
-			limit = {
-				tag = SPC
-				has_country_flag = restore_the_spanish_empire
-				is_greater_power = no
-			}
-			THIS = {
-				diplomatic_influence = { who = SPC value = -100 }
-			}
-		}
-		random_country = {
 			limit = { has_country_flag = restore_the_spanish_empire }
 			leave_alliance = THIS
 			relation = { who = THIS value = -100 }
@@ -3955,8 +3887,8 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = SPC
-			}
+			tag = IBR
+		}
 		owns = 1689
 		OR = {
 			government = hms_government
@@ -4275,7 +4207,7 @@ country_event = {
 		NOT = { has_global_flag = carlists_pacified }
 		OR = {
 			tag = SPA
-			tag = SPC
+			tag = IBR
 		}
 	}
 	

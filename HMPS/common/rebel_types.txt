@@ -1756,12 +1756,6 @@ carlist_rebels = {
 	}
 	
 	demands_enforced_effect = {
-		SPA = {
-			all_core = {
-				remove_core = SPA
-				add_core = SPC
-			}
-		}
 		clr_country_flag = theocratic_government
 		clr_country_flag = communist_gov
 		clr_country_flag = absolute_monarchy_gov
@@ -1771,7 +1765,6 @@ carlist_rebels = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
-		change_tag = SPC
 		ruling_party_ideology = reactionary
 		political_reform = none_voting
 		political_reform = party_appointed
@@ -1855,12 +1848,6 @@ christino_rebels = {
 		factor = 1.1
 		
 		modifier = {
-			factor = 0
-			country = { 
-				NOT = { tag = SPC }
-			}
-		}
-		modifier = {
 			factor = 2
 			location = {
 				has_province_modifier = christino_sympathies
@@ -1869,13 +1856,7 @@ christino_rebels = {
 		modifier = {
 			factor = 0
 			country = { 
-				NOT = {
-					OR = {
-						government = hms_government
-						government = prussian_constitutionalism
-						government = absolute_monarchy
-					}
-				}
+				government = hms_government
 			}
 		}
 		modifier = {
@@ -1918,15 +1899,6 @@ christino_rebels = {
 		modifier = {
 			factor = 0
 			NOT = { has_pop_religion = catholic }
-		}
-		modifier = {
-			factor = 0
-			location = {
-				OR = {
-					NOT = { is_core = SPC }
-					is_capital = yes
-				}
-			}
 		}
 		modifier = {
 			factor = 1.015
@@ -2001,12 +1973,6 @@ christino_rebels = {
 	}
 	
 	demands_enforced_effect = {
-		SPC = {
-			all_core = {
-				remove_core = SPC
-				add_core = SPA
-			}
-		}
 		clr_country_flag = theocratic_government
 		clr_country_flag = communist_gov
 		clr_country_flag = absolute_monarchy_gov
@@ -3285,18 +3251,6 @@ liberal_rebels = {
 					}
 				}
 			}
-		}
-		modifier = {
-			factor = 0.1
-			country = {
-				tag = SPC
-				OR = {
-					government = hms_government
-					government = prussian_constitutionalism
-					government = absolute_monarchy
-				}
-			}
-			pop_majority_ideology = liberal
 		}
 		modifier = {
 			factor = 0.25

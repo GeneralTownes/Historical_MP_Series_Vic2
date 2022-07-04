@@ -55,7 +55,6 @@ political_decisions = {
 			NOT = { primary_culture = french }
 			NOT = { tag = SPA }
 			NOT = { tag = IBR }
-			NOT = { tag = SPC }
 			ai = yes
 			OR = {
 				owns = 1683 #Taza
@@ -69,15 +68,6 @@ political_decisions = {
 		allow = {
 			OR = {
 				SPA = {
-					OR = {
-						owns = 1683 #Taza
-						owns = 1680 #Fez
-						owns = 1690 #Marrakesh
-						owns = 1694 #Agadir
-					}
-					#money = 75000
-				}
-				SPC = {
 					OR = {
 						owns = 1683 #Taza
 						owns = 1680 #Fez
@@ -108,9 +98,8 @@ political_decisions = {
 			random_country = {
 				limit = {
 					OR = {
-						AND = {  tag = FRA exists = yes }
+						AND = { tag = FRA exists = yes }
 						tag = SPA
-						tag = SPC
 					}
 					OR = {
 						owns = 1683 #Taza

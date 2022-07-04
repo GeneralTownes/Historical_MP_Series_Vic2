@@ -920,29 +920,16 @@ political_decisions = {
 			}
 			1455 = {
 				NOT = { owned_by = SPA }
-				NOT = { owned_by = SPC }
 				owner = {
-					NOT = { vassal_of = SPC }
 					NOT = { vassal_of = SPA }
 				}
 			}
-			OR = {		
-				SPA = {
-					is_greater_power = no
-					any_owned_province = {
-						OR = {
-							region = SPA_610
-							region = SPA_2517
-						}
-					}
-				}
-				SPC = {
-					is_greater_power = no
-					any_owned_province = {
-						OR = {
-							region = SPA_610
-							region = SPA_2517
-						}
+			SPA = {
+				is_greater_power = no
+				any_owned_province = {
+					OR = {
+						region = SPA_610
+						region = SPA_2517
 					}
 				}
 			}
@@ -962,8 +949,6 @@ political_decisions = {
 			NOT = {
 				truce_with = SPA
 				SPA = { war = yes }
-				truce_with = SPC
-				SPC = { war = yes }
 			}
 		}
 		
@@ -971,10 +956,7 @@ political_decisions = {
 			set_global_flag = tried_to_buy_spanish_pacific
 			random_country = {
 				limit = {
-					OR = {
-						tag = SPA
-						tag = SPC
-					}
+					tag = SPA
 					exists = yes
 					any_owned_province = {
 						OR = {

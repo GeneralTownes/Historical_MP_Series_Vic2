@@ -761,26 +761,6 @@ political_decisions = {
 					}
 				}
 			}
-			SPC = {
-				random_owned = { limit = { province_id = 2209 is_colonial = yes }
-					owner = {
-					add_casus_belli = {
-						target = USA
-						type = place_in_the_sun
-						months = 30
-						}
-					}
-				}
-				random_owned = { limit = { province_id = 2209 is_colonial = no }
-					owner = {
-					add_casus_belli = {
-						target = USA
-						type = acquire_state
-						months = 30
-						}
-					}
-				}
-			}
 			any_state = {
 				limit = { is_slave = yes }
 				any_pop = { consciousness = -1 }

@@ -64,6 +64,11 @@ govt_flag = {
 	government = presidential_dictatorship
 	flag = theocracy
 }
+govt_flag = 
+{
+	government = hms_government
+	flag = theocracy
+}
 
 # Technologies
 post_napoleonic_thought = 1

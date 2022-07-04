@@ -4,7 +4,7 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = IBR
-				tag = SPC
+				tag = IBR
 			}
 			has_country_flag = reconquista_frca
 			OR = {

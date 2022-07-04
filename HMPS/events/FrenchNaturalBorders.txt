@@ -10,7 +10,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = SPA
-			tag = SPC
+			tag = IBR
 		}
 		OR = { 
 			national_provinces_occupied = 0.75
@@ -77,7 +77,6 @@ country_event = {
 	
 	immediate = {
 		FRA = { set_country_flag = signed_treay_of_madrid }
-		SPC = { set_country_flag = signed_treay_of_madrid }
 		SPA = { set_country_flag = signed_treay_of_madrid }
 	}
 
@@ -342,7 +341,6 @@ country_event = {
 		set_global_flag = french_natural_borders
 		prestige = 100
 		war_exhaustion = -20
-		relation = { who = SPC value = 50 }
 		WLL = { all_core = { add_core = THIS } }
 		LUX = { all_core = { add_core = THIS } }
 		any_owned = {
@@ -423,7 +421,6 @@ country_event = {
 			set_country_flag = chose_door_one
 		}
 		prestige = 10
-		relation = { who = SPC value = -50 }
 		relation = { who = SPA value = -50 }
 		relation = { who = NGF value = -50 }
 		relation = { who = SGF value = -50 }
