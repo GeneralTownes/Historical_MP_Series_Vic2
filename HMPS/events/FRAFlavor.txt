@@ -1288,7 +1288,7 @@ country_event = {
 		primary_culture = french
 		is_greater_power = yes
 		capital = 425
-		war = no
+		has_country_flag = invasion_of_algeria
 		is_disarmed = no
 		ALD = {
 			exists = yes
@@ -1302,21 +1302,12 @@ country_event = {
 			has_country_modifier = punitive_effects
 			war_policy = pacifism
 			casus_belli = ALD
-			year = 1890
-			nationalism_n_imperialism = 1
+			year = 1850
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 3
-		modifier = {
-			factor = 4
-			has_country_flag = algerian_rebellion
-		}
-		modifier = {
-			factor = 3
-			ai = no
-		}
+		days = 1
 	}
 
 	option = {
@@ -1352,14 +1343,6 @@ country_event = {
 	}
 	option = {
 		name = "EVT37235OPTB"
-		prestige = -5
-		relation = { who = ALD value = 25 }
-		ai_chance = {
-			factor = 0
-		}
-	}
-	option = {
-		name = "EVT37235OPTC"
 		set_country_flag = no_more_algerian_rebellion
 		ai_chance = {
 			factor = 0
@@ -1510,7 +1493,10 @@ country_event = {
 		
 	mean_time_to_happen = { days = 15 }
 	
-	immediate = { ALD = { capital =  1713 } }
+	immediate = {
+		ALD = { capital =  1713 }
+		set_country_flag = invasion_of_algeria
+	}
 	
 	option = {
 		name = "EVT37238OPTA"
@@ -1626,13 +1612,11 @@ country_event = {
 	mean_time_to_happen = { months = 6 }
 	
 	immediate = {
-#		ALD_1714 = { secede_province = THIS add_core = ALD }
 		ALD_1718 = { secede_province = THIS add_core = ALD }
 	}
 	
 	option = {
 		name = "EVT37240OPTA"
-#		ALD_1714 = { secede_province = ALD any_pop = { literacy = -0.99 } }
 		ALD_1718 = { secede_province = ALD any_pop = { literacy = -0.99 } }
 		ALD = { 
 			civilized = no 

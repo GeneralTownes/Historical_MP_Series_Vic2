@@ -3227,10 +3227,9 @@ EVTDESC37230;The island of Tahiti in the Pacific Ocean, ruled by the primitive Q
 EVT37230OPTA;We will approve the treaty.;;;;;;;;;;;;;
 EVT37230OPTB;We have no interest in the Pacific.;;;;;;;;;;;;;
 EVTNAME37235;The Algerian Rebellion;;;;;;;;;;;;;
-EVTDESC37235;Not long ago, Algerian bitterness towards Ottoman rule made them almost welcome French intervention. Our colonization of Algiers and the northern coast, however, has given rise to a resistance under the leadership of Emir Abdelkader El Djezairi. The man has united the Maghrebi tribes, and now has launched attacks on several colonial settlements.;;;;;;;;;;;;;
+EVTDESC37235;Not long ago, Algerian bitterness towards Ottoman rule made them almost welcome French intervention. Our colonization of Algiers and the northern coast, however, has given rise to a resistance under the leadership of Emir Abdelkader El Djezairi. The man has united the Maghrebi tribes, and now has launched attacks on several colonial settlements.\n\n§RThis event will repeat to give CBs on Algeria until it is annexed.\nFrance must be a GP, Paris the capital, before 1850, and not have a truce with neighbour Algeria.§!;;;;;;;;;;;;;
 EVT37235OPTA;This must be dealt with immediately.;;;;;;;;;;;;;
-EVT37235OPTB;It would be better to parley with the Emir.;;;;;;;;;;;;;
-EVT37235OPTC;Do not bother me with this again.;;;;;;;;;;;;;
+EVT37235OPTB;Do not bother me with this again. (Prevent event firing);;;;;;;;;;;;;
 EVTNAME10400;The French Revolution of $YEAR$;;;;;;;;;;;;;
 EVTDESC10400;The unrest in France hit its height recently, with crowds streaming through the streets of Paris and erecting barricades. In what was widely regarded as an accident, a French guardsmen fired his musket on the citizens and set off a massacre. The resulting conflagration has swept the city, with crowds chanting 'Long live the Reform!' and 'Down with the King!'. Despite assurances that everything is under control, the king has abdicated and fled the country… leaving a provisional government to step in and declare the Second Republic. \n \n Now we have the task of building this new government, starting with a presidential election to determine its new Head of State. Considering the popularity of Louis-Napoléon Bonaparte among the masses, and the granting of universal voting rights, some are say that he may in fact take the leadership. If he does, who knows what this may mean for France?;;;;;;;;;;;;;
 EVT10400OPTA;Liberté! Égalité! Fraternité!;;;;;;;;;;;;;
