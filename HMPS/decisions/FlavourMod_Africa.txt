@@ -540,7 +540,6 @@ political_decisions = {
 				war_with = GCF
 				war_with = ENG
 				war_with = ITA
-				war_with = ITS
 				war_with = KUK
 				war_with = RUS
 				war_with = JAP
@@ -1397,10 +1396,7 @@ political_decisions = {
 	italian_somaliland = {
 		picture = italian_somaliland
 		potential = { 
-			OR = {
-				tag = ITA
-				tag = ITS
-			}
+			tag = ITA
 			is_greater_power = yes
 			has_global_flag = berlin_conference
 			NOT = { government = proletarian_dictatorship }

@@ -573,7 +573,6 @@ political_decisions = {
 						alliance_with = ENG
 						alliance_with = RUS
 						alliance_with = ITA
-						alliance_with = ITS
 					}
 				}
 				GER = {
@@ -619,17 +618,10 @@ political_decisions = {
 			primary_culture = french
 			is_greater_power = yes
 			capital = 425
-			OR = {
-				ITA = {
-					exists = yes
-					NOT = { war_with = THIS }
-					owns = 744 #Florence
-				}
-				ITS = {
-					exists = yes
-					NOT = { war_with = THIS }
-					owns = 744 #Florence
-				}
+			ITA = {
+				exists = yes
+				NOT = { war_with = THIS }
+				owns = 744 #Florence
 			}
 			owns = 465 #Annecy
 			owns = 721 #Aosta
@@ -651,14 +643,6 @@ political_decisions = {
 			any_owned = {
 				limit = { is_core = ITA  }
 				secede_province = ITA
-			}
-			721 = { remove_core = ITS }
-			465 = { remove_core = ITS }
-			466 = { remove_core = ITS }
-			472 = { remove_core = ITS }
-			any_owned = {
-				limit = { is_core = ITS  }
-				secede_province = ITS
 			}
 		}
 		
@@ -876,19 +860,11 @@ political_decisions = {
 			capital = 425
 			has_country_flag = 2nd_empire
 			has_country_modifier = louis_napoleon_iii
-			OR = {
-				ITA = {
-					ai = yes
-					exists = yes
-					owns = 750 #Viterbo
-					NOT = { owns = 749 } #Rome
-				}
-				ITS = {
-					ai = yes
-					exists = yes
-					owns = 750 #Viterbo
-					NOT = { owns = 749 } #Rome
-				}
+			ITA = {
+				ai = yes
+				exists = yes
+				owns = 750 #Viterbo
+				NOT = { owns = 749 } #Rome
 			}
 			PAP = {
 				government = theocracy
@@ -905,7 +881,6 @@ political_decisions = {
 		allow = {
 			NOT = { any_greater_power = { war_with = THIS } }
 			NOT = { war_with = ITA }
-			NOT = { war_with = ITS }
 			is_greater_power = yes
 		}
 		
@@ -922,11 +897,7 @@ political_decisions = {
 			relation = {
 				who = ITA
 				value = -50
-			}
-			relation = {
-				who = ITS
-				value = -50
-			}			
+			}		
 		}
 		
 		ai_will_do = { factor = 1 }

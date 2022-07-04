@@ -427,7 +427,6 @@ country_event = {
 		relation = { who = PRU value = -50 }
 		relation = { who = KUK value = -50 }
 		relation = { who = ITA value = -50 }
-		relation = { who = ITS value = -50 }
 		relation = { who = SAR value = -50 }
 		relation = { who = NET value = -50 }
 		any_pop = {
@@ -470,7 +469,6 @@ country_event = {
 					}
 					is_core = ITA
 					region = ITA_1
-					is_core = ITS
 					is_core = CAT
 				}
 			}

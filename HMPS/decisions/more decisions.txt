@@ -150,10 +150,7 @@ political_decisions = {
 				is_culture_group = italian
 			}
 			is_greater_power = yes
-			NOT = { 
-				exists = ITA
-				exists = ITS
-			}
+			exists = ITA
 			OR = {
 				any_owned_province = { is_core = ITA }
 				SAR = { in_sphere = THIS ai = yes }
@@ -200,10 +197,7 @@ political_decisions = {
 				tag = YUG
 			}
 			is_greater_power = yes
-			OR = {
-				exists = ITA
-				exists = ITS
-			}
+			exists = ITA
 			ITA = {	vassal_of = THIS }
 			OR = {
 				AUS_729 = { owned_by = THIS }	#Venetia
@@ -229,43 +223,6 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	outside_italia_irredenta_ITS = {
-		potential = {
-			NOT = {
-				tag = AUS
-				tag = KUK
-				tag = YUG
-			}
-			is_greater_power = yes
-			OR = {
-				exists = ITA
-				exists = ITS
-			}
-			ITS = {	vassal_of = THIS }
-			OR = {
-				AUS_729 = { owned_by = THIS }	#Venetia
-				AUS_734 = { owned_by = THIS }	#Trent
-				AUS_736 = { owned_by = THIS }	#Littoral
-				AUS_780 = { owned_by = THIS }	#Dalmatia
-			}
-		}
-		allow = {
-			relation = {
-				who = ITS
-				value = 150
-			}
-		}
-		
-		effect = {
-			AUS_729 = { secede_province = ITS }	#Venetia
-			AUS_734 = { secede_province = ITS }	#Trent
-			AUS_736 = { secede_province = ITS }	#Littoral
-			AUS_780 = { secede_province = ITS }	#Dalmatia
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	austrian_outside_italy = {
 		picture = italian_islands
 		potential = {
@@ -276,7 +233,6 @@ political_decisions = {
 			is_greater_power = yes
 			NOT = { 
 				exists = ITA
-				exists = ITS
 			}
 			NOT = {
 				has_country_flag = austrian_outside_italy
@@ -400,7 +356,6 @@ political_decisions = {
 			473 = { owned_by = THIS }
 			NOT = { 
 				exists = ITA
-				exists = ITS
 			}
 		}
 		allow = {
@@ -434,10 +389,7 @@ political_decisions = {
 	}
 	ITA_AUS_VEN = {
 		potential = {
-			OR = {
-				tag = ITA
-				tag = ITS
-			}
+			tag = ITA
 			is_vassal = no
 			has_country_flag = AUS_ITA_treaty
 			NOT = { has_country_flag = ITA_AUS_VEN }

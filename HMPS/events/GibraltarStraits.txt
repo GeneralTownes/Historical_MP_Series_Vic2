@@ -18,7 +18,6 @@ country_event = {
 			tag = IBR
 			tag = SAR
 			tag = ITA
-			tag = ITS
 			tag = PAR
 			tag = MOD
 			tag = LUC

@@ -28,8 +28,7 @@ political_decisions = {
 				tag = SVY
 			}
 			NOT = { 
-				exists = ITA 
-				exists = ITS
+				exists = ITA
 			}
 			NOT = { has_country_flag = plombieres }
 			owns = 465
@@ -153,10 +152,7 @@ political_decisions = {
 		potential = {
 			OR = {
 				AND = { 
-					OR = {
-						tag = ITA
-						tag = ITS
-					}
+					tag = ITA
 					NOT = { exists = SAR }
 					NOT = { exists = SVY }
 				}
@@ -164,14 +160,12 @@ political_decisions = {
 					tag = SAR
 					NOT = { 
 						exists = ITA
-						exists = ITS
 					}
 				}
 				AND = { 
 					tag = SVY
 					NOT = { 
 						exists = ITA
-						exists = ITS
 					}
 				}
 			}
@@ -201,21 +195,18 @@ political_decisions = {
 			badboy = -10
 			465 = {
 				remove_core = ITA
-				remove_core = ITS
 				remove_core = THIS
 				add_core = FRA
 				secede_province = FRA
 			}
 			466 = {
 				remove_core = ITA
-				remove_core = ITS
 				remove_core = THIS
 				add_core = FRA
 				secede_province = FRA
 			}
 			472 = {
 				remove_core = ITA
-				remove_core = ITS
 				remove_core = THIS
 				add_core = FRA
 				secede_province = FRA
@@ -487,18 +478,13 @@ political_decisions = {
 			OR = {
 				tag = SAR
 				tag = ITA
-				tag = ITS
 			}
 			OR = {
 				NOT = { 
 					exists = ITA 
-					exists = ITS
 				}
 				AND = {
-					OR = {
-						tag = ITA
-						tag = ITS
-					}
+					tag = ITA
 					exists = SIC
 				}
 			}
@@ -563,10 +549,7 @@ political_decisions = {
 	law_of_guarantees = {
 		picture = law_of_guarantees
 		potential = {
-			OR = {
-				tag = ITA
-				tag = ITS
-			}
+			tag = ITA
 			NOT = { has_country_flag = law_of_guarantees }
 		}
 
@@ -628,10 +611,7 @@ political_decisions = {
 		picture = italia_irredenta
 		potential = {
 			NOT = { has_country_flag = AUS_ITA_treaty }
-			OR= {
-				tag = ITA
-				tag = ITS
-			}
+			tag = ITA
 			is_independant = yes
 			OR = {
 				AND = { owns = 727 NOT = { has_global_flag = italian_claimed_venetia } } #Lombardy
@@ -814,7 +794,6 @@ political_decisions = {
 			ai = yes
 			NOT = {
 				exists = ITA
-				exists = ITS
 				has_country_flag = war_italian_independence
 			}
 			OR = {
@@ -951,7 +930,6 @@ political_decisions = {
 			is_culture_group = italian
 			NOT = {
 				exists = ITA
-				exists = ITS
 				has_global_flag = italian_call_to_union
 				has_global_flag = garibaldi_redshirts
 			}
@@ -1156,10 +1134,7 @@ political_decisions = {
 	treaty_of_ouchy = {
 		picture = treaty_signing
 		potential = {
-			OR = {
-				tag = ITA
-				tag = ITS
-			}
+			tag = ITA
 			has_country_flag = guerra_di_libia
 			NOT = { has_country_flag = treaty_of_ouchy }
 		}
@@ -1347,10 +1322,7 @@ political_decisions = {
 	conquest_of_the_adriatic = {
 	picture = conquest_adriatic
 		potential = {
-			OR = {
-				tag = ITA
-				tag = ITS
-			}
+			tag = ITA
 			NOT = { has_country_flag = conquest_adriatic_happened }
 		}
 		
@@ -1382,10 +1354,7 @@ political_decisions = {
 	reclaim_italian_lands = {
 	picture = reclaim_italian_lands
 		potential = {
-			OR = {
-				tag = ITA
-				tag = ITS
-			}
+			tag = ITA
 			NOT = { has_country_flag = reclaim_italian_lands }
 			has_country_flag = conquest_adriatic_happened
 		}
@@ -1422,10 +1391,7 @@ political_decisions = {
 		potential = {
 			owns = 749
 			NOT = { has_country_flag = vittoriano_built }
-			OR = {
-				tag = ITA
-				tag = ITS
-			}
+			tag = ITA
 			OR = {
 				government = absolute_monarchy
 				government = prussian_constitutionalism
@@ -1480,10 +1446,7 @@ political_decisions = {
 	abolish_italian_minors = {
 		picture = law_of_guarantees
 		potential = {
-			OR = {
-				tag = ITA
-				tag = ITS
-			}
+			tag = ITA
 			has_country_flag = law_of_guarantees
 			any_owned_province = {
 				OR = {

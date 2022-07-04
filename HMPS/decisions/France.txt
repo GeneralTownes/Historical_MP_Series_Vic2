@@ -326,15 +326,9 @@ political_decisions = {
 				war_policy = jingoism
 				war_policy = pro_military
 			}
-			OR = {
-				ITA = {
-					exists = yes
-					NOT = { in_sphere = THIS }
-				}
-				ITS = {
-					exists = yes
-					NOT = { in_sphere = THIS }
-				}
+			ITA = {
+				exists = yes
+				NOT = { in_sphere = THIS }
 			}
 			NOT = {
 				has_country_modifier = punitive_effects
@@ -420,7 +414,6 @@ political_decisions = {
 						is_core = CAT
 						is_core = CRS
 						is_core = ITA
-						is_core = ITS
 						is_core = THIS
 						is_core = SWI
 						AND = {

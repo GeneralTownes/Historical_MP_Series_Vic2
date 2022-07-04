@@ -8,10 +8,7 @@ country_event = {
 	picture = "italoturk"
 	
 	trigger = {
-		OR = {
-			tag = ITA
-			tag = ITS
-		}
+		tag = ITA
 		invention = the_dark_continent
 		is_vassal = no
 		owns = 749

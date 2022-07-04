@@ -50,13 +50,15 @@ country_event = {
 			}
 			remove_core = ITA
 		}
-		ITA = { all_core = { add_core = ITS } }
-		ITA = { all_core = { remove_core = ITA } }
-		set_global_flag = ITS_form
-		release_vassal = ITS
-		create_alliance = ITS
+		release_vassal = ITA
+		ITA = {
+			remove_accepted_culture = south_italian
+			primary_culture = south_italian
+			add_accepted_culture = north_italian
+		}
+		create_alliance = ITA
 		diplomatic_influence = {
-			who = ITS
+			who = ITA
 			value = 300
 		}
 	}
@@ -230,23 +232,6 @@ country_event = {
 			add_accepted_culture = south_italian 
 		}
 		ITA = { set_country_flag = AUS_ITA_treaty }
-		ai_chance = {
-			factor = 25
-		}
-	}
-	option = {
-		name = "To the Sicilians!"
-		SIC = {
-			inherit = LOM
-			inherit = PAP
-			inherit = SRD
-			change_tag = ITS
-			add_accepted_culture = north_italian
-		}
-		ITS = { set_country_flag = AUS_ITA_treaty }
-		ITA = { all_core = { add_core = ITS } }
-		ITA = { all_core = { remove_core = ITA } }
-		set_global_flag = ITS_form
 		ai_chance = {
 			factor = 25
 		}
