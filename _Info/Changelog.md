@@ -143,7 +143,7 @@ Soldier pops concentrate in state capitals, requires 3k soldier pops for 1st bri
 - Guards: Have recon (less than hussars)
 - Aircraft Carriers: Long range, high attack, mid hull
 - Dreadnoughts: Scale better with tech
-- Cruisers: Require small amount of oil to build
+- Cruisers: Require small amount of oil to build, cannot build overseas
 - Submarines: Torpedo attack & high evasion
 #### Tech
 - Heavy Armament: Greatly buffed artillery attack

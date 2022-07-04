@@ -109,7 +109,7 @@ upper_house = {
 }
 
 schools = naval_tech_school
-
+decision = uk_1836_setup
 decision = literacy_ENG
 decision = phat_zombie_eic
 

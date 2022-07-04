@@ -8212,11 +8212,6 @@ country_event = {
 		political_reform = state_press
 		political_reform = state_controlled
 		political_reform = underground_parties
-		social_reform = good_minimum_wage
-		social_reform = eight_hours
-		social_reform = good_subsidies
-		social_reform = good_pensions
-		social_reform = good_health_care
 		nationalize = yes
 
 		set_country_flag = communist_gov

@@ -293,7 +293,7 @@ From;To;Type;Through;Data;Comment
 2036;2048;sea;2901;0;Zanzibar Strait
 2123;2124;sea;2902;0;Comoros-Mayotte
 1772;1757;sea;2781;0;Suez strait
-1412;1875;sea;0;0;Aden Strait
+1412;1875;sea;2783;0;Aden Strait
 
 #
 # European Straits
@@ -368,7 +368,7 @@ From;To;Type;Through;Data;Comment
 1667;1659;land;2843;0;Setto Strait
 1411;1408;sea;2803;0;Gunungsitoli Strait
 1404;1399;land;2813;0;Palak Panang Strait
-1402;1398;sea;2814;0;Tanjungpinang Strait
+1402;1401;sea;2814;0;Tanjungpinang Strait
 1458;1455;land;2848;0;Mindoro Strait
 1458;1459;sea;2848;0;Mindoro Strait
 1458;1460;land;2850;0;Mindoro Strait

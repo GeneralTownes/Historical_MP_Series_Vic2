@@ -112,6 +112,24 @@ country_event = {
 			}
 		}
 		
+		#prevents clerks in colonial provs
+		any_country = {
+			any_owned = {
+				limit = {
+					state_scope = {
+						is_colonial = yes
+					}
+					has_pop_type = clerks
+				}
+				any_pop = {
+					limit = {
+						type = clerks
+					}
+					pop_type = artisans
+				}
+			}
+		}
+		
 		#updating existing country flags
 		any_country = {
 			limit = {
@@ -505,10 +523,6 @@ country_event = {
 						province_id = 780
 						province_id = 782
 						
-						### Aden Strait
-						province_id = 1412
-						province_id = 1875
-						
 						### Japan & Korea
 						province_id = 1403
 						province_id = 1413
@@ -667,6 +681,10 @@ country_event = {
 						province_id = 1757
 						province_id = 1772
 						
+						### Aden Strait
+						province_id = 1412
+						province_id = 1875
+						
 						### Russia
 						province_id = 966
 						province_id = 1049
@@ -721,7 +739,7 @@ country_event = {
 						province_id = 1461
 						province_id = 1411
 						province_id = 1408
-						province_id = 1398
+						province_id = 1401
 						province_id = 1440
 						province_id = 1458
 						province_id = 1459

@@ -98,7 +98,8 @@ The general rule of thumb for this is you can go neutral to friendly, friendly t
 ### 7. Economic Rules
 	A) You cannot willingly go bankrupt.
 	B) No deleting factories in a state you are about to lose to the enemy in a peace offer.
-	C) Cannot take any states in China as an unciv yourself.
+	C) Cannot sphere any China-restricted states.
+	D) Cannot take any China-restricted as an unciv.
 
 ### 8. Releasing Nations and Nation Ruining
 	A) You may only release a nation if it is not nation ruining.
@@ -111,7 +112,7 @@ The general rule of thumb for this is you can go neutral to friendly, friendly t
 	B) You cannot build a CB of ANY kind on the host nation (if it is a non-participant) or declare a war of any kind on the host nation. Doing so will get you f*cking smacked.
 
 ### 10. China Restrictions (optional - campaign dependent)
-	A) Directly owning China is off limits unless there is a Chinese player, with the exception of:
+	A) Directly owning China (China-restricted states) is off limits unless there is a Chinese player, with the exception of:
 		i) Manchuria
 		ii) Formosa
 		iii) Hainan
@@ -119,7 +120,7 @@ The general rule of thumb for this is you can go neutral to friendly, friendly t
 		v) Tibet
 		vi) Xinjiang
 		vii) and any treaty port
-	B) If there is a Chinese player, you are NOT allowed to sphere them until 1865.
+	B) If there is a Chinese player, you are NOT allowed to sphere them.
 <br/>
 
 ## 11. Rationale

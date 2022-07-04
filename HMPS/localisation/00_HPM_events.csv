@@ -4191,6 +4191,7 @@ EVTNAME60167;Tax Relief;;;;;;;;;;;;;
 EVTDESC60167;The situation with $COUNTRY$'s finances has been resolved... for now.;;;;;;;;;;;;;
 EVT60167OPTA;We are so relieved.;;;;;;;;;;;;;
 EVTNAME60110;Anarchist Communes Formed;;;;;;;;;;;;;
+EVTNAME60110B;Vanguard Coup d'Etat;;;;;;;;;;;;;
 EVTNAME60010;Military Coup d'Etat;;;;;;;;;;;;;
 EVT60010OPTA;This is only temporary until the crisis passes.;;;;;;;;;;;;;
 EVTNAME60020;Anarchists Seize Power;;;;;;;;;;;;;

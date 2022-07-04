@@ -1253,7 +1253,6 @@ country_event = {
 		treasury = -1000
 		801 = {
 			secede_province = THIS
-			naval_base = 1
 		}
 		random_country = {
 			limit = {

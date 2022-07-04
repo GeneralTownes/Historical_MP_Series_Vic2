@@ -1760,6 +1760,23 @@ political_decisions = {
 		}
 	}
 	
+	uk_1836_setup = {
+		potential = {
+			tag = ENG
+			always = no
+		}
+		
+		allow = {
+			tag = ENG
+		}
+		
+		effect = {
+			1384 = { add_province_modifier = { name = singapore_port duration = -1 } }
+			1384 = { naval_base = 2 }
+			1384 = { trade_goods = precious_goods }
+		}
+	}
+	
 	france_1836_setup = {
 		picture = constantinople
 		potential = {

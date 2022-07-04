@@ -659,66 +659,25 @@ political_decisions = {
 		}
 	}
 	
-	retake_algeria = {
-		picture = algeria_map
-		potential = {
-			tag = TUR
-			NOT = { has_country_flag = claimed_algeria }
-		}
-		
-		allow = {
-			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
-			}
-			nationalism_n_imperialism = 1
-			owns = 1725
-			war = no
-		}
-		
-		effect = {
-			badboy = 8
-			set_country_flag = claimed_algeria
-			any_country = {
-				limit = {
-					any_owned_province = { is_core = ALD }
-				}
-				add_casus_belli = {
-					target = THIS
-					type = liberate_puppet
-					months = 60
-				}
-			}
-			ALD = {
-				add_casus_belli = {
-					target = THIS
-					type = conquest_any
-					months = 60
-				}
-			}
-		}
-		
-		ai_will_do = { 
-			factor = 0
-		}
-	}
-	
 	integrate_algeria = {
 		picture = algeria_map
 		potential = {
 			tag = TUR
 			NOT = { has_country_flag = algeria_annexed }
-			ALD = { 
-				exists = yes
-				vassal_of = THIS
-				neighbour = THIS
-			}
 		}
 		
 		allow = {
 			OR = {
-				is_greater_power = yes
-				is_secondary_power = yes
+				ALD = { 
+					exists = yes
+					vassal_of = THIS
+					neighbour = THIS
+				}
+				ALD = {
+					all_core = {
+						owned_by = THIS
+					}
+				}
 			}
 			nationalism_n_imperialism = 1
 			owns = 1725

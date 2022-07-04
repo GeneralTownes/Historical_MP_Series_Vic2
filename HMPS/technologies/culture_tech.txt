@@ -999,8 +999,7 @@ nationalism_n_imperialism = {
 		}
 		modifier = {
 			factor = 200
-				tag = FRA
-			}
+			tag = FRA
 			year = 1852
 		}
 		modifier = {

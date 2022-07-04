@@ -567,7 +567,7 @@ country_event = {
 
 country_event = {
 	id = 60100
-	title = "EVTNAME60110"
+	title = "EVTNAME60110B"
 	desc = "EVTDESC60080"
 	news = yes
 	news_title = "EVTNAME60080_NEWS_TITLE"
@@ -608,7 +608,7 @@ country_event = {
 
 country_event = {
 	id = 60110
-	title = "EVTNAME60110"
+	title = "EVTNAME60030"
 	desc = "EVTDESC60080"
 	news = yes
 	news_title = "EVTNAME60080_NEWS_TITLE"
