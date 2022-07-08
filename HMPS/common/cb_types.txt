@@ -1840,15 +1840,16 @@ take_from_sphere = {
 			FROM = { is_vassal = no }
 			THIS = { is_our_vassal = FROM }
 		}
+		FROM = { exists = yes }
 		OR = {
 			FROM = {
-		OR = {
-			capital_scope = { continent = africa }
-			capital_scope = { continent = west_africa }
-			capital_scope = { continent = central_africa }
-			capital_scope = { continent = east_africa }
-			capital_scope = { continent = south_west_africa }
-		}
+				OR = {
+					capital_scope = { continent = africa }
+					capital_scope = { continent = west_africa }
+					capital_scope = { continent = central_africa }
+					capital_scope = { continent = east_africa }
+					capital_scope = { continent = south_west_africa }
+				}
 				civilized = no
 			}
 			FROM = { is_secondary_power = yes }

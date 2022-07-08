@@ -2062,8 +2062,7 @@ political_decisions = {
 				AND = { owns = 48 NOT = { has_global_flag = french_renamed_northern_ontario } }
 				AND = { owns = 37 NOT = { has_global_flag = french_renamed_manitoba } }
 				AND = { owns = 13 NOT = { has_global_flag = french_renamed_columbia } }
-				AND = { owns = 48 NOT = { has_global_flag = french_renamed_columbia } }
-				AND = { owns = 1 NOT = { has_global_flag = french_renamed_columbia } }
+				AND = { owns = 78 NOT = { has_global_flag = french_renamed_washington } }
 				
 			}
 		}
