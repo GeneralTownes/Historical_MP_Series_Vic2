@@ -318,12 +318,15 @@ political_decisions = {
 		potential = {
 			tag = RUS
 			MGL = { exists = yes vassal_of = THIS }
-			has_country_flag = all_of_manchuria
 		}
 		allow = {
 			war = no
 			revolution_n_counterrevolution = 1
 			is_greater_power = yes
+			OR = {
+				has_country_flag = all_of_manchuria
+				mass_politics
+			}
 		}
 		effect = {
 			inherit = MGL

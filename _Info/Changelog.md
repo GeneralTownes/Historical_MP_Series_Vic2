@@ -95,7 +95,7 @@ Everything else is our own (as far as I remember).
 - 70& lower assimilation on culture-cores with your core
 - 85% lower assimilation on culture-cores without your core
 - Can manually core overseas (UK can't core Canada & Australia until 1900)
-- Can gain and remove cores faster (and non-existent tag cores with Mass Pol)
+- Can gain and remove cores faster (and remove non-existent, non-same cultural union tag cores with Mass Pol.)
 #### Immigration
 - New World buff reduces 1900+
 - Attraction from reforms greatly increased

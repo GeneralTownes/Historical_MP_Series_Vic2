@@ -1278,14 +1278,16 @@ province_event = {
 			any_core = {
 				exists = yes
 				NOT = { tag = THIS }
-				NOT = { is_cultural_union = THIS }			
+				NOT = { is_cultural_union = THIS }
+				NOT = { is_culture_group = THIS }
 			}
 			AND = {
 				owner = { mass_politics = 1 }
 				any_core = {
 					exists = no
 					NOT = { tag = THIS }
-					NOT = { is_cultural_union = THIS }			
+					NOT = { is_cultural_union = THIS }
+					NOT = { is_culture_group = THIS }
 				}
 			}
 		}
@@ -1296,7 +1298,7 @@ province_event = {
 				any_core = {
 					exists = yes
 					NOT = { tag = THIS }
-					NOT = { is_cultural_union = THIS }		
+					NOT = { is_cultural_union = THIS }
 				}
 			}
 		}
@@ -1370,14 +1372,16 @@ province_event = {
 						any_core = {
 							exists = yes
 							NOT = { tag = THIS }
-							NOT = { is_cultural_union = THIS }			
+							NOT = { is_cultural_union = THIS }
+							NOT = { is_culture_group = THIS }
 						}
 						AND = {
 							owner = { mass_politics = 1 }
 							any_core = {
 								exists = no
 								NOT = { tag = THIS }
-								NOT = { is_cultural_union = THIS }			
+								NOT = { is_cultural_union = THIS }
+								NOT = { is_culture_group = THIS }
 							}
 						}
 					}
@@ -1442,10 +1446,22 @@ province_event = {
 			any_owned = {
 				limit = {
 					is_core = THIS
-					any_core = {
-						exists = yes
-						NOT = { tag = THIS }
-						NOT = { is_cultural_union = THIS }
+					OR = {
+						any_core = {
+							exists = yes
+							NOT = { tag = THIS }
+							NOT = { is_cultural_union = THIS }
+							NOT = { is_culture_group = THIS }
+						}
+						AND = {
+							owner = { mass_politics = 1 }
+							any_core = {
+								exists = no
+								NOT = { tag = THIS }
+								NOT = { is_cultural_union = THIS }
+								NOT = { is_culture_group = THIS }
+							}
+						}
 					}
 					NOT = {
 						has_province_modifier = integration_refusal
@@ -1902,14 +1918,16 @@ province_event = {
 			any_core = {
 				exists = yes
 				NOT = { tag = THIS }
-				NOT = { is_cultural_union = THIS }			
+				NOT = { is_cultural_union = THIS }
+				NOT = { is_culture_group = THIS }
 			}
 			AND = {
 				owner = { mass_politics = 1 }
 				any_core = {
 					exists = no
 					NOT = { tag = THIS }
-					NOT = { is_cultural_union = THIS }			
+					NOT = { is_cultural_union = THIS }		
+					NOT = { is_culture_group = THIS }	
 				}
 			}
 		}
@@ -2088,6 +2106,7 @@ province_event = {
 			limit = {
 				NOT = { tag = THIS }
 				NOT = { is_cultural_union = THIS }
+				NOT = { is_culture_group = THIS }
 				any_core = {
 					owned_by = THIS
 					has_province_modifier = national_assimilation_complete

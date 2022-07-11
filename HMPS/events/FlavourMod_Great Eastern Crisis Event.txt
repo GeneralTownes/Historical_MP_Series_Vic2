@@ -434,8 +434,8 @@ country_event = {
 			limit = {
 				is_primary_culture = yes
 			}
-			militancy = -8
-			consciousness = -8
+			militancy = -4
+			consciousness = -2
 		}
 		war = {
 			target = TUR
@@ -461,8 +461,8 @@ country_event = {
 			limit = {
 				is_primary_culture = yes
 			}
-			militancy = 5
-			consciousness = 5
+			militancy = 1
+			consciousness = 1
 		}
 		
 		any_country = {

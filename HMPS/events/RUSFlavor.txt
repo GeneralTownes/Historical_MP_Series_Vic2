@@ -827,10 +827,6 @@ country_event = {	#outer manchuria or also mongolia
 				exists = yes
 			}
 			country_event = 80110
-			#add_country_modifier = {
-			#	name = angry_chinese_reform
-			#	duration = 9125
-			#}
 		}
 		create_vassal = MGL
 		create_vassal = TNT

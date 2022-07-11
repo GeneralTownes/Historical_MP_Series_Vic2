@@ -213,12 +213,6 @@ mass_literacy_in_progress = {
 	icon = 3
 }
 
-angry_chinese_reform = {
-	research_points = 2
-	org_regain = 0.1
-	global_pop_consciousness_modifier = 0.1
-	global_pop_militancy_modifier = -0.1
-}
 ##############################
 
 niger_research = {
@@ -2757,7 +2751,7 @@ integration_refusal = {
 	assimilation_rate = -0.1
 	immigrant_attract = -0.1
 	pop_militancy_modifier = -0.02
-	icon = 7
+	icon = 8
 }
 
 core_integration = {
@@ -3305,7 +3299,7 @@ drang_nach_osten = {
 	immigrant_attract = 0.75
 	farm_rgo_size = 0.5
 	mine_RGO_size = 0.5
-	icon = 19
+	icon = 17
 }
 
 drang_nach_osten_country = {
