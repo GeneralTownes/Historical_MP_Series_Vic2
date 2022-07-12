@@ -90,8 +90,8 @@ direct_current = {
 		}
 	}
 	effect = {
-		rgo_output = 0.05
-		factory_throughput = 0.05
+		rgo_output = 0.1
+		factory_throughput = 0.02
 	}
 }
 alternating_current = {
@@ -108,7 +108,7 @@ alternating_current = {
 		}
 	}
 	effect = {
-		rgo_output = 0.05
+		rgo_output = 0.1
 		factory_throughput = 0.02
 	}
 }
@@ -126,7 +126,7 @@ polyphase_system = {
 		}
 	}
 	effect = {
-		rgo_output = 0.05
+		rgo_output = 0.1
 		factory_throughput = 0.02
 	}
 }
@@ -670,10 +670,10 @@ refrigerator_technology = {
 	}
 	effect = {
 		rgo_goods_output = {
-			cattle = 0.2
+			cattle = 0.75
 		}
 		rgo_goods_output = {
-			fruit = 0.05
+			fruit = 0.25
 		}
 		rgo_goods_output = {
 			fish = 0.2
@@ -1533,9 +1533,9 @@ vacuum_tube = {
 		}			
 	}
 	effect = {
-		factory_goods_output = { radio = 0.03 } 
-		factory_goods_output = { telephones = 0.03 } 
-		factory_goods_output = { electric_gear = 0.03 } 
+		factory_goods_output = { radio = 0.05 } 
+		factory_goods_output = { telephones = 0.05 } 
+		factory_goods_output = { electric_gear = 0.1 } 
 	}
 }
 

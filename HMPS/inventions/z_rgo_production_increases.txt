@@ -15,11 +15,11 @@ tractors = {
 	effect = {
 		rgo_goods_output = { cotton = 0.25 }
 		rgo_goods_output = { coffee = 0.05 }
-		rgo_goods_output = { grain = 0.03 }
+		rgo_goods_output = { grain = 0.10 }
 		rgo_goods_output = { opium = 0.05 }
-		rgo_goods_output = { fruit = 0.03 }
-		rgo_goods_output = { cattle = 0.25 }
-		RGO_throughput = 0.10
+		rgo_goods_output = { fruit = 0.40 }
+		rgo_goods_output = { cattle = 0.75 }
+		farm_rgo_eff = 0.1
 	}
 }
 

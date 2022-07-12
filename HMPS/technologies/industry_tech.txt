@@ -961,13 +961,13 @@ bessemer_process = {
 		precious_goods = 0.15
 	}
 	rgo_goods_output = {
-		coal = 0.4
+		coal = 0.75
 	}
 	rgo_goods_output = {
 		iron = 0.5
 	}
 	rgo_goods_output = {
-		copper = 1
+		copper = 1.25
 	}
 	rgo_goods_output = {
 		tin = 1
@@ -1054,13 +1054,13 @@ advanced_metallurgy = {
 	cost = 35000
 
 	rgo_goods_output = {
-		coal = 0.9
+		coal = 1.25
 	}
 	rgo_goods_output = {
-		iron = 0.5
+		iron = 0.75
 	}
 	rgo_goods_output = {
-		copper = 1
+		copper = 1.25
 	}
 	rgo_goods_output = {
 		tin = 1
@@ -1140,6 +1140,9 @@ electric_furnace = {
 	factory_goods_output = {
 		steel = 0.05 
 	}
+	factory_goods_output = {
+		bronze = 0.05 
+	}
 	rgo_goods_output = {
 		coal = 1
 	}
@@ -1147,7 +1150,7 @@ electric_furnace = {
 		iron = 0.5
 	}
 	rgo_goods_output = {
-		copper = 1.5
+		copper = 1.75
 	}
 	rgo_goods_output = {
 		tin = 1
@@ -1221,13 +1224,16 @@ modern_metallurgy = {
 		iron = 1
 	}
 	rgo_goods_output = {
-		copper = 1.5
+		copper = 2
 	}
 	rgo_goods_output = {
 		tin = 1.5
 	}
 	factory_goods_output = {
 		steel = 0.05 
+	}
+	factory_goods_output = {
+		bronze = 0.05 
 	}
 	
 	ai_chance = {

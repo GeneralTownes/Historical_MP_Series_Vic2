@@ -766,6 +766,7 @@ political_decisions = {
 			badboy = 5
 			inherit = EIC
 			inherit = NAG #for dye
+			inherit = BIK #for copper
 			any_pop = {
 				limit = { 
 					culture = british

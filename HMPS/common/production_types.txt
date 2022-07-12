@@ -967,14 +967,14 @@ RGO_template_labourers = {
 cattle_ranch = {
 	template = RGO_template_farmers
 	output_goods = cattle 
-	value = 2.9
+	value = 3
 	farm = yes
 }
 
 coal_mine = {
 	template = RGO_template_labourers
 	output_goods = coal 
-	value = 4.2
+	value = 4.3
 	mine = yes
 }
 
