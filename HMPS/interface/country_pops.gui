@@ -17,11 +17,11 @@ guiTypes = {
 		orientation="UPPER_LEFT"
 	
 		iconType = {
-			 name = "topcolor_icon"
-			 spriteType = "GFX_topcolor"
-			 position = { x= 1000 y = 1000 }
-			 Orientation = "LOWER_RIGHT"
-		 }
+			name = "topcolor_icon"
+			spriteType = "GFX_topcolor"
+			position = { x= 0 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
 	}
 	
 	

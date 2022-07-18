@@ -3,7 +3,6 @@ political_decisions = {
 	specific_trade_policy = {
 		picture = specific_trade_policy
 		potential = {
-			NOT = { has_country_flag = trade_policy_choosing_disabled }
 			exists = yes
 			OR = {
 				civilized = yes

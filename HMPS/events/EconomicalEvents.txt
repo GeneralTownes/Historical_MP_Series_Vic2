@@ -631,12 +631,6 @@ country_event = {
 			}
 		}
 	}
-
-	option = {
-		name = "EVTOPTD22581" #Disable it
-		set_country_flag = trade_policy_choosing_disabled
-		ai_chance = { factor = 0 }
-	}
 }
 
 # Choosing an economic policy - Mercantilism/No Policy/Economic Nationalism
@@ -843,12 +837,6 @@ country_event = {
 			}
 		}
 	}
-
-	option = {
-		name = "EVTOPTD22581" #Disable it
-		set_country_flag = trade_policy_choosing_disabled
-		ai_chance = { factor = 0 }
-	}	
 }
 
 # Choosing an economic policy - Smithianism/No Policy
@@ -1011,12 +999,6 @@ country_event = {
 				overlord = { trade_policy = protectionism }
 			}
 		}
-	}
-
-	option = {
-		name = "EVTOPTD22581" #Disable it
-		set_country_flag = trade_policy_choosing_disabled
-		ai_chance = { factor = 0 }
 	}
 }
 
@@ -1200,11 +1182,5 @@ country_event = {
 				overlord = { trade_policy = protectionism }
 			}
 		}
-	}
-
-	option = {
-		name = "EVTOPTD22581" #Disable it
-		set_country_flag = trade_policy_choosing_disabled
-		ai_chance = { factor = 0 }
 	}
 }
