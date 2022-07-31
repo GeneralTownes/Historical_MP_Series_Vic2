@@ -462,10 +462,13 @@ political_decisions = {
 			change_tag = IBR
 			any_country = {
 				limit = {
-					in_sphere = THIS
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+					is_culture_group = iberian
 				}
 				any_owned = {
-					limit = { is_core = IBR }
 					secede_province = THIS
 				}
 			}
