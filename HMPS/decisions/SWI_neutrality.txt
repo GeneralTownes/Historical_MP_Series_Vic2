@@ -137,6 +137,7 @@ political_decisions = {
 		potential = {
 			has_country_modifier = neutrality
 			ai = yes
+			NOT = { tag = CLN }
 		}
 		
 		allow = {

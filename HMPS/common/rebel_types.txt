@@ -878,12 +878,6 @@ communist_rebels = {
 		political_reform = no_slavery
 		political_reform = mandatory_service
 		random_owned = { limit = { owner = { NOT = { trade_unions = no_trade_unions } } } owner = { political_reform = state_controlled } }
-		social_reform = good_minimum_wage
-		social_reform = eight_hours
-		social_reform = good_subsidies
-		social_reform = good_pensions
-		social_reform = good_health_care
-		social_reform = good_schools
 		nationalize = yes
 		add_country_modifier = {
 			name = national_confusion

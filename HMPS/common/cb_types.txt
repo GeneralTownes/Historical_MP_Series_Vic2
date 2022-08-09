@@ -132,6 +132,7 @@ status_quo
 negotiated_state_transfer
 negotiated_substate_transfer
 negotiated_puppet_release
+fake_war
 }
 
 # 'No CB'
@@ -8984,4 +8985,35 @@ negotiated_puppet_release = {
 			value = 0.00
 		}
 	}
+}
+
+fake_war_cb = {
+	sprite_index = 1
+	is_triggered_only = yes
+	months = 1
+	crisis = no
+	
+	constructing_cb = no
+
+	badboy_factor = 0
+	prestige_factor = 0
+	peace_cost_factor = 0
+	penalty_factor = 0
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 0
+	
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+
+	can_use = {	}
+
+	po_remove_prestige = yes
+	
+	tws_battle_factor = 2.0
+	
+	war_name = WAR_FAKE_NAME
 }

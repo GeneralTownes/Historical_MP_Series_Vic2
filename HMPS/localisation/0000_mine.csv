@@ -851,3 +851,13 @@ wooden_sails_1920_desc;Wooden sail ships do not benefit from the advancement of 
 revoked_funding;Revoked Funding;;;;;;;;;;;;;
 SPA_absolute_monarchy;The Kingdom of Spain;;;;;;;;;;;;;
 SPA_prussian_constitutionalism;The Kingdom of Spain;;;;;;;;;;;;;
+start_fake_war_title;§EFake War§!;;;;;;;;;;;;;
+start_fake_war_desc;Start a fake war for the purpose of regaining control over puppet units.;;;;;;;;;;;;;
+end_fake_war_title;§EEnd Fake War§!;;;;;;;;;;;;;
+end_fake_war_desc;End the fake war.;;;;;;;;;;;;;
+EVTNAME7777934;Declare Fake War;;;;;;;;;;;;;
+EVTDESC7777934;-;;;;;;;;;;;;;
+EVT7777934OPTA;-;;;;;;;;;;;;;
+EVTNAME7777935;End Fake War;;;;;;;;;;;;;
+EVTDESC7777935;-;;;;;;;;;;;;;
+EVT7777935OPTA;-;;;;;;;;;;;;;

@@ -28,7 +28,7 @@ This ruleset deals with in-game mechanics, and how players should act with them.
 		iii) Exception: Declaring to take cores (cannot escalate this war to include any other war goal)
 	C) Attacking spherelings of a player allow that player to join and escalate the conflict into a player-war without stating intent to join.
 		i) Adding CBs on a sphereling whilst fighting the overlord will count towards total warscore.
-		ii) Can separately declare on a player's sphereling with mil access cb if already fighting that player. Does not count toward total warscore & cannot add any additional CBs on that sphereling.
+		ii) Can separately declare on a player's sphereling with mil access cb / humiliate if already fighting that player. Does not count toward total warscore & cannot add any additional CBs on that sphereling.
 	D) For the first year of the war, only declared wargoals may be added by the attacker. Defenders are limited to 20% above what the attackers declared for up to 101% warscore. After one year, wars "escalate" and you may add what you want up to 101% warscore if it is not already.
 		i) In the event that a player war becomes a great war, none of this at all matters and you can immediately add up to 101% warscore in tickers whenever you want.
 	E) Wars that are fought / coordinated 'together' (at GM discretion) are considered merged wars, with all the same rules applying to the combined wars. Read Rule J in Peace Offers & Separate Peace.
@@ -84,7 +84,7 @@ The general rule of thumb for this is you can go neutral to friendly, friendly t
 		i) If neutral is chosen, the enemies of the CB-enforcing side cannot have troops in this land.
 		ii) A DMZ has no neutral access restrictions.
 	M) Declaring a war with a low cost CB to preemptively block a larger CB aimed at you (must be building or built) is prohibited.
-	N) Cannot surrender away land occupied by a different enemy (this INCLUDES transfer CBs).
+	N) Cannot surrender away land occupied by a different enemy (or if surrendered).
 		i) This INCLUDES transfer CBs.
 		ii) Players separately fighting ai must adhere to this on the defender's behalf when peacing the ai.
 	O) The victorious side must offer the peace within 1 year of the surrender being announced (if permitted to add war goals).

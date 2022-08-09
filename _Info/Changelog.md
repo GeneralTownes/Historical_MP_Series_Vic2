@@ -7,7 +7,7 @@
 - Population growth decision and conditions UI changes taken from The Grand Combo (Jman & others)
 - Unciv rework from Harolds Triumph (Atlas), built from PUIR (Reno)
 - Revanchism buffs taken from PUIR (Reno)
-- Generals UI change, Trade Agreements & Tech/Inventions taken from Victoria Universalis (KevinG)
+- Generals UI change, Trade Agreements & Tech/Inventions and Fake War idea taken from Victoria Universalis (KevinG)
 - Aircraft Carrier & Bomber icons and sprite from CWE mod (settintotrieste & others)
 - Liberate & Puppet CB, Steal Puppet CB, map textures from HFME (Jman & others)
 - Protectorate CBs from HPM 0.4.6 (arkhometha)
@@ -228,3 +228,5 @@ Many nations no longer need (only) GP for flava, or high prestige. War policy re
 - State
 - State (3rd party)
 - Substate
+#### Puppet Units
+- Can start a fake war to regain control over all puppet units
