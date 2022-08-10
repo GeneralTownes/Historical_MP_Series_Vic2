@@ -106,6 +106,7 @@ political_decisions = {
 			NOT = {
 				has_global_flag = marching_on_the_trail_of_tears
 			}
+			NOT = { year = 1900 }
 		}
 		
 		allow = {
@@ -217,6 +218,7 @@ political_decisions = {
 			}
 			owns = 122
 			year = 1874
+			NOT = { year = 1900 }
 		}
 		
 		allow = {

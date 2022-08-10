@@ -902,20 +902,24 @@ social_reforms = {
 	}
 	
 	unemployment_subsidies = {
+		administrative = yes
 		next_step_only = yes
 		no_subsidies = {
 		}
 		trinket_subsidies = {
 			unemployment_benefit = 0.50
 			global_immigrant_attract = 0.20
+			administrative_multiplier = 1
 		}
 		low_subsidies = {
 			unemployment_benefit = 1
 			global_immigrant_attract = 0.45
+			administrative_multiplier = 2
 		}
 		acceptable_subsidies = {
 			unemployment_benefit = 1.0
 			global_immigrant_attract = 0.45
+			administrative_multiplier = 4
 			allow = { 
 				ai = no
 				NOT = { has_country_flag = upper_house_no_ubi }
@@ -924,6 +928,7 @@ social_reforms = {
 		good_subsidies = {
 			unemployment_benefit = 1.0
 			global_immigrant_attract = 0.45
+			administrative_multiplier = 10
 			allow = { 
 				ai = no
 				NOT = { has_country_flag = upper_house_no_ubi }
@@ -931,25 +936,29 @@ social_reforms = {
 		}
 	}
 	pensions = {
+		administrative = yes
 		next_step_only = yes
 		no_pensions = {
 		}
 		trinket_pensions = {
-			pension_level	= 0.25
+			pension_level = 0.25
 			global_immigrant_attract = 0.01
+			administrative_multiplier = 1
 		}
 		low_pensions = {
-			pension_level	= 0.50
+			pension_level = 0.50
 			global_immigrant_attract = 0.05
+			administrative_multiplier = 2
 		}
 		acceptable_pensions = {
-			pension_level	= 0.75
+			pension_level = 0.75
 			global_immigrant_attract = 0.10
+			administrative_multiplier = 3
 		}
 		good_pensions = {
-			pension_level	= 1
-			#global_population_growth = 0.001
+			pension_level = 1
 			global_immigrant_attract = 0.2
+			administrative_multiplier = 4
 		}
 	}
 	health_care = {
@@ -964,20 +973,17 @@ social_reforms = {
 			allow = { has_country_flag = medicine_invented }
 		}
 		low_health_care = {
-			#global_population_growth = 0.001
 			administrative_multiplier = 2
 			global_immigrant_attract = 0.05
 			allow = { has_country_flag = germs_invented }
 		}
 		acceptable_health_care = {
-			#global_population_growth = 0.002
 			administrative_multiplier = 3
 			global_immigrant_attract = 0.2
 			allow = { has_country_flag = gaslights_invented }
 		}
 		good_health_care = {
-			#global_population_growth = 0.002
-			administrative_multiplier = 5
+			administrative_multiplier = 8
 			global_immigrant_attract = 0.5
 			allow = { has_country_flag = electricity_invented }
 		}
@@ -1005,13 +1011,13 @@ social_reforms = {
 			education_efficiency_modifier = 0.1
 			global_assimilation_rate = 0.05
 			global_immigrant_attract = 0.25
-			administrative_multiplier = 3
+			administrative_multiplier = 6
 			allow = { has_country_flag = biologism_invented }
 		}
 	}
 	
 	penal_system = {
-		administrative = yes
+		#administrative = yes	#max no. of reform groups reached - will cause a crash when clicking on budget tab otherwise
 		next_step_only = yes
 		capital_punishment = {
 			core_pop_militancy_modifier = -0.01
@@ -1019,23 +1025,19 @@ social_reforms = {
 		}
 		
 		colonial_transportation = {
-			administrative_multiplier = 1
 		}
 		
 		incarceration = {
-			administrative_multiplier = 1
 		}
 		
 		rehabilitation = {
 			global_immigrant_attract = 0.05
 			global_assimilation_rate = 0.02
 			suppression_points_modifier = -0.2
-			administrative_multiplier = 2
 		}
 	}
 		
 	child_labor = {
-		administrative = yes
 		next_step_only = yes
 		child_labor_legal = {
 			education_efficiency_modifier = -0.1

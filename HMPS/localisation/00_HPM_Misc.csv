@@ -575,7 +575,7 @@ penal_system;Penal System;;;;;;;;;;;;;
 penal_system_l;Penal System;;;;;;;;;;;;;
 colonial_transportation;Transportation;;;;;;;;;;;;;
 colonial_transportation_l;Transportation;;;;;;;;;;;;;
-colonial_transportation_desc;Prisoners are sent to either far away or inhospitable places in the mother-country or to its colonies. This, however, increases the load on the bureaucracy.\n§YThis reform will increase colonial migration but it will also increase the necessity of bureaucrats.§W;;;;;;;;;;;;;
+colonial_transportation_desc;Prisoners are sent to either far away or inhospitable places in the mother-country or to its colonies.\n§YThis reform will increase colonial migration.§W;;;;;;;;;;;;;
 movement_colonial_transportation;Campaign for the Abolition of Capital Punishment;;;;;;;;;;;;;
 incarceration;Incarceration;;;;;;;;;;;;;
 incarceration_l;Incarceration;;;;;;;;;;;;;

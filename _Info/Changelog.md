@@ -45,6 +45,9 @@ Everything else is our own (as far as I remember).
 #### Administration
 - Base of 1.5% bureaucrats required for full admin efficiency from them
 - Require 2% bureaucrats to state colonies
+- Greatly increased admin multiplier on large social reforms
+- Reduced promotion chance based on social reforms
+- Can set maximum percentage of bureaucrats in all states
 #### Parties
 - Anarchists: Rare, similar to socialists, successful rebels will enforce Anarchism
 - Rich pops will never support socialists, communists, anarchists, and very rarely radicals

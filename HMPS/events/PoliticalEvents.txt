@@ -7128,3 +7128,30 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = 7777936
+	title = "EVTNAME7777936"
+	desc = "EVTDESC7777936"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA7777936"
+		set_country_flag = rank_1_crats
+	}
+	
+	option = {
+		name = "EVTOPTB7777936"
+		set_country_flag = rank_2_crats
+	}
+	
+	option = {
+		name = "EVTOPTC7777936"
+		set_country_flag = rank_3_crats
+	}
+	
+	option = {
+		name = "EVTOPTD7777936"
+	}
+}

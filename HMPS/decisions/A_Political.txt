@@ -1,5 +1,22 @@
 political_decisions = {
 
+	set_crat_max = {
+		picture = kaitakushi
+		potential = {
+			ai = no
+			NOT = { has_country_flag = hiding_the_decisions }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			country_event = { id=7777936 days = 0 }
+			clr_country_flag = rank_1_crats
+			clr_country_flag = rank_2_crats
+			clr_country_flag = rank_3_crats
+		}
+	}
+	
 	prevent_colonial_clergy = {
 		picture = native_assimilation_act
 		potential = {
