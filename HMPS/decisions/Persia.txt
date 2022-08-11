@@ -63,7 +63,6 @@ greater_iran = {
 	
 	potential = { 
 		tag = PER
-		civilized = yes
 		NOT = { has_country_flag = greater_iran }
 	}
 		

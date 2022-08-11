@@ -9,6 +9,53 @@ political_decisions = {
 		}
 		effect = {
 		
+			#Indochina & Indonesia LR Reduction
+			any_country = {
+				limit = {
+					exists = yes
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							continent = indochina
+							continent = east_indies
+						}
+						life_rating = 32
+					}
+					life_rating = -1
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							continent = indochina
+							continent = east_indies
+						}
+						life_rating = 32
+					}
+					life_rating = -1
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							continent = indochina
+							continent = east_indies
+						}
+						life_rating = 32
+					}
+					life_rating = -1
+				}
+				any_owned = {
+					limit = {
+						OR = {
+							continent = indochina
+							continent = east_indies
+						}
+						life_rating = 32
+					}
+					life_rating = -1
+				}
+			}
+		
 			#Removing Cultural Union cores at start
 			GER = { all_core = { remove_core = GER } }
 			ITA = { all_core = { remove_core = ITA } }

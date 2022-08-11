@@ -5,4 +5,4 @@ add_core = TKM
 add_core = PER
 terrain = semidesert
 trade_goods = opium
-life_rating = 35
+life_rating = 32
