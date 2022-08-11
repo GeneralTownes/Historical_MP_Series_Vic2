@@ -1,3 +1,3 @@
-name = "HMPS Belle Cartographie Submod by Jman"
+name = "HMPS Belle Cartographie Submod"
 path = "mod/HMPS Belle"
-dependencies = { "HMPS (HFM MP Series)" }
+dependencies = { "HMPS (Historical MP Series)" }

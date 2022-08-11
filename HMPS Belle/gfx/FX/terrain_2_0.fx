@@ -432,7 +432,7 @@ float4 GenerateTiles( TILE_STRUCT v )
 
 
 	// Comment out this line for no colormap
-	y1 = ((y1*2.0f + ColorColor))/3.0f;
+	//y1 = ((y1*2.0f + ColorColor))/3.0f;
 				
 	return y1;
 }

@@ -1,4 +1,4 @@
-name = "HMPS (HFM MP Series)"
+name = "HMPS (Historical MP Series)"
 path = "mod/HMPS"
 user_dir = "HMPS"
 replace_path = "decisions"

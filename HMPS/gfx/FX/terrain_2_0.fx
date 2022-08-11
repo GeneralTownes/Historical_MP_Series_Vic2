@@ -430,7 +430,7 @@ float4 GenerateTiles( TILE_STRUCT v )
 
 
 	// Comment out this line for no colormap
-	y1 = ((y1*2.0f + ColorColor))/3.0f;
+	//y1 = ((y1*2.0f + ColorColor))/3.0f;
 				
 	return y1;
 }
@@ -496,7 +496,6 @@ VS_MAP_OUTPUT VertexShader_Map_General_Low(const VS_INPUT v )
 	float3 P = mul(vPosition, (float4x3)WorldView);
 	Out.vPosition  = mul(float4(P, 1), ProjectionMatrix);
 
-
 	float4 WorldPosition = mul( vPosition, AbsoluteWorldMatrix );
 
 	///////New Stuff
@@ -506,12 +505,12 @@ VS_MAP_OUTPUT VertexShader_Map_General_Low(const VS_INPUT v )
 	
 	Out.vColorTexCoord.xy = float2( WorldX/512.0, WorldY/512.0 );
 	Out.vTexCoord0.xy = float2( WorldX, WorldY );
-	//Out.vColorTexCoord.xy = float2( WorldX, WorldY );
 	
 	WorldX = (ColorMapWidth * WorldPosition.x) / MapWidth;
 	WorldY = (ColorMapHeight * WorldPosition.z) / MapHeight;
 	Out.vTexCoord1.xy = float2( ( WorldX + X_OFFSET)/ColorMapTextureWidth, (WorldY + Z_OFFSET)/ColorMapTextureHeight );
 
+	
 	Out.vTerrainIndexColor.x = ((WorldPosition.x - TerrainIndexOffsetX) + X_MAGIC ) / TerrainIndexSizeX;
 	Out.vTerrainIndexColor.y = ((WorldPosition.z - TerrainIndexOffsetY) + Y_MAGIC ) / TerrainIndexSizeY;
 	
@@ -526,7 +525,7 @@ VS_MAP_OUTPUT VertexShader_Map_General_Low(const VS_INPUT v )
 	Out.vTerrainTexCoord  = TerrainCoord;
 
 	Out.vProvinceId = v.vProvinceId;
-	
+
 	return Out;
 }
 
@@ -604,35 +603,33 @@ float4 PixelShader_Map2_0_General( VS_MAP_OUTPUT v ) : COLOR
 
 float4 PixelShader_Map2_0_General_Low( VS_MAP_OUTPUT v ) : COLOR
 {
-
-	TILE_STRUCT s;
-    s.vTexCoord1 = v.vTexCoord1;
-    s.vColorTexCoord = mul( v.vColorTexCoord, 512.0/16.0 );
-    s.vTerrainIndexColor = v.vTerrainIndexColor;
-    s.vTexCoord0 = v.vTexCoord0.xy;
+	float4 ColorColor = tex2D( ColorTexture, v.vTexCoord1 ); //Coordinates for colormap
     
-    float4 TerrainColor = GenerateTiles( s );
-    //return float4(s.vTexCoord0.xy, 0, 1);
-
-    float Grey = dot( TerrainColor.rgb, GREYIFY ); 
- 	TerrainColor.rgb = Grey;
-	TerrainColor *= White;
-	
-	float2 vProvinceUV = v.vProvinceId + 0.5f;
+    //float Grey = dot( ColorColor.rgb, GREYIFY ); 
+ 	//ColorColor.rgb = Grey;
+	ColorColor *= White;
+    float2 vProvinceUV = v.vProvinceId + 0.5f;
     vProvinceUV /= PROVINCE_LOOKUP_SIZE;
-  
-  	float4 Color1 = tex2D( GeneralTexture, vProvinceUV ) - 0.7;
+   	float4 Color1 = tex2D( GeneralTexture, vProvinceUV ) - 0.7;
 	float4 Color2 = tex2D( GeneralTexture2, vProvinceUV ) - 0.7;
 
 	float vColor = tex2D( StripesTexture, v.vTerrainTexCoord ).a;
 	float4 Color = Color2 * vColor + Color1 * ( 1.0 - vColor );
-	float4 ColorColor = tex2D( ColorTexture, v.vTexCoord1 ); //Coordinates for colormap
-	
-	Color.rgb = lerp(lerp(Color.rgb, ColorColor.rgb, 0.56), TerrainColor.rgb, 0.22);
-	Color.rgb *= 1.57;
-	
-	return Color;
-	
+
+	float4 OverlayColor = tex2D( OverlayTexture, v.vColorTexCoord );
+	//return OverlayColor;
+
+	float4 OutColor;
+	OutColor.r = OverlayColor.r < .5 ? (2 * OverlayColor.r * Color.r) : (1 - 2 * (1 - OverlayColor.r) * (1 - Color.r));
+	OutColor.g = OverlayColor.r < .5 ? (2 * OverlayColor.g * Color.g) : (1 - 2 * (1 - OverlayColor.g) * (1 - Color.g));
+	OutColor.b = OverlayColor.b < .5 ? (2 * OverlayColor.b * Color.b) : (1 - 2 * (1 - OverlayColor.b) * (1 - Color.b));
+	OutColor.a = Color.a * OverlayColor.a;
+
+	OutColor.rgb = lerp(ColorColor.rgb, float3(OutColor.r,OutColor.g,OutColor.b), 0.3);
+
+	OutColor.rgb *= COLOR_LIGHTNESS;
+
+	return OutColor;
 }
 
 
