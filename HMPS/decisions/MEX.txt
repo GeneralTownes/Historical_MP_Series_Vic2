@@ -1,53 +1,53 @@
 political_decisions = {
-	restore_mexican_empire = {
-		potential = {
-			ai = no
-			tag = MEX
-			government = democracy
-			NOT = { has_country_flag = we_have_tried_this_once }
-			FRA = {
-				exists = yes
-				OR = {
-					government = absolute_monarchy
-					government = prussian_constitutionalism
-					government = hms_government
-				}
-			}
-		}
-		allow = {
-			war = no
-			OR = {
-				ruling_party_ideology = conservative
-				ruling_party_ideology = reactionary
-			}
-			average_militancy = 3
-		}
-		
-		effect = {
-			government = hms_government
-			any_pop = {
-				scaled_militancy = {
-					ideology = liberal
-					factor = 8
-				}
-			}
-			random_country = {
-				limit = {
-					primary_culture = french
-					capital = 425
-				}	
-				relation = {
-					who = THIS
-					value = 100
-				}
-				diplomatic_influence = {
-					who = THIS
-					value = 100
-				}
-			}
-			set_country_flag = we_have_tried_this_once
-		}
-	}
+#	restore_mexican_empire = {
+#		potential = {
+#			ai = no
+#			tag = MEX
+#			government = democracy
+3			NOT = { has_country_flag = we_have_tried_this_once }
+#			FRA = {
+#				exists = yes
+#				OR = {
+#					government = absolute_monarchy
+#					government = prussian_constitutionalism
+#					government = hms_government
+#				}
+#			}
+#		}
+#		allow = {
+#			war = no
+#			OR = {
+#				ruling_party_ideology = conservative
+#				ruling_party_ideology = reactionary
+#			}
+#			average_militancy = 3
+#		}
+#		
+#		effect = {
+#			government = hms_government
+#			any_pop = {
+#				scaled_militancy = {
+#					ideology = liberal
+#					factor = 8
+#				}
+#			}
+#			random_country = {
+#				limit = {
+#					primary_culture = french
+#					capital = 425
+#				}	
+#				relation = {
+#					who = THIS
+#					value = 100
+#				}
+#				diplomatic_influence = {
+#					who = THIS
+#					value = 100
+#				}
+#			}
+#			set_country_flag = we_have_tried_this_once
+#		}
+#	}
 
 	treaty_of_guadalupe_hidalgo = {
 		picture = treaty_of_guadalupe_hidalgo
@@ -202,12 +202,16 @@ political_decisions = {
 		potential = {
 			tag = MEX
 			NOT = { is_core = 2191 }
+			ai = no
+			NOT = { has_country_flag = mexico_central_america }
 		}
 		allow = {
-			nationalism_n_imperialism = 1
-			government = democracy
+			war = no
+			is_vassal = no
+			is_disarmed = no
 			UCA = {
 				OR = {
+					NOT = { owns = 2197 }
 					exists = no
 					in_sphere = THIS
 					vassal_of = THIS
@@ -218,6 +222,9 @@ political_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = mexico_central_america
+			random_owned = { limit = { owner = { tag = MEX owns = 2186 owns = 2191 owns = 2194 owns = 2197 owns = 2201 } } owner = { badboy = 1 } }
+			random_owned = { limit = { owner = { tag = MEX NOT = { OR = { owns = 2186 owns = 2191 owns = 2194 owns = 2197 owns = 2201 } } } } owner = { badboy = 4 } }
 			add_accepted_culture = central_american
 			UCA = {
 				all_core = { add_core = MEX }
@@ -246,6 +253,36 @@ political_decisions = {
 					limit = { is_core = MEX }
 					secede_province = THIS
 				}
+			}
+		}
+	}
+	
+	mexican_caribbean = {
+		picture = spanish_cuba
+		potential = {
+			tag = MEX
+			has_country_flag = mexico_central_america
+			NOT = { has_country_flag = mexico_caribbean }
+			ai = no
+		}
+		allow = {
+			war = no
+			is_vassal = no
+			is_disarmed = no
+		}
+		effect = {
+			set_country_flag = mexico_caribbean
+			badboy = 5
+			add_accepted_culture = caribeno
+			any_country = {
+				limit = {
+					OR = {
+						tag = CUB
+						tag = HAI
+						tag = PRI
+					}
+				}
+				all_core = { add_core = MEX }
 			}
 		}
 	}

@@ -215,11 +215,8 @@ political_decisions = {
 
 	mexican_colombian_cuba = {
 		picture = spanish_cuba
-		potential = {
-			OR = {
-				tag = MEX
-				tag = GCO
-			}
+		potential = {			
+			tag = GCO
 			NOT = { has_global_flag = integrated_cuba }
 		}
 		allow = {
@@ -229,24 +226,8 @@ political_decisions = {
 		}
 		effect = {
 			set_global_flag = integrated_cuba
-			
 			CUB = { all_core = { add_core = THIS } }
-			
-			random_owned = {
-				limit = { owner = { tag = MEX }  }
-				
-				owner = {
-					add_accepted_culture = caribeno
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { tag = GCO }  }
-				
-				owner = {
-					add_accepted_culture = caribeno
-				}
-			}
+			add_accepted_culture = caribeno
 		}
 	}
 	
