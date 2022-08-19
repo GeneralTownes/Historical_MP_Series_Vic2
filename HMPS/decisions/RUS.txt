@@ -325,7 +325,7 @@ political_decisions = {
 			is_greater_power = yes
 			OR = {
 				has_country_flag = all_of_manchuria
-				mass_politics
+				mass_politics = 1
 			}
 		}
 		effect = {

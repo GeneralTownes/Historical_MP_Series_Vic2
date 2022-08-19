@@ -451,7 +451,8 @@ country_event = {
 		name = "EVT44815OPTA"
 		set_country_flag = texas_recaptured
 		war_exhaustion = -30
-		prestige = 5
+		prestige = 10
+		years_of_research = 2
 		any_pop = {
 			limit = { has_pop_culture = texan }
 			militancy = 10
@@ -580,6 +581,7 @@ country_event = {
 		tag = MEX
 		is_vassal = no
 		NOT = {
+			has_country_flag = texas_recaptured
 			exists = YUC
 			government = democracy
 			government = hms_government
@@ -909,252 +911,252 @@ country_event = {
 #####################################
 
 #France starts the war
-country_event = {
-	id = 7777920
-	title = "EVTNAME7777920"
-	desc = "EVTDESC7777920"
-	picture = "maximilian"
-	
-	trigger = {
-		primary_culture = french
-		is_greater_power = yes
-		capital = 425
-		has_country_flag = 2nd_empire
-		NOT = { government = democracy }
-		exists = MEX
-		MEX = { is_greater_power = no }
-		has_global_flag = acw_war_started
-	}
- 
-	mean_time_to_happen =  {
-		months = 1
-
-		modifier = {
-			factor = 0.75 #increase likelihood to happen
-			year = 1861
-		}
-
-		modifier = {
-			factor = 0.75 #increase likelihood to happen
-			year = 1862
-		}
-
-		modifier = {
-			factor = 0.75 #increase likelihood to happen
-			year = 1863
-		}
-	}
-		
-	fire_only_once = yes
-		
-	option = {
-		name = "EVT7777920OPTA"
-		casus_belli = {
-			target = MEX
-			type = make_puppet
-			months = 12
-		}
-		war = {
-			target = MEX
-			attacker_goal = { casus_belli = make_puppet }
-			defender_goal = { casus_belli = status_quo }
-		}
-		MEX = { country_event = { id = 7777921 days = 5 } }
-		badboy = 4
-		ai_chance = {
-			factor = 100
-		}
-	}
-	option = {
-		name = "EVT7777920OPTB"
-		prestige = -40
-		ai_chance = {
-			factor = 0
-		}
-	}
-}
+#country_event = {
+#	id = 7777920
+#	title = "EVTNAME7777920"
+#	desc = "EVTDESC7777920"
+#	picture = "maximilian"
+#
+#	trigger = {
+#		primary_culture = french
+#		is_greater_power = yes
+#		capital = 425
+#		has_country_flag = 2nd_empire
+#		NOT = { government = democracy }
+#		exists = MEX
+#		MEX = { is_greater_power = no }
+#		has_global_flag = acw_war_started
+#	}
+#
+#	mean_time_to_happen =  {
+#		months = 1
+#
+#		modifier = {
+#			factor = 0.75 #increase likelihood to happen
+#			year = 1861
+#		}
+#
+#		modifier = {
+#			factor = 0.75 #increase likelihood to happen
+#			year = 1862
+#		}
+#
+#		modifier = {
+#			factor = 0.75 #increase likelihood to happen
+#			year = 1863
+#		}
+#	}
+#		
+#	fire_only_once = yes
+#		
+#	option = {
+#		name = "EVT7777920OPTA"
+#		casus_belli = {
+#			target = MEX
+#			type = make_puppet
+#			months = 12
+#		}
+#		war = {
+#			target = MEX
+#			attacker_goal = { casus_belli = make_puppet }
+#			defender_goal = { casus_belli = status_quo }
+#		}
+#		MEX = { country_event = { id = 7777921 days = 5 } }
+#		badboy = 4
+#		ai_chance = {
+#			factor = 100
+#		}
+#	}
+#	option = {
+#		name = "EVT7777920OPTB"
+#		prestige = -40
+#		ai_chance = {
+#			factor = 0
+#		}
+#	}
+#}
 
 #Mexican reaction
-country_event = {
-	id = 7777921
-	title = "EVTNAME7777921"
-	desc = "EVTDESC7777921"
-	picture = "mexico_soldiers"
-	
-	is_triggered_only = yes
-		
-	option = {
-		name = "EVT7777921OPTA"
-		USA = {
-			relation = { who = MEX value = 100 }
-			diplomatic_influence = { who = MEX value = 100 }
-		}
-		USA = { country_event = { id = 7777922 days = 10 } }
-		ai_chance = {
-			factor = 100
-		}
-	}
-	option = {
-		name = "EVT7777921OPTB"
-		any_pop = {
-			ideology = { factor = 10 value = conservative }
-			militancy = -2
-		}
-		ai_chance = {
-			factor = 0
-		}
-	}
-}
+#country_event = {
+#	id = 7777921
+#	title = "EVTNAME7777921"
+#	desc = "EVTDESC7777921"
+#	picture = "mexico_soldiers"
+#	
+#	is_triggered_only = yes
+#		
+#	option = {
+#		name = "EVT7777921OPTA"
+#		USA = {
+#			relation = { who = MEX value = 100 }
+#			diplomatic_influence = { who = MEX value = 100 }
+#		}
+#		USA = { country_event = { id = 7777922 days = 10 } }
+#		ai_chance = {
+#			factor = 100
+#		}
+#	}
+#	option = {
+#		name = "EVT7777921OPTB"
+#		any_pop = {
+#			ideology = { factor = 10 value = conservative }
+#			militancy = -2
+#		}
+#		ai_chance = {
+#			factor = 0
+#		}
+#	}
+#}
 
 #US reaction
-country_event = {
-	id = 7777922
-	title = "EVTNAME7777922"
-	desc = "EVTDESC7777922"
-	picture = "william_seward"
-	
-	is_triggered_only = yes
-		
-	option = {
-		name = "EVT7777922OPTA"
-		relation = { who = MEX value = 100 }
-		diplomatic_influence = { who = MEX value = 100 }
-		create_alliance = MEX
-		ai_chance = {
-			factor = 100
-		}
-	}
-	option = {
-		name = "EVT7777922OPTB"
-		relation = { who = MEX value = -200 }
-		diplomatic_influence = { who = MEX value = -200 }
-		leave_alliance = MEX
-		ai_chance = {
-			factor = 0
-		}
-	}
-}
-
-
-country_event = {
-
-	id = 44830
-	title = "EVTNAME44830" #Execution of Emperor Maximilian
-	desc = "EVTDESC44830"
-	news = yes
-	news_desc_long = "EVTDESC44830"
-	news_desc_medium = "EVTDESC44830_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC44830_NEWS_SHORT"
-	picture = "execution_of_emperor_maximillian"
-
-	trigger = {
-		tag = MEX
-		government = hms_government
-		has_country_flag = we_have_tried_this_once
-		2172 = { controlled_by_rebels = yes }
-		NOT = { year = 1880 }
-	}
-
-	mean_time_to_happen = {
-		days = 10
-	}
-
-	option = {
-		name = "EVT44830OPTA"
-		government = democracy
-		ruling_party_ideology = liberal
-		
-		add_country_modifier = {
-			name = national_confusion
-			duration = 365
-		}
-		any_pop = { militancy = -6 }
-		2172 = { change_controller = MEX }
-		random_owned = {
-			limit = { exists = FRA }
-			FRA = {
-				relation = {
-					who = THIS
-					value = -50
-				}
-				diplomatic_influence = {
-					who = THIS
-					value = -100
-				}
-			}
-		}
-	}
-}
-
-country_event = {
-
-	id = 44835
-	title = "EVTNAME44835" #The Plan of Tuxtepec
-	desc = "EVTDESC44835"
-	news = yes
-	news_desc_long = "EVTDESC44835"
-	news_desc_medium = "EVTDESC44835_NEWS_MEDIUM"
-	news_desc_short = "EVTDESC44835_NEWS_SHORT"
-	picture = "Madero"
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = MEX
-		war = no
-		ai = yes
-		government = democracy
-		year = 1876
-		NOT = { year = 1900 }
-	}
-
-	mean_time_to_happen = {
-		months = 6
-	}
-
-	option = {
-		name = "EVT44835OPTA"
-		officers = {
-			militancy = 8
-			consciousness = 3
-		}
-		aristocrats = {
-			militancy = 9
-			consciousness = 3
-		}
-		soldiers = {
-			militancy = 7
-			consciousness = 3
-		}
-	}
-
-	option = {
-		name = "EVT44835OPTB"
-		prestige = -10
-		government = presidential_dictatorship
-		ruling_party_ideology = conservative
-		political_reform = none_voting
-		political_reform = party_appointed
-		political_reform = no_meeting
-		political_reform = state_press
-		political_reform = state_controlled
-		political_reform = underground_parties
-		
-		country_event = 800050
-		officers = {
-			militancy = -6
-			consciousness = -3
-		}
-		aristocrats = {
-			militancy = -6
-			consciousness = -3
-		}
-		soldiers = {
-			militancy = -6
-			consciousness = -3
-		}
-	}
-}
+#country_event = {
+#	id = 7777922
+#	title = "EVTNAME7777922"
+#	desc = "EVTDESC7777922"
+#	picture = "william_seward"
+#	
+#	is_triggered_only = yes
+#		
+#	option = {
+#		name = "EVT7777922OPTA"
+#		relation = { who = MEX value = 100 }
+#		diplomatic_influence = { who = MEX value = 100 }
+#		create_alliance = MEX
+#		ai_chance = {
+#			factor = 100
+#		}
+#	}
+#	option = {
+#		name = "EVT7777922OPTB"
+#		relation = { who = MEX value = -200 }
+#		diplomatic_influence = { who = MEX value = -200 }
+#		leave_alliance = MEX
+#		ai_chance = {
+#			factor = 0
+#		}
+#	}
+#}
+#
+#
+#country_event = {
+#
+#	id = 44830
+#	title = "EVTNAME44830" #Execution of Emperor Maximilian
+#	desc = "EVTDESC44830"
+#	news = yes
+#	news_desc_long = "EVTDESC44830"
+#	news_desc_medium = "EVTDESC44830_NEWS_MEDIUM"
+#	news_desc_short = "EVTDESC44830_NEWS_SHORT"
+#	picture = "execution_of_emperor_maximillian"
+#
+#	trigger = {
+#		tag = MEX
+#		government = hms_government
+#		has_country_flag = we_have_tried_this_once
+#		2172 = { controlled_by_rebels = yes }
+#		NOT = { year = 1880 }
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 10
+#	}
+#
+#	option = {
+#		name = "EVT44830OPTA"
+#		government = democracy
+#		ruling_party_ideology = liberal
+#		
+#		add_country_modifier = {
+#			name = national_confusion
+#			duration = 365
+#		}
+#		any_pop = { militancy = -6 }
+#		2172 = { change_controller = MEX }
+#		random_owned = {
+#			limit = { exists = FRA }
+#			FRA = {
+#				relation = {
+#					who = THIS
+#					value = -50
+#				}
+#				diplomatic_influence = {
+#					who = THIS
+#					value = -100
+#				}
+#			}
+#		}
+#	}
+#}
+#
+#country_event = {
+#
+#	id = 44835
+#	title = "EVTNAME44835" #The Plan of Tuxtepec
+#	desc = "EVTDESC44835"
+#	news = yes
+#	news_desc_long = "EVTDESC44835"
+#	news_desc_medium = "EVTDESC44835_NEWS_MEDIUM"
+#	news_desc_short = "EVTDESC44835_NEWS_SHORT"
+#	picture = "Madero"
+#
+#	fire_only_once = yes
+#
+#	trigger = {
+#		tag = MEX
+#		war = no
+#		ai = yes
+#		government = democracy
+#		year = 1876
+#		NOT = { year = 1900 }
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 6
+#	}
+#
+#	option = {
+#		name = "EVT44835OPTA"
+#		officers = {
+#			militancy = 8
+#			consciousness = 3
+#		}
+#		aristocrats = {
+#			militancy = 9
+#			consciousness = 3
+#		}
+#		soldiers = {
+#			militancy = 7
+#			consciousness = 3
+#		}
+#	}
+#
+#	option = {
+#		name = "EVT44835OPTB"
+#		prestige = -10
+#		government = presidential_dictatorship
+#		ruling_party_ideology = conservative
+#		political_reform = none_voting
+#		political_reform = party_appointed
+#		political_reform = no_meeting
+#		political_reform = state_press
+#		political_reform = state_controlled
+#		political_reform = underground_parties
+#		
+#		country_event = 800050
+#		officers = {
+#			militancy = -6
+#			consciousness = -3
+#		}
+#		aristocrats = {
+#			militancy = -6
+#			consciousness = -3
+#		}
+#		soldiers = {
+#			militancy = -6
+#			consciousness = -3
+#		}
+#	}
+#}
 
 #The Death of Victorio
 country_event = {
@@ -1181,4 +1183,549 @@ country_event = {
 			militancy = 6
 		}
 	}
+}
+
+country_event = {
+    id = 123573
+    title = "The Treaty of San Antonio"
+    desc = "After our devastating victory against the USA, the time has come to collect the spoils of war through the Treaty of San Antonio."
+    picture = "mexico-us-treaty"
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = "We don't need more land. §GLose 10 infamy§W"
+        prestige = 50
+        badboy = -10
+		set_global_flag = mex_took_texas_maw
+		USA = { country_event = 123574 }
+    }
+    option = {
+        name = "Take the Oregon territory. §RGain 5 infamy§W"
+        prestige = 30
+		any_owned = {
+			limit = {
+				OR = {
+					region = USA_81
+					region = USA_78
+					region = USA_91
+					region = TEX_132
+					province_id = 111
+					province_id = 114
+				}
+            }
+            add_core = MEX
+		}
+		USA = { country_event = 123575 prestige = -30 }
+        badboy = 5
+		set_country_flag = has_taken_oregon_or_more
+		set_global_flag = mex_took_oregon_maw
+    }
+    option = {
+        name = "All land West of the Mississippi is Mexican. §RGain 12 infamy§W"
+        prestige = 40
+		any_owned = {
+			limit = {
+				OR = {
+					region = USA_81 #Oregon
+					region = USA_78 #Washington
+					region = USA_91 #Idaho
+					region = USA_116 #Montana
+					region = USA_106 #Colorado
+					region = USA_111 #Wyoming
+					region = USA_118 #North Dakota
+					region = USA_121 #South Dakota
+					region = USA_124 #Nebraska
+					region = USA_144 #Arkansas
+					region = USA_148 #Missouri
+					region = USA_151 #Iowa
+					region = USA_126 #Kansas
+					region = USA_129 #Oklahoma
+					region = USA_139 #Louisiana
+					region = TEX_132 #Texas
+					region = USA_158 #Minnesota
+				}
+				NOT = { province_id = 140 }
+			}
+			add_core = MEX
+		}
+		USA = { country_event = 123576 prestige = -40 }
+        badboy = 12
+		set_country_flag = has_taken_oregon_or_more
+		set_global_flag = mex_took_mississippi_maw
+    }
+    option = {
+        name = "All lands West of the Mississippi and Florida are Mexican. §RGain 18 infamy§W"
+        prestige = 50
+		any_owned = {
+			limit = {
+				OR = {
+					region = USA_81 #Oregon
+					region = USA_78 #Washington
+					region = USA_91 #Idaho
+					region = USA_116 #Montana
+					region = USA_106 #Colorado
+					region = USA_111 #Wyoming
+					region = USA_118 #North Dakota
+					region = USA_121 #South Dakota
+					region = USA_124 #Nebraska
+					region = USA_144 #Arkansas
+					region = USA_148 #Missouri
+					region = USA_151 #Iowa
+					region = USA_126 #Kansas
+					region = USA_129 #Oklahoma
+					region = USA_139 #Louisiana
+					region = TEX_132 #Texas
+					region = USA_158 #Minnesota
+					region = USA_200 #Florida
+					province_id = 194
+					province_id = 197
+				}
+			}
+			add_core = MEX
+		}
+		USA = { country_event = 123577 prestige = -50 }
+        badboy = 18
+		set_country_flag = has_taken_oregon_or_more
+		set_global_flag = mex_took_florida_maw
+    }
+}
+country_event = {
+    id = 123574
+    title = "The Treaty of San Antonio"
+    desc = "After losing the Mexican-American war, the Mexicans have decided to keep the land from the Adams-Onís Treaty."
+    picture = "mexico-us-treaty"
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = "What a humiliation."
+        any_owned = {
+            limit = {
+                OR = {
+					region = TEX_132
+					is_core = MEX
+                }
+            }
+			add_core = MEX
+            secede_province = MEX
+        }
+    }
+}
+country_event = {
+    id = 123575
+    title = "The Treaty of San Antonio"
+    desc = "After losing the Mexican-American war, we are forced to accept the Mexican demands through the Treaty of San Antonio."
+    picture = "mexico-us-treaty"
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = "What a humiliation."
+		CAN_13 = { remove_core = USA }
+		USA_81 = { remove_core = USA }
+		USA_78 = { remove_core = USA }
+		USA_91 = { remove_core = USA }
+		111 = { remove_core = USA }
+		114 = { remove_core = USA }
+        any_owned = {
+			limit = {
+				OR = {
+					is_core = MEX
+					region = USA_81
+					region = USA_78
+					region = USA_91
+					region = TEX_132
+					region = CAN_13
+					province_id = 111
+					province_id = 114
+				}
+			}
+			add_core = MEX
+			secede_province = MEX
+		}
+    }
+}
+country_event = {
+    id = 123576
+    title = "The Treaty of San Antonio"
+    desc = "After losing the Mexican-American war, we are forced to accept the Mexican demands through the Treaty of San Antonio."
+    picture = "mexico-us-treaty"
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = "What a humiliation."
+		CAN_13 = { remove_core = USA }
+		USA_81 = { remove_core = USA }
+		USA_78 = { remove_core = USA }
+		USA_91 = { remove_core = USA }
+		111 = { remove_core = USA }
+		114 = { remove_core = USA }
+        any_owned = {
+			limit = {
+				OR = {
+					is_core = MEX
+					region = CAN_13	
+					region = USA_81
+					region = USA_78
+					region = USA_91
+					region = USA_116
+					region = USA_106
+					region = USA_111
+					region = USA_118
+					region = USA_121
+					region = USA_124
+					region = USA_144
+					region = USA_148
+					region = USA_151
+					region = USA_126
+					region = USA_129
+					region = USA_139
+					region = TEX_132
+					region = USA_158
+				}
+				NOT = { province_id = 140 }
+			}
+			add_core = MEX
+        }
+		
+		any_owned = {
+			limit = {
+				is_core = MEX
+			}
+			secede_province = MEX
+		}
+    }
+}
+country_event = {
+    id = 123577
+    title = "The Treaty of San Antonio"
+    desc = "After losing the Mexican-American war, we are forced to accept the Mexican demands through the Treaty of San Antonio."
+    picture = "mexico-us-treaty"
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = "What a humiliation."
+		USA_81 = { remove_core = USA }
+		USA_78 = { remove_core = USA }
+		USA_91 = { remove_core = USA }
+		111 = { remove_core = USA }
+		114 = { remove_core = USA }
+        any_owned = {
+			limit = {
+				OR = {
+					is_core = MEX
+					region = CAN_13
+					region = USA_81
+					region = USA_78
+					region = USA_91
+					region = USA_116
+					region = USA_106
+					region = USA_111
+					region = USA_118
+					region = USA_121
+					region = USA_124
+					region = USA_144
+					region = USA_148
+					region = USA_151
+					region = USA_126
+					region = USA_129
+					region = USA_139
+					region = TEX_132
+					region = USA_158
+					province_id = 194
+					province_id = 197
+					region = USA_200
+				}
+			}
+			add_core = MEX
+        }
+		any_owned = {
+			limit = {
+				is_core = MEX
+			}
+			secede_province = MEX
+		}
+    }
+}
+
+country_event = {
+    id = 123560
+    title = "The Treaty of Guadalupe-Hidalgo"
+    desc = "After defeating Mexico in the war, we now must negotiate how much land we shall take."
+    picture = "mexico-us-treaty"
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = "Only take the land North of the 37th parallel and East of the Rio Grande. §GLose 7 infamy§W"
+        badboy = -7
+        set_country_flag = alternate_history_us_mexico_war
+            84 = { add_core = THIS }
+			85 = { add_core = THIS }
+			86 = { add_core = THIS }
+			104 = { add_core = THIS }
+            TEX_132 = { add_core = THIS } #Texas
+			USA_129 = { add_core = THIS } #Oklahoma
+            MEX_94 = { add_core = THIS } #Nevada
+            96 = { remove_core = THIS } # Las Vegas
+            MEX_97 = { add_core = THIS } #Utah
+            USA_106 = { add_core = THIS } #Colorado
+            USA_78 = { add_core = THIS } #Washington
+            USA_81 = { add_core = THIS } #Portland
+            USA_91 = { add_core = THIS } #Idaho
+            USA_111 = { add_core = THIS } #Wyoming
+            USA_126 = { add_core = THIS } #Kansas
+            105 = { add_core = THIS }
+            MEX = { country_event = 123563 }
+            ai_chance = { factor = 0 }
+    }
+    option = {
+        name = "Take all of Alta California. (historical)"
+            MEX_85 = { add_core = THIS } #California
+            TEX_132 = { add_core = THIS } #Texas
+            MEX_94 = { add_core = THIS } #Nevada
+            MEX_97 = { add_core = THIS } #Utah
+            USA_129 = { add_core = THIS } #Oklahoma
+            USA_106 = { add_core = THIS } #Colorado
+            USA_78 = { add_core = THIS } #Washington
+            USA_81 = { add_core = THIS } #Portland
+            USA_91 = { add_core = THIS } #Idaho
+            USA_111 = { add_core = THIS } #Wyoming
+            USA_126 = { add_core = THIS } #Kansas
+			MEX_103 = { add_core = THIS } #New Mexico
+			MEX_100 = { add_core = THIS } #Arizona
+			102 = { remove_core = THIS }
+			2662 = { remove_core = THIS }
+            set_global_flag = guadalupe_should_happen_now
+            MEX = { country_event = 123564 }
+            ai_chance = { factor = 1 }
+    }
+    option = {
+        name = "We need a buffer South of the Rio Grande. §RGain 13 infamy§W"
+        badboy = 13
+        set_country_flag = alternate_history_us_mexico_war
+            MEX_85 = { add_core = THIS } #California
+            TEX_132 = { add_core = THIS } #Texas
+            MEX_94 = { add_core = THIS } #Nevada
+            MEX_97 = { add_core = THIS } #Utah
+            USA_129 = { add_core = THIS } #Oklahoma
+            USA_106 = { add_core = THIS } #Colorado
+            USA_78 = { add_core = THIS } #Washington
+            USA_81 = { add_core = THIS } #Portland
+            USA_91 = { add_core = THIS } #Idaho
+            USA_111 = { add_core = THIS } #Wyoming
+            USA_126 = { add_core = THIS } #Kansas
+			MEX_103 = { add_core = THIS } #New Mexico
+            MEX_100 = { add_core = THIS } #Arizona
+            MEX = { country_event = 123565 }
+            ai_chance = { factor = 0 }
+    }
+    option = {
+        name = "Follow Sam Houston's proposal and take land further South. §RGain 20 infamy§W"
+        badboy =  20
+        set_country_flag = alternate_history_us_mexico_war
+            MEX_85 = { add_core = THIS } #California
+            TEX_132 = { add_core = THIS } #Texas
+            MEX_94 = { add_core = THIS } #Nevada
+            MEX_97 = { add_core = THIS } #Utah
+            USA_129 = { add_core = THIS } #Oklahoma
+            USA_106 = { add_core = THIS } #Colorado
+            USA_78 = { add_core = THIS } #Washington
+            USA_81 = { add_core = THIS } #Portland
+            USA_91 = { add_core = THIS } #Idaho
+            USA_111 = { add_core = THIS } #Wyoming
+            USA_126 = { add_core = THIS } #Kansas
+			MEX_103 = { add_core = THIS } #New Mexico
+            MEX_100 = { add_core = THIS } #Arizona
+            MEX = { country_event = 123566 }
+            ai_chance = { factor = 0 }
+    }
+    option = {
+        name = "All of Mexico is ours! §RGain 40 infamy§W"
+        badboy = 40
+        set_country_flag = alternate_history_us_mexico_war
+		MEX_85 = { add_core = THIS } #California
+		TEX_132 = { add_core = THIS } #Texas
+		MEX_94 = { add_core = THIS } #Nevada
+		MEX_97 = { add_core = THIS } #Utah
+		USA_129 = { add_core = THIS } #Oklahoma
+		USA_106 = { add_core = THIS } #Colorado
+		USA_78 = { add_core = THIS } #Washington
+		USA_81 = { add_core = THIS } #Portland
+		USA_91 = { add_core = THIS } #Idaho
+		USA_111 = { add_core = THIS } #Wyoming
+		USA_126 = { add_core = THIS } #Kansas
+		MEX_103 = { add_core = THIS } #New Mexico
+		MEX_100 = { add_core = THIS } #Arizona
+		MEX = { country_event = 123567 }
+    }
+}
+
+country_event = {
+    id = 123563
+    title = "The Treaty of Guadalupe-Hidalgo"
+    desc = "After losing the Mexican-American war, we are forced to accept the American demands through the Treaty of Guadalupe-Hidalgo."
+    picture = "mexico-us-treaty"
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = "Oh well."
+        any_owned = {
+            limit = {
+                OR = {
+					is_core = USA
+                    region = TEX_132
+                    province_id = 94
+                    province_id = 95
+                    region = MEX_97
+                    region = USA_129
+                    region = USA_106
+                    region = USA_78
+                    region = USA_81
+                    region = USA_91
+                    region = USA_111
+                    region = USA_126
+                    province_id = 105
+                }
+            }
+            secede_province = USA
+        }
+    }
+}
+country_event = {
+    id = 123564
+    title = "The Treaty of Guadalupe-Hidalgo"
+    desc = "After losing the Mexican-American war, we are forced to accept the American demands through the Treaty of Guadalupe-Hidalgo."
+    picture = "mexico-us-treaty"
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = "Oh well."
+        any_owned = {
+            limit = {
+                OR = {
+					is_core = USA
+                    region = MEX_85
+                    region = TEX_132
+                    region = MEX_94
+                    region = MEX_97
+                    region = USA_129
+                    region = USA_106
+                    region = USA_78
+                    region = USA_81
+                    region = USA_91
+                    region = USA_111
+                    region = USA_126   
+                }
+            }
+            secede_province = USA
+        }
+    }
+}
+country_event = {
+    id = 123565
+    title = "The Treaty of Guadalupe-Hidalgo"
+    desc = "After losing the Mexican-American war, we are forced to accept the American demands through the Treaty of Guadalupe-Hidalgo."
+    picture = "mexico-us-treaty"
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = "Oh well."
+        any_owned = {
+            limit = {
+                OR = {
+                    region = MEX_85
+                    region = TEX_132
+                    region = MEX_94
+                    region = MEX_97
+                    region = USA_129
+                    region = USA_106
+                    region = USA_78
+                    region = USA_81
+                    region = USA_91
+                    region = USA_111
+                    region = USA_126
+					region = MEX_103
+					region = MEX_100
+					province_id = 2138
+					province_id = 2139
+					province_id = 2140
+					province_id = 2137
+					province_id = 2143
+					province_id = 2142
+					province_id = 2144
+					province_id = 2147
+					province_id = 2149
+					province_id = 2152
+                }
+            }
+            secede_province = USA
+        }
+    }
+}
+country_event = {
+    id = 123566
+    title = "Treaty of Guadalupe-Hidalgo"
+    desc = "After losing the Mexican-American war, we are forced to accept the American demands through the Treaty of Guadalupe-Hidalgo."
+    picture = "mexico-us-treaty"
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = "Oh well."
+        any_owned = {
+            limit = {
+				USA = { exists = yes }
+                OR = {
+                    region = MEX_85
+                    region = TEX_132
+                    region = MEX_94
+                    region = MEX_97
+                    region = USA_129
+                    region = USA_106
+                    region = USA_78
+                    region = USA_81
+                    region = USA_91
+                    region = USA_111
+                    region = USA_126
+					region = MEX_103
+					region = MEX_100
+					province_id = 2138
+					province_id = 2139
+					province_id = 2140
+					province_id = 2137
+					province_id = 2143
+					province_id = 2142
+					province_id = 2144
+					province_id = 2147
+					province_id = 2149
+					province_id = 2152
+					province_id = 2141
+					province_id = 2145
+					province_id = 2155
+					province_id = 2150
+					province_id = 2151
+					province_id = 2157
+					province_id = 2154
+					province_id = 2153
+					province_id = 2158
+					province_id = 2159
+					province_id = 2163
+                }
+            }
+            secede_province = USA
+        }
+    }
+}
+country_event = {
+    id = 123567
+    title = "Treaty of Guadalupe-Hidalgo"
+    desc = "After losing the Mexican-American war, we are forced to accept the American annexation through the Treaty of Guadalupe-Hidalgo."
+    picture = "mexico-us-treaty"
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = {
+        name = "Oh well."
+		FROM = {
+			inherit = THIS
+			set_country_flag = mexico_annexation
+		}
+    }
 }

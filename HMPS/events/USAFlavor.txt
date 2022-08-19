@@ -2131,12 +2131,10 @@ country_event = {
 }
 
 country_event = {
-
 	id = 7777930 
 	title = "EVTNAME7777930"
 	desc = "EVTDESC7777930"
 	picture = "california_statehood"
-	
 	fire_only_once = yes
 
 	trigger = {
@@ -2156,7 +2154,7 @@ country_event = {
 				}
 				OR = {
 					has_country_flag = manifest_destiny_refuted
-					revolution_n_counterrevolution = 1
+					war = no
 				}
 			}
 		}
@@ -2201,7 +2199,8 @@ country_event = {
 			}
 		}
 		NOT = { government = democracy }
-		MEX_85 = { has_province_modifier = california_population_boom }
+		NOT = { government = hms_government }
+		any_owned_province = { has_province_modifier = california_population_boom }
 	}
  
 	mean_time_to_happen =  {
