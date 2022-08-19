@@ -449,7 +449,6 @@ political_decisions = {
 			random_country = {
 				limit = {
 					tag = MEX
-					USA = { ai = yes }
 					any_owned_province = {
 						OR = {
 							region = MEX_85
@@ -522,32 +521,32 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	all_of_mexico = {
-		picture = manifest_destiny 
-		potential = {
-			tag = USA
-			is_greater_power = yes
-			NOT = { has_global_flag = formexico }
-			NOT = { has_country_flag = treaty_of_guadalupe_hidalgo }
-			has_country_modifier = the_slavery_debate 
-		}
-		allow = {
-			has_country_flag = hasmanifestdestiny 
-		}
-
-		effect = {
-			set_global_flag = formexico
-			badboy = 32
-			war = {
-				target = MEX
-				attacker_goal = { casus_belli = conquest_any }
-				defender_goal = { casus_belli = status_quo }
-				call_ally = no
-			}
-		}
-		
-		ai_will_do = { factor = 0 }
-	}
+	#all_of_mexico = {
+	#	picture = manifest_destiny 
+	#	potential = {
+	#		tag = USA
+	#		is_greater_power = yes
+	#		NOT = { has_global_flag = formexico }
+	#		NOT = { has_country_flag = treaty_of_guadalupe_hidalgo }
+	#		has_country_modifier = the_slavery_debate 
+	#	}
+	#	allow = {
+	#		has_country_flag = hasmanifestdestiny 
+	#	}
+	#
+	#	effect = {
+	#		set_global_flag = formexico
+	#		badboy = 32
+	#		war = {
+	#			target = MEX
+	#			attacker_goal = { casus_belli = conquest_any }
+	#			defender_goal = { casus_belli = status_quo }
+	#			call_ally = no
+	#		}
+	#	}
+	#	
+	#	ai_will_do = { factor = 0 }
+	#}
 	
 	corwin_amendment = {
 		picture = corwin_amendment

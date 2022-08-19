@@ -113,15 +113,14 @@ political_decisions = {
 			exists = yes
 			OR = {
 				tag = MEX
-				tag = TEX
-				tag = DES
-				tag = CAL
 			}
 			USA = { has_country_flag = hasmanifestdestiny }
 			NOT = {
 				has_country_flag = treaty_of_guadalupe_hidalgo
 				has_country_flag = manifest_destiny_refuted
 			}
+			owns = 100
+			owns = 103
 		}
 		
 		allow = {
@@ -137,7 +136,6 @@ political_decisions = {
 					USA = { has_recently_lost_war = yes }
 				}
 			}
-			all_core = { owned_by = THIS }
 		}
 		
 		effect = {
@@ -356,13 +354,13 @@ political_decisions = {
                 truce_with = THIS
             }
 			NOT = { has_country_flag = treaty_of_guadalupe_hidalgo }
-            NOT = { has_country_flag = US_MEX_peace_agreement }
+            NOT = { has_global_flag = US_MEX_peace_agreement }
 			NOT = { has_global_flag = mexican_victory }
         }
         allow = { }
         effect = {
 			country_event = 123560
-			set_country_flag = US_MEX_peace_agreement
+			set_global_flag = US_MEX_peace_agreement
         }
         ai_will_do = {
             factor = 1
@@ -377,13 +375,13 @@ political_decisions = {
 				#is_disarmed = yes
 				truce_with = THIS
 			}
-			has_country_flag = won_MEX_USA_war
-            NOT = { has_country_flag = MEX_US_peace_agreement }
+            NOT = { has_global_flag = MEX_US_peace_agreement }
+			NOT = { has_global_flag = US_MEX_peace_agreement
         }
         allow = { }
         effect = {
             country_event = 123573
-            set_country_flag = MEX_US_peace_agreement
+            set_global_flag = MEX_US_peace_agreement
             set_global_flag = mexican_victory
         }
         ai_will_do = {

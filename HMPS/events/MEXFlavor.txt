@@ -1506,15 +1506,15 @@ country_event = {
             TEX_132 = { add_core = THIS } #Texas
             MEX_94 = { add_core = THIS } #Nevada
             MEX_97 = { add_core = THIS } #Utah
-            USA_129 = { add_core = THIS } #Oklahoma
-            USA_106 = { add_core = THIS } #Colorado
-            USA_78 = { add_core = THIS } #Washington
-            USA_81 = { add_core = THIS } #Portland
-            USA_91 = { add_core = THIS } #Idaho
-            USA_111 = { add_core = THIS } #Wyoming
+			USA_111 = { add_core = THIS } #Wyoming
             USA_126 = { add_core = THIS } #Kansas
 			MEX_103 = { add_core = THIS } #New Mexico
             MEX_100 = { add_core = THIS } #Arizona
+            USA_129 = { add_core = THIS } #Oklahoma
+            USA_106 = { add_core = THIS } #Colorado
+            USA_78 = { add_core = THIS } #Washington
+            USA_81 = { add_core = THIS } #Oregon
+            USA_91 = { add_core = THIS } #Idaho
             MEX = { country_event = 123565 }
             ai_chance = { factor = 0 }
     }
@@ -1599,6 +1599,18 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = "Oh well."
+		MEX_85 = { remove_core = MEX } #California
+		TEX_132 = { remove_core = MEX } #Texas
+		MEX_94 = { remove_core = MEX } #Nevada
+		MEX_97 = { remove_core = MEX } #Utah
+		USA_111 = { remove_core = MEX } #Wyoming
+		USA_126 = { remove_core = MEX } #Kansas
+		MEX_103 = { remove_core = MEX } #New Mexico
+		MEX_100 = { remove_core = MEX } #Arizona
+		USA_129 = { remove_core = MEX } #Oklahoma
+		USA_106 = { remove_core = MEX } #Colorado
+		102 = { add_core = MEX }
+		2662 = { add_core = MEX }
         any_owned = {
             limit = {
                 OR = {
@@ -1629,6 +1641,16 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = "Oh well."
+		MEX_85 = { remove_core = MEX } #California
+		TEX_132 = { remove_core = MEX } #Texas
+		MEX_94 = { remove_core = MEX } #Nevada
+		MEX_97 = { remove_core = MEX } #Utah
+		USA_111 = { remove_core = MEX } #Wyoming
+		USA_126 = { remove_core = MEX } #Kansas
+		MEX_103 = { remove_core = MEX } #New Mexico
+		MEX_100 = { remove_core = MEX } #Arizona
+		USA_129 = { remove_core = MEX } #Oklahoma
+		USA_106 = { remove_core = MEX } #Colorado
         any_owned = {
             limit = {
                 OR = {
@@ -1670,6 +1692,16 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = "Oh well."
+		MEX_85 = { remove_core = MEX } #California
+		TEX_132 = { remove_core = MEX } #Texas
+		MEX_94 = { remove_core = MEX } #Nevada
+		MEX_97 = { remove_core = MEX } #Utah
+		USA_111 = { remove_core = MEX } #Wyoming
+		USA_126 = { remove_core = MEX } #Kansas
+		MEX_103 = { remove_core = MEX } #New Mexico
+		MEX_100 = { remove_core = MEX } #Arizona
+		USA_129 = { remove_core = MEX } #Oklahoma
+		USA_106 = { remove_core = MEX } #Colorado
         any_owned = {
             limit = {
 				USA = { exists = yes }
@@ -1723,6 +1755,16 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = "Oh well."
+		MEX_85 = { remove_core = MEX } #California
+		TEX_132 = { remove_core = MEX } #Texas
+		MEX_94 = { remove_core = MEX } #Nevada
+		MEX_97 = { remove_core = MEX } #Utah
+		USA_111 = { remove_core = MEX } #Wyoming
+		USA_126 = { remove_core = MEX } #Kansas
+		MEX_103 = { remove_core = MEX } #New Mexico
+		MEX_100 = { remove_core = MEX } #Arizona
+		USA_129 = { remove_core = MEX } #Oklahoma
+		USA_106 = { remove_core = MEX } #Colorado
 		FROM = {
 			inherit = THIS
 			set_country_flag = mexico_annexation

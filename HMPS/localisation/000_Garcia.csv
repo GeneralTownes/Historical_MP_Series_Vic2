@@ -12,6 +12,10 @@ EVTDESC4206969;Not that $FROMCOUNTRY$ has formed, our role as spherelings is bei
 EVTNAME4206970;$FROMCOUNTRY$ demands territory from us!;;;;;;;;;;;;;
 EVTDESC4206970;The foreign minister from $FROMCOUNTRY$ has sent an ultimatum to our country, demanding us to give parts from our land that supposedly "belongs" to them. This is an insult to our sovereignty, but it may also mean war if we decline.;;;;;;;;;;;;;
 hsa_capital_stuff_title;Select Capital;;;;;;;;;;;;;
+mexico_usa_agreement_title;The Treaty of Guadalupe-Hidalgo;;;;;;;;;;;;;
+mexico_usa_agreement_desc;The time has come to negotiate with Mexico.;;;;;;;;;;;;;
+usa_mexico_agreement_title;The Treaty of San Antonio;;;;;;;;;;;;;
+usa_mexico_agreement_desc;The time has come to negotiate a peace treaty with the USA.;;;;;;;;;;;;;
 hsa_capital_stuff_desc;We need to decide what our new capital will be.;;;;;;;;;;;;;
 mexico_caribbean_title;Protector of the Hispanic Caribbean;;;;;;;;;;;;;
 mexico_caribbean_desc;§RGain 7 infamy§! As $COUNTRY$ is now a world player, we can extend our influence into the Spanish West Indies.;;;;;;;;;;;;;
