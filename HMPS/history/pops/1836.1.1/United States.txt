@@ -8500,7 +8500,7 @@
 	soldiers = {
 		culture = dixie
 		religion = protestant
-		size = 400
+		size = 5400
 	}
 
 	farmers = {

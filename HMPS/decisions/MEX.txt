@@ -1,54 +1,4 @@
 political_decisions = {
-#	restore_mexican_empire = {
-#		potential = {
-#			ai = no
-#			tag = MEX
-#			government = democracy
-#			NOT = { has_country_flag = we_have_tried_this_once }
-#			FRA = {
-#				exists = yes
-#				OR = {
-#					government = absolute_monarchy
-#					government = prussian_constitutionalism
-#					government = hms_government
-#				}
-#			}
-#		}
-#		allow = {
-#			war = no
-#			OR = {
-#				ruling_party_ideology = conservative
-#				ruling_party_ideology = reactionary
-#			}
-#			average_militancy = 3
-#		}
-#		
-#		effect = {
-#			government = hms_government
-#			any_pop = {
-#				scaled_militancy = {
-#					ideology = liberal
-#					factor = 8
-#				}
-#			}
-#			random_country = {
-#				limit = {
-#					primary_culture = french
-#					capital = 425
-#				}	
-#				relation = {
-#					who = THIS
-#					value = 100
-#				}
-#				diplomatic_influence = {
-#					who = THIS
-#					value = 100
-#				}
-#			}
-#			set_country_flag = we_have_tried_this_once
-#		}
-#	}
-
 	treaty_of_guadalupe_hidalgo = {
 		picture = treaty_of_guadalupe_hidalgo
 		potential = {
@@ -255,95 +205,6 @@ political_decisions = {
 		}
 	}
 	
-	mexican_caribbean = {
-		picture = spanish_cuba
-		potential = {
-			tag = MEX
-			has_country_flag = mexico_central_america
-			NOT = { has_country_flag = mexico_caribbean }
-			ai = no
-		}
-		allow = {
-			war = no
-			is_vassal = no
-			is_disarmed = no
-		}
-		effect = {
-			set_country_flag = mexico_caribbean
-			badboy = 5
-			add_accepted_culture = caribeno
-			any_country = {
-				limit = {
-					OR = {
-						tag = CUB
-						tag = HAI
-						tag = PRI
-					}
-				}
-				all_core = { add_core = MEX }
-			}
-		}
-	}
-	
-	return_federalism_mex_1847 = {
-	picture = mex_constitution
-		potential = {
-			has_global_flag = mexican_american_war
-			tag = MEX
-			NOT = { has_country_flag = mex_fed_1847 }
-			NOT = { year = 1855 }
-			NOT = {
-				AND = {
-					centralization = federalism
-					press_rights = free_press
-					slavery = no_slavery
-					border_policy = open_borders
-				}
-			}
-		}
-		
-		allow = { }
-		
-		effect = {
-			set_country_flag = mex_fed_1847
-			prestige = -10
-			war_exhaustion = -25
-			any_pop = {
-				militancy = -1
-				consciousness = -1
-			}
-			political_reform = federalism
-			political_reform = free_press
-			political_reform = no_slavery
-			political_reform = open_borders
-			random_owned = {
-				limit = {
-					owner = { child_labor = child_labor_illegal }
-				}
-				owner = { social_reform = child_labor_restricted }
-			}
-			random_owned = {
-				limit = {
-					owner = {
-						political_parties = harassment
-					}
-				}
-				owner = { political_reform = gerrymandering }
-			}
-			political_reform = state_equal_weight
-			random_owned = {
-				limit = {
-					owner = {
-						NOT = { vote_franschise = universal_voting }
-						NOT = { vote_franschise = universal_weighted_voting }
-					}
-				}
-				owner = { political_reform = universal_weighted_voting }
-			}
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
 	mexico_usa_agreement = {
         picture = us_mex_peace
         potential = {
@@ -372,7 +233,7 @@ political_decisions = {
             tag = MEX
             has_global_flag = mexican_american_war
 			USA = {
-				#is_disarmed = yes
+				is_disarmed = yes
 				truce_with = THIS
 			}
             NOT = { has_global_flag = MEX_US_peace_agreement }

@@ -470,12 +470,56 @@ political_decisions = {
 			USA = {
 				any_owned = {
 					limit = {
-						is_core = USA
-						continent = north_america
+						OR = {
+							AND = {
+								is_core = USA
+								continent = north_america
+							}
+							region = MEX_85
+							region = TEX_132
+							region = MEX_94
+							region = MEX_97
+							region = USA_129
+							region = USA_106
+							region = USA_78
+							region = USA_81
+							region = USA_91
+							region = USA_111
+							region = USA_126
+						}
 					}
 					life_rating = 5
 				}
 			}
+			TEX = {
+				any_owned = {
+					limit = {
+						is_core = TEX
+					}
+					life_rating = 5
+				}
+			}
+			MEX = {
+				any_owned = {
+					limit = {
+						OR = {
+							region = MEX_85
+							region = TEX_132
+							region = MEX_94
+							region = MEX_97
+							region = USA_129
+							region = USA_106
+							region = USA_78
+							region = USA_81
+							region = USA_91
+							region = USA_111
+							region = USA_126
+						}
+					}
+					life_rating = 5
+				}
+			}
+			91 = { life_rating = 5 }
 			
 			#AUS Life Ratings
 			AUS = {

@@ -452,7 +452,6 @@ country_event = {
 		set_country_flag = texas_recaptured
 		war_exhaustion = -30
 		prestige = 10
-		years_of_research = 2
 		any_pop = {
 			limit = { has_pop_culture = texan }
 			militancy = 10
@@ -1200,7 +1199,7 @@ country_event = {
 		USA = { country_event = 123574 }
     }
     option = {
-        name = "Take the Oregon territory. §RGain 5 infamy§W"
+        name = "Take the Oregon territory. §RGain 7 infamy§W"
         prestige = 30
 		any_owned = {
 			limit = {
@@ -1221,7 +1220,7 @@ country_event = {
 		set_global_flag = mex_took_oregon_maw
     }
     option = {
-        name = "All land West of the Mississippi is Mexican. §RGain 12 infamy§W"
+        name = "All land West of the Mississippi is Mexican. §RGain 20 infamy§W"
         prestige = 40
 		any_owned = {
 			limit = {
@@ -1244,17 +1243,16 @@ country_event = {
 					region = TEX_132 #Texas
 					region = USA_158 #Minnesota
 				}
-				NOT = { province_id = 140 }
 			}
 			add_core = MEX
 		}
 		USA = { country_event = 123576 prestige = -40 }
-        badboy = 12
+        badboy = 20
 		set_country_flag = has_taken_oregon_or_more
 		set_global_flag = mex_took_mississippi_maw
     }
     option = {
-        name = "All lands West of the Mississippi and Florida are Mexican. §RGain 18 infamy§W"
+        name = "All lands West of the Mississippi and Florida are Mexican. §RGain 25 infamy§W"
         prestige = 50
 		any_owned = {
 			limit = {
@@ -1284,7 +1282,7 @@ country_event = {
 			add_core = MEX
 		}
 		USA = { country_event = 123577 prestige = -50 }
-        badboy = 18
+        badboy = 25
 		set_country_flag = has_taken_oregon_or_more
 		set_global_flag = mex_took_florida_maw
     }
@@ -1324,7 +1322,6 @@ country_event = {
 		USA_78 = { remove_core = USA }
 		USA_91 = { remove_core = USA }
 		111 = { remove_core = USA }
-		114 = { remove_core = USA }
         any_owned = {
 			limit = {
 				OR = {
@@ -1335,7 +1332,6 @@ country_event = {
 					region = TEX_132
 					region = CAN_13
 					province_id = 111
-					province_id = 114
 				}
 			}
 			add_core = MEX
@@ -1356,8 +1352,6 @@ country_event = {
 		USA_81 = { remove_core = USA }
 		USA_78 = { remove_core = USA }
 		USA_91 = { remove_core = USA }
-		111 = { remove_core = USA }
-		114 = { remove_core = USA }
         any_owned = {
 			limit = {
 				OR = {
@@ -1381,7 +1375,6 @@ country_event = {
 					region = TEX_132
 					region = USA_158
 				}
-				NOT = { province_id = 140 }
 			}
 			add_core = MEX
         }
@@ -1499,8 +1492,8 @@ country_event = {
             ai_chance = { factor = 1 }
     }
     option = {
-        name = "We need a buffer South of the Rio Grande. §RGain 13 infamy§W"
-        badboy = 13
+        name = "We need a buffer South of the Rio Grande. §RGain 15 infamy§W"
+        badboy = 15
         set_country_flag = alternate_history_us_mexico_war
             MEX_85 = { add_core = THIS } #California
             TEX_132 = { add_core = THIS } #Texas
@@ -1519,8 +1512,8 @@ country_event = {
             ai_chance = { factor = 0 }
     }
     option = {
-        name = "Follow Sam Houston's proposal and take land further South. §RGain 20 infamy§W"
-        badboy =  20
+        name = "Follow Sam Houston's proposal and take land further South. §RGain 23 infamy§W"
+        badboy =  23
         set_country_flag = alternate_history_us_mexico_war
             MEX_85 = { add_core = THIS } #California
             TEX_132 = { add_core = THIS } #Texas
@@ -1625,7 +1618,7 @@ country_event = {
                     region = USA_81
                     region = USA_91
                     region = USA_111
-                    region = USA_126   
+                    region = USA_126
                 }
             }
             secede_province = USA
@@ -1667,16 +1660,9 @@ country_event = {
                     region = USA_126
 					region = MEX_103
 					region = MEX_100
-					province_id = 2138
-					province_id = 2139
-					province_id = 2140
-					province_id = 2137
-					province_id = 2143
-					province_id = 2142
-					province_id = 2144
-					province_id = 2147
-					province_id = 2149
-					province_id = 2152
+					region = MEX_2138
+					region = MEX_2142
+					region = MEX_2149
                 }
             }
             secede_province = USA
@@ -1719,25 +1705,10 @@ country_event = {
                     region = USA_126
 					region = MEX_103
 					region = MEX_100
-					province_id = 2138
-					province_id = 2139
-					province_id = 2140
-					province_id = 2137
-					province_id = 2143
-					province_id = 2142
-					province_id = 2144
-					province_id = 2147
-					province_id = 2149
-					province_id = 2152
-					province_id = 2141
-					province_id = 2145
-					province_id = 2155
-					province_id = 2150
-					province_id = 2151
-					province_id = 2157
-					province_id = 2154
-					province_id = 2153
-					province_id = 2158
+					region = MEX_2138
+					region = MEX_2142
+					region = MEX_2149
+					region = MEX_2151
 					province_id = 2159
 					province_id = 2163
                 }

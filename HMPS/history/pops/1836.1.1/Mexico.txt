@@ -1059,7 +1059,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size = 150
+		size = 5150
 	}
 
 	farmers = {
@@ -1481,7 +1481,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size = 1000
+		size = 6000
 	}
 
 	farmers = {
@@ -1982,7 +1982,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size = 650
+		size = 10650
 
 		militancy = 5
 	}
@@ -2169,7 +2169,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size = 525
+		size = 4525
 	}
 
 	farmers = {
@@ -2193,7 +2193,7 @@
 	soldiers = {
 		culture = nahua #tarascan
 		religion = catholic
-		size = 375
+		size = 4375
 	}
 
 	farmers = {
@@ -2307,7 +2307,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size = 800
+		size = 10800
 	}
 
 	farmers = {

@@ -216,7 +216,10 @@ political_decisions = {
 	mexican_colombian_cuba = {
 		picture = spanish_cuba
 		potential = {			
-			tag = GCO
+			OR = {
+				tag = MEX
+				tag = GCO
+			}
 			NOT = { has_global_flag = integrated_cuba }
 		}
 		allow = {

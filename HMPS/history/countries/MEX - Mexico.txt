@@ -3,8 +3,8 @@ primary_culture = mexican
 religion = catholic
 government = presidential_dictatorship
 plurality = 25.0
-nationalvalue = nv_equality
-literacy = 0.08
+nationalvalue = nv_order
+literacy = 0.07
 non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 5.5
@@ -82,5 +82,7 @@ dragoon_activation = yes
 #Starting Consciousness
 consciousness = 2
 nonstate_consciousness = 0
+
+decision = mex_1836_setup
 
 oob = "MEX_oob.txt"
