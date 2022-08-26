@@ -324,7 +324,7 @@ From;To;Type;Through;Data;Comment
 331;332;sea;2710;0;Gotland Strait
 846;872;sea;2771;0;Dodecanese Strait
 844;865;sea;2772;0;Myteline Strait
-271;304;sea;2737;0;Irish Strait
+271;304;land;2737;0;Irish Strait - land not sea for UFB name to show correctly
 254;304;sea;2737;0;Irish Strait
 267;1724;sea;2735;0;Inverness - Orkney Strait
 780;782;land;2762;0;Mostar Bay

@@ -239,7 +239,14 @@ political_decisions = {
 	
 	enact_the_homestead_act = {
 		potential = {
-			tag = USA
+			OR = {
+				tag = USA
+				tag = MEX
+			}
+			OR = {
+				owns = 153
+				owns = 104
+			}
 			government = democracy
 			NOT = { has_country_flag = homestead_act }
 			year = 1862

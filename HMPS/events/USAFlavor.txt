@@ -1318,13 +1318,9 @@ country_event = {
 	picture = "homesteading"
 
 	trigger = {
-		tag = USA   
 		has_country_modifier = the_homestead_act
 		OR = {
-			AND = {
-				NOT = { ruling_party_ideology = liberal }
-				NOT = { government = democracy }
-			}
+			NOT = { government = democracy }
 			NOT = { number_of_states = 3 }
 			NOT = { num_of_ports = 1 }
 		}

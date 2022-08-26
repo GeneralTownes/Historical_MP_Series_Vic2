@@ -158,7 +158,10 @@ political_decisions = {
 			303 = {
 				secede_province = GBR
 			}
-			capital = 289
+			304 = {
+				secede_province = GBR
+			}
+			capital = 304
 			money = 1000000
 			set_country_flag = revolution_spread
 			
@@ -195,10 +198,6 @@ political_decisions = {
 					name = gbr_rgo
 					duration = -1
 				}
-				#add_province_modifier = {
-				#	name = baby_boom
-				#	duration = 3650
-				#}
 			}
 			tech_school = culture_tech_school
 			set_country_flag = our_home
