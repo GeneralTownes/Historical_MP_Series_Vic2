@@ -703,7 +703,6 @@ political_decisions = {
 			MEX = {
 				vassal_of = THIS
 				in_sphere = THIS
-				has_country_flag = treaty_of_guadalupe_hidalgo
 			}
 			UCA = {
 				vassal_of = THIS

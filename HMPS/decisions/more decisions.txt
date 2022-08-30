@@ -1040,7 +1040,6 @@ political_decisions = {
 				USA = { has_country_flag = western_collapse }
 			}
 			MEX = {
-				has_country_flag = treaty_of_guadalupe_hidalgo
 				NOT = { has_country_flag = mexico_reconquest }
 			}
 		}
