@@ -91,6 +91,12 @@ merchant_banking = yes
 consciousness = 3
 nonstate_consciousness = 1
 
+govt_flag = 
+{
+	government = hms_government
+	flag = theocracy
+}
+
 ruling_party = FRA_conservative
 last_election = 1834.6.21
 upper_house = {

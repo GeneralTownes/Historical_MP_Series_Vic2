@@ -8770,8 +8770,6 @@ negotiated_state_transfer = {
 			AND = {
 				ai = no
 				has_country_flag = begin_land_transfer
-				#war = no	#can now stack multiple whilst at war
-				#THIS = { war = no }
 				is_independant = yes
 			}
 			AND = {
@@ -8831,8 +8829,6 @@ third_party_transfer = {
 			AND = {
 				ai = no
 				has_country_flag = begin_land_transfer
-				#war = no	#can now stack multiple whilst at war
-				#THIS = { war = no }
 				is_independant = yes
 			}
 			AND = {
@@ -8844,7 +8840,7 @@ third_party_transfer = {
 			}
 		}
 		THIS = { ai = no }
-		has_country_flag = begin_land_transfer
+		THIS = { has_country_flag = begin_land_transfer }
 	}
 
 	# THIS - us
@@ -8913,8 +8909,6 @@ negotiated_substate_transfer = {
 		any_substate = {
 			number_of_states = 1
 		}
-		#war = no
-		#THIS = { war = no }
 		has_country_flag = begin_land_transfer
 		THIS = { has_country_flag = begin_land_transfer }
 	}
