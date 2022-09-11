@@ -182,6 +182,13 @@ country_event = {
 		relation = { who = MEX value = -200 }
 		diplomatic_influence = { who = MEX value = -400 }
 		leave_alliance = MEX
+		MEX = {
+			add_casus_belli = {
+				target = THIS
+				type = cut_down_to_size
+				months = 100
+			}
+		}
 		war = {
 			target = MEX
 			attacker_goal = { casus_belli = cut_down_to_size }
