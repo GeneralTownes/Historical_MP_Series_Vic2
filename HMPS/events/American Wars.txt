@@ -642,14 +642,17 @@ country_event = {
 		USA_78 = {
 			remove_core = COL
 			remove_core = ENG
+			add_core = USA
 		}
 		USA_81 = {
 			remove_core = COL
 			remove_core = ENG
+			add_core = USA
 		}
 		USA_91 = {
 			remove_core = COL
 			remove_core = ENG
+			add_core = USA
 		}
 		RPL = {
 			any_owned = {

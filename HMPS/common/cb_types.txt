@@ -5695,6 +5695,10 @@ conquest = {
 			NOT = { relation = { who = THIS value = 0 } }
 			THIS = { ai = no }
 		}
+		OR = {
+			NOT = { tag = EIC }
+			NOT = { number_of_states = 2 }
+		}
 		
 		#AI anti-military will not use this
 		OR = {

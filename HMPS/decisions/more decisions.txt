@@ -171,7 +171,10 @@ political_decisions = {
 					NOT = {
 						OR = {
 							owned_by = THIS
-							owner = { in_sphere = THIS }
+							owner = {
+								in_sphere = THIS
+								ai = yes
+							}
 						}
 					}
 				}
@@ -256,7 +259,10 @@ political_decisions = {
 					NOT = {
 						OR = {
 							owned_by = THIS
-							owner = { in_sphere = THIS }
+							owner = {
+								in_sphere = THIS
+								ai = yes
+							}
 						}
 					}
 				}
@@ -266,7 +272,10 @@ political_decisions = {
 					OR = {
 						OR = {
 							owned_by = THIS
-							owner = { in_sphere = THIS }
+							owner = {
+								in_sphere = THIS
+								ai = yes
+							}
 						}
 						NOT = {
 							OR = {
