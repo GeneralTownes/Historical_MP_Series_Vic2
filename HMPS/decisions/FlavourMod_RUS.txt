@@ -271,7 +271,10 @@ political_decisions = {
 				}
 				YUG = {
 					exists = yes
-					vassal_of = RUS
+					OR = {
+						vassal_of = THIS
+						in_sphere = THIS
+					}
 				}
 				has_country_flag = eastern_crisis_dismantle_ottomans
 			}
