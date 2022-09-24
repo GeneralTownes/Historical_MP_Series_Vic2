@@ -509,6 +509,6 @@ party_loyalty_focus = {
 	anarcho_liberal_focus = {
 		ideology = anarcho_liberal
 		loyalty_value = 0.01 # By that much pops will be more loyal
-		icon = 37
+		icon = 32
 	}
 }

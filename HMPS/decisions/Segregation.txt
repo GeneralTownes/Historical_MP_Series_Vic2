@@ -82,6 +82,7 @@ political_decisions = {
 				is_colonial = no
 			}
 			citizenship_policy = full_citizenship
+			mass_politics = 1
 			invention = sociology
 			money = 10000
 			OR = {

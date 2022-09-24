@@ -1579,7 +1579,11 @@ economic_reforms = {
 			technology_cost = 5000 #was 15000
 			civilization_progress_modifier = 0.05 #was 0.10
 			research_points = 0.05
-			allow = { NOT = { has_country_flag = lacking_writing_system } money = 10001 }
+			allow = { 
+				NOT = { has_country_flag = lacking_writing_system }
+				money = 10001
+				ai = no
+			}
 			
 			on_execute = {
 				trigger = {
@@ -1613,7 +1617,11 @@ economic_reforms = {
 			technology_cost = 5000
 			civilization_progress_modifier = 0.10
 			research_points = 0.1
-			allow = { NOT = { has_country_flag = lacking_writing_system } money = 10001 }
+			allow = {
+				NOT = { has_country_flag = lacking_writing_system}
+				money = 10001
+				ai = no
+			}
 			
 			on_execute = {
 				effect = {
@@ -2215,7 +2223,7 @@ military_reforms = {
 			research_points = 0.02
 			
 			allow = {
-				any_owned_province = { port = yes }
+				#any_owned_province = { port = yes } 	# this condition prevents landlocked ai from westenising
 			}
 			
 			on_execute = {
@@ -2247,7 +2255,7 @@ military_reforms = {
 			research_points = 0.05
 			
 			allow = {
-				any_owned_province = { port = yes }
+				#any_owned_province = { port = yes }
 			}
 			
 			on_execute = {

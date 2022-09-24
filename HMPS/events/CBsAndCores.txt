@@ -976,8 +976,8 @@ province_event = {
 		OR = {
 			any_neighbor_province = { is_core = THIS }
 			AND = {
-				is_overseas = yes
 				is_coastal = yes
+				owner = { any_owned_province = { port = yes } }
 			}
 		}
 		NOT = {

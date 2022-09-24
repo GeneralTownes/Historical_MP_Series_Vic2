@@ -3,7 +3,7 @@ political_decisions = {
 		picture = vesuvius_observatory
 		potential = {
 			research_policy = no_funding
-			NOT = { has_country_flag = hiding_the_decisions }
+			#NOT = { has_country_flag = hiding_the_decisions }
 		}
 		allow = {
 			idealism = 1
@@ -24,7 +24,7 @@ political_decisions = {
 		picture = vesuvius_observatory
 		potential = {
 			research_policy = limited_funding
-			NOT = { has_country_flag = hiding_the_decisions }
+			#NOT = { has_country_flag = hiding_the_decisions }
 		}
 		allow = {
 			analytic_philosophy = 1
@@ -45,7 +45,7 @@ political_decisions = {
 		picture = vesuvius_observatory
 		potential = {
 			research_policy = funded
-			NOT = { has_country_flag = hiding_the_decisions }
+			#NOT = { has_country_flag = hiding_the_decisions }
 		}
 		allow = {
 			critical_theory = 1

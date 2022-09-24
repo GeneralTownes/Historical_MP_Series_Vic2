@@ -1713,6 +1713,16 @@ assimilation_chance = {
 		location = { NOT = { is_core = THIS } }
 	}
 	
+	#######################
+	### Overseas Blocks ###
+	#######################
+	
+	modifier = {
+		factor = -100
+		location = { is_overseas = yes }
+		location = { NOT = { is_core = THIS } }
+	}
+	
 	#####################
 	### Culure Blocks ###
 	#####################

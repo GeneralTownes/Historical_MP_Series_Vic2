@@ -1564,7 +1564,7 @@ ideologies = {
 	}
 	
 	liberal = {
-		factor = 1.2
+		factor = 2
 		
 		modifier = {
 			factor = 0.9
