@@ -37,6 +37,7 @@ country_event = {
 				limit = {
 					has_pop_type = slaves
 					produces = cotton
+					owner = { is_culture_group = american_cultures }
 				}
 				add_province_modifier = { name = king_cotton duration = -1 }
 			}
