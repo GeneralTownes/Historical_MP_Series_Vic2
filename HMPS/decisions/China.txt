@@ -1,34 +1,34 @@
 political_decisions = {
-	become_democratic_china = {
-		picture = form_china
-		potential = {
-			OR = {
-				tag = TPG
-				tag = CHI
-			}
-			government = presidential_dictatorship
-		}
-
-		allow = {
-			state_n_government = 1
-			idealism = 1
-			NOT = { ruling_party_ideology = reactionary }
-		}
-		
-		effect = {
-			political_reform = wealth_voting 
-			political_reform = gerrymandering 
-			political_reform = free_press
-			political_reform = yes_meeting
-			political_reform = federalism
-			political_reform = state_equal_weight 
-			government = democracy
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	#become_democratic_china = {
+	#	picture = form_china
+	#	potential = {
+	#		OR = {
+	#			tag = TPG
+	#			tag = CHI
+	#		}
+	#		government = presidential_dictatorship
+	#	}
+	#
+	#	allow = {
+	#		state_n_government = 1
+	#		idealism = 1
+	#		NOT = { ruling_party_ideology = reactionary }
+	#	}
+	#	
+	#	effect = {
+	#		political_reform = wealth_voting 
+	#		political_reform = gerrymandering 
+	#		political_reform = free_press
+	#		political_reform = yes_meeting
+	#		political_reform = federalism
+	#		political_reform = state_equal_weight 
+	#		government = democracy
+	#	}
+	#	
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#}
 
 
 	torching_of_the_summer_palace = {

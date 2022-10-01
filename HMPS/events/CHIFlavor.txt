@@ -35,7 +35,10 @@ country_event = {
 				OR = {
 					AND = {
 						tag = QNG
-						has_global_flag = xuantong_emperor
+						OR = {
+							has_global_flag = xuantong_emperor
+							average_militancy = 4
+						}
 						TPG = { exists = no }
 						CHI = { exists = no }
 					}
@@ -586,7 +589,6 @@ province_event = {
 	trigger = {
 		is_core = CHI
 		NOT = { has_province_modifier = peasant_revolt }
-		NOT = { owner = { government = hms_government } }
 		NOT = { owner = { government = democracy } }
 		OR = {
 			liberal = 10
