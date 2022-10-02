@@ -167,7 +167,12 @@ aeroplane_factory = {
 		value = 0.25
 	}
 	bonus = {
-		trigger = { has_building = synthetic_rubber_factory }
+		trigger = {
+			OR = {
+				trade_goods_in_state = rubber
+				has_building = synthetic_rubber_factory
+			}
+		}
 		value = 0.15
 	}
 }
@@ -220,7 +225,12 @@ automobile_factory = {
 		value = 0.05
 	}
 	bonus = {
-		trigger = { has_building = synthetic_rubber_factory }
+		trigger = {
+			OR = {
+				trade_goods_in_state = rubber
+				has_building = synthetic_rubber_factory
+			}
+		}
 		value = 0.1
 	}
 }
@@ -274,11 +284,12 @@ electric_gear_factory = {
 	output_goods = electric_gear 
 	value = 5.5
 	bonus = {
-		trigger = { trade_goods_in_state = rubber }
-		value = 0.05
-	}
-	bonus = {
-		trigger = { has_building = synthetic_rubber_factory }
+		trigger = { 
+			OR = {
+				trade_goods_in_state = rubber
+				has_building = synthetic_rubber_factory
+			}
+		}
 		value = 0.05
 	}
 	bonus = {
@@ -339,11 +350,12 @@ synthetic_rubber_factory = {
 	output_goods = rubber 
 	value = 2.5
 	bonus = {
-		trigger = { trade_goods_in_state = oil }
-		value = 0.15
-	}
-	bonus = {
-		trigger = { has_building = synthetic_oil_factory }
+		trigger = {
+			OR = {
+				trade_goods_in_state = oil 
+				has_building = synthetic_oil_factory
+			}
+		}
 		value = 0.25
 	}
 }
@@ -409,12 +421,12 @@ fuel_refinery = {
 	output_goods = fuel
 	value = 2
 	bonus = {
-		trigger = { 
+		trigger = {
 			OR = {
 				trade_goods_in_state = oil 
 				has_building = synthetic_oil_factory
-				}
 			}
+		}
 		value = 0.25
 	}
 }
@@ -718,12 +730,13 @@ ammunition_factory = {
 	output_goods = ammunition 
 	value = 2.2
 	bonus = {
-		trigger = { trade_goods_in_state = sulphur }
+		trigger = {
+			OR = {
+				trade_goods_in_state = sulphur
+				has_building = synthetic_sulphur_factory
+			}
+		}
 		value = 0.1
-	}
-	bonus = {
-		trigger = { has_building = synthetic_sulphur_factory }
-		value = 0.15
 	}
 	bonus = {
 		trigger = { has_building = steel_factory }
@@ -888,11 +901,12 @@ fertilizer_factory = {
 	output_goods = fertilizer 
 	value = 5
 	bonus = {
-		trigger = { trade_goods_in_state = sulphur }
-		value = 0.25
-	}
-	bonus = {
-		trigger = { has_building = synthetic_sulphur_factory }
+		trigger = { 
+			OR = {
+				trade_goods_in_state = sulphur
+				has_building = synthetic_sulphur_factory
+			}
+		}
 		value = 0.25
 	}
 }
