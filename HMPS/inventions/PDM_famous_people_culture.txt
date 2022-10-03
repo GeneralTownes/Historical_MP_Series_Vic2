@@ -214,7 +214,9 @@ freud = {
 	chance = {
 		base = 5
 	}
-	shared_prestige = 2.5
+	effect = {
+		shared_prestige = 2.5
+	}
 }
 
 jung = {
@@ -227,7 +229,9 @@ jung = {
 			invention = freud
 		}
 	}
-	shared_prestige = 2.5
+	effect = {
+		shared_prestige = 2.5
+	}
 }
 
 

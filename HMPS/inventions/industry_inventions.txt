@@ -39,7 +39,7 @@ daimlers_automobile = {
 		}
 	}
 	effect = {
-		activate_building = rubber_discovered_building		#put before real building so dummy building is not unlocked
+		#activate_building = rubber_discovered_building		#put before real building so dummy building is not unlocked
 		activate_building = automobile_factory
 		factory_goods_output = {
 			machine_parts = 0.01 
@@ -66,7 +66,7 @@ wright_n_langleys_aeroplanes = {
 		}
 	}
 	effect = {
-		activate_building = rubber_discovered_building		#put before real building so dummy building is not unlocked
+		#activate_building = rubber_discovered_building		#put before real building so dummy building is not unlocked
 		activate_building = aeroplane_factory
 		factory_goods_output = {
 			machine_parts = 0.02 
@@ -1389,7 +1389,7 @@ cracking = {
 		}
 	}
 	effect = {
-		activate_building = oil_discovered_building		#put before real building so dummy building is not unlocked
+		#activate_building = oil_discovered_building		#put before real building so dummy building is not unlocked
 		activate_building = fuel_refinery 
 	}
 }
@@ -1426,7 +1426,7 @@ edison_light_bulb = {
 		}
 	}
 	effect = {
-		activate_building = rubber_discovered_building		#put before real building so dummy building is not unlocked
+		#activate_building = rubber_discovered_building		#put before real building so dummy building is not unlocked
 		activate_building = electric_gear_factory
 	}
 }

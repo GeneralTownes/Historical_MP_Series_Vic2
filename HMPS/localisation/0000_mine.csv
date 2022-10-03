@@ -247,7 +247,7 @@ good_subsidies_desc;A large sum of money is provided to each citizen monthly. Th
 EVTNAME7777907;Change in Welfare Policy;;;;;;;;;;;;;
 EVTDESC7777907;The party of large tax and large spend is no longer in power, we will now readjust our social spending levels.;;;;;;;;;;;;;
 eic_trigger_the_decision_title;Our Future;;;;;;;;;;;;;
-eic_trigger_the_decision_desc;We have long been under control from London, and since they seem unwilling to decide our long term future we should seize the oppertunity ourselves to make this choice.;;;;;;;;;;;;;
+eic_trigger_the_decision_desc;We have long been under control from London, and since they seem unwilling to decide our long term future we should seize the opportunity ourselves to make this choice.;;;;;;;;;;;;;
 transfer_rp_debuff;RP Debuff;;;;;;;;;;;;;
 transfer_rp_debuff_desc;Active as can currently take land from civs as an unciv.;;;;;;;;;;;;;
 JAN_1;Norf FC;;;;;;;;;;;;;
@@ -575,7 +575,7 @@ start_mass_literacy_campaign_title;§EStart Mass Literacy Campaign§!;;;;;;;;;;;;;
 start_mass_literacy_campaign_desc;We can begin a mass education campaign to target the most illiterate citizens and raise their literacy. It will cost administrative effort, and other nations will be wary of the fast rise in the ability of populace.;;;;;;;;;;;;;
 EVTNAME7777923;The Literacy Campaign of $YEAR$;;;;;;;;;;;;;
 EVTDESC7777923;We have complied a list of areas most in need of targeted education to increase our literacy. Lower literacy citizens will gain more effect from the campaign, with higher literacy citizens seeing little to no effect, shall we proceed?;;;;;;;;;;;;;
-EVT7777923OPTA;Yes, our people must have the oppertunity education affords them;;;;;;;;;;;;;
+EVT7777923OPTA;Yes, our people must have the opportunity education affords them;;;;;;;;;;;;;
 EVT7777923OPTB;No, the literacy of our populace is now sufficent;;;;;;;;;;;;;
 mass_literacy_in_progress;Mass Literacy Campaign;;;;;;;;;;;;;
 mass_literacy_in_progress_desc;There is currently a nationwide effort to educate the most needing of our populace.;;;;;;;;;;;;;

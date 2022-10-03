@@ -871,40 +871,40 @@ railroad = {
 
 ### Dummy RGO discovery buildings
 
-oil_discovered_building = {
-	type = factory
-
-	on_completion = factory
-	completion_size = 0.2
-	max_level = 99
-	goods_cost =
-	{
-		oil = 1
-	}
-	time = 9999
-	visibility = yes
-	onmap = no
-
-	production_type = oil_discovered_production_type
-	pop_build_factory = yes
-	strategic_factory = yes
-}
-
-rubber_discovered_building = {
-	type = factory
-
-	on_completion = factory
-	completion_size = 0.2
-	max_level = 99
-	goods_cost =
-	{
-		oil = 1
-	}
-	time = 9999
-	visibility = yes
-	onmap = no
-
-	production_type = rubber_discovered_production_type
-	pop_build_factory = yes
-	strategic_factory = yes
-}
+#oil_discovered_building = {
+#	type = factory
+#
+#	on_completion = factory
+#	completion_size = 0.2
+#	max_level = 99
+#	goods_cost =
+#	{
+#		oil = 1
+#	}
+#	time = 9999
+#	visibility = yes
+#	onmap = no
+#
+#	production_type = oil_discovered_production_type
+#	pop_build_factory = yes
+#	strategic_factory = yes
+#}
+#
+#rubber_discovered_building = {
+#	type = factory
+#
+#	on_completion = factory
+#	completion_size = 0.2
+#	max_level = 99
+#	goods_cost =
+#	{
+#		oil = 1
+#	}
+#	time = 9999
+#	visibility = yes
+#	onmap = no
+#
+#	production_type = rubber_discovered_production_type
+#	pop_build_factory = yes
+#	strategic_factory = yes
+#}

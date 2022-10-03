@@ -2273,7 +2273,7 @@ boxer_rebellion = {
 	local_rgo_output = -0.25
 	immigrant_attract = -0.25
 	immigrant_push = 0.75
-	population_growth = -0.002
+	#population_growth = -0.002
 	icon = 4
 }
 
@@ -2290,7 +2290,7 @@ boxer_agitation = {
 	local_RGO_throughput = -0.25
 	immigrant_attract = -0.25
 	immigrant_push = 0.5
-	population_growth = -0.002
+	#population_growth = -0.002
 	icon = 4
 }
 
