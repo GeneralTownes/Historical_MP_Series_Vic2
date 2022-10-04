@@ -4035,19 +4035,7 @@ country_event = {
 		any_owned = {
 			limit = { is_colonial = no }
 			any_pop = {
-				militancy = -2
-				scaled_militancy = {
-					ideology = liberal
-					factor = -8
-				}
-				scaled_militancy = {
-					ideology = conservative
-					factor = -6
-				}
-				scaled_consciousness = {
-					ideology = liberal
-					factor = -4
-				}
+				militancy = -8
 			}
 			remove_province_modifier = liberal_agitation
 		}						

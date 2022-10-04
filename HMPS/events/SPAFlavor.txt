@@ -4217,8 +4217,13 @@ country_event = {
 	option = {
 		name = "EVT971711OPTA"
 		set_global_flag = carlists_pacified
-		remove_accepted_culture = catalan
-		remove_accepted_culture = basque
+		random_owned = {
+			limit = { owner = { NOT = { tag = IBR } } }
+			owner = {
+				remove_accepted_culture = catalan
+				remove_accepted_culture = basque
+			}
+		}
 		any_owned = {
 			remove_province_modifier = carlist_sympathies
 			remove_province_modifier = christino_sympathies 
@@ -4228,6 +4233,7 @@ country_event = {
 			limit = { has_pop_culture = spanish }
 			militancy = -4
 		}
+		any_random
 		any_pop = { 
 			limit = { 
 				OR = {
