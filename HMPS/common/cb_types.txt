@@ -494,16 +494,86 @@ great_war_penalty_cb = {
 
 	war_name = WAR_NAME
 	
-	#can_use = {
-	#	NOT = { is_our_vassal = THIS }
-	#	is_disarmed = no
-	#}
-	
 	on_add = {
 	}
 	
 	on_po_accepted = {
-		political_reform = no_draft
+		random_owned = {
+			limit = { owner = { conscription = two_year_draft } }
+			owner = { political_reform = no_draft }
+		}
+		random_owned = {
+			limit = { owner = { conscription = four_year_draft } }
+			owner = { political_reform = two_year_draft }
+		}
+		random_owned = {
+			limit = { owner = { conscription = mandatory_service } }
+			owner = { political_reform = four_year_draft }
+		}
+	}
+}
+
+# Additional Great War Penalty (Lowering Militarisation)
+additional_great_war_penalty_cb = {
+	sprite_index = 43
+	is_triggered_only = yes
+	months = 0
+	#always = yes
+	
+	#constructing_cb = no
+	construction_speed = 0.8
+	
+	#great_war_obligatory = yes
+	
+	badboy_factor = 5
+	prestige_factor = 1
+	peace_cost_factor = 10
+	penalty_factor = 0
+
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 0
+	break_truce_militancy_factor = 0
+	truce_months = 108
+	
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+
+	war_name = WAR_NAME
+	
+	can_use = {
+		THIS = { ai = no }
+		war_with = THIS
+		OR = {
+			has_country_flag = in_great_war
+			THIS = { has_country_flag = in_great_war }
+			THIS = { mass_politics = 1 }
+		}
+	}
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = pro_military 
+			to = jingoism
+			value = 0.10
+		}
+	}
+	
+	po_remove_prestige = yes
+	
+	on_po_accepted = {
+		random_owned = {
+			limit = { owner = { conscription = two_year_draft } }
+			owner = { political_reform = no_draft }
+		}
+		random_owned = {
+			limit = { owner = { conscription = four_year_draft } }
+			owner = { political_reform = two_year_draft }
+		}
+		random_owned = {
+			limit = { owner = { conscription = mandatory_service } }
+			owner = { political_reform = four_year_draft }
+		}
 	}
 }
 
