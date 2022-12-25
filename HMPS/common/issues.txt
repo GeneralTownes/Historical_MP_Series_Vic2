@@ -148,7 +148,6 @@ party_issues = {
 			is_jingoism = yes
 			cb_generation_speed_modifier = 0.3
 			mobilisation_size = 0.01
-			army_tech_research_bonus = 0.05
 			culture_tech_research_bonus = -0.05
 		}
 		pro_military = {
@@ -156,7 +155,6 @@ party_issues = {
 			supply_consumption = 0.1
 			war_exhaustion_effect = 0.7
 			cb_generation_speed_modifier = 0.2
-			army_tech_research_bonus = 0.05
 		}
 		anti_military = {
 			max_military_spending = 0.75
@@ -460,6 +458,7 @@ political_reforms = {
 			global_immigrant_attract = -0.1
 			education_efficiency_modifier = -0.05
 			badboy = 0.01
+			army_tech_research_bonus = 0.05
 			allow = { has_country_flag = changing_militarisation }
 		}
 		four_year_draft = {

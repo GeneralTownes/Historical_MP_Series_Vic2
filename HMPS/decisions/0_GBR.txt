@@ -1,6 +1,6 @@
 political_decisions = {
 	for_the_republic = {
-		picture = provincia_britannia
+		picture = british_republic_flag
 		alert = no
 		potential = {
 			tag = ENG
@@ -11,10 +11,6 @@ political_decisions = {
 		}
 
 		effect = {
-			300 = {
-				add_core = GBR
-				secede_province = GBR
-			}
 			ENG_296 = { add_core = GBR }
 			ENG_273 = { add_core = GBR }
 			ENG_277 = { add_core = GBR }
@@ -28,141 +24,54 @@ political_decisions = {
 			ENG_260 = { add_core = GBR }
 			ENG_263 = { add_core = GBR }
 			ENG_258 = { add_core = GBR }
-			GBR = {
-				capital = 300
-				leadership = 80
-			}
-			change_tag_no_core_switch = GBR
-			ENG = {
-				diplomatic_influence = {
-					who = GBR
-					value = 400
+			
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 257
+						province_id = 258
+						province_id = 259
+						province_id = 260
+						province_id = 261
+						province_id = 262
+						province_id = 263
+						province_id = 264
+						province_id = 265
+						province_id = 269
+						province_id = 271
+						province_id = 277
+						province_id = 278
+						province_id = 283
+						province_id = 284
+						province_id = 287
+						province_id = 288
+						province_id = 289
+						province_id = 291
+						province_id = 292
+						province_id = 293
+						province_id = 294
+						province_id = 295
+						province_id = 296
+						province_id = 297
+						province_id = 298
+						province_id = 299
+						province_id = 300
+						province_id = 301
+						province_id = 302
+						province_id = 3268
+						province_id = 3269
+						province_id = 303
+						province_id = 304
+					}
 				}
-			}
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	the_revolution_spreads = {
-		picture = form_madagascar
-		potential = {
-			tag = GBR
-			NOT = { has_country_flag = revolution_spread }
-		}
-		allow = {
-		}
-
-		effect = {
-			ENG = {
-				diplomatic_influence = {
-					who = GBR
-					value = -400
-				}
+				secede_province = GBR
 			}
 			
-			257 = {
-				secede_province = GBR
-			}
-			258 = {
-				secede_province = GBR
-			}
-			259 = {
-				secede_province = GBR
-			}
-			260 = {
-				secede_province = GBR
-			}
-			261 = {
-				secede_province = GBR
-			}
-			262 = {
-				secede_province = GBR
-			}
-			263 = {
-				secede_province = GBR
-			}
-			264 = {
-				secede_province = GBR
-			}
-			265 = {
-				secede_province = GBR
-			}
-			269 = {
-				secede_province = GBR
-			}
-			271 = {
-				secede_province = GBR
-			}
-			277 = {
-				secede_province = GBR
-			}
-			278 = {
-				secede_province = GBR
-			}
-			283 = {
-				secede_province = GBR
-			}
-			284 = {
-				secede_province = GBR
-			}
-			287 = {
-				secede_province = GBR
-			}
-			288 = {
-				secede_province = GBR
-			}
-			289 = {
-				secede_province = GBR
-			}
-			291 = {
-				secede_province = GBR
-			}
-			292 = {
-				secede_province = GBR
-			}
-			293 = {
-				secede_province = GBR
-			}
-			294 = {
-				secede_province = GBR
-			}
-			295 = {
-				secede_province = GBR
-			}
-			296 = {
-				secede_province = GBR
-			}
-			297 = {
-				secede_province = GBR
-			}			
-			298 = {
-				secede_province = GBR
-			}
-			299 = {
-				secede_province = GBR
-			}
-			301 = {
-				secede_province = GBR
-			}
-			302 = {
-				secede_province = GBR
-			}
-			3268 = {
-				secede_province = GBR
-			}
-			3269 = {
-				secede_province = GBR
-			}
-			303 = {
-				secede_province = GBR
-			}
-			304 = {
-				secede_province = GBR
-			}
+			change_tag_no_core_switch = GBR
+			
 			capital = 304
 			money = 1000000
+			leadership = 80
 			set_country_flag = revolution_spread
 			
 			### starting the civil_war
@@ -174,40 +83,107 @@ political_decisions = {
 					call_ally = yes
 				}
 			}
+			
+			country_event = {id=7777937 days = 150}
 		}
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	our_home = {
-		picture = form_britannia
+	irish_reconcilliation = {
+		picture = ireland
 		potential = {
 			tag = GBR
-			NOT = { has_country_flag = our_home }
+			NOT = { has_country_flag = tried_reconciliation }
 		}
 		allow = {
 			war = no
-		}
-		effect = {
-			add_country_modifier = {
-				name = our_home
-				duration = 3650
-			}
-			all_core = {
-				add_province_modifier = {
-					name = gbr_rgo
-					duration = -1
+			nationalism_n_imperialism = 1
+			OR = {
+				AND = {
+					IRE = { exists = yes }
+					relation = {
+						who = IRE
+						value = 200
+					}
+					OR = {
+						part_of_sphere = no
+						in_sphere = THIS
+					}
+					NOT = { citizenship_policy = residency }
+				}
+				AND = {
+					IRE = { exists = no }
+					IRE = { all_core = { owned_by = THIS } }
+					citizens_rights = all_voting_pops
 				}
 			}
-			tech_school = culture_tech_school
-			set_country_flag = our_home
 		}
-		ai_will_do = {
-			factor = 0
+		effect = {
+			country_event = {
+				id = 7777939
+				days = 0
+			}
+			set_country_flag = tried_reconciliation
+		}
+	}
+	irish_integration = {
+		picture = ireland
+		potential = {
+			tag = GBR
+			NOT = { accepted_culture = irish }
+			NOT = { has_country_flag = rejected_irish_reconciliation }
+		}
+		allow = {
+			social_science = 1
+			has_country_flag = irish_reconciled
+		}
+		effect = {
+			inherit = IRE
+			add_accepted_culture = irish
+		}
+	}
+	rebuilding_effort = {
+		picture = alsace_lorraine_mines
+		potential = {
+			tag = GBR
+			has_country_modifier = shattered_economy
+		}
+		allow = {
+			industrial_score = 400
+			steam_turbine = 1
+			scientific_management = 1
+		}
+		effect = {
+			remove_country_modifier = shattered_economy
+			add_country_modifier = {
+				name = recovering_economy
+				duration = -1
+			}
+		}
+	}
+	rebuilding_effort_2 = {
+		picture = alsace_lorraine_mines
+		potential = {
+			tag = GBR
+			has_country_modifier = recovering_economy
+		}
+		allow = {
+			industrial_score = 750
+		}
+		effect = {
+			remove_country_modifier = recovering_economy
+			add_country_modifier = {
+				name = common_land
+				duration = -1
+			}
+			all_core = {
+				life_rating = 1
+			}
 		}
 	}
 	come_one_come_all = {
-		picture = liberty_enlightening_the_world
+		picture = british_republic_flag
 		potential = {
 			tag = GBR
 			NOT = { has_country_flag = to_us }
@@ -217,8 +193,10 @@ political_decisions = {
 				ruling_party_ideology = liberal
 				ruling_party_ideology = socialist
 			}
+			NOT = { has_country_modifier = shattered_economy }
+			NOT = { has_country_modifier = recovering_economy }
+			romanticism = 1
 			war = no
-			has_country_flag = our_home
 		}
 		effect = {
 			add_country_modifier = {
@@ -231,99 +209,4 @@ political_decisions = {
 			factor = 0
 		}
 	}
-#	pro_natalism = {
-#		picture = abolish_prohibition
-#		potential = {
-#			exists = yes
-#			NOT = { has_country_modifier = pro_natal }
-#			NOT = { has_country_modifier = anti_natal }
-#			NOT = { has_country_flag = hiding_the_decisions }
-#		}
-#		allow = {}
-#		effect = {
-#			add_country_modifier = {
-#				name = pro_natal
-#				duration = 3650
-#			}
-#		}
-#		ai_will_do = {
-#			factor = 0
-#		}
-#	}
-#	anti_natalism = {
-#		picture = abolish_prohibition
-#		potential = {
-#			exists = yes
-#			NOT = { has_country_modifier = pro_natal }
-#			NOT = { has_country_modifier = anti_natal }
-#			NOT = { has_country_flag = hiding_the_decisions }
-#		}
-#		allow = {
-#			NOT = { ruling_party_ideology = reactionary }
-#		}
-#		effect = {
-#			add_country_modifier = {
-#				name = anti_natal
-#				duration = 3650
-#			}
-#		}
-#		ai_will_do = {
-#			factor = 0
-#		}
-#	}
-#	internal_reform = {
-#		picture = enact_female_suffrage
-#		potential = {
-#			exists = yes
-#			NOT = { has_country_modifier = internally_reforming }
-#			NOT = { has_country_flag = hiding_the_decisions }
-#		}
-#		allow = {
-#			OR = {
-#				ruling_party_ideology = liberal
-#				ruling_party_ideology = socialist
-#			}
-#			war = no
-#		}
-#		effect = {
-#			add_country_modifier = {
-#				name = internally_reforming
-#				duration = 7300
-#			}
-#		}
-#		ai_will_do = {
-#			factor = 0
-#		}
-#	}
-#	province_development = {
-#		picture = westernize_nation
-#		potential = {
-#			exists = yes
-#			NOT = { has_country_flag = developed_provinces }
-#			NOT = { has_country_flag = hiding_the_decisions }
-#		}
-#		allow = {
-#			integral_rail_system  = 1
-#			electricity = 1
-#			electrical_power_generation = 1
-#			mass_politics = 1
-#			war = no
-#		}
-#		effect = {
-#			any_owned = {
-#				limit = {
-#					is_colonial = no
-#				}
-#				life_rating = 3
-#			}
-#			add_country_modifier = {
-#				name = developing
-#				duration = 1825
-#			}
-#			set_country_flag = developed_provinces
-#		}
-#		ai_will_do = {
-#			factor = 0
-#		}
-#	}
 }	

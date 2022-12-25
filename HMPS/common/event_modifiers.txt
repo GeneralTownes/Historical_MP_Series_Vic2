@@ -52,16 +52,6 @@ reactionary_uh_increased = {
 	icon = 1
 }
 
-our_home = {
-	#global_population_growth = 0.003
-	rgo_throughput = 0.15
-	#cb_generation_speed_modifier = -2
-	diplomatic_points_modifier = -0.25
-	influence_modifier = -0.5
-	prestige = -0.1
-	icon = 1
-}
-
 come_all = {
 	global_immigrant_attract = 0.75
 	global_assimilation_rate = 1
@@ -69,22 +59,39 @@ come_all = {
 	icon = 9
 }
 
-home_focus = {
-	cb_generation_speed_modifier = -0.5
-	diplomatic_points_modifier = -0.5
-	influence_modifier = -0.5
-	prestige = -0.83
-	research_points_modifier = 0.2
-	rgo_throughput = 0.1
-	factory_throughput = 0.05
-	tax_efficiency = 0.05
-	war_exhaustion = -0.1
-	education_efficiency_modifier = 0.2
-	icon = 11
+irish_investment = {
+	tax_efficiency = -0.05
+	rgo_throughput = -0.1
+	factory_output = -0.05
+	icon = 10
 }
 
-home_focus_trial = {
-	icon = 11
+local_irish_investment = {
+	local_rgo_throughput = 0.15
+	pop_militancy_modifier = -0.02
+	icon = 13
+}
+
+shattered_economy = {
+	rgo_throughput = -0.5
+	rgo_output = -0.5
+	factory_output = -0.2
+	global_immigrant_attract = -1
+	icon = 12
+}
+
+recovering_economy = {
+	rgo_throughput = -0.25
+	rgo_output = -0.25
+	factory_output = -0.1
+	global_immigrant_attract = -0.5
+	icon = 12
+}
+
+common_land = {
+	global_population_growth = 0.001
+	rgo_output = -0.2
+	icon = 17
 }
 
 nv_cooldown = {
@@ -101,12 +108,6 @@ internally_reforming = {
 	global_pop_consciousness_modifier = 0.2
 	global_pop_militancy_modifier = 0.1
 	icon = 3
-}
-
-gbr_rgo = {
-	farm_rgo_size = 0.4
-	mine_rgo_size = 0.4
-	icon = 13
 }
 
 developing = {
@@ -144,35 +145,7 @@ gas_warfare = {
 	icon = 15
 }
 
-##### Birth Rate & Immigration Campaigns ######
-
-birthrate_push_low = {
-	global_population_growth = 0.001
-    	badboy = 0.01
-	tax_efficiency = -0.05
-    	icon = 17
-}
-
-birthrate_push_medium = {
-    	global_population_growth = 0.002
-    	badboy = 0.03
-	tax_efficiency = -0.15
-	global_pop_consciousness_modifier = 0.02
-    	icon = 17
-}
-
-#birthrate_push_high = {
-#   	global_population_growth = 0.003
-#    	badboy = 0.03
-#	tax_efficiency = -0.2
-#	global_pop_militancy_modifier = 0.01
-#	global_pop_consciousness_modifier = 0.03
-#   	icon = 17
-#}
-
-recently_selected_birthrate = {
-    icon = 1
-}
+##### Immigration Campaigns ######
 
 immigration_pull_low = {
 	immigrant_attract = 0.5
@@ -400,11 +373,6 @@ native_removal_act_policy = {
 	badboy = 0.02
 	icon = 18
 }
-
-#local_trinket_health_care = {
-#	#population_growth = 0.002
-#	icon = 19
-#}
 
 ##Disasters
 earthquake_devastation = {
@@ -1014,7 +982,7 @@ small_immigration_boom_global = {
 }
 
 land_of_opportunity = {
-	global_immigrant_attract = 1
+	global_immigrant_attract = 0.75
 	icon = 13
 }
 

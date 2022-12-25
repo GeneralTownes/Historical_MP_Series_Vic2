@@ -1,6 +1,5 @@
 capital = 300
 primary_culture = british
-culture = irish
 culture = scottish
 culture = welsh
 religion = protestant
@@ -12,6 +11,8 @@ civilized = yes
 
 #GreaterPowers = prestige
 prestige = 0
+
+schools = culture_tech_school
 
 ruling_party = GBR_liberal
 last_election = 1835.2.6

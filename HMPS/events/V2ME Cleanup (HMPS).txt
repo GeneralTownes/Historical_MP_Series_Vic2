@@ -1797,10 +1797,7 @@ country_event = {
 					
 					#GB conditions
 					AND = {
-						OR = {
-							tag = ENG
-							tag = GBR
-						}
+						tag = ENG
 						year = 1880
 						NOT = { year = 1881 }
 					}
@@ -1818,6 +1815,15 @@ country_event = {
 							tag = GBR
 						}
 						year = 1900
+						NOT = { year = 1901 }
+					}
+					AND = {
+						OR = {
+							tag = ENG
+							tag = GBR
+						}
+						year = 1910
+						NOT = { year = 1911 }
 					}
 					
 					#Italy conditions

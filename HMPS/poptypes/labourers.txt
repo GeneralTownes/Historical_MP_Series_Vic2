@@ -1827,6 +1827,27 @@ ideologies = {
 		factor = 1
 		
 		modifier = {
+			factor = 1.2
+			consciousness = 9 
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 8
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 7
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 6
+		}
+		modifier = {
+			factor = 1.2
+			consciousness = 5
+		}
+		
+		modifier = {
 			factor = 0
 			NOT = { literacy = 0.05 }
 		}
@@ -1974,18 +1995,6 @@ ideologies = {
 			poor_strata_militancy = 8
 			middle_strata_militancy = 8
 			}
-		}
-		modifier = {
-			factor = 1.05
-			consciousness = 9 
-		}
-		modifier = {
-			factor = 1.05
-			consciousness = 8
-		}
-		modifier = {
-			factor = 1.05
-			consciousness = 7
 		}
 	}
 

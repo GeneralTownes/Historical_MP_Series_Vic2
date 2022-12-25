@@ -1,0 +1,194 @@
+country_event = { 	#Irish Rebellion
+	id = 7777937
+	title = "EVTNAME7777937"
+	desc = "EVTDESC7777937"
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVT7777937OPTA"
+		prestige = -20
+		
+		any_owned = {
+			limit = {
+				OR = {
+					province_id = 258
+					province_id = 259
+					province_id = 260
+					province_id = 261
+					province_id = 262
+					province_id = 265
+				}
+			}
+			secede_province = IRE
+		}
+		
+		relation = { who = IRE value = -200 }
+		
+		GBR = {
+			war = {
+				target = IRE
+					attacker_goal = { casus_belli = civil_war }
+					defender_goal = { casus_belli = acquire_all_cores country = IRE }
+				call_ally = yes
+			}
+		}
+		
+		ENG = {
+			war = {
+				target = IRE
+					attacker_goal = { casus_belli = civil_war }
+					defender_goal = { casus_belli = acquire_all_cores country = IRE }
+				call_ally = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "EVT7777937OPTB"
+		prestige = -50
+		any_owned = {
+			limit = {
+				is_core = IRE
+			}
+			remove_core = GBR
+			secede_province = IRE
+		}
+		relation = { who = IRE value = 100 }
+	}
+}
+
+country_event = {	#Civil War aftermath
+	id = 7777938
+	title = "EVTNAME7777938"
+	desc = "EVTDESC7777938"
+	picture = "newyorkfire"
+	
+	trigger = {
+		tag = GBR
+		exists = yes
+		war = no
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		add_country_modifier = {
+			name = shattered_economy
+			duration = -1
+		}
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "EVT7777938OPTA"
+	}
+}
+
+country_event = {	#Begin reconciliation
+	id = 7777939
+	title = "EVTNAME7777939"
+	desc = "EVTDESC7777939"
+	picture = "ireland_poverty"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVT7777939OPTA"
+		add_country_modifier = {
+			name = irish_investment
+			duration = 3650
+		}
+		any_owned = {
+			limit = {
+				is_core = IRE
+			}
+			add_province_modifier = {
+				name = local_irish_investment
+				duration = 3650
+			}
+		}
+		IRE = {
+			any_owned = {
+				limit = {
+					is_core = IRE
+				}
+				add_province_modifier = {
+					name = local_irish_investment
+					duration = 3650
+				}
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = liberal
+				factor = 1
+			}
+			scaled_militancy = {
+				ideology = conservative
+				factor = 3
+			}
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 5
+			}
+		}
+		set_country_flag = attempted_irish_reconciliation
+	}
+	
+	option = {
+		name = "EVT7777939OPTB"
+		set_country_flag = rejected_irish_reconciliation
+	}
+}
+
+country_event = {	#Completion of reconciliation
+	id = 7777940
+	title = "EVTNAME7777940"
+	desc = "EVTDESC7777940"
+	picture = "irish_home_rule"
+	
+	trigger = {
+		tag = GBR
+		exists = yes
+		war = no
+		has_country_flag = attempted_irish_reconciliation
+		NOT = {
+			any_owned_province = { 
+				has_province_modifier = local_irish_investment
+			}
+		}
+		IRE = {
+			NOT = {
+				any_owned_province = { 
+					has_province_modifier = local_irish_investment
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "EVT7777940OPTA"
+		any_country = {
+			limit = {
+				tag = IRE
+				exists = yes
+			}
+			THIS = {
+				create_vassal = IRE
+				badboy = 5
+			}
+		}
+		set_country_flag = irish_reconciled
+	}
+}

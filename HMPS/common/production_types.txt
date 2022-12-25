@@ -335,7 +335,7 @@ synthetic_oil_factory = {
 		coal = 12
 	}
 	output_goods = oil 
-	value = 2.5
+	value = 0.2
 	bonus = {
 		trigger = { trade_goods_in_state = coal }
 		value = 0.25

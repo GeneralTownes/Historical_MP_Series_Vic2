@@ -779,6 +779,7 @@ partial_ubi_fully_funded = {
 	}
 	pension_level = 1.5
 	global_immigrant_attract = 0.45
+	min_social_spending = 0.33
 	icon = 19
 }
 
@@ -800,6 +801,7 @@ full_ubi_fully_funded = {
 	pension_level = 4
 	global_population_growth = 0.001
 	global_immigrant_attract = 0.55
+	min_social_spending = 0.67
 	icon = 19
 }
 
