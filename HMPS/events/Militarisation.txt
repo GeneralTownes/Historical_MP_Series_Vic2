@@ -276,12 +276,6 @@ country_event = {
 			limit = {
 				owner = {
 					conscription = mandatory_service
-					OR = {
-						war_policy = anti_military
-						war_policy = pacifism
-						unemployment_subsidies = acceptable_subsidies
-						unemployment_subsidies = good_subsidies
-					}
 				}
 			}
 			owner = {

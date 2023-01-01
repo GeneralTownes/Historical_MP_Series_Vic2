@@ -1976,7 +1976,6 @@ christino_rebels = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
-		change_tag = SPA
 		ruling_party_ideology = liberal
 		political_reform = wealth_voting
 		political_reform = state_equal_weight
