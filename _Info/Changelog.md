@@ -175,8 +175,8 @@ Many nations no longer need (only) GP for flava, or high prestige. War policy re
 - AUS: Can form SGF (and release its non German land)
 - DNB: RnG removed & cultures now accepted via decisions
 - RUS: Only cores Poland late-campaign, option to take all of Manchuria, decision to core CPL land (no Polish revolt event)
-- GER: Can compete with Russia to core Mazovia and West-Galicia (each can core and uncore the other), formed via region control or 1860 as NGF
-- ITA: Formed via region control
+- GER: Formed via region control (explained in unification decision) as NGF/SGF or with rev_n_counter as NGF/PRU, can compete with Russia to core Mazovia and West-Galicia (each can core and uncore the other)
+- ITA: Formed via region control (explained in unification decision), or with rev_n_counter and no other player with North/South Italian primary owning land not as your puppet in the region
 - Ottos: Tanzimat reforms can be completed as a republic & Arab revolt won't remove accepted cultures
 - NET: Starts with Indonesian puppets annexed, and can quickly annex Aceh and Jambi
 - POR: Can unite with Brazil to form the UPB
