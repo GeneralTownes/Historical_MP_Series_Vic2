@@ -7,10 +7,11 @@ country_event = {
 
 	trigger = {
 		exists = yes
+		is_mobilised = no
 	}
 
 	mean_time_to_happen =  {
-		months = 60
+		months = 15
 
 		modifier = {
 			factor = 0.75	 #increase likelihood to happen

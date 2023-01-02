@@ -5114,7 +5114,8 @@ demand_concession_CHI_casus_belli = {
 			}
 			AND = { war_with = THIS ai = no }
 			neighbour = THIS
-			AND = { any_neighbor_country = { vassal_of = THIS } }
+			any_neighbor_country = { vassal_of = THIS }
+			THIS = { ai = no }
 		}
 		THIS = {
 			civilized = yes
@@ -5224,6 +5225,7 @@ demand_concession_casus_belli = {
 			AND = { war_with = THIS ai = no }
 			neighbour = THIS
 			any_neighbor_country = { vassal_of = THIS }
+			THIS = { ai = no }
 		}
 		THIS = {
 			civilized = yes
@@ -5304,7 +5306,7 @@ demand_concession_casus_belli = {
 		OR = {
 			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
 			any_owned_province = { any_neighbor_province = { owner = { vassal_of = THIS } } }
-			THIS = { ai = no war_with = THIS }
+			THIS = { ai = no }
 			AND = {
 				any_owned_province = { port = yes }
 				THIS = { any_owned_province = { port = yes } }
@@ -5377,6 +5379,7 @@ demand_concession_NI_casus_belli = {
 			AND = { war_with = THIS ai = no }
 			neighbour = THIS
 			any_neighbor_country = { vassal_of = THIS }
+			THIS = { ai = no }
 		}
 		NOT = { is_our_vassal = THIS }
 		THIS = {
@@ -5442,7 +5445,7 @@ demand_concession_NI_casus_belli = {
 		OR = {
 			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
 			any_owned_province = { any_neighbor_province = { owner = { vassal_of = THIS } } }
-			THIS = { ai = no war_with = THIS }
+			THIS = { ai = no }
 			AND = {
 				any_owned_province = { port = yes }
 				THIS = { any_owned_province = { port = yes } }
@@ -5515,6 +5518,7 @@ demand_concession_BC_casus_belli = {
 			AND = { war_with = THIS ai = no }
 			neighbour = THIS
 			any_neighbor_country = { vassal_of = THIS }
+			THIS = { ai = no }
 		}
 		NOT = { is_our_vassal = THIS }
 		THIS = {
@@ -5568,7 +5572,7 @@ demand_concession_BC_casus_belli = {
 		OR = {
 			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
 			any_owned_province = { any_neighbor_province = { owner = { vassal_of = THIS } } }
-			THIS = { ai = no war_with = THIS }
+			THIS = { ai = no }
 			AND = {
 				any_owned_province = { port = yes }
 				THIS = { any_owned_province = { port = yes } }
@@ -6207,6 +6211,7 @@ establish_protectorate_casus_belli = {
 				any_owned_province = { port = yes }
 				THIS = { any_owned_province = { port = yes } }
 			}
+			THIS = { ai = no }
 		}
 		NOT = { is_our_vassal = THIS }
 		NOT = { 
@@ -6330,6 +6335,7 @@ establish_protectorate_NI_casus_belli = {
 				any_owned_province = { port = yes }
 				THIS = { any_owned_province = { port = yes } }
 			}
+			THIS = { ai = no }
 		}
 		NOT = { is_our_vassal = THIS }
 		THIS = {
@@ -6432,6 +6438,7 @@ establish_protectorate_BC_casus_belli = {
 				any_owned_province = { port = yes }
 				THIS = { any_owned_province = { port = yes } }
 			}
+			THIS = { ai = no }
 		}
 		NOT = { is_our_vassal = THIS }
 		THIS = {
@@ -6459,6 +6466,10 @@ establish_protectorate_BC_casus_belli = {
 		OR = {
 			NOT = { number_of_states = 12 }
 			capital_scope = { continent = africa }
+			capital_scope = { continent = central_africa }
+			capital_scope = { continent = west_africa }
+			capital_scope = { continent = east_africa }
+			capital_scope = { continent = south_west_africa }
 		}
 		civilized = no
 		#is_vassal = no
