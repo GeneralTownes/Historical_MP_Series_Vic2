@@ -907,6 +907,7 @@ political_decisions = {
 								OR = {
 									owned_by = THIS
 									owner = { in_sphere = THIS }
+									owner = { vassal_of = THIS }
 								}
 							}
 						}
@@ -960,7 +961,10 @@ political_decisions = {
 			any_country = {
 				limit = {
 					is_culture_group = italian
-					in_sphere = THIS
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
 					OR = {
 						is_vassal = no
 						vassal_of = THIS

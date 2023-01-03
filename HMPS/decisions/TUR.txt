@@ -98,11 +98,11 @@ political_decisions = {
 			NOT = { citizenship_policy = residency }
 			NOT = { citizens_rights = primary_culture_only }
 			OR = {
-				liberal = 30
-				socialist = 30
+				liberal = 20
+				socialist = 20
 				AND = {
-					liberal = 15
-					socialist = 15
+					liberal = 10
+					socialist = 10
 				}
 			}
 		}

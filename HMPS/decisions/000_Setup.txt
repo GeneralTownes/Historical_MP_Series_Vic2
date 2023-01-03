@@ -2709,12 +2709,12 @@ political_decisions = {
 			#################Setup SWI######################
 			
 			#################Belgian War of Independence######################
-			NET = { war_exhaustion = 40 }
-			BEL = { war_exhaustion = 20 }
+			#NET = { war_exhaustion = 40 }
+			#BEL = { war_exhaustion = 20 }
 			#################Belgian War of Independence######################
 			
 			#################1832 War with Colombia######################
-			ECU = { war_exhaustion = 50 any_pop = { militancy = 3 } }
+			#ECU = { war_exhaustion = 50 any_pop = { militancy = 3 } }
 			#################1832 War with Colombia######################
 			
 			#################Isolationist Uncivs Setup######################

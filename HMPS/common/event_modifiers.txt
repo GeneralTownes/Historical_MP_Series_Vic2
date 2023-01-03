@@ -136,8 +136,7 @@ promise_against_expansion = {
 }
 
 lost_the_tarrif_war = {
-	max_tariff = -1
-	min_tariff = 0.25
+	max_tariff = -0.75
 }
 
 gas_warfare = {

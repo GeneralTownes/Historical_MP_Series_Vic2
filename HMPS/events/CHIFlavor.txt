@@ -783,10 +783,6 @@ country_event = {
 	
 	option = {
 		name = "EVT1645091OPTA"
-		add_country_modifier = {
-			name = global_baby_boom
-			duration = 1825
-		}
 		remove_country_modifier = western_influences
 		add_country_modifier = {
 			name = uncivilized_isolationism

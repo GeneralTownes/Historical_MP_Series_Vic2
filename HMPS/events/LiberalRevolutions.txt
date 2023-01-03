@@ -3522,129 +3522,18 @@ country_event = {
 
 	option = {
 		name = "EVT10225OPTA"
+		political_reform = regionalism
 		778 = { remove_core = HUN }
-		any_owned = {
-			limit = {
-				is_core = HUN
-				NOT = { is_core = CRO }
-			}
-			secede_province = HUN
-		}
-		relation = { who = HUN value = -100 }
 		any_owned = {
 			limit = { is_core = AUS }
 			remove_province_modifier = liberal_agitation
 		}
 		any_pop = {
-			limit = { is_primary_culture = yes }
-			militancy = -6
-		}
-		add_country_modifier = {
-			name = no_more_war
-			duration = 7
-		}
-		HUN = {
-			capital = 641
-			political_reform = mandatory_service 
-			government = hms_government
-			political_reform = non_secret_ballots
-			political_reform = universal_weighted_voting
-			political_reform = population_equal_weight
-			political_reform = free_press
-			political_reform = yes_meeting
-			clr_country_flag = communist_gov
-			clr_country_flag = absolute_monarchy_gov
-			clr_country_flag = semi_constitutional_monarchy_gov
-			set_country_flag = constitutional_monarchy_gov
-			clr_country_flag = democracy_gov
-			clr_country_flag = presidential_dictatorship_gov
-			clr_country_flag = fascist_gov
-			clr_country_flag = anarcho_liberal_gov
-			add_country_modifier = {
-				name = no_more_war
-				duration = 7
-			}
-			relation = {
-				who = RUS
-				value = -200
-			}
+			limit = { is_primary_culture = no }
+			militancy = 5
 		}
 		ai_chance = {
-			factor = 95
-		}
-	}
-
-	option = {
-		name = "EVT10225OPTB"
-		set_country_flag = austria_let_hungary_go
-		any_owned = {
-			limit = {
-				is_core = HUN
-				NOT = { is_core = CRO }
-			}
-			secede_province = HUN
-		}
-		relation = { who = HUN value = -100 }
-		prestige = -25
-		casus_belli = {
-			target = HUN
-			type = acquire_state
-			months = 60
-		}
-		casus_belli = {
-			target = HUN
-			type = cut_down_to_size
-			months = 60
-		}
-		any_pop = {
-			limit = {
-				has_pop_culture = romanian
-				location = { is_core = ROM }
-			}
-			militancy = 8
-		}
-		any_pop = {
-			limit = {
-				has_pop_culture = polish
-				location = { is_core = POL }
-			}
-			militancy = 8
-		}
-		any_pop = {
-			limit = {
-				has_pop_culture = north_italian
-				location = { region = ITA_1 }
-			}
-			militancy = 8
-		}
-		any_owned = {
-			limit = {
-				OR = {
-					is_core = POL
-					is_core = ROM
-					region = ITA_1
-				}
-			}
-			add_province_modifier = {
-				name = nationalist_agitation
-				duration = 1095
-			}
-		}
-		ai_chance = {
-			factor = 5
-			modifier = {
-				factor = 2
-				any_greater_power = { war_with = THIS }
-			}
-			modifier = {
-				factor = 2
-				national_provinces_occupied = 0.25
-			}
-			modifier = {
-				factor = 0
-				war = no
-				NOT = { revolt_percentage = 0.25 }
-			}
+			factor = 100
 		}
 	}
 }
