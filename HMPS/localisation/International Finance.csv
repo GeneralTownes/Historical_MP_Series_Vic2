@@ -1,9 +1,7 @@
 Key;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;
 will_receive_title;§YRequest A Grant§!;;;;;;;;;;;;;
-will_receive_desc;This will request a grant from other players. Please note they must have choosen the decision to enable giving grants for the request to go through. It can be reversed at any time.;;;;;;;;;;;;;
-#will_not_receive_title;§YDisable Receiving Grants§!;;;;;;;;;;;;;
-#will_not_receive_desc;This will prohibit other players from giving us grants. It can be reversed at any time.;;;;;;;;;;;;;
+will_receive_desc;This will request a financial aid package from other countries.\n§YRecieving countries must have enabled giving grants\n§RCountries with the modifier 'Bad Debter' cannot give grants.§!;;;;;;;;;;;;;
 will_give_title;§YEnable Giving Grants§!;;;;;;;;;;;;;
-will_give_desc;This will allow us to give grants to other players. It must be activated before a player chooses to request grants. It can be reversed at any time.;;;;;;;;;;;;;
+will_give_desc;This will allow us to give grants to other countries. It must be activated before choosing to request grants. It can be reversed at any time.;;;;;;;;;;;;;
 will_not_give_title;§YDisable Giving Grants§!;;;;;;;;;;;;;
-will_not_give_desc;This will prevent us from getting events when other players request grants. It can be reversed at any time.;;;;;;;;;;;;;
+will_not_give_desc;This will prevent us from getting events when other countries request grants. It can be reversed at any time.;;;;;;;;;;;;;

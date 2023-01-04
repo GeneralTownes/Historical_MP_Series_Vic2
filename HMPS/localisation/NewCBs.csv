@@ -42,7 +42,7 @@ mass_conquest_cb_short;Fully annex $RECIPIENT$;;;;;;;;;;;;;
 NORMAL_WAR_NO_CB_NAME;Aggression War;;;;;;;;;;;;;
 AGRESSION_WAR_NO_CB_NAME;Aggression War;;;;;;;;;;;;;
 aggression_cb;Aggression War;;;;;;;;;;;;;
-aggression_cb_desc;Start a war without justification. §YNOTE: Will cost 12 infamy when used.§!;;;;;;;;;;;;;
+aggression_cb_desc;Start a war without justification. §RWill cost 10 infamy when used.§!;;;;;;;;;;;;;
 aggression_cb_short;No Set Goal;;;;;;;;;;;;;
 aggression_cb_setup;No Initial Wargoal;;;;;;;;;;;;;
 india_acquire_state;Unify India;;;;;;;;;;;;;

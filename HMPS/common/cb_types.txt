@@ -175,7 +175,7 @@ aggression_cb = {
 			to = pro_military
 			value = 0.1
 		}
-		badboy = 12
+		badboy = 10
 	}
 }
 
@@ -8810,6 +8810,7 @@ negotiated_state_transfer = {
 		}
 		THIS = { ai = no }
 		THIS = { has_country_flag = begin_land_transfer }
+		NOT = { has_global_flag = GM_prevented_land_transfers }
 	}
 	
 	allowed_states = {
@@ -8869,6 +8870,7 @@ third_party_transfer = {
 		}
 		THIS = { ai = no }
 		THIS = { has_country_flag = begin_land_transfer }
+		NOT = { has_global_flag = GM_prevented_land_transfers }
 	}
 
 	# THIS - us
@@ -8939,6 +8941,7 @@ negotiated_substate_transfer = {
 		}
 		has_country_flag = begin_land_transfer
 		THIS = { has_country_flag = begin_land_transfer }
+		NOT = { has_global_flag = GM_prevented_land_transfers }
 	}
 	
 	allowed_substate_regions = {

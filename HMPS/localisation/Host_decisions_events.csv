@@ -23,3 +23,15 @@ choose_country_to_siege_title;§PChoose a Country With no Mil Access to be the Oc
 choose_country_to_siege_desc;Click to pick a country with no mil access to be the occupier, after clicking this a new decision will unlock allowing you to choose which countries will be sieged;;;;;;;;;;;;;
 siege_country_title;§PSiege All Countries With no Mil Access to the Occupier§!;;;;;;;;;;;;;
 siege_country_desc;Click this to siege all countries you do not have mil access with to the occupier you picked earlier;;;;;;;;;;;;;
+GM_prevent_land_transfers_title;§PBan Land Transfers§!;;;;;;;;;;;;;
+GM_prevent_land_transfers_desc;Prevents players from using all the land transfer CBs (Negotiated State, Negotiated Substate, & Third Party Transfer);;;;;;;;;;;;;
+GM_allow_land_transfers_title;§PAllow Land Transfers§!;;;;;;;;;;;;;
+GM_allow_land_transfers_desc;Enables players to use all the land transfer CBs (Negotiated State, Negotiated Substate, & Third Party Transfer);;;;;;;;;;;;;
+GM_prevent_infamy_transfers_title;§PBan Infamy Transfers§!;;;;;;;;;;;;;
+GM_prevent_infamy_transfers_desc;Prevents players from requesting infamy transfers;;;;;;;;;;;;;
+GM_allow_infamy_transfers_title;§PAllow Infamy Transfers§!;;;;;;;;;;;;;
+GM_allow_infamy_transfers_desc;Allows players to request infamy transfers;;;;;;;;;;;;;
+GM_prevent_trade_deals_title;§PBan Trade Deals§!;;;;;;;;;;;;;
+GM_prevent_trade_deals_desc;Prevent players from initiating trade deals.;;;;;;;;;;;;;
+GM_allow_trade_deals_title;§PAllow Trade Deals§!;;;;;;;;;;;;;
+GM_allow_trade_deals_desc;Allow players to initiate trade deals.;;;;;;;;;;;;;

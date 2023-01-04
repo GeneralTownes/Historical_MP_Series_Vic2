@@ -7,6 +7,7 @@ political_decisions = {
 			ai = no
 			NOT = { has_country_flag = begin_land_transfer }
 			NOT = { has_country_flag = hiding_the_decisions }
+			NOT = { has_global_flag = GM_prevented_land_transfers }
 		}
 		
 		allow = { ai = no }
@@ -23,6 +24,7 @@ political_decisions = {
 			ai = no
 			has_country_flag = begin_land_transfer
 			NOT = { has_country_flag = hiding_the_decisions }
+			NOT = { has_global_flag = GM_prevented_land_transfers }
 		}
 		
 		allow = { ai = no }
@@ -40,6 +42,7 @@ political_decisions = {
 			ai = no
 			NOT = { has_country_flag = will_receive_infamy }
 			NOT = { has_country_flag = hiding_the_decisions }
+			NOT = { has_global_flag = GM_prevented_infamy_transfers }
 		}
 		
 		allow = { 
@@ -65,6 +68,7 @@ political_decisions = {
 			ai = no
 			NOT = { has_country_flag = will_give_infamy }
 			NOT = { has_country_flag = hiding_the_decisions }
+			NOT = { has_global_flag = GM_prevented_infamy_transfers }
 		}
 
 		allow = { NOT = { has_country_flag = will_give_infamy } }
@@ -81,6 +85,7 @@ political_decisions = {
 			ai = no
 			has_country_flag = will_give_infamy
 			NOT = { has_country_flag = hiding_the_decisions }
+			NOT = { has_global_flag = GM_prevented_infamy_transfers }
 		}
 		
 		allow = { 

@@ -647,7 +647,6 @@ political_reforms = {
 					has_global_flag = berlin_conference
 					has_country_flag = theocratic_government
 				}
-				NOT = { has_country_flag = islamic_law }
 			}
 		}
 		

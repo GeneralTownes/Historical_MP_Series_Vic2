@@ -90,7 +90,7 @@ exploitation_desc;Indirect Rule is a system of government of one nation by anoth
 movement_exploitation;Indirect-Rule;;;;;;;;;;;;;
 civilizing;Civilizing Mission;;;;;;;;;;;;;
 civilizing_l;Civilizing Mission;Civilizing;Civilizing;;Civilizing;;;;;;;;;
-civilizing_desc;The mission civilisatrice, a French term which translates literally into English as "civilizing mission", is a rationale for intervention or colonization, purporting to contribute to the spread of civilization, and used mostly in relation to the Westernization of indigenous peoples. It is our duty to bring Western civilization to backward peoples across the world. Rather than merely govern colonial peoples, we would attempt to Westernize and assimilate them into our proper, civilized culture.\n§YThis reform will increase religious conversion but it will also increase the necessity of bureaucrats.§W;;;;;;;;;;;;;
+civilizing_desc;The mission civilisatrice, a French term which translates literally into English as "civilizing mission", is a rationale for intervention or colonization, purporting to contribute to the spread of civilization, and used mostly in relation to the Westernization of indigenous peoples. It is our duty to bring Western civilization to backward peoples across the world. Rather than merely govern colonial peoples, we would attempt to Westernize and assimilate them into our proper, civilized culture.\n§YThis reform will increase religious conversion but it will also increase the necessity of bureaucrats.\nRequires the Berlin Conference or to be a theocracy.§W;;;;;;;;;;;;;
 movement_civilizing;Civilizing;;;;;;;;;;;;;
 settlement;Settlement;;;;;;;;;;;;;
 settlement_l;Settlement;Settlement;Settlement;;Settlement;;;;;;;;;

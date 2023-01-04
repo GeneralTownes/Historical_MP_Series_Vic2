@@ -137,6 +137,120 @@ political_decisions = {
 			factor = 0
 		}
 	}
+	GM_prevent_land_transfers = {
+		picture = goc
+		potential = {
+			has_country_flag = showing_GM_decisions
+			has_country_flag = GM_nation
+			NOT = { has_global_flag = GM_prevented_land_transfers }
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			set_global_flag = GM_prevented_land_transfers
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	GM_allow_land_transfers = {
+		picture = goc
+		potential = {
+			has_country_flag = showing_GM_decisions
+			has_country_flag = GM_nation
+			has_global_flag = GM_prevented_land_transfers
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			clr_global_flag = GM_prevented_land_transfers
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	GM_prevent_infamy_transfers = {
+		picture = goc
+		potential = {
+			has_country_flag = showing_GM_decisions
+			has_country_flag = GM_nation
+			NOT = { has_global_flag = GM_prevented_infamy_transfers }
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			set_global_flag = GM_prevented_infamy_transfers
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	GM_allow_infamy_transfers = {
+		picture = goc
+		potential = {
+			has_country_flag = showing_GM_decisions
+			has_country_flag = GM_nation
+			has_global_flag = GM_prevented_infamy_transfers
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			clr_global_flag = GM_prevented_infamy_transfers
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	GM_prevent_trade_deals = {
+		picture = goc
+		potential = {
+			has_country_flag = showing_GM_decisions
+			has_country_flag = GM_nation
+			NOT = { has_global_flag = GM_prevented_trade_deals }
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			set_global_flag = GM_prevented_trade_deals
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	GM_allow_trade_deals = {
+		picture = goc
+		potential = {
+			has_country_flag = showing_GM_decisions
+			has_country_flag = GM_nation
+			has_global_flag = GM_prevented_trade_deals
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			clr_global_flag = GM_prevented_trade_deals
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	transfer_GM_nation = {
 		picture = goc
 		potential = {
