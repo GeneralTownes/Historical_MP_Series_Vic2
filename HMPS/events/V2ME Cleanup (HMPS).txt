@@ -56,7 +56,10 @@ country_event = {
 		any_country = {
 			limit = {
 				tag = TKG
-				exists = no
+				OR = {
+					exists = no
+					is_vassal = yes
+				}
 			}
 			all_core = { 
 				add_core = JAP
@@ -1531,21 +1534,6 @@ country_event = {
                 }
 			}
 			annex_to = FROM
-		}
-		
-		#remove sanctions
-		any_country = {
-			limit = {
-				is_disarmed = yes
-				has_recently_lost_war = yes
-				OR = {
-					has_country_modifier = kinda_bad_badboy
-					has_country_modifier = bad_badboy
-				}
-				war = no
-			}
-			remove_country_modifier = kinda_bad_badboy
-            remove_country_modifier = bad_badboy
 		}
 		
 		#monthly substate payment

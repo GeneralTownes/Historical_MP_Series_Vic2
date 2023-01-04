@@ -1,22 +1,3 @@
-test_irregular = {
-	limit = { 
-		civilized = no
-		NOT = {
-			tag = CSA
-			tag = JAP
-			tag = SAT
-			tag = CHO
-			tag = EIC
-		}
-	 }
-	chance = {
-		base = 100
-	}
-	effect = {
-		activate_unit = irregular
-	}
-}
-
 test_eic = {
 	limit = { 
 		civilized = no

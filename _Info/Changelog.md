@@ -151,6 +151,7 @@ Soldier pops concentrate in state capitals, requires 3k soldier pops for 1st bri
 - Dreadnoughts: Scale better with tech
 - Cruisers: Require small amount of oil to build, cannot build overseas
 - Submarines: Torpedo attack & high evasion
+- Irregulars start unlocked for all
 #### Tech
 - Heavy Armament: Greatly buffed artillery attack
 - Light Armament: Gives Infantry & Guard discipline increases
