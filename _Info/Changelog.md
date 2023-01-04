@@ -47,7 +47,7 @@ Everything else is our own (as far as I remember).
 - Require 2% bureaucrats to state colonies
 - Greatly increased admin multiplier on large social reforms
 - Reduced promotion chance based on social reforms
-- Can set maximum percentage of bureaucrats in all states
+- Can set maximum percentage of bureaucrats in all non-colonial states
 #### Parties
 - Anarchists: Rare, similar to socialists, successful rebels will enforce Anarchism
 - Rich pops will never support socialists, communists, anarchists, and very rarely radicals
@@ -65,6 +65,7 @@ Everything else is our own (as far as I remember).
 - Mass conquest if a dictatorship form with Mass Politics
 - 10 infamy demand chinese concession (East Asia countries need breech loaded & naval statistics, everyone else needs machine guns & naval logistics/be Russia/be Iran)
 - Radical republics and Absolute monarchies can enforce gov types on the other gov type
+- Cannot puppet Shogonate Japan if its unwesternised
 #### Revanchism
 - Army & mob buff modifiers scale with % of revanchism (capped at 50%)
 #### Releasables

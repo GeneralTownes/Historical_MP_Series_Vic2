@@ -720,16 +720,19 @@ promote_to =
 			factor = -100
 			state_scope = { bureaucrats = 0.015 }
 			country = { has_country_flag = rank_1_crats }
+			location = { is_colonial = no }
 		}
 		modifier = {
 			factor = -100
 			state_scope = { bureaucrats = 0.025 }
 			country = { has_country_flag = rank_2_crats }
+			location = { is_colonial = no }
 		}
 		modifier = {
 			factor = -100
 			state_scope = { bureaucrats = 0.035 }
 			country = { has_country_flag = rank_3_crats }
+			location = { is_colonial = no }
 		}
 		modifier = {
 			factor = -100

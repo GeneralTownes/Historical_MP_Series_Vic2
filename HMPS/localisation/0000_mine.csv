@@ -861,7 +861,7 @@ EVTNAME7777935;End Fake War;;;;;;;;;;;;;
 EVTDESC7777935;-;;;;;;;;;;;;;
 EVT7777935OPTA;-;;;;;;;;;;;;;
 set_crat_max_title;§CSet Maximum Bureaucrats Percentage§!;;;;;;;;;;;;;
-set_crat_max_desc;Set the maximum percentage that bureaucrats will promote to in each state. This will not immediately cause bureaucrats to demote if over this limit.;;;;;;;;;;;;;
+set_crat_max_desc;Set the maximum percentage that bureaucrats will promote to in each state. This will not immediately cause bureaucrats to demote if over this limit.\n§YApplies to non-colonial states only§!;;;;;;;;;;;;;
 EVTNAME7777936;Setting the Maximum Percentage;;;;;;;;;;;;;
 EVTDESC7777936;Select the option to set the maximum percentage of bureaucrats in all states.;;;;;;;;;;;;;
 EVTOPTA7777936;1.5% (base amount for full admin efficiency);;;;;;;;;;;;;

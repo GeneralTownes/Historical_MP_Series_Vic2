@@ -168,16 +168,20 @@ revoke_kurdish_autonomy = {
 		potential = {
 			tag = PER
 			NOT = { has_country_flag = kurdish_states_integrated }
-			OR = {
-				is_our_vassal = RDL
-				is_our_vassal = MKN
-			}
 		}
 		
 		allow = {
 		    OR = {
 			  civilization_progress = 0.25
 			  civilized = yes
+			}
+			OR = {
+				RDL = { exists = no }
+				is_our_vassal = RDL
+			}
+			OR = {
+				MKN = { exists = no }
+				is_our_vassal = MKN
 			}
 		}
 		
