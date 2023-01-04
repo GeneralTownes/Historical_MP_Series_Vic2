@@ -127,10 +127,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { has_country_flag = german_anthem }
-		OR = { 
-			tag = GER
-			tag = GCF
-		}
+		tag = GER
 	}
 
 	mean_time_to_happen = {

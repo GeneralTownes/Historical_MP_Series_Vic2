@@ -74,7 +74,6 @@ country_event = {
 		OR = {
 			has_global_flag = french_nzl
 			AND = {
-				NOT = { exists = GCF }
 				NOT = { exists = GER }
 				year = 1885
 			}

@@ -66,7 +66,6 @@ country_event = {
 		NOT = { has_country_flag = austrian_destiny }
 		NOT = {
 			exists = GER
-			exists = GCF
 			has_country_flag = austrian_destiny
 		}
 		NOT = { badboy = 0.5 }

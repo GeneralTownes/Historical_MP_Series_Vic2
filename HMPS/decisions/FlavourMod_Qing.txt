@@ -2,10 +2,7 @@ political_decisions = {
 	qingdao_treaty_port_ger = { 
 		picture = "qingdao_treaty_port_ger"
 		potential = {
-			OR = {
-				tag = GER
-				tag = GCF
-			}
+			tag = GER
 			is_greater_power = yes
 			1566 = { owner = { civilized = no NOT = { war_with = THIS } } }
 			2531 = { owned_by = THIS } #NewGuinea
@@ -470,10 +467,6 @@ political_decisions = {
 					blue_and_brown_water_schools = 1
 					NOT = { war_with = THIS }
 				}
-				GCF = {
-					blue_and_brown_water_schools = 1
-					NOT = { war_with = THIS }
-				}
 			}
 			money = 150000
 		}
@@ -491,7 +484,6 @@ political_decisions = {
 					OR = { 
 						tag = ENG 
 						tag = GER
-						tag = GCF
 					}
 				}
 				country_event = 99951

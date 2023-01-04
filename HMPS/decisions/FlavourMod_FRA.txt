@@ -86,7 +86,6 @@ political_decisions = {
 				PRU = { exists = yes }
 				NGF = { exists = yes }
 				GER = { exists = yes }
-				GCF = { exists = yes }
 			}
 			NOT = { truce_with = LUX }
 		}
@@ -109,10 +108,6 @@ political_decisions = {
 						AND = { 
 							tag = GER
 							549 = { OR = { owned_by = GER owner = { in_sphere = GER OR = { is_vassal = no vassal_of = GER } } } }
-						}
-						AND = { 
-							tag = GCF
-							549 = { OR = { owned_by = GCF owner = { in_sphere = GCF OR = { is_vassal = no vassal_of = GCF } } } }
 						}
 					}
 				}
@@ -139,7 +134,6 @@ political_decisions = {
 			}
 			NOT = { has_country_flag = claim_wallonia }
 			NOT = { exists = GER }
-			NOT = { exists = GCF }
 			WLL = { all_core = { NOT = { owned_by = THIS } } }
 			owns = 412
 		}
@@ -200,7 +194,6 @@ political_decisions = {
 			capital = 425
 			has_country_modifier = louis_napoleon_iii
 			owns = 412
-			NOT = { exists = GCF }
 			NOT = { exists = GER }
 			NOT = { has_global_flag = pan_french_nationalism }
 		}
@@ -451,7 +444,7 @@ political_decisions = {
 			ai = yes
 			NOT = { has_global_flag = clean_up_france_lost_rhine_crisis }
 			FRA = { truce_with = PRU has_country_modifier = rhine_crisis }
-			575 = { OR = {owned_by = PRU owned_by = NGF owned_by = GER owned_by = GCF owned_by = AUS owned_by = SGF } }
+			575 = { OR = {owned_by = PRU owned_by = NGF owned_by = GER owned_by = AUS owned_by = SGF } }
 			PRU = { is_disarmed = no }
 		}
 		
@@ -576,16 +569,6 @@ political_decisions = {
 					}
 				}
 				GER = {
-					exists = yes
-					OR = {
-						is_disarmed = yes
-						AND = {
-							has_recently_lost_war = yes
-							war_exhaustion = 10
-						}
-					}
-				}
-				GCF = {
 					exists = yes
 					OR = {
 						is_disarmed = yes

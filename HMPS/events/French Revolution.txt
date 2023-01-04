@@ -556,10 +556,6 @@ country_event = {
 						exists = GER
 						412 = { owned_by = GER }
 					}
-					AND = { 
-						exists = GCF
-						412 = { owned_by = GCF }
-					}
 				}
 			}
 			is_greater_power = no

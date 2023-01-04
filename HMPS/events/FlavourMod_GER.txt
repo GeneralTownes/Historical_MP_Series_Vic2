@@ -15,10 +15,7 @@ country_event = {
 	picture = "german_new_guinea_company"
 	
 	trigger = {
-		OR = {
-			tag = GCF
-			tag = GER
-		}
+		tag = GER
 		OR = {
 			government = absolute_monarchy
 			government = prussian_constitutionalism
@@ -499,7 +496,6 @@ country_event = {
 						tag = PRU
 						tag = NGF
 						tag = GER
-						tag = GCF
 					}
 					exists = yes
 					is_greater_power = yes
@@ -556,7 +552,6 @@ country_event = {
 						tag = PRU
 						tag = NGF
 						tag = GER
-						tag = GCF
 					}
 					exists = yes
 					is_greater_power = yes
@@ -1024,10 +1019,7 @@ country_event = {
 	trigger = {
 		year = 1910
 		owns = 544
-		OR = {
-			tag = GER
-			tag = GCF
-		}
+		tag = GER
 		NOT = { capital = 599 }
 		is_disarmed = no
 		war = no

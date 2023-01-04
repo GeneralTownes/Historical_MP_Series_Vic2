@@ -45,7 +45,6 @@ country_event = {
 			tag = DNB
 			tag = SGF
 			tag = GER
-			tag = GCF
 		}
 		owns = 734 #Trentin
 		owns = 735 #Bozen

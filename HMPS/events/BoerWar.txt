@@ -1594,7 +1594,6 @@ country_event = {
 		random_country = { #Great Powers for the Boer Cause
 			limit = {
 				OR = {
-					tag = GCF
 					tag = GER
 					tag = NET
 					tag = FRA

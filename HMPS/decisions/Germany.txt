@@ -102,7 +102,6 @@ political_decisions = {
 				tag = PRU
 				tag = GER
 				tag = NGF
-				tag = GCF
 			}
 			NOT = {
 				tech_school = prussian_tech_school
@@ -142,7 +141,6 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = GER
-				tag = GCF
 				tag = NGF
 				tag = PRU
 			}
@@ -185,10 +183,7 @@ political_decisions = {
 	
 	niederwald_denkmal = {
 		potential = {
-			OR = { 
-				tag = GER
-				tag = GCF
-			}
+			tag = GER
 			has_global_flag = watching_the_rhine
 			NOT = { has_country_flag = niederwald_denkmal }
 		}
@@ -212,7 +207,6 @@ political_decisions = {
 			OR = {
 				tag = BAV
 				tag = SGF
-				tag = GCF
 				tag = GER
 			}
 			owns = 599
@@ -326,10 +320,7 @@ political_decisions = {
 	
 	the_heligoland_question = {
 		potential = {
-			OR = {
-				tag = GER
-				tag = GCF
-			}
+			tag = GER
 			NOT = { owns = 533 }
 			NOT = { has_country_flag = has_questioned_heligoland }
 		}
@@ -366,7 +357,6 @@ political_decisions = {
 			OR = {
 				tag = BAV
 				tag = SGF
-				tag = GCF
 				tag = GER
 			}
 			owns = 602
@@ -503,7 +493,6 @@ political_decisions = {
 			OR = {
 				tag = PRU
 				tag = GER
-				tag = GCF
 				tag = NGF
 			}
 			owns = 578
@@ -654,15 +643,12 @@ political_decisions = {
 	reclaim_poland_GER = {
 		picture = become_poland
 		potential = {
+			tag = GER
 			OR = {
-				tag = GER
-				tag = GCF
-			}
-			OR = {
-				684 = { NOT = { is_core = GER is_core = GCF } }
-				685 = { NOT = { is_core = GER is_core = GCF } }
-				690 = { NOT = { is_core = GER is_core = GCF } }
-				699 = { NOT = { is_core = GER is_core = GCF } }
+				684 = { NOT = { is_core = GER } }
+				685 = { NOT = { is_core = GER } }
+				690 = { NOT = { is_core = GER } }
+				699 = { NOT = { is_core = GER } }
 			}
 		}
 		
@@ -683,7 +669,7 @@ political_decisions = {
 							province_id = 684
 							province_id = 685
 						}
-						NOT = { is_core = GER is_core = GCF }
+						NOT = { is_core = GER }
 					}
 					war_policy = jingoism
 				}
@@ -909,10 +895,7 @@ political_decisions = {
 	purchase_spanish_pacific = {
 		picture = treaty_signing
 		potential = {
-			OR = { 
-				tag = GER
-				tag = GCF
-			}
+			tag = GER
 			is_greater_power = yes
 			nationalism_n_imperialism = 1
 			any_owned_province = {
@@ -1141,10 +1124,7 @@ political_decisions = {
 	change_german_capital = {
 		picture = greater_germany
 		potential = {
-			OR = {
-				tag = GER
-				tag = GCF
-			}
+			tag = GER
 			NOT = { has_country_flag = german_capital_change }
 		}
 		allow = {

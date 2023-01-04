@@ -2,10 +2,7 @@ political_decisions = {
 	annex_united_baltic_duchy = {
 		picture = "annex_united_baltic_duchy"
 		potential = { 
-			OR = {
-				tag = GCF
-				tag = GER
-			}
+			tag = GER
 			is_greater_power = yes
 			UBD = {
 				vassal_of = THIS 
@@ -78,10 +75,7 @@ political_decisions = {
 		picture = "annex_united_baltic_duchy"
 		potential = {
 			is_greater_power = yes	
-			OR = { 
-				tag = GER
-				tag = GCF
-			}
+			tag = GER
 			exists = UBD
 			UBD = {
 				OR = { 
@@ -720,10 +714,7 @@ political_decisions = {
 	ober_ost = {
 		picture = ober_ost
 		potential = {
-			OR = {
-				tag = GCF
-				tag = GER
-			}
+			tag = GER
 			has_global_flag = annex_baltic_duchy
 			NOT = { has_global_flag = ober_ost_lit }
 			is_greater_power = yes

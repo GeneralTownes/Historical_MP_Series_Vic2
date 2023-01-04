@@ -754,7 +754,6 @@ country_event = {
 		war = no
 		NOT = { tag = UBD }
 		NOT = { tag = VLG }
-		NOT = { tag = GCF }
 		NOT = { tag = SIE }
 		NOT = { tag = BAN }
 		NOT = { 

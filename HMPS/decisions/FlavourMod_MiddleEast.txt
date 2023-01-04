@@ -400,20 +400,6 @@ political_decisions = {
 					}
 				}
 			}
-			
-			random_owned = {
-				limit = { owner = { is_greater_power = no } exists = GCF }
-				GCF = {
-					diplomatic_influence = {
-						who = TUR
-						value = 400
-					}
-					relation = {
-						who = TUR
-						value = 300
-					}
-				}
-			}
 		}
 		
 		ai_will_do = { factor = 1 }

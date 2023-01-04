@@ -1031,27 +1031,16 @@ country_event = {
 				}
 			}
 		}
-		OR = {
-			has_global_flag = italian_call_to_union
-			has_global_flag = garibaldi_redshirts
-			AND = {
-				OR = {
-					tag = SAR
-					tag = SVY
-					tag = SIC
-				}
-				exists = GER
-				year = 1890
+		has_global_flag = italian_call_to_union
+		has_global_flag = garibaldi_redshirts
+		AND = {
+			OR = {
+				tag = SAR
+				tag = SVY
+				tag = SIC
 			}
-			AND = {
-				OR = {
-					tag = SAR
-					tag = SVY
-					tag = SIC
-				}
-				exists = GCF
-				year = 1890
-			}
+			exists = GER
+			year = 1890
 		}
 	}
 

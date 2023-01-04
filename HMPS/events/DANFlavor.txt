@@ -303,7 +303,6 @@ country_event = {
 		capital = 372 #copenhagen
 		OR = {
 			neighbour = GER
-			neighbour = GCF
 			neighbour = PRU
 			}
 		NOT = {
@@ -382,10 +381,7 @@ country_event = {
 	trigger = {
 		tag = DEN 
 		year = 1896
-		OR = { 
-			neighbour = GER
-			neighbour = GCF
-		}
+		neighbour = GER
 		NOT = {
 			year = 1901
 			has_country_flag = SchlewsigDENesGermanized
@@ -421,7 +417,6 @@ country_event = {
 		name = "EVTOPTA36206" 
 		set_country_flag = SchlewsigDENesGermanized
 		relation = { who = GER value = -100 }
-		relation = { who = GCF value = -100 }
 		any_pop = {
 			dominant_issue = {
 				value = jingoism
@@ -1057,7 +1052,6 @@ country_event = {
 		relation = { who = PRU value = -50 }
 		relation = { who = RUS value = -50 }
 		relation = { who = GER value = -50 }
-		relation = { who = GCF value = -50 }
 		relation = { who = SWE value = 75 }
 		any_pop = {
 			scaled_consciousness = {

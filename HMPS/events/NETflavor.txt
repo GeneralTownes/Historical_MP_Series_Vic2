@@ -450,7 +450,6 @@ country_event = {
 		OR = {
 			exists = NGF
 			exists = GER
-			exists = GCF
 		}
 	}
 	
@@ -467,7 +466,6 @@ country_event = {
 				OR = {
 					tag = NGF
 					tag = GER
-					tag = GCF
 				}
 			}
 			country_event = 952514
@@ -586,7 +584,6 @@ country_event = {
 			modifier = {
 				factor = 0
 				OR = {
-					alliance_with = GCF
 					alliance_with = GER
 					alliance_with = NGF
 				}
@@ -609,7 +606,6 @@ country_event = {
 			modifier = {
 				factor = 100
 				OR = {
-					alliance_with = GCF
 					alliance_with = GER
 					alliance_with = NGF
 				}

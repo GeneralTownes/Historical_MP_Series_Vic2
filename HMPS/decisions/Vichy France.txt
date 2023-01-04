@@ -3,10 +3,7 @@ political_decisions = {
 		picture = swastika
 		potential = {
 			is_greater_power = yes
-			OR = {
-				tag = GER
-				tag = GCF
-			}
+			tag = GER
 			year = 1910
 			war = no
 			is_disarmed = no
@@ -42,10 +39,7 @@ political_decisions = {
 		picture = vf_symbol
 		potential = {
 			is_greater_power = yes
-			OR = {
-				tag = GER
-				tag = GCF
-			}
+			tag = GER
 			war = no
 			is_disarmed = no
 			has_country_flag = the_french_menace

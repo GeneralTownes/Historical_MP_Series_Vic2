@@ -609,7 +609,6 @@ political_decisions = {
 				}
 				remove_province_modifier = drang_nach_osten
 			}
-			GCF = { clr_country_flag = prussian_settlement_commission }
 			GER = { clr_country_flag = prussian_settlement_commission }
 			AUS = { clr_country_flag = prussian_settlement_commission }
 			KUK = { clr_country_flag = prussian_settlement_commission }

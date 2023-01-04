@@ -137,15 +137,9 @@ country_event = {
 		has_country_modifier = war_minister_boulanger
 		NOT = { has_country_flag = schnaebele_affair }
 		war = no
-		OR = { 
-			GER = {
-				exists = yes
-				war = no
-			}
-			GCF = {
-				exists = yes
-				war = no
-			}
+		GER = {
+			exists = yes
+			war = no
 		}
 	}
 	
@@ -187,10 +181,7 @@ country_event = {
 			limit = { 
 				exists = yes 
 				is_greater_power = yes
-				OR = { 
-					tag = GER
-					tag = GCF
-				}
+				tag = GER
 			}
 			country_event = { id = 99940 days = 3 }
 		}

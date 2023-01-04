@@ -451,7 +451,6 @@ country_event = {
 						tag = PRU
 						tag = NGF
 						tag = GER
-						tag = GCF
 					}
 					neighbour = LBG
 					exists = yes
@@ -468,7 +467,6 @@ country_event = {
 					OR = {
 						tag = PRU
 						tag = NGF
-						tag = GCF
 						tag = GER
 						tag = FRA
 						tag = AUS

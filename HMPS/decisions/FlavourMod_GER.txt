@@ -2,10 +2,7 @@ political_decisions = {
 	build_reichstag = {
 		picture = "reichstag"
 		potential = { 
-			OR = {
-				tag = GER
-				tag = GCF
-			}
+			tag = GER
 			NOT = {
 				has_country_flag = built_reichstag
 			}
@@ -40,10 +37,7 @@ political_decisions = {
 	berlin_baghdad_railway = {
 		picture = "berlin_baghdad"
 		potential = { 
-			OR = {
-				tag = GER
-				tag = GCF
-			}
+			tag = GER
 			integral_rail_system = 1
 			is_greater_power = yes
 			NOT = {
@@ -78,10 +72,7 @@ political_decisions = {
 	franco_prussian_war_memorial = {
 		picture = "franco_prussian_memorial"
 		potential = {
-			OR = {
-				tag = GER
-				tag = GCF
-			}
+			tag = GER
 			ALS = { exists = no }
 			NOT = {
 				OR = {
@@ -194,13 +185,7 @@ political_decisions = {
 	treaty_of_vienna = {
 		picture = "form_germany"
 		potential = { 
-			OR = { 
-				tag = GER
-				AND = {
-					tag = GCF
-					NOT = { capital = 619 }
-				}
-			}
+			tag = GER
 			war = yes
 			OR = {
 				war_with = KUK
@@ -285,10 +270,7 @@ political_decisions = {
 	bohemian_question = {
 		picture = "czech_autonomy"
 		potential = { 
-			OR = {
-				tag = GER
-				tag = GCF
-			}
+			tag = GER
 			NOT = { capital = 619 } #Vienna
 			war = no
 			NOT = { tag = KUK }
@@ -355,10 +337,7 @@ political_decisions = {
 		picture = gtfo
 		potential = {
 			NOT = { has_country_flag = greater_germany_hungarian_border_treaty_tried }
-			OR = { 
-				tag = GER
-				tag = GCF 
-			}
+			tag = GER
 			HUN = { is_vassal = no }
 			OR = {
 				AND = {
@@ -416,20 +395,8 @@ political_decisions = {
 					AUS_641 = { owned_by = HUN }
 				}
 				AND = {
-					tag = GCF
-					AUS_619 = { owned_by = THIS }
-					AUS_623 = { owned_by = HUN }
-					AUS_641 = { owned_by = HUN }
-				}
-				AND = {
 					tag = HUN
 					AUS_619 = { owned_by = GER }
-					AUS_623 = { owned_by = THIS }
-					AUS_641 = { owned_by = THIS }
-				}
-				AND = {
-					tag = HUN
-					AUS_619 = { owned_by = GCF }
 					AUS_623 = { owned_by = THIS }
 					AUS_641 = { owned_by = THIS }
 				}
@@ -466,7 +433,6 @@ political_decisions = {
 				tag = PRU
 				tag = NGF
 				tag = GER
-				tag = GCF
 			}
 			BAN = {
 				exists = yes

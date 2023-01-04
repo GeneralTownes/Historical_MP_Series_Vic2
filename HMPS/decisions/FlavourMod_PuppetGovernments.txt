@@ -127,10 +127,7 @@ political_decisions = {
 						tag = PPG
 					}
 					is_culture_group = germanic
-					OR = { 
-						vassal_of = GER
-						vassal_of = GCF
-					}
+					vassal_of = GER
 				}
 				AND = {
 					OR = {
@@ -143,7 +140,6 @@ political_decisions = {
 					}
 					OR = {
 						vassal_of = GER
-						vassal_of = GCF
 						vassal_of = NGF
 						vassal_of = SGF
 						vassal_of = AUS
@@ -161,7 +157,6 @@ political_decisions = {
 						vassal_of = AUS
 						vassal_of = KUK
 						vassal_of = GER
-						vassal_of = GCF
 						vassal_of = NGF
 						vassal_of = SGF
 					}
@@ -171,22 +166,15 @@ political_decisions = {
 						tag = BOH
 						tag = POL
 					}
-					OR = {
-						AND = { 
-							vassal_of = GER
-							GER = { government = fascist_dictatorship }
-						}
-						AND = { 
-							vassal_of = GCF
-							GCF = { government = fascist_dictatorship }
-						}
+					AND = { 
+						vassal_of = GER
+						GER = { government = fascist_dictatorship }
 					}
 				}
 				AND = {
 					tag = BOS
 					OR = {
 						vassal_of = GER
-						vassal_of = GCF
 						vassal_of = NGF
 						vassal_of = SGF
 						vassal_of = AUS

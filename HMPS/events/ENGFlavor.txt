@@ -1617,7 +1617,6 @@ country_event = {
 		year = 1836
 		exists = COB
 		OR = {
-			war_with = GCF
 			war_with = GER
 			war_with = PRU
 			}

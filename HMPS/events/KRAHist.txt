@@ -44,7 +44,6 @@ country_event = {
 					tag = PRU
 					tag = NGF
 					tag = GER
-					tag = GCF
 				}
 				owns = 549
 			}

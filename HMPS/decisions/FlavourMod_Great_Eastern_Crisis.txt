@@ -69,11 +69,6 @@ political_decisions = {
 						exists = GER
 						TUR = { NOT = { alliance_with = GER } }
 					}
-					AND = {
-						has_global_flag = treaty_of_paris_russia
-						exists = GCF
-						TUR = { NOT = { alliance_with = GCF } }
-					}
 				}
 			}
 		}
@@ -144,10 +139,6 @@ political_decisions = {
 						exists = GER
 						TUR = { alliance_with = GER }
 					}
-					AND = { 
-						exists = GCF
-						TUR = { alliance_with = GCF }
-					}
 				}
 			}
 			modifier = {
@@ -162,7 +153,6 @@ political_decisions = {
 		potential = { 
 			OR = {
 				tag = GER
-				tag = GCF
 				tag = AUS
 				tag = KUK
 				tag = DNB

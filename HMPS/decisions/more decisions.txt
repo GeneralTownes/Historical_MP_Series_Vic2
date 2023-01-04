@@ -1232,10 +1232,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = treaty_of_elass_lorraine_propose
 			}
-			OR = {
-				tag = GER
-				tag = GCF
-			}
+			tag = GER
 			owns = 410
 			owns = 409
 			owns = 412
@@ -1278,10 +1275,7 @@ political_decisions = {
 			has_global_flag = treaty_of_elass_lorraine
 			NOT = { has_global_flag = elass_lorraine_null }
 			is_disarmed = no
-			OR = {
-				tag = GCF
-				tag = GER
-			}
+			tag = GER
 			OR = {
 				government = fascist_dictatorship
 				government = proletarian_dictatorship
@@ -1343,16 +1337,7 @@ political_decisions = {
 						value = -15
 					}
 				}
-				NOT = {
-					relation = {
-						who = GCF
-						value = -15
-					}
-				}
-				AND = {
-					NOT = { exists = GER }
-					NOT = { exists = GCF }
-				}
+				NOT = { exists = GER }
 			}
 		}
 		allow = {
@@ -1599,7 +1584,6 @@ political_decisions = {
 						tag = HUN
 						tag = TUR
 						tag = GER
-						tag = GCF
 						tag = RUS
 					}
 					exists = yes

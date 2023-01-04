@@ -308,10 +308,6 @@ political_decisions = {
 				limit = { tag = NGF exists = yes owns = 587 NOT = { has_country_flag = swiss_neutrality_violator } }
 				country_event = 500060
 			}
-			random_country = {
-				limit = { tag = GCF exists = yes owns = 587 NOT = { has_country_flag = swiss_neutrality_violator } }
-				country_event = 500060
-			}
 		}
 		
 		ai_will_do = { factor = 1 }

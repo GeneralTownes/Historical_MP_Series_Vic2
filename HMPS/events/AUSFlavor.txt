@@ -646,7 +646,6 @@ country_event = {
 		OR = {
 			is_greater_power = yes
 			in_sphere = GER
-			in_sphere = GCF
 			in_sphere = NGF
 			in_sphere = PRU
 		}
@@ -755,10 +754,6 @@ country_event = {
 				factor = 0.5
 				in_sphere = GER
 			}
-			modifier = {
-				factor = 0.5
-				in_sphere = GCF
-			}
 		}
 	}
 }
@@ -791,7 +786,6 @@ country_event = {
 					tag = PRU
 					tag = NGF
 					tag = GER
-					tag = GCF
 				}
 				owns = 549
 			}
@@ -1221,7 +1215,6 @@ country_event = {
 		623 = { #Sopron
 			remove_core = AUS
 			remove_core = GER
-			remove_core = GCF
 			add_core = HUN
 			secede_province = HUN
 			remove_province_modifier = integration_refusal

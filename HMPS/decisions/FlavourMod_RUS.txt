@@ -186,10 +186,7 @@ political_decisions = {
 			great_wars_enabled = yes
 			has_country_flag = russification_of_the_baltic_states
 			owns = 1037
-			OR = {
-				war_with = GER
-				war_with = GCF
-			}
+			war_with = GER
 			NOT = { has_country_flag = abolish_volga_region }
 		}
 		allow = {
@@ -303,7 +300,6 @@ political_decisions = {
 								vassal_of = AUS
 								vassal_of = KUK
 								vassal_of = GER
-								vassal_of = GCF
 							}
 						}
 					}
@@ -325,7 +321,6 @@ political_decisions = {
 								vassal_of = AUS
 								vassal_of = KUK
 								vassal_of = GER
-								vassal_of = GCF
 							}
 						}
 					}
@@ -347,7 +342,6 @@ political_decisions = {
 								vassal_of = AUS
 								vassal_of = KUK
 								vassal_of = GER
-								vassal_of = GCF
 							}
 						}
 					}
@@ -420,7 +414,6 @@ political_decisions = {
 						tag = HUN
 						tag = TUR
 						tag = GER
-						tag = GCF
 					}
 					exists = yes
 					NOT = { tag = THIS }
@@ -469,15 +462,6 @@ political_decisions = {
 						owns = 704
 					}
 				}
-				GCF = { 
-					exists = yes
-					is_greater_power = no
-					NOT = { truce_with = RUS }
-					OR = { 
-						owns = 705
-						owns = 704
-					}
-				}
 			}
 			NOT = { has_country_flag = claim_galicia }
 		}
@@ -516,15 +500,6 @@ political_decisions = {
 						owns = 704
 					}
 				}
-				GCF = { 
-					exists = yes
-					is_greater_power = no
-					NOT = { truce_with = RUS }
-					OR = { 
-						owns = 705
-						owns = 704
-					}
-				}
 			}
 		}
 		effect = {
@@ -534,7 +509,6 @@ political_decisions = {
 					OR = { 
 						tag = KUK
 						tag = AUS
-						tag = GCF
 					}
 					OR = { 
 						owns = 705

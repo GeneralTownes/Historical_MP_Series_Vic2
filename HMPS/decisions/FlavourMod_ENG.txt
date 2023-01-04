@@ -219,7 +219,6 @@ political_decisions = {
 			NOT = { exists = IRE }
 			has_country_modifier = pax_britannica
 			NOT = { exists = GER }
-			NOT = { exists = GCF }
 			rank = 1
 			NOT = { year = 1870 }
 			NOT = {
@@ -644,7 +643,7 @@ political_decisions = {
 			invention = prophylaxis_against_malaria
 			invention = mission_to_civilize
 			invention = colonial_negotiations
-			2530 = { OR = { owned_by = GER owned_by = GCF } }
+			2530 = { owned_by = GER }
 			2468 = {
 				OR = {
 					owned_by = THIS

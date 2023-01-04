@@ -787,7 +787,6 @@ country_event = {
 		relation = { who = SGF value = -50 }
 		relation = { who = RUS value = -50 }
 		relation = { who = GER value = -50 }
-		relation = { who = GCF value = -50 }
 		relation = { who = DEN value = 75 }
 		any_pop = {
 			scaled_consciousness = {

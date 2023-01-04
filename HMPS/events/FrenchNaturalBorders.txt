@@ -455,7 +455,6 @@ country_event = {
 		any_owned = {
 			limit = {
 				OR = {
-					is_core = GCF
 					is_core = GER
 					region = GER_1
 					region = GER_2

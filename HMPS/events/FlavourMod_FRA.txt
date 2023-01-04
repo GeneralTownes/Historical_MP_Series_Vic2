@@ -315,7 +315,6 @@ country_event = {
 			tag = KUK
 			tag = SGF
 			tag = GER
-			tag = GCF
 		}	
 		OR = {
 			accepted_culture = ashkenazi

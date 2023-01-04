@@ -451,7 +451,6 @@ country_event = {
 			colonial_nation = yes
 		}
 		NOT = {
-			tag = GCF
 			tag = GER
 			tag = NGF
 			tag = SGF
@@ -553,23 +552,6 @@ country_event = {
 				}
 			}
 			add_core = GER
-		}
-		
-		#if any Polish cores owned, re-add cores to German Confederation
-		any_owned = {
-			limit = {
-				OR = {
-					region = PRU_690
-					region = PRU_701
-					province_id = 684
-					province_id = 685
-				}
-				NOT = { is_core = GCF }
-				owner = {
-					truce_with = GCF
-				}
-			}
-			add_core = GCF
 		}
 
 		#remove cores on overseas provinces
@@ -1671,7 +1653,6 @@ country_event = {
 			tag = NGF
 			tag = SGF
 			tag = PRU
-			tag = GCF
 			tag = RUS
 			tag = USA
 			tag = ENG
@@ -2240,7 +2221,6 @@ country_event = {
 		}
 		OR = {
 			tag = GER
-			tag = GCF
 			tag = NGF
 			tag = SGF
 			tag = PRU
@@ -2364,10 +2344,7 @@ country_event = {
 		#remove all GER/SGF cores from Austria
 		random_owned = {
 			limit = {
-				OR = {
-					owner = { tag = GER }
-					owner = { tag = GCF }
-				}
+				owner = { tag = GER }
 			}
 			BAD_586 = { remove_core = AUS }
 			WUR_589 = { remove_core = AUS }
@@ -2377,7 +2354,6 @@ country_event = {
 				all_core = {
 					limit = { is_core = AUS }
 					remove_core = GER
-					remove_core = GCF
 				}
 			}
 		}
@@ -2406,7 +2382,6 @@ country_event = {
 			}
 			FRA_412 = {
 				remove_core = GER
-				remove_core = GCF
 				remove_core = ELS
 				remove_core = LOR
 				add_core = FRA
@@ -2637,12 +2612,10 @@ country_event = {
 			370 = {
 				add_core = DEN
 				remove_core = GER
-				remove_core = GCF
 			}
 			371 = {
 				add_core = DEN
 				remove_core = GER
-				remove_core = GCF
 			}
 		}
 
@@ -2732,7 +2705,6 @@ country_event = {
 			397 = {
 				add_core = LUX
 				remove_core = GER
-				remove_core = GCF
 			}
 			LUX = { country_event = 96060 }
 		}
@@ -2803,17 +2775,14 @@ country_event = {
 			AUS_619 = {
 				add_core = AUS
 				remove_core = GER
-				remove_core = GCF
 			}
 			AUS_612 = {
 				add_core = AUS
 				remove_core = GER
-				remove_core = GCF
 			}
 			AUS_613 = {
 				add_core = AUS
 				remove_core = GER
-				remove_core = GCF
 			}
 			AUS = { country_event = 96060 }
 		}
@@ -3117,23 +3086,6 @@ country_event = {
 			}
 			add_core = GER
 		}
-		
-		#if any Polish cores owned, re-add cores to German Confederation
-		any_owned = {
-			limit = {
-				OR = {
-					region = PRU_690
-					region = PRU_701
-					province_id = 684
-					province_id = 685
-				}
-				NOT = { is_core = GCF }
-				owner = {
-					truce_with = GCF
-				}
-			}
-			add_core = GCF
-		}
 
 		#Remove cores from the Baltic States
 		any_owned = {
@@ -3157,15 +3109,6 @@ country_event = {
 				}
 			}
 			secede_province = GER
-		}
-		any_owned = {
-			limit = {
-				is_core = UBD
-				owner = {
-					truce_with = GCF
-				}
-			}
-			secede_province = GCF
 		}
 		
 		#If no truce with Germany, remove UBD cores
@@ -4081,23 +4024,6 @@ country_event = {
 			add_core = GER
 		}
 		
-		#if any Polish cores owned, re-add cores to German Confederation
-		any_owned = {
-			limit = {
-				OR = {
-					region = PRU_690
-					region = PRU_701
-					province_id = 684
-					province_id = 685
-				}
-				NOT = { is_core = GCF }
-				owner = {
-					truce_with = GCF
-				}
-			}
-			add_core = GCF
-		}
-		
 		#remove cores on overseas provinces
 		any_owned = {
 			limit = {
@@ -4529,23 +4455,6 @@ country_event = {
 			add_core = GER
 		}
 		
-		#if any Polish cores owned, re-add cores to German Confederation
-		any_owned = {
-			limit = {
-				OR = {
-					region = PRU_690
-					region = PRU_701
-					province_id = 684
-					province_id = 685
-				}
-				NOT = { is_core = GCF }
-				owner = {
-					truce_with = GCF
-				}
-			}
-			add_core = GCF
-		}
-		
 		#remove cores on overseas provinces
 		any_owned = {
 			limit = {
@@ -4947,23 +4856,6 @@ country_event = {
 			add_core = GER
 		}
 		
-		#if any Polish cores owned, re-add cores to German Confederation
-		any_owned = {
-			limit = {
-				OR = {
-					region = PRU_690
-					region = PRU_701
-					province_id = 684
-					province_id = 685
-				}
-				NOT = { is_core = GCF }
-				owner = {
-					truce_with = GCF
-				}
-			}
-			add_core = GCF
-		}
-		
 		#remove cores on overseas provinces
 		any_owned = {
 			limit = {
@@ -5266,21 +5158,11 @@ country_event = {
 			limit = {
 				is_culture_group = germanic
 				truce_with = THIS
-				NOT = { exists = GCF }
 			}
 			FRA_412 = {
 				remove_core = THIS
 				add_core = GER
 			}
-		}
-		random_country = {
-			limit = {
-				tag = GCF
-				truce_with = THIS
-				THIS = { owns = 412 }
-				NOT = { exists = GER }
-			}
-			FRA_412 = { secede_province = GCF 	add_core = GCF }
 		}
 		random_country = {
 			limit = {
@@ -5438,23 +5320,6 @@ country_event = {
 				}
 			}
 			add_core = GER
-		}
-		
-		#if any Polish cores owned, re-add cores to German Confederation
-		any_owned = {
-			limit = {
-				OR = {
-					region = PRU_690
-					region = PRU_701
-					province_id = 684
-					province_id = 685
-				}
-				NOT = { is_core = GCF }
-				owner = {
-					truce_with = GCF
-				}
-			}
-			add_core = GCF
 		}
 
 		#normalize relations with treaty members
@@ -5803,7 +5668,6 @@ country_event = {
 			}
 			FRA_412 = {
 				remove_core = GER
-				remove_core = GCF
 				add_core = FRA
 			}
 		}
@@ -5865,24 +5729,6 @@ country_event = {
 			}
 			add_core = GER
 		}
-		
-		#if any Polish cores owned, re-add cores to German Confederation
-		any_owned = {
-			limit = {
-				OR = {
-					region = PRU_690
-					region = PRU_701
-					province_id = 684
-					province_id = 685
-				}
-				NOT = { is_core = GCF }
-				owner = {
-					truce_with = GCF
-				}
-			}
-			add_core = GCF
-		}
-
 
 		#normalize relations with treaty members
 		any_country = {
@@ -6346,23 +6192,6 @@ country_event = {
 				}
 			}
 			add_core = GER
-		}
-		
-		#if any Polish cores owned, re-add cores to German Confederation
-		any_owned = {
-			limit = {
-				OR = {
-					region = PRU_690
-					region = PRU_701
-					province_id = 684
-					province_id = 685
-				}
-				NOT = { is_core = GCF }
-				owner = {
-					truce_with = GCF
-				}
-			}
-			add_core = GCF
 		}
 
 
@@ -8368,7 +8197,6 @@ country_event = {
 			remove_core = PRU
 			remove_core = NGF
 			remove_core = GER
-			remove_core = GCF
 			}
 		
 	}

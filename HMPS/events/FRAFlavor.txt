@@ -614,21 +614,10 @@ country_event = {
 		primary_culture = french
 		is_greater_power = yes
 		capital = 425
-		OR = { 
-			AND = { 
-				exists = GER
-				NOT = {
-					year = 1897
-					war_with = GER
-				}
-			}
-			AND = { 
-				exists = GCF
-				NOT = {
-					year = 1897
-					war_with = GCF
-				}
-			}
+		exists = GER
+		NOT = {
+			year = 1897
+			war_with = GER
 		}
 		year = 1894
 	}
@@ -690,25 +679,12 @@ country_event = {
 		primary_culture = french
 		is_greater_power = yes
 		capital = 425
-		OR = {
-			AND = { 
-				exists = GER
-				NOT = {
-					year = 1902
-					war_with = GER
-					has_country_flag = DreyfusInnocent
-					has_country_flag = DreyfusGuilty
-				}
-			}
-			AND = { 
-				exists = GCF
-				NOT = {
-					year = 1902
-					war_with = GCF
-					has_country_flag = DreyfusInnocent
-					has_country_flag = DreyfusGuilty
-				}
-			}
+		exists = GER
+		NOT = {
+			year = 1902
+			war_with = GER
+			has_country_flag = DreyfusInnocent
+			has_country_flag = DreyfusGuilty
 		}
 		year = 1898
 		has_country_flag = DreyfusTrial
@@ -770,23 +746,11 @@ country_event = {
 		primary_culture = french
 		is_greater_power = yes
 		capital = 425
-		OR = { 
-			AND = { 
-				exists = GER
-				NOT = {
-					year = 1903
-					war_with = GER
-					has_country_flag = JAccuse
-				}
-			}
-			AND = { 
-				exists = GCF
-				NOT = {
-					year = 1903
-					war_with = GCF
-					has_country_flag = JAccuse
-				}
-			}
+		exists = GER
+		NOT = {
+			year = 1903
+			war_with = GER
+			has_country_flag = JAccuse
 		}
 		year = 1899
 		has_country_flag = DreyfusGuilty
@@ -1527,10 +1491,7 @@ country_event = {
 		primary_culture = french
 		is_greater_power = yes
 		capital = 425
-		OR = { 
-			exists = GER
-			exists = GCF
-		}
+		exists = GER
 		NOT = { owns = 409 }
 		NOT = { owns = 410 }
 		NOT = { owns = 412 }

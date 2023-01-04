@@ -24,7 +24,6 @@ political_decisions = {
 			OR = {
 				NGF = { exists = yes }
 				GER = { exists = yes }
-				GCF = { exists = yes }
 				nationalism_n_imperialism = 1
 				is_greater_power = no
 			}
@@ -77,7 +76,6 @@ political_decisions = {
 						tag = NGF
 						tag = PRU
 						tag = GER
-						tag = GCF
 					}
 					exists = yes
 					is_greater_power = yes
@@ -92,7 +90,6 @@ political_decisions = {
 				is_greater_power = yes
 				NGF = { exists = no }
 				GER = { exists = no }
-				GCF = { exists = no }
 				NOT = {
 					OR = {
 						average_militancy = 6
@@ -445,11 +442,6 @@ political_decisions = {
 				tag = AUS
 				tag = KUK
 				tag = DNB
-				AND = {
-					tag = GCF
-					capital = 619 #Vienna
-					HAN = { all_core = { OR = { owned_by = THIS owner = { in_sphere = THIS OR = { is_vassal = no vassal_of = THIS } war = no is_greater_power = no } } } }
-				}
 				AND = {
 					is_greater_power = yes
 					OR = {
@@ -862,7 +854,6 @@ political_decisions = {
 				tag = AUS
 				tag = DNB
 				tag = HUN
-				tag = GCF
 				tag = GER
 			}
 			owns = 641

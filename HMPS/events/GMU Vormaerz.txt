@@ -520,10 +520,7 @@ country_event = {
 	trigger = {
 	   NOT = { has_country_flag = die_goettinger_sieben_honoured }
 	   has_global_flag = die_goettinger_sieben
-	   OR = { 
-			tag = GER
-			tag = GCF
-		}
+		tag = GER
 	   press_rights = free_press
 	   public_meetings = yes_meeting
 	   OR = { 
@@ -2221,10 +2218,7 @@ country_event = {
 
 	trigger = {
 		has_global_flag = weber_aufstand
-		OR = { 
-			tag = GER
-			tag = GCF
-		}
+		tag = GER
 		press_rights = free_press
 		public_meetings = yes_meeting
 		realism = 1
