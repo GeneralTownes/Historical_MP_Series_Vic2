@@ -195,6 +195,8 @@ Many nations no longer need (only) GP for flava, or high prestige. War policy re
 - Niger Empire / Federation union tag added (with industrial RGO changes)
 #### East Africa
 - Ethiopian cultures can form the East African Federation, or Coptic Empire with expansion south and north respectively
+#### Oceania
+- Australia can form Oceania, with small expansion flava
 
 ## Map
 - Rivers with -2 crossing plenlty added (province modifier label)
@@ -232,5 +234,8 @@ Many nations no longer need (only) GP for flava, or high prestige. War policy re
 - State
 - State (3rd party)
 - Substate
+#### Sanctions
+- 1st level sanctions apply at 32.5 infamy
+- 2nd level sanctions apply at 40 infamy
 #### Puppet Units
 - Can start a fake war to regain control over all puppet units

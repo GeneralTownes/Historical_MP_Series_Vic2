@@ -918,34 +918,37 @@ caudillo_leaders = {
 }
 
 kinda_bad_badboy = {
-	import_cost = 2
-	loan_interest = 3
-	diplomatic_points_modifier = -0.3
-	factory_owner_cost = 0.3
-	global_immigrant_attract = -0.5
-	non_accepted_pop_consciousness_modifier = 0.4
-	non_accepted_pop_militancy_modifier = 0.2
-	political_reform_desire = 0.5
-	icon = 8
-}
-
-
-bad_badboy = {
 	import_cost = 4
 	loan_interest = 4
 	tariff_efficiency_modifier = -0.40
 	diplomatic_points_modifier = -0.6
 	factory_owner_cost = 1
+	RGO_throughput = -0.25
+	factory_throughput = -0.25
 	global_immigrant_attract = -2.0
-	global_pop_consciousness_modifier = 0.05
-	non_accepted_pop_consciousness_modifier = 0.8
-	non_accepted_pop_militancy_modifier = 0.4
-	political_reform_desire = 0.8
-	org_regain = -0.1
-	land_organisation = -0.1
-	naval_organisation = -0.1
-	prestige = -0.06
-	research_points_modifier = -0.2
+	org_regain = -0.25
+	land_organisation = -0.25
+	naval_organisation = -0.25
+	prestige = -0.1
+	research_points_modifier = -0.3
+	icon = 8
+}
+
+
+bad_badboy = {
+	import_cost = 8
+	loan_interest = 8
+	tariff_efficiency_modifier = -0.80
+	diplomatic_points_modifier = -1.2
+	factory_owner_cost = 2
+	RGO_throughput = -0.5
+	factory_throughput = -0.5
+	global_immigrant_attract = -4.0
+	org_regain = -0.5
+	land_organisation = -0.5
+	naval_organisation = -0.5
+	prestige = -0.2
+	research_points_modifier = -0.6
 	icon = 8
 }
 

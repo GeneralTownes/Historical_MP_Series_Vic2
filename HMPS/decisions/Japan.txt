@@ -1045,7 +1045,6 @@ political_decisions = {
 		
 		allow = {
 			war = no
-			is_disarmed = no
 			OR = {
 				is_sphere_leader_of = SEN
 				relation = { who = SEN value = 100 }
@@ -1086,7 +1085,6 @@ political_decisions = {
 			remove_country_modifier = ansei_purge
 			remove_country_modifier = kobu_gattai
 			1649 = {
-				life_rating = 10
 				add_province_modifier = {
 					name = gateway_to_harbor
 					duration = 365

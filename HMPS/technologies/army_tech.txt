@@ -1606,7 +1606,7 @@ modern_divisional_structure = {
 	
 
 	unit = 2
-	combat_width = -5
+	combat_width = -2
 	
 	infantry = {
 		discipline = 0.1

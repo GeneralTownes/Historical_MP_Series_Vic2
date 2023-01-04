@@ -317,38 +317,36 @@ From;To;Type;Through;Data;Comment
 843;869;sea;2772;0;Izmir Strait
 859;865;sea;2773;0;Dardanelles Strait
 860;861;sea;0;0;Golden Horn
-759;763;sea;2760;0;Strait of Messina
+759;763;sea;0;0;Strait of Messina
 837;827;sea;2765;0;Ionian Islands Strait
 966;1049;sea;2776;0;Strait of Azov
 512;1687;sea;0;0;Strait of Gibraltar - Cadiz to Tetouan
 331;332;sea;2710;0;Gotland Strait
 846;872;sea;2771;0;Dodecanese Strait
 844;865;sea;2772;0;Myteline Strait
-271;304;land;2737;0;Irish Strait - land not sea for UFB name to show correctly
-254;304;sea;2737;0;Irish Strait
+271;304;sea;2737;0;Irish Strait - (land not sea for UFB name to show correctly)
 267;1724;sea;2735;0;Inverness - Orkney Strait
 780;782;land;2762;0;Mostar Bay
 301;401;sea;2724;0;Straits of Dover
-274;265;sea;2738;0;Ireland Strait Cause AI is dumb
 
 #
 # Asian Straits
 #
 
-1632;2589;sea;2829;0;Pusan - Tshushima Strait
-1661;2589;sea;2829;0;Nagasaki - Tshushima Strait
+#1632;2589;sea;2829;0;Pusan - Tshushima Strait
+#1661;2589;sea;2829;0;Nagasaki - Tshushima Strait
 1540;1538;sea;2826;0;Nantong - Shanghai through the Yantze River
 1540;1539;sea;2826;0;Nantong - Suzhou through the Yantze River
 1541;1539;sea;2826;0;Tongzhou - Suzhou through the Yantze River
 1452;1454;sea;2856;0;Biak - Merah Strait
-2406;2562;sea;2825;0;Penghu - Taiwan Strait
-2406;1484;sea;2825;0;Quangzhou - Taiwan Strait
-1662;1679;sea;2845;0;Ryukyu Islands Strait
-2562;1678;sea;2846;0;Okinawa Islands Strait
+2406;1485;sea;2825;0;Penghu - Taiwan Strait
+#2406;1484;sea;2825;0;Quangzhou - Taiwan Strait
+#1662;1679;sea;2845;0;Ryukyu Islands Strait
+#2562;1678;sea;2846;0;Okinawa Islands Strait
 1071;1142;sea;2787;0;Bandar abbhas - Homuz Strait
 1071;1141;sea;2787;0;Lengeh - Homuz Strait
 1083;1086;sea;2832;0;Tatar Straits
-1087;1643;sea;2831;0;La Perouse Strait
+#1087;1643;sea;2831;0;La Perouse Strait
 1162;1165;sea;2788;0;Bahrain Strait
 1309;1322;sea;2794;0;Palk Strait #Ceylon-S India
 1310;1322;sea;2794;0;Palk Strait #Ceylon-S India
@@ -362,7 +360,7 @@ From;To;Type;Through;Data;Comment
 1495;1499;sea;2823;0;Hainan Strait
 1457;1461;sea;2849;0;Tacloban Strait
 1640;1660;land;2843;0;Fukuoka Strait
-1642;1672;sea;2841;0;Hakodate Strait
+1642;1672;sea;0;0;Hakodate Strait
 1664;1666;land;2843;0;Matsuyama Strait
 1638;1666;land;2843;0;Matsuyama Strait 2
 1667;1659;land;2843;0;Setto Strait
@@ -393,7 +391,7 @@ From;To;Type;Through;Data;Comment
 1437;1436;sea;0;0;Bulon-Kendari Strait
 1435;1425;sea;2812;0;Palu-Tarakan Strait
 1644;1089;sea;2839;0;Nemuru-Etorofu Strait
-1089;1088;sea;2839;0;Etorofu-Shumshu Strait
+#1089;1088;sea;2839;0;Etorofu-Shumshu Strait
 1088;1074;sea;2838;0;Shumshu-Petropavlovsk Strait
 1679;1678;sea;2845;0;Amari-Okinawa Strait
 1637;1635;sea;2829;0;Cheju-Kwangju Strait

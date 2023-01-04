@@ -27,7 +27,6 @@ political_decisions = {
 		}
 		effect = { 
 			change_tag = OCE
-			government = democracy
 			AST = {
 				all_core = {
 					add_core = OCE
@@ -43,21 +42,6 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 0
-		}
-	}
-	request_australasian_independence = {
-		picture = postcol_AST
-		potential = {
-			tag = AST
-			ai = no
-			AST = { vassal_of = ENG }
-		}
-		allow = { 
-			war = no
-			state_n_government = 1
-		}
-		effect = {
-			ENG = { release_vassal = AST }
 		}
 	}
 	claim_papua_new_guinea = {
@@ -76,22 +60,6 @@ political_decisions = {
 			badboy = 10
 		}
 	}
-	#claim_java = {
-	#	picture = postcol_AST
-	#	potential = {
-	#		tag = OCE
-	#		NOT = { 1416 = { is_core = OCE } }
-	#	}
-	#	allow = {
-	#		nationalism_n_imperialism = 1
-	#	}
-	#	effect = {
-	#		NET_1413 = { add_core = OCE }
-	#		NET_1418 = { add_core = OCE }
-	#		BAL_1438 = { add_core = OCE }
-	#		badboy = 15
-	#	}
-	#}
 	claim_oceanic_islands = {
 		picture = postcol_AST
 		potential = {
@@ -131,40 +99,4 @@ political_decisions = {
 			add_accepted_culture = melanesian
 		}
 	}
-	#accept_moluccan = { 
-	#	picture = postcol_AST
-	#	potential = {
-	#		tag = OCE
-	#		NOT = { accepted_culture = moluccan }
-	#	}
-	#	allow = {
-	#		war = no
-	#		revolution_n_counterrevolution = 1
-	#		1446 = { is_core = OCE }
-	#		1446 = { owned_by = OCE }
-	#		citizenship_policy = full_citizenship
-	#		citizens_rights = all_voting_pops
-	#	}
-	#	effect = {
-	#		add_accepted_culture = moluccan
-	#	}
-	#}
-	#accept_javan = {
-	#	picture = postcol_AST
-	#	potential = {
-	#		tag = OCE
-	#		NOT = { accepted_culture = javan }
-	#	}
-	#	allow = {
-	#		war = no
-	#		revolution_n_counterrevolution = 1
-	#		1416 = { is_core = OCE }
-	#		1416 = { owned_by = OCE }
-	#		citizenship_policy = full_citizenship
-	#		citizens_rights = all_voting_pops
-	#	}
-	#	effect = {
-	#		add_accepted_culture = javan
-	#	}
-	#}
 }
