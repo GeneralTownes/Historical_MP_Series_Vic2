@@ -38,6 +38,29 @@ country_event = {
 	option = {
 		name = "Checking..."
 		
+		#Fixing Japan if Shogonate annexed
+		any_country = {
+			limit = {
+				primary_culture = japanese
+				is_vassal = no
+				war = no
+				NOT = { tag = TKG }
+				NOT = { tag = JAP }
+			}
+			all_core = { add_core = JAP }
+			annex_to = JAP
+		}
+		any_country = {
+			limit = {
+				tag = TKG
+				exists = no
+			}
+			all_core = { 
+				add_core = JAP
+				remove_core = TKG
+			}
+		}
+		
 		#prevents non-existing country from being at war
 		#NOTE: if this bug happens often in your mod, look at your code! you may be starting invalid wars
 		any_country = {

@@ -190,9 +190,11 @@ Many nations no longer need (only) GP for flava, or high prestige. War policy re
 #### India
 - EIC if independent can form India
 - Decolonisation RGO changes
-#### China
+#### East Asia
 - Qing collapses with 2 miltancy and non conservative/reactionary party, or if it is a republic
-- After surviving the Warlord Era can accept all Chinese cultures
+- China surviving the Warlord Era can accept all Chinese cultures
+- JAP tag will annex all independent primary Japanese (not TKG) tags who aren't at war automatically
+- JAP will gain the cores of TKG if TKG doesn't exist
 #### West Africa
 - Niger Empire / Federation union tag added (with industrial RGO changes)
 #### East Africa
