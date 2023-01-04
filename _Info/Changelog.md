@@ -78,8 +78,9 @@ Everything else is our own (as far as I remember).
 #### Liferating & Growth
 - France average life rating increase to 33
 - USA starts at 40
-- Westernised China, India and Korea can increase to 40 with tech
 - Will decrease over the year range to 35 LR (excluding the capital): USA 1850->1865 , GB 1880->1900 , ITA 1890->1900 , GER 1900->1920
+- Will increase over the year range to 35 LR: FRA 1900->1910
+- Will increase over the year range to 40 LR (if in existence): CHI, HND, IDO, INO, KOR 1910->1931
 - Pop-growth techs nerfed
 - Healthcare only grants +0.01% pm at top level fully funded
 - Removed starting baby booms

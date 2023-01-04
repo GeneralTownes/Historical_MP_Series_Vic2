@@ -1970,6 +1970,140 @@ country_event = {
 			}
 		}
 		
+		#life rating increases to 35 and 40
+		any_country = {
+			limit = {
+				OR = {
+					#France conditions
+					AND = {
+						tag = FRA
+						year = 1900
+						NOT = { year = 1901 }
+					}
+					AND = {
+						tag = FRA
+						year = 1905
+						NOT = { year = 1906 }
+					}
+					AND = {
+						tag = FRA
+						year = 1910
+						NOT = { year = 1911 }
+					}
+					
+					#East Asia conditions
+					AND = {	#33
+						exists = yes
+						OR = {
+							tag = CHI
+							tag = HND
+							tag = KOR
+							tag = IDO
+							tag = INO
+						}
+						year = 1910
+						NOT = { year = 1911 }
+					}
+					AND = {	#34
+						exists = yes
+						OR = {
+							tag = CHI
+							tag = HND
+							tag = KOR
+							tag = IDO
+							tag = INO
+						}
+						year = 1913
+						NOT = { year = 1914 }
+					}
+					AND = {	#35
+						exists = yes
+						OR = {
+							tag = CHI
+							tag = HND
+							tag = KOR
+							tag = IDO
+							tag = INO
+						}
+						year = 1916
+						NOT = { year = 1917 }
+					}
+					AND = {	#36
+						exists = yes
+						OR = {
+							tag = CHI
+							tag = HND
+							tag = KOR
+							tag = IDO
+							tag = INO
+						}
+						year = 1919
+						NOT = { year = 1920 }
+					}
+					AND = {	#37
+						exists = yes
+						OR = {
+							tag = CHI
+							tag = HND
+							tag = KOR
+							tag = IDO
+							tag = INO
+						}
+						year = 1922
+						NOT = { year = 1923 }
+					}
+					AND = {	#38
+						exists = yes
+						OR = {
+							tag = CHI
+							tag = HND
+							tag = KOR
+							tag = IDO
+							tag = INO
+						}
+						year = 1925
+						NOT = { year = 1926 }
+					}
+					AND = {	#39
+						exists = yes
+						OR = {
+							tag = CHI
+							tag = HND
+							tag = KOR
+							tag = IDO
+							tag = INO
+						}
+						year = 1928
+						NOT = { year = 1929 }
+					}
+					AND = {	#40
+						exists = yes
+						OR = {
+							tag = CHI
+							tag = HND
+							tag = KOR
+							tag = IDO
+							tag = INO
+						}
+						year = 1931
+						NOT = { year = 1932 }
+					}
+				}
+			}
+			all_core = {
+				limit ={
+					OR = {
+						NOT = { life_rating = 35 }
+						AND = {
+							NOT = { is_core = FRA }
+							NOT = { life_rating = 40 }
+						}
+					}
+				}
+				life_rating = 1
+			}
+		}
+		
 		#reactionary upper house
 		any_country = {
 			limit = {
