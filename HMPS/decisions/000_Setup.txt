@@ -2964,6 +2964,24 @@ political_decisions = {
 		}
 	}
 	
+	CAN_1836_setup = {
+		potential = {
+			tag = CAN
+		}
+		allow = { tag = CAN }
+		effect = {
+			any_owned = { 
+				limit = {
+					NOT = {
+						province_id = 78
+						province_id = 79
+					}
+				}
+				add_core = THIS
+			}
+		}
+	}
+	
 	literacy_EIC = {
 		potential = {
 			tag = EIC

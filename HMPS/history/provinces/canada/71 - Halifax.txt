@@ -10,3 +10,9 @@ fort = 1
 1861.1.1 = { 
 	railroad = 2 
 }
+
+1836.1.2 = {
+	controller = CAN
+	owner = CAN
+	colonial = 0
+}

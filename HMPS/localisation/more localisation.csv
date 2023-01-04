@@ -1,6 +1,6 @@
 Key;English;French;German;Polish;Spanish;Italian;Swedish;Czech;Hungarian;Dutch;Portuguese;Russian;Finnish;
-form_iberia_title;Create the Iberian Union;;;;;;;;;;;;;
-form_iberia_desc;In order to better manage the Iberian peninsula, we will unify the nations of Spain and Portugal into one Iberian Union. Although such a drastic change in administation will result in chaos in the Spanish and Portugese colonial empire.;;;;;;;;;;;;;
+create_iberia_title;Create the Iberian Union;;;;;;;;;;;;;
+create_iberia_desc;In order to better manage the Iberian peninsula, we will unify the nations of Spain and Portugal into one Iberian Union. Although such a drastic change in administation will result in chaos in the Spanish and Portugese colonial empire.;;;;;;;;;;;;;
 macau_transfer_title;Transfer Macau into $COUNTRY_ADJ$ Control;;;;;;;;;;;;;
 macau_transfer_desc;In several ports,like Macau, local garrisons and saliors were able to preserve order during the colonial upheaval that followed the creation of the Iberian state. While most ports have been transfered to $COUNTRY_ADJ$ control, Macau has yet been properly transfered to the proper authorities.;;;;;;;;;;;;;
 outside_form_italy_title;Create Italy;;;;;;;;;;;;;

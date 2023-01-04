@@ -76,13 +76,13 @@ political_decisions = {
 							capital_scope = {
 								continent = south_america 
 							}
-							in_sphere = THIS
 							OR = {
-								is_vassal = no
+								AND = {
+									in_sphere = THIS
+									ai = yes
+								}
 								vassal_of = THIS
 							}
-							war = no
-							is_greater_power = no
 						}
 						owner = {
 							capital_scope = {
@@ -116,7 +116,10 @@ political_decisions = {
 						primary_culture = brazilian
 					}
 					OR = {
-						in_sphere = THIS
+						AND = {
+							in_sphere = THIS
+							is_vassal = no
+						}
 						vassal_of = THIS
 					}
 				}
@@ -136,7 +139,10 @@ political_decisions = {
 						}
 					}
 					OR = {
-						in_sphere = THIS
+						AND = {
+							in_sphere = THIS
+							ai = yes
+						}
 						vassal_of = THIS
 					}
 				}

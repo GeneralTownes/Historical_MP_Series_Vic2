@@ -394,7 +394,8 @@ political_decisions = {
 	}
 	
 	
-	create_iberia = {
+	form_iberia = {
+		picture = create_iberia
 		potential = {
 			is_culture_group = iberian
 			NOT = {
@@ -463,7 +464,7 @@ political_decisions = {
 			any_country = {
 				limit = {
 					OR = {
-						in_sphere = THIS
+						AND = { in_sphere = THIS ai = yes }
 						vassal_of = THIS
 					}
 					is_culture_group = iberian

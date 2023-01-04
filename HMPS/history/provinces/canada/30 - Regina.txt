@@ -7,3 +7,9 @@ terrain = steppe
 life_rating = 30
 colonial = 2
 1861.1.1 = { add_core = MTC }
+
+1836.1.2 = {
+	controller = CAN
+	owner = CAN
+	colonial = 0
+}

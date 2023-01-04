@@ -9,3 +9,9 @@ controller = USA
 add_core = USA
 remove_core = COL
 }
+
+1836.1.2 = {
+	controller = CAN
+	owner = CAN
+	colonial = 0
+}

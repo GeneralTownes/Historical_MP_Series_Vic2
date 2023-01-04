@@ -8,4 +8,5 @@ colonial = 2
 1836.1.2 = {
 	controller = AST
 	owner = AST
+	colonial = 0
 }

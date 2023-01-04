@@ -19,10 +19,6 @@ greater_california = {
 		state_n_government = 1
 		invention = manifest_destiny
 		OR = {
-			is_greater_power = yes
-			is_secondary_power = yes
-		}
-		OR = {
 			war_policy = jingoism
 			war_policy = pro_military
 		}

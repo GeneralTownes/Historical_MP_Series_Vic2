@@ -40,6 +40,7 @@ centralization = federalism
 colonial_policy = no_colonies 
 
 set_country_flag = protestant_country
+decision = CAN_1836_setup
 
 ruling_party = CAN_conservative
 upper_house = {

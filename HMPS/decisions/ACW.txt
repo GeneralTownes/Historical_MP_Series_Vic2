@@ -1173,7 +1173,13 @@ political_decisions = {
 		}
 		
 		allow = {
-			owns = 250
+			OR = {
+				owns = 250
+				CAN = {
+					owns = 250
+					vassal_of = THIS
+				}
+			}
 			OR = {
 				AND = {
 					USA = { owns = 249 }
