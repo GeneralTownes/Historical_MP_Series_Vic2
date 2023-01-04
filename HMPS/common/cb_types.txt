@@ -6830,7 +6830,6 @@ make_puppet = {
 			AND = {
 				primary_culture = japanese
 				civilized = no
-				tag = TKG
 			}
 		}
 	}

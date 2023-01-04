@@ -47,7 +47,10 @@ country_event = {
 				NOT = { tag = TKG }
 				NOT = { tag = JAP }
 			}
-			all_core = { add_core = JAP }
+			all_core = {
+				add_core = JAP
+				remove_core = TKG
+			}
 			annex_to = JAP
 		}
 		any_country = {
