@@ -712,6 +712,7 @@ political_decisions = {
 		potential = {
 			civilized = no
 			tech_school = unciv_tech_school
+			NOT = { tag = HND }
 		}
 		
 		allow = {
