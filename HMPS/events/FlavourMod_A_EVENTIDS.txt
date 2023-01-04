@@ -11,7 +11,6 @@
 #99926 Qing AI Boost TPG
 #99927 Qing War Exhaustion Buff
 #99928 Australia Migration #2
-#99930 Splendid Isolation GB
 #99931 Taiping Declare War
 #99932 Treaty of Frankfurt
 #99933 Treaty of Paris (Frankurt Alternative if ALS Exists)

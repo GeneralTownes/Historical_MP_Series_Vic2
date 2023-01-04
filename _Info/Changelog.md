@@ -89,9 +89,10 @@ Everything else is our own (as far as I remember).
 - Tea & Coffee moved into luxuries
 - Removed basic food demand as luxuries (canned food instead)
 #### Demotion & Promotion
-- Reduced (~33% decrease) rate of promotion
+- Reduced (~33% decrease) rate of demotion
 - Greatly (+100%) increased rate of promotion
-- Non-accepted overseas colonials limited to 1% soldiers, until Colonial Reform (then limited to 2.5%)
+- Colonial bureaucrats % set and changed via decision
+- Colonial intellectuals can be all fired
 #### Assimilation
 - Republics have a slight increase
 - Equality NV: slight increase
@@ -239,3 +240,5 @@ Many nations no longer need (only) GP for flava, or high prestige. War policy re
 - 2nd level sanctions apply at 40 infamy
 #### Puppet Units
 - Can start a fake war to regain control over all puppet units
+#### Event removal
+- Many events removed that so little

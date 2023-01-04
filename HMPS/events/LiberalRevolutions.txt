@@ -4232,6 +4232,7 @@ country_event = {
 	picture = "Finepeople"
 
 	trigger = {
+		has_country_flag = liberal_revolution_in_progress
 		literacy = 0.4
 		civilized = yes
 		romanticism = 1
@@ -4259,10 +4260,6 @@ country_event = {
 		modifier = {
 			factor = 0.9
 			liberal = 15
-		}
-		modifier = {
-			factor = 0.1
-			has_country_flag = liberal_revolution_in_progress
 		}
 		modifier = {
 			factor = 1.2
@@ -4300,6 +4297,7 @@ country_event = {
 	picture = "publishers"
 
 	trigger = {
+		has_country_flag = liberal_revolution_in_progress
 		literacy = 0.3
 		civilized = yes
 		average_consciousness = 3
@@ -4309,10 +4307,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 100
-		modifier = {
-			factor = 0.1
-			has_country_flag = liberal_revolution_in_progress
-		}
 		modifier = {
 			factor = 0.9
 			average_consciousness = 4
@@ -4369,6 +4363,7 @@ country_event = {
 	picture = "Upperhouse"
 
 	trigger = {
+		has_country_flag = liberal_revolution_in_progress
 		NOT = {
 			economic_policy = laissez_faire
 			government = proletarian_dictatorship
@@ -4381,10 +4376,6 @@ country_event = {
 	mean_time_to_happen = {
 		months = 300
 		
-		modifier = {
-			factor = 0.1
-			has_country_flag = liberal_revolution_in_progress
-		}
 		modifier = {
 			factor = 0.9
 			average_consciousness = 3
@@ -4445,6 +4436,7 @@ country_event = {
 	picture = "Demonstration"
 
 	trigger = {
+		has_country_flag = liberal_revolution_in_progress
 		freedom_of_trade = 1
 		civilized = yes
 		NOT = {
@@ -4507,6 +4499,7 @@ country_event = {
 	picture = "demonstration"
 
 	trigger = {
+		has_country_flag = liberal_revolution_in_progress
 		NOT = {
 			OR = {
 				vote_franschise = universal_weighted_voting
@@ -4520,10 +4513,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 120
-		modifier = {
-			factor = 0.2
-			has_country_flag = liberal_revolution_in_progress
-		}
 		modifier = {
 			factor = 0.9
 			average_consciousness = 3
