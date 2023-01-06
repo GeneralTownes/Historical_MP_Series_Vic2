@@ -2090,7 +2090,7 @@ political_decisions = {
 			TUR_810 = { add_province_modifier = { name = small_baby_boom duration = 1825 } }
 			809 = {
 				life_rating = 5
-				add_province_modifier = { name = recently_built_city duration = 1825 }
+				add_province_modifier = { name = recently_built_city duration = 365 }
 			}
 			random_owned = {
 				limit = { owner = { ai = yes } }

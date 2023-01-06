@@ -42,6 +42,7 @@ Everything else is our own (as far as I remember).
 - UBI option for socialists & vanguardists (very high pension level)
 - R&D Policy: More RP, increase via decision conditions
 - Westernisation: Reforms unlock tech up to lvl 2 (and nothing else)
+- Secret police reform give triggered modifiers when admin funded to reduce pop mil and con
 #### Administration
 - Base of 1.5% bureaucrats required for full admin efficiency from them
 - Require 2% bureaucrats to state colonies
@@ -55,6 +56,12 @@ Everything else is our own (as far as I remember).
 #### National Focuses
 - Party support increased to 0.010 daily
 - Assimilation NF
+#### Infamy
+- Base decay at peace and war increased to -0.15 monthly
+- SP lose an additional -0.02 monthly
+- Neither GP or SP, but westernised gain -0.05 monthly
+- Uncivilised lose an additional -0.2 monthly (scaling to -0.1 as they reach half-westernised)
+- Afircan uncivs gain an additional -0.2 monthly (scaling to 0 as they reach 70% westernised)
 #### CBs
 - Great Wars locked until 1900
 - Can add war goals on puppets
