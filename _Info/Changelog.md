@@ -56,23 +56,6 @@ Everything else is our own (as far as I remember).
 #### National Focuses
 - Party support increased to 0.010 daily
 - Assimilation NF
-#### Infamy
-- Base decay at peace and war increased to -0.15 monthly
-- SP lose an additional -0.02 monthly
-- Neither GP or SP, but westernised gain -0.05 monthly
-- Uncivilised lose an additional -0.2 monthly (scaling to -0.1 as they reach half-westernised)
-- Afircan uncivs gain an additional -0.2 monthly (scaling to 0 as they reach 70% westernised)
-#### CBs
-- Great Wars locked until 1900
-- Can add war goals on puppets
-- Justify 'fake' overlord war in order to add CBs on puppets
-- Take capital & minor conquest added
-- Liberate and puppet, and steal puppet CBs added
-- Military access CB (~week justification), the war is the access
-- Mass conquest if a dictatorship form with Mass Politics
-- 10 infamy demand chinese concession (East Asia countries need breech loaded & naval statistics, everyone else needs machine guns & naval logistics/be Russia/be Iran)
-- Radical republics and Absolute monarchies can enforce gov types on the other gov type
-- Cannot puppet Japanese primary countries if they're unwesternised
 #### Revanchism
 - Army & mob buff modifiers scale with % of revanchism (capped at 50%)
 #### Releasables
@@ -147,6 +130,26 @@ Overseas penalty increased to 0.025 per provinces
 #### Infrastructure
 - Railroad: Max lvl increased to 10, effects per railroad lvl buffed (RGO output & factory throughput)
 - Naval Bases: No longer give navy cap, max lvl increased to 8
+
+## Diplomacy
+Peacetime mob disabled
+#### Infamy
+- Base decay at peace and war increased to -0.15 monthly
+- SP lose an additional -0.02 monthly
+- Neither GP or SP, but westernised gain -0.05 monthly
+- Uncivilised lose an additional -0.2 monthly (scaling to -0.1 as they reach half-westernised)
+- Afircan uncivs gain an additional -0.2 monthly (scaling to 0 as they reach 70% westernised)
+#### CBs
+- Great Wars locked until 1900
+- Can add war goals on puppets
+- Justify 'fake' overlord war in order to add CBs on puppets
+- Take capital & minor conquest added
+- Liberate and puppet, and steal puppet CBs added
+- Military access CB (~week justification), the war is the access
+- Mass conquest if a dictatorship form with Mass Politics
+- 10 infamy demand chinese concession (East Asia countries need breech loaded & naval statistics, everyone else needs machine guns & naval logistics/be Russia/be Iran)
+- Radical republics and Absolute monarchies can enforce gov types on the other gov type
+- Cannot puppet Japanese primary countries if they're unwesternised
 
 ## Military
 War score from battles is capped at 25

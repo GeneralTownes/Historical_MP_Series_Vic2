@@ -10,7 +10,7 @@ political_decisions = {
 		}
 		
 		allow = {
-			war = yes
+			ai = no
 		}
 		effect = {
 			CLN = { country_event = 7777934 }
