@@ -80,6 +80,7 @@ Everything else is our own (as far as I remember).
 - Exceptions (non-releasables): China (& Nationalist China), DNB, Ethiopia, Ger & GCF, Gran Colombia, PLC, Scandi, Taiping, USSA
 #### Rebels
 - Pan-nats disabled
+- Autorise will not occur
 
 ## Population
 #### Liferating & Growth

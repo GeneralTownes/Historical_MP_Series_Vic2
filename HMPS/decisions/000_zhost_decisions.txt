@@ -57,6 +57,47 @@ political_decisions = {
 			factor = 0
 		}
 	}
+	GM_immunity = {
+		picture = goc
+		potential = {
+			has_country_flag = showing_GM_decisions
+			has_country_flag = GM_nation
+			NOT = { has_country_modifier = neutrality }
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = neutrality
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	GM_immunity_removal = {
+		picture = goc
+		potential = {
+			has_country_flag = showing_GM_decisions
+			has_country_flag = GM_nation
+			has_country_modifier = neutrality
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			remove_country_modifier = neutrality
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	ally_all_countries = {
 		picture = goc
 		potential = {

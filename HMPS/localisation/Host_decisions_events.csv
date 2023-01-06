@@ -35,3 +35,7 @@ GM_prevent_trade_deals_title;§PBan Trade Deals§!;;;;;;;;;;;;;
 GM_prevent_trade_deals_desc;Prevent players from initiating trade deals.;;;;;;;;;;;;;
 GM_allow_trade_deals_title;§PAllow Trade Deals§!;;;;;;;;;;;;;
 GM_allow_trade_deals_desc;Allow players to initiate trade deals.;;;;;;;;;;;;;
+GM_immunity_title;§PGM Immunity;;;;;;;;;;;;;
+GM_immunity_desc;Grants immunity to all CBs;;;;;;;;;;;;;
+GM_immunity_removal_title;§PGM Immunity Removal;;;;;;;;;;;;;
+GM_immunity_removal_desc;Removes immunity to all CBs;;;;;;;;;;;;;
