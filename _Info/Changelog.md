@@ -250,6 +250,7 @@ Many nations no longer need (only) GP for flava, or high prestige. War policy re
 - Seige and unseige countries
 - Immediately kick players
 - Can separately disable land transfers, infamy transfers, and trade deals (and renable them all separately)
+- Can switch players / GM nation
 #### Grants
 - Standard Money Transfer options
 #### Infamy Transfers

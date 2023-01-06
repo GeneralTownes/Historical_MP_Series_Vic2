@@ -753,8 +753,8 @@ planned_economy_desc;The government makes all decisions on the production and co
 river_notification;§CMajor River§!\nCrossing Penalty: §Y-2§!;;;;;;;;;;;;;
 assert_control_over_gl_title;Assert Control over Galicia-Lodomeria;;;;;;;;;;;;;
 assert_control_over_gl_desc;Since 1775 we have controlled Galicia-Lodomeria, and yet we have neglected to invest in it. Now we shall, and its shall become a full part of our administration.;;;;;;;;;;;;;
-TECH_MINE_OUTPUT;Mining efficiency;;;;;;;;;;;;;
-TECH_FARM_OUTPUT;Farming efficiency;;;;;;;;;;;;;
+TECH_MINE_OUTPUT;Mining output and throughput;;;;;;;;;;;;;
+TECH_FARM_OUTPUT;Farming output and throughput;;;;;;;;;;;;;
 MODIFIER_FARM_EFFICIENCY;Farming Output;;;;;;;;;;;;;
 MODIFIER_MINE_EFFICIENCY;Mining Output;;;;;;;;;;;;;
 MODIFIER_MOBILISATION_ECONOMY_IMPACT;Production Impact;Impact de la mobilisation;Mobilisierungseffekt;;Efecto de movilización;;;;;;;;;
@@ -875,3 +875,5 @@ enact_the_homestead_act_desc;Signed into law by President Abraham Lincoln in 186
 great_war_penalty_cb_desc;Force another country to §Ydisarm§!, lower their §Ymilitarisation§! one level, and pay §Yreparations§! to us.;;;;;;;;;;;;;
 form_north_german_confederation_desc;While Germany was not united until the proclamation of the German Empire following the Franco-Prussian war, rising nationalism in the 19th century had meant that unification had been on the cards long before that, with the Frankfurt assembly of 1848 being an important forerunner. By achieving a dominant position among the North German states, we can form the North German Confederation. \n\n§YNorth Germany refers to all North German culture land, minus Schleswig.§!;;;;;;;;;;;;;
 form_germany_desc;By controlling, directly or indirectly, the manifold principalities, duchies and free cities that make up the German Nation, we can unite our people into one singular nation state. Three Hurrahs for the German Empire! \n\n§YNorth Germany refers to all North German culture land, minus Schleswig. \nSouth Germany refers to all South German culture land outside of the starting Austrian Empire, minus Alsace-Lorraine.§!;;;;;;;;;;;;;
+PRODUCTION_OUTPUT_EFFICIENCY_TOOLTIP;Output: ;;;;;;;;;;;;;
+PRODUCTION_BASE_OUTPUT;  -Base:;;;;;;;;;;;;;

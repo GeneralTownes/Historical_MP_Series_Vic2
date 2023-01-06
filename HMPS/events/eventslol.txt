@@ -1,0 +1,79 @@
+country_event = {
+	id = 1000002
+	title = "Host swap"
+	desc = "Host's bout to swap yo ur nation"
+	picture = "greatpowers"
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = { country_event = 1000003 }
+		random_country = {
+			limit = {
+				has_global_flag = host_flag_tagmove
+			}
+			UTI = { country_event = 1000004 }
+		}
+		random_country = {
+			limit = {
+				NOT = { has_global_flag = host_flag_tagmove }
+			}
+			UTI = { country_event = 1000005 }
+		}
+	}
+	
+	
+	option = {
+		name = "k"
+	}
+}
+
+country_event = {
+	id = 1000004
+	title = "Host Tag Swap"
+	desc = "The host has moved to $FROMCOUNTRY$ WITH moving host privileges"
+	major = yes
+	picture = "greatpowers"
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Okay"
+	}
+}
+country_event = {
+	id = 1000005
+	title = "Host Tag Swap"
+	desc = "The host has moved to $FROMCOUNTRY$ WITHOUT moving host privileges"
+	major = yes
+	picture = "greatpowers"
+	is_triggered_only = yes
+
+
+	option = {
+		name = "Okay"
+	}
+}
+
+country_event = {
+	id = 1000006
+	title = "Nation swap"
+	desc = "Host has decided that someone's gonna swap to yo nation"
+	picture = "greatpowers"
+	is_triggered_only = yes
+	
+	immediate = {
+		random_country = {
+			limit = {
+				has_country_flag = picked_to_swap
+			}
+			country_event = 1000007	
+			clr_country_flag = picked_to_swap
+			clr_global_flag = has_chosen_swap
+		}
+	}
+	
+	
+	option = {
+		name = "k"
+	}
+}

@@ -1,0 +1,138 @@
+political_decisions = {
+	swap_country = {
+		picture = goc
+		potential = {
+			has_country_flag = showing_GM_decisions
+			has_country_flag = GM_nation
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			random_country = {
+				limit = {
+					NOT = { military_access = THIS }
+				}
+				country_event = 1000002
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	swap_country_host_flag_yes = {
+		picture = goc
+		potential = {
+			has_country_flag = showing_GM_decisions
+			has_country_flag = GM_nation
+			NOT = { has_global_flag = host_flag_tagmove }
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			set_global_flag = host_flag_tagmove
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	swap_country_host_flag_no = {
+		picture = goc
+		potential = {
+			has_country_flag = showing_GM_decisions
+			has_country_flag = GM_nation
+			has_global_flag = host_flag_tagmove
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			clr_global_flag = host_flag_tagmove
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	select_country_to_swap = {
+		picture = goc
+		potential = {
+			has_country_flag = showing_GM_decisions
+			has_country_flag = GM_nation
+			NOT = { has_global_flag = has_chosen_swap }
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			random_country = {
+				limit = {
+					NOT = { military_access = THIS }
+				}
+				set_country_flag = picked_to_swap
+				set_global_flag = has_chosen_swap
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	select_country_to_swap_to = {
+		picture = goc
+		potential = {
+			has_country_flag = showing_GM_decisions
+			has_country_flag = GM_nation
+			has_global_flag = has_chosen_swap
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			random_country = {
+				limit = {
+					NOT = { has_country_flag = picked_to_swap }
+					NOT = { military_access = THIS }
+				}
+				country_event = 1000006
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	reset_swap_selection = {
+		picture = goc
+		potential = {
+			has_country_flag = showing_GM_decisions
+			has_country_flag = GM_nation
+			has_global_flag = has_chosen_swap
+		}
+	
+		allow = {
+			
+		}
+		
+		effect = {
+			any_country = {
+				limit = {
+					has_country_flag = picked_to_swap
+				}
+				clr_country_flag = picked_to_swap
+				clr_global_flag = has_chosen_swap
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
