@@ -259,7 +259,7 @@ political_decisions = {
 		}
 		allow = {
 			war = no
-			political_reform = all_voting_pops
+			citizens_rights = all_voting_pops
 			PBC = {
 				OR = {
 					exists = no

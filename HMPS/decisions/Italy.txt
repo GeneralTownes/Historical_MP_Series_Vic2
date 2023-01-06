@@ -663,9 +663,11 @@ political_decisions = {
 			#Claim Savoia
 			random_owned = {
 				limit = {
-					nationalism_n_imperialism = 1
-					NOT = {
-						truce_with = FRA
+					owner = {
+						nationalism_n_imperialism = 1
+						NOT = {
+							truce_with = FRA
+						}
 					}
 				}
 				465 = { add_core = THIS }

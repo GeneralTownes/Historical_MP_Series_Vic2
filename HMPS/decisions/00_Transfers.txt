@@ -31,7 +31,6 @@ political_decisions = {
 		
 		effect = {
 			clr_country_flag = begin_land_transfer
-			remove_country_modifier = transfer_rp_debuff
 		}
 	}
 

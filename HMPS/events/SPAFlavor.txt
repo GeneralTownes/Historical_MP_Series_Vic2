@@ -4233,7 +4233,6 @@ country_event = {
 			limit = { has_pop_culture = spanish }
 			militancy = -4
 		}
-		any_random
 		any_pop = { 
 			limit = { 
 				OR = {

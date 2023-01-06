@@ -2374,6 +2374,7 @@ african_diaspora_cultures = {
             Guillaume Hannibal Henri Jacques Jean Jean-Baptiste Jean-Louis Jean-Pierre Jonathas Joseph
             Léon Louis Louis-Eugène Louis-Joseph Lysius Michel Monpoint Nissage Nord Oreste
             Philippe Pierre Simon Sténio Sylvain Tandredè Thomas Timoleón Tirésias Vilbrum }
+			
         last_names = { Anthoine "Baraguey d’Hilliers" Bazaine Billot Bonaparte Boucher Bosquet "Boué de Lapeyrère" Bouët-Willaumez Boulanger Bourbaki Bugeaud Boucher Caillard Canrobert Courbet Cousin-Mountauban Davout "de Bourbon" "de Castellane" "de Castelnau" "de Gaulle" "de Langle de Cary" "de MacMahon" "de Montaignac" "de Saint Arnaud" d’Orleans Dubail Dubois Duchêne Dupetit-Thouars Exelmans Foch Forey "Franchet d’Espèrey" Gallieni Gouraud Guillaumat Hamelin Harispe Hoche Humbert Jaurès Joffre Lebouef Lyautey Murat "Ney d’Elchingen" Nivelle Péllissier Petain Vaillant Alexis Ardouin Auguste Bellegarde Boisrond-Canal Bonnet Borno Boyer Brutus Christophe
             Conzé Dartiguenave Delorme Dessalines Domingue Firmin Geffrad Granville Guerrier Hyppolite
             Iginac Janvier Jeune Lafontant Laleau Leconte Légitime Legouaze Léon Lhérisson

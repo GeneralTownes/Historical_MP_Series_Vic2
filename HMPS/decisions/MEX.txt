@@ -70,7 +70,7 @@ political_decisions = {
 				truce_with = THIS
 			}
             NOT = { has_global_flag = MEX_US_peace_agreement }
-			NOT = { has_global_flag = US_MEX_peace_agreement
+			NOT = { has_global_flag = US_MEX_peace_agreement }
         }
         allow = { }
         effect = {

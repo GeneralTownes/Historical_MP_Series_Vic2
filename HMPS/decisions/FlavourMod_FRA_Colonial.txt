@@ -857,10 +857,6 @@ political_decisions = {
 				}
 				secede_province = D01
 			}
-			D01 = {
-				146 = { assimilate = yes }
-				143 = { assimilate = yes }
-			}
 			THIS = { inherit = D01 }
 			any_pop = {
 				limit = {
@@ -1087,12 +1083,6 @@ political_decisions = {
 			any_owned = {
 				limit = { is_core = NZF }
 				secede_province = UTI
-			}
-			UTI = {  
-				ENG_2513 = { assimilate = yes }
-				2510 = { assimilate = yes }
-				2511 = { assimilate = yes }
-				2512 = { assimilate = yes }
 			}
 			inherit = UTI
 			any_pop = {
@@ -1337,7 +1327,6 @@ political_decisions = {
 				limit = { is_core = FAS }
 				secede_province = UTI
 			}
-			ENG_2468 = { assimilate = yes }
 			THIS = { inherit = UTI }
 			any_owned = {
 				limit = { is_core = FAS }

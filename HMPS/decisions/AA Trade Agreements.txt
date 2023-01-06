@@ -87,7 +87,7 @@ political_decisions = {
 						}
 					}
 				}
-				province_event = { id = 92101 days = 0 }
+				owner = { country_event = { id = 92101 days = 0 } }
 			}
 			random_owned = {
 				limit = {
@@ -98,7 +98,7 @@ political_decisions = {
 						}
 					}
 				}
-				province_event = { id = 92102 days = 0 }
+				owner = { country_event = { id = 92102 days = 0 } }
 			}
 			random_owned = {
 				limit = {
@@ -109,7 +109,7 @@ political_decisions = {
 						}
 					}
 				}
-				province_event = { id = 92103 days = 0 }
+				owner = { country_event = { id = 92103 days = 0 } }
 			}
 			random_owned = {
 				limit = {
@@ -120,7 +120,7 @@ political_decisions = {
 						}
 					}
 				}
-				province_event = { id = 92104 days = 0 }
+				owner = { country_event = { id = 92104 days = 0 } }
 			}
 			random_owned = {
 				limit = {
@@ -131,7 +131,7 @@ political_decisions = {
 						}
 					}
 				}
-				province_event = { id = 92105 days = 0 }
+				owner = { country_event = { id = 92105 days = 0 } }
 			}
 			random_owned = {
 				limit = {
@@ -142,7 +142,7 @@ political_decisions = {
 						}
 					}
 				}
-				province_event = { id = 92106 days = 0 }
+				owner = { country_event = { id = 92106 days = 0 } }
 			}
 			random_owned = {
 				limit = {
@@ -153,7 +153,7 @@ political_decisions = {
 						}
 					}
 				}
-				province_event = { id = 92107 days = 0 }
+				owner = { country_event = { id = 92107 days = 0 } }
 			}
 			random_owned = {
 				limit = {
@@ -164,7 +164,7 @@ political_decisions = {
 						}
 					}
 				}
-				province_event = { id = 92108 days = 0 }
+				owner = { country_event = { id = 92108 days = 0 } }
 			}
 			random_owned = {
 				limit = {
@@ -175,7 +175,7 @@ political_decisions = {
 						}
 					}
 				}
-				province_event = { id = 92109 days = 0 }
+				owner = { country_event = { id = 92109 days = 0 } }
 			}
 			random_owned = {
 				limit = {
@@ -186,7 +186,7 @@ political_decisions = {
 						}
 					}
 				}
-				province_event = { id = 92110 days = 0 }
+				owner = { country_event = { id = 92110 days = 0 } }
 			}
 			random_owned = {
 				limit = {
@@ -197,7 +197,7 @@ political_decisions = {
 						}
 					}
 				}
-				province_event = { id = 92111 days = 0 }
+				owner = { country_event = { id = 92111 days = 0 } }
 			}
 			random_owned = {
 				limit = {
@@ -208,7 +208,7 @@ political_decisions = {
 						}
 					}
 				}
-				province_event = { id = 92112 days = 0 }
+				owner = { country_event = { id = 92112 days = 0 } }
 			}
 			random_owned = {
 				limit = {
@@ -219,7 +219,7 @@ political_decisions = {
 						}
 					}
 				}
-				province_event = { id = 92113 days = 0 }
+				owner = { country_event = { id = 92113 days = 0 } }
 			}
 			random_owned = {
 				limit = {
@@ -230,7 +230,7 @@ political_decisions = {
 						}
 					}
 				}
-				province_event = { id = 92114 days = 0 }
+				owner = { country_event = { id = 92114 days = 0 } }
 			}
 			random_owned = {
 				limit = {
@@ -241,7 +241,7 @@ political_decisions = {
 						}
 					}
 				}
-				province_event = { id = 92115 days = 0 }
+				owner = { country_event = { id = 92115 days = 0 } }
 			}
 		}
 	}

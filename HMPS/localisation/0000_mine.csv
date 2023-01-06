@@ -68,7 +68,7 @@ hide_the_decisions_desc;Remove decisions clutter by hiding the general, manageme
 show_the_decisions_title;§PShow Extra Decisions§!;;;;;;;;;;;;;
 show_the_decisions_desc;Show decisions that allow general, management, or MP options.;;;;;;;;;;;;;
 land_transfer_title;§YAllow Land Transfer§!;;;;;;;;;;;;;
-land_transfer_desc;Take this decision to enable transfer CBs to be justified on our nation, for us to recieve land transfers, and for us to justify them on others.\n§YThis must be taken to use the Demand for Ally CBs.§!;;;;;;;;;;;;;
+land_transfer_desc;Take this decision to enable transfer CBs to be justified on our nation, for us to recieve land transfers, and for us to justify them on others.\n§YThis must be taken to use the Demand for Ally CBs.\n§RWesternised countries cannot take land from uncivs via transfer.§!;;;;;;;;;;;;;
 land_transfer_unciv_title;§YAllow Land Transfer§!;;;;;;;;;;;;;
 land_transfer_unciv_desc;Take this decision to enable transfer CBs to be justified on our nation, for us to recieve land transfers, and for us to justify them on others.;;;;;;;;;;;;;
 end_land_transfer_title;§YDisallow Land Transfer§!;;;;;;;;;;;;;

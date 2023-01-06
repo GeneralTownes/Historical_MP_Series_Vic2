@@ -132,7 +132,7 @@ status_quo
 negotiated_state_transfer
 negotiated_substate_transfer
 negotiated_puppet_release
-fake_war
+fake_war_cb
 }
 
 # 'No CB'
@@ -1010,114 +1010,6 @@ restore_america = {
 	po_demand_state = yes
 	
 	war_name = WAR_RESTORE_AMERICA_NAME
-	
-	on_add = {
-		move_issue_percentage = { 
-			from = jingoism 
-			to = pro_military
-			value = 0.25
-		}
-	}
-}
-
-claim_holy_land = {
-	sprite_index = 23
-	is_triggered_only = yes
-	months = 12
-	
-	construction_speed = 0.8
-
-	badboy_factor = 0
-	prestige_factor = 2
-	peace_cost_factor = 0.7
-	penalty_factor = 1
-	always = yes
-
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
-	break_truce_militancy_factor = 2
-	truce_months = 48
-	
-	good_relation_prestige_factor = 1
-	good_relation_infamy_factor = 1
-	good_relation_militancy_factor = 1
-	
-	can_use = {
-		NOT = { is_our_vassal = THIS }
-		THIS = {
-			is_greater_power = yes
-			OR = {
-				tag = FRA
-				tag = RHI
-				tag = ENG
-				tag = AUS
-				tag = KUK
-				tag = BYZ
-				is_culture_group = east_slavic
-				is_culture_group = south_slavic
-				is_culture_group = italian
-				is_culture_group = iberian
-			}
-			ai = no
-			has_global_flag = abandoned_holy_land
-		}
-		OR = {
-			THIS = {
-				OR = {
-					war_policy = pro_military
-					war_policy = jingoism
-				}
-			}
-			war_with = THIS
-		}
-		#is_vassal = no
-		NOT = { is_canal_enabled = 2 }
-		NOT = { is_greater_power = yes }
-		any_owned_province = {
-			OR = {
-				is_core = PLS
-				is_core = JOR
-				is_core = LBN
-				is_core = SYR
-			}
-		}
-		NOT = { in_sphere = THIS }
-		OR = {
-			war_with = THIS
-			THIS = { NOT = { has_country_modifier = punitive_effects } }
-		}
-	}
-	
-	allowed_states = {
-		any_owned_province = {
-			OR = {
-				is_core = PLS
-				is_core = JOR
-				is_core = LBN
-				is_core = SYR
-			}
-		}
-		OR = {
-			THIS = { ai = no }
-			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
-			any_owned_province = { port = yes }
-			AND = {
-				any_owned_province = { port = yes }
-				THIS = {
-					OR = {
-						is_greater_power = yes
-						is_secondary_power = yes
-					}
-					any_owned_province = { port = yes }
-				}
-			}
-		}
-	}
-
-	po_demand_state = yes
-	po_remove_cores = yes
-	
-	war_name = WAR_HOLY_LAND_NAME
 	
 	on_add = {
 		move_issue_percentage = { 
@@ -2858,7 +2750,7 @@ free_balkans = {
 
 	all_allowed_states = yes
 	po_transfer_provinces = yes
-	po_remove_cores = yes
+	#po_remove_cores = yes
 
 	war_name = WAR_FREE_BALKANS_NAME
 	
@@ -5435,12 +5327,9 @@ demand_concession_NI_casus_belli = {
 	allowed_states = {
 		any_owned_province = { is_colonial = no }
 		
+		#Restriction to chinese state conquering
+		NOT = { any_owned_province = { is_core = CHI } } ##can never use cheap cb on china
 		
-		OR = {
-			ai = no
-			#Restriction to chinese state conquering
-			NOT = { any_owned_province = { is_core = CHI } } ##can never use cheap cb on china
-		}
 		#NOT = { any_owned_province = { is_capital = yes } }
 		OR = {
 			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
@@ -5562,12 +5451,9 @@ demand_concession_BC_casus_belli = {
 	allowed_states = {
 		any_owned_province = { is_colonial = no }
 		
-		
-		OR = {
-			ai = no
-			#Restriction to chinese state conquering
-			NOT = { any_owned_province = { is_core = CHI } } ##can never use cheap cb on china
-		}
+		#Restriction to chinese state conquering
+		NOT = { any_owned_province = { is_core = CHI } } ##can never use cheap cb on china
+			
 		#NOT = { any_owned_province = { is_capital = yes } }
 		OR = {
 			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
@@ -5600,13 +5486,11 @@ demand_concession_BC_casus_belli = {
 					region = ENG_1848
 					NOT = { is_core = ETH }
 				}
-				OR = { 
-					NOT = {
-						region = ETH_1865
-						region = ETH_1859
-						region = ETH_1852
-						region = ETH_1853
-					}
+				NOT = {
+					region = ETH_1865
+					region = ETH_1859
+					region = ETH_1852
+					region = ETH_1853
 				}
 			}
 			THIS = { ai = no }
@@ -8817,6 +8701,12 @@ negotiated_state_transfer = {
 				}
 			}
 		}
+		NOT = {
+			AND = {
+				THIS = { civilized = yes }
+				civilized = no
+			}
+		}
 		THIS = { ai = no }
 		THIS = { has_country_flag = begin_land_transfer }
 		NOT = { has_global_flag = GM_prevented_land_transfers }
@@ -8877,6 +8767,7 @@ third_party_transfer = {
 				}
 			}
 		}
+		
 		THIS = { ai = no }
 		THIS = { has_country_flag = begin_land_transfer }
 		NOT = { has_global_flag = GM_prevented_land_transfers }
@@ -8895,6 +8786,12 @@ third_party_transfer = {
 			has_country_flag = begin_land_transfer
 			ai = no
         }
+		NOT = {
+			AND = {
+				FROM = { civilized = yes }
+				civilized = no
+			}
+		}
     }
 
 	# THIS - us
@@ -8947,6 +8844,12 @@ negotiated_substate_transfer = {
 		THIS = { ai = no }
 		any_substate = {
 			number_of_states = 1
+		}
+		NOT = {
+			AND = {
+				THIS = { civilized = yes }
+				civilized = no
+			}
 		}
 		has_country_flag = begin_land_transfer
 		THIS = { has_country_flag = begin_land_transfer }
@@ -9050,4 +8953,6 @@ fake_war_cb = {
 	tws_battle_factor = 2.0
 	
 	war_name = WAR_FAKE_NAME
+	
+	on_add = { }
 }

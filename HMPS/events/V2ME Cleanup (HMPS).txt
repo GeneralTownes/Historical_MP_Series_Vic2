@@ -511,7 +511,12 @@ country_event = {
 			limit = {
 				is_vassal = yes
 				exists = yes
-				overlord = { exists = no }
+				overlord = { 
+					OR = {
+						exists = no
+						is_vassal = yes
+					}
+				}
 			}
 			country_event = 477877788
 		}

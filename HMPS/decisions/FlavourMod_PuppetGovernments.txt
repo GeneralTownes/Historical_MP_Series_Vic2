@@ -166,10 +166,8 @@ political_decisions = {
 						tag = BOH
 						tag = POL
 					}
-					AND = { 
-						vassal_of = GER
-						GER = { government = fascist_dictatorship }
-					}
+					vassal_of = GER
+					GER = { government = fascist_dictatorship }
 				}
 				AND = {
 					tag = BOS

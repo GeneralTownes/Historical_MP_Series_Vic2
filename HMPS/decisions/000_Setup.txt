@@ -226,7 +226,7 @@ political_decisions = {
 			}  
 			any_country = { 
 				limit = { 
-					naval_schools = naval_schools
+					naval_schools = yes_naval_schools
 					NOT = { has_country_flag = nsch_flag }
 				} 
 			set_country_flag = nsch_flag
@@ -317,7 +317,7 @@ political_decisions = {
 			}  
 			any_country = { 
 				limit = { 		
-					pre_indust = yes_industrial_construction
+					pre_indust = pre_indust_two
 					NOT = { has_country_flag = earlyid2_flag }
 				} 
 			set_country_flag = earlyid2_flag

@@ -1,7 +1,7 @@
 # Audax Validator "!" Ignore_1004
 # Audax Validator "!" Ignore_1009
 
-province_event = {
+country_event = {
 	id = 92101
 	title = "Choosing Trade Goods"
 	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
@@ -204,7 +204,7 @@ province_event = {
 	}
 }
 
-province_event = {
+country_event = {
 	id = 92102
 	title = "Choosing Trade Goods"
 	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
@@ -407,7 +407,7 @@ province_event = {
 	}
 }
 
-province_event = {
+country_event = {
 	id = 92103
 	title = "Choosing Trade Goods"
 	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
@@ -610,7 +610,7 @@ province_event = {
 	}
 }
 
-province_event = {
+country_event = {
 	id = 92104
 	title = "Choosing Trade Goods"
 	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
@@ -813,7 +813,7 @@ province_event = {
 	}
 }
 
-province_event = {
+country_event = {
 	id = 92105
 	title = "Choosing Trade Goods"
 	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
@@ -1016,7 +1016,7 @@ province_event = {
 	}
 }
 
-province_event = {
+country_event = {
 	id = 92106
 	title = "Choosing Trade Goods"
 	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
@@ -1219,7 +1219,7 @@ province_event = {
 	}
 }
 
-province_event = {
+country_event = {
 	id = 92107
 	title = "Choosing Trade Goods"
 	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
@@ -1422,7 +1422,7 @@ province_event = {
 	}
 }
 
-province_event = {
+country_event = {
 	id = 92108
 	title = "Choosing Trade Goods"
 	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
@@ -1625,7 +1625,7 @@ province_event = {
 	}
 }
 
-province_event = {
+country_event = {
 	id = 92109
 	title = "Choosing Trade Goods"
 	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
@@ -1828,7 +1828,7 @@ province_event = {
 	}
 }
 
-province_event = {
+country_event = {
 	id = 92110
 	title = "Choosing Trade Goods"
 	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
@@ -2031,7 +2031,7 @@ province_event = {
 	}
 }
 
-province_event = {
+country_event = {
 	id = 92111
 	title = "Choosing Trade Goods"
 	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
@@ -2234,7 +2234,7 @@ province_event = {
 	}
 }
 
-province_event = {
+country_event = {
 	id = 92112
 	title = "Choosing Trade Goods"
 	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
@@ -2437,7 +2437,7 @@ province_event = {
 	}
 }
 
-province_event = {
+country_event = {
 	id = 92113
 	title = "Choosing Trade Goods"
 	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
@@ -2640,7 +2640,7 @@ province_event = {
 	}
 }
 
-province_event = {
+country_event = {
 	id = 92114
 	title = "Choosing Trade Goods"
 	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."
@@ -2843,7 +2843,7 @@ province_event = {
 	}
 }
 
-province_event = {
+country_event = {
 	id = 92115
 	title = "Choosing Trade Goods"
 	desc = "In order to send the good, set your stockpile to buy over 2000 units and it will be automatically sent."

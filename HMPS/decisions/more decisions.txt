@@ -259,6 +259,7 @@ political_decisions = {
 					NOT = {
 						OR = {
 							owned_by = THIS
+							owner = { vassal_of = THIS }
 							owner = {
 								in_sphere = THIS
 								ai = yes
@@ -272,15 +273,18 @@ political_decisions = {
 					OR = {
 						OR = {
 							owned_by = THIS
+							owner = { vassal_of = THIS }
 							owner = {
 								in_sphere = THIS
 								ai = yes
 							}
 						}
 						NOT = {
-							OR = {
-								primary_culture = north_italian
-								primary_culture = south_italian
+							owner = {
+								OR = {
+									primary_culture = north_italian
+									primary_culture = south_italian
+								}
 							}
 						}
 					}

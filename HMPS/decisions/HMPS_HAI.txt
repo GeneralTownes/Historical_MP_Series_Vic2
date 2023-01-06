@@ -49,7 +49,7 @@ political_decisions = {
 			clipper_convoy = 50
 			wool = 50
 			FRA = {
-				remove_global_flag = sent_haiti_reps
+				clr_global_flag = sent_haiti_reps
 				set_global_flag = no_haiti_reps
 			}
 		}
