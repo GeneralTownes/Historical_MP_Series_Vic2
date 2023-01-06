@@ -150,6 +150,14 @@ Peacetime mob disabled
 - 10 infamy demand chinese concession (East Asia countries need breech loaded & naval statistics, everyone else needs machine guns & naval logistics/be Russia/be Iran)
 - Radical republics and Absolute monarchies can enforce gov types on the other gov type
 - Cannot puppet Japanese primary countries if they're unwesternised
+#### Warscore
+- Acquire state/substate cost ~27-33
+- Acquire core/substate core cost ~14-17
+- Place in the sun ~10
+- Chinese concession ~21
+- Non-Chinese concession ~14-17
+- Free people / allied core ~21
+- Monroe doctrine / Oriental crises ~14
 
 ## Military
 War score from battles is capped at 25
