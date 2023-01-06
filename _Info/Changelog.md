@@ -216,10 +216,6 @@ Many nations no longer need (only) GP for flava, or high prestige. War policy re
 - China surviving the Warlord Era can accept all Chinese cultures
 - JAP tag will annex all independent primary Japanese (not TKG) tags who aren't at war automatically
 - JAP will gain the cores of TKG if TKG doesn't exist
-#### West Africa
-- Niger Empire / Federation union tag added (with industrial RGO changes)
-#### East Africa
-- Ethiopian cultures can form the East African Federation, or Coptic Empire with expansion south and north respectively
 #### Oceania
 - Australia can form Oceania, with small expansion flava
 

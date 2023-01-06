@@ -3,7 +3,7 @@ political_decisions = {
 		picture = map_central_america
 		potential = {
 			OR = {
-				tag = IBR
+				tag = SPA
 				tag = IBR
 			}
 			has_country_flag = reconquista_frca

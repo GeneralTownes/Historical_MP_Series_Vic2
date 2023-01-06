@@ -22,23 +22,9 @@ country_event = {
 		random_country = {
 			limit = {
 				tag = FROM
-				tag = NGE
-			}
-			THIS = { change_tag_no_core_switch = NGE }
-		}
-		random_country = {
-			limit = {
-				tag = FROM
 				tag = OCE
 			}
 			THIS = { change_tag_no_core_switch = OCE }
-		}
-		random_country = {
-			limit = {
-				tag = FROM
-				tag = EAF
-			}
-			THIS = { change_tag_no_core_switch = EAF }
 		}
 		random_country = {
 			limit = {
@@ -60,13 +46,6 @@ country_event = {
 				tag = IDO
 			}
 			THIS = { change_tag_no_core_switch = IDO }
-		}
-		random_country = {
-			limit = {
-				tag = FROM
-				tag = COP
-			}
-			THIS = { change_tag_no_core_switch = COP }
 		}
 		random_country = {
 			limit = {

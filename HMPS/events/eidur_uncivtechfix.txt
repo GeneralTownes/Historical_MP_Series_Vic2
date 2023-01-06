@@ -10,7 +10,6 @@ country_event = {
 	trigger = {
 		civilized = no
 		foreign_artillery = yes_foreign_artillery
-		NOT = { foreign_training = no_foreign_artillery }
 		NOT = { has_country_flag = foreign_artillery_flag }
 	}
 	
@@ -370,7 +369,7 @@ country_event = {
 	
 	trigger = {
 		civilized = no
-		naval_schools = naval_schools
+		naval_schools = yes_naval_schools
 		NOT = { has_country_flag = nsch_flag }
 	}
 	

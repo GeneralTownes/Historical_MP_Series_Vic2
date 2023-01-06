@@ -516,28 +516,24 @@ political_decisions = {
 					}
 					
 					# Metaregion condition
-					OR = {
-						AND = {
+					NOT = {
+						GER_1 = {
 							NOT = {
-								GER_1 = {
-									NOT = {
-										OR = {
-											owned_by = THIS
-											owner = { in_sphere = THIS }
-											owner = { vassal_of = THIS }
-										}
-									}
+								OR = {
+									owned_by = THIS
+									owner = { in_sphere = THIS }
+									owner = { vassal_of = THIS }
 								}
 							}
+						}
+					}
+					NOT = {
+						GER_2 = {
 							NOT = {
-								GER_2 = {
-									NOT = {
-										OR = {
-											owned_by = THIS
-											owner = { in_sphere = THIS }
-											owner = { vassal_of = THIS }
-										}
-									}
+								OR = {
+									owned_by = THIS
+									owner = { in_sphere = THIS }
+									owner = { vassal_of = THIS }
 								}
 							}
 						}

@@ -493,10 +493,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-			tag = RUS
-			tag = SOV
-		}
+		tag = RUS
 		has_global_flag = dungan_rebellion
 	}
 	

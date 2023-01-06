@@ -58,7 +58,6 @@ political_decisions = {
 				limit = {
 					primary_culture = platinean
 					exists = yes
-					have_core_in = PRG
 					OR = {
 						tag = ARC
 						tag = ARG

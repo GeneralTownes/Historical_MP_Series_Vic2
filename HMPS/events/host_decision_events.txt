@@ -40,7 +40,7 @@ country_event = {
 	
 	immediate = {
 		add_country_modifier = {
-		name = youre_kicked_mate
+		name = "youre_kicked_mate"
 		duration = -1
 }
 	}

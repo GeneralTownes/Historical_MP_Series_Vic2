@@ -362,7 +362,7 @@ country_event = {
 			}
 			define_general = {
 				name = "Li Zhang Lexing"
-				personality = stout
+				personality = defence_1.1
 				background = innovative_tactician
 			}
 			define_general = {
@@ -387,8 +387,8 @@ country_event = {
 		random_owned = { limit = { owner = { finance_reform = finance_reform_two } } NIA = { economic_reform = finance_reform_two } }
 		random_owned = { limit = { owner = { monetary_reform = yes_monetary_reform } } NIA = { economic_reform = yes_monetary_reform } }
 		random_owned = { limit = { owner = { monetary_reform = monetary_reform_two } } NIA = { economic_reform = monetary_reform_two activate_technology = no_standard } }
-		random_owned = { limit = { owner = { education_reform = yes_education_reform } } NIA = { economic_reform = yes_education_reform } }
-		random_owned = { limit = { owner = { research_reform = yes_research_reform } } NIA = { economic_reform = yes_research_reform activate_technology = late_enlightenment_philosophy } }
+		random_owned = { limit = { owner = { education_reform = yes_western_science } } NIA = { economic_reform = yes_western_science } }
+		random_owned = { limit = { owner = { research_reform = yes_education_reform } } NIA = { economic_reform = yes_education_reform activate_technology = late_enlightenment_philosophy } }
 		random_owned = { limit = { owner = { foreign_training = yes_foreign_training } } NIA = { military_reform = yes_foreign_training } }
 		random_owned = { limit = { owner = { foreign_weapons = yes_foreign_weapons } } NIA = { military_reform = yes_foreign_weapons activate_technology = flintlock_rifles } }
 		random_owned = { limit = { owner = { foreign_officers = yes_foreign_officers } } NIA = { military_reform = yes_foreign_officers activate_technology = military_staff_system } }
@@ -414,7 +414,7 @@ country_event = {
 		plurality = -1
 		define_general = {
 			name = "Sengge Rinchen"
-			personality = brilliant
+			personality = defence_3.1
 			background = expert_raider
 		}
 		war = {

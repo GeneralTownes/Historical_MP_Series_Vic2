@@ -1,0 +1,20 @@
+political_decisions = {
+
+	authorize_gas_warfare = {
+		picture = chemical_warfare
+		potential = {
+			NOT = { has_country_flag = gas_attacking }
+			NOT = { has_country_flag = hiding_the_decisions }
+		}
+		allow = {
+			military_directionism = 1
+		}
+		effect = {
+			set_country_flag = gas_attacking
+			add_country_modifier = {
+				name = gas_warfare 
+				duration = -1
+			}
+		}
+	}
+}

@@ -178,11 +178,9 @@ political_decisions = {
 			}
 			owns = 958
 			phenomenalism = 1
-			AND = {
-				exists = GER
-				GER = {
-					owns = 570
-				}
+			exists = GER
+			GER = {
+				owns = 570
 			}
 		}
 		

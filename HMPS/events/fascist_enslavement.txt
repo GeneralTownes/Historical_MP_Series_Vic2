@@ -20,10 +20,8 @@ country_event = {
 		days = 365
 		modifier = {
 			factor = 3
-			AND = {
-				government = absolute_monarchy
-				ruling_party_ideology = reactionary
-			}
+			government = absolute_monarchy
+			ruling_party_ideology = reactionary
 		}
 	}
 	
@@ -36,10 +34,8 @@ country_event = {
 			}
 			any_pop = {
 				limit = {
-					AND = {
-						is_primary_culture = no
-						is_accepted_culture = no
-					}
+					is_primary_culture = no
+					is_accepted_culture = no
 				}
 				pop_type = slaves
 			}

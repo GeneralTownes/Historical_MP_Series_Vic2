@@ -6,13 +6,10 @@ REB 	= 	"countries/rebels.txt"
 
 #Townes' New Tags:
 GBR		= "countries/Great Britain.txt"
-NGE		= "countries/Niger Federation.txt"
 OCE		= "countries/Oceania.txt"
-EAF		= "countries/East Africa Federation.txt"
 CEU		= "countries/Celtic Union.txt"
 TRK		= "countries/Turkey.txt"
 IDO		= "countries/Indochina.txt"
-COP		= "countries/Coptic Empire.txt"
 GLP		= "countries/Guadeloupe.txt"
 
 #Cleanup

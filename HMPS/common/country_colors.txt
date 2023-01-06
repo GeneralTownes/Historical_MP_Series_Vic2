@@ -5,13 +5,6 @@ GBR = {
     color3= { 83 149 105  }
 }
 
-NGE = { #same as sokoto
-    color1= { 49 244 76  }
-    color2= { 94 117 55  }
-    color3= { 112 150 105  }
-}
-# Country unit colors.
-
 # Sweden
 SWE = {
     color1= { 62 122 189  }

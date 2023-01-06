@@ -126,11 +126,6 @@ fascist_cartels = {
 	icon = 12
 }
 
-fort_constructions = {
-	tax_efficiency = -0.10
-	icon = 10
-}
-
 promise_against_expansion = {
 	badboy = 0.1
 }
@@ -186,14 +181,6 @@ mass_literacy_in_progress = {
 }
 
 ##############################
-
-niger_research = {
-	research_points = 1
-	research_points_modifier = 0.4
-	global_pop_militancy_modifier = 0.1
-	global_pop_consciousness_modifier = 0.1
-	icon = 3
-}
 
 capital_mobilisation = {
 	supply_limit = 1000

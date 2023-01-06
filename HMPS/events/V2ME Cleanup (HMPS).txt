@@ -1179,40 +1179,6 @@ country_event = {
 			}
 		}
 		
-		#surpressing militancy
-		any_country = {
-            limit = {
-				exists = yes
-            }
-            any_owned = {
-				any_pop = {
-					limit = {
-						OR = {
-							type = aristocrats
-							type = capitalists
-						}
-						militancy = 8
-					}
-				militancy = -1
-				}
-			}
-        }
-		any_country = {
-            limit = {
-				exists = yes
-				has_global_flag = suppress_army_rebels
-            }
-            any_owned = {
-				any_pop = {
-					limit = {
-						type = soldiers
-						militancy = 7
-					}
-				militancy = -1
-				}
-			}
-        }
-		
 		#clean up crisis tension
 		any_country = {
             limit = {
