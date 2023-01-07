@@ -4,10 +4,10 @@ political_decisions = {
 		alert = no
 		potential = {
 			tag = ENG
-			NOT = { year = 1851 }
+			NOT = { year = 1837 }
 		}
 		allow = {
-			NOT = { year = 1851 }
+			NOT = { year = 1837 }
 		}
 
 		effect = {

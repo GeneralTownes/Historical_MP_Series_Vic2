@@ -520,8 +520,6 @@ EVTNAME7777923;The Literacy Campaign of $YEAR$;;;;;;;;;;;;;
 EVTDESC7777923;We have complied a list of areas most in need of targeted education to increase our literacy. Lower literacy citizens will gain more effect from the campaign, with higher literacy citizens seeing little to no effect, shall we proceed?;;;;;;;;;;;;;
 EVT7777923OPTA;Yes, our people must have the opportunity education affords them;;;;;;;;;;;;;
 EVT7777923OPTB;No, the literacy of our populace is now sufficent;;;;;;;;;;;;;
-mass_literacy_in_progress;Mass Literacy Campaign;;;;;;;;;;;;;
-mass_literacy_in_progress_desc;There is currently a nationwide effort to educate the most needing of our populace.;;;;;;;;;;;;;
 EVTNAME7777924;Removing European Pops;;;;;;;;;;;;;
 EVTDESC7777924;They aren't needed in MP setup;;;;;;;;;;;;;
 EVTOPTA7777924;Restore the usual cultures;;;;;;;;;;;;;

@@ -390,7 +390,7 @@ political_decisions = {
 			}
 			GER_1 = { add_core = THIS }
 			370 = { add_core = THIS }
-			327 = { add_core = THIS }
+			371 = { add_core = THIS }
 			random_country = {
 				limit = {
 					tag = NGF

@@ -169,17 +169,6 @@ infamy_grant_cooldown = {
 	icon = 12
 }
 
-#transfer_rp_debuff = {	#applicable decision also currently commented out as a result of no RP from conquest update
-#	research_points_on_conquer = -2
-#	icon = 12
-#}
-
-mass_literacy_in_progress = {
-	administrative_efficiency_modifier = -0.15
-	badboy = 0.03
-	icon = 3
-}
-
 ##############################
 
 capital_mobilisation = {
