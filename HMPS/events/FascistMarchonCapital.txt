@@ -1,0 +1,173 @@
+#March on capital
+country_event = {
+	id = 17630
+	title = "EVTNAME17630"
+	desc = "EVTDESC17630"
+	news = yes
+	news_desc_long = "EVTDESC17630_NEWS_LONG"
+	news_desc_medium = "EVTDESC17630_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC17630_NEWS_SHORT"
+	major = yes
+	picture = "Fascist"
+	
+	trigger = {
+		is_ideology_enabled = fascist
+		civilized = yes
+		fascist = 30
+		OR = {
+			government = prussian_constitutionalism
+			government = democracy
+			government = hms_government
+			government = absolute_monarchy
+		}
+		NOT = { has_country_flag = march_on_capital }
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 1.5
+			NOT = { average_militancy = 2 }
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 3
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 4
+		}
+		modifier = {
+			factor = 0.8
+			average_militancy = 5
+		}
+		modifier = {
+			factor = 0.8
+			mass_politics = 1
+		}
+		modifier = {
+			factor = 0.8
+			has_recently_lost_war = yes
+		}
+		modifier = {
+			factor = 0.8
+			any_core = {
+				empty = no
+				NOT = { owned_by = THIS }
+			}
+		}
+		modifier = {
+			factor = 0.8
+			is_disarmed = yes
+		}
+		modifier = {
+			factor = 0.8
+			is_vassal = yes
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { average_consciousness = 4 }
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				nationalvalue = nv_liberty
+				nationalvalue = nv_equality
+			}
+		}
+		modifier = {
+			factor = 0.9
+			OR = {
+				nationalvalue = nv_order
+				nationalvalue = nv_tradition
+			}
+		}
+		modifier = {
+			factor = 1.5
+			check_variable = {
+				which = successful_fascist_rebellions
+				value = 5
+			}
+		}
+		modifier = {
+			factor = 2
+			check_variable = {
+				which = successful_fascist_rebellions
+				value = 10
+			}
+		}
+	}
+	
+	immediate = {
+		set_country_flag = march_on_capital
+	}
+	
+	option = {
+		name = "EVTOPTA17630"
+		any_pop = {
+			limit = { pop_majority_ideology = fascist }
+			reduce_pop = 0.85
+		}
+		any_pop = {
+			limit = {
+				OR = {
+					is_primary_culture = yes
+					is_accepted_culture = yes
+				}
+			}
+			ideology = {
+				value = fascist
+				factor = 0.1
+			}
+			scaled_militancy = {
+				ideology = fascist
+				factor = 8
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+	}
+	
+	option = {
+		name = "EVTOPTB17630"
+		government = fascist_dictatorship
+		ruling_party_ideology = fascist
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = state_controlled
+		political_reform = underground_parties
+		prestige = -25
+		
+		add_country_modifier = {
+			name = national_confusion
+			duration = 365
+		}		
+		country_event = 800051		
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0.5
+				NOT = { fascist = 40 }
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { fascist = 50 }
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { fascist = 60 }
+			}
+			modifier = {
+				factor = 1.5
+				fascist = 60
+			}
+			modifier = {
+				factor = 1.5
+				fascist = 70
+			}
+		}
+	}
+}

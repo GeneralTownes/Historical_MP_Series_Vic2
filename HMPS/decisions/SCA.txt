@@ -29,28 +29,6 @@ political_decisions = {
 		}
 	}
 	
-	claim_finland = {
-		picture = old_finnish_map
-		potential = {
-			tag = SCA
-			343 = { NOT = { is_core = THIS } }
-		}
-		
-		allow = {
-			OR = {
-				war_policy = jingoism
-				war_policy = pro_military
-			}
-		}
-		
-		effect = {
-			badboy = 4
-			FIN = { all_core = { add_core = SCA } }
-		}
-		
-		ai_will_do = { factor = 1 	}
-	}
-	
 	embrace_the_finns = {
 		picture = form_scandinavia
 		potential = {

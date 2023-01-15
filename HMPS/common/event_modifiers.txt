@@ -117,15 +117,6 @@ developing = {
 	diplomatic_points_modifier = -0.5
 }
 
-fascist_cartels = {
-	factory_throughput = -0.2
-	poor_life_needs = -0.15
-	core_pop_militancy_modifier = -0.05
-	core_pop_consciousness_modifier = -0.15
-	pop_promotion_chance = -0.4
-	icon = 12
-}
-
 promise_against_expansion = {
 	badboy = 0.1
 }
@@ -1762,13 +1753,6 @@ austrian_diplomatic_corps = {
 	
 
 ##### Boer War #####
-trek_boers = {
-	global_immigrant_attract = 3.1		#410%
-	global_assimilation_rate = 0.01
-	mobilisation_size = 2
-	cb_generation_speed_modifier = -1.5
-	icon = 17
-}
 
 boer_republic = {
 	global_immigrant_attract = 1
@@ -1895,13 +1879,6 @@ economic_boom = {
 	icon = 11
 }
 
-#### ENG - ENGLAND #####
-corn_laws_repealed = {
-	max_tariff = -0.05
-	global_pop_militancy_modifier = -0.02
-	global_pop_consciousness_modifier = 0.01
-	icon = 1
-}
 
 the_yard = {
 	core_pop_militancy_modifier = -0.02
@@ -1987,11 +1964,6 @@ signed_the_geneva_convention = {
 folkis_educates = {
 	research_points_modifier = 0.01
 	icon = 5
-}
-
-motala_verkstad = {
-	local_factory_throughput = 0.05
-	icon = 13
 }
 
 ### NEN - New England ###
@@ -2243,7 +2215,6 @@ boxer_agitation = {
 self_strengthening_movement = {
 	prestige = 0.05
 	research_points = 2
-	#research_points_on_conquer = -1.5
 	org_regain = 0.1
 	global_pop_consciousness_modifier = 0.1
 	global_pop_militancy_modifier = 0.1
@@ -2375,12 +2346,6 @@ daimyo_draft = {
 	mobilisation_size = 0.15
 	war_exhaustion = -0.03
 	icon = 18
-}
-
-### Belgium ###
-force_publique = {
-	local_RGO_output = 0.15
-	icon = 1
 }
 
 ### Canada ###
@@ -3368,17 +3333,6 @@ likin_tax = {
 	min_tax = 0.1
 	war_exhaustion = -0.5
 	icon = 9
-}
-
-yuan_shikai = {
-	prestige = 0.01
-	ruling_party_support = 0.25
-	supply_consumption = -0.15
-	land_organisation = 0.05
-	naval_organisation = 0.05
-	org_regain = 0.05
-	administrative_efficiency_modifier = 0.05
-	icon = 17
 }
 
 ###HFM Siam Modifiers###

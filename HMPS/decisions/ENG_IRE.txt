@@ -1,0 +1,422 @@
+political_decisions = {
+
+	the_scotland_yard = {
+		picture = the_scotland_yard
+		potential = {
+			OR = {
+				tag = ENG
+				tag = ENL
+			}
+			NOT = {
+				has_country_flag = elementary_my_dear_watson # I know, he never says it in the books, yadiyadi.
+			}
+		}
+
+		allow = {
+			realism = 1
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = the_yard
+				duration = -1
+			}
+			set_country_flag = elementary_my_dear_watson
+		}
+	}
+
+	create_rhodesia = {
+		picture = rhodesia_charter
+		alert = no
+		potential = {
+			any_owned_province = { is_core = RHO }
+			RHO = { exists = no }
+			NOT = {
+				capital_scope = { continent = africa } 
+				capital_scope = { continent = west_africa } 
+				capital_scope = { continent = central_africa } 
+				capital_scope = { continent = east_africa } 
+				capital_scope = { continent = south_west_africa }
+			}
+			NOT = { has_country_flag = post_colonial_country }
+			primary_culture = british
+			civilized = yes
+			revolution_n_counterrevolution = 1
+		}
+		
+		allow = {
+			war = no
+			SAF = { exists = yes }
+			RHO = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+							OR = { is_vassal = no vassal_of = THIS }
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 3
+			RHO = { set_country_flag = post_colonial_country }
+			RHO = { government = dominion all_core = { remove_core = ENG } }
+			ZAM = { all_core = { remove_core = RHO } }
+			any_owned = { limit = { is_core = RHO } secede_province = RHO }
+			create_vassal = RHO
+			create_alliance = RHO
+			diplomatic_influence = { who = RHO value = 400 }	
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { year = 1923 }
+			}
+		}
+	}
+	
+	rhodesia_charter = {
+		potential = {
+			tag = ENG
+			owns = 2068
+			owns = 2069
+			owns = 2070
+			owns = 2071
+			owns = 2072
+			owns = 2073
+			owns = 2635
+			NOT = { has_country_flag = ian_would_be_proud }
+		}
+		
+		allow = { invention = mission_to_civilize }
+		
+		effect = {
+			prestige = 10
+			ENG_2068 = { add_core = RHO }
+			2068 = {
+				change_province_name = "Salisbury"
+				any_pop = { limit = { type = soldiers culture = british } pop_type = farmers }
+				state_scope = {
+					change_region_name = "Southern Rhodesia"
+					any_owned = {
+						add_core = RHO
+					}
+					any_pop = { limit = { type = farmers culture = british } reduce_pop = 2 }
+				}
+			}
+			2073 = {
+				change_province_name = "Fort Victoria"
+				any_pop = { limit = { type = farmers culture = british } reduce_pop = 2 }
+				state_scope = {
+					change_region_name = "Southern Rhodesia"
+					any_owned = { add_core = RHO }
+				}
+			}
+			2072 = { change_province_name = "Wankie" }
+			ENG_2071 = { add_core = RHO }
+			ENG_2014 = { add_core = RHO }
+			ENG_2016 = { add_core = RHO }
+			2015 = { secede_province = THIS	any_pop = { literacy = -0.99 }	}
+			2013 = { secede_province = THIS	any_pop = { literacy = -0.99 }	}
+			2014 = { secede_province = THIS any_pop = { literacy = -0.99 }	}
+			2012 = { secede_province = THIS	any_pop = { literacy = -0.99 }	}
+			790 = { secede_province = THIS any_pop = { literacy = -0.99 }	}
+			2017 = { secede_province = THIS	any_pop = { literacy = -0.99 }	}
+			2016 = { secede_province = THIS	any_pop = { literacy = -0.99 }	}
+			2018 = { secede_province = THIS	any_pop = { literacy = -0.99 }	}
+			2067 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			2066 = { secede_province = THIS any_pop = { literacy = -0.99 } }
+			any_owned = { limit = { is_core = RHO }
+				add_province_modifier = {
+					name = colonial_exploitation
+					duration = 3650
+				}
+				add_province_modifier = {
+					name = colonial_recruitment
+					duration = 1825
+				}
+			}
+			RHO = { all_core = { remove_core = MAT } }
+			set_country_flag = ian_would_be_proud
+		}
+	}
+	
+	invest_in_irish = {
+		picture = ireland
+		potential = {
+			tag = ENG
+			NOT = {
+				exists = IRE
+				accepted_culture = irish
+				has_country_flag = invest_in_irish
+			}
+			OR = {
+				government = democracy
+				government = hms_government
+				government = proletarian_dictatorship
+			}
+			OR = {
+				has_country_flag = help_for_the_irish
+				has_country_flag = irish_republican_brotherhood
+			}
+			any_owned_province = { is_core = IRE }
+		}
+		
+		allow = {
+			prestige = 50
+			money = 850001
+			NOT = { citizenship_policy = residency }
+			social_science = 1
+		}
+		
+		effect = {
+			set_country_flag = invest_in_irish
+			random_owned = {
+				limit = { owner = { NOT = { has_country_flag = irish_republican_brotherhood } } }
+				owner = { add_accepted_culture = irish }
+			}
+			prestige = -50
+			treasury = -850000
+			any_owned = {
+				remove_province_modifier = irish_oppression
+				remove_province_modifier = enclosures
+				remove_province_modifier = royal_irish_constabulary
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = irish
+					has_pop_religion = catholic
+				}
+				militancy = -5
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	build_the_big_ben = {
+		picture = bigben
+		potential = {
+			OR = {
+			tag = ENG
+			tag = ENL
+			}
+			year = 1844
+			NOT = { has_country_flag = big_ben_construction }		
+			NOT = { year = 1860 }
+			300 = { NOT = { has_province_modifier = the_big_ben } }
+		}
+		
+		allow = {
+			NOT = { year = 1860 }
+			money = 7500
+			election = no
+			war = no
+			upper_house = {
+				ideology = conservative
+					value = 0.3
+				}
+		}
+		
+		effect = {
+			set_country_flag = big_ben_construction
+			country_event = 3697000
+		}
+	ai_will_do = {
+			factor = 1
+			}
+	}
+
+	rhodesia_renaminc_act = {
+		picture = rhodesia_renaminc_act
+		potential = {
+			tag = RHO
+			owns = 2068
+			owns = 2070
+			owns = 2635
+			NOT = { has_country_flag = renaming_act }
+		}
+		
+		allow = {
+			owns = 2068
+			owns = 2070
+			owns = 2635
+		}
+		
+		effect = {
+			set_country_flag = renaming_act
+			2068 = { state_scope = { change_region_name = "Southern Rhodesia" } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	unite_yemeni_colonies = {
+		picture = aden_protectorate
+		potential = {
+			has_global_flag = created_aden_protectorate
+			OR = {
+				NOT = { 1178 = { is_core = YEM } }
+				NOT = { 1179 = { is_core = YEM } }
+				NOT = { 1180 = { is_core = YEM } }
+			}
+			OR = {
+				any_owned_province = { is_core = YEM }
+				any_owned_province = { is_core = NYE }
+				NYE = { in_sphere = THIS }
+				NYE = { vassal_of = THIS }
+			}
+			YEM = { exists = no }
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			war = no
+			YEM = { war = no all_core = { owned_by = THIS } }
+			NYE = {
+				war = no
+				all_core = { 
+					OR = {
+						owned_by = THIS 
+						owner = { in_sphere = THIS }
+						owner = { vassal_of = THIS }
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 5
+			NYE = { tech_school = unciv_tech_school all_core = { add_core = YEM } }
+			1178 = { secede_province = THIS }
+			1179 = { secede_province = THIS }
+			1180 = { secede_province = THIS }
+			YEM = { tech_school = unciv_tech_school capital = 1178 }
+			
+			random_owned = { limit = { exists = NEJ } owner = { diplomatic_influence = { who = NEJ value = 50 } } }
+			random_owned = { limit = { exists = HAL } owner = { diplomatic_influence = { who = HAL value = 50 } } }
+			random_owned = { limit = { exists = BHR } owner = { diplomatic_influence = { who = BHR value = 50 } } }
+			random_owned = { limit = { exists = QAT } owner = { diplomatic_influence = { who = QAT value = 50 } } }
+			random_owned = { limit = { exists = ABU } owner = { diplomatic_influence = { who = ABU value = 50 } } }
+			random_owned = { limit = { exists = KWT } owner = { diplomatic_influence = { who = KWT value = 50 } } }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	londonderry_renaming_act = {
+		picture = londonderry_quay
+		
+		potential = {
+			OR = {
+				AND = {
+					OR = { primary_culture = irish tag = GBR }
+					NOT = { has_global_flag = londonderry_renamed }
+				}
+				AND = {
+					primary_culture = british
+					NOT = { tag = GBR }
+					has_global_flag = londonderry_renamed
+				}
+			}
+			owns = 255
+		}
+		
+		
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			
+			random_owned = {
+				limit = { OR = { owner = { primary_culture = irish } owner = { tag = GBR } } }
+				owner = { set_global_flag = londonderry_renamed 255 = { change_province_name = "Derry" } }
+			}
+			
+			random_owned = {
+				limit = { owner = { primary_culture = british NOT = { tag = GBR } } }
+				owner = { clr_global_flag = londonderry_renamed 255 = { change_province_name = "Londonderry" } }
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	the_irish_republic = {
+		picture = ireland
+		potential = {
+			tag = IRE
+			OR = {
+				government = hms_government
+				government = dominion
+				government = colonial_company
+			}
+			NOT = { has_country_flag = easter_rising }
+			is_vassal = no
+			OR = {
+				NOT = { has_country_flag = the_irish_republic }
+				AND = {
+					has_country_flag = the_irish_republic 
+					NOT = { government = democracy }
+					ENG = { has_country_flag = the_irish_dominion }
+				}
+			}
+		}
+		
+		allow = {
+			war = no
+			is_vassal = no
+		}
+		
+		effect = {
+			set_country_flag = the_irish_republic
+			prestige = 5
+			government = democracy
+			remove_accepted_culture = british
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	ric_reorganize = {
+		picture = "ric_police"
+		potential = { 
+			tag = ENG
+			NOT = { has_country_flag = ric_reorganized }
+		}
+		
+		allow = { war = no }
+		
+		effect = {
+			set_country_flag = ric_reorganized
+			any_owned = {
+				limit = { 
+					OR = {
+						province_id = 254
+						province_id = 255
+						province_id = 256
+						province_id = 257
+						province_id = 258
+						province_id = 259
+						province_id = 260
+						province_id = 261
+						province_id = 262
+						province_id = 263
+						province_id = 264
+						province_id = 265
+					}
+				}
+				add_province_modifier = { name = royal_irish_constabulary duration = -1 }
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+}

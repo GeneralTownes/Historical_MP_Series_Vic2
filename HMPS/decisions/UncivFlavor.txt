@@ -20,25 +20,6 @@ political_decisions = {
 		}
 	}
 	
-	an_elephant_for_america = {
-		picture = an_elephant_for_america
-		potential = {
-			tag = SIA
-			year = 1861
-			exists = USA
-			NOT = {
-				has_country_flag = sent_an_elephant_to_america
-			}
-		}
-		allow = {
-			relation = { who = USA value = 0 }
-		}
-		effect = {
-			USA = { country_event = { id=13350 days=0 } }
-			set_country_flag = sent_an_elephant_to_america
-		}
-	}
-	
 	champassak_integration_act = {
 		picture = form_laos
 		potential = {
@@ -59,39 +40,6 @@ political_decisions = {
 			badboy = 1
 			inherit = CHK
 			set_country_flag = champassak_integrated
-		}
-	}
-
-	enact_muhammad_alis_reforms = {
-		picture = enact_muhammad_alis_reforms
-		potential = {
-			tag = EGY
-			civilized = no
-			NOT = { 
-				has_country_flag = muhammad_alis_reforms_enacted
-				has_global_flag = egypt_submitted_to_ottomans
-			}
-		}
-		allow = { vassal_of = TUR }
-		
-		effect = {
-			set_country_flag = muhammad_alis_reforms_enacted
-			prestige = 5
-			treasury = 5000
-			small_arms = 20
-			regular_clothes = 50
-			military_reform = yes_foreign_navies
-			activate_technology = clipper_design
-			military_reform = yes_foreign_training
-			add_country_modifier = { name = muhammad_alis_reforms duration = -1 }
-			any_pop = {
-				limit = { is_primary_culture = yes }
-				consciousness = 4
-				ideology = {
-					value = reactionary
-					factor = 0.2
-				}
-			}
 		}
 	}
 	
@@ -291,45 +239,9 @@ political_decisions = {
 		
 		ai_will_do = { factor = 1 }
 	}
-	
-	eth_mission_to_cairo = {
-		potential = {
-			tag = ETH
-			ai = yes
-			EGY = {
-				ai = yes
-				exists = yes
-				neighbour = ETH
-				NOT = {
-					any_owned_province = { is_core = ETH }
-					casus_belli = ETH
-				}
-			}
-			NOT = {
-				has_country_flag = mission_to_cairo
-				any_owned_province = { is_core = EGY }
-				any_owned_province = { is_core = SUD }
-				casus_belli = EGY
-				truce_with = EGY
-			}
-		}
-		
-		allow = {
-			NOT = { war_with = EGY }
-		}
-		
-		effect = {
-			set_country_flag = mission_to_cairo
-			relation = { who = EGY value = 200 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 
 	unite_somalia = {
-	picture = unite_somalia
+		picture = unite_somalia
 		potential = {
 			OR = {
 				tag = GEL
@@ -372,7 +284,7 @@ political_decisions = {
 	}
 	
 	become_hausaland = {
-	picture = become_hausaland
+		picture = become_hausaland
 		potential = {
 			tag = SOK
 			NOT = { has_country_flag = became_hausaland }
@@ -388,7 +300,6 @@ political_decisions = {
 			prestige = 5
 			primary_culture = hausa
 			add_accepted_culture = fulbe
-			years_of_research = 0.5
 		}
 
 		ai_will_do = {
@@ -446,7 +357,7 @@ political_decisions = {
 	}
 	
 	tonghak_reforms = {
-	picture = tonghak_reforms
+		picture = tonghak_reforms
 		potential = {
 			tag = KOR
 			has_country_flag = tonghak_rebellion_happened
@@ -480,7 +391,7 @@ political_decisions = {
 	
 	
 	second_tonghak_reforms = {
-	picture = tonghak_reforms
+		picture = tonghak_reforms
 		potential = {
 			tag = KOR
 			has_country_flag = tonghak_rebellion_happened

@@ -1,0 +1,209 @@
+political_decisions = {
+
+	become_poland = {
+
+		potential = {
+			primary_culture = polish
+			NOT = { exists = POL }
+			NOT = { has_country_flag = post_colonial_country }
+			NOT = { tag = PLC }
+			NOT = { tag = WSF }
+		}
+
+		allow = {
+			OR = {
+				prestige = 45
+				is_secondary_power = yes
+				AND = {
+					tag = CPL
+					exists = KRA KRA = { is_vassal = no }
+					exists = PZN PZN = { is_vassal = no }
+					exists = PML PML = { is_vassal = no }
+				}
+				AND = { 
+					tag = CPL 
+					year = 1900
+				}
+			}
+			war = no
+			is_vassal = no
+			owns = 706
+		}
+
+		effect = {
+			prestige = 20
+			random_owned = { 
+				limit = { owner = { accepted_culture = south_german } } owner = { remove_accepted_culture = south_german }
+			}
+			random_owned = { 
+				limit = { owner = { accepted_culture = north_german } } owner = { remove_accepted_culture = north_german }
+			}
+			random_owned = { 
+				limit = { owner = { accepted_culture = czech } } owner = { remove_accepted_culture = czech }
+			}
+			change_tag = POL
+			capital = 706
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	become_poland_lithuania = {
+		picture = become_poland_lithuania
+
+		potential = {
+			OR = {
+				primary_culture = polish
+				primary_culture = lithuanian
+			}
+			NOT = { exists = PLC }
+			NOT = { has_country_flag = post_colonial_country }
+			NOT = { tag = WSF }
+		}
+
+		allow = {
+			war = no
+			owns = 706
+			owns = 703
+			360 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS ai = yes }
+					owner = { vassal_of = THIS }
+				}
+			}
+			718 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS ai = yes }
+					owner = { vassal_of = THIS }
+				}
+			}
+			958 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS ai = yes }
+					owner = { vassal_of = THIS }
+				}
+			}
+			695 = {
+				OR = {
+					owned_by = THIS
+					owner = { in_sphere = THIS ai = yes }
+					owner = { vassal_of = THIS }
+				}
+			}
+		}
+
+		effect = {
+			prestige = 30
+			random_owned = { 
+				limit = { owner = { accepted_culture = south_german } } owner = { remove_accepted_culture = south_german }
+			}
+			random_owned = { 
+				limit = { owner = { accepted_culture = north_german } } owner = { remove_accepted_culture = north_german }
+			}
+			random_owned = { 
+				limit = { owner = { accepted_culture = czech } } owner = { remove_accepted_culture = czech }
+			}
+			random_owned = {
+				limit = { owner = { primary_culture = polish } }
+				owner = {
+					add_accepted_culture = lithuanian
+					all_core = {
+						add_core = PLC
+						remove_core = POL
+					}
+				}
+				LIT = {
+					all_core = { add_core = PLC }
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { primary_culture = lithuanian }
+				}
+				owner = {
+					add_accepted_culture = polish
+					all_core = {
+						add_core = PLC
+						remove_core = LIT
+					}
+				}
+				POL = {
+					all_core = { add_core = PLC }
+				}
+			}
+			LAT = {
+				all_core = { add_core = PLC }
+			}
+			BYE = {
+				all_core = { add_core = PLC }
+			}
+			RUS_958 = { add_core = PLC }
+			PRU_695 = { add_core = PLC }
+			any_country = {
+				limit = {
+					OR = {
+						AND = {
+							in_sphere = THIS
+							ai = yes
+						}
+						vassal_of = THIS
+					}
+				}
+				any_owned = {
+					limit = { is_core = PLC }
+					secede_province = THIS
+				}
+			}
+			change_tag = PLC
+			capital = 703
+			any_greater_power = {
+				limit = {
+					OR = {
+						primary_culture = russian
+						is_culture_group = germanic
+					}
+					neighbour = THIS
+				}
+				relation = { who = THIS value = -200 }
+				leave_alliance = THIS
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	krakow_form_galicia = {
+		picture = become_poland
+		potential = {
+			tag = KRA
+			is_subject = no
+			not = { exists = GLM }
+		}
+
+		allow = {
+			war = no
+			owns = 702 # Lvow
+			owns = 704 # Novy Sacz
+			owns = 705 # Przemsyl
+			owns = 714 # Tarnow
+			owns = 951 # Styri
+			owns = 952 # Ternopil
+			owns = 953 # Stanislavov
+		}
+
+		effect = {
+			prestige = 10
+			all_core = { remove_core = THIS }
+			change_tag = GLM
+			capital = 702
+		}
+	}
+}

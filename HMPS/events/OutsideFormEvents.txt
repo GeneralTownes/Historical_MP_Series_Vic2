@@ -1,0 +1,414 @@
+country_event = {
+	id = 5329627
+	title = "Formation of Italy"
+	desc = "EVTDESC5329627"
+	is_triggered_only = yes
+	
+	option = {
+		name = "Northern Italians"
+		any_country = {
+			limit = {
+				OR = {
+					primary_culture = north_italian
+					primary_culture = south_italian
+				}
+				in_sphere = THIS
+			}
+			annex_to = THIS
+		}
+		any_owned = {
+			limit = {
+				is_core = THIS
+				region = ITA_1
+			}
+			remove_core = ITA
+		}
+		release_vassal = ITA
+		create_alliance = ITA
+		diplomatic_influence = {
+			who = ITA
+			value = 300
+		}
+	}
+	
+	option = {
+		name = "Southern Italians"
+		any_country = {
+			limit = {
+				OR = {
+					primary_culture = north_italian
+					primary_culture = south_italian
+				}
+				in_sphere = THIS
+			}
+			annex_to = THIS
+		}
+		any_owned = {
+			limit = {
+				is_core = THIS
+				region = ITA_1
+			}
+			remove_core = ITA
+		}
+		release_vassal = ITA
+		ITA = {
+			remove_accepted_culture = south_italian
+			primary_culture = south_italian
+			add_accepted_culture = north_italian
+		}
+		create_alliance = ITA
+		diplomatic_influence = {
+			who = ITA
+			value = 300
+		}
+	}
+}
+
+country_event = {
+	id = 72751
+	title = "The Unification of Iberia"
+	desc = EVTDESC72751
+	major = yes
+	is_triggered_only = yes
+	
+	 
+	option = { 
+		name = "Well of course the Spainards will Rule."
+		any_country = {
+			limit = {
+				OR = {
+					tag = SPA
+					tag = POR
+				}
+				ai = yes
+				in_sphere = THIS
+			}
+			annex_to = THIS
+		}
+		#517 = { secede_province = THIS }
+		any_owned = {
+			limit = {
+				is_core = THIS
+				is_core = IBR
+			}
+			remove_core = IBR
+		}
+		release_vassal = IBR
+		create_alliance = IBR
+		diplomatic_influence = {
+			who = IBR
+			value = 400
+		}
+		any_country = {
+			limit = {
+				OR = { 
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+				NOT = { tag = IBR }
+				any_owned_province = { is_core = IBR }
+				war = no
+			}
+			country_event = {
+				id = 72665
+			}
+		}
+		517 = { add_core = IBR }
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = { 
+		name = "Perhaps the Portuguese? Long Live Lisbon!"
+		IBR = {
+			capital = 521
+			primary_culture = portuguese
+			add_accepted_culture = spanish
+		}
+		any_country = {
+			limit = {
+				OR = {
+					tag = SPA
+					tag = POR
+				}
+				ai = yes
+				in_sphere = THIS
+			}
+			annex_to = THIS
+		}
+		#517 = { secede_province = THIS }
+		any_owned = {
+			limit = {
+				is_core = THIS
+				is_core = IBR
+			}
+			remove_core = IBR
+		}
+		release_vassal = IBR
+		create_alliance = IBR
+		diplomatic_influence = {
+			who = IBR
+			value = 400
+		}
+		any_country = {
+			limit = {
+				OR = { 
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+				NOT = { tag = IBR }
+				any_owned_province = { is_core = IBR }
+				war = no
+			}
+			country_event = {
+				id = 72665
+			}
+		}
+		517 = { add_core = IBR }
+		ai_chance = {
+			factor = 25
+		}
+	}
+	option = { 
+		name = "We Choose the Catalans!"
+		IBR = {
+			capital = 498
+			primary_culture = catalan
+			add_accepted_culture = spanish
+		}
+		any_country = {
+			limit = {
+				OR = {
+					tag = SPA
+					tag = POR
+				}
+				ai = yes
+				in_sphere = THIS
+			}
+			annex_to = THIS
+		}
+		#517 = { secede_province = THIS }
+		any_owned = {
+			limit = {
+				is_core = THIS
+				is_core = IBR
+			}
+			remove_core = IBR
+		}
+		release_vassal = IBR
+		create_alliance = IBR
+		diplomatic_influence = {
+			who = IBR
+			value = 400
+		}
+		any_country = {
+			limit = {
+				OR = { 
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+				NOT = { tag = IBR }
+				any_owned_province = { is_core = IBR }
+				war = no
+			}
+			country_event = {
+				id = 72665
+			}
+		}
+		517 = { add_core = IBR }
+		IBR = { capital = 503 } #Valencia
+		ai_chance = {
+			factor = 25
+		}
+	}
+	option = { 
+		name = "Inform the Basque the winds have changed in their favor."
+		IBR = {
+			capital = 492
+			primary_culture = basque
+			add_accepted_culture = spanish
+		}
+		any_country = {
+			limit = {
+				OR = {
+					tag = SPA
+					tag = POR
+				}
+				ai = yes
+				in_sphere = THIS
+			}
+			annex_to = THIS
+		}
+		#517 = { secede_province = THIS }
+		any_owned = {
+			limit = {
+				is_core = THIS
+				is_core = IBR
+			}
+			remove_core = IBR
+		}
+		release_vassal = IBR
+		create_alliance = IBR
+		diplomatic_influence = {
+			who = IBR
+			value = 400
+		}
+		any_country = {
+			limit = {
+				OR = { 
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+				NOT = { tag = IBR }
+				any_owned_province = { is_core = IBR }
+				war = no
+			}
+			country_event = {
+				id = 72665
+			}
+		}
+		517 = { add_core = IBR }
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = "Why not the Galicians?"
+		IBR = {
+			capital = 474
+			primary_culture = galician
+			add_accepted_culture = spanish
+		}
+		any_country = {
+			limit = {
+				OR = {
+					tag = SPA
+					tag = POR
+				}
+				ai = yes
+				in_sphere = THIS
+			}
+			annex_to = THIS
+		}
+		#517 = { secede_province = THIS }
+		any_owned = {
+			limit = {
+				is_core = THIS
+				is_core = IBR
+			}
+			remove_core = IBR
+		}
+		release_vassal = IBR
+		create_alliance = IBR
+		diplomatic_influence = {
+			who = IBR
+			value = 400
+		}
+		any_country = {
+			limit = {
+				OR = { 
+					in_sphere = THIS
+					vassal_of = THIS
+				}
+				NOT = { tag = IBR }
+				any_owned_province = { is_core = IBR }
+				war = no
+			}
+			country_event = {
+				id = 72665
+			}
+		}
+		517 = { add_core = IBR }
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = 72665
+	title = "Iberian Cores"
+	desc = "We must return Iberian cores."
+	is_triggered_only = yes
+	
+	option = {
+		name = "Such is the life of a spherling."
+		THIS = {
+			any_owned = {
+				limit = { is_core = IBR }
+				secede_province = IBR
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 72750
+	title = "The Unification of Scandinavia"
+	desc = EVTDESC72750
+	major = yes
+	is_triggered_only = yes
+	 
+	option = { 
+		name = "The Danes should rule. After all they've got the experience."
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = { 
+		name = "Something about the Swedes Suggests Success"
+		SCA = {
+			capital = 322
+			primary_culture = swedish
+			add_accepted_culture = danish
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+	option = { 
+		name = "The Norwegians understand how to be good vassals."
+		SCA = {
+			capital = 313
+			primary_culture = norwegian 
+			add_accepted_culture = danish
+		}
+		ai_chance = {
+			factor = 25
+		}
+	}
+}
+
+country_event = {
+	id = 72664
+	title = "Scandinavian Cores"
+	desc = "We must return Scandinavian cores."
+	is_triggered_only = yes
+	
+	option = {
+		name = "Such is the life of a spherling."
+		THIS = {
+			any_owned = {
+				limit = { is_core = SCA }
+				secede_province = SCA
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 2159212
+	title = "Zapadoslavian Cores"
+	desc = "We must return Zapadoslavian cores."
+	is_triggered_only = yes
+	
+	option = {
+		name = "Such is the life of a spherling."
+		THIS = {
+			any_owned = {
+				limit = { is_core = WSF }
+				secede_province = WSF
+			}
+		}
+	}
+}

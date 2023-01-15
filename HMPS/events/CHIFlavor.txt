@@ -3109,10 +3109,6 @@ country_event = {
 			}
 		}
 		NOT = { exists = QNG }
-#		NOT = {	
-#			tag = TPG
-#			government = democracy
-#		}
 		has_global_flag = the_new_army
 		has_global_flag = spread_warlord_influence
 		civilized = yes

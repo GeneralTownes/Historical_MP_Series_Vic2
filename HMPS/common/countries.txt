@@ -14,6 +14,7 @@ GLP		= "countries/Guadeloupe.txt"
 
 #Cleanup
 CLN     = "countries/Cleanup.txt"
+UTI		= "countries/Utility Tag.txt"
 
 ### NEW NATIONS MOD ###
 
@@ -23,7 +24,6 @@ FAS		="countries/French Australia.txt"
 FCA		="countries/French Canada.txt"
 ULA		="countries/Louisiana.txt"
 EIC		="countries/East India Company.txt"
-UTI		="countries/Utility Tag.txt"
 OCC		="countries/Occitania.txt"
 ACA		="countries/Acadia.txt"
 VIC 	="countries/Nationalist France.txt"

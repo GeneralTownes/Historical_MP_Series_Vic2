@@ -1,0 +1,156 @@
+political_decisions = {
+	
+	form_gran_colombia = {
+		picture = form_gran_colombia
+		potential = {
+			OR = {
+				tag = CLM
+				tag = ECU
+				tag = VNZ
+			}
+			NOT = { exists = GCO }
+		}
+		
+		allow = {
+			war = no
+			state_n_government = 1
+			CLM = {
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {
+						OR = {
+							owned_by = THIS
+							province_id = 2243
+							province_id = 2242
+						}
+					}
+				}
+			}
+			ECU = {
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {
+						owned_by = THIS
+					}
+				}
+			}
+			VNZ = {
+				OR = {
+					in_sphere = THIS
+					vassal_of = THIS
+					all_core = {
+						owned_by = THIS
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 10
+			CLM = {
+				all_core = { add_core = GCO }
+			}
+			ECU = {
+				all_core = { add_core = GCO }
+			}
+			VNZ = {
+				all_core = { add_core = GCO }
+			}
+			PNM = {
+				all_core = { add_core = GCO }
+			}
+			COS = {
+				all_core = { add_core = GCO }
+			}
+			any_country = {
+				limit = {
+					tag = {
+						OR = {
+							CLM
+							ECU
+							VNZ
+						}
+					}
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				country_event = 11101
+			}			
+			change_tag = GCO
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	colombia_afro_latino = {
+		picture = accept_afro_latino
+		potential = {
+			OR = {
+				tag = GCO 
+				tag = CLM
+			}
+			NOT = { has_country_flag = colombia_afro_latino }
+		}
+		allow = {
+			invention = national_fraternity
+			slavery = no_slavery
+		}
+		effect = {
+			prestige = 5
+			set_country_flag = colombia_afro_latino
+			add_accepted_culture = afro_caribeno
+			any_pop = {
+				limit = {
+					has_pop_culture = afro_caribeno
+					NOT = { literacy = 0.1 }
+				}
+				consciousness = 2.5
+				literacy = 0.05
+			}
+		}
+	}
+
+	mexican_colombian_cuba = {
+		picture = spanish_cuba
+		potential = {			
+			OR = {
+				tag = MEX
+				tag = GCO
+			}
+			NOT = { has_global_flag = integrated_cuba }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			war = no
+			owns = 2209
+		}
+		effect = {
+			set_global_flag = integrated_cuba
+			CUB = { all_core = { add_core = THIS } }
+			add_accepted_culture = caribeno
+		}
+	}
+	
+	colombian_dominica = {
+		picture = spanish_dominican
+		potential = {
+			tag = GCO
+			NOT = { is_core = 2214 }
+		}
+		allow = {
+			war = no
+			slavery = no_slavery
+			colonial_policy = no_colonies
+		}
+		effect = {
+			badboy = 3
+			DOM = { all_core = { add_core = THIS } }
+		}
+	}
+}

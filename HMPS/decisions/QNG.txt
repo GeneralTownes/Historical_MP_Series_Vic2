@@ -1,0 +1,200 @@
+political_decisions = {
+
+	clear_out_the_manchu_elite = {
+		picture = clear_out_the_manchu_elite
+		potential = {
+			tag = QNG
+			NOT = { has_country_flag = manchu_elite_cleared_out }
+		}
+		
+		allow = {
+			average_consciousness = 3
+			has_global_flag = taiping_has_happened
+		}
+		
+		effect = {
+			add_accepted_culture = beifaren
+			any_pop = {
+				limit = { has_pop_culture = manchu }
+				militancy = 2
+				consciousness = 1
+			}
+			any_pop = {
+				limit = { NOT = { has_pop_culture = manchu } }
+				militancy = -2
+				consciousness = -1
+			}
+			MCK = { add_accepted_culture = beifaren }
+			set_variable = { which = china_destablization value = 1 }
+			set_country_flag = manchu_elite_cleared_out
+		}
+	}
+	
+	self_strengthening_movement = {
+		picture = self_strengthening_movement
+		potential = {
+			OR = {
+				tag = QNG
+				tag = TPG
+			}
+			civilized = no
+		}
+		
+		allow = {
+			war = no
+			has_global_flag = taiping_has_happened
+			civilized = no
+			NOT = { has_country_modifier = self_strengthening_movement }
+			money = 100001
+		}
+		
+		effect = {
+			set_country_flag = self_strengthening_movement
+			treasury = -100000
+			add_country_modifier = {
+				name = self_strengthening_movement
+				duration = 1825
+			}
+			1617 = {
+				add_province_modifier = {
+					name = foreign_trading_post
+					duration = 1825
+				}
+			}
+			CHI = { set_country_flag = self_strengthening_movement }
+			KMT = { set_country_flag = self_strengthening_movement }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	hundred_days_reform = {
+		picture = hundred_days_reform
+		potential = {
+			tag = QNG
+			civilized = no
+		}
+		
+		allow = {
+			war = no
+			civilized = no
+			has_country_flag = self_strengthening_movement
+			NOT = { has_country_flag = hundred_days_reform }
+		}
+		
+		effect = {
+			set_country_flag = hundred_days_reform 
+			add_country_modifier = {
+				name = hundred_days_reforms
+				duration = 100
+			}
+			set_variable = { which = china_destablization value = 1 }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	abolish_the_eight_banners  = {
+		picture = the_eight_banners
+		potential = {
+			tag = QNG
+			NOT = { has_country_flag = abolish_the_eight_banners }
+		}
+		
+		allow = {
+			war = no
+			has_country_modifier = the_eight_banners
+			OR = {
+				AND = {
+					flintlock_rifles = 1
+					bronze_muzzle_loaded_artillery = 1
+					military_staff_system = 1
+				}
+				civilized = yes
+			}
+		}
+		
+		effect = {
+			set_country_flag = abolish_the_eight_banners
+			remove_country_modifier = the_eight_banners
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = manchu
+						type = soldiers
+						type = officers
+						type = bureaucrats
+						type = aristocrats
+					}
+				}
+				militancy = 8
+				consciousness = 8
+			}
+			set_variable = { which = china_destablization value = -1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	appoint_yuan_shikai = {
+		picture = yuan_shikai
+		potential = {
+			tag = QNG
+			NOT = { has_country_flag = appoint_yuan_shikai }
+		}
+		
+		allow = {
+			civilized = yes
+			has_country_flag = abolish_the_eight_banners
+		}
+		
+		effect = {
+			set_country_flag = appoint_yuan_shikai
+			prestige = 5
+			nationalvalue = nv_autocracy
+			set_variable = { which = china_destablization value = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	three_principles_of_the_people = {
+		picture = sun_yat_sen
+		potential = {
+			OR = {
+				tag = QNG
+				tag = CHI
+				tag = KMT
+				tag = GMJ
+			}
+			NOT = {
+				tech_school = chinese_tech_school
+			}
+		}
+		
+		allow = {
+			war = no
+			civilized = yes
+			OR = {
+				government = hms_government
+				government = presidential_dictatorship
+				government = democracy
+			}
+		}
+		
+		effect = {
+			tech_school = chinese_tech_school
+			plurality = 5
+			prestige = 5
+			any_pop = {
+				limit = {
+					is_culture_group = east_asian
+				}
+				militancy = -1
+				consciousness = -1
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+}

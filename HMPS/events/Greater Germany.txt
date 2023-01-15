@@ -1309,8 +1309,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = {
-		name = "EVT31511OPTA"
+	immediate = {
 		random_owned = {
 			limit = {
 				owner = { tag = KUK }
@@ -1357,6 +1356,10 @@ country_event = {
 			country_event = 31517
 		}
 		GER = { inherit = THIS }
+	}
+	
+	option = {
+		name = "EVT31511OPTA"
 	}
 }
 

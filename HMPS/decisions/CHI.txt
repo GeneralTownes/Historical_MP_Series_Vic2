@@ -1,0 +1,574 @@
+political_decisions = {
+	
+	reunification_of_china = {
+		picture = form_china
+		potential = {
+			is_culture_group = east_asian
+			OR = {
+				tag = CHI
+				NOT = { has_country_flag = beiyang_faction }
+			}
+			has_global_flag = warlord_era_has_begun
+		}
+		
+		allow = {
+			war = no
+			owns = 1616
+			OR = {
+				KMT = { exists = no }
+				has_global_flag = kmt_has_lost
+			}
+			CHI = {
+				OR = {
+					exists = no
+					tag = THIS
+					in_sphere = THIS
+				}
+			}
+			FJN = {
+				OR = {
+					exists = no
+					tag = THIS
+					has_country_flag = neutral_faction
+					in_sphere = THIS
+				}
+			}
+			GMJ = {
+				OR = {
+					exists = no
+					tag = THIS
+					has_country_flag = neutral_faction
+					in_sphere = THIS
+				}
+			}
+			GNG = {
+				OR = {
+					exists = no
+					tag = THIS
+					has_country_flag = neutral_faction
+					in_sphere = THIS
+				}
+			}
+			GXI = {
+				OR = {
+					exists = no
+					tag = THIS
+					has_country_flag = neutral_faction
+					in_sphere = THIS
+				}
+			}
+			HNN = {
+				OR = {
+					exists = no
+					tag = THIS
+					has_country_flag = neutral_faction
+					in_sphere = THIS
+				}
+			}
+			HUI = {
+				OR = {
+					exists = no
+					tag = THIS
+					has_country_flag = neutral_faction
+					in_sphere = THIS
+				}
+			}
+			MCK = {
+				OR = {
+					exists = no
+					tag = THIS
+					has_country_flag = neutral_faction
+					in_sphere = THIS
+				}
+			}
+			SXI = {
+				OR = {
+					exists = no
+					tag = THIS
+					has_country_flag = neutral_faction
+					in_sphere = THIS
+				}
+			}
+			SZC = {
+				OR = {
+					exists = no
+					tag = THIS
+					has_country_flag = neutral_faction
+					in_sphere = THIS
+				}
+			}
+			TPG = {
+				OR = {
+					exists = no
+					tag = THIS
+					in_sphere = THIS
+				}
+			}
+			XBI = {
+				OR = {
+					exists = no
+					tag = THIS
+					has_country_flag = neutral_faction
+					in_sphere = THIS
+				}
+			}
+			YNN = {
+				OR = {
+					exists = no
+					tag = THIS
+					has_country_flag = neutral_faction
+					in_sphere = THIS
+				}
+			}
+		}
+		
+		effect = {
+			clr_global_flag = warlord_era_has_begun
+			add_accepted_culture = beifaren
+			add_accepted_culture = nanfaren
+			add_accepted_culture = manchu
+			add_accepted_culture = hakka
+			add_accepted_culture = miao
+			add_accepted_culture = min
+			add_accepted_culture = zhuang
+			add_accepted_culture = yue
+			add_accepted_culture = yi
+			add_accepted_culture = hanhui
+			prestige = 20
+			capital = 1616
+			random_owned = {
+				limit = {
+					is_core = SXI
+					SXI = { exists = no }
+				}
+				SXI = { all_core = { remove_core = SXI } }
+			}
+			random_owned = {
+				limit = {
+					is_core = HUI
+					HUI = { exists = no }
+				}
+				HUI = { all_core = { remove_core = HUI } }
+			}
+			random_owned = {
+				limit = {
+					is_core = SZC
+					SZC = { exists = no }
+				}
+				SZC = { all_core = { remove_core = SZC } }
+			}
+			random_owned = {
+				limit = {
+					is_core = XIN
+					XIN = { exists = no }
+				}
+				XIN = { all_core = { remove_core = XIN } }
+			}
+			random_owned = {
+				limit = {
+					is_core = HNN
+					HNN = { exists = no }
+				}
+				HNN = { all_core = { remove_core = HNN } }
+			}
+			random_country = {
+				limit = {
+					tag = CHI
+					ai = yes
+					exists = yes
+					in_sphere = THIS
+				}
+				annex_to = THIS
+			}
+			random_country = {
+				limit = {
+					tag = TPG
+					ai = yes
+					exists = yes
+					in_sphere = THIS
+				}
+				annex_to = THIS
+			}
+			random_owned = {
+				limit = {
+					owner = { 
+						NOT = { tag = TPG }
+						NOT = { tag = CHI }
+						NOT = { has_country_flag = kuomintang_faction }
+					}
+				}
+				owner = {
+					all_core = { remove_core = THIS }
+					change_tag = CHI
+					primary_culture = beifaren
+					add_accepted_culture = nanfaren
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { 
+						NOT = { tag = TPG }
+						NOT = { tag = CHI }
+						has_country_flag = kuomintang_faction
+					}
+				}
+				CHI = {
+					all_core = { add_core = KMT }
+				}
+				owner = {
+					all_core = { remove_core = THIS }
+					change_tag = KMT
+					primary_culture = nanfaren
+					add_accepted_culture = beifaren
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = { tag = TPG }
+				}
+				CHI = {
+					all_core = { add_core = TPG }
+				}
+			}
+			any_country = {
+				limit = {
+					exists = yes
+					OR = {
+						has_country_flag = kuomintang_faction
+						has_country_flag = neutral_faction
+						has_country_flag = beiyang_faction
+					}
+					OR = {
+						is_vassal = no
+						vassal_of = THIS
+					}
+					NOT = { tag = THIS }
+				}
+				country_event = 131745
+			}			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+		
+	heavenly_capital = {
+		picture = heavenly_seal
+		potential = {
+			tag = TPG
+			NOT = { has_global_flag = heavenly_capital_decreted }
+		}
+		
+		allow = {
+			owns = 2221
+		}
+		
+		effect = {
+			prestige = 1
+			set_global_flag = heavenly_capital_decreted
+			2221 = { change_province_name = "Tianjing" }
+			capital = 2221
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	abolish_heavenly_capital = {
+		picture = heavenly_seal
+		potential = {
+			NOT = { tag = TPG }
+			is_culture_group = east_asian
+			has_global_flag = heavenly_capital_decreted
+		}
+		
+		allow = {
+			owns = 2221
+		}
+		
+		effect = {
+			clr_global_flag = heavenly_capital_decreted
+			2221 = { change_province_name = "Nanjing" }
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	renaming_act_lushun = {
+		picture = port_arthur
+			
+		potential = {
+			owns = 1481
+			OR = {
+				AND = {
+					NOT = { has_global_flag = lushun }
+					OR = {
+						is_culture_group = east_asian
+						primary_culture = korean
+						primary_culture = ainu
+					}
+					OR = {
+						has_global_flag = renamed_port_arthur
+						has_global_flag = renamed_ryojun
+					}
+				}
+				AND = {
+					primary_culture = japanese
+					NOT = { has_global_flag = renamed_ryojun }
+				}
+				AND = {
+					NOT = { is_culture_group = east_asian }
+					NOT = { primary_culture = korean }
+					NOT = { primary_culture = ainu }
+					NOT = { primary_culture = japanese }
+					NOT = { has_global_flag = renamed_port_arthur }
+				}
+			}
+		}
+		
+		allow = { war = no }
+		
+		effect = {
+			prestige = 2
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { is_culture_group = east_asian }
+						NOT = { primary_culture = korean }
+						NOT = { primary_culture = ainu }
+						NOT = { primary_culture = japanese }
+					}
+				}
+				owner = {
+					1481 = { change_province_name = "Port Arthur" }
+					set_global_flag = renamed_port_arthur
+					clr_global_flag = lushun
+					clr_global_flag = renamed_ryojun 
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { primary_culture = japanese } }
+				owner = {
+					1481 = { change_province_name = "Ryojun" }
+					clr_global_flag = renamed_port_arthur
+					clr_global_flag = lushun
+					set_global_flag = renamed_ryojun
+				}
+			}
+			
+			random_owned = {
+				limit = { 
+					owner = {
+						OR = {
+							is_culture_group = east_asian
+							primary_culture = korean
+							primary_culture = ainu
+						}
+						OR = {
+							has_global_flag = renamed_ryojun
+							has_global_flag = renamed_port_arthur
+						}
+					}
+				}
+				owner = {
+					1481 = { change_province_name = "Lüshun" }
+					set_global_flag = lushun
+					clr_global_flag = renamed_port_arthur
+					clr_global_flag = renamed_ryojun
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	CHI_accept_mongols = {
+		picture = tibet_capital
+		potential = {
+			tag = CHI
+			NOT = { accepted_culture = mongol }
+		}
+		
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			MGL = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			government = democracy
+			NOT = { citizens_rights = primary_culture_only }
+			centralization = federalism
+		}
+		
+		effect = {
+			add_accepted_culture = mongol
+			MGL = {
+				all_core = {
+					remove_core = MGL
+				}
+			}
+			IMG = {
+				all_core = {
+					remove_core = IMG
+				}
+			}
+			KML = {
+				all_core = {
+					remove_core = KML
+				}
+			}
+		}
+	}
+	
+	CHI_accept_tibetans = {
+		picture = tibet_capital
+		potential = {
+			tag = CHI
+			NOT = { accepted_culture = tibetan }
+		}
+		
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			TIB = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			government = democracy
+			NOT = { citizens_rights = primary_culture_only }
+			centralization = federalism
+		}
+		
+		effect = {
+			add_accepted_culture = tibetan
+			TIB = {
+				all_core = {
+					remove_core = TIB
+				}
+			}
+		}
+	}
+	
+	CHI_accept_uighurs = {
+		picture = xiang_army
+		potential = {
+			tag = CHI
+			NOT = { accepted_culture = uighur }
+		}
+		
+		allow = {
+			war = no
+			accepted_culture = mongol
+			accepted_culture = tibetan
+			government = democracy
+			NOT = { citizens_rights = primary_culture_only }
+			centralization = federalism
+			mass_politics = 1
+		}
+		
+		effect = {
+			add_accepted_culture = uighur
+			KMT = {
+				all_core = {
+					remove_core = KMT
+				}
+			}
+			FJN = {
+				all_core = {
+					remove_core = FJN
+				}
+			}
+			GMJ = {
+				all_core = {
+					remove_core = GMJ
+				}
+			}
+			GNG = {
+				all_core = {
+					remove_core = GNG
+				}
+			}
+			GXI = {
+				all_core = {
+					remove_core = GXI
+				}
+			}
+			HNN = {
+				all_core = {
+					remove_core = HNN
+				}
+			}
+			HUI = {
+				all_core = {
+					remove_core = HUI
+				}
+			}
+			MCK = {
+				all_core = {
+					remove_core = MCK
+				}
+			}
+			SXI = {
+				all_core = {
+					remove_core = SXI
+				}
+			}
+			SZC = {
+				all_core = {
+					remove_core = SZC
+				}
+			}
+			TAI = {
+				all_core = {
+					remove_core = TAI
+				}
+			}
+			XBI = {
+				all_core = {
+					remove_core = XBI
+				}
+			}
+			XIN = {
+				all_core = {
+					remove_core = XIN
+				}
+			}
+			YNN = {
+				all_core = {
+					remove_core = YNN
+				}
+			}
+			PGG = {
+				all_core = {
+					remove_core = PGG
+				}
+			}
+			UYG = {
+				all_core = {
+					remove_core = UYG
+				}
+			}
+			NIA = {
+				all_core = {
+					remove_core = NIA
+				}
+			}
+			CHI = {
+				all_core = {
+					remove_core = ENG
+					remove_core = POR
+					remove_core = JAP
+					remove_core = RUS
+					remove_core = FRA
+					remove_core = GER
+					remove_core = ITA
+					remove_core = SPA
+				}
+			}
+		}
+	}
+}

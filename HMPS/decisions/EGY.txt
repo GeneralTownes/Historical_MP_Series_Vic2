@@ -1,0 +1,101 @@
+political_decisions = {
+	
+	enact_muhammad_alis_reforms = {
+		picture = enact_muhammad_alis_reforms
+		potential = {
+			tag = EGY
+			civilized = no
+			NOT = { 
+				has_country_flag = muhammad_alis_reforms_enacted
+				has_global_flag = egypt_submitted_to_ottomans
+			}
+		}
+		allow = { vassal_of = TUR }
+		
+		effect = {
+			set_country_flag = muhammad_alis_reforms_enacted
+			prestige = 5
+			treasury = 5000
+			small_arms = 20
+			regular_clothes = 50
+			military_reform = yes_foreign_navies
+			activate_technology = clipper_design
+			military_reform = yes_foreign_training
+			add_country_modifier = { name = muhammad_alis_reforms duration = -1 }
+			any_pop = {
+				limit = { is_primary_culture = yes }
+				consciousness = 4
+				ideology = {
+					value = reactionary
+					factor = 0.2
+				}
+			}
+		}
+	}
+	
+	enact_ismail_pasha_reforms = {
+		picture = ismail_pasha
+		potential = {
+			tag = EGY
+			civilized = no
+			is_canal_enabled = 2
+			NOT = { has_country_flag = enact_ismail_pasha_reforms }
+		}
+		allow = {
+			war = no
+		}
+		
+		effect = {
+			set_country_flag = enact_ismail_pasha_reforms
+			prestige = 15
+			#Bonus for AI
+			random_owned = {
+				limit = {
+					owner = {
+						ai = yes 
+						vassal_of = TUR
+					}
+				}
+				TUR = { 
+					release = EGY 
+					release_vassal = EGY 
+				}
+			}
+			add_country_modifier = {
+				name = ismail_pasha_reforms
+				duration = 6205
+			}
+			any_pop = {
+				limit = { is_primary_culture = yes }
+				consciousness = -2
+			}
+		}
+	}
+	
+	reclaim_hejaz = {
+		picture = the_holy_city
+		potential = {
+			exists = HDJ
+			tag = EGY
+		}
+		
+		allow = {
+			war = no 
+			owns = 913
+			HDJ = {
+				ai = yes
+				exists = yes
+				vassal_of = THIS
+			}
+			state_n_government = 1
+		}
+		
+		effect = {
+			prestige = 5
+			badboy = 2
+			inherit = HDJ
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+}

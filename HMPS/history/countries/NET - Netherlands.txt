@@ -54,8 +54,6 @@ upper_house = {
 }
 
 decision = literacy_NET
-decision = end_the_javanese_sultanates
-decision = the_short_declaration
 
 # Technologies
 post_napoleonic_thought = 1

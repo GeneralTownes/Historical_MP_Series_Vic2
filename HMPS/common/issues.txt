@@ -512,24 +512,12 @@ political_reforms = {
 			rules = { culture_voting = yes }
 			global_assimilation_rate = 0.08
 			global_immigrant_attract = 0.10
-			#allow = {
-			#	has_country_flag = nat_frat_invented
-			#	slavery = no_slavery
-			#}
 		}
 		all_voting_pops = {
 			rules = { all_voting = yes }
 			non_accepted_pop_militancy_modifier = -0.01
 			global_assimilation_rate = 0.2
 			global_immigrant_attract = 0.50
-			#allow = {
-			#	has_country_flag = revolution_n_counter_researched
-			#	NOT = { any_state = { is_colonial = yes } }
-			#	vote_franschise = universal_voting
-			#	press_rights = free_press
-			#	public_meetings = yes_meeting
-			#	citizenship_policy = full_citizenship
-			#}
 		}
 	}
 	

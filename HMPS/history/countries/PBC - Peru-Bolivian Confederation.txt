@@ -39,7 +39,6 @@ centralization = federalism
 colonial_policy = no_colonies 
 
 set_country_flag = catholic_country
-decision = treaty_of_la_paz
 
 ruling_party = PEU_conservative
 upper_house = {

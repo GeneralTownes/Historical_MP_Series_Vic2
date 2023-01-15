@@ -840,7 +840,7 @@ political_decisions = {
 	}
 	
 	form_india = {
-	picture = form_india
+		picture = form_india
 		potential = {
 			OR = {
 				is_culture_group = south_asian

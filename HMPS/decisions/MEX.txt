@@ -38,48 +38,4 @@ political_decisions = {
 			}
 		}
 	}
-	
-	mexico_usa_agreement = {
-        picture = us_mex_peace
-        potential = {
-			tag = USA
-            has_global_flag = mexican_american_war
-            MEX = {
-                is_disarmed = yes
-                truce_with = THIS
-            }
-            NOT = { has_global_flag = US_MEX_peace_agreement }
-			NOT = { has_global_flag = mexican_victory }
-        }
-        allow = { }
-        effect = {
-			country_event = 123560
-			set_global_flag = US_MEX_peace_agreement
-        }
-        ai_will_do = {
-            factor = 1
-        }
-    }
-    usa_mexico_agreement = {
-        picture = us_mex_peace
-        potential = {
-            tag = MEX
-            has_global_flag = mexican_american_war
-			USA = {
-				is_disarmed = yes
-				truce_with = THIS
-			}
-            NOT = { has_global_flag = MEX_US_peace_agreement }
-			NOT = { has_global_flag = US_MEX_peace_agreement }
-        }
-        allow = { }
-        effect = {
-            country_event = 123573
-            set_global_flag = MEX_US_peace_agreement
-            set_global_flag = mexican_victory
-        }
-        ai_will_do = {
-            factor = 1
-        }
-    }
 }
