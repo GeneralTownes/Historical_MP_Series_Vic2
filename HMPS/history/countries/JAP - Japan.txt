@@ -80,6 +80,8 @@ mechanized_mining = 1
 late_enlightenment_philosophy = 1
 basic_chemistry = 1
 bronze_muzzle_loaded_artillery = 1
+private_banks = 1
+stock_exchange = 1
 
 # Inventions
 ##bottling_process = yes

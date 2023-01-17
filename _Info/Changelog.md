@@ -104,6 +104,10 @@ Everything else is our own (as far as I remember).
 - Republic & Con. Monarchy have very slightly reduced rates
 - Fully funded UBI has a very slightly reduced rate
 
+## Technology
+#### Inventions
+- Biologism 100% chance
+
 ## Economic
 Overseas penalty increased to 0.025 per provinces
 #### Goods
@@ -158,6 +162,12 @@ Peacetime mob disabled
 - Non-Chinese concession ~14-17
 - Free people / allied core ~21
 - Monroe doctrine / Oriental crises ~14
+#### Truces
+- Trucebreaking gives 0 infamy
+- Trucebreaking gives -100 prestige
+#### Relations
+- Nothing costs diplo points aside from increasing/decreasing relations
+- No prestige cost to dishonouring calls
 
 ## Military
 War score from battles is capped at 25
@@ -192,6 +202,7 @@ Soldier pops concentrate in state capitals, requires 3k soldier pops for 1st bri
 
 ## Flava
 Many nations no longer need (only) GP for flava, or high prestige. War policy requirements relaxed, and can't form nations on players
+German states only get all German cultures on forming Germany
 #### Europe
 - UK: Can revolt to the UFB, can keep Irish accepted, annexes the EIC at the start 
 - FRA: Can take empire flava as the Republic

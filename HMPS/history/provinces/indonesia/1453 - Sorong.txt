@@ -1,5 +1,5 @@
-owner = MAL
-controller = MAL
+owner = NET
+controller = NET
 add_core = MAL
 add_core = PPG
 trade_goods = fish
