@@ -259,6 +259,7 @@ country_event = {
 							liberal = 20
 							socialist = 15
 						}
+						radical = 20
 						nationalvalue = nv_liberty
 					}
 				}
@@ -281,7 +282,10 @@ country_event = {
 					OR = {
 						socialist = 35
 						AND = {
-							liberal = 15
+							OR = {
+								liberal = 15
+								radical = 15
+							}
 							socialist = 20
 						}
 						nationalvalue = nv_equality

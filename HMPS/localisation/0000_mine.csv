@@ -494,7 +494,7 @@ north_east_corridor_cores_desc;Since integration of the New Englanders and accep
 can_to_uk_title;Restore our United Kingdom;;;;;;;;;;;;;
 can_to_uk_desc;After our victory over the republicans, we can proclaim once more the United Kingdom of Great Britain and Ireland.;;;;;;;;;;;;;
 EVTNAME7777919;Our Common Values;;;;;;;;;;;;;
-EVTDESC7777919;With the reorganisation into the Republic, we will now set out the ideals and character of our nation in the new constitution and subsequent laws. We are restricted by the views of our citizens, and technology. How shall we focus ourselves? \n\n §YLiberty:§! 35 liberals in upper house / 20 liberal & 15 socialist / NV liberty. \n §REquality:§! 35 socialist in the upper house / 20 socialist & 15 liberal / NV socialist §G\n Order:§! Always available \n §BProductivity:§! All 1836 commerce techs / NV productivity §!;;;;;;;;;;;;;
+EVTDESC7777919;With the reorganisation into the Republic, we will now set out the ideals and character of our nation in the new constitution and subsequent laws. We are restricted by the views of our citizens, and technology. How shall we focus ourselves? \n\n §YLiberty:§! 35 liberals in upper house / 20 radicals / 20 liberal & 15 socialist / NV liberty. \n §REquality:§! 35 socialist in the upper house / 20 socialist & 15 liberal or radical / NV socialist §G\n Order:§! Always available \n §BProductivity:§! All 1836 commerce techs / NV productivity §!;;;;;;;;;;;;;
 EVTOPTA7777919;Liberty is paramount;;;;;;;;;;;;;
 EVTOPTB7777919;Equality is whats fair;;;;;;;;;;;;;
 EVTOPTC7777919;Order will reign;;;;;;;;;;;;;

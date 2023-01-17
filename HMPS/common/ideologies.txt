@@ -586,7 +586,7 @@ liberal_group = {
 			}
 		}
 		remove_social_reform = {
-			base = 0.4
+			base = 0
 			modifier = {
 				factor = 0.17
 				has_country_flag = executive_activated
