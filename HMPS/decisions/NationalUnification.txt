@@ -654,7 +654,6 @@ political_decisions = {
 						tag = DNB
 						tag = BAN
 						tag = UBD
-						tag = VLG
 						tag = SIE
 					}
 					OR = {

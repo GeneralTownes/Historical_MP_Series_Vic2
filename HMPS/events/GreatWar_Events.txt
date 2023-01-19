@@ -3357,7 +3357,6 @@ country_event = {
 					tag = CHY
 					tag = KRL
 					tag = ABK
-					tag = VLG
 				}
 				any_core = { owned_by = THIS }
 				exists = no

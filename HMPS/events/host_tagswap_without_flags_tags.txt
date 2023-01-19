@@ -64,27 +64,6 @@ country_event = {
 		random_country = {
 			limit = {
 				tag = FROM
-				tag = NZF
-			}
-			THIS = { change_tag_no_core_switch = NZF }
-		}
-		random_country = {
-			limit = {
-				tag = FROM
-				tag = FAS
-			}
-			THIS = { change_tag_no_core_switch = FAS }
-		}
-		random_country = {
-			limit = {
-				tag = FROM
-				tag = FCA
-			}
-			THIS = { change_tag_no_core_switch = FCA }
-		}
-		random_country = {
-			limit = {
-				tag = FROM
 				tag = ULA
 			}
 			THIS = { change_tag_no_core_switch = ULA }
@@ -116,13 +95,6 @@ country_event = {
 				tag = ACA
 			}
 			THIS = { change_tag_no_core_switch = ACA }
-		}
-		random_country = {
-			limit = {
-				tag = FROM
-				tag = VIC
-			}
-			THIS = { change_tag_no_core_switch = VIC }
 		}
 		random_country = {
 			limit = {
@@ -183,13 +155,6 @@ country_event = {
 		random_country = {
 			limit = {
 				tag = FROM
-				tag = MIT
-			}
-			THIS = { change_tag_no_core_switch = MIT }
-		}
-		random_country = {
-			limit = {
-				tag = FROM
 				tag = AOG
 			}
 			THIS = { change_tag_no_core_switch = AOG }
@@ -242,13 +207,6 @@ country_event = {
 				tag = URP
 			}
 			THIS = { change_tag_no_core_switch = URP }
-		}
-		random_country = {
-			limit = {
-				tag = FROM
-				tag = VLG
-			}
-			THIS = { change_tag_no_core_switch = VLG }
 		}
 		random_country = {
 			limit = {
@@ -3616,13 +3574,6 @@ country_event = {
 				tag = UCA
 			}
 			THIS = { change_tag_no_core_switch = UCA }
-		}
-		random_country = {
-			limit = {
-				tag = FROM
-				tag = NAF
-			}
-			THIS = { change_tag_no_core_switch = NAF }
 		}
 		random_country = {
 			limit = {

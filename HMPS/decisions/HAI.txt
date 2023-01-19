@@ -150,33 +150,6 @@ political_decisions = {
 			factor = 1
 		}
 	}
-	pan_africanism_HAI = {
-		picture = black_belt
-		potential = {
-			tag = HAI
-			NOT = { has_country_flag = pan_africanism_HAI }
-		}
-		allow = {
-			war = no
-			revolution_n_counterrevolution = 1
-			citizenship_policy = full_citizenship 
-		}
-		effect = {
-			set_country_flag = pan_africanism_HAI
-			prestige = 10
-			add_accepted_culture = afro_american
-			add_accepted_culture = afro_caribbean
-			USA_139 = { add_core = NAF  } #Louisiana
-			USA_194 = { add_core = NAF  } #Mississippi
-			USA_196 = { add_core = NAF  } #Alabama
-			USA_200 = { add_core = NAF  } #Florida
-			USA_201 = { add_core = NAF  } #Georgia
-			USA_205 = { add_core = NAF  } #South Carolina
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
 	HAI_ULA_claim = {
 		picture = new_france_louisiana
 		potential = {

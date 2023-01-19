@@ -125,8 +125,6 @@ disable_options_title;§PHide Setup Options§!;;;;;;;;;;;;;
 disable_options_desc;This will hide all optional tweaks to vanilla HFM. You still have until 1837 to change your mind though.;;;;;;;;;;;;;
 option_disable_anarcho_liberals_title;§POption: Disable Anarchist Ideology§!;;;;;;;;;;;;;
 option_disable_anarcho_liberals_desc;This tweak will stop anarchist ideology from spawning. Some people think they are too unrealistic for them, so they might want to disable it.;;;;;;;;;;;;;
-option_disable_starting_party_loyalty_title;§POption: Remove Starting Party Loyalty§!;;;;;;;;;;;;;
-option_disable_starting_party_loyalty_desc;This option will remove all starting party loyalty.;;;;;;;;;;;;;
 option_disable_hpm_crisis_title;§POption: Enable Crisis from the Start§!;;;;;;;;;;;;;
 option_disable_hpm_crisis_desc;In HPM, crisis only start after 1870 and after Revolution and Counter-revolution is researched and an event fires. This is to stop stuff like free Ireland in 1840 because of the militancy that the famine generates, among other weird crisis. Selecting this option will remove these restrictions and make crisis happen from the start of the game, like it happens in Vanilla Victoria 2.;;;;;;;;;;;;;
 option_enable_easter_eggs_title;§POption: Enable Easter Eggs§!;;;;;;;;;;;;;
