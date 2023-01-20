@@ -979,6 +979,9 @@ political_decisions = {
 		
 		effect = {
 			set_global_flag = german_rename_limburg
+			
+			release_vassal = LUX
+			
 			any_pop = {
 				limit = {
 					OR = {
