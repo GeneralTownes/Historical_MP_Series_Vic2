@@ -5,12 +5,8 @@ trade_goods = grain
 life_rating = 35
 
 party_loyalty = {
-	ideology = conservative
-	loyalty_value = 5
 }
 party_loyalty = {
-	ideology = liberal
-	loyalty_value = 15
 }
 
 
@@ -21,8 +17,6 @@ party_loyalty = {
 #}
 1861.1.1 = {
 	party_loyalty = {
-	ideology = conservative
-	loyalty_value = 10
 	}
 	controller = CSA
 	owner = CSA

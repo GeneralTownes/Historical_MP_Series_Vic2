@@ -8,12 +8,8 @@ railroad = 1
 fort = 1
 naval_base = 1
 party_loyalty = {
-	ideology = conservative
-	loyalty_value = 13
 }
 party_loyalty = {
-	ideology = liberal
-	loyalty_value = 12
 }
 state_building = {
 	level = 1
@@ -49,8 +45,6 @@ state_building = {
 1861.1.1 = {
 	naval_base = 3
 	party_loyalty = {
-	ideology = liberal
-	loyalty_value = 17
 	}
 	state_building = {
 		level = 1

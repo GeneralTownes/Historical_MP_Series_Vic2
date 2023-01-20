@@ -5,12 +5,8 @@ trade_goods = cattle
 life_rating = 35
 
 party_loyalty = {
-	ideology = conservative
-	loyalty_value = 15
 }
 party_loyalty = {
-	ideology = liberal
-	loyalty_value = 12
 }
 
 1861.1.1 = {
@@ -26,8 +22,6 @@ party_loyalty = {
 	}
 
 	party_loyalty = {
-		ideology = liberal
-		loyalty_value = 7
 	}
 }
 1861.1.1 = { railroad = 3 }
