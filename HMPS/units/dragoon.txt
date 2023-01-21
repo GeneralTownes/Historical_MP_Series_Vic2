@@ -29,7 +29,6 @@ dragoon = {
 		canned_food = 10
 		regular_clothes = 10
 		wine = 10
-		pharmaceuticals = 5
 		shoes = 10
 	}
 	
@@ -38,6 +37,7 @@ dragoon = {
 		small_arms = 0.02
 		ammunition = 0.125
 		canned_food = 0.12
+		pharmaceuticals = 0.01
 	}
 	
 

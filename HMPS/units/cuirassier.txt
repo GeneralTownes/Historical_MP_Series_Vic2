@@ -30,7 +30,6 @@ cuirassier = {
 		canned_food = 10
 		regular_clothes = 10
 		steel = 20
-		pharmaceuticals = 5
 		shoes = 10
 	}
 	
@@ -39,6 +38,7 @@ cuirassier = {
 		small_arms = 0.025
 		ammunition = 0.083
 		canned_food = 0.09
+		pharmaceuticals = 0.01
 	}
 	
 

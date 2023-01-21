@@ -47,7 +47,6 @@ colonial_policy = no_colonies
 
 set_country_flag = protestant_country
 
-set_country_flag = post_colonial_country
 
 ruling_party = CMR_reactionary
 upper_house = {

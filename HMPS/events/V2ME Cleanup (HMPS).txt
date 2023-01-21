@@ -368,7 +368,16 @@ country_event = {
 	option = {
 		name = "Checking..."
 		
-		#custom flags for HMPS assimilation monthly update
+		#capital supply 
+		any_country = {
+			limit = { exists = yes }
+			capital_scope = { add_province_modifier = { name = capital_mobilisation duration = -1 } }
+			any_owned = {
+				limit = { is_capital = no }
+				remove_province_modifier = capital_mobilisation
+			}
+		}
+		
 		
 		#germany
 		random_owned = {

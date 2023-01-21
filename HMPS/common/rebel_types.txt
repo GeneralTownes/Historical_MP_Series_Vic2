@@ -5364,12 +5364,6 @@ native_rebels = {
 		factor = 3
 		modifier = {
 			factor = 0
-			country = {
-				NOT = { has_country_flag = post_colonial_country }
-			}
-		}
-		modifier = {
-			factor = 0
 			NOT = {
 				OR = {
 					is_culture_group = arab

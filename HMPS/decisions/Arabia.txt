@@ -215,7 +215,6 @@ political_decisions = {
 	form_arab_union = {
 		picture = form_arab_union
 		potential = {
-			NOT = { has_country_flag = post_colonial_country }
 			OR = {
 				primary_culture = mashriqi
 				primary_culture = bedouin
@@ -275,7 +274,6 @@ political_decisions = {
 	form_maghreb = {
 		picture = form_maghreb
 		potential = {
-			NOT = { has_country_flag = post_colonial_country }
 			primary_culture = maghrebi
 			NOT = { exists = MGH }
 			NOT = { has_global_flag = maghreb_formed }

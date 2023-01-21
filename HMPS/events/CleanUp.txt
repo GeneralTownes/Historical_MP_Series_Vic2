@@ -716,7 +716,6 @@ country_event = {
 			capital_scope = { continent = south_west_africa }
 			capital_scope = { continent = asia }
 		}
-		NOT = { has_country_flag = post_colonial_country }
 	}
 	
 	mean_time_to_happen = { months = 1 }

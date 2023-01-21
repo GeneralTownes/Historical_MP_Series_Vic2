@@ -5,7 +5,6 @@ political_decisions = {
 			capital_scope = { continent = europe }
 			primary_culture = south_german
 			NOT = {
-				has_country_flag = post_colonial_country
 				exists = SGF
 				exists = GER
 				tag = DNB
@@ -69,7 +68,6 @@ political_decisions = {
 					NOT = { is_core = THIS }
 					any_core = {
 						primary_culture = south_german
-						NOT = { has_country_flag = post_colonial_country }
 					}
 				}
 				add_core = SGF
@@ -162,7 +160,6 @@ political_decisions = {
 					primary_culture = south_german
 					in_sphere = THIS
 					NOT = {
-						has_country_flag = post_colonial_country
 						tag = THIS
 						tag = KUK
 						tag = AUS
@@ -289,7 +286,6 @@ political_decisions = {
 						is_core = AUS
 						is_core = KUK
 					}
-					NOT = { has_country_flag = post_colonial_country }
 				}
 				add_core = SGF
 			}
@@ -314,7 +310,6 @@ political_decisions = {
 			primary_culture = north_german
 			capital_scope = { continent = europe }
 			NOT = {
-				has_country_flag = post_colonial_country
 				exists = GER
 				exists = NGF
 			}
@@ -351,7 +346,6 @@ political_decisions = {
 					NOT = { is_core = THIS }
 					any_core = {
 						primary_culture = north_german
-						NOT = { has_country_flag = post_colonial_country }
 					}
 				}
 				add_core = NGF
@@ -372,7 +366,6 @@ political_decisions = {
 						exists = no
 					}
 					NOT = { tag = THIS }
-					NOT = { has_country_flag = post_colonial_country }
 					OR = {
 						is_vassal = no
 						vassal_of = THIS
@@ -410,7 +403,6 @@ political_decisions = {
 			culture_has_union_tag = yes
 			NOT = {
 				cultural_union = { exists = yes }
-				has_country_flag = post_colonial_country
 				is_culture_group = germanic
 				is_culture_group = scandinavian
 				is_culture_group = italian
@@ -456,7 +448,6 @@ political_decisions = {
 			any_country = {
 				limit = {
 					NOT = { is_greater_power = yes }
-					NOT = { has_country_flag = post_colonial_country }
 					is_culture_group = THIS
 					in_sphere = THIS
 					OR = {
@@ -590,7 +581,6 @@ political_decisions = {
 					NOT = { tag = PRU }
 					NOT = { tag = BAN }
 					NOT = { tag = UBD }
-					NOT = { has_country_flag = post_colonial_country }
 					OR = {
 						all_core = { owned_by = THIS }
 						tag = NGF
@@ -660,7 +650,6 @@ political_decisions = {
 						is_vassal = no
 						vassal_of = THIS
 					}
-					NOT = { has_country_flag = post_colonial_country }
 				}
 				country_event = 11106
 			}
@@ -730,7 +719,6 @@ political_decisions = {
 			is_culture_group = italian
 			capital_scope = { continent = europe }
 			NOT = {
-				has_country_flag = post_colonial_country
 				exists = ITA
 			}
 		}
@@ -794,7 +782,6 @@ political_decisions = {
 							primary_culture = north_italian
 							primary_culture = south_italian
 						}
-						NOT = { has_country_flag = post_colonial_country }
 					}
 				}
 				add_core = ITA
@@ -810,7 +797,6 @@ political_decisions = {
 						is_vassal = no
 						vassal_of = THIS
 					}
-					NOT = { has_country_flag = post_colonial_country }
 				}
 				country_event = 11106
 			}
@@ -850,7 +836,6 @@ political_decisions = {
 			NOT = { tag = NEP }
 			NOT = { has_country_flag = mughal_reborn }
 			NOT = {
-				has_country_flag = post_colonial_country
 				exists = HND
 			}
 		}
@@ -916,7 +901,6 @@ political_decisions = {
 					NOT = { is_greater_power = yes }
 					is_culture_group = south_asian
 					in_sphere = THIS
-					NOT = { has_country_flag = post_colonial_country }
 					OR = {
 						is_vassal = no
 						vassal_of = THIS

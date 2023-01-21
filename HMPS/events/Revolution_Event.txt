@@ -1444,7 +1444,6 @@ country_event = {
 		clr_country_flag = wants_to_unify
 		clr_country_flag = does_not_want_to_unify
 		clr_country_flag = rebels_in_capital
-		clr_country_flag = post_colonial_country
 		random_owned = {
 			limit = { owner = { tag = MLI } }
 			owner = { primary_culture = fulbe }
@@ -2835,7 +2834,6 @@ province_event = {
 	trigger = {
 		owner = {
 			war = no
-			has_country_flag = post_colonial_country
 			NOT = {
 				is_culture_group = arab
 				is_culture_group = west_african

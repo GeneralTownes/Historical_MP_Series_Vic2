@@ -26,7 +26,6 @@ monitor = {
 		artillery = 12
 		canned_food = 20
 		regular_clothes = 6
-	#	pharmaceuticals = 5
 	}
 	min_port_level = 3
 	limit_per_port = -1

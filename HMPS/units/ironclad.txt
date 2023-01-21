@@ -29,7 +29,6 @@ ironclad = {
 		artillery = 10
 		canned_food = 20
 		regular_clothes = 6
-	#	pharmaceuticals = 5
 	}
 	min_port_level = 2
 	limit_per_port = 16

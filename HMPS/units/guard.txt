@@ -23,7 +23,6 @@ guard = {
 		canned_food = 10
 		liquor = 10
 		luxury_clothes = 5
-		pharmaceuticals = 10
 		shoes = 15
 	}
 	
@@ -33,6 +32,7 @@ guard = {
 		canned_food = 0.15
 		ammunition = 0.17
 		explosives = 0.01
+		pharmaceuticals = 0.01
 	}
 	
 

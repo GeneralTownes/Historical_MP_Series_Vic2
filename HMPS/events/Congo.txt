@@ -238,7 +238,6 @@ country_event = {
 		set_variable = { which = congo_destiny value = 0 }
 		CNG = {
 			set_country_flag = turn_officers_in_aristocrats
-			set_country_flag = post_colonial_country
 			primary_culture = THIS
 			add_accepted_culture = bakongo
 			1983 = { state_scope = { any_pop = { limit = { OR = { type = officers type = aristocrats } } pop_type = labourers } } }
@@ -335,7 +334,6 @@ country_event = {
 		any_country = { limit = { has_country_flag = yes_to_congo } clr_country_flag = yes_to_congo }
 		CNG = {
 			primary_culture = THIS
-			set_country_flag = post_colonial_country
 			add_accepted_culture = bakongo
 			1983 = { state_scope = { any_pop = { limit = { OR = { type = officers type = aristocrats } } pop_type = labourers } } }
 			random_owned = { limit = { is_capital = yes NOT = { has_building = fort } } fort = 1 }

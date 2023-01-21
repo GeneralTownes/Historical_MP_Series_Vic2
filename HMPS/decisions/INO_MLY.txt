@@ -147,7 +147,6 @@ political_decisions = {
 
 		effect = {
 			set_global_flag = indonesia_formed
-			clr_country_flag = post_colonial_country
 			prestige = 20
 			INO = { tech_school = traditional_academic }
 			all_core = {
@@ -692,7 +691,6 @@ political_decisions = {
 			primary_culture = lao
 			NOT = { exists = LXA }
 			NOT = { has_country_flag = laos_formed }
-			NOT = { has_country_flag = post_colonial_country }
 		}
 		
 		allow = {

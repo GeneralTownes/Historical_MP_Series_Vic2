@@ -150,63 +150,13 @@ country_event = {
 		name = "EVT37237OPTA"
 		set_country_flag = eiffel_tower_built
 		425 = {
-				set_province_flag = eiffel_tower_built
-				add_province_modifier = {
-					name = the_eiffel_tower
-					duration = -1
-				}
+			set_province_flag = eiffel_tower_built
+			add_province_modifier = {
+				name = the_eiffel_tower
+				duration = -1
 			}
-			prestige = 20
 		}
-	}
-	
-country_event = {
-
-	id = 37238
-	title = "EVTNAME37238" #France finishes off Algeria
-	desc = "EVTDESC37238"
-	picture = "french_fight_algeria"
-
-	fire_only_once = yes
-	
-	trigger = {
-		primary_culture = french
-		is_greater_power = yes
-		capital = 425
-		owns = 1700
-		OR = {
-			government = hms_government
-			government = absolute_monarchy
-			government = prussian_constitutionalism
-			}
-		NOT = {
-			year = 1870
-			owns = 1705 
-			}
-		ALD = {
-			exists = yes
-			ai = yes
-			civilized = no
-		}
-	}
-		
-	mean_time_to_happen = { days = 15 }
-	
-	immediate = {
-		ALD = { capital =  1713 }
-		set_country_flag = invasion_of_algeria
-	}
-	
-	option = {
-		name = "EVT37238OPTA"
-		badboy = 3
-		casus_belli = { target = ALD type = demand_concession_casus_belli months = 30 }
-		ai_chance = { factor = 0.99 }
-	}
-	
-	option = {
-		name = "EVT37238OPTB"
-		prestige = -5
-		ai_chance = { factor = 0.01 }
+		prestige = 20
 	}
 }
+

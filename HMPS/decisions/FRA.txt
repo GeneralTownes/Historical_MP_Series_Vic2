@@ -250,54 +250,6 @@ political_decisions = {
 		
 		ai_will_do = { factor = 1 }
 	}
-	
-	haitian_integration = {
-		picture = golden_haiti
-		potential = {
-			tag = FRA
-			NOT = { has_country_flag = integrated_haiti }
-		}
-		allow = {
-			HAI = { all_core = { owned_by = THIS } }
-			biologism = 1
-			slavery = no_slavery
-			vote_franschise = universal_voting
-			OR = {
-				citizens_rights = culture_voting_only
-				citizens_rights = all_voting_pops
-			}
-		}
-		effect = {
-			any_pop = {
-				limit = { culture = afro_antillean }
-				consciousness = -4
-				militancy = -4
-			}
-			GLP = {
-				all_core = {
-					add_core = THIS
-				}
-			}
-			MTQ = {
-				all_core = {
-					add_core = THIS
-				}
-			}
-			HAI = {
-				all_core = {
-					limit = {
-						NOT = {
-							is_core = DOM
-						}
-					}
-					add_core = THIS 
-				} 
-			}
-			add_accepted_culture = afro_antillean
-			FRA = { set_country_flag = integrated_haiti }
-		}
-		ai_will_do = { factor = 1 }
-	}
 
 	walloon_autonomy = {
 		picture = become_wallonia

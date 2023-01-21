@@ -5,7 +5,6 @@ political_decisions = {
 			is_culture_group = baltic
 			NOT = { exists = UBD }
 			NOT = { has_global_flag = baltic_states_formed }
-			NOT = { has_country_flag = post_colonial_country }
 		}
 
 		allow = {

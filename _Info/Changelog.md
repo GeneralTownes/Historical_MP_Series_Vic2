@@ -110,6 +110,9 @@ Everything else is our own (as far as I remember).
 
 ## Economic
 Overseas penalty increased to 0.025 per provinces
+#### Policies
+- LF now 10% output and tech buffs
+- Free Trade gives 5% output and small tech buffs
 #### Goods
 - Copper (RGO): Used to make bronze and in electrical goods
 - Tin (RGO): Used to make bronze
@@ -126,6 +129,7 @@ Overseas penalty increased to 0.025 per provinces
 - Interwar shipyard (Interwar Hulls): Steel, Coal, Machine Parts, Bronze
 - Synthetic Rubber: Oil
 - Nitrate Factory (Sulphur): Coal, Iron
+- Machine Parts factories built only with RGOs (incase of parts crash)
 #### Tech
 - Power: Grants RGO size increases
 - Metallurgy: Huge output buffs

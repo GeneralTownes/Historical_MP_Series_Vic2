@@ -485,7 +485,6 @@ province_event = {
 				ai = yes
 				civilized = yes
 				NOT = { tag = THIS }
-				NOT = { has_country_flag = post_colonial_country }
 				OR = {
 					is_cultural_union = no
 					exists = yes
@@ -599,7 +598,6 @@ province_event = {
 				tag = THIS
 				is_culture_group = THIS
 				has_country_modifier = recent_crisis
-				has_country_flag = post_colonial_country
 			}
 			OR = {
 				is_cultural_union = no

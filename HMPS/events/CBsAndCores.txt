@@ -2029,7 +2029,6 @@ province_event = {
 		owned_by = THIS
 		is_colonial = no
 		owner = {
-			civilized = yes
 			NOT = { citizens_rights = primary_culture_only }
 		}
 	}

@@ -10,6 +10,8 @@ party_issues = {
 		free_trade = {
 			max_tariff = 0.25
 			min_tariff = -1
+			commerce_tech_research_bonus = 0.05
+			factory_output = 0.05
 		}
 	}
 	economic_policy = {
@@ -1114,57 +1116,30 @@ economic_reforms = {
 	}
 	
 	research_reform = {
-	  next_step_only = yes
-		no_education_reform = {
+		next_step_only = yes
+		no_western_science = {
 			global_pop_militancy_modifier = -0.01
 	
 		}
-		yes_education_reform = {
-			technology_cost = 5000 #was 10000
+		yes_western_science = {
+			technology_cost = 5000
 			civilization_progress_modifier = 0.05
 			research_points = 0.05
 			
 			on_execute = {
 				effect = {
-				activate_technology = malthusian_thought
-				set_country_flag = indc_flag
-				
-					any_pop = {
-						scaled_militancy = {
-							ideology = liberal
-							factor = 0.25 #was 0.5
-						}
-						scaled_militancy = {
-							ideology = conservative
-							factor = 0.5 #was 1
-						}
-						scaled_militancy = {
-							ideology = reactionary
-							factor = 1.5 #was 3
-						}
-					}
-				}
-			}
-		}
-		education_reform_two = { #new
-			technology_cost = 5000
-			civilization_progress_modifier = 0.1
-			research_points = 0.1
-			
-			on_execute = {
-				effect = {
-					activate_technology = positivism
-					activate_technology = enlightenment_thought
-					set_country_flag = indc2_flag
+					activate_technology = late_enlightenment_philosophy
+					activate_technology = basic_chemistry
+					set_country_flag = edu_flag
 					
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
-							factor = 0.25
+							factor = 0.5
 						}
 						scaled_militancy = {
 							ideology = conservative
-							factor = 0.5
+							factor = 1
 						}
 						scaled_militancy = {
 							ideology = reactionary
@@ -1173,7 +1148,35 @@ economic_reforms = {
 					}
 				}
 			}
-		}	
+		}
+		western_science_two = {
+			technology_cost = 5000
+			civilization_progress_modifier = 0.10
+			research_points = 0.1
+			
+			
+			on_execute = {
+				effect = {
+					activate_technology = medicine
+					set_country_flag = edu2_flag
+					
+					any_pop = {
+						scaled_militancy = {
+							ideology = liberal
+							factor = 0.5
+						}
+						scaled_militancy = {
+							ideology = conservative
+							factor = 1
+						}
+						scaled_militancy = {
+							ideology = reactionary
+							factor = 1.5
+						}
+					}
+				}
+			}
+		}
 	}
 	
 	firearms_production = {
@@ -1422,57 +1425,56 @@ economic_reforms = {
 	}	
 	education_reform = {
 	    next_step_only = yes
-		no_western_science = {
+		no_education_reform = {
 			global_pop_militancy_modifier = -0.01
 	
 		}
-		yes_western_science = {
-			technology_cost = 5000
+		yes_education_reform = {
+			technology_cost = 5000 #was 10000
 			civilization_progress_modifier = 0.05
 			research_points = 0.05
 			
 			on_execute = {
 				effect = {
-					activate_technology = late_enlightenment_philosophy
-					activate_technology = basic_chemistry
-					set_country_flag = edu_flag
-					
+				activate_technology = malthusian_thought
+				set_country_flag = indc_flag
+				
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
-							factor = 0.5
+							factor = 0.25 #was 0.5
 						}
 						scaled_militancy = {
 							ideology = conservative
-							factor = 1
+							factor = 0.5 #was 1
 						}
 						scaled_militancy = {
 							ideology = reactionary
-							factor = 1.5
+							factor = 1.5 #was 3
 						}
 					}
 				}
 			}
 		}
-		western_science_two = {
+		education_reform_two = { #new
 			technology_cost = 5000
-			civilization_progress_modifier = 0.10
+			civilization_progress_modifier = 0.1
 			research_points = 0.1
-			
 			
 			on_execute = {
 				effect = {
-					activate_technology = medicine
-					set_country_flag = edu2_flag
+					activate_technology = positivism
+					activate_technology = enlightenment_thought
+					set_country_flag = indc2_flag
 					
 					any_pop = {
 						scaled_militancy = {
 							ideology = liberal
-							factor = 0.5
+							factor = 0.25
 						}
 						scaled_militancy = {
 							ideology = conservative
-							factor = 1
+							factor = 0.5
 						}
 						scaled_militancy = {
 							ideology = reactionary

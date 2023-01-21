@@ -435,7 +435,6 @@ political_decisions = {
 				value = 200
 			}	
 			VNS = {
-				set_country_flag = post_colonial_country
 				government = colonial_company
 			}
 			create_alliance = VNS
@@ -551,8 +550,7 @@ political_decisions = {
 				who = VNG
 				value = 200
 			}	
-			VNG = { 
-				set_country_flag = post_colonial_country
+			VNG = {
 				government = colonial_company
 			}
 			create_alliance = VNG
@@ -644,8 +642,7 @@ political_decisions = {
 				who = VOP
 				value = 200
 			}	
-			VOP = { 
-				set_country_flag = post_colonial_country
+			VOP = {
 				government = colonial_company
 			}
 			create_alliance = VOP
@@ -713,8 +710,7 @@ political_decisions = {
 				who = CGC
 				value = 200
 			}	
-			CGC = { 
-				set_country_flag = post_colonial_country
+			CGC = {
 				government = colonial_company
 			}
 			create_alliance = CGC
@@ -853,8 +849,7 @@ political_decisions = {
 				who = VLP
 				value = 200
 			}	
-			VLP = { 
-				set_country_flag = post_colonial_country
+			VLP = {
 				government = colonial_company
 			}
 			create_alliance = VLP

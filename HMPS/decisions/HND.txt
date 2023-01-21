@@ -54,7 +54,6 @@ political_decisions = {
 			}
 			NOT = { has_global_flag = dravidistan_formed }
 			NOT = { tag = HND }
-			NOT = { has_country_flag = post_colonial_country }
 		}
 
 		allow = {
@@ -175,7 +174,6 @@ political_decisions = {
 			NOT = { has_global_flag = rajputana_formed }
 			NOT = { tag = HND }
 			NOT = { has_country_flag = mughal_reborn }
-			NOT = { has_country_flag = post_colonial_country }
 		}
 
 		allow = {
@@ -519,7 +517,6 @@ political_decisions = {
 			primary_culture = baluchi
 			NOT = { has_global_flag = baluchistan_formed }
 			NOT = { tag = HND }
-			NOT = { has_country_flag = post_colonial_country }
 		}
 
 		allow = {
@@ -791,7 +788,6 @@ political_decisions = {
 			NOT = { has_global_flag = durrani_formed }
 			NOT = { tag = PAK }
 			NOT = { tag = CRL }
-			NOT = { has_country_flag = post_colonial_country }
 		}
 
 		allow = {
@@ -1113,7 +1109,6 @@ political_decisions = {
 						primary_culture = baluchi
 					}
 					NOT = {
-						has_country_flag = post_colonial_country
 						tag = THIS
 						tag = AFG
 						tag = MUG
@@ -1178,7 +1173,6 @@ political_decisions = {
 		potential = {
 			NOT = { has_global_flag = pakistan_born }
 			NOT = { has_global_flag = pakistan_formed }
-			NOT = { has_country_flag = post_colonial_country }
 			NOT = { exists = PAK }
 			NOT = { tag = PAK }
 			NOT = { tag = HND }

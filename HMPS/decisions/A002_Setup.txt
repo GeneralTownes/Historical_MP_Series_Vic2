@@ -2970,16 +2970,4 @@ political_decisions = {
 			set_country_flag = spectator
 		}
 	}
-	
-	post_colonial_westernise = {
-		picture = the_post_colonialism
-		potential = {
-			has_country_flag = post_colonial_country
-			civilized = no
-		}
-		allow = {}
-		effect = {
-			civilized = yes
-		}
-	}
 }
