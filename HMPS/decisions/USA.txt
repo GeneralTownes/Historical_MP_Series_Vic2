@@ -412,12 +412,9 @@ political_decisions = {
 			NOT = { has_country_flag = hasmanifestdestiny }
 		}
 		allow = {
-			war = no
 			idealism = 1
 			state_n_government = 1
-			NOT = { truce_with = MEX }
 			NOT = { war_policy = pacifism }
-			NOT = { MEX = { any_owned_province = { country_units_in_province = USA } } }
 			OR = {
 				TEX = { in_sphere = THIS }
 				TEX = { exists = no }
@@ -427,14 +424,7 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = hasmanifestdestiny
-			badboy = 3
-			#all_core = {
-			#	limit = {
-			#		NOT = { life_rating = 40 }
-			#	}
-			#	life_rating = 5
-			#	}
-			#?????????????
+			
 			relation = { who = MEX value = -200 }
 			diplomatic_influence = { who = MEX value = -200 }
 			leave_alliance = MEX
@@ -445,6 +435,7 @@ political_decisions = {
 				}
 				THIS = { release_vassal = MEX }
 			}
+			
 			random_country = {
 				limit = {
 					is_our_vassal = MEX
@@ -453,22 +444,7 @@ political_decisions = {
 				relation = { who = THIS value = -200 }
 				leave_alliance = THIS
 			}
-			random_country = {
-				limit = {
-					tag = MEX
-					any_owned_province = {
-						OR = {
-							region = MEX_85
-							region = TEX_132
-							region = MEX_103
-							region = MEX_94
-							region = MEX_97
-							region = MEX_100
-						}
-					}
-				}
-				country_event = 44126
-			}
+			
 			any_country = {
 				limit = {
 					exists = yes
@@ -488,6 +464,7 @@ political_decisions = {
 				}
 				country_event = 98650
 			}
+			
 			any_pop = {
 				dominant_issue = {
 					factor = 0.05
@@ -649,15 +626,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			random_list = {
-				14 = { badboy = 6 }
-				14 = { badboy = 5 }
-				14 = { badboy = 4 }
-				14 = { badboy = 3 }
-				14 = { badboy = 2 }
-				14 = { badboy = 1 }
-				14 = { }
-			}
+			badboy = 1
 			any_greater_power = {
 				relation = {
 					who = USA
@@ -4828,42 +4797,6 @@ political_decisions = {
 			2599 = {
 				owner = { country_event = 44140 }
 			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	hawaiian_purchase = {
-		picture = annex_hawaii
-		potential = {
-			658 = {
-				owned_by = THIS
-				is_core = THIS
-			}
-			2524 = {
-				empty = no
-				is_core = THIS
-				NOT = { owned_by = THIS }
-			}
-			NOT = { has_country_flag = hawaiian_purchase }
-		}
-		
-		allow = {
-			war = no
-			money = 50000
-			2524 = {
-				owner = {
-					war = no
-					relation = { who = THIS value = 50 }
-				}
-			}
-		}
-		
-		effect = {
-			set_country_flag = hawaiian_purchase
-			2524 = { owner = { country_event = 44145 } }
 		}
 		
 		ai_will_do = {

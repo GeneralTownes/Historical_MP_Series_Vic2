@@ -813,3 +813,5 @@ form_north_german_confederation_desc;While Germany was not united until the proc
 form_germany_desc;By controlling, directly or indirectly, the manifold principalities, duchies and free cities that make up the German Nation, we can unite our people into one singular nation state. Three Hurrahs for the German Empire! \n\n§YNorth Germany refers to all North German culture land, minus Schleswig. \nSouth Germany refers to all South German culture land outside of the starting Austrian Empire, minus Alsace-Lorraine.§!;;;;;;;;;;;;;
 PRODUCTION_OUTPUT_EFFICIENCY_TOOLTIP;Output: ;;;;;;;;;;;;;
 PRODUCTION_BASE_OUTPUT;  -Base:;;;;;;;;;;;;;
+cajun;Cajun;;;;;;;;;;;;;
+occitan;Occitan;;;;;;;;;;;;;

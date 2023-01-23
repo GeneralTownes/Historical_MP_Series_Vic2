@@ -152,9 +152,9 @@ machine_parts_factory = {
 	max_level = 99
 	goods_cost =
 	{
-		wood = 100
-		iron = 250
-		coal = 500
+		timber = 500
+		iron = 1250
+		coal = 2500
 	}
 	time = 300
 	visibility = yes

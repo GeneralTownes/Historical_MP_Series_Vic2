@@ -38,6 +38,62 @@ country_event = {
 	option = {
 		name = "Checking..."
 		
+		#Adding in Mexican-American war cores
+		any_country = {
+			limit = {
+				OR = {
+					tag = USA
+					tag = MEX
+				}
+				USA = { has_country_flag = hasmanifestdestiny }
+				NOT = { USA = { war_with = MEX } }
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						region = MEX_85
+						region = TEX_132
+						region = MEX_94
+						region = MEX_97
+						region = USA_129
+						region = USA_106
+						region = USA_78
+						region = USA_81
+						region = USA_91
+						region = USA_111
+						region = USA_126
+						region = MEX_103
+						region = MEX_100
+					}
+					owner = { tag = USA }
+				}
+				add_core = USA
+				remove_core = MEX
+			}
+			any_owned = {
+				limit = {
+					OR = {
+						region = MEX_85
+						region = TEX_132
+						region = MEX_94
+						region = MEX_97
+						region = USA_129
+						region = USA_106
+						region = USA_78
+						region = USA_81
+						region = USA_91
+						region = USA_111
+						region = USA_126
+						region = MEX_103
+						region = MEX_100
+					}
+					owner = { tag = MEX }
+				}
+				add_core = MEX
+				remove_core = USA
+			}
+		}
+		
 		#Fixing Japan if Shogonate annexed
 		any_country = {
 			limit = {
