@@ -149,7 +149,7 @@ aggression_cb = {
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 5
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 0
 	truce_months = 60
 	
@@ -217,8 +217,8 @@ mass_conquest_cb = {
 	peace_cost_factor = 2
 	penalty_factor = 1
 	
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -255,8 +255,8 @@ dismantle_cb = {
 	peace_cost_factor = 35
 	penalty_factor = 3
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 3
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 1
 	truce_months = 108
 	
@@ -340,8 +340,8 @@ dismantle_cb_add = {
 	penalty_factor = 3
 	always = yes
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 3
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 1
 	truce_months = 108
 	
@@ -409,8 +409,8 @@ dismantle_cb_add_new = {
 	penalty_factor = 3
 	always = yes
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 3
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 1
 	truce_months = 108
 	
@@ -586,8 +586,8 @@ acquire_core_state = {
 	penalty_factor = 1
 	always = yes
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -667,8 +667,8 @@ acquire_all_cores = {
 	penalty_factor = 1
 	always = yes
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -751,8 +751,8 @@ restore_austrian_empire = {
 	penalty_factor = 1
 	always = yes
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -944,8 +944,8 @@ restore_america = {
 	penalty_factor = 1
 	always = yes
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -1147,8 +1147,8 @@ civil_war = {
 	peace_cost_factor = 1
 	penalty_factor = 1
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 0.5
+	break_truce_prestige_factor = 0
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 0.5
 	truce_months = 60
 	
@@ -1252,8 +1252,8 @@ annex_core_country = {
 	penalty_factor = 1
 	always = yes
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -1310,8 +1310,8 @@ add_to_sphere = {
 	peace_cost_factor = 35
 	penalty_factor = 1
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -1697,8 +1697,8 @@ unification_add_to_sphere = {
 	peace_cost_factor = 50
 	penalty_factor = 1
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -1755,8 +1755,8 @@ take_from_sphere = {
 	peace_cost_factor = 20
 	penalty_factor = 1
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -4080,7 +4080,7 @@ acquire_state = {
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 2
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -4301,7 +4301,7 @@ demand_state_for_allies = {
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 2
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -4381,7 +4381,7 @@ acquire_capital = {
 	penalty_factor = 1
  
 	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 2
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
  
@@ -4615,7 +4615,7 @@ demand_capital_for_allies = {
 	penalty_factor = 1
  
 	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 2
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
  
@@ -4704,7 +4704,7 @@ china_acquire_state = {
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 0
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 0
 	truce_months = 84
 	
@@ -4854,7 +4854,7 @@ india_acquire_state = {
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 0
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 0
 	truce_months = 84
 	
@@ -4917,7 +4917,7 @@ sahel_jihad_cb = {
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 2
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 0
 	truce_months = 60
 	
@@ -5103,16 +5103,16 @@ mexican_american_war = {
 	is_triggered_only = yes
 	months = 12
 	
-	construction_speed = 0.8
+	construction_speed = 1
 
-	badboy_factor = 1
+	badboy_factor = 0.2
 	prestige_factor = 2
 	peace_cost_factor = 0.007
 	penalty_factor = 1
-	always = yes
+	always = no
 
 	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 2
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -5876,8 +5876,8 @@ conquest = {
 	peace_cost_factor = 1
 	penalty_factor = 1
 	
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -5940,8 +5940,8 @@ conquest_low = {
 	peace_cost_factor = 0.31
 	penalty_factor = 1
 	
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -5976,8 +5976,8 @@ annex_africa = {
 	peace_cost_factor = 0.014
 	penalty_factor = 2
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -6181,8 +6181,8 @@ establish_protectorate_casus_belli = {
 	peace_cost_factor = 1
 	penalty_factor = 1
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -6305,8 +6305,8 @@ establish_protectorate_NI_casus_belli = {
 	peace_cost_factor = 0.8
 	penalty_factor = 1
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -6407,8 +6407,8 @@ establish_protectorate_BC_casus_belli = {
 	peace_cost_factor = 0.6
 	penalty_factor = 1
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -6508,8 +6508,8 @@ status_quo = {
 		always = no
 	}
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -7376,8 +7376,8 @@ install_democracy = {
 	peace_cost_factor = 50
 	penalty_factor = 1
 
-	break_truce_prestige_factor = 0
-	break_truce_infamy_factor = 0
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 0
 	truce_months = 60
 	
@@ -7456,8 +7456,8 @@ install_radical_democracy = {
 	peace_cost_factor = 50
 	penalty_factor = 1
 
-	break_truce_prestige_factor = 0
-	break_truce_infamy_factor = 0
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 0
 	truce_months = 60
 	
@@ -7538,8 +7538,8 @@ sprite_index = 26
 	peace_cost_factor = 50
 	penalty_factor = 1
 
-	break_truce_prestige_factor = 0
-	break_truce_infamy_factor = 0
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 0
 	truce_months = 60
 	
@@ -7788,7 +7788,7 @@ acquire_substate_region = {
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 2
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -7862,7 +7862,7 @@ acquire_substate_core_region = {
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
-	break_truce_infamy_factor = 2
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 2
 	truce_months = 60
 	
@@ -8207,8 +8207,8 @@ treaty_port_casus_belli = {
 	peace_cost_factor = 10
 	penalty_factor = 2
 
-	break_truce_prestige_factor = 4
-	break_truce_infamy_factor = 4
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 1
 	truce_months = 60
 	

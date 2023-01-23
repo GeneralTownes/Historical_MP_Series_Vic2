@@ -167,7 +167,8 @@ Peacetime mob disabled
 - Free people / allied core ~21
 - Monroe doctrine / Oriental crises ~14
 #### Truces
-- Trucebreaking gives 0 infamy
+- Trucebreaking gives 0 militancy
+- Trucebreaking gives 5 infamy
 - Trucebreaking gives -100 prestige
 #### Relations
 - Nothing costs diplo points aside from increasing/decreasing relations
