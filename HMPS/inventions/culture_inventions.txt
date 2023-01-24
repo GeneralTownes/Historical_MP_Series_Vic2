@@ -699,19 +699,35 @@ darwinism = {
 	limit = { biologism = 1 }
 	news = no
 	chance = {
-		base = 100 #2
-	#	modifier = {
-	#		factor = 2
-	#		impressionism = 1
-	#	}
-	#	modifier = {
-	#		factor = 2
-	#		invention = genetics_heredity
-	#	}
-	#	modifier = {
-	#		factor = 1
-	#		invention = philosophy_of_language
-	#	}
+		base = 10
+		modifier = {
+			factor = 2
+			impressionism = 1
+		}
+		modifier = {
+			factor = 2
+			invention = genetics_heredity
+		}
+		modifier = {
+			factor = 1
+			invention = philosophy_of_language
+		}
+		modifier = {
+			factor = 5
+			year = 1855
+		}
+		modifier = {
+			factor = 5
+			year = 1860
+		}
+		modifier = {
+			factor = 5
+			year = 1865
+		}
+		modifier = {
+			factor = 5
+			year = 1870
+		}
 	}
 	effect = {
 		education_efficiency = 0.50

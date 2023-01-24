@@ -941,7 +941,7 @@ emigration_chance = {
 	}
 	
 	modifier = {
-		factor = -2.0
+		factor = -1
 		OR = {
 			location = { continent = north_america }
 			location = { continent = south_america }
@@ -953,7 +953,19 @@ emigration_chance = {
 	}
 	
 	modifier = {
-		factor = -1
+		factor = -0.5
+		OR = {
+			location = { continent = north_america }
+			location = { continent = south_america }
+			location = { continent = australia_new_zealand }
+		}
+		country = {
+			government = hms_government
+		}
+	}
+	
+	modifier = {
+		factor = -0.5
 		country = {
 			has_country_flag = swiss_opportunity
 			government = democracy
@@ -972,6 +984,9 @@ emigration_chance = {
 	
 	modifier = {
 		factor = -0.03
+		NOT = { location = { continent = north_america } }
+		NOT = { location = { continent = south_america } }
+		NOT = { location = { continent = australia_new_zealand } }
 		country = {
 			government = hms_government
 		}
