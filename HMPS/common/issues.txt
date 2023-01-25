@@ -145,12 +145,12 @@ party_issues = {
 	war_policy = {
 		jingoism = {
 			max_military_spending = 1.0
-			supply_consumption = 0.2
+			supply_consumption = 0.25
 			war_exhaustion_effect = 0.5
 			is_jingoism = yes
 			cb_generation_speed_modifier = 0.3
-			mobilisation_size = 0.01
-			culture_tech_research_bonus = -0.05
+			army_tech_research_bonus = 0.05
+			navy_tech_research_bonus = 0.05
 		}
 		pro_military = {
 			max_military_spending = 1.0

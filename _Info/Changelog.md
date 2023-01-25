@@ -188,6 +188,7 @@ Soldier pops concentrate in state capitals, requires 3k soldier pops for 1st bri
 - Submarines: Torpedo attack & high evasion
 - Irregulars start unlocked for all
 #### Tech
+All units will immediately unlock when conditions met
 - Heavy Armament: Greatly buffed artillery attack
 - Light Armament: Gives Infantry & Guard discipline increases
 - Submarines scale greatly with 1900+ tech

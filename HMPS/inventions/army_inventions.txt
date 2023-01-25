@@ -512,18 +512,9 @@ tank_experiments = {
 		heavy_armament_dunno = 1
 	}
 	chance = {
-		base = 1
+		base = 100
 		modifier = {
-			factor = 2
-			invention = elastic_defense_system
-		}
-		modifier = {
-			factor = 2
-			war = yes
-			war_countries = { invention = tank_experiments }
-		}
-		modifier = {
-			factor = -5
+			factor = -100
 			not = { combustion_engine = 1 }
 		}
 	}
@@ -1207,11 +1198,7 @@ heavy_artillery = {
 cuirassier_activation = {
 	limit = { military_staff_system = 1 }
 	chance = {
-		base = 2
-		modifier = {
-			factor = -2
-			not = { civilized = yes }
-		}
+		base = 100
 	}
 	effect = {
 		activate_unit = cuirassier
@@ -1220,11 +1207,7 @@ cuirassier_activation = {
 dragoon_activation = {
 	limit = { military_staff_system = 1 }
 	chance = {
-		base = 2
-		modifier = {
-			factor = -2
-			not = { civilized = yes }
-		}
+		base = 100
 	}
 	effect = {
 		activate_unit = dragoon
@@ -1233,11 +1216,7 @@ dragoon_activation = {
 hussar_activation = {
 	limit = { military_staff_system = 1 }
 	chance = {
-		base = 2
-		modifier = {
-			factor = -2
-			not = { civilized = yes }
-		}
+		base = 100
 	}
 	effect = {
 		activate_unit = hussar 
@@ -1499,14 +1478,9 @@ army_local_military_government = {
 military_aviation = {
 	limit = { aeronautics = 1 }
 	chance = {
-		base = 3
+		base = 100
 		modifier = {
-			factor = 2
-			war = yes
-			war_countries = { invention = military_aviation }
-		}
-		modifier = {
-			factor = -5
+			factor = -100
 			not = { invention = wright_n_langleys_aeroplanes }
 		}
 	}
@@ -1517,9 +1491,9 @@ military_aviation = {
 early_interwar_bombers = {
 	limit = { aeronautics = 1 }
 	chance = {
-		base = 2
+		base = 100
 		modifier = {
-			factor = -2
+			factor = -100
 			not = { invention = military_aviation }
 		}
 	}

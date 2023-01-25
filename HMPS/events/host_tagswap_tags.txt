@@ -1628,26 +1628,6 @@ country_event = {
 		random_country = {
 			limit = {
 				tag = FROM
-				tag = MDV
-				NOT = { has_global_flag = host_flag_tagmove }
-			}
-			THIS = { change_tag_no_core_switch = MDV }
-		}
-		random_country = {
-			limit = {
-				tag = FROM
-				tag = MDV
-				has_global_flag = host_flag_tagmove
-			}
-			FROM = { set_country_flag = GM_nation }
-			THIS = {
-				clr_country_flag = GM_nation
-				change_tag_no_core_switch = MDV
-			}
-		}
-		random_country = {
-			limit = {
-				tag = FROM
 				tag = ABK
 				NOT = { has_global_flag = host_flag_tagmove }
 			}
