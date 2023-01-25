@@ -1061,35 +1061,3 @@ country_event = {
 		government = absolute_monarchy
 	}
 }
-
-#Fake War Start
-country_event = {
-	id = 7777934
-	title = "EVTNAME7777934"
-	desc = "EVTDESC7777934"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVT7777934OPTA"
-		war = {
-			target = FROM
-			attacker_goal = { casus_belli = fake_war_cb }
-			defender_goal = { casus_belli = status_quo }
-		}
-	}
-}
-
-#Fake War End
-country_event = {
-	id = 7777935
-	title = "EVTNAME7777935"
-	desc = "EVTDESC7777935"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVT7777935OPTA"
-		FROM = { end_war = THIS }
-	}
-}

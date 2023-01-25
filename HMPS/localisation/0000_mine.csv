@@ -788,7 +788,7 @@ SPA_absolute_monarchy;The Kingdom of Spain;;;;;;;;;;;;;
 SPA_prussian_constitutionalism;The Kingdom of Spain;;;;;;;;;;;;;
 start_fake_war_title;§CFake War§!;;;;;;;;;;;;;
 start_fake_war_desc;Start a fake war for the purpose of regaining control over puppet units.;;;;;;;;;;;;;
-end_fake_war_title;§EEnd Fake War§!;;;;;;;;;;;;;
+end_fake_war_title;§CEnd Fake War§!;;;;;;;;;;;;;
 end_fake_war_desc;End the fake war.;;;;;;;;;;;;;
 EVTNAME7777934;Declare Fake War;;;;;;;;;;;;;
 EVTDESC7777934;-;;;;;;;;;;;;;

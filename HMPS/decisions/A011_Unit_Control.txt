@@ -13,7 +13,12 @@ political_decisions = {
 			ai = no
 		}
 		effect = {
-			CLN = { country_event = 7777934 }
+			#CLN = { country_event = 7777934 }
+			war = {
+			target = CLN
+			attacker_goal = { casus_belli = fake_war_cb }
+			defender_goal = { casus_belli = status_quo }
+		}
 		}
 
 	}
@@ -30,7 +35,7 @@ political_decisions = {
 		}
 		
 		effect = {
-			CLN = { country_event = 7777935 }
+			end_war = CLN
 		}
 
 	}
