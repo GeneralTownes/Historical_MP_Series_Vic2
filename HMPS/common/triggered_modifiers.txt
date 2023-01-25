@@ -508,6 +508,43 @@ war_exhaustion_100_decay = {
 	global_immigrant_attract = -5
 }
 
+##########
+
+literacy_10 = {
+	trigger = {
+		NOT = { literacy = 0.1 }
+	}
+	education_efficiency_modifier = 0.1
+}
+
+literacy_20 = {
+	trigger = {
+		NOT = { literacy = 0.2 }
+	}
+	education_efficiency_modifier = 0.1
+}
+
+literacy_30 = {
+	trigger = {
+		NOT = { literacy = 0.3 }
+	}
+	education_efficiency_modifier = 0.1
+}
+
+literacy_40 = {
+	trigger = {
+		NOT = { literacy = 0.4 }
+	}
+	education_efficiency_modifier = 0.1
+}
+
+literacy_50 = {
+	trigger = {
+		NOT = { literacy = 0.5 }
+	}
+	education_efficiency_modifier = 0.1
+}
+
 ###########
 
 minor_bad_planning = {

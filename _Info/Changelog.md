@@ -81,6 +81,9 @@ Everything else is our own (as far as I remember).
 - Luxury manufactured goods in luxuries for lower and middle class
 - Tea & Coffee moved into luxuries
 - Removed basic food demand as luxuries (canned food instead)
+#### Literacy
+- Greater decay in literacy in higher literacy pops
+- Low literacy nations gain 10% edu eff every 10% lit below 50%
 #### Demotion & Promotion
 - Reduced (~33% decrease) rate of demotion
 - Greatly (+100%) increased rate of promotion

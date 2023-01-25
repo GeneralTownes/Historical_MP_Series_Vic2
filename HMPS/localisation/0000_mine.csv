@@ -815,3 +815,8 @@ PRODUCTION_OUTPUT_EFFICIENCY_TOOLTIP;Output: ;;;;;;;;;;;;;
 PRODUCTION_BASE_OUTPUT;  -Base:;;;;;;;;;;;;;
 cajun;Cajun;;;;;;;;;;;;;
 occitan;Occitan;;;;;;;;;;;;;
+literacy_10;Literacy Below 10%;;;;;;;;;;;;;
+literacy_20;Literacy Below 20%;;;;;;;;;;;;;
+literacy_30;Literacy Below 30%;;;;;;;;;;;;;
+literacy_40;Literacy Below 40%;;;;;;;;;;;;;
+literacy_50;Literacy Below 50%;;;;;;;;;;;;;
