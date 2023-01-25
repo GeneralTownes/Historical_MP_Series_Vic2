@@ -594,7 +594,7 @@ country_event = {
 			}
 			add_province_modifier = {
 				name = carlist_sympathies
-				duration = -1
+				duration = 1825
 			}
 			any_pop = {
 				limit = {
@@ -685,7 +685,7 @@ country_event = {
 			}
 			add_province_modifier = {
 				name = christino_sympathies
-				duration = -1
+				duration = 1825
 			}
 			state_scope = {
 				any_pop = {
@@ -900,7 +900,7 @@ country_event = {
 			}
 			add_province_modifier = {
 				name = carlist_sympathies
-				duration = -1
+				duration = 1825
 			}
 			any_pop = {
 				scaled_militancy = {
@@ -929,7 +929,7 @@ country_event = {
 			}
 			add_province_modifier = {
 				name = carlist_sympathies
-				duration = -1
+				duration = 1825
 			}
 			any_pop = {
 				ideology = {
@@ -1297,7 +1297,7 @@ province_event = {
 		name = "EVT37714OPTA"
 		add_province_modifier = {
 			name = carlist_sympathies
-			duration = -1
+			duration = 1825
 		}
 		owner = {
 			change_variable = {
@@ -1612,7 +1612,7 @@ country_event = {
 			}
 			add_province_modifier = {
 				name = christino_sympathies
-				duration = -1
+				duration = 1825
 			}
 			any_pop = {
 				scaled_militancy = {
@@ -1636,7 +1636,7 @@ country_event = {
 			}
 			add_province_modifier = {
 				name = christino_sympathies
-				duration = -1
+				duration = 1825
 			}
 			any_pop = {
 				ideology = {
@@ -1948,7 +1948,7 @@ province_event = {
 		name = "EVT37718OPTA"
 		add_province_modifier = {
 			name = christino_sympathies
-			duration = -1
+			duration = 1825
 		}
 		owner = {
 			change_variable = {

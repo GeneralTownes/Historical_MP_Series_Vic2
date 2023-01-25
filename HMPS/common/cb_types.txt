@@ -4751,12 +4751,6 @@ demand_concession_CHI_casus_belli = {
 			NOT = { relation = { who = THIS value = 0 } }
 			THIS = { ai = no }
 		}
-	}
-	
-	allowed_states = {
-		any_owned_province = { is_colonial = no }
-		
-		any_owned_province = { is_core = CHI }
 		
 		#Restrictions to Chinese State conquering
 		OR = {
@@ -4773,6 +4767,11 @@ demand_concession_CHI_casus_belli = {
 			#Japan limits
 			THIS = { ai = no capital_scope = { continent = asia } naval_statistics = 1 breech_loaded_rifles = 1 any_owned_province = { port = yes } }
 		}
+	}
+	
+	allowed_states = {
+		any_owned_province = { is_colonial = no }
+		any_owned_province = { is_core = CHI }
 	}
 	
 	po_demand_state = yes

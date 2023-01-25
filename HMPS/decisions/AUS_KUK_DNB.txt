@@ -64,7 +64,6 @@ political_decisions = {
 				consciousness = 5
 			}
 			add_accepted_culture = hungarian
-			remove_accepted_culture = north_german
 			change_tag = KUK
 			KUK = {
 				political_reform = regionalism
@@ -115,19 +114,8 @@ political_decisions = {
 		picture = propose_danube_federation
 		potential = {
 			tag = KUK
-			owns = 619
-			owns = 641
-			OR = {
-				any_owned_province = { is_core = BOH }
-				any_owned_province = { is_core = SLO }
-				any_owned_province = { is_core = SLV }
-				any_owned_province = { is_core = POL }
-				any_owned_province = { is_core = ROM }
-				any_owned_province = { is_core = CRO }
-			}
 			NOT = {
 				exists = DNB
-				exists = HUN
 			}
 		}
 
@@ -138,10 +126,16 @@ political_decisions = {
 			OR = {
 				government = democracy
 				government = hms_government
+				government = prussian_constitutionalism
 			}
 			NOT = {
 				average_militancy = 4
 				num_of_revolts = 1
+			}
+			owns = 619
+			owns = 641
+			NOT = {
+				exists = HUN
 			}
 		}
 
@@ -149,12 +143,12 @@ political_decisions = {
 			prestige = 25
 			political_reform = state_equal_weight
 			political_reform = confederalism
+			add_accepted_culture = czech
 			all_core = {
 				remove_core = KUK
 				add_core = DNB
 			}
 			change_tag = DNB
-			nationalvalue = nv_equality
 			add_country_modifier = {
 				name = national_confusion
 				duration = 3650
@@ -228,80 +222,20 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	embrace_czech_minority = {
-		picture = embrace_minority
-		potential = {
-			tag = DNB
-			any_owned_province = { is_core = BOH }
-			NOT = {
-				OR = {
-					accepted_culture = czech
-					has_country_flag = embraced_czechs
-				}
-			}
-			NOT = { has_country_flag = danube_proposal_in_progress }
-		}
-		
-		allow = {
-			#nationalism_n_imperialism = 1
-			phenomenalism = 1
-		}
-		
-		effect = {
-			set_country_flag = embraced_czechs
-			add_accepted_culture = czech
-			any_pop = {
-				limit = { has_pop_culture = hungarian }
-				consciousness = 4
-				militancy = 4
-			}
-			any_pop = {
-				limit = { has_pop_culture = czech }
-				consciousness = -4
-				militancy = -4
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
 	embrace_slovak_minority = {
 		picture = embrace_minority
 		potential = {
 			tag = DNB
-			any_owned_province = { is_core = SLV }
 			NOT = {
 				accepted_culture = slovak
-				has_country_flag = embraced_slovakians
-				has_country_flag = danube_proposal_in_progress
-			}
-			OR = {
-				accepted_culture = czech
-				NOT = { any_owned_province = { is_core = BOH } }
 			}
 		}
 		allow = {
-			experimental_psychology = 1
+			year = 1875
+			any_owned_province = { is_core = SLV }
 		}
 		effect = {
-			set_country_flag = embraced_slovakians
 			add_accepted_culture = slovak
-			any_pop = {
-				limit = {
-					OR = {
-						has_pop_culture = hungarian
-						has_pop_culture = czech
-					}
-				}
-				militancy = 4
-				consciousness = 4
-			}
-			any_pop = {
-				limit = { has_pop_culture = slovak }
-				militancy = -4
-				consciousness = -4
-			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -312,39 +246,16 @@ political_decisions = {
 		picture = embrace_minority
 		potential = {
 			tag = DNB
-			any_owned_province = { is_core = SLO }
 			NOT = {
 				accepted_culture = slovene
-				has_country_flag = embraced_slovenes
-				has_country_flag = danube_proposal_in_progress
-			}
-			OR = {
-				accepted_culture = slovak
-				NOT = { any_owned_province = { is_core = SLV } }
 			}
 		}
 		allow = {
-			psychoanalysis = 1
+			year = 1880
+			any_owned_province = { is_core = SLO }
 		}
 		effect = {
-			set_country_flag = embraced_slovenes
 			add_accepted_culture = slovene
-			any_pop = {
-				limit = {
-					OR = {
-						has_pop_culture = hungarian
-						has_pop_culture = czech
-						has_pop_culture = slovak
-					}
-				}
-				militancy = 4
-				consciousness = 4
-			}
-			any_pop = {
-				limit = { has_pop_culture = slovene }
-				militancy = -4
-				consciousness = -4
-			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -355,40 +266,16 @@ political_decisions = {
 		picture = embrace_minority
 		potential = {
 			tag = DNB
-			any_owned_province = { is_core = CRO }
 			NOT = {
 				accepted_culture = croat
-				has_country_flag = embraced_croats
-				has_country_flag = danube_proposal_in_progress
-			}
-			OR = {
-				accepted_culture = slovene
-				NOT = { any_owned_province = { is_core = SLO } }
 			}
 		}
 		allow = {
-			social_science = 1
+			year = 1885
+			any_owned_province = { is_core = CRO }
 		}
 		effect = {
-			set_country_flag = embraced_croats
 			add_accepted_culture = croat
-			any_pop = {
-				limit = {
-					OR = {
-						has_pop_culture = hungarian
-						has_pop_culture = czech
-						has_pop_culture = slovene
-						has_pop_culture = slovak
-					}
-				}
-				militancy = 4
-				consciousness = 4
-			}
-			any_pop = {
-				limit = { has_pop_culture = croat }
-				militancy = -4
-				consciousness = -4
-			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -399,16 +286,13 @@ political_decisions = {
 		picture = galicia_lodomeria
 		potential = {
 			tag = DNB
-			#accepted_culture = croat
 			NOT = { 702 = { is_core = THIS } }
 		}
 		allow = {
-			invention = political_science
-			money = 2000000
+			year = 1890
 			GLM = { all_core = { owned_by = THIS } }
 		}
 		effect = {
-			money = -2000000
 			GLM = {
 				all_core = {
 					add_core = THIS
