@@ -386,28 +386,4 @@ political_decisions = {
 		
 		ai_will_do = { factor = 1 }
 	}
-	
-	to_warsaw = {
-		picture = form_germany
-		potential = {
-			tag = GER
-			NOT = { 706 = { is_core = GER } }
-		}
-		allow = {
-			706 = {
-				owned_by = THIS
-			}
-			715 = {
-				owned_by = THIS
-			}
-		}
-		effect = { 
-			RUS_706 = { add_core = THIS remove_core = RUS }
-			RUS_715 = { add_core = THIS remove_core = RUS }
-			badboy = 10
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
 }

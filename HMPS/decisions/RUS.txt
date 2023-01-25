@@ -51,32 +51,6 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	reassert_polish_claims = {
-		picture = unite_with_poland
-		potential = { 
-			tag = RUS
-			POL = { exists = no }
-			706 = {
-				NOT = { is_core = RUS }
-			}
-		}
-		allow = {
-			war = no
-			revolution_n_counterrevolution = 1
-			CPL = { all_core = { owned_by = THIS } }
-		}
-		effect = {
-			badboy = 10
-			CPL = {
-				all_core = {
-					add_core = THIS
-					remove_core = GER
-				}
-			}
-		}
-		ai_will_do = { factor = 0 }
-	}
-	
 	integrate_svaneti = {
 		picture = integrate_abkhazia
 		potential = {
