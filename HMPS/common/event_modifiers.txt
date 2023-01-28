@@ -167,6 +167,10 @@ capital_mobilisation = {
 	icon = 17
 }
 
+chinese_concession = {
+	icon = 25
+}
+
 ###
 
 trolling_the_med = {

@@ -424,6 +424,44 @@ country_event = {
 	option = {
 		name = "Checking..."
 		
+		#Treaty Ports
+		any_country = {
+			limit = { civilized = no }
+			any_owned = {
+				limit = {
+					OR = {
+						province_id = 1498 #Macao
+						province_id = 1538 #Shanghai
+						province_id = 1496 #Hong Kong
+						province_id = 1566	#Qingdao
+						province_id = 1481 #Lushun - Port Arthur
+						province_id = 1569 #Weihaiwei
+						province_id = 1606 #Jiaxing
+						province_id = 2406 #Penghu
+						#province_id = 1499 #Hainan
+						province_id = 2632 #Kwangchowan
+						province_id = 1608 #Ningbo
+						province_id = 3249 #Old Tianjin
+						province_id = 1071 #Qeshm
+						province_id = 1695 #Ifni
+						province_id = 2640 #Gwadar
+						province_id = 1177 #Socotra
+						province_id = 2048 #Zanzibar
+						province_id = 1637 #Cheju
+						province_id = 2589 #Tsushima
+						province_id = 3260 #Sado
+					}
+				}
+				add_province_modifier = { name = chinese_concession duration = -1 }
+			}
+		}
+		any_country = {
+			limit = { civilized = yes }
+			any_owned = {
+				remove_province_modifier = chinese_concession
+			}
+		}
+		
 		#capital supply 
 		any_country = {
 			limit = { exists = yes }
