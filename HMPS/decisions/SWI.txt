@@ -406,14 +406,7 @@ political_decisions = {
 	swiss_partition = {
 		picture = declare_neutrality
 		potential = {
-			SWI = {
-				all_core = {
-					OR = {
-						owned_by = THIS
-						owner = { vassal_of = THIS }
-					}
-				}
-			}
+			SWI = { exists = no }
 			NOT = { tag = SWI }
 			has_country_flag = swiss_neutrality_violator
 			is_greater_power = yes

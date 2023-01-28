@@ -504,8 +504,8 @@ migration_target = {
 			continent = west_africa
 			continent = east_africa
 			continent = central_africa
+			continent = south_africa
 			continent = africa
-			continent = south_west_africa
 		}
 	}
 	
@@ -1684,6 +1684,7 @@ ideologies = {
 			location = { 
 				OR = { 
 					continent = central_africa
+					continent = south_africa
 					continent = west_africa 
 					continent = east_africa
 					continent = asia
@@ -1887,6 +1888,7 @@ ideologies = {
 			location = { 
 				OR = { 
 					continent = central_africa
+					continent = south_africa
 					continent = west_africa 
 					continent = east_africa
 					continent = asia

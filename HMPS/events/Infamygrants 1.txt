@@ -199,9 +199,9 @@ country_event = {
 						OR = {
 							continent = africa
 							continent = central_africa
+							continent = south_africa
 							continent = west_africa
 							continent = east_africa
-							continent = south_west_africa
 						}
 					}
 				}
@@ -225,9 +225,9 @@ country_event = {
 								OR = {
 									continent = africa
 									continent = central_africa
+									continent = south_africa
 									continent = west_africa
 									continent = east_africa
-									continent = south_west_africa
 								}
 							}
 						}

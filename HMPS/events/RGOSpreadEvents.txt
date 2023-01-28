@@ -9,6 +9,7 @@ province_event = {
 		NOT = { has_province_modifier = local_tractors }
 		NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
 		NOT = { state_scope = { is_slave = yes } }
+		NOT = { state_scope = { is_colonial = yes } }
 		OR = {
 			terrain = plains
 			terrain = steppe
@@ -343,11 +344,6 @@ province_event = {
 		modifier = {
 			factor = 1.3
 			average_militancy = 7
-		}
-		
-		modifier = {
-			factor = 8
-			state_scope = { is_colonial = yes }
 		}
 		
 		modifier = {
@@ -3576,6 +3572,7 @@ province_event = {
 		owner = { invention = machine_tools invention = nitroglycerin }
 		NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
 		NOT = { state_scope = { is_slave = yes } }
+		NOT = { state_scope = { is_colonial = yes } }
 		OR = {
 			trade_goods = coal
 			trade_goods = iron
@@ -3687,11 +3684,6 @@ province_event = {
 		modifier = {
 			factor = 2
 			state_scope = { has_pop_type = serfs }
-		}
-		
-		modifier = {
-			factor = 8
-			state_scope = { is_colonial = yes}
 		}
 		
 		modifier = {
@@ -3976,6 +3968,7 @@ province_event = {
 		owner = { invention = distribution_channels invention = electrical_lighting }
 		NOT = { state_scope = { any_owned_province = { NOT = { controlled_by = THIS } } } }
 		NOT = { state_scope = { is_slave = yes } }
+		NOT = { state_scope = { is_colonial = yes } }
 	}
 	
 	allow_multiple_instances = no
@@ -4079,11 +4072,6 @@ province_event = {
 		modifier = {
 			factor = 2
 			state_scope = { has_pop_type = serfs }
-		}
-		
-		modifier = {
-			factor = 8
-			state_scope = { is_colonial = yes }
 		}
 		
 		modifier = {

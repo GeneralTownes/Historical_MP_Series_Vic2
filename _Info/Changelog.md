@@ -138,6 +138,9 @@ Overseas penalty increased to 0.025 per provinces
 - Metallurgy: Huge output buffs
 - Transport: Later techs increase max railroad to lvl 10
 - Farm RGOs stop scaling with late-campaign Power and Transport tech
+- Tractors province modifier requires invention tractors, not a slave or colonial state
+- Mechanized Mining province modifier requires inventions machine_tools & nitroglycerin, not a slave or colonial state
+- Commercial Retailers province modifier requires inventions distribution_channels & electrical_lighting, not a slave or colonial state
 #### Infrastructure
 - Railroad: Max lvl increased to 10, effects per railroad lvl buffed (RGO output & factory throughput)
 - Naval Bases: No longer give navy cap, max lvl increased to 8

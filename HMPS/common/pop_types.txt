@@ -1983,7 +1983,7 @@ conversion_chance = {
 			location = { continent = central_africa }
 			location = { continent = west_africa }
 			location = { continent = east_africa }
-			location = { continent = south_west_africa }
+			location = { continent = south_africa }
 		}
 		country = { civilized = yes }
 	}

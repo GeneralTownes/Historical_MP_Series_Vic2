@@ -636,8 +636,8 @@ african_unciv = {
 			continent = africa
 			continent = central_africa 
 			continent = west_africa 
-			continent = east_africa 
-			continent = south_west_africa 
+			continent = east_africa
+			continent = south_africa 
 		}
 		civilized = no
 		NOT = { civilization_progress = 0.1 }
@@ -651,8 +651,8 @@ african_unciv_2 = {
 			continent = africa
 			continent = central_africa 
 			continent = west_africa 
-			continent = east_africa 
-			continent = south_west_africa 
+			continent = east_africa
+			continent = south_africa 
 		}
 		civilized = no
 		civilization_progress = 0.1
@@ -667,8 +667,8 @@ african_unciv_3 = {
 			continent = africa
 			continent = central_africa 
 			continent = west_africa 
-			continent = east_africa 
-			continent = south_west_africa 
+			continent = east_africa
+			continent = south_africa 
 		}
 		civilized = no
 		civilization_progress = 0.25
@@ -683,8 +683,8 @@ african_unciv_4 = {
 			continent = africa
 			continent = central_africa 
 			continent = west_africa 
-			continent = east_africa 
-			continent = south_west_africa 
+			continent = east_africa
+			continent = south_africa 
 		}
 		civilized = no
 		civilization_progress = 0.45

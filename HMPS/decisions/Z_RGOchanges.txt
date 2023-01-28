@@ -735,10 +735,10 @@ political_decisions = {
 			any_owned_province = {
 					OR = {
 						continent = africa 
-						continent = south_west_africa 
 						continent = east_africa
 						continent = west_africa
 						continent = central_africa
+						continent = south_africa
 					}
 					NOT = { terrain = small_island }
 					NOT = { terrain = desert }
@@ -769,9 +769,9 @@ political_decisions = {
 				limit = {
 					OR = {
 						continent = africa 
-						continent = south_west_africa 
 						continent = east_africa
 						continent = central_africa
+						continent = south_africa
 						continent = west_africa
 					}
 					NOT = { terrain = small_island }
