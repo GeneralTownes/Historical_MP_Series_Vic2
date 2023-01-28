@@ -3,5 +3,5 @@ controller = SAX
 add_core = SAX
 add_core = GER
 terrain = chemnitz
-trade_goods = tin
+trade_goods = copper
 life_rating = 40

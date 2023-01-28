@@ -547,8 +547,8 @@ steel_factory = {
 bronze_factory = { 
 	template = factory_template
 	input_goods = { 
-		copper = 22
-		tin = 8		
+		copper = 30		
+		coal = 5
 	}
 
 	output_goods = bronze 
@@ -556,10 +556,6 @@ bronze_factory = {
 	bonus = {
 		trigger = { trade_goods_in_state = copper }
 		value = 0.25
-	}
-	bonus = {
-		trigger = { trade_goods_in_state = tin }
-		value = 0.05
 	}
 }
 
@@ -1038,13 +1034,6 @@ copper_mine = {
 	template = RGO_template_labourers
 	output_goods = copper
 	value = 2.7
-	mine = yes
-}
-
-tin_mine = {
-	template = RGO_template_labourers
-	output_goods = tin
-	value = 1.5
 	mine = yes
 }
 
@@ -1708,8 +1697,7 @@ artisan_cobbler = {
 
 artisan_bronzeworker = {       
 	input_goods = { 
-		copper = 22
-		tin = 8
+		copper = 30
 	}
 
 	output_goods = bronze 

@@ -2,5 +2,5 @@ owner = SIA
 controller = SIA
 add_core = SIA
 add_core = WIA
-trade_goods = tin
+trade_goods = iron
 life_rating = 33

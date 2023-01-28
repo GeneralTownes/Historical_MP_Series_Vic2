@@ -1257,9 +1257,9 @@ political_decisions = {
 		}
 		effect = {
 			1262 = { trade_goods = copper }
-			1265 = { trade_goods = tin }
-			1231 = { trade_goods = tin }
-			1289 = { trade_goods = tin }
+			1265 = { trade_goods = copper }
+			1231 = { trade_goods = copper }
+			1289 = { trade_goods = iron }
 			1267 = { trade_goods = copper }
 			1277 = { trade_goods = iron }
 			1280 = { trade_goods = iron }

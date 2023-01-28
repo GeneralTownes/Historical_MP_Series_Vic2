@@ -3,5 +3,5 @@ controller = AUS
 add_core = AUS
 add_core = BOH
 add_core = CZH
-trade_goods = tin
+trade_goods = copper
 life_rating = 35

@@ -2,5 +2,5 @@ owner = RUS
 controller = RUS
 add_core = RUS
 add_core = KRL
-trade_goods = tin
+trade_goods = iron
 life_rating = 35

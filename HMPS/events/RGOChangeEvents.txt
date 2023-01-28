@@ -117,7 +117,6 @@ province_event = {
 			NOT = { trade_goods = sulphur } 
 			NOT = { trade_goods = iron } 
 			NOT = { trade_goods = copper } 
-			NOT = { trade_goods = tin } 
 			NOT = { trade_goods = timber } 
 			NOT = { trade_goods = tropical_wood } 
 			NOT = { trade_goods = rubber }
@@ -264,7 +263,6 @@ province_event = {
 			NOT = { trade_goods = sulphur } 
 			NOT = { trade_goods = iron } 
 			NOT = { trade_goods = copper } 
-			NOT = { trade_goods = tin } 
 			NOT = { trade_goods = timber } 
 			NOT = { trade_goods = tropical_wood } 
 			NOT = { trade_goods = rubber }
@@ -412,7 +410,6 @@ province_event = {
 			NOT = { trade_goods = sulphur } 
 			NOT = { trade_goods = iron } 
 			NOT = { trade_goods = copper } 
-			NOT = { trade_goods = tin } 
 			NOT = { trade_goods = timber } 
 			NOT = { trade_goods = tropical_wood } 
 			NOT = { trade_goods = rubber }
@@ -560,7 +557,6 @@ province_event = {
 			NOT = { trade_goods = sulphur } 
 			NOT = { trade_goods = iron } 
 			NOT = { trade_goods = copper } 
-			NOT = { trade_goods = tin } 
 			NOT = { trade_goods = timber } 
 			NOT = { trade_goods = tropical_wood } 
 			NOT = { trade_goods = rubber }
@@ -581,154 +577,6 @@ province_event = {
 	option = {
 		name = "EVT199022OPTA"
 		trade_goods = copper
-		add_province_modifier = {
-			name = switched_production
-			duration = 1825
-		}
-		ai_chance = { factor = 100 }
-	}
-	
-	option = {
-		name = "EVT199034OPTB"
-		ai_chance = { factor = 0 }
-	}
-}
-
-province_event = {
-	id = 1990013
-	title = "EVTNAME1990013" #Prospector Strikes Tin!
-	desc = "EVTDESC1990013"
-	
-	trigger = {
-		owned_by = THIS
-		controlled_by = THIS
-		province_control_days = 1095
-		owner = {
-			war = no
-			mechanized_mining = 1
-		}
-		NOT = {
-			trade_goods = tin
-			has_province_modifier = switched_production
-		}
-		OR = {
-			AND = {
-				unemployment_by_type = { type = farmers value = 0.5  }
-				has_pop_type = farmers
-				work_available = { worker = farmers }
-			}
-			AND = {
-				unemployment_by_type = { type = labourers value = 0.5  }
-				has_pop_type = labourers
-				work_available = { worker = labourers }
-			}
-		}
-		OR = {
-			terrain = hills
-			terrain = dryhills
-			terrain = mountain
-			terrain = montane_forest
-			terrain = montane_tundra
-			
-			terrain = lapaz
-			terrain = isfahan
-			terrain = aden
-			terrain = sevastopol
-			terrain = kerch
-			terrain = katmandu
-			terrain = bern
-			terrain = tblisi
-			terrain = baku
-			terrain = fez
-			terrain = zurich
-			terrain = vancouver
-			terrain = santiago
-			terrain = quito
-			
-			terrain = vienna
-			terrain = oslo
-			terrain = munich
-			terrain = belgrade
-			terrain = mexicocity
-			terrain = peking
-			terrain = sofia
-			 
-			terrain = rennes
-			terrain = toulouse
-			terrain = bilbao
-			terrain = zagreb
-			terrain = ankara
-			terrain = erivan
-			terrain = glasgow
-			terrain = sheffield
-			terrain = goteborg
-			terrain = losangeles
-			terrain = pittsburgh
-			terrain = rio
-			terrain = saopaulo
-			terrain = havana
-			terrain = capetown
-			terrain = madras
-			terrain = saigon
-			terrain = sydney
-			terrain = kyoto
-			terrain = samarkand
-			terrain = tirana
-			terrain = ljubljana
-			terrain = bratislava
-			terrain = genoa
-			terrain = vladivostok
-			terrain = sarajevo
-			terrain = palermo
-			terrain = gonder
-			terrain = hyderabad
-			terrain = karachi
-			terrain = hanoi
-			terrain = pola
-			terrain = nice
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 3000
-		modifier = {
-			factor = 1.5
-			OR = {
-				terrain = montane_tundra
-				terrain = montane_forest
-			}
-		}
-		modifier = {
-			factor = 0.001
-			NOT = { trade_goods = cotton }
-			NOT = { trade_goods = dye } 
-			NOT = { trade_goods = wool } 
-			NOT = { trade_goods = silk } 
-			NOT = { trade_goods = coal } 
-			NOT = { trade_goods = sulphur } 
-			NOT = { trade_goods = iron } 
-			NOT = { trade_goods = copper } 
-			NOT = { trade_goods = tin } 
-			NOT = { trade_goods = timber } 
-			NOT = { trade_goods = tropical_wood } 
-			NOT = { trade_goods = rubber }
-			NOT = { trade_goods = oil }
-			NOT = { trade_goods = precious_goods }
-			NOT = { trade_goods = precious_goods }
-			NOT = { trade_goods = cattle }
-			NOT = { trade_goods = fish }
-			NOT = { trade_goods = fruit }
-			NOT = { trade_goods = grain }
-			NOT = { trade_goods = tobacco }
-			NOT = { trade_goods = tea }
-			NOT = { trade_goods = coffee }
-			NOT = { trade_goods = opium }
-		}
-	}
-
-	option = {
-		name = "EVT199022OPTA"
-		trade_goods = tin
 		add_province_modifier = {
 			name = switched_production
 			duration = 1825
@@ -941,7 +789,6 @@ province_event = {
 			NOT = { trade_goods = sulphur } 
 			NOT = { trade_goods = iron } 
 			NOT = { trade_goods = copper } 
-			NOT = { trade_goods = tin } 
 			NOT = { trade_goods = timber } 
 			NOT = { trade_goods = tropical_wood } 
 			NOT = { trade_goods = rubber }
@@ -1101,7 +948,6 @@ province_event = {
 			NOT = { trade_goods = sulphur } 
 			NOT = { trade_goods = iron } 
 			NOT = { trade_goods = copper } 
-			NOT = { trade_goods = tin } 
 			NOT = { trade_goods = timber } 
 			NOT = { trade_goods = tropical_wood } 
 			NOT = { trade_goods = rubber }
@@ -1312,7 +1158,6 @@ province_event = {
 			NOT = { trade_goods = sulphur } 
 			NOT = { trade_goods = iron } 
 			NOT = { trade_goods = copper } 
-			NOT = { trade_goods = tin } 
 			NOT = { trade_goods = timber } 
 			NOT = { trade_goods = tropical_wood } 
 			NOT = { trade_goods = rubber }
@@ -1479,7 +1324,6 @@ province_event = {
 			NOT = { trade_goods = sulphur } 
 			NOT = { trade_goods = iron } 
 			NOT = { trade_goods = copper } 
-			NOT = { trade_goods = tin } 
 			NOT = { trade_goods = timber } 
 			NOT = { trade_goods = tropical_wood } 
 			NOT = { trade_goods = rubber }
@@ -1615,7 +1459,6 @@ province_event = {
 			NOT = { trade_goods = sulphur } 
 			NOT = { trade_goods = iron } 
 			NOT = { trade_goods = copper } 
-			NOT = { trade_goods = tin } 
 			NOT = { trade_goods = timber } 
 			NOT = { trade_goods = tropical_wood } 
 			NOT = { trade_goods = rubber }
@@ -1757,7 +1600,6 @@ province_event = {
 			NOT = { trade_goods = sulphur } 
 			NOT = { trade_goods = iron } 
 			NOT = { trade_goods = copper } 
-			NOT = { trade_goods = tin } 
 			NOT = { trade_goods = timber } 
 			NOT = { trade_goods = tropical_wood } 
 			NOT = { trade_goods = rubber }
@@ -1905,7 +1747,6 @@ province_event = {
 			NOT = { trade_goods = sulphur } 
 			NOT = { trade_goods = iron } 
 			NOT = { trade_goods = copper } 
-			NOT = { trade_goods = tin } 
 			NOT = { trade_goods = timber } 
 			NOT = { trade_goods = tropical_wood } 
 			NOT = { trade_goods = rubber }
@@ -1989,7 +1830,6 @@ province_event = {
 			NOT = { trade_goods = sulphur } 
 			NOT = { trade_goods = iron } 
 			NOT = { trade_goods = copper } 
-			NOT = { trade_goods = tin } 
 			NOT = { trade_goods = timber } 
 			NOT = { trade_goods = tropical_wood } 
 			NOT = { trade_goods = rubber }
@@ -2157,7 +1997,6 @@ province_event = {
 			NOT = { trade_goods = sulphur } 
 			NOT = { trade_goods = iron } 
 			NOT = { trade_goods = copper } 
-			NOT = { trade_goods = tin } 
 			NOT = { trade_goods = timber } 
 			NOT = { trade_goods = tropical_wood } 
 			NOT = { trade_goods = rubber }
@@ -2240,7 +2079,6 @@ province_event = {
 			NOT = { trade_goods = sulphur } 
 			NOT = { trade_goods = iron } 
 			NOT = { trade_goods = copper } 
-			NOT = { trade_goods = tin } 
 			NOT = { trade_goods = timber } 
 			NOT = { trade_goods = tropical_wood } 
 			NOT = { trade_goods = rubber }
@@ -2518,7 +2356,6 @@ province_event = {
 			NOT = { trade_goods = sulphur } 
 			NOT = { trade_goods = iron } 
 			NOT = { trade_goods = copper } 
-			NOT = { trade_goods = tin } 
 			NOT = { trade_goods = timber } 
 			NOT = { trade_goods = tropical_wood } 
 			NOT = { trade_goods = rubber }
@@ -2796,7 +2633,6 @@ province_event = {
 			NOT = { trade_goods = sulphur } 
 			NOT = { trade_goods = iron } 
 			NOT = { trade_goods = copper } 
-			NOT = { trade_goods = tin } 
 			NOT = { trade_goods = timber } 
 			NOT = { trade_goods = tropical_wood } 
 			NOT = { trade_goods = rubber }

@@ -1,5 +1,5 @@
 owner = MEX
 controller = MEX
 add_core = MEX
-trade_goods = tin
+trade_goods = copper
 life_rating = 35

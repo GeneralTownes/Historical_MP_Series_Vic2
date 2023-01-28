@@ -1637,7 +1637,7 @@ political_decisions = {
 			232 = { trade_goods = iron }
 			235 = { trade_goods = iron }
 			98 = { trade_goods = copper }
-			110 = { trade_goods = tin }
+			110 = { trade_goods = copper }
 		}
 		
 		ai_will_do = { factor = 1 }
@@ -1848,7 +1848,7 @@ political_decisions = {
 				limit = {
 					province_id = 249
 				}
-				trade_goods = tin
+				trade_goods = iron
 			}	
 		
 			set_global_flag = manufacturing_belt

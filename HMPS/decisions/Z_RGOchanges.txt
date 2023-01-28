@@ -3,7 +3,7 @@ political_decisions = {
 		picture = coal_mining_2
 		potential = {
 			2313 = { owned_by = THIS }
-			NOT = { 2313 = { trade_goods = tin } }
+			NOT = { 2313 = { trade_goods = iron } }
 		}
 		allow = {
 			hot_blast = 1
@@ -11,7 +11,7 @@ political_decisions = {
 			2313 = { owned_by = THIS }
 		}
 		effect = {
-			2313 = { trade_goods = tin }
+			2313 = { trade_goods = iron }
 		}
 	}
 	
@@ -971,7 +971,7 @@ political_decisions = {
 					province_control_days = 182
 					unemployment_by_type = { type = farmers value = 0.2 }
 				}
-				trade_goods = tin
+				trade_goods = iron
 			}
 			random_owned = {
 				limit = {

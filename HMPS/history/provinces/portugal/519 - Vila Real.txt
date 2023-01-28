@@ -1,5 +1,5 @@
 owner = POR
 controller = POR
 add_core = POR
-trade_goods = tin
+trade_goods = iron
 life_rating = 35

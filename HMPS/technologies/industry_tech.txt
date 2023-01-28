@@ -969,9 +969,6 @@ bessemer_process = {
 	rgo_goods_output = {
 		copper = 1.25
 	}
-	rgo_goods_output = {
-		tin = 1
-	}
 	factory_goods_output = {
 		steel = 0.1
 	}
@@ -1062,9 +1059,6 @@ advanced_metallurgy = {
 	rgo_goods_output = {
 		copper = 1.25
 	}
-	rgo_goods_output = {
-		tin = 1
-	}
 	
 	ai_chance = {
 		factor = 2
@@ -1152,9 +1146,6 @@ electric_furnace = {
 	rgo_goods_output = {
 		copper = 1.75
 	}
-	rgo_goods_output = {
-		tin = 1
-	}
 	
 	ai_chance = {
 		factor = 2
@@ -1225,9 +1216,6 @@ modern_metallurgy = {
 	}
 	rgo_goods_output = {
 		copper = 2
-	}
-	rgo_goods_output = {
-		tin = 1.5
 	}
 	factory_goods_output = {
 		steel = 0.05 

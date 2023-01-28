@@ -2,6 +2,6 @@ owner = RUS
 controller = RUS
 add_core = RUS
 add_core = URA
-trade_goods = tin
+trade_goods = copper
 life_rating = 35
 colonial = 2

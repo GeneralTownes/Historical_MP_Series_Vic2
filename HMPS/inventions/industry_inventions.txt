@@ -815,9 +815,6 @@ advanced_ore_roasting_processes = {
 		rgo_goods_output = {
 			copper = 0.4
 		}
-		rgo_goods_output = {
-			tin = 0.4
-		}
 	}
 }
 advanced_ore_grinding_processes = {
@@ -840,9 +837,6 @@ advanced_ore_grinding_processes = {
 		rgo_goods_output = {
 			copper = 0.3
 		}
-		rgo_goods_output = {
-			tin = 0.3
-		}
 	}
 }
 advanced_ore_smelting_processes = {
@@ -864,9 +858,6 @@ advanced_ore_smelting_processes = {
 		}
 		rgo_goods_output = {
 			copper = 0.3
-		}
-		rgo_goods_output = {
-			tin = 0.3
 		}
 	}
 }

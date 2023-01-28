@@ -2,6 +2,6 @@ owner = EIC
 controller = EIC
 add_core = KAR
 add_core = BUR
-trade_goods = tin
+trade_goods = copper
 life_rating = 31
 colonial = 2

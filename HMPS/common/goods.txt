@@ -78,10 +78,6 @@ raw_material_goods = {
 		cost = 6.5
 		color = { 253 199 110 }
 	}
-	tin = {
-		cost = 12
-		color = { 253 199 110 }
-	}
 	oil = { 
 		cost = 12.0
 		color = { 0 0 0 }
