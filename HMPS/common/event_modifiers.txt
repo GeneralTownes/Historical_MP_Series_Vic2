@@ -3330,15 +3330,6 @@ lin_zexu = {
 	icon = 17
 }
 
-likin_tax = {
-	tax_efficiency = 0.075
-	administrative_efficiency_modifier = 0.05
-	global_pop_militancy_modifier = 0.01
-	min_tax = 0.1
-	war_exhaustion = -0.5
-	icon = 9
-}
-
 ###HFM Siam Modifiers###
 
 rama_iv = {

@@ -470,7 +470,7 @@ steamer_transports = {
 	}
 }
 commerce_raiders = {
-	limit = { iron_steamers = 1 }
+	limit = { steel_steamers = 1 }
 	chance = {
 		base = 100
 	}

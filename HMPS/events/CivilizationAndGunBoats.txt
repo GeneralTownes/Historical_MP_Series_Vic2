@@ -250,24 +250,6 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		NOT = {
-			tag = QNG
-			tag = CHI
-			tag = TPG
-			AND = {
-				NOT = { has_global_flag = the_dragon_wakes }
-				OR = {
-					tag = MCK
-					tag = XBI
-					tag = XIN
-					tag = SZC
-					tag = YNN
-					tag = GXI
-					tag = GNG
-					tag = FJN
-				}
-			}
-		}
 	}
 
 	option = {				
@@ -276,12 +258,6 @@ country_event = {
 		tech_school = traditional_academic
 		clr_country_flag = lacking_writing_system
 		random_owned = { limit = { owner = { ai = yes } } owner = { add_country_modifier = { name = law_changed_by_force duration = 3 } } }
-		
-		random_list = {
-			34 = { add_country_modifier = { name = global_baby_boom duration = 3650 } }
-			33 = { add_country_modifier = { name = global_baby_boom duration = 3285 } }
-			33 = { add_country_modifier = { name = global_baby_boom duration = 4015 } }
-		}
 		remove_country_modifier = assegai
 		remove_country_modifier = educational_reform
 		remove_country_modifier = military_reform
@@ -502,6 +478,30 @@ country_event = {
 		}
 		
 		######
+		
+		any_country = {
+			limit = {
+				exists = yes
+				OR = {
+					substate_of = THIS
+					vassal_of = THIS
+				}
+				OR = {
+					tag = MCK
+					tag = XBI
+					tag = XIN
+					tag = SZC
+					tag = YNN
+					tag = GXI
+					tag = GNG
+					tag = FJN
+					tag = KML
+					tag = IMG
+					tag = GUI
+				}
+			}
+			country_event = { id=90901 days=0 }
+		}
 	}
 }
 
