@@ -1,26 +1,3 @@
-# 555100 - Call for the South American Union
-country_event = {
-	id = 555100
-	title = "EVTNAME555100"
-	desc = "EVTDESC555100"
-	picture = "banquet"
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTA555100"
-		any_owned = {
-			limit = {
-				continent = south_america
-			}
-			add_core = USS
-			any_pop = {
-				consciousness = 2
-			}
-		}
-	}
-}
-
 # 555101 - USSA Inheritance
 country_event = {
 	id = 555101
@@ -57,29 +34,7 @@ country_event = {
 		}
 		FROM = { inherit = THIS }	
 		ai_chance = {
-			factor = 75
-			modifier = {
-				factor = 0
-				is_greater_power = yes
-				NOT = { has_country_flag = wants_to_unify }
-			}
-			modifier = {
-				factor = 2
-				OR = {
-					alliance_with = FROM
-					relation = { who = FROM value = 100 }
-				}
-			}
-			modifier = {
-				factor = 0.1
-				government = fascist_dictatorship
-				FROM = { government = proletarian_dictatorship }
-			}
-			modifier = {
-				factor = 0.1
-				government = proletarian_dictatorship
-				FROM = { government = fascist_dictatorship }
-			}
+			factor = 100
 		}
 	}
 	
@@ -104,58 +59,7 @@ country_event = {
 			consciousness = 2
 		}
 		ai_chance = {
-			factor = 25
-			modifier = {
-				factor = 0
-				has_country_flag = wants_to_unify
-			}
-			modifier = {
-				factor = 0.75
-				is_secondary_power = no
-			}
-			modifier = {
-				factor = 0.75
-				part_of_sphere = no
-			}
-			modifier = {
-				factor = 1.5
-				truce_with = FROM
-			}
-			modifier = {
-				factor = 1.5
-				NOT = {
-					relation = { who = FROM value = 0 }
-				}
-			}
-			modifier = {
-				factor = 0.25
-				in_sphere = FROM
-			} 
-			modifier = {
-				factor = 0.25
-				government = fascist_dictatorship
-				FROM = { government = fascist_dictatorship }
-			}
-			modifier = {
-				factor = 0.25
-				government = proletarian_dictatorship
-				FROM = { government = proletarian_dictatorship }
-			}
-			modifier = {
-				factor = 0.25
-				OR = {
-					government = democracy
-					government = prussian_constitutionalism
-					government = hms_government
-				}
-				FROM = {
-					OR = {
-						government = democracy
-						government = prussian_constitutionalism
-						government = hms_government
-					}
-				}
-			}
+			factor = 0
 		}
 	}
 }

@@ -855,7 +855,6 @@ country_event = {
 			has_country_modifier = neutrality
 			war_policy = pacifism
 			has_country_flag = in_great_war
-			has_country_modifier = no_more_war
 		}		
 	}
 

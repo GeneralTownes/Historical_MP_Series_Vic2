@@ -843,7 +843,6 @@ political_decisions = {
 						has_pop_culture = malayalam
 						has_pop_culture = afro_caribeno
 						is_culture_group = south_asian
-						is_culture_group = indo_iranian
 						has_pop_culture = central_american
 						has_pop_culture = mayan
 						has_pop_culture = afro_caribbean
@@ -956,11 +955,6 @@ political_decisions = {
 			}
 			2482 = { add_province_modifier = { name = penal_colony duration = -1 } }
 			
-			random_owned = {
-				limit = { owner = { ai = yes } }
-				AST = { set_country_flag = unreleasable_country }
-				NZL = { set_country_flag = unreleasable_country }
-			}
 			2473 = { life_rating = 13 }
 			2474 = { life_rating = 13 }
 			2475 = { life_rating = 13 }
@@ -2923,7 +2917,6 @@ political_decisions = {
 						culture = malayalam
 						culture = afro_caribeno
 						is_culture_group = south_asian
-						is_culture_group = indo_iranian
 						culture = central_american
 						culture = mayan
 						culture = afro_caribbean

@@ -30,7 +30,7 @@ political_decisions = {
 						continent = south_america
 					}
 				}
-				country_event = 555100
+				add_core = USS
 			}
 			any_country = {
 				limit = {
@@ -118,7 +118,7 @@ political_decisions = {
 					OR = {
 						AND = {
 							in_sphere = THIS
-							is_vassal = no
+							ai = yes
 						}
 						vassal_of = THIS
 					}

@@ -383,11 +383,6 @@ country_event = {
 		
 		remove_country_modifier = the_slavery_debate
 		
-		add_country_modifier = {
-				name = no_more_war
-				duration = 150
-		}
-		
 		any_owned = {
 			limit = {
 				is_core = CSA
@@ -443,10 +438,6 @@ country_event = {
 				}
 				pop_type = soldiers
 			}
-			add_country_modifier = {
-				name = no_more_war
-				duration = 150
-			}
 		}
 		
 		any_country = {
@@ -499,10 +490,6 @@ country_event = {
 				}
 				pop_type = soldiers
 			}
-			add_country_modifier = {
-				name = no_more_war
-				duration = 150
-			}
 		}
 		
 		any_country = {
@@ -554,10 +541,6 @@ country_event = {
 					has_pop_culture = french_canadian
 				}
 				pop_type = soldiers
-			}
-			add_country_modifier = {
-				name = no_more_war
-				duration = 150
 			}
 		}
 		

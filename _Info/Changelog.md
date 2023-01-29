@@ -118,14 +118,13 @@ Overseas penalty increased to 0.025 per provinces
 - Free Trade gives 5% output and small tech buffs
 #### Goods
 - Copper (RGO): Used to make bronze and in electrical goods
-- Tin (RGO): Used to make bronze
 - Combined precious metals into precious goods
 - Shares: Factory supply good & used to make stocks
 - Stocks: Rich middle class and upper class good
 - Pharmaceuticals: Army and richer pops supply good
 - Interwar Hulls: Required for aircraft carriers
 #### Factories
-- Bronze: Tin & Copper inputs
+- Bronze: Copper & Coal inputs
 - Pharmaceuticals: Glass & Opium
 - Banks (Shares): Paper (clerk only)
 - Stock Exchange (Stocks): Paper, Shares (clerk only)
@@ -163,7 +162,7 @@ Peacetime mob disabled
 - Mass conquest if a dictatorship form with Mass Politics
 - 10 infamy demand chinese concession (East Asia countries need breech loaded & naval statistics, everyone else needs machine guns & naval logistics/be Russia/be Iran)
 - Radical republics and Absolute monarchies can enforce gov types on the other gov type
-- Cannot puppet Japanese primary countries if they're unwesternised
+- Jihad CB for unwesternised sunni against infidels
 #### Warscore
 - Acquire state/substate cost ~27-33
 - Acquire core/substate core cost ~14-17
@@ -172,7 +171,11 @@ Peacetime mob disabled
 - Non-Chinese concession ~14-17
 - Free people / allied core ~21
 - Monroe doctrine / Oriental crises ~14
+- Chinese/Indian Reunification ~5
 #### Truces
+- GW truce is 8 years
+- Independence truce is 10 years
+- Military access truce is 1 year
 - Trucebreaking gives 0 militancy
 - Trucebreaking gives 5 infamy
 - Trucebreaking gives -100 prestige
@@ -227,9 +230,9 @@ German states only get all German cultures on forming Germany
 - NET: Starts with Indonesian puppets annexed, and can quickly annex Aceh and Jambi
 - POR: Can unite with Brazil to form the UPB
 #### Americas
-- USA: Can claim all of Mexico (with only standard MD cores)
+- USA: Manifest Destiny unlocks CB for USA & Mexico, Monroe Doctrine CB
 - Mexico: Can accept Centeral American
-- Gran Columbia: Carribean and Peru-Bolivia expansion ability
+- Gran Columbia: Carribean expansion ability
 - Brazil industrial RGO change decisions later-campaign
 #### India
 - EIC if independent can form India
@@ -237,7 +240,7 @@ German states only get all German cultures on forming Germany
 #### East Asia
 - Qing collapses with 2 miltancy and non conservative/reactionary party, or if it is a republic
 - China surviving the Warlord Era can accept all Chinese cultures
-- JAP tag will annex all independent primary Japanese (not TKG) tags who aren't at war automatically
+- JAP tag will annex all independent primary Japanese (not TKG) tags who aren't at war automatically if TKG puppetted/destroyed
 - JAP will gain the cores of TKG if TKG doesn't exist
 #### Oceania
 - Australia can form Oceania, with small expansion flava

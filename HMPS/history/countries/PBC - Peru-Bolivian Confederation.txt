@@ -54,6 +54,7 @@ upper_house = {
 set_country_flag = new_world_nation
 
 decision = BOL_1836_setup
+decision = treaty_of_la_paz
 
 # Technologies
 #post_napoleonic_thought = 1

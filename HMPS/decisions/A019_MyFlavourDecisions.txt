@@ -1,34 +1,4 @@
 political_decisions = {
-
-	allow_no_cb_wars = {
-		picture = gtfo
-		potential = { 
-			ai = no
-			NOT = { has_country_flag = hiding_the_decisions }
-			NOT = { 
-				has_country_flag = allows_no_cb
-			} 
-		}
-		
-		allow = {
-			war_policy = jingoism
-		}
-		
-		effect = { set_country_flag = allows_no_cb }
-	}
-	
-	disallow_no_cb_wars = {
-		picture = gtfo
-		potential = { 
-			ai = no
-			NOT = { has_country_flag = hiding_the_decisions }
-			has_country_flag = allows_no_cb
-		}
-		
-		allow = {  }
-		
-		effect = { clr_country_flag = allows_no_cb }
-	}
 	
 	violate_the_tarrif_treaty = {
 		picture = pax_britannica

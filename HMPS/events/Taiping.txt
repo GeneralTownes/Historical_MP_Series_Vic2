@@ -63,10 +63,6 @@ country_event = {
 		}
 
 		QNG = {
-			add_country_modifier = {
-				name = no_more_war
-				duration = 120
-			}
 			country_event = { id=99931 days=120 }
 		}
 		
@@ -142,11 +138,6 @@ country_event = {
 			any_pop = {
 				consciousness = -5
 				militancy = -5
-			}
-
-			add_country_modifier = {
-				name = no_more_war
-				duration = 90
 			}
 			
 			add_country_modifier = { name = fanatic_army duration = 1825 }

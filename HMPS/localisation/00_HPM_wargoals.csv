@@ -310,7 +310,7 @@ conquest_any;Conquest;;;;;;;;;;;;;
 conquest_any_desc;Conquer an 即enemy country劬;;;;;;;;;;;;;
 conquest_any_setup;Annex $RECIPIENT$;;;;;;;;;;;;;
 conquest_any_short;Annex $RECIPIENT$;;;;;;;;;;;;;
-sahel_jihad_cb;Sahel Jihad;Prendre territoire cl?Kernprovinz erwerben;;;;;;;;;;;;
+sahel_jihad_cb;Jihad;Prendre territoire cl?Kernprovinz erwerben;;;;;;;;;;;;
 sahel_jihad_cb_desc;Acquire an infidel 即state劬;Prendre un 即尒at劬 ennemi o?nous avons des 即provinces principales劬;Erobern Sie einen feindlichen 即Staat劬, in dem wir 即Kernprovinzen劬 haben.;;;;;;;;;;;
 sahel_jihad_cb_short;Acquire $STATE$;Prendre $STATE$;$STATE$ erwerben;;;;;;;;;;;
 sahel_jihad_cb_setup;Acquire $STATE$ from $RECIPIENT$;Prendre 尒at cl?$STATE$ de $RECIPIENT$;Kern-$STATE$ von $RECIPIENT$ erwerben;;;;;;;;;;;
