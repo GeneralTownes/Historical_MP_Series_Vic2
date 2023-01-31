@@ -173,9 +173,7 @@ Peacetime mob disabled
 - Monroe doctrine / Oriental crises ~14
 - Chinese/Indian Reunification ~5
 #### Truces
-- GW truce is 8 years
-- Independence truce is 10 years
-- Military access truce is 1 year
+- All truces are 5 years (except fake / transfer)
 - Trucebreaking gives 0 militancy
 - Trucebreaking gives 5 infamy
 - Trucebreaking gives -100 prestige

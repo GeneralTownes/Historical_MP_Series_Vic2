@@ -172,7 +172,7 @@ great_war_penalty_cb = {
 	break_truce_prestige_factor = 0
 	break_truce_infamy_factor = 0
 	break_truce_militancy_factor = 0
-	truce_months = 96
+	truce_months = 60
 	
 	good_relation_prestige_factor = 0
 	good_relation_infamy_factor = 0
@@ -206,7 +206,7 @@ additional_great_war_penalty_cb = {
 	break_truce_prestige_factor = 0
 	break_truce_infamy_factor = 0
 	break_truce_militancy_factor = 0
-	truce_months = 96
+	truce_months = 60
 	
 	good_relation_prestige_factor = 0
 	good_relation_infamy_factor = 0
@@ -3249,7 +3249,7 @@ become_independent = {
 	break_truce_prestige_factor = 1
 	break_truce_infamy_factor = 1
 	break_truce_militancy_factor = 1
-	truce_months = 120
+	truce_months = 60
 	
 	good_relation_prestige_factor = 1
 	good_relation_infamy_factor = 1
