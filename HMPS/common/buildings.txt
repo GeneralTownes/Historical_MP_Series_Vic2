@@ -816,9 +816,9 @@ fort = {
 	time = 1080 
 	visibility = yes
 	onmap = yes
-	max_level = 6
+	max_level = 12
 	province = yes
-	fort_level = 1
+	fort_level = 2
 }
 
 naval_base = {    

@@ -3856,7 +3856,7 @@ army_decision_making = {
 	
 	morale = 0.2
 
-	military_tactics = 0.25
+	military_tactics = 0.5
 
 	army_base = {
 		supply_consumption = 0.20
@@ -3943,7 +3943,7 @@ army_risk_management = {
 	
 	morale = 0.20
 
-	military_tactics = 0.25
+	military_tactics = 0.5
 
 	army_base = {
 		supply_consumption = 0.20
@@ -4031,7 +4031,7 @@ army_nco_training = {
 	morale = 0.25
 	
 
-	military_tactics = 0.25
+	military_tactics = 0.5
 
 	army_base = {
 		supply_consumption = 0.20
@@ -4118,7 +4118,7 @@ great_war_experience = {
 	
 	morale = 0.5
 
-	military_tactics = 0.25
+	military_tactics = 0.75
 
 	army_base = {
 		supply_consumption = 0.20
@@ -4202,7 +4202,7 @@ total_war_philosophy = {
 	
 	morale = 0.5
 
-	military_tactics = 0.5
+	military_tactics = 1
 
 	army_base = {
 		supply_consumption = 0.20

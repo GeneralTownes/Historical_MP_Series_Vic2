@@ -187,6 +187,7 @@ Peacetime mob disabled
 War score from battles is capped at 25
 No war exhaustion hit on rebel occupations
 War subs pay for 100% of mil goods
+Fort effects doubled
 #### Units
 Soldier pops concentrate in state capitals, requires 3k soldier pops for 1st brigade (then 5k onwards)
 - Bombers: 'Attack version' of planes (fighters)
@@ -196,6 +197,7 @@ Soldier pops concentrate in state capitals, requires 3k soldier pops for 1st bri
 - Cruisers: Require small amount of oil to build, cannot build overseas
 - Submarines: Torpedo attack & high evasion
 - Irregulars start unlocked for all
+- Siege units effects doubled
 #### Tech
 All units will immediately unlock when conditions met
 - Heavy Armament: Greatly buffed artillery attack
@@ -203,6 +205,7 @@ All units will immediately unlock when conditions met
 - Submarines scale greatly with 1900+ tech
 - Gas attack is reduced to 1, no defence, taken via decision
 - Navy speed will not benefit sail ships in the steam era onwards
+- Army Leadership gives increased mil tactics 
 #### Combat Width & Supply
 - Brigades are 5k
 - 5 combat width increase in 1920 & 1930

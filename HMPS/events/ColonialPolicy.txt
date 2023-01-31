@@ -1,0 +1,189 @@
+country_event = {
+	id = 99801 #Deciding a Colonial Policy
+	title = "EVTNAME99801"
+	desc = "EVTDESC99801"
+	picture = "exemplar_colony"
+	
+	allow_multiple_instances = no
+
+	trigger = {
+		civilized = yes
+		colonial_policy = no_colonies
+		any_state = { is_colonial = yes }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVT99801OPTA"
+		political_reform = settlement
+		any_pop = { 
+			limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				location = {
+					is_colonial = yes
+				}
+			}
+			militancy = 2
+		}
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 3.5
+				OR = {
+					government = proletarian_dictatorship
+					government = bourgeois_dictatorship
+					government = fascist_dictatorship
+					government = presidential_dictatorship
+				}
+			}
+			modifier = {
+				factor = 10
+				OR = { 
+					tag = RUS
+					tag = USA
+					tag = JAP
+					tag = ITA
+				}
+			}
+			modifier = {
+				factor = 1.5
+				government = absolute_monarchy
+			}
+			modifier = {
+				factor = 0.5
+				government = democracy
+			}
+			modifier = {
+				factor = 0.5
+				war_policy = pacifism
+			}
+			modifier = {
+				factor = 1.2
+				militancy = 3
+			}
+			modifier = {
+				factor = 1.2
+				militancy = 5
+			}
+		}
+	}
+	
+	option = {
+		name = "EVT99801OPTB"
+		political_reform = exploitation
+		any_pop = { 
+			limit = {
+				is_primary_culture = no
+				is_accepted_culture = no
+				location = {
+					is_colonial = yes
+				}
+			}
+			militancy = 2
+		}
+		
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 2
+				OR = {
+					government = proletarian_dictatorship
+					government = bourgeois_dictatorship
+					government = fascist_dictatorship
+					government = presidential_dictatorship
+				}
+			}
+			modifier = {
+				factor = 1.5
+				government = absolute_monarchy
+			}
+			modifier = {
+				factor = 1.5
+				government = democracy
+			}
+			modifier = {
+				factor = 1.5
+				war_policy = pacifism
+			}
+			modifier = {
+				factor = 0
+				is_culture_group = east_asian
+			}
+			modifier = {
+				factor = 0
+				primary_culture = japanese
+			}
+		}
+	}
+	
+	option = {
+		name = "EVT99801OPTC"
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						has_global_flag = berlin_conference
+						has_country_flag = theocratic_government
+					}
+					NOT = { has_country_flag = islamic_law }
+				}
+			}
+			owner = {
+				prestige = 15
+				political_reform = civilizing
+				any_pop = { 
+					limit = {
+						is_state_religion = no
+						location = {
+							is_colonial = yes
+						}
+					}
+					militancy = 2
+				}
+			
+			}
+		}
+		
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 0
+				OR = {
+					government = proletarian_dictatorship
+					government = bourgeois_dictatorship
+					government = fascist_dictatorship
+					government = presidential_dictatorship
+				}
+			}
+			modifier = {
+				factor = 5
+				government = theocracy
+			}
+			modifier = {
+				factor = 1.5
+				government = democracy
+			}
+			modifier = {
+				factor = 1.5
+				war_policy = pacifism
+			}
+			modifier = {
+				factor = 1.5
+				religious_policy = moralism
+			}
+			modifier = {
+				factor = 0
+				primary_culture = japanese
+			}
+			modifier = {
+				factor = 0
+				is_culture_group = east_asian
+			}
+		}
+	}
+}

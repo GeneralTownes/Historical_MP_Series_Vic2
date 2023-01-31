@@ -1893,6 +1893,7 @@ china_acquire_state = {
 			NOT = {
 				has_country_modifier = neutrality
 			}
+			NOT = { tag = LAN }
 		}
 		OR = {
 			has_global_flag = warlord_era_has_begun
