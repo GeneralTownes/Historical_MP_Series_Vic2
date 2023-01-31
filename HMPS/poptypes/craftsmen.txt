@@ -332,9 +332,8 @@ migration_target = {
 	##############################
 	
 	modifier = {
-		factor = 0.1
-		unemployment = 0.1
-		state_scope = { has_factories = no }
+		factor = 0.01
+		unemployment_by_type = { type = craftsmen value = 0.05  }
 	}
 	
 	modifier = {
@@ -342,14 +341,10 @@ migration_target = {
 		NOT = { state_scope = {	work_available = { worker = craftsmen } } }
 	}
 	modifier = {
-		factor = 2
-		any_core = {
-			OR = {
-				is_primary_culture = yes
-				is_accepted_culture = yes
-			}
+		factor = 10
+		NOT = {
+			unemployment_by_type = { craftsmen = farmers value = 0.05  }
 		}
-		state_scope = {	work_available = { worker = craftsmen } }
 	}
 	
 	

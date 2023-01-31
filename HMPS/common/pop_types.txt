@@ -790,37 +790,37 @@ emigration_chance = {
 		}
 	}
 
-	group = {
-		modifier = {
-			factor = 0.01
-			unemployment = 0.1
-			#NOT = { unemployment = 1 }
-		}
-		
-		modifier = {
-			factor = 0.01
-			unemployment = 0.2
-			#NOT = { unemployment = 1 }
-		}
-		
-		modifier = {
-			factor = 0.01
-			unemployment = 0.3
-			#NOT = { unemployment = 1 }
-		}
-		
-		modifier = {
-			factor = 0.01
-			#NOT = { unemployment = 1 }
-			unemployment = 0.4
-		}
-		
-		modifier = {
-			factor = 0.01
-			#NOT = { unemployment = 1 }
-			unemployment = 0.5
-		}
-	}
+	#group = {
+	#	modifier = {
+	#		factor = 0.01
+	#		unemployment = 0.1
+	#		#NOT = { unemployment = 1 }
+	#	}
+	#	
+	#	modifier = {
+	#		factor = 0.01
+	#		unemployment = 0.2
+	#		#NOT = { unemployment = 1 }
+	#	}
+	#	
+	#	modifier = {
+	#		factor = 0.01
+	#		unemployment = 0.3
+	#		#NOT = { unemployment = 1 }
+	#	}
+	#	
+	#	modifier = {
+	#		factor = 0.01
+	#		#NOT = { unemployment = 1 }
+	#		unemployment = 0.4
+	#	}
+	#	
+	#	modifier = {
+	#		factor = 0.01
+	#		#NOT = { unemployment = 1 }
+	#		unemployment = 0.5
+	#	}
+	#}
 	
 	group = {
 		modifier = {

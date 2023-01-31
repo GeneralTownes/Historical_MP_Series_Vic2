@@ -56,9 +56,9 @@ high_pressure_steam_engine = {
 	year = 1836
 	cost = 10000
 
-	farm_rgo_eff = 0.05
+	farm_rgo_eff = 0.1
 	farm_rgo_size = 0.2
-	mine_rgo_eff = 0.05
+	mine_rgo_eff = 0.075
 	mine_rgo_size = 0.2
 	
 	ai_chance = {
@@ -107,9 +107,9 @@ compound_steam_engines = {
 	year = 1836
 	cost = 17500
 
-	farm_rgo_eff = 0.05
+	farm_rgo_eff = 0.1
 	farm_rgo_size = 0.3
-	mine_rgo_eff = 0.05
+	mine_rgo_eff = 0.075
 	mine_rgo_size = 0.3
 	
 	ai_chance = {
@@ -158,9 +158,9 @@ steam_turbine = {
 	year = 1850
 	cost = 25000
 
-	farm_rgo_eff = 0.05
+	farm_rgo_eff = 0.1
 	farm_rgo_size = 0.2
-	mine_rgo_eff = 0.05
+	mine_rgo_eff = 0.075
 	mine_rgo_size = 0.2
 	
 	ai_chance = {
@@ -213,9 +213,9 @@ combustion_engine = {
 	year = 1880
 	cost = 35000
 	
-	farm_rgo_eff = 0.05
+	farm_rgo_eff = 0.1
 	farm_rgo_size = 0.15
-	mine_rgo_eff = 0.05
+	mine_rgo_eff = 0.1
 	mine_rgo_size = 0.15
 	
 	ai_chance = {
@@ -264,9 +264,9 @@ electrical_power_generation = {
 	year = 1900
 	cost = 47500
 	
-	farm_rgo_eff = 0.05
+	farm_rgo_eff = 0.1
 	farm_rgo_size = 0.05
-	mine_rgo_eff = 0.05
+	mine_rgo_eff = 0.1
 	mine_rgo_size = 0.05
 	
 	ai_chance = {
@@ -312,8 +312,8 @@ modern_power_generation = {
 	year = 1925
 	cost = 60000
 	
-	mine_rgo_eff = 0.1
-	farm_rgo_eff = 0.1
+	mine_rgo_eff = 0.15
+	farm_rgo_eff = 0.15
 	
 	ai_chance = {
 		factor = 1.1
@@ -961,10 +961,10 @@ bessemer_process = {
 		precious_goods = 0.15
 	}
 	rgo_goods_output = {
-		coal = 0.75
+		coal = 1
 	}
 	rgo_goods_output = {
-		iron = 0.5
+		iron = 1
 	}
 	rgo_goods_output = {
 		copper = 1.25
@@ -1051,10 +1051,10 @@ advanced_metallurgy = {
 	cost = 35000
 
 	rgo_goods_output = {
-		coal = 1.25
+		coal = 1.5
 	}
 	rgo_goods_output = {
-		iron = 0.75
+		iron = 1.25
 	}
 	rgo_goods_output = {
 		copper = 1.25
@@ -1138,10 +1138,10 @@ electric_furnace = {
 		bronze = 0.05 
 	}
 	rgo_goods_output = {
-		coal = 1
+		coal = 1.5
 	}
 	rgo_goods_output = {
-		iron = 0.5
+		iron = 1.25
 	}
 	rgo_goods_output = {
 		copper = 1.75
@@ -1209,10 +1209,10 @@ modern_metallurgy = {
 	cost = 60000
 	
 	rgo_goods_output = {
-		coal = 1
+		coal = 2
 	}
 	rgo_goods_output = {
-		iron = 1
+		iron = 2
 	}
 	rgo_goods_output = {
 		copper = 2
