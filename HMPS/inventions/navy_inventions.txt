@@ -254,31 +254,6 @@ defensive_attitude = {
 	}
 }
 #modern_naval_doctrine
-decisive_firepower_doctrine = {
-	limit = { modern_naval_doctrine_1920 = 1 }
-	chance = {
-		base = 2
-		modifier = {
-			factor = 2
-			nationalism_n_imperialism = 1
-		}
-		modifier = {
-			factor = 2
-			invention = work_control_and_hierarchy
-		}
-	}
-	effect = {
-		navy_base = {
-			gun_power = 2
-		}
-		clipper_transport = {
-			gun_power = -1
-		}
-		steam_transport = {
-			gun_power = -1
-		}		
-	}
-}
 naval_firepower_doctrine = {
 	limit = { modern_naval_doctrine = 1 }
 	chance = {
@@ -304,58 +279,45 @@ naval_firepower_doctrine = {
 		}		
 	}
 }
-#fleet_auxiliary_cv_doctrine = {
-#	limit = { modern_naval_doctrine = 1 }
-#	chance = {
-#		base = 6
-#	}
-#	effect = {
-#	}
-#}
-#fleet_auxiliary_ss_doctrine = {
-#	limit = { modern_naval_doctrine = 1 }
-#	chance = {
-#		base = 6
-#	}
-#	effect = {
-#	}
-#}
-#convoy_sailing = {
-#	limit = { modern_naval_doctrine = 1 }
-#	chance = {
-#		base = 6
-#	}
-#	effect = {
-#	}
-#}
-#integrated_naval_doctrine = {
-#	limit = { modern_naval_doctrine = 1 }
-#	chance = {
-#		base = 5
-#		modifier = {
-#			factor = 2
-#			invention = convoy_sailing
-#		}
-#		modifier = {
-#			factor = 2
-#			invention = fleet_auxiliary_ss_doctrine
-#		}
-#		modifier = {
-#			factor = 2
-#			invention = fleet_auxiliary_cv_doctrine
-#		}
-#		modifier = {
-#			factor = 2
-#			invention = naval_firepower_doctrine
-#		}
-#		modifier = {
-#			factor = 2
-#			invention = modern_cruisers
-#		}
-#	}
-#	effect = {
-#	}
-#}
+#modern_naval_doctrine_1920
+greater_naval_bases = {
+	limit = { modern_naval_doctrine_1920 = 1 }
+	chance = {
+		base = 4
+		modifier = {
+			factor = 4
+			invention = new_carriers 
+		}
+	}
+	effect = {
+		max_naval_base = 1
+	}
+}
+decisive_firepower_doctrine = {
+	limit = { modern_naval_doctrine_1920 = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			nationalism_n_imperialism = 1
+		}
+		modifier = {
+			factor = 2
+			invention = work_control_and_hierarchy
+		}
+	}
+	effect = {
+		navy_base = {
+			gun_power = 2
+		}
+		clipper_transport = {
+			gun_power = -1
+		}
+		steam_transport = {
+			gun_power = -1
+		}		
+	}
+}
 #clipper_design
 building_station_shipyards = {
 	limit = { clipper_design = 1 }
