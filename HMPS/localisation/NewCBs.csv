@@ -124,3 +124,7 @@ mexican_american_war_short;Acquire $STATE$;;;;;;;;;;;;;
 mexican_american_war_setup;Select a §Ystate§! in the list on the right\n§YWill give instant cores on conquered states\nRemoves enemy cores§!;;;;;;;;;;;;;
 NORMAL_WAR_MEXICAN_AMERICAN_NAME;The $ORDER$Mexican-American War;;;;;;;;;;;;;
 AGRESSION_WAR_MEXICAN_AMERICAN_NAME;The $ORDER$Mexican-American War;;;;;;;;;;;;;
+separate_truce;Separate Truce;;;;;;;;;;;;;
+separate_truce_desc;Use this CB to gain a §Yseparate 5 year truce§! with the enemy alliance.;;;;;;;;;;;;;
+separate_truce_short;Apply a 5 year truce.;;;;;;;;;;;;;
+separate_truce_setup;Apply a truce of §Y5 years§!;;;;;;;;;;;;;

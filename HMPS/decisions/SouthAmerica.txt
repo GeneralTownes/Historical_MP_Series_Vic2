@@ -240,6 +240,12 @@ political_decisions = {
 			war = no
 			nationalism_n_imperialism = 1
 			OR = {
+				government = hms_government
+				government = prussian_constitutionalism
+				government = absolute_monarchy
+			}
+			NOT = { tag = IBR }
+			OR = {
 				POR = {
 					OR = {
 						substate_of  = THIS

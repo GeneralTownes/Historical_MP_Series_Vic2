@@ -2095,12 +2095,9 @@ province_event = {
 		any_country = {
 			limit = {
 				NOT = { tag = THIS }
-				OR = {
-					THIS = { mass_politics = 1 }
-					AND = {
-						NOT = { is_cultural_union = THIS }
-						NOT = { is_culture_group = THIS }
-					}
+				AND = {
+					NOT = { is_cultural_union = THIS }
+					NOT = { is_culture_group = THIS }
 				}
 				any_core = {
 					owned_by = THIS
@@ -2108,6 +2105,23 @@ province_event = {
 				}
 			}
 			country_event = 2626
+		}
+		owner = {
+			random_owned = {
+				limit = {
+					owner = { mass_politics = 1 }
+				}
+				any_country = {
+					limit = {
+						NOT = { tag = THIS }
+						any_core = {
+							owned_by = THIS
+							has_province_modifier = national_assimilation_complete
+						}
+					}
+					country_event = 2626
+				}
+			}
 		}
 	}
 }

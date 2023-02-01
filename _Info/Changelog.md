@@ -276,6 +276,9 @@ German states only get all German cultures on forming Germany
 - Can switch players / GM nation
 #### Grants
 - Standard Money Transfer options
+#### CBs
+- Take state/capital/colony for ally
+- Separate truce CB
 #### Infamy Transfers
 - Like grants, but limited to GPs or capital on the same continent
 - Take for ally CBs
