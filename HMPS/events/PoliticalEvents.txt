@@ -2549,13 +2549,6 @@ country_event = {
 		political_reform = mandatory_service
 		clr_country_flag = theocratic_government
 		clr_country_flag = communist_gov
-		clr_country_flag = absolute_monarchy_gov
-		clr_country_flag = semi_constitutional_monarchy_gov
-		clr_country_flag = constitutional_monarchy_gov
-		clr_country_flag = democracy_gov
-		clr_country_flag = presidential_dictatorship_gov
-		set_country_flag = fascist_gov
-		clr_country_flag = anarcho_liberal_gov
 		create_alliance = FROM
 		relation = { who = FROM value = 200 }
 		FROM = { diplomatic_influence = { who = THIS value = 100 } }
@@ -2822,13 +2815,6 @@ country_event = {
 		social_reform = good_subsidies
 		social_reform = good_pensions
 		set_country_flag = communist_gov
-		clr_country_flag = absolute_monarchy_gov
-		clr_country_flag = semi_constitutional_monarchy_gov
-		clr_country_flag = constitutional_monarchy_gov
-		clr_country_flag = democracy_gov
-		clr_country_flag = presidential_dictatorship_gov
-		clr_country_flag = fascist_gov
-		clr_country_flag = anarcho_liberal_gov
 		clr_country_flag = theocratic_government
 		create_alliance = FROM
 		relation = { who = FROM value = 200 }

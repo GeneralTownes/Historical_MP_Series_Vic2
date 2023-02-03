@@ -208,7 +208,6 @@ political_reforms = {
 			allow = {
 				NOT = { has_country_flag = communist_gov }
 				NOT = { has_country_flag = slave_revolution }
-				ai = no
 			}
 		}
 		
@@ -217,7 +216,6 @@ political_reforms = {
 			allow = {
 				NOT = { has_country_flag = communist_gov }
 				NOT = { has_country_flag = slave_revolution }
-				ai = no
 				OR = {
 					NOT = { has_country_flag = the_slavery_debate }
 					year = 1875
@@ -254,12 +252,6 @@ political_reforms = {
 			poor_vote = 0
 			global_immigrant_attract = 0.01
 			allow = { 
-				OR = {
-					has_country_flag = liberal_revolution_in_progress
-					has_country_flag = had_liberal_revolution
-					year = 1850
-					ai = no
-				}
 				NOT = { has_country_flag = theocratic_government } 
 			}
 			cb_generation_speed_modifier = 0.1
@@ -529,13 +521,6 @@ political_reforms = {
 			education_efficiency_modifier = -0.15
 			poor_savings_modifier = -0.5
 			global_immigrant_attract = -0.25
-			allow = {
-				OR = {
-					has_country_flag = clean_up_colonial_government
-					has_country_flag = absolute_monarchy_gov
-					has_country_flag = semi_constitutional_monarchy_gov
-				}
-			}
 		}
 		peonage = {
 			education_efficiency_modifier = -0.03
@@ -544,7 +529,6 @@ political_reforms = {
 			suppression_points_modifier = 0.1
 			poor_everyday_needs = 0.1
 			poor_savings_modifier = -0.25
-			#on_execute = { effect = { country_event = 6016804 } }
 			allow = { OR = { NOT = { has_country_flag = serfdom_not_abolished } year = 1870 } }
 		}
 		
@@ -573,31 +557,12 @@ political_reforms = {
 				vote_franschise = none_voting
 				NOT = { press_rights = free_press }
 				citizenship_policy = residency
-				OR = {
-					has_country_flag = clean_up_colonial_government
-					has_country_flag = absolute_monarchy_gov
-					has_country_flag = communist_gov
-					has_country_flag = fascist_gov
-					has_country_flag = presidential_dictatorship_gov
-					has_country_flag = theocratic_government
-				}
 			}
 		}
 		quota_immigration = {
 			administrative_multiplier = 2
 			global_immigrant_attract = -0.2
 			core_pop_militancy_modifier = -0.01
-			allow = {
-				OR = {
-					is_culture_group = latin_american_cultures
-					is_culture_group = american_cultures
-					is_culture_group = african_diaspora_cultures
-					is_culture_group = native_american
-					primary_culture = australian
-					primary_culture = anglo_canadian
-					primary_culture = french_canadian
-				}
-			}
 		}
 		open_borders = {
 		}
@@ -693,19 +658,6 @@ political_reforms = {
 			suppression_points_modifier = 0.2
 			allow = {
 				has_global_flag = revolution_n_counter_researched
-				OR = {
-					has_country_flag = communist_gov
-					has_country_flag = fascist_gov
-					AND = { 
-						ruling_party_ideology = reactionary
-						OR = {
-							has_country_flag = clean_up_colonial_government
-							has_country_flag = absolute_monarchy_gov
-							has_country_flag = presidential_dictatorship_gov
-							has_country_flag = theocratic_government
-						}
-					}
-				}
 			}
 		}
 		confederalism = {
@@ -744,12 +696,6 @@ political_reforms = {
 			mobilisation_size = -0.01
 			allow = {
 				number_of_states = 2
-				OR = {
-					has_country_flag = absolute_monarchy_gov
-					has_country_flag = theocratic_government				
-				}
-				debt_law = serfdom
-				has_country_flag = serfdom_not_abolished
 			}
 		}
 		federalism = {
@@ -774,7 +720,6 @@ political_reforms = {
 					has_country_flag = france
 				}
 				NOT = { has_country_flag = dual_monarchy }
-				NOT = { has_country_flag = at_home }
 			}
 		}
 	}
