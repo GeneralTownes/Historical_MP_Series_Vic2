@@ -160,7 +160,7 @@ Peacetime mob disabled
 - Liberate and puppet, and steal puppet CBs added
 - Military access CB (~week justification), the war is the access
 - Mass conquest if a dictatorship form with Mass Politics
-- 10 infamy demand chinese concession (East Asia countries need breech loaded & naval statistics, everyone else needs machine guns & naval logistics/be Russia/be Iran)
+- 10 infamy demand Chinese concession [for Ming-China] (East Asia countries need breech loaded & naval statistics, everyone else needs machine guns & naval logistics)
 - Radical republics and Absolute monarchies can enforce gov types on the other gov type
 - Jihad CB for unwesternised sunni against infidels
 #### Warscore

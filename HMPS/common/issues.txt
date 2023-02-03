@@ -498,8 +498,7 @@ political_reforms = {
 			rules = { primary_culture_voting = yes }
 			non_accepted_pop_consciousness_modifier = 0.01
 			allow = {
-				citizenship_policy = residency 
-				NOT = { has_country_flag = theocratic_government }
+				citizenship_policy = residency
 			}
 		}
 		culture_voting_only = {

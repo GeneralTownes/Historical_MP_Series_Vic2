@@ -2087,7 +2087,17 @@ demand_concession_CHI_casus_belli = {
 	}
 	
 	allowed_states = {
+		#Restrictions to Chinese Ming-China State conquering
 		any_owned_province = { is_core = CHI }
+		NOT = {
+			OR = {
+				any_owned_province = { is_core = MCK }
+				any_owned_province = { is_core = MGL }
+				any_owned_province = { is_core = XIN }
+				any_owned_province = { is_core = KML }
+				any_owned_province = { is_core = TIB }
+			}
+		}
 	}
 	
 	po_demand_state = yes
@@ -2262,8 +2272,21 @@ demand_concession_casus_belli = {
 	allowed_states = {
 		any_owned_province = { is_colonial = no }
 		
-		#Restrictions to Chinese State conquering
-		NOT = { any_owned_province = { is_core = CHI } }
+		#Restrictions to Chinese Ming-China State conquering
+		NOT = {
+			AND = {
+				any_owned_province = { is_core = CHI }
+				NOT = {
+					OR = {
+						any_owned_province = { is_core = MCK }
+						any_owned_province = { is_core = MGL }
+						any_owned_province = { is_core = XIN }
+						any_owned_province = { is_core = KML }
+						any_owned_province = { is_core = TIB }
+					}
+				}
+			}
+		}
 	}
 	
 	po_demand_state = yes
@@ -2338,8 +2361,21 @@ demand_concession_NI_casus_belli = {
 	allowed_states = {
 		any_owned_province = { is_colonial = no }
 		
-		#Restriction to chinese state conquering
-		NOT = { any_owned_province = { is_core = CHI } } ##can never use cheap cb on china
+		#Restrictions to Chinese Ming-China State conquering
+		NOT = {
+			AND = {
+				any_owned_province = { is_core = CHI }
+				NOT = {
+					OR = {
+						any_owned_province = { is_core = MCK }
+						any_owned_province = { is_core = MGL }
+						any_owned_province = { is_core = XIN }
+						any_owned_province = { is_core = KML }
+						any_owned_province = { is_core = TIB }
+					}
+				}
+			}
+		}
 	}
 	
 	po_demand_state = yes
@@ -2403,8 +2439,21 @@ demand_concession_BC_casus_belli = {
 	allowed_states = {
 		any_owned_province = { is_colonial = no }
 		
-		#Restriction to chinese state conquering
-		NOT = { any_owned_province = { is_core = CHI } } ##can never use cheap cb on china
+		#Restrictions to Chinese Ming-China State conquering
+		NOT = {
+			AND = {
+				any_owned_province = { is_core = CHI }
+				NOT = {
+					OR = {
+						any_owned_province = { is_core = MCK }
+						any_owned_province = { is_core = MGL }
+						any_owned_province = { is_core = XIN }
+						any_owned_province = { is_core = KML }
+						any_owned_province = { is_core = TIB }
+					}
+				}
+			}
+		}
 	}
 	
 	po_demand_state = yes
