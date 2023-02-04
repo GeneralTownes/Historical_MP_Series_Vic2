@@ -155,6 +155,7 @@ Peacetime mob disabled
 #### CBs
 - Great Wars locked until 1900
 - Can add war goals on puppets
+- Puppets will get the gov type of their overlord
 - Justify 'fake' overlord war in order to add CBs on puppets
 - Take capital & minor conquest added
 - Liberate and puppet, and steal puppet CBs added
