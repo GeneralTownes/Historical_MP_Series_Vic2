@@ -5,38 +5,6 @@
 #################################################################
 
 country_event = {
-	id = 98200
-	title = "EVTNAME98200" #The Great Boer Trek
-	desc = "EVTDESC98200"
-	picture = "pioneer_wagons"
-	
-	trigger = {
-		tag = ENG
-		NOT = { has_global_flag = great_boer_trek }
-		NOT = { has_country_flag = boer_accepted }
-	}
-	
-	fire_only_once = yes
-	
-	mean_time_to_happen = {
-		days = 5
-	}
-	
-	option = {
-		name = "EVT98200OPTA"
-		set_global_flag = great_boer_trek
-		set_variable = {
-			which = xhosa_conflict
-			value = 0
-		}
-		any_pop = {
-			limit = { has_pop_culture = boer }
-			consciousness = 6
-		}
-	}
-}
-
-country_event = {
 	id = 98205
 	title = "EVTNAME98205" #Invasion of the Laagers
 	desc = "EVTDESC98205"
@@ -45,7 +13,6 @@ country_event = {
 	trigger = {
 		tag = ZUL
 		year = 1838
-		has_global_flag = great_boer_trek
 		NOT = {
 			has_country_flag = attack_the_laagers
 			has_country_flag = make_peace_with_the_laagers
