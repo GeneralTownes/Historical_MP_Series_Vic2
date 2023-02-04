@@ -62,8 +62,10 @@ country_event = {
 			remove_province_modifier = christian_repression
 		}
 
-		QNG = {
-			country_event = { id=99931 days=120 }
+		war = {
+			target = TPG
+			attacker_goal = { casus_belli = civil_war }
+			defender_goal = { casus_belli = civil_war }
 		}
 		
 		any_owned = {
@@ -130,6 +132,7 @@ country_event = {
 			}
 		}
 		set_global_flag = taiping_has_happened
+		set_global_flag = tpg_war_started
 		
 		TPG = {
 			grain = 250
@@ -361,6 +364,7 @@ country_event = {
 			}
 		}
 		set_global_flag = taiping_has_happened
+		set_global_flag = tpg_war_started
 		
 		TPG = {
 			capital = 2221
@@ -551,7 +555,6 @@ country_event = {
 			}
 			owner = {
 				remove_country_modifier = ever_victorious_army
-				remove_country_modifier = the_xiang_army
 			}
 		}
 		any_pop = {

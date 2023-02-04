@@ -75,6 +75,7 @@ political_decisions = {
 		potential = {
 			tag = QNG
 			civilized = no
+			NOT = { has_country_flag = hundred_days_reform }
 		}
 		
 		allow = {

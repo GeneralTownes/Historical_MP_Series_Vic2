@@ -35,10 +35,7 @@ country_event = {
 				OR = {
 					AND = {
 						tag = QNG
-						OR = {
-							has_global_flag = xuantong_emperor
-							average_militancy = 4
-						}
+						average_militancy = 4
 						TPG = { exists = no }
 						CHI = { exists = no }
 					}
@@ -72,10 +69,6 @@ country_event = {
 					AND = { ruling_party_ideology = socialist average_militancy = 2 }
 					AND = { ruling_party_ideology = communist average_militancy = 2 }
 					AND = { ruling_party_ideology = anarcho_liberal average_militancy = 2 }
-					AND = {
-						year = 1910
-						ai = yes
-					}
 				}
 			}
 		}
@@ -83,16 +76,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 12
-		modifier = {
-			factor = 0.025
-			AND = {
-				OR = {
-					tag = QNG
-					tag = TPG
-				}
-				government = democracy
-			}
-		}
 		modifier = {
 			factor = 0.025
 			capital_scope = { controlled_by_rebels = yes }
@@ -1902,10 +1885,6 @@ country_event = {
 			war = yes
 		}
 		modifier = {
-			factor = 0.5
-			has_global_flag = the_xiang_army
-		}
-		modifier = {
 			factor = 0.3
 			1082 = { owned_by = RUS }
 		}
@@ -2210,15 +2189,9 @@ country_event = {
 		war = no
 		OR = {
 			civilized = yes
-			AND = { 
-				civilized = no
-				OR = {
-					has_country_flag = the_new_army_established
-					AND = {
-						civilization_progress = 0.7
-						has_global_flag = the_xiang_army
-						has_country_flag = beiyang_fleet_established
-					}
+			AND = {
+				civilization_progress = 0.7
+				has_country_flag = beiyang_fleet_established
 				}
 			}
 		}

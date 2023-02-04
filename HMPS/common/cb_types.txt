@@ -2539,6 +2539,18 @@ conquest = {
 			NOT = { tag = EIC }
 			NOT = { number_of_states = 2 }
 		}
+		OR = {
+			AND = {
+				civilized = no
+				THIS = { civilized = no }
+				NOT = { number_of_states = 5 }
+			}
+			AND = {
+				civilized = yes
+				THIS = { civilized = yes }
+				NOT = { number_of_states = 3 }
+			}
+		}
 		
 		#So not visible with Minor Conquest
 		NOT = {

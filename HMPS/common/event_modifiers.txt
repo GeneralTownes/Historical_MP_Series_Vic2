@@ -3253,15 +3253,6 @@ ever_victorious_army = {
 	icon = 15
 }
 
-the_xiang_army = {
-	war_exhaustion = -5
-	org_regain = 0.1
-	land_organisation = 0.05
-	supply_consumption = -0.1
-	global_pop_militancy_modifier = -0.05
-	icon = 15
-}
-
 the_eight_banners = {
 	land_organisation = -0.05
 	naval_organisation = -0.25
