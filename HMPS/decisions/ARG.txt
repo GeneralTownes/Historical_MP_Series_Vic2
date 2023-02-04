@@ -5,7 +5,6 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = ARG
-				tag = ARC
 				tag = LPL
 				tag = CHL
 				tag = VLP
@@ -139,7 +138,6 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = ARG
-				tag = ARC
 				tag = LPL
 				tag = PRG
 				tag = CHL
@@ -248,7 +246,6 @@ political_decisions = {
 		potential = {
 			OR = {
 				tag = ARG
-				tag = ARC
 				tag = LPL
 			}
 			has_country_flag = conquest_of_the_desert
@@ -297,52 +294,10 @@ political_decisions = {
 		}
 	}
 	
-	entre_rios_independent = {
-		picture = entre_rios_independent
-		potential = {
-			tag = ENT
-			exists = yes
-			has_global_flag = entre_rios_rebellion
-			NOT = { has_country_flag = called_for_recruits }
-		}
-		
-		allow = {
-			OR = {
-				war_with = ARG
-				war_with = ARC
-				}
-			NOT = { has_country_modifier = small_country_draft }
-		}
-		
-		effect = {
-			set_country_flag = called_for_recruits
-			money = 50000
-			add_country_modifier = {
-				name = small_country_draft
-				duration = 365
-			}
-			
-			ARC = {
-				any_pop = {
-					scaled_militancy = {
-						ideology = liberal
-						factor = 6
-					}
-				}
-			}
-					
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
 	make_buenos_aires_capital = {
 		picture = buenos_aires_capital
 		potential = {
 			OR = {
-				tag = ARC
 				tag = ARG
 				tag = VLP
 			}
@@ -427,7 +382,6 @@ political_decisions = {
 			NOT = {
 				primary_culture = platinean
 				OR = {
-					tag = ARC
 					tag = ARG
 					tag = LPL
 				}
@@ -443,14 +397,12 @@ political_decisions = {
 			war = no
 			is_greater_power = yes
 			state_n_government = 1
-			#nationalism_n_imperialism = 1
 			OR = {
 				ENT = { exists = yes is_vassal = no ai = yes in_sphere = THIS war = no }
 				CRT = { exists = yes is_vassal = no ai = yes in_sphere = THIS war = no }
 				SBA = { exists = yes is_vassal = no ai = yes in_sphere = THIS war = no }
 			}
 			OR = {
-				ARC = { exists = yes in_sphere = THIS }
 				ARG = { exists = yes in_sphere = THIS }
 				LPL = { exists = yes in_sphere = THIS }
 			}
@@ -476,7 +428,6 @@ political_decisions = {
 				limit = {
 					exists = yes
 					OR = {
-						tag = ARC
 						tag = ARG
 						tag = LPL
 					}
@@ -494,7 +445,6 @@ political_decisions = {
 		picture = conquest_of_the_chaco
 		potential = {
 			OR = {
-				tag = ARC
 				tag = ARG
 				tag = LPL
 			}
@@ -552,36 +502,6 @@ political_decisions = {
 					duration = 365
 				}
 			}
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
-	take_corrients = {
-		picture = la_plata_foundation
-		potential = {
-			tag = ENT
-			NOT = { has_country_flag = corrientes_conquered }
-			NOT = { exists = CRT }
-			OR = {
-				ARC = { owns = 2356 }
-				ENT = { owns = 2356 }
-			}
-		}
-		
-		allow = {
-			war = no
-		}
-
-		effect = {
-			set_country_flag = corrientes_conquered
-			ARC = {
-				any_owned = {
-					limit = { is_core = CRT }
-					secede_province = ENT
-					add_core = ENT
-				} 
-			}
-			CRT = { all_core = { remove_core = CRT } }
 		}
 		ai_will_do = { factor = 1 }
 	}

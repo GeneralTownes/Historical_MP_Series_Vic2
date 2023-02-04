@@ -856,7 +856,6 @@ province_event = {
 			continent = oceania
 			continent = africa
 			is_core = ARG
-			is_core = ARC
 		}
 		OR = {
 			terrain = farmlands

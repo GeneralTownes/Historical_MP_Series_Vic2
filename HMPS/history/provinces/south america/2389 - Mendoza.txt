@@ -1,8 +1,8 @@
-owner = ARC
+owner = ARG
 
-controller = ARC
+controller = ARG
 
-add_core = ARC
+add_core = ARG
 trade_goods = fruit
 terrain = dryhills
 life_rating = 35
@@ -10,5 +10,5 @@ life_rating = 35
 	owner = ARG
 	controller = ARG
 	add_core = ARG
-	remove_core = ARC
+	remove_core = ARG
 	}

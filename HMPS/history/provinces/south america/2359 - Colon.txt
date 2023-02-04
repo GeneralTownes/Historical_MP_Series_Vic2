@@ -3,7 +3,7 @@ owner = ENT
 controller = ENT
 
 add_core = ENT
-add_core = ARC
+add_core = ARG
 
 trade_goods = cattle
 life_rating = 35
@@ -14,5 +14,5 @@ life_rating = 35
 	controller = ARG
 	add_core = ARG
 	remove_core = ENT
-	remove_core = ARC
+	remove_core = ARG
 }

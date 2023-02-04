@@ -1,13 +1,13 @@
-owner = ARC
+owner = ARG
 
-controller = ARC
+controller = ARG
 
-add_core = ARC
+add_core = ARG
 trade_goods = cattle
 life_rating = 35
 1861.1.1 = { 
 	owner = ARG
 	controller = ARG
 	add_core = ARG
-	remove_core = ARC
+	remove_core = ARG
 	}

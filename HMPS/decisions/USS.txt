@@ -100,8 +100,6 @@ political_decisions = {
 			change_tag = USS
 			CLM_1723 = { add_core = USS }
 			CLM_1723 = { add_core = CLM }
-			ARC = { all_core = { add_core = ARG } }
-			ARC = { all_core = { remove_core = ARC } }
 			political_reform = federalism
 			add_accepted_culture = north_andean
 			add_accepted_culture = south_andean

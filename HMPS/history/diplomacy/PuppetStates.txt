@@ -207,14 +207,14 @@ vassal = {
 
 ##Substates of the Argentine Confederation
 substate = {
-	first = ARC
+	first = ARG
 	second = ENT
 	start_date = 1836.1.1
 	end_date = 1937.1.1
 }
 
 substate = {
-	first = ARC
+	first = ARG
 	second = CRT
 	start_date = 1836.1.1
 	end_date = 1937.1.1

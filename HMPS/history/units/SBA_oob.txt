@@ -7,7 +7,7 @@ ENG = {
 FRA = {
 	value = -50
 }
-ARC = {
+ARG = {
 	value = 400
 }
 

@@ -603,13 +603,6 @@ country_event = {
 		random_country = {
 			limit = {
 				tag = FROM
-				tag = ARC
-			}
-			THIS = { change_tag_no_core_switch = ARC }
-		}
-		random_country = {
-			limit = {
-				tag = FROM
 				tag = LHJ
 			}
 			THIS = { change_tag_no_core_switch = LHJ }

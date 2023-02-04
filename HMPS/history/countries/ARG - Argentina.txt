@@ -3,7 +3,7 @@ primary_culture = platinean
 religion = catholic
 government = presidential_dictatorship
 plurality = 20.0
-nationalvalue = nv_liberty
+nationalvalue = nv_order
 literacy = 0.12
 non_state_culture_literacy = 0.02
 civilized = yes
@@ -35,10 +35,16 @@ penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
 border_policy = open_borders
-centralization = federalism
+centralization = confederalism
 colonial_policy = no_colonies 
 
 set_country_flag = catholic_country
+
+govt_flag = 
+{
+	government = presidential_dictatorship
+	flag = theocracy
+}
 
 ruling_party = ARG_conservative
 upper_house = {

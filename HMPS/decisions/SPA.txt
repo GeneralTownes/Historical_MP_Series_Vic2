@@ -742,35 +742,17 @@ political_decisions = {
 
 		allow = {
 			war = no
-			OR = {  
-				ARG = {
-					OR = {
-						vassal_of = THIS
-						all_core = {
-							OR = {
-								owned_by = THIS
-								owner = {
-									in_sphere = THIS
-									vassal_of = THIS
-									war = no
-									is_greater_power = no
-								}
-							}
-						}
-					}
-				}
-				ARC = {
-					OR = {
-						vassal_of = THIS
-						all_core = {
-							OR = {
-								owned_by = THIS
-								owner = {
-									in_sphere = THIS
-									vassal_of = THIS
-									war = no
-									is_greater_power = no
-								}
+			ARG = {
+				OR = {
+					vassal_of = THIS
+					all_core = {
+						OR = {
+							owned_by = THIS
+							owner = {
+								in_sphere = THIS
+								vassal_of = THIS
+								war = no
+								is_greater_power = no
 							}
 						}
 					}
@@ -818,12 +800,6 @@ political_decisions = {
 					add_core = VLP
 				}
 			}
-			ARC = {
-				government = democracy
-				all_core = {
-					add_core = VLP
-				}
-			}
 			URU = {
 				government = democracy
 				all_core = {
@@ -839,7 +815,6 @@ political_decisions = {
 			inherit = PRG
 			inherit = ARG
 			inherit = URU
-			inherit = ARC
 			release_vassal = VLP
 			relation = {
 				who = VLP
@@ -868,7 +843,6 @@ political_decisions = {
 			OR = {
 				tag = UCA
 				tag = ARG
-				tag = ARC
 				tag = BOL
 				tag = CHL
 				tag = CLM	
