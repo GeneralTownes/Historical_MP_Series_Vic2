@@ -187,6 +187,7 @@ War score from battles is capped at 25
 No war exhaustion hit on rebel occupations
 War subs pay for 100% of mil goods
 Fort effects doubled
+25% less base org damage
 #### Units
 Soldier pops concentrate in state capitals, requires 3k soldier pops for 1st brigade (then 5k onwards)
 - Bombers: 'Attack version' of planes (fighters)
