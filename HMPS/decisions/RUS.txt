@@ -175,84 +175,19 @@ political_decisions = {
 		picture = peking_convention
 		potential = {
 			tag = RUS
-			is_greater_power = yes
-			1082 = {
-				owner = {
-					OR = {
-						tag = QNG
-						vassal_of = QNG
-						substate_of = QNG
-					}
-				}
-			}
-			QNG = {
-				neighbour = RUS
-				OR = {
-					has_global_flag = taiping_has_been_defeated
-					has_country_flag = arrow_incident
-					has_global_flag = ever_victorious_army 
-					war_exhaustion = 20
-				}
-				exists = yes
-				OR = {
-					has_global_flag = taiping_has_been_defeated
-					1082 = { owner = { in_sphere = RUS } }
-				}
-			}
-			NOT = { has_global_flag = convention_of_peking }
 		}
 		
 		allow = {
 			war = no
 			NOT = { truce_with = QNG }
-			OR = {
-				QNG = { war = yes }
-				has_global_flag = taiping_has_been_defeated
-			}
-			1082 = {
-				owner = {
-					OR = {
-						tag = QNG
-						vassal_of = QNG
-						substate_of = QNG
-					}
-				}
-			}
-		}
-		
-		effect = {
-			set_global_flag = convention_of_peking
-			1081 = { add_core = RUS }
-			1082 = { add_core = RUS }
-			1083 = { add_core = RUS }
-			1084 = { add_core = RUS }
-			1085 = { add_core = RUS }
-			2617 = { add_core = RUS }
-			2697 = { add_core = RUS }
-			country_event = 7777913
-		}
-	}
-	
-	peking_convention_TPG = {
-		picture = peking_convention
-		potential = {
-			tag = RUS
-			is_greater_power = yes
-			TPG = { owns = 1082 }
-			NOT = { has_global_flag = convention_of_peking }
-			has_global_flag = taiping_has_happened
-		}
-		
-		allow = {
-			war = no
 			NOT = { truce_with = TPG }
-			TPG = {
-				war = no
-				OR = {
-					part_of_sphere = no
-					in_sphere = RUS
-				}
-			}
+			owns = 1085
+			owns = 1084
+			owns = 2617
+			owns = 1083
+			owns = 1082
+			owns = 1081
+			owns = 2697
 		}
 		
 		effect = {
@@ -264,7 +199,6 @@ political_decisions = {
 			1085 = { add_core = RUS }
 			2617 = { add_core = RUS }
 			2697 = { add_core = RUS }
-			country_event = 7777913
 		}
 	}
 
