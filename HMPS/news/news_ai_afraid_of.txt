@@ -48,7 +48,6 @@ pattern =
 				OR = {
 					tags_eq = { 0 0 CHI }
 					tags_eq = { 0 0 QNG }
-					tags_eq = { 0 0 KMT }
 					tags_eq = { 0 0 JAP }
 					tags_eq = { 0 0 SPA }
 					tags_eq = { 0 0 TUR }

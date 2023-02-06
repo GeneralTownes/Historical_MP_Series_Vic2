@@ -1514,7 +1514,6 @@ economic_reforms = {
 			allow = { 
 				NOT = { has_country_flag = lacking_writing_system }
 				money = 10001
-				ai = no
 			}
 			
 			on_execute = {
@@ -1552,7 +1551,6 @@ economic_reforms = {
 			allow = {
 				NOT = { has_country_flag = lacking_writing_system}
 				money = 10001
-				ai = no
 			}
 			
 			on_execute = {

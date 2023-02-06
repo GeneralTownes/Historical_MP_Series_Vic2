@@ -34,7 +34,6 @@ news_priority =
 			NOT = { tags_contains = { 0 PLAYER } }
 			OR = {
 				tags_contains = { 0 CHI }
-				tags_contains = { 0 KMT }
 				tags_contains = { 0 JAP }
 				tags_contains = { 0 SPA }
 				tags_contains = { 0 TUR }
@@ -80,7 +79,6 @@ news_priority =
 				tags_contains = { 0 KUK }
 				tags_contains = { 0 ITA }
 				tags_contains = { 0 CHI }
-				tags_contains = { 0 KMT }
 				tags_contains = { 0 JAP }
 				tags_contains = { 0 SPA }
 				tags_contains = { 0 TUR }

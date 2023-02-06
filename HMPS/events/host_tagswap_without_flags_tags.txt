@@ -2038,13 +2038,6 @@ country_event = {
 		random_country = {
 			limit = {
 				tag = FROM
-				tag = KMT
-			}
-			THIS = { change_tag_no_core_switch = KMT }
-		}
-		random_country = {
-			limit = {
-				tag = FROM
 				tag = KTI
 			}
 			THIS = { change_tag_no_core_switch = KTI }

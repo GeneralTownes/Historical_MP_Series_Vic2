@@ -4,120 +4,88 @@ political_decisions = {
 		picture = form_china
 		potential = {
 			is_culture_group = east_asian
-			OR = {
-				tag = CHI
-				NOT = { has_country_flag = beiyang_faction }
-			}
 			has_global_flag = warlord_era_has_begun
 		}
 		
 		allow = {
 			war = no
 			owns = 1616
-			OR = {
-				KMT = { exists = no }
-				has_global_flag = kmt_has_lost
-			}
 			CHI = {
 				OR = {
 					exists = no
 					tag = THIS
-					in_sphere = THIS
 				}
 			}
 			FJN = {
 				OR = {
 					exists = no
 					tag = THIS
-					has_country_flag = neutral_faction
-					in_sphere = THIS
 				}
 			}
 			GMJ = {
 				OR = {
 					exists = no
 					tag = THIS
-					has_country_flag = neutral_faction
-					in_sphere = THIS
 				}
 			}
 			GNG = {
 				OR = {
 					exists = no
 					tag = THIS
-					has_country_flag = neutral_faction
-					in_sphere = THIS
 				}
 			}
 			GXI = {
 				OR = {
 					exists = no
 					tag = THIS
-					has_country_flag = neutral_faction
-					in_sphere = THIS
 				}
 			}
 			HNN = {
 				OR = {
 					exists = no
 					tag = THIS
-					has_country_flag = neutral_faction
-					in_sphere = THIS
 				}
 			}
 			HUI = {
 				OR = {
 					exists = no
 					tag = THIS
-					has_country_flag = neutral_faction
-					in_sphere = THIS
 				}
 			}
 			MCK = {
 				OR = {
 					exists = no
 					tag = THIS
-					has_country_flag = neutral_faction
-					in_sphere = THIS
 				}
 			}
 			SXI = {
 				OR = {
 					exists = no
 					tag = THIS
-					has_country_flag = neutral_faction
-					in_sphere = THIS
 				}
 			}
 			SZC = {
 				OR = {
 					exists = no
 					tag = THIS
-					has_country_flag = neutral_faction
-					in_sphere = THIS
 				}
 			}
 			TPG = {
 				OR = {
 					exists = no
 					tag = THIS
-					in_sphere = THIS
 				}
 			}
 			XBI = {
 				OR = {
 					exists = no
 					tag = THIS
-					has_country_flag = neutral_faction
-					in_sphere = THIS
 				}
 			}
 			YNN = {
 				OR = {
 					exists = no
 					tag = THIS
-					has_country_flag = neutral_faction
-					in_sphere = THIS
 				}
 			}
 		}
@@ -171,81 +139,6 @@ political_decisions = {
 				}
 				HNN = { all_core = { remove_core = HNN } }
 			}
-			random_country = {
-				limit = {
-					tag = CHI
-					ai = yes
-					exists = yes
-					in_sphere = THIS
-				}
-				annex_to = THIS
-			}
-			random_country = {
-				limit = {
-					tag = TPG
-					ai = yes
-					exists = yes
-					in_sphere = THIS
-				}
-				annex_to = THIS
-			}
-			random_owned = {
-				limit = {
-					owner = { 
-						NOT = { tag = TPG }
-						NOT = { tag = CHI }
-						NOT = { has_country_flag = kuomintang_faction }
-					}
-				}
-				owner = {
-					all_core = { remove_core = THIS }
-					change_tag = CHI
-					primary_culture = beifaren
-					add_accepted_culture = nanfaren
-				}
-			}
-			random_owned = {
-				limit = {
-					owner = { 
-						NOT = { tag = TPG }
-						NOT = { tag = CHI }
-						has_country_flag = kuomintang_faction
-					}
-				}
-				CHI = {
-					all_core = { add_core = KMT }
-				}
-				owner = {
-					all_core = { remove_core = THIS }
-					change_tag = KMT
-					primary_culture = nanfaren
-					add_accepted_culture = beifaren
-				}
-			}
-			random_owned = {
-				limit = {
-					owner = { tag = TPG }
-				}
-				CHI = {
-					all_core = { add_core = TPG }
-				}
-			}
-			any_country = {
-				limit = {
-					exists = yes
-					OR = {
-						has_country_flag = kuomintang_faction
-						has_country_flag = neutral_faction
-						has_country_flag = beiyang_faction
-					}
-					OR = {
-						is_vassal = no
-						vassal_of = THIS
-					}
-					NOT = { tag = THIS }
-				}
-				country_event = 131745
-			}			
 		}
 		
 		ai_will_do = {
@@ -472,11 +365,6 @@ political_decisions = {
 		
 		effect = {
 			add_accepted_culture = uighur
-			KMT = {
-				all_core = {
-					remove_core = KMT
-				}
-			}
 			FJN = {
 				all_core = {
 					remove_core = FJN

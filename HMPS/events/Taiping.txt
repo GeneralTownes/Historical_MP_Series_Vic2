@@ -1680,7 +1680,6 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		NOT = { tag = KMT }
 		is_culture_group = east_asian
 		war = yes
 		1485 = {

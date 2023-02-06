@@ -241,7 +241,7 @@ German states only get all German cultures on forming Germany
 - Decolonisation RGO changes
 #### East Asia
 - Qing collapses with 2 miltancy and non conservative/reactionary party, or if it is a republic
-- China surviving the Warlord Era can accept all Chinese cultures
+- China surviving the Warlord Era can accept all Chinese cultures, will not get Warlord Era if a Presidential Dictatorship
 - JAP tag will annex all independent primary Japanese (not TKG) tags who aren't at war automatically if TKG puppetted/destroyed
 - JAP will gain the cores of TKG if TKG doesn't exist
 #### Oceania

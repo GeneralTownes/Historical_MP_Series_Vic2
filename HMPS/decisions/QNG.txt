@@ -62,7 +62,6 @@ political_decisions = {
 				}
 			}
 			CHI = { set_country_flag = self_strengthening_movement }
-			KMT = { set_country_flag = self_strengthening_movement }
 		}
 		
 		ai_will_do = {
@@ -165,7 +164,6 @@ political_decisions = {
 			OR = {
 				tag = QNG
 				tag = CHI
-				tag = KMT
 				tag = GMJ
 			}
 			NOT = {
