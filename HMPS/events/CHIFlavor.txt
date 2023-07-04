@@ -77,7 +77,15 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 12
+		months = 3
+		modifier = {
+			factor = 0.025
+			OR = {
+				NOT = { government = absolute_monarchy }
+				NOT = { government = prussian_constitutionalism }
+				NOT = { government = hms_government }
+			}
+		}
 		modifier = {
 			factor = 0.025
 			capital_scope = { controlled_by_rebels = yes }
@@ -350,7 +358,9 @@ country_event = {
 		political_reform = yes_meeting
 		political_reform = state_press
 		political_reform = state_controlled
-		political_reform = harassment
+		political_reform = gerrymandering
+		political_reform = no_slavery
+		political_reform = open_borders
 		random_owned = {
 			limit = { owner = { NOT = { tag = CHI } } }
 			owner = {

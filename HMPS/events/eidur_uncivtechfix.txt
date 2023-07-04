@@ -659,7 +659,7 @@ country_event = {
 	
 	trigger = {
 		civilized = no
-		pre_indust = yes_pre_indust
+		pre_indust = pre_indust_two
 		NOT = { has_country_flag = earlyid2_flag }
 	}
 	

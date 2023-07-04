@@ -3683,6 +3683,7 @@ install_communism = {
 
 	can_use = {
 		is_ideology_enabled = communist
+		THIS = { government = proletarian_dictatorship }
 		is_vassal = no
 		civilized = yes
 		NOT = { is_our_vassal = THIS }

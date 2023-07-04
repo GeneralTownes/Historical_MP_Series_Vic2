@@ -3055,7 +3055,7 @@ country_event = {
 	
 	option = {
 		name = "EVT443027OPTA"
-		casus_belli = { target = FROM type = install_democracy_make_puppet months = 24 }
+		casus_belli = { target = FROM type = install_democracy months = 24 }
 		ai_chance = { factor = 90 }
 	}
 
