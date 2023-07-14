@@ -51,7 +51,6 @@ restore_british_raj
 civil_war
 annex_core_country
 add_to_sphere
-uninstall_communist_gov_cb
 install_democracy
 install_radical_democracy
 install_absolute_monarchy
@@ -832,7 +831,6 @@ free_peoples = {
 			FROM = { tag = CHI }
 			FROM = { tag = CSA }
 			FROM = { tag = USA }
-			this_culture_union = FROM
 			AND = {
 				FROM = { tag = ETH }
 				ETH = { exists = no }
@@ -920,7 +918,6 @@ liberate_country = {
 		NOT = {
 			tag = FROM
 			FROM = { tag = THIS }
-			this_culture_union = FROM
 			AND = {
 				FROM = { tag = ETH }
 				NOT = { exists = ETH }
@@ -928,6 +925,20 @@ liberate_country = {
 			AND = {
 				FROM = { tag = BOL }
 				exists = PBC
+			}
+		}
+		any_owned_province = {
+			is_core = FROM
+			NOT =
+			{
+				is_core = THIS
+			}
+		}
+		FROM = {
+			OR = {
+				exists = yes
+				is_cultural_union = no
+				involved_in_crisis = yes
 			}
 		}
 	}
@@ -3233,7 +3244,6 @@ liberate_puppet = {
 		NOT = {
 			tag = FROM
 			FROM = { tag = THIS }
-			this_culture_union = FROM
 			AND = {
 				FROM = { tag = ETH }
 				NOT = { exists = ETH }
@@ -3241,6 +3251,12 @@ liberate_puppet = {
 			AND = {
 				FROM = { tag = BOL }
 				exists = PBC
+			}
+		}
+		FROM = {
+			OR = {
+				exists = yes
+				is_cultural_union = no
 			}
 		}
 	}
@@ -3415,7 +3431,55 @@ install_democracy = {
 				relation = { who = THIS value = -50 }
 			}
 		}
-		country_event = 96085
+		government = democracy
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = open_borders
+		random_owned = { limit = { owner = { NOT = { trade_unions = all_trade_unions } } } owner = { political_reform = non_socialist } }
+		random_owned = { limit = { owner = { government = democracy } } owner = { country_event = 777789 } }
+		random_owned = {
+			limit = { owner = { NOT = { vote_franschise = universal_voting } } }
+			owner = { political_reform = universal_voting }
+		}
+		random_owned = {
+			limit = { owner = { debt_law = peonage } }
+			owner = { political_reform = debtors_prisons }
+		}
+		random_owned = {
+			limit = { owner = { debt_law = serfdom } }
+			owner = { political_reform = debtors_prisons }
+		}
+		random_owned = {
+			limit = { owner = { NOT = { slavery = no_slavery } } }
+			owner = { political_reform = no_slavery }
+		}
+		random_owned = {
+			limit = { owner = { NOT = { voting_system = proportional_representation tag = USA tag = ENG } } }
+			owner = { political_reform = proportional_representation }
+		}
+		random_owned = {
+			limit = { owner = { NOT = { upper_house_composition = population_equal_weight tag = USA } } }
+			owner = { political_reform = population_equal_weight }
+		}
+		random_owned = {
+			limit = { owner = { political_parties = non_secret_ballots } }
+			owner = { political_reform = secret_ballots }
+		}
+		random_owned = {
+			limit = { owner = { political_parties = gerrymandering } }
+			owner = { political_reform = secret_ballots }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						political_parties = underground_parties
+						political_parties = harassment
+					}
+				}
+			}
+			owner = { political_reform = gerrymandering }
+		}
 	}
 }
 
@@ -3496,7 +3560,56 @@ install_radical_democracy = {
 				relation = { who = THIS value = -50 }
 			}
 		}
-		country_event = 960851
+		government = democracy
+		ruling_party_ideology = radical
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = open_borders
+		random_owned = { limit = { owner = { NOT = { trade_unions = all_trade_unions } } } owner = { political_reform = non_socialist } }
+		random_owned = { limit = { owner = { government = democracy } } owner = { country_event = 777789 } }
+		random_owned = {
+			limit = { owner = { NOT = { vote_franschise = universal_voting } } }
+			owner = { political_reform = universal_voting }
+		}
+		random_owned = {
+			limit = { owner = { debt_law = peonage } }
+			owner = { political_reform = debtors_prisons }
+		}
+		random_owned = {
+			limit = { owner = { debt_law = serfdom } }
+			owner = { political_reform = debtors_prisons }
+		}
+		random_owned = {
+			limit = { owner = { NOT = { slavery = no_slavery } } }
+			owner = { political_reform = no_slavery }
+		}
+		random_owned = {
+			limit = { owner = { NOT = { voting_system = proportional_representation tag = USA tag = ENG } } }
+			owner = { political_reform = proportional_representation }
+		}
+		random_owned = {
+			limit = { owner = { NOT = { upper_house_composition = population_equal_weight tag = USA } } }
+			owner = { political_reform = population_equal_weight }
+		}
+		random_owned = {
+			limit = { owner = { political_parties = non_secret_ballots } }
+			owner = { political_reform = secret_ballots }
+		}
+		random_owned = {
+			limit = { owner = { political_parties = gerrymandering } }
+			owner = { political_reform = secret_ballots }
+		}
+		random_owned = {
+			limit = {
+				owner = {
+					OR = {
+						political_parties = underground_parties
+						political_parties = harassment
+					}
+				}
+			}
+			owner = { political_reform = gerrymandering }
+		}
 	}
 }
 
@@ -3592,7 +3705,13 @@ sprite_index = 26
 				relation = { who = THIS value = -50 }
 			}
 		}
-		country_event = 960852
+		government = absolute_monarchy
+		ruling_party_ideology = reactionary
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = underground_parties
 	}
 }
 
@@ -3656,7 +3775,14 @@ install_fascism = {
 				relation = { who = THIS value = -50 }
 			}
 		}
-		country_event = 96086
+		government = fascist_dictatorship
+		ruling_party_ideology = fascist
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = underground_parties
+		political_reform = mandatory_service
 	}
 }
 
@@ -3720,7 +3846,16 @@ install_communism = {
 				relation = { who = THIS value = -50 }
 			}
 		}
-		country_event = 96087
+		government = proletarian_dictatorship
+		ruling_party_ideology = communist
+		political_reform = all_voting_pops
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = underground_parties
+		political_reform = debtors_prisons
+		political_reform = no_slavery
 	}
 }
 
