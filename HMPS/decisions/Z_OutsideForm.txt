@@ -746,6 +746,7 @@ political_decisions = {
 						is_our_vassal = WAL
 						is_our_vassal = MOL
 						is_our_vassal = SIE
+						is_our_vassal = BKV
 					}
 					NOT = { tag = THIS }
 				}
@@ -761,6 +762,7 @@ political_decisions = {
 						tag = WAL
 						tag = MOL
 						tag = SIE
+						tag = BKV
 					}
 					ai = yes
 					in_sphere = THIS
